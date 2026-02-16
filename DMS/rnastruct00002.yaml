@@ -1,0 +1,35 @@
+dataset_id: rnastruct00002
+
+organism:
+  name: Homo sapiens
+  cell_lines: [K562, Primary fibroblasts]
+
+data_type:
+  method: DMS-seq
+  chemical: DMS
+  principle: RT-stop
+  context: [in_vivo, in_vitro]
+  conditions: [untreated, treated, denatured]
+  replicates_per_condition: 1
+
+publication:
+  doi: 10.1038/nature12894
+  year: 2014
+
+raw_data:
+  repository: GEO
+  accession: GSE45803
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45803
+  run_accessions:
+    - SRR1057939
+    - SRR1057940
+    - SRR1057941
+    - SRR1057942
+    - SRR1057943
+    - SRR1057944
+    - SRR1057945
+    - SRR1057946
+    - SRR1058055
+    - SRR1058056
+    - SRR1058057
+  
