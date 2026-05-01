@@ -168,3 +168,68 @@ def test_main_writes_viral_organism_with_strain(tmp_path, monkeypatch):
         rows = list(csv.DictReader(handle))
 
     assert rows[0]["organism"] == "Influenza A virus (A/Puerto Rico/8/1934(H1N1))"
+
+
+def test_main_matches_experiment_accession_when_sample_alias_is_descriptive(
+    tmp_path, monkeypatch
+):
+    samplesheet_path = tmp_path / "fetchngs.csv"
+    metadata_path = tmp_path / "metadata.yaml"
+    output_path = tmp_path / "merged.csv"
+
+    samplesheet_path.write_text(
+        (
+            "sample_alias,experiment_accession,fastq_1,fastq_2\n"
+            "PR8_SHAPE_MaP_1M7,SRX4223900,s1_R1.fastq.gz,s1_R2.fastq.gz\n"
+            "PR8_SHAPE_MaP_DMSO,SRX4223899,s2_R1.fastq.gz,s2_R2.fastq.gz\n"
+        ),
+        encoding="utf-8",
+    )
+    metadata_path.write_text(
+        (
+            "dataset_id: rnastruct00015\n"
+            "organism: Influenza A virus\n"
+            "strain: A/Puerto Rico/8/1934(H1N1)\n"
+            "experiment:\n"
+            "  chemical: 1M7\n"
+            "  principle: MaP\n"
+            "raw_data:\n"
+            "  run_accessions:\n"
+            "  - accession: SRX4223900\n"
+            "    sample_name: PR8_in_virio_treated\n"
+            "    cell_line: IAV_PR8\n"
+            "    condition: treated\n"
+            "    replicate: 1\n"
+            "  - accession: SRX4223899\n"
+            "    sample_name: PR8_in_virio_untreated\n"
+            "    cell_line: IAV_PR8\n"
+            "    condition: untreated\n"
+            "    replicate: 1\n"
+        ),
+        encoding="utf-8",
+    )
+
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "merge_metadata.py",
+            "--samplesheet",
+            str(samplesheet_path),
+            "--metadata",
+            str(metadata_path),
+            "--out",
+            str(output_path),
+        ],
+    )
+
+    rc = merge_metadata.main()
+    assert rc == 0
+
+    with output_path.open(newline="", encoding="utf-8") as handle:
+        rows = list(csv.DictReader(handle))
+
+    assert [row["sample_id"] for row in rows] == ["SRX4223900", "SRX4223899"]
+    assert [row["sample"] for row in rows] == [
+        "PR8_in_virio_treated",
+        "PR8_in_virio_untreated",
+    ]

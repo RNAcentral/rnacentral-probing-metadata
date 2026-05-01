@@ -67,6 +67,41 @@ def extract_run_metadata_map(metadata: dict) -> dict[str, dict[str, str]]:
     }
 
 
+ACCESSION_MATCH_COLUMNS = (
+    "sample_alias",
+    "experiment_accession",
+    "run_accession",
+    "sample_accession",
+    "secondary_sample_accession",
+    "experiment_alias",
+    "run_alias",
+    "sample",
+)
+
+
+def row_match_candidates(row: dict[str, str]) -> list[str]:
+    """Return fetchngs row values that may correspond to a curated accession."""
+    candidates = []
+    seen = set()
+    for column in ACCESSION_MATCH_COLUMNS:
+        value = (row.get(column) or "").strip()
+        if value and value not in seen:
+            candidates.append(value)
+            seen.add(value)
+    return candidates
+
+
+def find_run_metadata(
+    row: dict[str, str], run_metadata_map: dict[str, dict[str, str]]
+) -> tuple[str | None, dict[str, str] | None]:
+    """Match a fetchngs row to curated metadata using any available accession column."""
+    for candidate in row_match_candidates(row):
+        run_metadata = run_metadata_map.get(candidate)
+        if run_metadata:
+            return candidate, run_metadata
+    return None, None
+
+
 DMS_CHEMICAL = "DMS"
 
 
@@ -120,10 +155,11 @@ def main() -> int:
     out_rows = []
     missing_run_accessions = []
     for row in rows:
-        run_accession = (row.get("sample_alias") or "").strip()
-        run_metadata = run_metadata_map.get(run_accession)
+        run_accession, run_metadata = find_run_metadata(row, run_metadata_map)
         if not run_metadata:
-            missing_run_accessions.append(run_accession)
+            missing_run_accessions.append(
+                (row.get("sample_alias") or row.get("sample") or "<unknown>").strip()
+            )
             continue
 
         out_rows.append(

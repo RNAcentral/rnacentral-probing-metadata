@@ -147,8 +147,9 @@ def test_validate_metadata_file_reports_unresolved_strain(tmp_path):
 def test_search_ncbi_taxonomy_retries_rate_limit(monkeypatch):
     calls = 0
 
-    def fake_urlopen(request, _timeout):
+    def fake_urlopen(request, timeout=30):
         nonlocal calls
+        assert timeout == 30
         calls += 1
         if calls == 1:
             raise HTTPError(
