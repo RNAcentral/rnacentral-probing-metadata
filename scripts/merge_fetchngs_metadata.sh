@@ -12,6 +12,9 @@ outdir="$2"
 merged_dir="${outdir}/samplesheet"
 mkdir -p "${merged_dir}"
 
+merged_outputs=()
+skipped_count=0
+
 shopt -s nullglob
 for yaml in "${repo_dir}"/SHAPE/*.yaml "${repo_dir}"/DMS/*.yaml; do
   [ -s "${yaml}" ] || continue
@@ -24,8 +27,9 @@ for yaml in "${repo_dir}"/SHAPE/*.yaml "${repo_dir}"/DMS/*.yaml; do
     if [ -n "${alt_match}" ]; then
       samplesheet_csv="${alt_match}"
     else
-      echo "ERROR: samplesheet.csv not found for ${dataset_id}. Expected ${samplesheet_csv}" >&2
-      exit 1
+      echo "WARNING: samplesheet.csv not found for ${dataset_id}; skipping. Expected ${samplesheet_csv}" >&2
+      skipped_count=$((skipped_count + 1))
+      continue
     fi
   fi
 
@@ -35,12 +39,20 @@ for yaml in "${repo_dir}"/SHAPE/*.yaml "${repo_dir}"/DMS/*.yaml; do
     --samplesheet "${samplesheet_csv}" \
     --metadata "${yaml}" \
     --out "${out_csv}"
+
+  merged_outputs+=("${out_csv}")
 done
 
 manifest="${merged_dir}/rnastruct_samplesheets_manifest.txt"
-find "${merged_dir}" -maxdepth 1 -type f -name '*_samplesheet.csv' | sort > "${manifest}"
 
-if [ ! -s "${manifest}" ]; then
+if [ ${#merged_outputs[@]} -eq 0 ]; then
+  : > "${manifest}"
   echo "ERROR: no merged rnastruct samplesheets were generated in ${merged_dir}" >&2
   exit 1
+fi
+
+printf "%s\n" "${merged_outputs[@]}" | sort > "${manifest}"
+
+if [ "${skipped_count}" -gt 0 ]; then
+  echo "WARNING: skipped ${skipped_count} dataset(s) without fetchngs samplesheets." >&2
 fi
