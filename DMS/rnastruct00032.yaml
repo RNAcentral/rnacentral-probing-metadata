@@ -9,7 +9,7 @@ experiment:
   chemical: DMS
   context: [in_vivo]
   pH: null
-  adapter_3p: null
+  adapter_3p: AGATCGGAAGAGCGGTTCAG
   adapter_5p: null
   umi_pattern: null
 

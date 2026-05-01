@@ -8,7 +8,7 @@ experiment:
   obi: OBI:0001015
   chemical: DMS
   context: [in_vivo, in_vitro, denatured]
-  pH: null
+  pH: 8.0
   adapter_3p: null
   adapter_5p: null
   umi_pattern: null

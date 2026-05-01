@@ -9,7 +9,7 @@ experiment:
   obi: OBI:0003885
   chemical: 1M7
   context: [in_vitro, in_virio, denatured]
-  pH: null
+  pH: 8.0
   adapter_3p: null
   adapter_5p: null
   umi_pattern: null

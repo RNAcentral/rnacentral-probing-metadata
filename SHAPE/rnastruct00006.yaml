@@ -8,10 +8,10 @@ experiment:
   obi: OBI:0003887
   chemical: NAI-N3
   context: [in_vivo]
-  pH: 8.0
+  pH: null
   adapter_3p: null
   adapter_5p: null
-  umi_pattern: NNNNNNNNNNNNN
+  umi_pattern: null
 
 publication:
   doi: 10.1186/s13059-020-02022-2
