@@ -50,5 +50,5 @@ raw_data:
   - accession: GSM2211016
     sample_name: mESC_DMS_vivo_PDS
     cell_line: mES_PDS
-    condition: treated_PDS
+    condition: treated
     replicate: 1
