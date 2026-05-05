@@ -38,17 +38,17 @@ raw_data:
     cell_line: S16803
     condition: treated
     replicate: 1
-  - accession: 	SRX1430836
+  - accession: SRX1430836
     sample_name: DENV2_invirio_DMSO
     cell_line: S16803
     condition: untreated
     replicate: 1
-  - accession: 	SRX1426898
+  - accession: SRX1426898
     sample_name: DENV2_refolded_1M6
     cell_line: S16803
     condition: treated
     replicate: 1
-  - accession: 	SRX1430847
+  - accession: SRX1430847
     sample_name: DENV2_refolded_DMSO
     cell_line: S16803
     condition: untreated
