@@ -1,0 +1,55 @@
+dataset_id: rnastruct00047
+
+organism: Dengue virus
+strain: EDEN3295  # Dengue serotype 2 is reported as EDEN3295 in the paper, with the Genbank ID EU081177.1.
+
+experiment:
+  method: NAI-MaP
+  principle: MaP
+  obi: OBI:0003886
+  chemical: NAI
+  context: [in_vivo, denatured]
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-019-09391-8
+  year: 2019
+
+raw_data:
+  repository: GEO
+  accession: GSE106483
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106483
+  run_accessions:
+  - accession: GSM2838753
+    sample_name: dengue_2_NAI_r1
+    cell_line: Dengue_2
+    condition: treated
+    replicate: 1
+  - accession: GSM2838754
+    sample_name: dengue_2_DMSO_r1
+    cell_line: Dengue_2
+    condition: untreated
+    replicate: 1
+  - accession: GSM2838755
+    sample_name: dengue_2_denatured_r1
+    cell_line: Dengue_2
+    condition: denatured
+    replicate: 1
+  - accession: GSM2838756
+    sample_name: dengue_2_NAI_r2
+    cell_line: Dengue_2
+    condition: treated
+    replicate: 2
+  - accession: GSM2838757
+    sample_name: dengue_2_DMSO_r2
+    cell_line: Dengue_2
+    condition: untreated
+    replicate: 2
+  - accession: GSM2838758
+    sample_name: dengue_2_denatured_r2
+    cell_line: Dengue_2
+    condition: denatured
+    replicate: 2

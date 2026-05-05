@@ -8,7 +8,7 @@ experiment:
   principle: MaP
   obi: OBI:0003886
   chemical: NAI
-  context: [in_vitro]
+  context: [in_vitro, denatured]
   pH: null
   adapter_3p: null
   adapter_5p: null
@@ -32,4 +32,9 @@ raw_data:
     sample_name: Zika_French_Polynesia_in_vitro_untreated
     cell_line: ZIKV_KJ776791_HPF2013
     condition: untreated
+    replicate: 1
+  - accession: GSM2838811
+    sample_name: Zika_French_Polynesia_in_vitro_denatured
+    cell_line: ZIKV_KJ776791_HPF2013
+    condition: denatured
     replicate: 1

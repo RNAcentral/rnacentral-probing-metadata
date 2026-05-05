@@ -1,0 +1,44 @@
+dataset_id: rnastruct00054
+
+organism: Mus musculus
+
+experiment:
+  method: smartSHAPE
+  principle: MaP
+  obi: OBI:0003887
+  chemical: NAI-N3
+  context: [in_vivo]
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.fmre.2021.12.007
+  year: 2022
+
+raw_data:
+  repository: GEO
+  accession: GSE155961
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE155961
+  run_accessions:
+  - accession: GSM4717180
+    sample_name: c57bl_6j_mouse_Ly6Clo_macrophages_r1
+    cell_line: C57BL6J_Ly6Clo
+    condition: treated
+    replicate: 1
+  - accession: GSM4717181
+    sample_name: c57bl_6j_mouse_Ly6Clo_macrophages_r2
+    cell_line: C57BL6J_Ly6Clo
+    condition: treated
+    replicate: 2
+  - accession: GSM4717182
+    sample_name: c57bl_6j_mouse_ly6chi_macrophages_r1
+    cell_line: C57BL6J_Ly6Chi
+    condition: treated
+    replicate: 1
+  - accession: GSM4717183
+    sample_name: c57bl_6j_mouse_ly6chi_macrophages_r2
+    cell_line: C57BL6J_Ly6Chi
+    condition: treated
+    replicate: 2

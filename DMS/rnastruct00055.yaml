@@ -1,0 +1,34 @@
+dataset_id: rnastruct00055
+
+organism: Mus musculus
+
+experiment:
+  method: CIRS-seq
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  context: [in_vivo]
+  pH: 7.9
+  adapter_3p: GATCGTCGGACTGTAGAACTCTGAAC
+  adapter_5p: CCTTGGGCACCCGAGAATTCCA
+  umi_pattern: NNNNNNN
+
+publication:
+  doi: 10.1186/s13059-014-0491-2
+  year: 2014
+
+raw_data:
+  repository: GEO
+  accession: GSE54106
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE54106
+  run_accessions:
+  - accession: GSM1464623
+    sample_name: DMS_r1
+    cell_line: mESC
+    condition: treated
+    replicate: 1
+  - accession: GSM1464626
+    sample_name: DMS_r2
+    cell_line: mESC
+    condition: treated
+    replicate: 2

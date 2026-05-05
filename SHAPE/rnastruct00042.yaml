@@ -1,0 +1,54 @@
+dataset_id: rnastruct00042
+
+organism: Homo sapiens
+
+experiment:
+  method: icSHAPE
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  context: [in_vivo, in_vitro]
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.cell.2016.04.028
+  year: 2016
+
+raw_data:
+  repository: GEO
+  accession: GSE74353
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE74353
+  run_accessions:
+  - accession: GSM2075714
+    sample_name: HEK293T_untreated_r1
+    cell_line: HEK293T
+    condition: untreated
+    replicate: 1
+  - accession: GSM2075715
+    sample_name: HEK293T_untreated_r2
+    cell_line: HEK293T
+    condition: untreated
+    replicate: 2
+  - accession: GSM2075716
+    sample_name: HEK293T_in_vitro_r1
+    cell_line: HEK293T_in_vitro
+    condition: treated
+    replicate: 1
+  - accession: GSM2075717
+    sample_name: HEK293T_in_vitro_r2
+    cell_line: HEK293T_in_vitro
+    condition: treated
+    replicate: 2
+  - accession: GSM2075718
+    sample_name: HEK293T_in_vivo_r1
+    cell_line: HEK293T_in_vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM2075719
+    sample_name: HEK293T_in_vivo_r2
+    cell_line: HEK293T_in_vivo
+    condition: treated
+    replicate: 2

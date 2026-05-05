@@ -1,0 +1,50 @@
+dataset_id: rnastruct00048
+
+organism: Dengue virus
+strain: EDEN863  # Dengue serotype 3 is reported as EDEN863 in the paper, with the Genbank ID EU081190.1.
+
+experiment:
+  method: NAI-MaP
+  principle: MaP
+  obi: OBI:0003886
+  chemical: NAI
+  context: [in_vivo, denatured]
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-019-09391-8
+  year: 2019
+
+raw_data:
+  repository: GEO
+  accession: GSE106483
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106483
+  run_accessions:
+  - accession: GSM2838759
+    sample_name: dengue_3_NAI_r1
+    cell_line: Dengue_3
+    condition: treated
+    replicate: 1
+  - accession: GSM2838760
+    sample_name: dengue_3_DMSO_r1
+    cell_line: Dengue_3
+    condition: untreated
+    replicate: 1
+  - accession: GSM2838761
+    sample_name: dengue_3_denatured_r1
+    cell_line: Dengue_3
+    condition: denatured
+    replicate: 1
+  - accession: GSM2838762
+    sample_name: dengue_3_NAI_r2
+    cell_line: Dengue_3
+    condition: treated
+    replicate: 2
+  - accession: GSM2838763
+    sample_name: dengue_3_DMSO_r2
+    cell_line: Dengue_3
+    condition: untreated
+    replicate: 2
