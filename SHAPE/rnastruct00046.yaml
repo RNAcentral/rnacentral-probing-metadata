@@ -48,7 +48,7 @@ raw_data:
     cell_line: Dengue_1
     condition: untreated
     replicate: 2
-  - accession: GSM2838751
+  - accession: GSM2838752
     sample_name: dengue_1_denatured_r2
     cell_line: Dengue_1
     condition: denatured
