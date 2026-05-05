@@ -1,0 +1,54 @@
+dataset_id: rnastruct00057
+
+organism: Mus musculus
+
+experiment:
+  method: DMS-seq
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  context: [in_vivo, in_vitro]
+  pH: null
+  adapter_3p: TCGTATGCCGTCTTCTGCTTG
+  adapter_5p: null
+  umi_pattern: NNNNNN
+
+publication:
+  doi: 10.1126/science.aaf5371
+  year: 2016
+
+raw_data:
+  repository: GEO
+  accession: GSE83617
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83617
+  run_accessions:
+  - accession: GSM2211011
+    sample_name: mESC_DMS_vitro_95C
+    cell_line: mES_95C
+    condition: treated
+    replicate: 1
+  - accession: GSM2211012
+    sample_name: mESC_DMS_vitro_K150
+    cell_line: mES_K150
+    condition: treated
+    replicate: 1
+  - accession: GSM2211013
+    sample_name: mESC_DMS_vitro_K0
+    cell_line: mES_K0
+    condition: treated
+    replicate: 1
+  - accession: GSM2211014
+    sample_name: mESC_DMS_vivo_r1
+    cell_line: mES_vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM2211015
+    sample_name: mESC_DMS_vivo_r2
+    cell_line: mES_vivo
+    condition: treated
+    replicate: 2
+  - accession: GSM2211016
+    sample_name: mESC_DMS_vivo_PDS
+    cell_line: mES_PDS
+    condition: treated_PDS
+    replicate: 1
