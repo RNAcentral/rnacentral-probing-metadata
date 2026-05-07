@@ -23,7 +23,7 @@ raw_data:
   accession: GSE153851
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE153851
   # Excluded from this curation:
-  # - GSM4656063/GSM4656064: short in vitro-transcribed fragments, not full-genome infected-cell samples.
+  # - GSM4656063/GSM4656064 (283nt and 85nt in vitro-transcribed fragments): structural validation controls only, not full-genome infected-cell samples.
   run_accessions:
   - accession: GSM4656059
     sample_name: usa_wa1_treated_r1

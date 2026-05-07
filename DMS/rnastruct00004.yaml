@@ -8,7 +8,7 @@ experiment:
   chemical: DMS
   principle: RT-stop
   pH: 7.4
-  context: [in_vivo, in_vitro, denatured]
+  context: [in_vivo, in_vitro]
   adapter_3p: null  # not known
   adapter_5p: null  # not known
   umi_pattern: null  # not used
@@ -21,6 +21,9 @@ raw_data:
   repository: GEO
   accession: GSE45803
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45803
+  # Excluded from this curation:
+  # - GSM1115753/GSM1115754/GSM1115755 (BY4741_denatured_95C_r1/r2/r3): heat-denatured controls with condition: treated; not physiologically relevant structures.
+  # - GSM1115759/GSM1115760/GSM1115761 (BY4741_treated_vitro_30C_2.5pctDMS_3min/5min/4pctDMS_5min): protocol optimisation samples only.
   run_accessions:
     - accession: GSM1115749
       sample_name: BY4741_treated_vivo_r1
@@ -42,49 +45,19 @@ raw_data:
       cell_line: BY4741_vivo
       condition: treated
       replicate: 4
-    - accession: GSM1115753
-      sample_name: BY4741_denatured_95C_r1
-      cell_line: BY4741_denatured
-      condition: treated
-      replicate: 1
-    - accession: GSM1115754
-      sample_name: BY4741_denatured_95C_r2
-      cell_line: BY4741_denatured
-      condition: treated
-      replicate: 2
-    - accession: GSM1115755
-      sample_name: BY4741_denatured_95C_r3
-      cell_line: BY4741_denatured
-      condition: treated
-      replicate: 3
     - accession: GSM1115756
       sample_name: BY4741_treated_vitro_30C_r1
-      cell_line: BY4741_vitro
+      cell_line: BY4741_vitro_30C
       condition: treated
       replicate: 1
     - accession: GSM1115757
       sample_name: BY4741_treated_vitro_30C_r2
-      cell_line: BY4741_vitro
+      cell_line: BY4741_vitro_30C
       condition: treated
       replicate: 2
     - accession: GSM1115758
       sample_name: BY4741_treated_vitro_30C_r3
-      cell_line: BY4741_vitro
-      condition: treated
-      replicate: 3
-    - accession: GSM1115759
-      sample_name: BY4741_treated_vitro_30C_2.5pctDMS_3min_r1
-      cell_line: BY4741_vitro_DMS
-      condition: treated
-      replicate: 1
-    - accession: GSM1115760
-      sample_name: BY4741_treated_vitro_30C_2.5pctDMS_5min_r1
-      cell_line: BY4741_vitro_DMS
-      condition: treated
-      replicate: 2
-    - accession: GSM1115761
-      sample_name: BY4741_treated_vitro_30C_4pctDMS_5min_r1
-      cell_line: BY4741_vitro_DMS
+      cell_line: BY4741_vitro_30C
       condition: treated
       replicate: 3
     - accession: GSM1115762

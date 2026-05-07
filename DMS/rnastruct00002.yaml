@@ -8,7 +8,7 @@ experiment:
   chemical: DMS
   principle: RT-stop
   pH: 7.4
-  context: [in_vivo, in_vitro, denatured]
+  context: [in_vivo, in_vitro]
   adapter_3p: null  # not known
   adapter_5p: null  # not known
   umi_pattern: null  # not used
@@ -21,6 +21,9 @@ raw_data:
   repository: GEO
   accession: GSE45803
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45803
+  # Excluded from this curation:
+  # - GSM1297495 (K562_treated_denatured_r1): heat-denatured control with condition: treated; not a physiologically relevant structure.
+  # - GSM1297508 (Fibroblast_treated_denatured_r1): heat-denatured control with condition: treated; not a physiologically relevant structure.
   run_accessions:
     - accession: GSM1297493
       sample_name: K562_treated_vivo_200mM_r1
@@ -32,11 +35,6 @@ raw_data:
       cell_line: K562_vivo
       condition: treated
       replicate: 2
-    - accession: GSM1297495
-      sample_name: K562_treated_denatured_r1  # read paper carefully and found all samples are in fact treated
-      cell_line: K562_denatured
-      condition: treated
-      replicate: 1
     - accession: GSM1297496
       sample_name: K562_treated_vitro_r1
       cell_line: K562_vitro
@@ -50,10 +48,5 @@ raw_data:
     - accession: GSM1297507
       sample_name: Fibroblast_treated_vitro_r1
       cell_line: Primaryfibroblasts_vitro
-      condition: treated
-      replicate: 1
-    - accession: GSM1297508
-      sample_name: Fibroblast_treated_denatured_r1
-      cell_line: Primaryfibroblasts_denatured
       condition: treated
       replicate: 1

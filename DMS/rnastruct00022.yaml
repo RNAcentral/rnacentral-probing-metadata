@@ -7,7 +7,7 @@ experiment:
   principle: RT-stop
   obi: OBI:0001015
   chemical: DMS
-  context: [in_vivo, in_vitro, denatured]
+  context: [in_vivo, in_vitro]
   pH: 8.0
   adapter_3p: null
   adapter_5p: null
@@ -21,15 +21,12 @@ raw_data:
   repository: GEO
   accession: GSE77617
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE77617
+  # Excluded from this curation:
+  # - GSM2055262 (WT_denatured): heat-denatured control with condition: treated; not a physiologically relevant structure.
   run_accessions:
   - accession: GSM2055261
     sample_name: WT_vitro  # wild-type MG1655 mRNA modified in vitro at 37C
     cell_line: MG1655_vitro
-    condition: treated
-    replicate: 1
-  - accession: GSM2055262
-    sample_name: WT_denatured  # wild-type MG1655 mRNA modified in vitro at 95C
-    cell_line: MG1655_denatured
     condition: treated
     replicate: 1
   - accession: GSM2055274
