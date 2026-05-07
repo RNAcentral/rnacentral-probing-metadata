@@ -1,0 +1,69 @@
+dataset_id: rnastruct00043
+
+organism: Homo sapiens
+
+experiment:
+  method: icSHAPE
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  context: [in_vivo, in_vitro]
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41594-019-0200-7
+  year: 2019
+
+raw_data:
+  repository: GEO
+  accession: GSE117840
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE117840
+  run_accessions:
+  - accession: GSM3310468
+    sample_name: 293chD
+    cell_line: HEK293_chromatin_untreated
+    condition: untreated
+    replicate: 1
+  - accession: GSM3310469
+    sample_name: 293chN
+    cell_line: HEK293_chromatin_in_vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM3310470
+    sample_name: 293chT
+    cell_line: HEK293_chromatin_in_vitro
+    condition: treated
+    replicate: 1
+  - accession: GSM3310471
+    sample_name: 293npD
+    cell_line: HEK293_nucleoplasm_untreated
+    condition: untreated
+    replicate: 1
+  - accession: GSM3310472
+    sample_name: 293npN
+    cell_line: HEK293_nucleoplasm_in_vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM3310473
+    sample_name: 293npT
+    cell_line: HEK293_nucleoplasm_in_vitro
+    condition: treated
+    replicate: 1
+  - accession: GSM3310474
+    sample_name: 293cyD
+    cell_line: HEK293_cytoplasm_untreated
+    condition: untreated
+    replicate: 1
+  - accession: GSM3310475
+    sample_name: 293cyN
+    cell_line: HEK293_cytoplasm_in_vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM3310476
+    sample_name: 293cyT
+    cell_line: HEK293_cytoplasm_in_vitro
+    condition: treated
+    replicate: 1

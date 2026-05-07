@@ -1,0 +1,70 @@
+dataset_id: rnastruct00051
+
+organism: Zika virus
+strain: AY632535_MR766  # Paper reports the African ZIKV strain as AY632535_MR766.
+
+experiment:
+  method: NAI-MaP
+  principle: MaP
+  obi: OBI:0003886
+  chemical: NAI
+  context: [in_vivo, denatured]
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-019-09391-8
+  year: 2019
+
+raw_data:
+  repository: GEO
+  accession: GSE106483
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106483
+  run_accessions:
+  - accession: GSM2838770
+    sample_name: Zika_African_NAI_r1
+    cell_line: ZIKV_AY632535_MR766
+    condition: treated
+    replicate: 1
+  - accession: GSM2838771
+    sample_name: Zika_African_DMSO_r1
+    cell_line: ZIKV_AY632535_MR766
+    condition: untreated
+    replicate: 1
+  - accession: GSM2838772
+    sample_name: Zika_African_denatured_r1
+    cell_line: ZIKV_AY632535_MR766
+    condition: denatured
+    replicate: 1
+  - accession: GSM2838773
+    sample_name: Zika_African_NAI_r2
+    cell_line: ZIKV_AY632535_MR766
+    condition: treated
+    replicate: 2
+  - accession: GSM2838774
+    sample_name: Zika_African_DMSO_r2
+    cell_line: ZIKV_AY632535_MR766
+    condition: untreated
+    replicate: 2
+  - accession: GSM2838775
+    sample_name: Zika_African_denatured_r2
+    cell_line: ZIKV_AY632535_MR766
+    condition: denatured
+    replicate: 2
+  - accession: GSM2838776
+    sample_name: Zika_African_NAI_r3
+    cell_line: ZIKV_AY632535_MR766
+    condition: treated
+    replicate: 3
+  - accession: GSM2838777
+    sample_name: Zika_African_DMSO_r3
+    cell_line: ZIKV_AY632535_MR766
+    condition: untreated
+    replicate: 3
+  - accession: GSM2838778
+    sample_name: Zika_African_denatured_r3
+    cell_line: ZIKV_AY632535_MR766
+    condition: denatured
+    replicate: 3

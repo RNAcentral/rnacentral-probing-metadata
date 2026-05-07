@@ -1,0 +1,37 @@
+dataset_id: rnastruct00058
+organism: Mus musculus
+experiment:
+  method: SHAPE
+  principle: RT-stop
+  obi: OBI:0003886
+  chemical: NAI
+  context: [in_vivo, in_vitro]
+  pH: null
+  adapter_3p: TCGTATGCCGTCTTCTGCTTG
+  adapter_5p: null
+  umi_pattern: NNNNNN
+
+publication:
+  doi: 10.1126/science.aaf5371
+  year: 2016
+
+raw_data:
+  repository: GEO
+  accession: GSE83617
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83617
+  run_accessions:
+  - accession: GSM2211040
+    sample_name: mESC_NAI_vitro_K150
+    cell_line: mES_K150
+    condition: treated
+    replicate: 1
+  - accession: GSM2211041
+    sample_name: mESC_NAI_vitro_K0
+    cell_line: mES_K0
+    condition: treated
+    replicate: 1
+  - accession: GSM2211042
+    sample_name: mESC_NAI_vivo
+    cell_line: mES_vivo
+    condition: treated
+    replicate: 1

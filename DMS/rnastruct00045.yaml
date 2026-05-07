@@ -1,0 +1,29 @@
+dataset_id: rnastruct00045
+
+organism: Homo sapiens
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  context: [in_vivo]
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/nmeth.4057
+  year: 2017
+
+raw_data:
+  repository: GEO
+  accession: GSE84537
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84537
+  run_accessions:
+  - accession: GSM2241643
+    sample_name: HEK293Ts_in_vivo
+    cell_line: HEK293T
+    condition: treated
+    replicate: 1

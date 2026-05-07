@@ -1,0 +1,55 @@
+dataset_id: rnastruct00046
+
+organism: Dengue virus
+strain: EDEN2402  # Dengue serotype 1 is reported as EDEN2402 in the paper, with the Genbank ID EU081230.1.
+
+experiment:
+  method: NAI-MaP
+  principle: MaP
+  obi: OBI:0003886
+  chemical: NAI
+  context: [in_vivo, denatured]
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-019-09391-8
+  year: 2019
+
+raw_data:
+  repository: GEO
+  accession: GSE106483
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106483
+  run_accessions:
+  - accession: GSM2838747
+    sample_name: dengue_1_NAI_r1
+    cell_line: Dengue_1
+    condition: treated
+    replicate: 1
+  - accession: GSM2838748
+    sample_name: dengue_1_DMSO_r1
+    cell_line: Dengue_1
+    condition: untreated
+    replicate: 1
+  - accession: GSM2838749
+    sample_name: dengue_1_denatured_r1
+    cell_line: Dengue_1
+    condition: denatured
+    replicate: 1
+  - accession: GSM2838750
+    sample_name: dengue_1_NAI_r2
+    cell_line: Dengue_1
+    condition: treated
+    replicate: 2
+  - accession: GSM2838751
+    sample_name: dengue_1_DMSO_r2
+    cell_line: Dengue_1
+    condition: untreated
+    replicate: 2
+  - accession: GSM2838752
+    sample_name: dengue_1_denatured_r2
+    cell_line: Dengue_1
+    condition: denatured
+    replicate: 2

@@ -1,0 +1,69 @@
+dataset_id: rnastruct00044
+
+organism: Mus musculus
+
+experiment:
+  method: icSHAPE
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  context: [in_vivo, in_vitro]
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41594-019-0200-7
+  year: 2019
+
+raw_data:
+  repository: GEO
+  accession: GSE117840
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE117840
+  run_accessions:
+  - accession: GSM3310477
+    sample_name: mESchD
+    cell_line: V65_ES_chromatin_untreated
+    condition: untreated
+    replicate: 1
+  - accession: GSM3310478
+    sample_name: mESchN
+    cell_line: V65_ES_chromatin_in_vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM3310479
+    sample_name: mESchT
+    cell_line: V65_ES_chromatin_in_vitro
+    condition: treated
+    replicate: 1
+  - accession: GSM3310480
+    sample_name: mESnpD
+    cell_line: V65_ES_nucleoplasm_untreated
+    condition: untreated
+    replicate: 1
+  - accession: GSM3310481
+    sample_name: mESnpN
+    cell_line: V65_ES_nucleoplasm_in_vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM3310482
+    sample_name: mESnpT
+    cell_line: V65_ES_nucleoplasm_in_vitro
+    condition: treated
+    replicate: 1
+  - accession: GSM3310483
+    sample_name: mEScyD
+    cell_line: V65_ES_cytoplasm_untreated
+    condition: untreated
+    replicate: 1
+  - accession: GSM3310484
+    sample_name: mEScyN
+    cell_line: V65_ES_cytoplasm_in_vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM3310485
+    sample_name: mEScyT
+    cell_line: V65_ES_cytoplasm_in_vitro
+    condition: treated
+    replicate: 1

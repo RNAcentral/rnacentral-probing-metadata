@@ -1,0 +1,40 @@
+dataset_id: rnastruct00060
+
+organism: Dengue virus
+strain: S16803
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003885
+  chemical: 1M7
+  context: [ex_virio, in_virio, in_vitro]
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1021/acs.biochem.8b01219
+  year: 2019
+
+raw_data:
+  repository: SRA
+  accession: SRP066015
+  landing_page: https://www.ncbi.nlm.nih.gov/sra/?term=SRP066015
+  run_accessions:
+  - accession: SRX1430830
+    sample_name: DENV2_exvirio_1M7
+    cell_line: S16803
+    condition: treated
+    replicate: 1
+  - accession: SRX1430834
+    sample_name: DENV2_invirio_1M7
+    cell_line: S16803
+    condition: treated
+    replicate: 1
+  - accession: SRX1430845
+    sample_name: DENV2_refolded_1M7
+    cell_line: S16803
+    condition: treated
+    replicate: 1

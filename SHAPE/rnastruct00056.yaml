@@ -1,0 +1,74 @@
+dataset_id: rnastruct00056
+
+organism: Mus musculus
+
+experiment:
+  method: icSHAPE
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  context: [in_vivo, in_vitro]
+  pH: null
+  adapter_3p: AGATCGGAAGAGCGGTTCAG
+  adapter_5p: null
+  umi_pattern: DDDNNAACCNNNN
+
+publication:
+  doi: 10.1038/nature14263
+  year: 2015
+
+raw_data:
+  repository: GEO
+  accession: GSE64169
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE64169
+  run_accessions:
+  - accession: GSM1464037
+    sample_name: v65_DMSO_r1
+    cell_line: mES_v65
+    condition: untreated
+    replicate: 1
+  - accession: GSM1464038
+    sample_name: v65_DMSO_r2
+    cell_line: mES_v65
+    condition: untreated
+    replicate: 2
+  - accession: GSM1464039
+    sample_name: v65_in_vitro_r1
+    cell_line: mES_v65
+    condition: treated
+    replicate: 1
+  - accession: GSM1464040
+    sample_name: v65_in_vitro_r2
+    cell_line: mES_v65
+    condition: treated
+    replicate: 2
+  - accession: GSM1464041
+    sample_name: v65_in_vivo_r1
+    cell_line: mES_v65
+    condition: treated
+    replicate: 1
+  - accession: GSM1464042
+    sample_name: v65_in_vivo_r2
+    cell_line: mES_v65
+    condition: treated
+    replicate: 2
+  - accession: GSM1565484
+    sample_name: METTL3_KO_DMSO_r1
+    cell_line: mES_J1
+    condition: untreated
+    replicate: 1
+  - accession: GSM1565485
+    sample_name: METTL3_KO_DMSO_r2
+    cell_line: mES_J1
+    condition: untreated
+    replicate: 2
+  - accession: GSM1565486
+    sample_name: METTL3_KO_treated_r1
+    cell_line: mES_J1
+    condition: treated
+    replicate: 1
+  - accession: GSM1565487
+    sample_name: METTL3_KO_treated_r2
+    cell_line: mES_J1
+    condition: treated
+    replicate: 2
