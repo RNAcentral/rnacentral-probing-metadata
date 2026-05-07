@@ -24,32 +24,32 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106483
   run_accessions:
   - accession: GSM2838753
-    sample_name: dengue_2_NAI_r1
-    cell_line: Dengue_2
+    sample_name: dengue_EDEN3295_treated_r1
+    cell_line: dengue_EDEN3295
     condition: treated
     replicate: 1
   - accession: GSM2838754
-    sample_name: dengue_2_DMSO_r1
-    cell_line: Dengue_2
+    sample_name: dengue_EDEN3295_untreated_r1
+    cell_line: dengue_EDEN3295
     condition: untreated
     replicate: 1
   - accession: GSM2838755
-    sample_name: dengue_2_denatured_r1
-    cell_line: Dengue_2
+    sample_name: dengue_EDEN3295_denatured_r1
+    cell_line: dengue_EDEN3295
     condition: denatured
     replicate: 1
   - accession: GSM2838756
-    sample_name: dengue_2_NAI_r2
-    cell_line: Dengue_2
+    sample_name: dengue_EDEN3295_treated_r2
+    cell_line: dengue_EDEN3295
     condition: treated
     replicate: 2
   - accession: GSM2838757
-    sample_name: dengue_2_DMSO_r2
-    cell_line: Dengue_2
+    sample_name: dengue_EDEN3295_untreated_r2
+    cell_line: dengue_EDEN3295
     condition: untreated
     replicate: 2
   - accession: GSM2838758
-    sample_name: dengue_2_denatured_r2
-    cell_line: Dengue_2
+    sample_name: dengue_EDEN3295_denatured_r2
+    cell_line: dengue_EDEN3295
     condition: denatured
     replicate: 2

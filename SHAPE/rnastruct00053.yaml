@@ -1,7 +1,7 @@
 dataset_id: rnastruct00053
 
 organism: Zika virus
-strain: KJ776791_HPF2013  # Paper reports the French Polynesia ZIKV strain as KJ776791_HPF2013.
+strain: HPF2013  # French Polynesia strain; GenBank ID KJ776791.
 
 experiment:
   method: NAI-MaP
@@ -24,47 +24,47 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106483
   run_accessions:
   - accession: GSM2838788
-    sample_name: Zika_French_Polynesia_NAI_r1
-    cell_line: ZIKV_KJ776791_HPF2013
+    sample_name: zika_french_polynesia_treated_r1
+    cell_line: zika_HPF2013
     condition: treated
     replicate: 1
   - accession: GSM2838789
-    sample_name: Zika_French_Polynesia_DMSO_r1
-    cell_line: ZIKV_KJ776791_HPF2013
+    sample_name: zika_french_polynesia_untreated_r1
+    cell_line: zika_HPF2013
     condition: untreated
     replicate: 1
   - accession: GSM2838790
-    sample_name: Zika_French_Polynesia_denatured_r1
-    cell_line: ZIKV_KJ776791_HPF2013
+    sample_name: zika_french_polynesia_denatured_r1
+    cell_line: zika_HPF2013
     condition: denatured
     replicate: 1
   - accession: GSM2838791
-    sample_name: Zika_French_Polynesia_NAI_r2
-    cell_line: ZIKV_KJ776791_HPF2013
+    sample_name: zika_french_polynesia_treated_r2
+    cell_line: zika_HPF2013
     condition: treated
     replicate: 2
   - accession: GSM2838792
-    sample_name: Zika_French_Polynesia_DMSO_r2
-    cell_line: ZIKV_KJ776791_HPF2013
+    sample_name: zika_french_polynesia_untreated_r2
+    cell_line: zika_HPF2013
     condition: untreated
     replicate: 2
   - accession: GSM2838793
-    sample_name: Zika_French_Polynesia_denatured_r2
-    cell_line: ZIKV_KJ776791_HPF2013
+    sample_name: zika_french_polynesia_denatured_r2
+    cell_line: zika_HPF2013
     condition: denatured
     replicate: 2
   - accession: GSM2838794
-    sample_name: Zika_French_Polynesia_NAI_r3
-    cell_line: ZIKV_KJ776791_HPF2013
+    sample_name: zika_french_polynesia_treated_r3
+    cell_line: zika_HPF2013
     condition: treated
     replicate: 3
   - accession: GSM2838795
-    sample_name: Zika_French_Polynesia_DMSO_r3
-    cell_line: ZIKV_KJ776791_HPF2013
+    sample_name: zika_french_polynesia_untreated_r3
+    cell_line: zika_HPF2013
     condition: untreated
     replicate: 3
   - accession: GSM2838796
-    sample_name: Zika_French_Polynesia_denatured_r3
-    cell_line: ZIKV_KJ776791_HPF2013
+    sample_name: zika_french_polynesia_denatured_r3
+    cell_line: zika_HPF2013
     condition: denatured
     replicate: 3

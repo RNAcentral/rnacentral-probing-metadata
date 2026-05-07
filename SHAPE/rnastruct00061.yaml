@@ -24,17 +24,17 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/sra/?term=SRP066015
   run_accessions:
   - accession: SRX1430832
-    sample_name: DENV2_exvirio_NMIA
-    cell_line: S16803
+    sample_name: dengue_S16803_ex_virio_treated
+    cell_line: dengue_S16803_ex_virio
     condition: treated
     replicate: 1
   - accession: SRX1430835
-    sample_name: DENV2_invirio_NMIA
-    cell_line: S16803
+    sample_name: dengue_S16803_in_virio_treated
+    cell_line: dengue_S16803_in_virio
     condition: treated
     replicate: 1
   - accession: SRX1430846
-    sample_name: DENV2_refolded_NMIA
-    cell_line: S16803
+    sample_name: dengue_S16803_in_vitro_treated
+    cell_line: dengue_S16803_in_vitro
     condition: treated
     replicate: 1

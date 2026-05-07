@@ -19,19 +19,16 @@ raw_data:
   repository: GEO
   accession: GSE83617
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83617
+  # Excluded from this curation:
+  # - GSM2211041 (mESC_NAI_vitro_K0): 0 mM K+ comparison; K150 is the condition closest to physiological ionic strength.
   run_accessions:
   - accession: GSM2211040
-    sample_name: mESC_NAI_vitro_K150
-    cell_line: mES_K150
-    condition: treated
-    replicate: 1
-  - accession: GSM2211041
-    sample_name: mESC_NAI_vitro_K0
-    cell_line: mES_K0
+    sample_name: mESC_treated_vitro_K150
+    cell_line: mES_vitro
     condition: treated
     replicate: 1
   - accession: GSM2211042
-    sample_name: mESC_NAI_vivo
+    sample_name: mESC_treated_vivo
     cell_line: mES_vivo
     condition: treated
     replicate: 1

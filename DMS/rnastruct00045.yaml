@@ -23,7 +23,7 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84537
   run_accessions:
   - accession: GSM2241643
-    sample_name: HEK293Ts_in_vivo
+    sample_name: HEK293T_in_vivo
     cell_line: HEK293T
     condition: treated
     replicate: 1

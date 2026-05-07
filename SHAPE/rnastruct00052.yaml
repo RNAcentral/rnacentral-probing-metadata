@@ -1,7 +1,7 @@
 dataset_id: rnastruct00052
 
 organism: Zika virus
-strain: KU365780_BeH815744  # Paper reports the Brazil Polynesia ZIKV strain as KU365780_BeH815744.
+strain: BeH815744  # Brazil/Polynesia strain; GenBank ID KU365780.
 
 experiment:
   method: NAI-MaP
@@ -24,47 +24,47 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106483
   run_accessions:
   - accession: GSM2838779
-    sample_name: Zika_Brazil_NAI_r1
-    cell_line: ZIKV_KU365780_BeH815744
+    sample_name: zika_brazil_treated_r1
+    cell_line: zika_BeH815744
     condition: treated
     replicate: 1
   - accession: GSM2838780
-    sample_name: Zika_Brazil_DMSO_r1
-    cell_line: ZIKV_KU365780_BeH815744
+    sample_name: zika_brazil_untreated_r1
+    cell_line: zika_BeH815744
     condition: untreated
     replicate: 1
   - accession: GSM2838781
-    sample_name: Zika_Brazil_denatured_r1
-    cell_line: ZIKV_KU365780_BeH815744
+    sample_name: zika_brazil_denatured_r1
+    cell_line: zika_BeH815744
     condition: denatured
     replicate: 1
   - accession: GSM2838782
-    sample_name: Zika_Brazil_NAI_r2
-    cell_line: ZIKV_KU365780_BeH815744
+    sample_name: zika_brazil_treated_r2
+    cell_line: zika_BeH815744
     condition: treated
     replicate: 2
   - accession: GSM2838783
-    sample_name: Zika_Brazil_DMSO_r2
-    cell_line: ZIKV_KU365780_BeH815744
+    sample_name: zika_brazil_untreated_r2
+    cell_line: zika_BeH815744
     condition: untreated
     replicate: 2
   - accession: GSM2838784
-    sample_name: Zika_Brazil_denatured_r2
-    cell_line: ZIKV_KU365780_BeH815744
+    sample_name: zika_brazil_denatured_r2
+    cell_line: zika_BeH815744
     condition: denatured
     replicate: 2
   - accession: GSM2838785
-    sample_name: Zika_Brazil_NAI_r3
-    cell_line: ZIKV_KU365780_BeH815744
+    sample_name: zika_brazil_treated_r3
+    cell_line: zika_BeH815744
     condition: treated
     replicate: 3
   - accession: GSM2838786
-    sample_name: Zika_Brazil_DMSO_r3
-    cell_line: ZIKV_KU365780_BeH815744
+    sample_name: zika_brazil_untreated_r3
+    cell_line: zika_BeH815744
     condition: untreated
     replicate: 3
   - accession: GSM2838787
-    sample_name: Zika_Brazil_denatured_r3
-    cell_line: ZIKV_KU365780_BeH815744
+    sample_name: zika_brazil_denatured_r3
+    cell_line: zika_BeH815744
     condition: denatured
     replicate: 3

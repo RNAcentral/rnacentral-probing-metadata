@@ -23,12 +23,12 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE54106
   run_accessions:
   - accession: GSM1464623
-    sample_name: DMS_r1
+    sample_name: mESC_r1
     cell_line: mESC
     condition: treated
     replicate: 1
   - accession: GSM1464626
-    sample_name: DMS_r2
+    sample_name: mESC_r2
     cell_line: mESC
     condition: treated
     replicate: 2

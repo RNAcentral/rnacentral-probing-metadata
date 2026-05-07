@@ -23,52 +23,52 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE64169
   run_accessions:
   - accession: GSM1464037
-    sample_name: v65_DMSO_r1
-    cell_line: mES_v65
+    sample_name: mESC_untreated_r1
+    cell_line: mES_vivo
     condition: untreated
     replicate: 1
   - accession: GSM1464038
-    sample_name: v65_DMSO_r2
-    cell_line: mES_v65
+    sample_name: mESC_untreated_r2
+    cell_line: mES_vivo
     condition: untreated
     replicate: 2
   - accession: GSM1464039
-    sample_name: v65_in_vitro_r1
-    cell_line: mES_v65
+    sample_name: mESC_in_vitro_r1
+    cell_line: mES_vitro
     condition: treated
     replicate: 1
   - accession: GSM1464040
-    sample_name: v65_in_vitro_r2
-    cell_line: mES_v65
+    sample_name: mESC_in_vitro_r2
+    cell_line: mES_vitro
     condition: treated
     replicate: 2
   - accession: GSM1464041
-    sample_name: v65_in_vivo_r1
-    cell_line: mES_v65
+    sample_name: mESC_in_vivo_r1
+    cell_line: mES_vivo
     condition: treated
     replicate: 1
   - accession: GSM1464042
-    sample_name: v65_in_vivo_r2
-    cell_line: mES_v65
+    sample_name: mESC_in_vivo_r2
+    cell_line: mES_vivo
     condition: treated
     replicate: 2
   - accession: GSM1565484
-    sample_name: METTL3_KO_DMSO_r1
-    cell_line: mES_J1
+    sample_name: mESC_METTL3_KO_untreated_r1
+    cell_line: mES_METTL3_KO
     condition: untreated
     replicate: 1
   - accession: GSM1565485
-    sample_name: METTL3_KO_DMSO_r2
-    cell_line: mES_J1
+    sample_name: mESC_METTL3_KO_untreated_r2
+    cell_line: mES_METTL3_KO
     condition: untreated
     replicate: 2
   - accession: GSM1565486
-    sample_name: METTL3_KO_treated_r1
-    cell_line: mES_J1
+    sample_name: mESC_METTL3_KO_treated_r1
+    cell_line: mES_METTL3_KO
     condition: treated
     replicate: 1
   - accession: GSM1565487
-    sample_name: METTL3_KO_treated_r2
-    cell_line: mES_J1
+    sample_name: mESC_METTL3_KO_treated_r2
+    cell_line: mES_METTL3_KO
     condition: treated
     replicate: 2

@@ -23,47 +23,47 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE117840
   run_accessions:
   - accession: GSM3310477
-    sample_name: mESchD
-    cell_line: V65_ES_chromatin_untreated
+    sample_name: mESC_chromatin_untreated  # chromatin: nascent RNA still associated with chromosomal DNA
+    cell_line: mESC_chromatin_vivo
     condition: untreated
     replicate: 1
   - accession: GSM3310478
-    sample_name: mESchN
-    cell_line: V65_ES_chromatin_in_vivo
+    sample_name: mESC_chromatin_in_vivo
+    cell_line: mESC_chromatin_vivo
     condition: treated
     replicate: 1
   - accession: GSM3310479
-    sample_name: mESchT
-    cell_line: V65_ES_chromatin_in_vitro
+    sample_name: mESC_chromatin_in_vitro
+    cell_line: mESC_chromatin_vitro
     condition: treated
     replicate: 1
   - accession: GSM3310480
-    sample_name: mESnpD
-    cell_line: V65_ES_nucleoplasm_untreated
+    sample_name: mESC_nucleoplasm_untreated  # nucleoplasm: RNA free in the nucleus, post-transcriptional but pre-export
+    cell_line: mESC_nucleoplasm_vivo
     condition: untreated
     replicate: 1
   - accession: GSM3310481
-    sample_name: mESnpN
-    cell_line: V65_ES_nucleoplasm_in_vivo
+    sample_name: mESC_nucleoplasm_in_vivo
+    cell_line: mESC_nucleoplasm_vivo
     condition: treated
     replicate: 1
   - accession: GSM3310482
-    sample_name: mESnpT
-    cell_line: V65_ES_nucleoplasm_in_vitro
+    sample_name: mESC_nucleoplasm_in_vitro
+    cell_line: mESC_nucleoplasm_vitro
     condition: treated
     replicate: 1
   - accession: GSM3310483
-    sample_name: mEScyD
-    cell_line: V65_ES_cytoplasm_untreated
+    sample_name: mESC_cytoplasm_untreated  # cytoplasm: mature exported RNA
+    cell_line: mESC_cytoplasm_vivo
     condition: untreated
     replicate: 1
   - accession: GSM3310484
-    sample_name: mEScyN
-    cell_line: V65_ES_cytoplasm_in_vivo
+    sample_name: mESC_cytoplasm_in_vivo
+    cell_line: mESC_cytoplasm_vivo
     condition: treated
     replicate: 1
   - accession: GSM3310485
-    sample_name: mEScyT
-    cell_line: V65_ES_cytoplasm_in_vitro
+    sample_name: mESC_cytoplasm_in_vitro
+    cell_line: mESC_cytoplasm_vitro
     condition: treated
     replicate: 1

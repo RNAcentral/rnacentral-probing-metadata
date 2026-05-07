@@ -23,22 +23,22 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE155961
   run_accessions:
   - accession: GSM4717180
-    sample_name: c57bl_6j_mouse_Ly6Clo_macrophages_r1
-    cell_line: C57BL6J_Ly6Clo
+    sample_name: C57BL6J_macrophages_low_r1  # macrophages sorted by Ly6C surface expression to achieve high or low subpopulations
+    cell_line: C57BL6J_mac_low
     condition: treated
     replicate: 1
   - accession: GSM4717181
-    sample_name: c57bl_6j_mouse_Ly6Clo_macrophages_r2
-    cell_line: C57BL6J_Ly6Clo
+    sample_name: C57BL6J_macrophages_low_r2
+    cell_line: C57BL6J_mac_low
     condition: treated
     replicate: 2
   - accession: GSM4717182
-    sample_name: c57bl_6j_mouse_ly6chi_macrophages_r1
-    cell_line: C57BL6J_Ly6Chi
+    sample_name: C57BL6J_macrophages_high_r1
+    cell_line: C57BL6J_mac_high
     condition: treated
     replicate: 1
   - accession: GSM4717183
-    sample_name: c57bl_6j_mouse_ly6chi_macrophages_r2
-    cell_line: C57BL6J_Ly6Chi
+    sample_name: C57BL6J_macrophages_high_r2
+    cell_line: C57BL6J_mac_high
     condition: treated
     replicate: 2
