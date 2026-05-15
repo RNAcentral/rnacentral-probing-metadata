@@ -19,7 +19,7 @@ classes:
       schema_version:
         required: true
         range: SchemaVersionEnum
-        description: Version of the RNAcentral probing metadata contract.
+        description: Version of the RNAcentral probing metadata schema.
       organism:
         required: true
         range: string
