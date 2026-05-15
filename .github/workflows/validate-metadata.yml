@@ -44,7 +44,23 @@ jobs:
 
           if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
             base_ref="origin/${{ github.base_ref }}"
-            mapfile -t yaml_files < <(git diff --name-only "${base_ref}"...HEAD -- SHAPE DMS | grep -E '\.ya?ml$' || true)
+            mapfile -t changed_files < <(git diff --name-only "${base_ref}"...HEAD)
+
+            validate_all=false
+            for changed_file in "${changed_files[@]}"; do
+              case "${changed_file}" in
+                schema/*.yaml|scripts/creating_ids.py|scripts/check_metadata_uniqueness.py|scripts/validate_obi_ids.py|scripts/validate_ncbi_taxonomy.py|requirements.txt|.github/workflows/validate-metadata.yml)
+                  validate_all=true
+                  break
+                  ;;
+              esac
+            done
+
+            if [[ "${validate_all}" == "true" ]]; then
+              mapfile -t yaml_files < <(find SHAPE DMS -maxdepth 1 -type f \( -name '*.yaml' -o -name '*.yml' \) | sort)
+            else
+              mapfile -t yaml_files < <(printf '%s\n' "${changed_files[@]}" | grep -E '^(SHAPE|DMS)/.*\.ya?ml$' || true)
+            fi
           else
             mapfile -t yaml_files < <(find SHAPE DMS -maxdepth 1 -type f \( -name '*.yaml' -o -name '*.yml' \) | sort)
           fi
