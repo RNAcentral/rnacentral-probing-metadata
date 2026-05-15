@@ -1,4 +1,5 @@
 dataset_id: rnastruct00051
+schema_version: "1.0.0"
 
 organism: Zika virus
 strain: MR766  # African strain; GenBank ID AY632535.

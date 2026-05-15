@@ -1,4 +1,5 @@
 dataset_id: rnastruct00028
+schema_version: "1.0.0"
 
 organism: SARS-CoV-2
 strain: Leiden-0002  # GEO reports SARS-CoV-2/Leiden-0002, GenBank MT510999.

@@ -1,4 +1,5 @@
 dataset_id: rnastruct00046
+schema_version: "1.0.0"
 
 organism: Dengue virus
 strain: EDEN2402  # Dengue serotype 1 is reported as EDEN2402 in the paper, with the Genbank ID EU081230.1.

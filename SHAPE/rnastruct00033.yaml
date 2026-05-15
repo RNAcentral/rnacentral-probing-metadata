@@ -1,4 +1,5 @@
 dataset_id: rnastruct00033
+schema_version: "1.0.0"
 
 organism: Influenza A virus
 strain: A/Udorn/307/1972(H3N2)  # Udorn abbreviation for A/Udorn/307/1972(H3N2).

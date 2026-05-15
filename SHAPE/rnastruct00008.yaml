@@ -1,4 +1,5 @@
 dataset_id: rnastruct00008
+schema_version: "1.0.0"
 
 organism: Zika virus
 strain: KJ776791_HPF2013  # Paper reports the French Polynesia ZIKV strain as KJ776791_HPF2013.

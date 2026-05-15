@@ -1,4 +1,5 @@
 dataset_id: rnastruct00041
+schema_version: "1.0.0"
 
 organism: SARS-CoV-2
 strain: EPI_ISL_414378  # GEO reports the Delta382 SARS-CoV-2 background as EPI_ISL_414378.

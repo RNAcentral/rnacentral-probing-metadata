@@ -1,5 +1,6 @@
 id: https://example.org/rnastruct
 name: rnastruct
+version: "1.0.0"
 prefixes:
   linkml: https://w3id.org/linkml/
   rnastruct: https://example.org/rnastruct/
@@ -15,6 +16,10 @@ classes:
       dataset_id:
         required: true
         pattern: "^rnastruct\\d{5}$"
+      schema_version:
+        required: true
+        range: SchemaVersionEnum
+        description: Version of the RNAcentral probing metadata contract.
       organism:
         required: true
         range: string
@@ -105,6 +110,10 @@ classes:
         range: integer
 
 enums:
+  SchemaVersionEnum:
+    permissible_values:
+      "1.0.0":
+
   PrincipleEnum:
     permissible_values:
       RT-stop:

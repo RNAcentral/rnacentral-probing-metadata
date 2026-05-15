@@ -1,4 +1,5 @@
 dataset_id: rnastruct00010
+schema_version: "1.0.0"
 
 organism: HIV
 strain: HIV-1_NL4-3  # SRA sample names report HIV NL4-3 folded and control viral RNA.

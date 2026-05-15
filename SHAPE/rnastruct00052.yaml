@@ -1,4 +1,5 @@
 dataset_id: rnastruct00052
+schema_version: "1.0.0"
 
 organism: Zika virus
 strain: BeH815744  # Brazil/Polynesia strain; GenBank ID KU365780.
