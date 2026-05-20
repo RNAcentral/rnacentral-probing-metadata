@@ -1,4 +1,5 @@
 dataset_id: rnastruct00003
+schema_version: "1.0.0"
 
 organism: Mus musculus
 

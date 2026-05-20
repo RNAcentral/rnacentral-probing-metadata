@@ -1,4 +1,5 @@
 dataset_id: rnastruct00014
+schema_version: "1.0.0"
 
 organism: Influenza A virus
 strain: A/Puerto Rico/8/1934(H1N1)

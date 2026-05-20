@@ -1,4 +1,5 @@
 dataset_id: rnastruct00053
+schema_version: "1.0.0"
 
 organism: Zika virus
 strain: HPF2013  # French Polynesia strain; GenBank ID KJ776791.

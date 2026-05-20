@@ -8,6 +8,13 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_YAML = REPO_ROOT / "schema" / "rnastruct.schema.yaml"
+CURRENT_SCHEMA_VERSION = "1.0.0"
+
+
+def metadata_files() -> list[Path]:
+    return sorted((REPO_ROOT / "SHAPE").glob("*.yaml")) + sorted(
+        (REPO_ROOT / "DMS").glob("*.yaml")
+    )
 
 
 def organism_pattern() -> re.Pattern[str]:
@@ -34,3 +41,23 @@ def test_organism_pattern_rejects_unstructured_names():
 
     assert pattern.fullmatch("not a species") is None
     assert pattern.fullmatch("Influenza") is None
+
+
+def test_schema_declares_current_version():
+    with SCHEMA_YAML.open(encoding="utf-8") as handle:
+        schema = yaml.safe_load(handle)
+
+    assert schema["version"] == CURRENT_SCHEMA_VERSION
+    values = schema["enums"]["SchemaVersionEnum"]["permissible_values"]
+    assert list(values) == [CURRENT_SCHEMA_VERSION]
+
+
+def test_metadata_files_declare_current_schema_version():
+    paths = metadata_files()
+    assert paths
+
+    for path in paths:
+        with path.open(encoding="utf-8") as handle:
+            metadata = yaml.safe_load(handle)
+
+        assert metadata["schema_version"] == CURRENT_SCHEMA_VERSION, path

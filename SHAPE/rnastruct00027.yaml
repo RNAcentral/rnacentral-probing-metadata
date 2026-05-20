@@ -1,4 +1,5 @@
 dataset_id: rnastruct00027
+schema_version: "1.0.0"
 
 organism: SARS-CoV-2
 strain: EPI_ISL_407987  # GEO reports the WT SARS-CoV-2 background as EPI_ISL_407987.

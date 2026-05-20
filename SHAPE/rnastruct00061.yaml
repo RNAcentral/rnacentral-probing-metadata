@@ -1,4 +1,5 @@
 dataset_id: rnastruct00061
+schema_version: "1.0.0"
 
 organism: Dengue virus
 strain: S16803

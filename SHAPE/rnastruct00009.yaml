@@ -1,4 +1,5 @@
 dataset_id: rnastruct00009
+schema_version: "1.0.0"
 
 organism: Zika virus
 strain: MR766  # ENA sample reports Zika virus MR766, virus identifier AY632535.2.

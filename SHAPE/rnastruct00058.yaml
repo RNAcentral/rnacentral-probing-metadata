@@ -1,4 +1,6 @@
 dataset_id: rnastruct00058
+schema_version: "1.0.0"
+
 organism: Mus musculus
 experiment:
   method: SHAPE
