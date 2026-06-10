@@ -1,0 +1,60 @@
+dataset_id: rnastruct00062
+schema_version: "1.0.0"
+
+organism: Homo sapiens
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003888
+  chemical: 2A3
+  context: [in_vivo]
+  pH: null
+  adapter_3p: AGATCGGAAGAGCACACGTCT
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-026-70801-9
+  year: 2026
+
+raw_data:
+  repository: GEO
+  accession: GSE302505
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302505
+  # Excluded from this curation:
+  # - GSM9436295–GSM9436303 (targeted SHAPE-MaP dose-response series, Illumina iSeq 100): amplicon-based
+  #   targeted library covering specific MTX-binding sites at 0–25 µM MTX; not part of the transcriptome-wide
+  #   reactivity dataset. Note: GEO sample titles label these concentrations in mM but actual values are µM
+  #   (confirmed by supplementary file names, e.g. GSM9436302_MTX_10uM.wig.gz).
+  run_accessions:
+  - accession: GSM9105244
+    sample_name: MDA-MB-231_DMSO_untreated_r1
+    cell_line: MDA-MB-231_DMSO
+    condition: untreated
+    replicate: 1
+  - accession: GSM9105245
+    sample_name: MDA-MB-231_DMSO_untreated_r2
+    cell_line: MDA-MB-231_DMSO 
+    condition: untreated
+    replicate: 2
+  - accession: GSM9105246
+    sample_name: MDA-MB-231_DMSO_treated_r1
+    cell_line: MDA-MB-231_DMSO
+    condition: treated
+    replicate: 1
+  - accession: GSM9105247
+    sample_name: MDA-MB-231_DMSO_treated_r2
+    cell_line: MDA-MB-231_DMSO
+    condition: treated
+    replicate: 2
+  - accession: GSM9105248
+    sample_name: MDA-MB-231_MTX_treated_r1
+    cell_line: MDA-MB-231_MTX
+    condition: treated
+    replicate: 1
+  - accession: GSM9105249
+    sample_name: MDA-MB-231_MTX_treated_r2
+    cell_line: MDA-MB-231_MTX
+    condition: treated
+    replicate: 2
