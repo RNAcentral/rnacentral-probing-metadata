@@ -87,8 +87,8 @@ def test_validate_metadata_file_reports_null_obi_as_missing(tmp_path):
 
 def test_validate_metadata_file_reports_unmapped_chemical(tmp_path):
     yaml_path = tmp_path / "metadata.yaml"
-    _write_yaml(yaml_path, "2A3", "OBI:1234567")
+    _write_yaml(yaml_path, "UNKNOWN_REAGENT", "OBI:1234567")
 
     issues = validate_obi_ids.validate_metadata_file(yaml_path)
 
-    assert issues == [f"{yaml_path}: no OBI mapping configured for chemical '2A3'"]
+    assert issues == [f"{yaml_path}: no OBI mapping configured for chemical 'UNKNOWN_REAGENT'"]

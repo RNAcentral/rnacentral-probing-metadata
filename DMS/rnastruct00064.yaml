@@ -1,0 +1,48 @@
+dataset_id: rnastruct00064
+schema_version: "1.0.0"
+
+organism: Escherichia coli
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  context: [in_vivo, ex_vivo]
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41587-025-02739-0
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE247244
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247244
+  # Partial curation: only E. coli total RNA samples at 37°C are included here, for use
+  # with rf-jackknife to optimise folding parameters against rRNA reference structures.
+  # The full dataset (GSE247244) also contains E. coli samples at 10°C and H. sapiens data.
+  run_accessions:
+  - accession: GSM7885842
+    sample_name: E_coli_DH5a_in_vivo_37C_treated
+    cell_line: E_coli_DH5a_in_vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM7885843
+    sample_name: E_coli_TOP10_in_vivo_37C_treated
+    cell_line: E_coli_TOP10_in_vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM7885844
+    sample_name: E_coli_DH5a_ex_vivo_37C_treated
+    cell_line: E_coli_DH5a_ex_vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM7885845
+    sample_name: E_coli_TOP10_ex_vivo_37C_treated
+    cell_line: E_coli_TOP10_ex_vivo
+    condition: treated
+    replicate: 1
