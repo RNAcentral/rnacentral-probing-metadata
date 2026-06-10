@@ -15,6 +15,7 @@ EXPECTED_OBI_BY_CHEMICAL = {
     "1M7": "OBI:0003885",
     "NAI": "OBI:0003886",
     "NAI-N3": "OBI:0003887",
+    "2A3": "OBI:0003888",
     "1M6": "OBI:0003895",
     "5NIA": "OBI:0003896",
 }
