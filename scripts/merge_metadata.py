@@ -76,6 +76,7 @@ ACCESSION_MATCH_COLUMNS = (
     "experiment_alias",
     "run_alias",
     "sample",
+    "library_name",  # GEO: newer records store GSM ID here; secondary_sample_accession is SRS
 )
 
 
