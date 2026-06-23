@@ -38,6 +38,8 @@ classes:
       raw_data:
         required: true
         range: RawData
+      comment:
+        range: string
 
   Experiment:
     attributes:
@@ -110,6 +112,8 @@ classes:
       replicate:
         required: true
         range: integer
+      comment:
+        range: string
 
 enums:
   SchemaVersionEnum:

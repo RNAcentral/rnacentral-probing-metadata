@@ -2,7 +2,10 @@
 """Build a pipeline samplesheet from fetchngs CSV + dataset YAML.
 
 Output format:
-sample,sample_id,fastq_1,fastq_2,method,principle,cell_line,condition,replicate,organism,pH,adapter_3p,adapter_5p,umi_pattern
+sample,sample_id,fastq_1,fastq_2,method,principle,sample_group,
+condition,replicate,organism,pH,adapter_3p,adapter_5p,umi_pattern
+
+Samples whose comment field starts with "failed QC" are excluded.
 """
 
 from __future__ import annotations
@@ -27,8 +30,12 @@ VIRAL_ORGANISMS = {
 def parse_args() -> argparse.Namespace:
     """Parse command-line arguments for metadata merge inputs and output path."""
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--samplesheet", required=True, help="Path to fetchngs samplesheet CSV")
-    parser.add_argument("--metadata", required=True, help="Path to manual dataset metadata YAML")
+    parser.add_argument(
+        "--samplesheet", required=True, help="Path to fetchngs samplesheet CSV"
+    )
+    parser.add_argument(
+        "--metadata", required=True, help="Path to manual dataset metadata YAML"
+    )
     parser.add_argument(
         "--out",
         help="Output samplesheet CSV path. Default: <dataset_id>_samplesheet.csv",
@@ -48,23 +55,32 @@ def read_yaml(path: Path) -> dict:
     return data
 
 
+def _is_failed_qc(item: dict) -> bool:
+    comment = str(item.get("comment") or "")
+    return comment.startswith("failed QC")
+
+
 def extract_run_metadata_map(metadata: dict) -> dict[str, dict[str, str]]:
-    """Map raw-data accession IDs to per-sample metadata from manual YAML."""
+    """Map accession IDs to per-sample metadata, skipping failed-QC entries."""
     raw_data = metadata.get("raw_data")
     if not isinstance(raw_data, dict):
         raise ValueError("Metadata YAML is missing a 'raw_data' mapping.")
     run_accessions = raw_data.get("run_accessions")
     if not isinstance(run_accessions, list):
         raise ValueError("'raw_data.run_accessions' must be a list.")
-    return {
-        str(item["accession"]).strip(): {
+
+    result = {}
+    for item in run_accessions:
+        if _is_failed_qc(item):
+            continue
+        accession = str(item["accession"]).strip()
+        result[accession] = {
             "sample_name": str(item["sample_name"]).strip(),
-            "cell_line": str(item.get("cell_line", "")).strip(),
+            "sample_group": str(item.get("sample_group", "")).strip(),
             "condition": str(item.get("condition", "")).strip(),
             "replicate": str(item.get("replicate", "")).strip(),
         }
-        for item in run_accessions
-    }
+    return result
 
 
 ACCESSION_MATCH_COLUMNS = (
@@ -129,6 +145,32 @@ def extract_organism_name(metadata: dict) -> str:
     return organism_name
 
 
+def _build_out_row(
+    run_accession: str,
+    run_metadata: dict[str, str],
+    fetchngs_row: dict[str, str],
+    experiment: dict,
+    method: str,
+    organism: str,
+) -> dict[str, str]:
+    return {
+        "sample": run_metadata["sample_name"],
+        "sample_id": run_accession,
+        "fastq_1": fetchngs_row.get("fastq_1", ""),
+        "fastq_2": fetchngs_row.get("fastq_2", ""),
+        "method": method,
+        "principle": experiment.get("principle", ""),
+        "sample_group": run_metadata["sample_group"],
+        "condition": run_metadata["condition"],
+        "replicate": run_metadata["replicate"],
+        "organism": organism,
+        "pH": experiment.get("pH", ""),
+        "adapter_3p": experiment.get("adapter_3p", ""),
+        "adapter_5p": experiment.get("adapter_5p", ""),
+        "umi_pattern": experiment.get("umi_pattern", ""),
+    }
+
+
 def main() -> int:
     """Merge fetchngs samplesheet rows with dataset metadata and write output CSV."""
     args = parse_args()
@@ -144,9 +186,10 @@ def main() -> int:
     metadata = read_yaml(metadata_path)
     run_metadata_map = extract_run_metadata_map(metadata)
     dataset_id = metadata.get("dataset_id", "")
-    experiment = (metadata.get("experiment") or {})
+    experiment = metadata.get("experiment") or {}
     organism = extract_organism_name(metadata)
     method = normalize_method(experiment.get("chemical", ""))
+
     if out_path is None:
         if dataset_id:
             out_path = metadata_path.parent / f"{dataset_id}_samplesheet.csv"
@@ -154,45 +197,29 @@ def main() -> int:
             out_path = metadata_path.parent / "merged_samplesheet.csv"
 
     out_rows = []
-    missing_run_accessions = []
+    missing_accessions = []
     for row in rows:
         run_accession, run_metadata = find_run_metadata(row, run_metadata_map)
-        if not run_metadata:
-            missing_run_accessions.append(
-                (row.get("sample_alias") or row.get("sample") or "<unknown>").strip()
-            )
+        if run_accession is None or run_metadata is None:
+            alias = (row.get("sample_alias") or row.get("sample") or "<unknown>").strip()
+            missing_accessions.append(alias)
             continue
-
         out_rows.append(
-            {
-                "sample": run_metadata["sample_name"],
-                "sample_id": run_accession,
-                "cell_line": run_metadata["cell_line"],
-                "condition": run_metadata["condition"],
-                "replicate": run_metadata["replicate"],
-                "fastq_1": row.get("fastq_1", ""),
-                "fastq_2": row.get("fastq_2", ""),
-                "method": method,
-                "principle": experiment.get("principle", ""),
-                "organism": organism,
-                "pH": experiment.get("pH", ""),
-                "adapter_3p": experiment.get("adapter_3p", ""),
-                "adapter_5p": experiment.get("adapter_5p", ""),
-                "umi_pattern": experiment.get("umi_pattern", ""),
-            }
+            _build_out_row(run_accession, run_metadata, row, experiment, method, organism)
         )
 
-    if missing_run_accessions:
+    if missing_accessions:
+        n = len(missing_accessions)
+        joined = ", ".join(missing_accessions)
         print(
-            f"WARNING: {len(missing_run_accessions)} fetchngs row(s) had no matching YAML accession "
-            f"and were skipped: {', '.join(missing_run_accessions)}",
+            f"WARNING: {n} fetchngs row(s) had no matching YAML accession"
+            f" and were skipped: {joined}",
             file=sys.stderr,
         )
 
     if not out_rows:
         raise ValueError("No rows produced. Check run_accessions and fetchngs IDs.")
 
-    out_path.parent.mkdir(parents=True, exist_ok=True)
     fieldnames = [
         "sample",
         "sample_id",
@@ -200,7 +227,7 @@ def main() -> int:
         "fastq_2",
         "method",
         "principle",
-        "cell_line",
+        "sample_group",
         "condition",
         "replicate",
         "organism",
@@ -209,6 +236,7 @@ def main() -> int:
         "adapter_5p",
         "umi_pattern",
     ]
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()

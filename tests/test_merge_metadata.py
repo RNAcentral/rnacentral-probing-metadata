@@ -27,7 +27,7 @@ def test_extract_run_metadata_map_includes_sample_fields():
                 {
                     "accession": "GSM1",
                     "sample_name": "HeLa_treated_r1",
-                    "cell_line": "HeLa",
+                    "sample_group": "HeLa",
                     "condition": "treated",
                     "replicate": 1,
                 }
@@ -40,11 +40,41 @@ def test_extract_run_metadata_map_includes_sample_fields():
     assert result == {
         "GSM1": {
             "sample_name": "HeLa_treated_r1",
-            "cell_line": "HeLa",
+            "sample_group": "HeLa",
             "condition": "treated",
             "replicate": "1",
         }
     }
+
+
+def test_extract_run_metadata_map_skips_failed_qc():
+    metadata = {
+        "raw_data": {
+            "run_accessions": [
+                {
+                    "accession": "GSM1",
+                    "sample_name": "HeLa_treated_r1",
+                    "sample_group": "HeLa",
+                    "condition": "treated",
+                    "replicate": 1,
+                    "comment": "failed QC: no biological replicates",
+                },
+                {
+                    "accession": "GSM2",
+                    "sample_name": "HeLa_treated_r2",
+                    "sample_group": "HeLa",
+                    "condition": "treated",
+                    "replicate": 2,
+                    "comment": None,
+                },
+            ]
+        }
+    }
+
+    result = merge_metadata.extract_run_metadata_map(metadata)
+
+    assert "GSM1" not in result
+    assert "GSM2" in result
 
 
 def test_extract_organism_name_keeps_non_viral_organism_unchanged():
@@ -98,20 +128,20 @@ def test_main_writes_new_sample_metadata_columns(tmp_path, monkeypatch, capsys):
     header = output_path.read_text(encoding="utf-8").splitlines()[0]
     assert header == (
         "sample,sample_id,fastq_1,fastq_2,method,principle,"
-        "cell_line,condition,replicate,organism,pH,adapter_3p,adapter_5p,umi_pattern"
+        "sample_group,condition,replicate,organism,pH,adapter_3p,adapter_5p,umi_pattern"
     )
 
     with output_path.open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
 
     assert len(rows) == 2
-    assert rows[0]["sample"] == "HEK293T_untreated_r1"
-    assert rows[0]["cell_line"] == "HEK293T"
+    assert rows[0]["sample"] == "HEK293_untreated_r1"
+    assert rows[0]["sample_group"] == "HEK293"
     assert rows[0]["condition"] == "untreated"
     assert rows[0]["replicate"] == "1"
     assert rows[0]["organism"] == "Homo sapiens"
     assert rows[1]["sample"] == "K562_untreated_r1"
-    assert rows[1]["cell_line"] == "K562"
+    assert rows[1]["sample_group"] == "K562"
     assert rows[1]["condition"] == "untreated"
     assert rows[1]["replicate"] == "1"
     assert rows[1]["method"] == "SHAPE"
@@ -141,7 +171,7 @@ def test_main_writes_viral_organism_with_strain(tmp_path, monkeypatch):
             "  run_accessions:\n"
             "  - accession: GSM3463235\n"
             "    sample_name: PR8_treated\n"
-            "    cell_line: IAV_PR8_in_vivo\n"
+            "    sample_group: IAV_PR8_in_vivo\n"
             "    condition: treated\n"
             "    replicate: 1\n"
         ),
@@ -197,12 +227,12 @@ def test_main_matches_experiment_accession_when_sample_alias_is_descriptive(
             "  run_accessions:\n"
             "  - accession: SRX4223900\n"
             "    sample_name: PR8_in_virio_treated\n"
-            "    cell_line: IAV_PR8\n"
+            "    sample_group: IAV_PR8\n"
             "    condition: treated\n"
             "    replicate: 1\n"
             "  - accession: SRX4223899\n"
             "    sample_name: PR8_in_virio_untreated\n"
-            "    cell_line: IAV_PR8\n"
+            "    sample_group: IAV_PR8\n"
             "    condition: untreated\n"
             "    replicate: 1\n"
         ),
