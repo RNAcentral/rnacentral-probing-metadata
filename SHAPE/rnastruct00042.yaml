@@ -25,31 +25,31 @@ raw_data:
   run_accessions:
   - accession: GSM2075714
     sample_name: HEK293T_untreated_r1
-    cell_line: HEK293T_vivo
+    sample_group: HEK293T_vivo
     condition: untreated
     replicate: 1
   - accession: GSM2075715
     sample_name: HEK293T_untreated_r2
-    cell_line: HEK293T_vivo
+    sample_group: HEK293T_vivo
     condition: untreated
     replicate: 2
   - accession: GSM2075716
     sample_name: HEK293T_in_vitro_r1
-    cell_line: HEK293T_vitro
+    sample_group: HEK293T_vitro
     condition: treated
     replicate: 1
   - accession: GSM2075717
     sample_name: HEK293T_in_vitro_r2
-    cell_line: HEK293T_vitro
+    sample_group: HEK293T_vitro
     condition: treated
     replicate: 2
   - accession: GSM2075718
     sample_name: HEK293T_in_vivo_r1
-    cell_line: HEK293T_vivo
+    sample_group: HEK293T_vivo
     condition: treated
     replicate: 1
   - accession: GSM2075719
     sample_name: HEK293T_in_vivo_r2
-    cell_line: HEK293T_vivo
+    sample_group: HEK293T_vivo
     condition: treated
     replicate: 2

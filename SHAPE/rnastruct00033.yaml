@@ -26,11 +26,11 @@ raw_data:
   run_accessions:
   - accession: SRX4223898
     sample_name: Udorn_in_virio_treated
-    cell_line: IAV_Udorn
+    sample_group: IAV_Udorn
     condition: treated
     replicate: 1
   - accession: SRX4223897
     sample_name: Udorn_in_virio_untreated
-    cell_line: IAV_Udorn
+    sample_group: IAV_Udorn
     condition: untreated
     replicate: 1

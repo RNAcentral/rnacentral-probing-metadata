@@ -28,11 +28,11 @@ raw_data:
   run_accessions:
   - accession: GSM2211036
     sample_name: Synechococcus_untreated_K150
-    cell_line: Parasynechococcus_marenigrum_WH_8102
+    sample_group: Parasynechococcus_marenigrum_WH_8102
     condition: untreated
     replicate: 1
   - accession: GSM2211038
     sample_name: Synechococcus_DMS_vitro_K150
-    cell_line: Parasynechococcus_marenigrum_WH_8102
+    sample_group: Parasynechococcus_marenigrum_WH_8102
     condition: treated
     replicate: 1

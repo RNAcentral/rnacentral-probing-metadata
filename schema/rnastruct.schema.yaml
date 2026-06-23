@@ -98,7 +98,7 @@ classes:
       sample_name:
         required: true
         range: string
-      cell_line:
+      sample_group:
         required: true
         range: string
         pattern: "^\\S+$"

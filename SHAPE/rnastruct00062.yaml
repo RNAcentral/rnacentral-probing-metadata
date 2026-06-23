@@ -30,31 +30,31 @@ raw_data:
   run_accessions:
   - accession: GSM9105244
     sample_name: MDA-MB-231_DMSO_untreated_r1
-    cell_line: MDA-MB-231_DMSO
+    sample_group: MDA-MB-231_DMSO
     condition: untreated
     replicate: 1
   - accession: GSM9105245
     sample_name: MDA-MB-231_DMSO_untreated_r2
-    cell_line: MDA-MB-231_DMSO 
+    sample_group: MDA-MB-231_DMSO 
     condition: untreated
     replicate: 2
   - accession: GSM9105246
     sample_name: MDA-MB-231_DMSO_treated_r1
-    cell_line: MDA-MB-231_DMSO
+    sample_group: MDA-MB-231_DMSO
     condition: treated
     replicate: 1
   - accession: GSM9105247
     sample_name: MDA-MB-231_DMSO_treated_r2
-    cell_line: MDA-MB-231_DMSO
+    sample_group: MDA-MB-231_DMSO
     condition: treated
     replicate: 2
   - accession: GSM9105248
     sample_name: MDA-MB-231_MTX_treated_r1
-    cell_line: MDA-MB-231_MTX
+    sample_group: MDA-MB-231_MTX
     condition: treated
     replicate: 1
   - accession: GSM9105249
     sample_name: MDA-MB-231_MTX_treated_r2
-    cell_line: MDA-MB-231_MTX
+    sample_group: MDA-MB-231_MTX
     condition: treated
     replicate: 2

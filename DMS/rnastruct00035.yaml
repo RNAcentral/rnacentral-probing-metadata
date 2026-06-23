@@ -30,26 +30,26 @@ raw_data:
   run_accessions:
   - accession: GSM2241644
     sample_name: TGIRT_DMSvivo_Rep1  # TGIRT in vivo DMS genome-wide library
-    cell_line: BY4741
+    sample_group: BY4741
     condition: treated
     replicate: 1
   - accession: GSM2241645
     sample_name: TGIRT_DMSvivo_Rep2  # TGIRT in vivo DMS genome-wide library
-    cell_line: BY4741
+    sample_group: BY4741
     condition: treated
     replicate: 2
   - accession: GSM2241646
     sample_name: TGIRT_DMSvivo_Rep2_additionalSequencing  # extra sequencing for TGIRT replicate 2
-    cell_line: BY4741
+    sample_group: BY4741
     condition: treated
     replicate: 2
   - accession: GSM2241649
     sample_name: TGIRT_Untreated  # TGIRT untreated background library
-    cell_line: BY4741
+    sample_group: BY4741
     condition: untreated
     replicate: 1
   - accession: GSM2310333
     sample_name: TGIRT_DMS_denatured  # TGIRT denatured control
-    cell_line: BY4741
+    sample_group: BY4741
     condition: denatured
     replicate: 1

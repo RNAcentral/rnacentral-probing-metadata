@@ -26,66 +26,66 @@ raw_data:
   run_accessions:
   - accession: SRX3482040
     sample_name: WSN_in_vitro_untreated_r1
-    cell_line: IAV_WSN_in_vitro
+    sample_group: IAV_WSN_in_vitro
     condition: untreated
     replicate: 1
   - accession: SRX3482039
     sample_name: WSN_in_vitro_untreated_r2
-    cell_line: IAV_WSN_in_vitro
+    sample_group: IAV_WSN_in_vitro
     condition: untreated
     replicate: 2
   - accession: SRX3482038
     sample_name: WSN_in_vitro_treated_r1
-    cell_line: IAV_WSN_in_vitro
+    sample_group: IAV_WSN_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX3482037
     sample_name: WSN_in_vitro_treated_r2
-    cell_line: IAV_WSN_in_vitro
+    sample_group: IAV_WSN_in_vitro
     condition: treated
     replicate: 2
   - accession: SRX3482033
     sample_name: WSN_in_virio_treated_r1
-    cell_line: IAV_WSN_in_virio
+    sample_group: IAV_WSN_in_virio
     condition: treated
     replicate: 1
   - accession: SRX3482032
     sample_name: WSN_in_virio_treated_r2
-    cell_line: IAV_WSN_in_virio
+    sample_group: IAV_WSN_in_virio
     condition: treated
     replicate: 2
   - accession: SRX3482031
     sample_name: WSN_in_virio_treated_r3
-    cell_line: IAV_WSN_in_virio
+    sample_group: IAV_WSN_in_virio
     condition: treated
     replicate: 3
   - accession: SRX3482028
     sample_name: WSN_in_virio_untreated_r1
-    cell_line: IAV_WSN_in_virio
+    sample_group: IAV_WSN_in_virio
     condition: untreated
     replicate: 1
   - accession: SRX3482027
     sample_name: WSN_in_virio_untreated_r2
-    cell_line: IAV_WSN_in_virio
+    sample_group: IAV_WSN_in_virio
     condition: untreated
     replicate: 2
   - accession: SRX3482026
     sample_name: WSN_in_virio_untreated_r3
-    cell_line: IAV_WSN_in_virio
+    sample_group: IAV_WSN_in_virio
     condition: untreated
     replicate: 3
   - accession: SRX3482025
     sample_name: WSN_in_virio_denatured_r1
-    cell_line: IAV_WSN_in_virio
+    sample_group: IAV_WSN_in_virio
     condition: denatured
     replicate: 1
   - accession: SRX3482030
     sample_name: WSN_in_virio_denatured_r2
-    cell_line: IAV_WSN_in_virio
+    sample_group: IAV_WSN_in_virio
     condition: denatured
     replicate: 2
   - accession: SRX3482029
     sample_name: WSN_in_virio_denatured_r3
-    cell_line: IAV_WSN_in_virio
+    sample_group: IAV_WSN_in_virio
     condition: denatured
     replicate: 3

@@ -28,61 +28,61 @@ raw_data:
   run_accessions:
   - accession: GSM4717166
     sample_name: 5ng-NAIN3-r1  # 5 ng RNA input
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: treated
     replicate: 1
   - accession: GSM4717167
     sample_name: 5ng-NAIN3-r2  
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: treated
     replicate: 2
   - accession: GSM4717168
     sample_name: 25ng_NAIN3_r1  # 25 ng RNA input
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: treated
     replicate: 3
   - accession: GSM4717169
     sample_name: 25ng_NAIN3_r2  
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: treated
     replicate: 4
   - accession: GSM4717170
     sample_name: 125ng_NAIN3_r1  # 125 ng RNA input
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: treated
     replicate: 5
   - accession: GSM4717171
     sample_name: 125ng_NAIN3_r2  
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: treated
     replicate: 6
   - accession: GSM4717174
     sample_name: 5ng_DMSO_r1  # 5 ng RNA input, DMSO control
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: untreated
     replicate: 1
   - accession: GSM4717175
     sample_name: 5ng_DMSO_r2  
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: untreated
     replicate: 2
   - accession: GSM4717176
     sample_name: 25ng_DMSO_r1  # 25 ng RNA input, DMSO control
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: untreated
     replicate: 3
   - accession: GSM4717177
     sample_name: 25ng_DMSO_r2  
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: untreated
     replicate: 4
   - accession: GSM4717178
     sample_name: 125ng_DMSO_r1  # 125 ng RNA input, DMSO control
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: untreated
     replicate: 5
   - accession: GSM4717179
     sample_name: 125ng_DMSO_r2  
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: untreated
     replicate: 6

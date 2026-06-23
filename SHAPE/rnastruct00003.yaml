@@ -27,11 +27,11 @@ raw_data:
   run_accessions:
     - accession: GSM4333265
       sample_name: mES_untreated_r1
-      cell_line: mES
+      sample_group: mES
       condition: untreated
       replicate: 1
     - accession: GSM4333266
       sample_name: mES_treated_r1
-      cell_line: mES
+      sample_group: mES
       condition: treated
       replicate: 1

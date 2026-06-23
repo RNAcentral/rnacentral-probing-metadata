@@ -26,46 +26,46 @@ raw_data:
   run_accessions:
   - accession: GSM2838770
     sample_name: zika_african_treated_r1
-    cell_line: zika_MR766
+    sample_group: zika_MR766
     condition: treated
     replicate: 1
   - accession: GSM2838771
     sample_name: zika_african_untreated_r1
-    cell_line: zika_MR766
+    sample_group: zika_MR766
     condition: untreated
     replicate: 1
   - accession: GSM2838772
     sample_name: zika_african_denatured_r1
-    cell_line: zika_MR766
+    sample_group: zika_MR766
     condition: denatured
     replicate: 1
   - accession: GSM2838773
     sample_name: zika_african_treated_r2
-    cell_line: zika_MR766
+    sample_group: zika_MR766
     condition: treated
     replicate: 2
   - accession: GSM2838774
     sample_name: zika_african_untreated_r2
-    cell_line: zika_MR766
+    sample_group: zika_MR766
     condition: untreated
     replicate: 2
   - accession: GSM2838775
     sample_name: zika_african_denatured_r2
-    cell_line: zika_MR766
+    sample_group: zika_MR766
     condition: denatured
     replicate: 2
   - accession: GSM2838776
     sample_name: zika_african_treated_r3
-    cell_line: zika_MR766
+    sample_group: zika_MR766
     condition: treated
     replicate: 3
   - accession: GSM2838777
     sample_name: zika_african_untreated_r3
-    cell_line: zika_MR766
+    sample_group: zika_MR766
     condition: untreated
     replicate: 3
   - accession: GSM2838778
     sample_name: zika_african_denatured_r3
-    cell_line: zika_MR766
+    sample_group: zika_MR766
     condition: denatured
     replicate: 3

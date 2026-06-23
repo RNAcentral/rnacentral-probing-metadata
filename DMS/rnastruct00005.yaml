@@ -25,76 +25,76 @@ raw_data:
   run_accessions:
   - accession: SAMN07447837
     sample_name: WT_64c_DMScontrol_in_vitro  # 64-cell stage (2 hpf), no-DMS control
-    cell_line: embryonic_64c
+    sample_group: embryonic_64c
     condition: untreated
     replicate: 1
   - accession: SAMN07447838
     sample_name: WT_64c_in_vivo_r1  # 64-cell stage (2 hpf), in vivo DMS-seq
-    cell_line: embryonic_64c
+    sample_group: embryonic_64c
     condition: treated
     replicate: 1
   - accession: SAMN07447841
     sample_name: WT_64c_in_vivo_r2  # 64-cell stage (2 hpf), in vivo DMS-seq
-    cell_line: embryonic_64c
+    sample_group: embryonic_64c
     condition: treated
     replicate: 2
   - accession: SAMN07447839
     sample_name: WT_sphere_in_vivo_r1  # sphere stage (4 hpf), in vivo DMS-seq
-    cell_line: embryonic_sphere
+    sample_group: embryonic_sphere
     condition: treated
     replicate: 1
   - accession: SAMN07447843
     sample_name: WT_sphere_in_vivo_r2  # sphere stage (4 hpf), in vivo DMS-seq
-    cell_line: embryonic_sphere
+    sample_group: embryonic_sphere
     condition: treated
     replicate: 2
   - accession: SAMN07447840
     sample_name: WT_shield_in_vivo_r1  # shield stage (6 hpf), in vivo DMS-seq
-    cell_line: embryonic_shield
+    sample_group: embryonic_shield
     condition: treated
     replicate: 1
   - accession: SAMN07447842
     sample_name: WT_shield_in_vivo_r2  # shield stage (6 hpf), in vivo DMS-seq
-    cell_line: embryonic_shield
+    sample_group: embryonic_shield
     condition: treated
     replicate: 2
   - accession: SAMN07447845
     sample_name: IVT_64c_B1  # 64-cell stage (2 hpf), in vitro refolded RNA DMS-seq
-    cell_line: embryonic_64c_in_vitro
+    sample_group: embryonic_64c_in_vitro
     condition: treated
     replicate: 1
   - accession: SAMN07447844
     sample_name: IVT_64c_B2  # 64-cell stage (2 hpf), in vitro refolded RNA DMS-seq
-    cell_line: embryonic_64c_in_vitro
+    sample_group: embryonic_64c_in_vitro
     condition: treated
     replicate: 2
   - accession: SAMN07447846
     sample_name: WT_64c_CHX_B1  # 64-cell stage (2 hpf), cycloheximide-treated in vivo DMS-seq
-    cell_line: embryonic_64c_CHX
+    sample_group: embryonic_64c_CHX
     condition: treated
     replicate: 1
   - accession: SAMN07447847
     sample_name: WT_64c_CHX_B2  # 64-cell stage (2 hpf), cycloheximide-treated in vivo DMS-seq
-    cell_line: embryonic_64c_CHX
+    sample_group: embryonic_64c_CHX
     condition: treated
     replicate: 2
   - accession: SAMN07447852
     sample_name: WT_64c_DMS_B1  # 64-cell stage (2 hpf), untreated in vivo DMS-seq for inhibitor comparison
-    cell_line: embryonic_64c_drug_control
+    sample_group: embryonic_64c_drug_control
     condition: treated
     replicate: 1
   - accession: SAMN07447853
     sample_name: WT_64c_DMS_B2  # 64-cell stage (2 hpf), untreated in vivo DMS-seq for inhibitor comparison
-    cell_line: embryonic_64c_drug_control
+    sample_group: embryonic_64c_drug_control
     condition: treated
     replicate: 2
   - accession: SAMN07447854
     sample_name: WT_64c_PatA_DMS_B1  # 64-cell stage (2 hpf), pateamine A-treated in vivo DMS-seq
-    cell_line: embryonic_64c_PatA
+    sample_group: embryonic_64c_PatA
     condition: treated
     replicate: 1
   - accession: SAMN07447855
     sample_name: WT_64c_PatA_DMS_B2  # 64-cell stage (2 hpf), pateamine A-treated in vivo DMS-seq
-    cell_line: embryonic_64c_PatA
+    sample_group: embryonic_64c_PatA
     condition: treated
     replicate: 2

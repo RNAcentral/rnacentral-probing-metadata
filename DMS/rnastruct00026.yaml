@@ -28,21 +28,21 @@ raw_data:
   run_accessions:
   - accession: GSM4656059
     sample_name: usa_wa1_treated_r1
-    cell_line: SARS-CoV-2_USA-WA1
+    sample_group: SARS-CoV-2_USA-WA1
     condition: treated
     replicate: 1
   - accession: GSM4656060
     sample_name: usa_wa1_treated_r2
-    cell_line: SARS-CoV-2_USA-WA1
+    sample_group: SARS-CoV-2_USA-WA1
     condition: treated
     replicate: 2
   - accession: GSM4656061
     sample_name: usa_wa1_untreated
-    cell_line: SARS-CoV-2_USA-WA1
+    sample_group: SARS-CoV-2_USA-WA1
     condition: untreated
     replicate: 1
   - accession: GSM4656062
     sample_name: usa_wa1_ex_virio_treated  # genomic RNA extracted from virions and refolded before probing
-    cell_line: SARS-CoV-2_USA-WA1_ex_virio
+    sample_group: SARS-CoV-2_USA-WA1_ex_virio
     condition: treated
     replicate: 1

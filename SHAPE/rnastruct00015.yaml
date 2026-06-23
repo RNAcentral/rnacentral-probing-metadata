@@ -26,11 +26,11 @@ raw_data:
   run_accessions:
   - accession: SRX4223900
     sample_name: PR8_in_virio_treated
-    cell_line: IAV_PR8
+    sample_group: IAV_PR8
     condition: treated
     replicate: 1
   - accession: SRX4223899
     sample_name: PR8_in_virio_untreated
-    cell_line: IAV_PR8
+    sample_group: IAV_PR8
     condition: untreated
     replicate: 1

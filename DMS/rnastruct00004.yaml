@@ -28,61 +28,61 @@ raw_data:
   run_accessions:
     - accession: GSM1115749
       sample_name: BY4741_treated_vivo_r1
-      cell_line: BY4741_vivo
+      sample_group: BY4741_vivo
       condition: treated
       replicate: 1
     - accession: GSM1115750
       sample_name: BY4741_treated_vivo_r2
-      cell_line: BY4741_vivo
+      sample_group: BY4741_vivo
       condition: treated
       replicate: 2
     - accession: GSM1115751
       sample_name: BY4741_treated_vivo_r3
-      cell_line: BY4741_vivo
+      sample_group: BY4741_vivo
       condition: treated
       replicate: 3
     - accession: GSM1115752
       sample_name: BY4741_treated_vivo_r4
-      cell_line: BY4741_vivo
+      sample_group: BY4741_vivo
       condition: treated
       replicate: 4
     - accession: GSM1115756
       sample_name: BY4741_treated_vitro_30C_r1
-      cell_line: BY4741_vitro_30C
+      sample_group: BY4741_vitro_30C
       condition: treated
       replicate: 1
     - accession: GSM1115757
       sample_name: BY4741_treated_vitro_30C_r2
-      cell_line: BY4741_vitro_30C
+      sample_group: BY4741_vitro_30C
       condition: treated
       replicate: 2
     - accession: GSM1115758
       sample_name: BY4741_treated_vitro_30C_r3
-      cell_line: BY4741_vitro_30C
+      sample_group: BY4741_vitro_30C
       condition: treated
       replicate: 3
     - accession: GSM1115762
       sample_name: BY4741_treated_vitro_45C_r1
-      cell_line: BY4741_vitro_45C
+      sample_group: BY4741_vitro_45C
       condition: treated
       replicate: 1
     - accession: GSM1115763
       sample_name: BY4741_treated_vitro_60C_r1
-      cell_line: BY4741_vitro_60C
+      sample_group: BY4741_vitro_60C
       condition: treated
       replicate: 1
     - accession: GSM1115764
       sample_name: BY4741_treated_vitro_75C_r1
-      cell_line: BY4741_vitro_75C
+      sample_group: BY4741_vitro_75C
       condition: treated
       replicate: 1
     - accession: GSM1297509
       sample_name: S288C_treated_noATP_r1
-      cell_line: S288C_noATP
+      sample_group: S288C_noATP
       condition: treated
       replicate: 1
     - accession: GSM1297510
       sample_name: S288C_treated_10C_DMS_r1
-      cell_line: S288C_10C
+      sample_group: S288C_10C
       condition: treated
       replicate: 1

@@ -26,6 +26,6 @@ raw_data:
   run_accessions:
   - accession: SRX663474
     sample_name: HIV-1_NL4-3_treated
-    cell_line: HIV-1_NL4-3
+    sample_group: HIV-1_NL4-3
     condition: treated
     replicate: 1

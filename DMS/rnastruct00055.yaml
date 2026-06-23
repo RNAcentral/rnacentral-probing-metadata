@@ -25,11 +25,11 @@ raw_data:
   run_accessions:
   - accession: GSM1464623
     sample_name: mESC_r1
-    cell_line: mESC
+    sample_group: mESC
     condition: treated
     replicate: 1
   - accession: GSM1464626
     sample_name: mESC_r2
-    cell_line: mESC
+    sample_group: mESC
     condition: treated
     replicate: 2

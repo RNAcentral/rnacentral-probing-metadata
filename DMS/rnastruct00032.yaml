@@ -25,51 +25,51 @@ raw_data:
   run_accessions:
   - accession: GSM2838605
     sample_name: WT_untreated_r1
-    cell_line: BY4741
+    sample_group: BY4741
     condition: untreated
     replicate: 1
   - accession: GSM2838606
     sample_name: WT_untreated_r2
-    cell_line: BY4741
+    sample_group: BY4741
     condition: untreated
     replicate: 2
   - accession: GSM2838607
     sample_name: WT_untreated_r3
-    cell_line: BY4741
+    sample_group: BY4741
     condition: untreated
     replicate: 3
   - accession: GSM2838608
     sample_name: WT_DMS_treated_r1
-    cell_line: BY4741
+    sample_group: BY4741
     condition: treated
     replicate: 1
   - accession: GSM2838609
     sample_name: WT_DMS_treated_r2
-    cell_line: BY4741
+    sample_group: BY4741
     condition: treated
     replicate: 2
   - accession: GSM2838610
     sample_name: WT_DMS_treated_r3
-    cell_line: BY4741
+    sample_group: BY4741
     condition: treated
     replicate: 3
   - accession: GSM2838611
     sample_name: dbp2_untreated_r1
-    cell_line: BY4741_dbp2delta
+    sample_group: BY4741_dbp2delta
     condition: untreated
     replicate: 1
   - accession: GSM2838612
     sample_name: dbp2_untreated_r2
-    cell_line: BY4741_dbp2delta
+    sample_group: BY4741_dbp2delta
     condition: untreated
     replicate: 2
   - accession: GSM2838613
     sample_name: dbp2_DMS_treated_r1
-    cell_line: BY4741_dbp2delta
+    sample_group: BY4741_dbp2delta
     condition: treated
     replicate: 1
   - accession: GSM2838614
     sample_name: dbp2_DMS_treated_r2
-    cell_line: BY4741_dbp2delta
+    sample_group: BY4741_dbp2delta
     condition: treated
     replicate: 2

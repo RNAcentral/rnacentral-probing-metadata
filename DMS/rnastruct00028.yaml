@@ -26,11 +26,11 @@ raw_data:
   run_accessions:
   - accession: GSM4787260
     sample_name: leiden_0002_in_vitro_treated_r1
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: treated
     replicate: 1
   - accession: GSM4787261
     sample_name: leiden_0002_in_vitro_treated_r2
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: treated
     replicate: 2

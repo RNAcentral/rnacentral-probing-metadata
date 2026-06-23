@@ -26,11 +26,11 @@ raw_data:
   run_accessions:
   - accession: SRX23731230
     sample_name: WSN_in_vivo_treated
-    cell_line: IAV_WSN_in_vivo
+    sample_group: IAV_WSN_in_vivo
     condition: treated
     replicate: 1
   - accession: SRX23730931
     sample_name: WSN_in_virio_treated
-    cell_line: IAV_WSN_in_virio
+    sample_group: IAV_WSN_in_virio
     condition: treated
     replicate: 1

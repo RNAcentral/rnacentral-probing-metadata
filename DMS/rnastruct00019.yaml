@@ -28,16 +28,16 @@ raw_data:
   run_accessions:
   - accession: GSM2211031
     sample_name: Pputida_untreated_K150
-    cell_line: Pseudomonas_putida_in_vitro
+    sample_group: Pseudomonas_putida_in_vitro
     condition: untreated
     replicate: 1
   - accession: GSM2211033
     sample_name: Pputida_DMS_vitro_K150
-    cell_line: Pseudomonas_putida_in_vitro
+    sample_group: Pseudomonas_putida_in_vitro
     condition: treated
     replicate: 1
   - accession: GSM2211035
     sample_name: Pputida_DMS_vivo_K150
-    cell_line: Pseudomonas_putida_in_vivo
+    sample_group: Pseudomonas_putida_in_vivo
     condition: treated
     replicate: 1

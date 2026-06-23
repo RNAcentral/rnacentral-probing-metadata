@@ -26,46 +26,46 @@ raw_data:
   run_accessions:
   - accession: GSM2838779
     sample_name: zika_brazil_treated_r1
-    cell_line: zika_BeH815744
+    sample_group: zika_BeH815744
     condition: treated
     replicate: 1
   - accession: GSM2838780
     sample_name: zika_brazil_untreated_r1
-    cell_line: zika_BeH815744
+    sample_group: zika_BeH815744
     condition: untreated
     replicate: 1
   - accession: GSM2838781
     sample_name: zika_brazil_denatured_r1
-    cell_line: zika_BeH815744
+    sample_group: zika_BeH815744
     condition: denatured
     replicate: 1
   - accession: GSM2838782
     sample_name: zika_brazil_treated_r2
-    cell_line: zika_BeH815744
+    sample_group: zika_BeH815744
     condition: treated
     replicate: 2
   - accession: GSM2838783
     sample_name: zika_brazil_untreated_r2
-    cell_line: zika_BeH815744
+    sample_group: zika_BeH815744
     condition: untreated
     replicate: 2
   - accession: GSM2838784
     sample_name: zika_brazil_denatured_r2
-    cell_line: zika_BeH815744
+    sample_group: zika_BeH815744
     condition: denatured
     replicate: 2
   - accession: GSM2838785
     sample_name: zika_brazil_treated_r3
-    cell_line: zika_BeH815744
+    sample_group: zika_BeH815744
     condition: treated
     replicate: 3
   - accession: GSM2838786
     sample_name: zika_brazil_untreated_r3
-    cell_line: zika_BeH815744
+    sample_group: zika_BeH815744
     condition: untreated
     replicate: 3
   - accession: GSM2838787
     sample_name: zika_brazil_denatured_r3
-    cell_line: zika_BeH815744
+    sample_group: zika_BeH815744
     condition: denatured
     replicate: 3

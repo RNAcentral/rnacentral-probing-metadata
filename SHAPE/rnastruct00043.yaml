@@ -24,47 +24,47 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE117840
   run_accessions:
   - accession: GSM3310468
-    sample_name: HEK293T_chromatin_untreated  # chromatin: nascent RNA still associated with chromosomal DNA
-    cell_line: HEK293T_chromatin_vivo
+    sample_name: HEK293_chromatin_untreated  # chromatin: nascent RNA still associated with chromosomal DNA
+    sample_group: HEK293_chromatin_vivo
     condition: untreated
     replicate: 1
   - accession: GSM3310469
-    sample_name: HEK293T_chromatin_in_vivo
-    cell_line: HEK293T_chromatin_vivo
+    sample_name: HEK293_chromatin_in_vivo
+    sample_group: HEK293_chromatin_vivo
     condition: treated
     replicate: 1
   - accession: GSM3310470
-    sample_name: HEK293T_chromatin_in_vitro
-    cell_line: HEK293T_chromatin_vitro
+    sample_name: HEK293_chromatin_in_vitro
+    sample_group: HEK293_chromatin_vitro
     condition: treated
     replicate: 1
   - accession: GSM3310471
-    sample_name: HEK293T_nucleoplasm_untreated  # nucleoplasm: RNA free in the nucleus, post-transcriptional but pre-export
-    cell_line: HEK293T_nucleoplasm_vivo
+    sample_name: HEK293_nucleoplasm_untreated  # nucleoplasm: RNA free in the nucleus, post-transcriptional but pre-export
+    sample_group: HEK293_nucleoplasm_vivo
     condition: untreated
     replicate: 1
   - accession: GSM3310472
-    sample_name: HEK293T_nucleoplasm_in_vivo
-    cell_line: HEK293T_nucleoplasm_vivo
+    sample_name: HEK293_nucleoplasm_in_vivo
+    sample_group: HEK293_nucleoplasm_vivo
     condition: treated
     replicate: 1
   - accession: GSM3310473
-    sample_name: HEK293T_nucleoplasm_in_vitro
-    cell_line: HEK293T_nucleoplasm_vitro
+    sample_name: HEK293_nucleoplasm_in_vitro
+    sample_group: HEK293_nucleoplasm_vitro
     condition: treated
     replicate: 1
   - accession: GSM3310474
-    sample_name: HEK293T_cytoplasm_untreated  # cytoplasm: mature exported RNA
-    cell_line: HEK293T_cytoplasm_vivo
+    sample_name: HEK293_cytoplasm_untreated  # cytoplasm: mature exported RNA
+    sample_group: HEK293_cytoplasm_vivo
     condition: untreated
     replicate: 1
   - accession: GSM3310475
-    sample_name: HEK293T_cytoplasm_in_vivo
-    cell_line: HEK293T_cytoplasm_vivo
+    sample_name: HEK293_cytoplasm_in_vivo
+    sample_group: HEK293_cytoplasm_vivo
     condition: treated
     replicate: 1
   - accession: GSM3310476
-    sample_name: HEK293T_cytoplasm_in_vitro
-    cell_line: HEK293T_cytoplasm_vitro
+    sample_name: HEK293_cytoplasm_in_vitro
+    sample_group: HEK293_cytoplasm_vitro
     condition: treated
     replicate: 1

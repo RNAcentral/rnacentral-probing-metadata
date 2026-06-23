@@ -28,71 +28,71 @@ raw_data:
   run_accessions:
   - accession: GSM3463231
     sample_name: DMS_MaPseq_on_in_vivo_purified_denatured_Influenza_A_vmRNA_r1
-    cell_line: IAV_PR8_in_vivo
+    sample_group: IAV_PR8_in_vivo
     condition: denatured
     replicate: 1
   - accession: GSM3463232
     sample_name: DMS_MaPseq_on_in_vivo_purified_denatured_Influenza_A_vmRNA_r2  # max-reactivity control for in vivo-purified vmRNA
-    cell_line: IAV_PR8_in_vivo
+    sample_group: IAV_PR8_in_vivo
     condition: denatured
     replicate: 2
   - accession: GSM3463233
     sample_name: DMS_MaPseq_on_in_vitro_transcribed_denatured_Influenza_A_vmRNA_r1  # max-reactivity control for in vitro-transcribed vmRNA
-    cell_line: IAV_PR8_in_vitro
+    sample_group: IAV_PR8_in_vitro
     condition: denatured
     replicate: 1
   - accession: GSM3463234
     sample_name: DMS_MaPseq_on_in_vitro_transcribed_denatured_Influenza_A_vmRNA_r2  # max-reactivity control for in vitro-transcribed vmRNA
-    cell_line: IAV_PR8_in_vitro
+    sample_group: IAV_PR8_in_vitro
     condition: denatured
     replicate: 2
   - accession: GSM3463235
     sample_name: DMS_MaPseq_on_in_vivo_purified_Influenza_A_vmRNA_r1  # native in-cell vmRNA purified after probing
-    cell_line: IAV_PR8_in_vivo
+    sample_group: IAV_PR8_in_vivo
     condition: treated
     replicate: 1
   - accession: GSM3463236
     sample_name: DMS_MaPseq_on_in_vivo_purified_Influenza_A_vmRNA_r2  # native in-cell vmRNA purified after probing
-    cell_line: IAV_PR8_in_vivo
+    sample_group: IAV_PR8_in_vivo
     condition: treated
     replicate: 2
   - accession: GSM3463237
     sample_name: DMS_MaPseq_on_in_vitro-transcribed_and_refolded_Influenza_A_vmRNA_r1  # in vitro-transcribed vmRNA refolded before probing
-    cell_line: IAV_PR8_in_vitro
+    sample_group: IAV_PR8_in_vitro
     condition: treated
     replicate: 1
   - accession: GSM3463238
     sample_name: DMS_MaPseq_on_in_vitro-transcribed_and_refolded_Influenza_A_vmRNA_r2  # in vitro-transcribed vmRNA refolded before probing
-    cell_line: IAV_PR8_in_vitro
+    sample_group: IAV_PR8_in_vitro
     condition: treated
     replicate: 2
   - accession: GSM3463239
     sample_name: DMS_MaPseq_on_in_vivo_spliced_segment_7_8_Influenza_A_vmRNAs_r1  # targeted in-cell spliced M/NS vmRNA isoform amplicons
-    cell_line: IAV_PR8_in_vivo
+    sample_group: IAV_PR8_in_vivo
     condition: treated
     replicate: 1
   - accession: GSM3463240
     sample_name: DMS_MaPseq_on_in_vivo_spliced_segment_7_8_Influenza_A_vmRNAs_r2  # targeted in-cell spliced M/NS vmRNA isoform amplicons
-    cell_line: IAV_PR8_in_vivo
+    sample_group: IAV_PR8_in_vivo
     condition: treated
     replicate: 2
   - accession: GSM3463241
     sample_name: DMS_MaPseq_on_in_vivo_Influenza_A_vmRNA_probe_pairing_regions_r1  # targeted amplicons covering capture-probe regions
-    cell_line: IAV_PR8_in_vivo
+    sample_group: IAV_PR8_in_vivo
     condition: treated
     replicate: 1
   - accession: GSM3463242
     sample_name: DMS_MaPseq_on_in_vivo_Influenza_A_vmRNA_probe_pairing_regions_r2  # targeted amplicons covering capture-probe regions
-    cell_line: IAV_PR8_in_vivo
+    sample_group: IAV_PR8_in_vivo
     condition: treated
     replicate: 2
   - accession: GSM3463244
     sample_name: DMS_MaPseq_on_untreated_in_vivo_purified_Influenza_A_vmRNA  # untreated in vivo-purified background control
-    cell_line: IAV_PR8_in_vivo
+    sample_group: IAV_PR8_in_vivo
     condition: untreated
     replicate: 1
   - accession: GSM3463245
     sample_name: DMS_MaPseq_on_untreated_in_vitro_transcribed_Influenza_A_vmRNA  # untreated in vitro-transcribed background control
-    cell_line: IAV_PR8_in_vitro
+    sample_group: IAV_PR8_in_vitro
     condition: untreated
     replicate: 1

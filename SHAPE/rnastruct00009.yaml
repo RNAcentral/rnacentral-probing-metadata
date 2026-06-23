@@ -26,31 +26,31 @@ raw_data:
   run_accessions:
   - accession: ERX2804091
     sample_name: Zika_MR766_in_vivo_untreated_r1
-    cell_line: ZIKV_MR766_in_vivo
+    sample_group: ZIKV_MR766_in_vivo
     condition: untreated
     replicate: 1
   - accession: ERX2804092
     sample_name: Zika_MR766_in_vivo_untreated_r2
-    cell_line: ZIKV_MR766_in_vivo
+    sample_group: ZIKV_MR766_in_vivo
     condition: untreated
     replicate: 2
   - accession: ERX2804093
     sample_name: Zika_MR766_in_vivo_treated_r1
-    cell_line: ZIKV_MR766_in_vivo
+    sample_group: ZIKV_MR766_in_vivo
     condition: treated
     replicate: 1
   - accession: ERX2804094
     sample_name: Zika_MR766_in_vivo_treated_r2
-    cell_line: ZIKV_MR766_in_vivo
+    sample_group: ZIKV_MR766_in_vivo
     condition: treated
     replicate: 2
   - accession: ERX2804095
     sample_name: Zika_MR766_in_vitro_treated_r1
-    cell_line: ZIKV_MR766_in_vitro
+    sample_group: ZIKV_MR766_in_vitro
     condition: treated
     replicate: 1
   - accession: ERX2804096
     sample_name: Zika_MR766_in_vitro_treated_r2
-    cell_line: ZIKV_MR766_in_vitro
+    sample_group: ZIKV_MR766_in_vitro
     condition: treated
     replicate: 2

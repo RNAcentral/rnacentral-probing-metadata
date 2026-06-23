@@ -25,42 +25,42 @@ raw_data:
   run_accessions:
   - accession: SRX338794
     sample_name: Scer_WT_NoDMS_r1
-    cell_line: BY4741
+    sample_group: BY4741
     condition: untreated
     replicate: 1
   - accession: SRX338796
     sample_name: Scer_WT_NoDMS_r2
-    cell_line: BY4741
+    sample_group: BY4741
     condition: untreated
     replicate: 2
   - accession: SRX338793
     sample_name: WT_Rep1_100mM_DMS_r1
-    cell_line: BY4741
+    sample_group: BY4741
     condition: treated
     replicate: 1
   - accession: SRX338795
     sample_name: WT_Rep1_100mM_DMS_r2
-    cell_line: BY4741
+    sample_group: BY4741
     condition: treated
     replicate: 2
   - accession: SRX338799
     sample_name: L26_Delta_Rep1_NoDMS_r1
-    cell_line: JWY6147
+    sample_group: JWY6147
     condition: untreated
     replicate: 1
   - accession: SRX338801
     sample_name: L26_Delta_Rep1_NoDMS_r2
-    cell_line: JWY6147
+    sample_group: JWY6147
     condition: untreated
     replicate: 2
   - accession: SRX338798
     sample_name: L26_Delta_Rep1_100mM_DMS_r1
-    cell_line: JWY6147
+    sample_group: JWY6147
     condition: treated
     replicate: 1
   - accession: SRX338800
     sample_name: L26_Delta_Rep1_100mM_DMS_r2
-    cell_line: JWY6147
+    sample_group: JWY6147
     condition: treated
     replicate: 2
   

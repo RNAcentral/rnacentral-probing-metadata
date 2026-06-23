@@ -27,16 +27,16 @@ raw_data:
   run_accessions:
   - accession: GSM5024395
     sample_name: sars2_delta382_in_vivo_treated
-    cell_line: SARS-CoV-2_Delta382
+    sample_group: SARS-CoV-2_Delta382
     condition: treated
     replicate: 1
   - accession: GSM5024396
     sample_name: sars2_delta382_denatured
-    cell_line: SARS-CoV-2_Delta382
+    sample_group: SARS-CoV-2_Delta382
     condition: denatured
     replicate: 1
   - accession: GSM5024397
     sample_name: sars2_delta382_in_vivo_untreated
-    cell_line: SARS-CoV-2_Delta382
+    sample_group: SARS-CoV-2_Delta382
     condition: untreated
     replicate: 1

@@ -25,6 +25,6 @@ raw_data:
   run_accessions:
   - accession: GSM2241643
     sample_name: HEK293T_in_vivo
-    cell_line: HEK293T
+    sample_group: HEK293T
     condition: treated
     replicate: 1

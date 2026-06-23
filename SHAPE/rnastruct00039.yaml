@@ -26,41 +26,41 @@ raw_data:
   run_accessions:
   - accession: GSM3842460
     sample_name: K562_in_vivo_untreated_r1
-    cell_line: K562_in_vivo
+    sample_group: K562_in_vivo
     condition: untreated
     replicate: 1
   - accession: GSM3842461
     sample_name: K562_in_vivo_untreated_r2
-    cell_line: K562_in_vivo
+    sample_group: K562_in_vivo
     condition: untreated
     replicate: 2
   - accession: GSM3842462
     sample_name: K562_in_vivo_untreated_r3
-    cell_line: K562_in_vivo
+    sample_group: K562_in_vivo
     condition: untreated
     replicate: 3
   - accession: GSM3842463
     sample_name: K562_in_vitro_treated_r1
-    cell_line: K562_in_vitro
+    sample_group: K562_in_vitro
     condition: treated
     replicate: 1
   - accession: GSM3842464
     sample_name: K562_in_vitro_treated_r2
-    cell_line: K562_in_vitro
+    sample_group: K562_in_vitro
     condition: treated
     replicate: 2
   - accession: GSM3842465
     sample_name: K562_in_vivo_treated_r1
-    cell_line: K562_in_vivo
+    sample_group: K562_in_vivo
     condition: treated
     replicate: 1
   - accession: GSM3842466
     sample_name: K562_in_vivo_treated_r2
-    cell_line: K562_in_vivo
+    sample_group: K562_in_vivo
     condition: treated
     replicate: 2
   - accession: GSM3842467
     sample_name: K562_in_vivo_treated_r3
-    cell_line: K562_in_vivo
+    sample_group: K562_in_vivo
     condition: treated
     replicate: 3

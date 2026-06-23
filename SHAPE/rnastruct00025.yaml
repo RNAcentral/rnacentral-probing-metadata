@@ -29,46 +29,46 @@ raw_data:
   run_accessions:
   - accession: GSM4892124
     sample_name: leiden_0002_in_vivo_treated_r1
-    cell_line: SARS-CoV-2_Leiden-0002_in_vivo
+    sample_group: SARS-CoV-2_Leiden-0002_in_vivo
     condition: treated
     replicate: 1
   - accession: GSM4892125
     sample_name: leiden_0002_in_vivo_treated_r2
-    cell_line: SARS-CoV-2_Leiden-0002_in_vivo
+    sample_group: SARS-CoV-2_Leiden-0002_in_vivo
     condition: treated
     replicate: 2
   - accession: GSM4892123
     sample_name: leiden_0002_in_vivo_untreated
-    cell_line: SARS-CoV-2_Leiden-0002_in_vivo
+    sample_group: SARS-CoV-2_Leiden-0002_in_vivo
     condition: untreated
     replicate: 1
   - accession: GSM4572509
     sample_name: leiden_0002_in_vitro_untreated_odd_r1
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: untreated
     replicate: 1
   - accession: GSM4572511
     sample_name: leiden_0002_in_vitro_treated_odd_r1
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: treated
     replicate: 1
   - accession: GSM4572513
     sample_name: leiden_0002_in_vitro_treated_odd_r2
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: treated
     replicate: 2
   - accession: GSM4572510
     sample_name: leiden_0002_in_vitro_untreated_even_r1
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: untreated
     replicate: 1
   - accession: GSM4572512
     sample_name: leiden_0002_in_vitro_treated_even_r1
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: treated
     replicate: 1
   - accession: GSM4572514
     sample_name: leiden_0002_in_vitro_treated_even_r2
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: treated
     replicate: 2

@@ -29,76 +29,76 @@ raw_data:
   run_accessions:
   - accession: SRX13476233
     sample_name: RF_S10_S11_no_NSP2_untreated
-    cell_line: RVA_RF_no_NSP2_in_vitro
+    sample_group: RVA_RF_no_NSP2_in_vitro
     condition: untreated
     replicate: 1
   - accession: SRX13476232
     sample_name: RF_S10_S11_20uM_NSP2_treated
-    cell_line: RVA_RF_20uM_NSP2_in_vitro
+    sample_group: RVA_RF_20uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476231
     sample_name: RF_S10_S11_10uM_NSP2_treated
-    cell_line: RVA_RF_10uM_NSP2_in_vitro
+    sample_group: RVA_RF_10uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476230
     sample_name: RF_S10_S11_5uM_NSP2_treated
-    cell_line: RVA_RF_5uM_NSP2_in_vitro
+    sample_group: RVA_RF_5uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476229
     sample_name: RF_S10_S11_no_NSP2_treated
-    cell_line: RVA_RF_no_NSP2_in_vitro
+    sample_group: RVA_RF_no_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476228
     sample_name: RF_total_no_NSP2_untreated
-    cell_line: RVA_RF_no_NSP2_in_vitro
+    sample_group: RVA_RF_no_NSP2_in_vitro
     condition: untreated
     replicate: 1
   - accession: SRX13476227
     sample_name: RF_total_20uM_NSP2_treated
-    cell_line: RVA_RF_20uM_NSP2_in_vitro
+    sample_group: RVA_RF_20uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476226
     sample_name: RF_total_10uM_NSP2_treated
-    cell_line: RVA_RF_10uM_NSP2_in_vitro
+    sample_group: RVA_RF_10uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476225
     sample_name: RF_S5_S6_no_NSP2_untreated
-    cell_line: RVA_RF_no_NSP2_in_vitro
+    sample_group: RVA_RF_no_NSP2_in_vitro
     condition: untreated
     replicate: 1
   - accession: SRX13476224
     sample_name: RF_S5_S6_20uM_NSP2_treated
-    cell_line: RVA_RF_20uM_NSP2_in_vitro
+    sample_group: RVA_RF_20uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476223
     sample_name: RF_S5_S6_10uM_NSP2_treated
-    cell_line: RVA_RF_10uM_NSP2_in_vitro
+    sample_group: RVA_RF_10uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476222
     sample_name: RF_S5_S6_5uM_NSP2_treated
-    cell_line: RVA_RF_5uM_NSP2_in_vitro
+    sample_group: RVA_RF_5uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476221
     sample_name: RF_S5_S6_no_NSP2_treated
-    cell_line: RVA_RF_no_NSP2_in_vitro
+    sample_group: RVA_RF_no_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476220
     sample_name: RF_total_5uM_NSP2_treated
-    cell_line: RVA_RF_5uM_NSP2_in_vitro
+    sample_group: RVA_RF_5uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476219
     sample_name: RF_total_no_NSP2_treated
-    cell_line: RVA_RF_no_NSP2_in_vitro
+    sample_group: RVA_RF_no_NSP2_in_vitro
     condition: treated
     replicate: 1

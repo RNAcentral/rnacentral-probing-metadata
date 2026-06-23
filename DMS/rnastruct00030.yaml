@@ -27,31 +27,31 @@ raw_data:
   run_accessions:
   - accession: GSM4892117
     sample_name: leiden_0002_in_vitro_DMS_odd_r1
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: treated
     replicate: 1
   - accession: GSM4892120
     sample_name: leiden_0002_in_vitro_DMS_odd_r2
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: treated
     replicate: 2
   - accession: GSM4892118
     sample_name: leiden_0002_in_vitro_DMS_even_r1
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: treated
     replicate: 1
   - accession: GSM4892121
     sample_name: leiden_0002_in_vitro_DMS_even_r2
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: treated
     replicate: 2
   - accession: GSM4892119
     sample_name: leiden_0002_in_vitro_DMS_extra_r1
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: treated
     replicate: 1
   - accession: GSM4892122
     sample_name: leiden_0002_in_vitro_DMS_extra_r2
-    cell_line: SARS-CoV-2_Leiden-0002_in_vitro
+    sample_group: SARS-CoV-2_Leiden-0002_in_vitro
     condition: treated
     replicate: 2

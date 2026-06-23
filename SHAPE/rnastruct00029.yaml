@@ -26,26 +26,26 @@ raw_data:
   run_accessions:
   - accession: GSM4661367
     sample_name: ipbcams_yl01_in_vivo_untreated
-    cell_line: SARS-CoV-2_IPBCAMS-YL01_in_vivo
+    sample_group: SARS-CoV-2_IPBCAMS-YL01_in_vivo
     condition: untreated
     replicate: 1
   - accession: GSM4661368
     sample_name: ipbcams_yl01_in_vivo_treated
-    cell_line: SARS-CoV-2_IPBCAMS-YL01_in_vivo
+    sample_group: SARS-CoV-2_IPBCAMS-YL01_in_vivo
     condition: treated
     replicate: 1
   - accession: GSM4661369
     sample_name: ipbcams_yl01_in_vitro_treated
-    cell_line: SARS-CoV-2_IPBCAMS-YL01_in_vitro
+    sample_group: SARS-CoV-2_IPBCAMS-YL01_in_vitro
     condition: treated
     replicate: 1
   - accession: GSM4661376
     sample_name: sars2_C241T_UTR_in_vitro_untreated
-    cell_line: SARS-CoV-2_C241T_UTR_in_vitro  # C241T is a C-to-T mutation at nt 241 in the 5' UTR.
+    sample_group: SARS-CoV-2_C241T_UTR_in_vitro  # C241T is a C-to-T mutation at nt 241 in the 5' UTR.
     condition: untreated
     replicate: 1
   - accession: GSM4661377
     sample_name: sars2_C241T_UTR_in_vitro_treated
-    cell_line: SARS-CoV-2_C241T_UTR_in_vitro
+    sample_group: SARS-CoV-2_C241T_UTR_in_vitro
     condition: treated
     replicate: 1

@@ -24,101 +24,101 @@ raw_data:
   run_accessions:
   - accession: GSM3409376
     sample_name: fertilized_egg_untreated  # wild-type AB fertilized egg vehicle-control library
-    cell_line: AB_fertilized_egg
+    sample_group: AB_fertilized_egg
     condition: untreated
     replicate: 1
   - accession: GSM3409377
     sample_name: fertilized_egg_treated  # wild-type AB fertilized egg in vivo NAI-N3 library
-    cell_line: AB_fertilized_egg
+    sample_group: AB_fertilized_egg
     condition: treated
     replicate: 1
   - accession: GSM3409378
     sample_name: 1_cell_untreated  # wild-type AB 1-cell-stage vehicle-control library
-    cell_line: AB_1_cell
+    sample_group: AB_1_cell
     condition: untreated
     replicate: 1
   - accession: GSM3409379
     sample_name: 1_cell_treated  # wild-type AB 1-cell-stage in vivo NAI-N3 library
-    cell_line: AB_1_cell
+    sample_group: AB_1_cell
     condition: treated
     replicate: 1
   - accession: GSM3409380
     sample_name: 4_cell_untreated  # wild-type AB 4-cell-stage vehicle-control library
-    cell_line: AB_4_cell
+    sample_group: AB_4_cell
     condition: untreated
     replicate: 1
   - accession: GSM3409381
     sample_name: 4_cell_treated  # wild-type AB 4-cell-stage in vivo NAI-N3 library
-    cell_line: AB_4_cell
+    sample_group: AB_4_cell
     condition: treated
     replicate: 1
   - accession: GSM3409382
     sample_name: 64_cell_untreated  # wild-type AB 64-cell-stage vehicle-control library
-    cell_line: AB_64_cell
+    sample_group: AB_64_cell
     condition: untreated
     replicate: 1
   - accession: GSM3409383
     sample_name: 64_cell_treated  # wild-type AB 64-cell-stage in vivo NAI-N3 library
-    cell_line: AB_64_cell
+    sample_group: AB_64_cell
     condition: treated
     replicate: 1
   - accession: GSM3409384
     sample_name: sphere_untreated  # wild-type AB sphere-stage vehicle-control library
-    cell_line: AB_sphere
+    sample_group: AB_sphere
     condition: untreated
     replicate: 1
   - accession: GSM3409385
     sample_name: sphere_treated  # wild-type AB sphere-stage in vivo NAI-N3 library
-    cell_line: AB_sphere
+    sample_group: AB_sphere
     condition: treated
     replicate: 1
   - accession: GSM3409386
     sample_name: shield_untreated  # wild-type AB shield-stage vehicle-control library
-    cell_line: AB_shield
+    sample_group: AB_shield
     condition: untreated
     replicate: 1
   - accession: GSM3409387
     sample_name: shield_treated  # wild-type AB shield-stage in vivo NAI-N3 library
-    cell_line: AB_shield
+    sample_group: AB_shield
     condition: treated
     replicate: 1
   - accession: GSM4473285
     sample_name: Sphere_Elavl1a_KD_untreated_r1  # Elavl1a knockdown sphere-stage vehicle-control replicate 1
-    cell_line: AB_Elavl1a_KD_sphere
+    sample_group: AB_Elavl1a_KD_sphere
     condition: untreated
     replicate: 1
   - accession: GSM4473286
     sample_name: Sphere_Elavl1a_KD_untreated_r2  # Elavl1a knockdown sphere-stage vehicle-control replicate 2
-    cell_line: AB_Elavl1a_KD_sphere
+    sample_group: AB_Elavl1a_KD_sphere
     condition: untreated
     replicate: 2
   - accession: GSM4473287
     sample_name: Sphere_Elavl1a_KD_treated_r1  # Elavl1a knockdown sphere-stage in vivo NAI-N3 replicate 1
-    cell_line: AB_Elavl1a_KD_sphere
+    sample_group: AB_Elavl1a_KD_sphere
     condition: treated
     replicate: 1
   - accession: GSM4473288
     sample_name: Sphere_Elavl1a_KD_treated_r2  # Elavl1a knockdown sphere-stage in vivo NAI-N3 replicate 2
-    cell_line: AB_Elavl1a_KD_sphere
+    sample_group: AB_Elavl1a_KD_sphere
     condition: treated
     replicate: 2
   - accession: GSM4473289
     sample_name: Shield_Elavl1a_KD_untreated_r1  # Elavl1a knockdown shield-stage vehicle-control replicate 1
-    cell_line: AB_Elavl1a_KD_shield
+    sample_group: AB_Elavl1a_KD_shield
     condition: untreated
     replicate: 1
   - accession: GSM4473290
     sample_name: Shield_Elavl1a_KD_untreated_r2  # Elavl1a knockdown shield-stage vehicle-control replicate 2
-    cell_line: AB_Elavl1a_KD_shield
+    sample_group: AB_Elavl1a_KD_shield
     condition: untreated
     replicate: 2
   - accession: GSM4473291
     sample_name: Shield_Elavl1a_KD_treated_r1  # Elavl1a knockdown shield-stage in vivo NAI-N3 replicate 1
-    cell_line: AB_Elavl1a_KD_shield
+    sample_group: AB_Elavl1a_KD_shield
     condition: treated
     replicate: 1
   - accession: GSM4473292
     sample_name: Shield_Elavl1a_KD_treated_r2  # Elavl1a knockdown shield-stage in vivo NAI-N3 replicate 2
-    cell_line: AB_Elavl1a_KD_shield
+    sample_group: AB_Elavl1a_KD_shield
     condition: treated
     replicate: 2

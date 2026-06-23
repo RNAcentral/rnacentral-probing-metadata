@@ -26,46 +26,46 @@ raw_data:
   run_accessions:
   - accession: GSM2838788
     sample_name: zika_french_polynesia_treated_r1
-    cell_line: zika_HPF2013
+    sample_group: zika_HPF2013
     condition: treated
     replicate: 1
   - accession: GSM2838789
     sample_name: zika_french_polynesia_untreated_r1
-    cell_line: zika_HPF2013
+    sample_group: zika_HPF2013
     condition: untreated
     replicate: 1
   - accession: GSM2838790
     sample_name: zika_french_polynesia_denatured_r1
-    cell_line: zika_HPF2013
+    sample_group: zika_HPF2013
     condition: denatured
     replicate: 1
   - accession: GSM2838791
     sample_name: zika_french_polynesia_treated_r2
-    cell_line: zika_HPF2013
+    sample_group: zika_HPF2013
     condition: treated
     replicate: 2
   - accession: GSM2838792
     sample_name: zika_french_polynesia_untreated_r2
-    cell_line: zika_HPF2013
+    sample_group: zika_HPF2013
     condition: untreated
     replicate: 2
   - accession: GSM2838793
     sample_name: zika_french_polynesia_denatured_r2
-    cell_line: zika_HPF2013
+    sample_group: zika_HPF2013
     condition: denatured
     replicate: 2
   - accession: GSM2838794
     sample_name: zika_french_polynesia_treated_r3
-    cell_line: zika_HPF2013
+    sample_group: zika_HPF2013
     condition: treated
     replicate: 3
   - accession: GSM2838795
     sample_name: zika_french_polynesia_untreated_r3
-    cell_line: zika_HPF2013
+    sample_group: zika_HPF2013
     condition: untreated
     replicate: 3
   - accession: GSM2838796
     sample_name: zika_french_polynesia_denatured_r3
-    cell_line: zika_HPF2013
+    sample_group: zika_HPF2013
     condition: denatured
     replicate: 3

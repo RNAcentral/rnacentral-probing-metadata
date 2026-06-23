@@ -27,36 +27,36 @@ raw_data:
   run_accessions:
   - accession: GSM2055261
     sample_name: WT_vitro  # wild-type MG1655 mRNA modified in vitro at 37C
-    cell_line: MG1655_vitro
+    sample_group: MG1655_vitro
     condition: treated
     replicate: 1
   - accession: GSM2055274
     sample_name: deltagcvB_ksg_vivo  # gcvB deletion mutant treated with kasugamycin before DMS
-    cell_line: MG1655_delta_gcvB_ksg
+    sample_group: MG1655_delta_gcvB_ksg
     condition: treated
     replicate: 1
   - accession: GSM2055273
     sample_name: deltagcvB_vivo  # gcvB deletion mutant, in vivo DMS
-    cell_line: MG1655_delta_gcvB
+    sample_group: MG1655_delta_gcvB
     condition: treated
     replicate: 1
   - accession: GSM2055271
     sample_name: dusB_M3_vivo  # dusB-M3 mutant, in vivo DMS
-    cell_line: MG1655_dusB_M3
+    sample_group: MG1655_dusB_M3
     condition: treated
     replicate: 1
   - accession: GSM2055272
     sample_name: dusB_M3_2_vivo  # dusB-M3:2 mutant, in vivo DMS
-    cell_line: MG1655_dusB_M3_2
+    sample_group: MG1655_dusB_M3_2
     condition: treated
     replicate: 2
   - accession: GSM2055260
     sample_name: WT_vivo_r1  # wild-type MG1655, in vivo DMS replicate 1
-    cell_line: MG1655_vivo
+    sample_group: MG1655_vivo
     condition: treated
     replicate: 1
   - accession: GSM2055270
     sample_name: WT_vivo_r2  # wild-type MG1655, in vivo DMS replicate 2
-    cell_line: MG1655_vivo
+    sample_group: MG1655_vivo
     condition: treated
     replicate: 2

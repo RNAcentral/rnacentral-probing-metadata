@@ -28,21 +28,21 @@ raw_data:
   run_accessions:
   - accession: GSM7885842
     sample_name: E_coli_DH5a_in_vivo_37C_treated
-    cell_line: E_coli_DH5a_in_vivo
+    sample_group: E_coli_DH5a_in_vivo
     condition: treated
     replicate: 1
   - accession: GSM7885843
     sample_name: E_coli_TOP10_in_vivo_37C_treated
-    cell_line: E_coli_TOP10_in_vivo
+    sample_group: E_coli_TOP10_in_vivo
     condition: treated
     replicate: 1
   - accession: GSM7885844
     sample_name: E_coli_DH5a_ex_vivo_37C_treated
-    cell_line: E_coli_DH5a_ex_vivo
+    sample_group: E_coli_DH5a_ex_vivo
     condition: treated
     replicate: 1
   - accession: GSM7885845
     sample_name: E_coli_TOP10_ex_vivo_37C_treated
-    cell_line: E_coli_TOP10_ex_vivo
+    sample_group: E_coli_TOP10_ex_vivo
     condition: treated
     replicate: 1

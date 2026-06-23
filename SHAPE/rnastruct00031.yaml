@@ -27,21 +27,21 @@ raw_data:
   run_accessions:
   - accession: GSM4665449
     sample_name: usa_wa1_in_vivo_treated_r1
-    cell_line: SARS-CoV-2_USA-WA1
+    sample_group: SARS-CoV-2_USA-WA1
     condition: treated
     replicate: 1
   - accession: GSM4665451
     sample_name: usa_wa1_in_vivo_treated_r2
-    cell_line: SARS-CoV-2_USA-WA1
+    sample_group: SARS-CoV-2_USA-WA1
     condition: treated
     replicate: 2
   - accession: GSM4665450
     sample_name: usa_wa1_in_vivo_untreated_r1
-    cell_line: SARS-CoV-2_USA-WA1
+    sample_group: SARS-CoV-2_USA-WA1
     condition: untreated
     replicate: 1
   - accession: GSM4665452
     sample_name: usa_wa1_in_vivo_untreated_r2
-    cell_line: SARS-CoV-2_USA-WA1
+    sample_group: SARS-CoV-2_USA-WA1
     condition: untreated
     replicate: 2

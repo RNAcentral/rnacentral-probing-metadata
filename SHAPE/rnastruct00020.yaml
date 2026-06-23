@@ -26,111 +26,111 @@ raw_data:
   run_accessions:
   - accession: SRX20997913
     sample_name: Col-0_seedling_in_vitro_untreated_r1
-    cell_line: Col-0_in_vitro
+    sample_group: Col-0_in_vitro
     condition: untreated
     replicate: 1
   - accession: SRX20997914
     sample_name: Col-0_seedling_in_vitro_untreated_r2
-    cell_line: Col-0_in_vitro
+    sample_group: Col-0_in_vitro
     condition: untreated
     replicate: 2
   - accession: SRX20997915
     sample_name: Col-0_seedling_in_vitro_untreated_r3
-    cell_line: Col-0_in_vitro
+    sample_group: Col-0_in_vitro
     condition: untreated
     replicate: 3
   - accession: SRX20997910
     sample_name: Col-0_seedling_in_vitro_treated_r1
-    cell_line: Col-0_in_vitro
+    sample_group: Col-0_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX20997911
     sample_name: Col-0_seedling_in_vitro_treated_r2
-    cell_line: Col-0_in_vitro
+    sample_group: Col-0_in_vitro
     condition: treated
     replicate: 2
   - accession: SRX20997912
     sample_name: Col-0_seedling_in_vitro_treated_r3
-    cell_line: Col-0_in_vitro
+    sample_group: Col-0_in_vitro
     condition: treated
     replicate: 3
   - accession: SRX15950621
     sample_name: Col-0_seedling_elf18_untreated_r1  # elf18 is a bacterial EF-Tu peptide used to trigger Arabidopsis immune signalling.
-    cell_line: Col-0_elf18
+    sample_group: Col-0_elf18
     condition: untreated
     replicate: 1
   - accession: SRX15950620
     sample_name: Col-0_seedling_elf18_untreated_r2
-    cell_line: Col-0_elf18
+    sample_group: Col-0_elf18
     condition: untreated
     replicate: 2
   - accession: SRX15950619
     sample_name: Col-0_seedling_elf18_untreated_r3
-    cell_line: Col-0_elf18
+    sample_group: Col-0_elf18
     condition: untreated
     replicate: 3
   - accession: SRX15950618
     sample_name: Col-0_seedling_elf18_untreated_r4
-    cell_line: Col-0_elf18
+    sample_group: Col-0_elf18
     condition: untreated
     replicate: 4
   - accession: SRX15950623
     sample_name: Col-0_seedling_elf18_treated_r1
-    cell_line: Col-0_elf18
+    sample_group: Col-0_elf18
     condition: treated
     replicate: 1
   - accession: SRX15950624
     sample_name: Col-0_seedling_elf18_treated_r2
-    cell_line: Col-0_elf18
+    sample_group: Col-0_elf18
     condition: treated
     replicate: 2
   - accession: SRX15950625
     sample_name: Col-0_seedling_elf18_treated_r3
-    cell_line: Col-0_elf18
+    sample_group: Col-0_elf18
     condition: treated
     replicate: 3
   - accession: SRX15950626
     sample_name: Col-0_seedling_elf18_treated_r4
-    cell_line: Col-0_elf18
+    sample_group: Col-0_elf18
     condition: treated
     replicate: 4
   - accession: SRX15950627
     sample_name: Col-0_seedling_mock_untreated_r1  # mock is the water/control treatment paired with elf18 immune induction.
-    cell_line: Col-0_mock
+    sample_group: Col-0_mock
     condition: untreated
     replicate: 1
   - accession: SRX15950628
     sample_name: Col-0_seedling_mock_untreated_r2
-    cell_line: Col-0_mock
+    sample_group: Col-0_mock
     condition: untreated
     replicate: 2
   - accession: SRX15950629
     sample_name: Col-0_seedling_mock_untreated_r3
-    cell_line: Col-0_mock
+    sample_group: Col-0_mock
     condition: untreated
     replicate: 3
   - accession: SRX15950614
     sample_name: Col-0_seedling_mock_untreated_r4
-    cell_line: Col-0_mock
+    sample_group: Col-0_mock
     condition: untreated
     replicate: 4
   - accession: SRX15950615
     sample_name: Col-0_seedling_mock_treated_r1
-    cell_line: Col-0_mock
+    sample_group: Col-0_mock
     condition: treated
     replicate: 1
   - accession: SRX15950616
     sample_name: Col-0_seedling_mock_treated_r2
-    cell_line: Col-0_mock
+    sample_group: Col-0_mock
     condition: treated
     replicate: 2
   - accession: SRX15950634
     sample_name: Col-0_seedling_mock_treated_r3
-    cell_line: Col-0_mock
+    sample_group: Col-0_mock
     condition: treated
     replicate: 3
   - accession: SRX15950633
     sample_name: Col-0_seedling_mock_treated_r4
-    cell_line: Col-0_mock
+    sample_group: Col-0_mock
     condition: treated
     replicate: 4

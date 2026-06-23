@@ -25,21 +25,21 @@ raw_data:
   run_accessions:
   - accession: GSM2465731
     sample_name: WT_r1
-    cell_line: DED1_WT
+    sample_group: DED1_WT
     condition: treated
     replicate: 1
   - accession: GSM2465733
     sample_name: WT_r2
-    cell_line: DED1_WT
+    sample_group: DED1_WT
     condition: treated
     replicate: 2
   - accession: GSM2465732
     sample_name: ded1_95_r1
-    cell_line: ded1-95
+    sample_group: ded1-95
     condition: treated
     replicate: 1
   - accession: GSM2465734
     sample_name: ded1_95_r2
-    cell_line: ded1-95
+    sample_group: ded1-95
     condition: treated
     replicate: 2

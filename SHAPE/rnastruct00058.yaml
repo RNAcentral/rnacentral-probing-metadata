@@ -26,11 +26,11 @@ raw_data:
   run_accessions:
   - accession: GSM2211040
     sample_name: mESC_treated_vitro_K150
-    cell_line: mES_vitro
+    sample_group: mES_vitro
     condition: treated
     replicate: 1
   - accession: GSM2211042
     sample_name: mESC_treated_vivo
-    cell_line: mES_vivo
+    sample_group: mES_vivo
     condition: treated
     replicate: 1

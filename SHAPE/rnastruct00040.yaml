@@ -27,56 +27,56 @@ raw_data:
   run_accessions:
   - accession: GSM4411317
     sample_name: sRNA_in_vivo_untreated_r1
-    cell_line: HEK293T_sRNA_in_vivo
+    sample_group: HEK293T_sRNA_in_vivo
     condition: untreated
     replicate: 1
   - accession: GSM4411318
     sample_name: sRNA_in_vivo_untreated_r2
-    cell_line: HEK293T_sRNA_in_vivo
+    sample_group: HEK293T_sRNA_in_vivo
     condition: untreated
     replicate: 2
   - accession: GSM4411319
     sample_name: sRNA_in_vivo_treated_r1
-    cell_line: HEK293T_sRNA_in_vivo
+    sample_group: HEK293T_sRNA_in_vivo
     condition: treated
     replicate: 1
   - accession: GSM4411320
     sample_name: sRNA_in_vivo_treated_r2
-    cell_line: HEK293T_sRNA_in_vivo
+    sample_group: HEK293T_sRNA_in_vivo
     condition: treated
     replicate: 2
   - accession: GSM4411321
     sample_name: sRNA_in_vitro_treated_r1
-    cell_line: HEK293T_sRNA_in_vitro
+    sample_group: HEK293T_sRNA_in_vitro
     condition: treated
     replicate: 1
   - accession: GSM4411322
     sample_name: sRNA_in_vitro_treated_r2
-    cell_line: HEK293T_sRNA_in_vitro
+    sample_group: HEK293T_sRNA_in_vitro
     condition: treated
     replicate: 2
   - accession: GSM4411323
     sample_name: Dicer_RIP_untreated_r1
-    cell_line: HEK293T_Dicer_RIP
+    sample_group: HEK293T_Dicer_RIP
     condition: untreated
     replicate: 1
   - accession: GSM4411324
     sample_name: Dicer_RIP_untreated_r2
-    cell_line: HEK293T_Dicer_RIP
+    sample_group: HEK293T_Dicer_RIP
     condition: untreated
     replicate: 2
   - accession: GSM4411325
     sample_name: Dicer_RIP_treated_r1
-    cell_line: HEK293T_Dicer_RIP
+    sample_group: HEK293T_Dicer_RIP
     condition: treated
     replicate: 1
   - accession: GSM4411326
     sample_name: Dicer_RIP_treated_r2
-    cell_line: HEK293T_Dicer_RIP
+    sample_group: HEK293T_Dicer_RIP
     condition: treated
     replicate: 2
   - accession: GSM4411327
     sample_name: Dicer_RIP_treated_r3
-    cell_line: HEK293T_Dicer_RIP
+    sample_group: HEK293T_Dicer_RIP
     condition: treated
     replicate: 3

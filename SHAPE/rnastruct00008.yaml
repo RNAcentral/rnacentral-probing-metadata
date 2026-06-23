@@ -26,16 +26,16 @@ raw_data:
   run_accessions:
   - accession: GSM2838809
     sample_name: Zika_French_Polynesia_in_vitro_treated
-    cell_line: ZIKV_KJ776791_HPF2013
+    sample_group: ZIKV_KJ776791_HPF2013
     condition: treated
     replicate: 1
   - accession: GSM2838810
     sample_name: Zika_French_Polynesia_in_vitro_untreated
-    cell_line: ZIKV_KJ776791_HPF2013
+    sample_group: ZIKV_KJ776791_HPF2013
     condition: untreated
     replicate: 1
   - accession: GSM2838811
     sample_name: Zika_French_Polynesia_in_vitro_denatured
-    cell_line: ZIKV_KJ776791_HPF2013
+    sample_group: ZIKV_KJ776791_HPF2013
     condition: denatured
     replicate: 1

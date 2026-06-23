@@ -26,31 +26,31 @@ raw_data:
   run_accessions:
   - accession: GSM2838747
     sample_name: dengue_EDEN2402_treated_r1
-    cell_line: dengue_EDEN2402
+    sample_group: dengue_EDEN2402
     condition: treated
     replicate: 1
   - accession: GSM2838748
     sample_name: dengue_EDEN2402_untreated_r1
-    cell_line: dengue_EDEN2402
+    sample_group: dengue_EDEN2402
     condition: untreated
     replicate: 1
   - accession: GSM2838749
     sample_name: dengue_EDEN2402_denatured_r1
-    cell_line: dengue_EDEN2402
+    sample_group: dengue_EDEN2402
     condition: denatured
     replicate: 1
   - accession: GSM2838750
     sample_name: dengue_EDEN2402_treated_r2
-    cell_line: dengue_EDEN2402
+    sample_group: dengue_EDEN2402
     condition: treated
     replicate: 2
   - accession: GSM2838751
     sample_name: dengue_EDEN2402_untreated_r2
-    cell_line: dengue_EDEN2402
+    sample_group: dengue_EDEN2402
     condition: untreated
     replicate: 2
   - accession: GSM2838752
     sample_name: dengue_EDEN2402_denatured_r2
-    cell_line: dengue_EDEN2402
+    sample_group: dengue_EDEN2402
     condition: denatured
     replicate: 2

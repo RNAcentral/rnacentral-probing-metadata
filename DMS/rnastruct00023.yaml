@@ -28,16 +28,16 @@ raw_data:
   run_accessions:
   - accession: GSM2211026
     sample_name: Ecoli_untreated_K150
-    cell_line: Escherichia_coli_vitro
+    sample_group: Escherichia_coli_vitro
     condition: untreated
     replicate: 1
   - accession: GSM2211028
     sample_name: Ecoli_DMS_vitro_K150
-    cell_line: Escherichia_coli_vitro
+    sample_group: Escherichia_coli_vitro
     condition: treated
     replicate: 1
   - accession: GSM2211030
     sample_name: Ecoli_DMS_vivo
-    cell_line: Escherichia_coli_vivo
+    sample_group: Escherichia_coli_vivo
     condition: treated
     replicate: 1

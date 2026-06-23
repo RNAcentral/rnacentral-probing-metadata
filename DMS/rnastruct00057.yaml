@@ -28,21 +28,21 @@ raw_data:
   run_accessions:
   - accession: GSM2211012
     sample_name: mESC_vitro_K150
-    cell_line: mES_vitro
+    sample_group: mES_vitro
     condition: treated
     replicate: 1
   - accession: GSM2211014
     sample_name: mESC_vivo_r1
-    cell_line: mES_vivo
+    sample_group: mES_vivo
     condition: treated
     replicate: 1
   - accession: GSM2211015
     sample_name: mESC_vivo_r2
-    cell_line: mES_vivo
+    sample_group: mES_vivo
     condition: treated
     replicate: 2
   - accession: GSM2211016
     sample_name: mESC_vivo_PDS  # PDS: pyridostatin, a G-quadruplex stabilising ligand
-    cell_line: mES_PDS
+    sample_group: mES_PDS
     condition: treated
     replicate: 1

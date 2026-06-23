@@ -25,21 +25,21 @@ raw_data:
   run_accessions:
   - accession: GSM4717180
     sample_name: C57BL6J_macrophages_low_r1  # macrophages sorted by Ly6C surface expression to achieve high or low subpopulations
-    cell_line: C57BL6J_mac_low
+    sample_group: C57BL6J_mac_low
     condition: treated
     replicate: 1
   - accession: GSM4717181
     sample_name: C57BL6J_macrophages_low_r2
-    cell_line: C57BL6J_mac_low
+    sample_group: C57BL6J_mac_low
     condition: treated
     replicate: 2
   - accession: GSM4717182
     sample_name: C57BL6J_macrophages_high_r1
-    cell_line: C57BL6J_mac_high
+    sample_group: C57BL6J_mac_high
     condition: treated
     replicate: 1
   - accession: GSM4717183
     sample_name: C57BL6J_macrophages_high_r2
-    cell_line: C57BL6J_mac_high
+    sample_group: C57BL6J_mac_high
     condition: treated
     replicate: 2

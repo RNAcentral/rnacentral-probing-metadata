@@ -26,16 +26,16 @@ raw_data:
   run_accessions:
   - accession: GSM2838806
     sample_name: dengue_EDEN2270_treated
-    cell_line: dengue_EDEN2270
+    sample_group: dengue_EDEN2270
     condition: treated
     replicate: 1
   - accession: GSM2838807
     sample_name: dengue_EDEN2270_untreated
-    cell_line: dengue_EDEN2270
+    sample_group: dengue_EDEN2270
     condition: untreated
     replicate: 1
   - accession: GSM2838808
     sample_name: dengue_EDEN2270_denatured
-    cell_line: dengue_EDEN2270
+    sample_group: dengue_EDEN2270
     condition: denatured
     replicate: 1

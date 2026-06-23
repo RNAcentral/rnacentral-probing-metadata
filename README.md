@@ -24,9 +24,9 @@ To add a new dataset to this repository:
 
 3. You must also include the metadata schema version (`schema_version: "1.0.0"`), organism name, the method (which can be SHAPE or DMS variants) and principal (RT-stop or MaP) of this experiement, a publication DOI, and fill out the raw_data section. For non-viral datasets, use the Latin name (e.g. Homo sapiens). For viral datasets, use the common virus name used by NCBI Taxonomy rather than a Latin name. For viral datasets only, the strain field is also required.
 
-4. Each sample listed under run_accessions should include a biologically meaningful and distinguishable sample_name, along with cell_line (no white spaces), condition (one of untreated, treated, or denatured), and replicate (just a number). The sample accession id must be supported by nf-core/fetchngs (e.g. SRA, ENA, DDBJ, GEO; [see the fetchngs documentation for the full list](https://nf-co.re/fetchngs/1.12.0/docs/usage)).
+4. Each sample listed under run_accessions should include a biologically meaningful and distinguishable sample_name, along with sample_group (no white spaces), condition (one of untreated, treated, or denatured), and replicate (just a number). The sample accession id must be supported by nf-core/fetchngs (e.g. SRA, ENA, DDBJ, GEO; [see the fetchngs documentation for the full list](https://nf-co.re/fetchngs/1.12.0/docs/usage)).
 
-5. The `cell_line` field is used as the per-sample grouping label in the final samplesheet, not only for literal cell lines. If samples differ by another biologically meaningful feature, include that feature in `cell_line`, such as tissue or developmental stage, genotype, `in_vivo`/`in_vitro`, viral context, drug treatment, or perturbation. Use underscores instead of whitespace.
+5. The `sample_group` field is the per-sample grouping label in the final samplesheet. Samples sharing the same `sample_group` value are analysed together. It is not limited to cell lines — use it to encode any biologically meaningful grouping, such as organism strain, tissue or developmental stage, genotype, `in_vivo`/`in_vitro` context, viral isolate, drug treatment, or perturbation. Use underscores instead of whitespace.
    - Examples from current metadata include `K562_in_vivo` and `K562_in_vitro` to distinguish sample context, and `embryonic_64c_CHX` or `embryonic_64c_PatA` to distinguish developmental stage and drug treatment.
 
 6. If including an OBI id, use a valid term from the [Ontology for Biomedical Investigations](http://obi-ontology.org/) / [obi-ontology/obi](https://github.com/obi-ontology/obi). If the experimental context is provided, it must be one of in_vivo, in_vitro, denatured, ex_vivo, in_virio or ex_virio.
@@ -75,8 +75,8 @@ The required fields are:
 - `publication.doi`
 - `raw_data.repository`, which must be one of `SRA`, `ENA`, `GEO`, or `DDBJ`
 - `raw_data.accession`
-- `raw_data.run_accessions`, where each item must include `accession`, `sample_name`, `cell_line`, `condition`, and `replicate`
-  - `cell_line` must not contain white spaces — use underscores instead (e.g. `embryonic_cells`, not `embryonic cells`)
+- `raw_data.run_accessions`, where each item must include `accession`, `sample_name`, `sample_group`, `condition`, and `replicate`
+  - `sample_group` must not contain white spaces — use underscores instead (e.g. `embryonic_cells`, not `embryonic cells`)
 
 All other fields are optional and, if not known, can be `null`.
 

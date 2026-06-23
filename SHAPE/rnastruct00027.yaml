@@ -26,16 +26,16 @@ raw_data:
   run_accessions:
   - accession: GSM5024392
     sample_name: sars2_wt_in_vivo_treated
-    cell_line: SARS-CoV-2_WT
+    sample_group: SARS-CoV-2_WT
     condition: treated
     replicate: 1
   - accession: GSM5024393
     sample_name: sars2_wt_denatured
-    cell_line: SARS-CoV-2_WT
+    sample_group: SARS-CoV-2_WT
     condition: denatured
     replicate: 1
   - accession: GSM5024394
     sample_name: sars2_wt_in_vivo_untreated
-    cell_line: SARS-CoV-2_WT
+    sample_group: SARS-CoV-2_WT
     condition: untreated
     replicate: 1

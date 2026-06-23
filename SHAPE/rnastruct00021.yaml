@@ -26,11 +26,11 @@ raw_data:
   run_accessions:
   - accession: GSM4026531
     sample_name: Col-0_seedling_nuclear_mRNA_untreated
-    cell_line: Col-0_nuclear_mRNA
+    sample_group: Col-0_nuclear_mRNA
     condition: untreated
     replicate: 1
   - accession: GSM4026532
     sample_name: Col-0_seedling_nuclear_mRNA_treated
-    cell_line: Col-0_nuclear_mRNA
+    sample_group: Col-0_nuclear_mRNA
     condition: treated
     replicate: 1
