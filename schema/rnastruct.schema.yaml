@@ -51,6 +51,8 @@ classes:
       context:
         range: ContextEnum
         multivalued: true
+      rna_type:
+        range: RnaTypeEnum
       principle:
         required: true
         range: PrincipleEnum
@@ -118,6 +120,12 @@ enums:
     permissible_values:
       RT-stop:
       MaP:
+
+  RnaTypeEnum:
+    permissible_values:
+      mRNA:
+      total:
+      sRNA:
 
   ContextEnum:
     permissible_values:

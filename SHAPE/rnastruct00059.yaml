@@ -10,6 +10,7 @@ experiment:
   obi: OBI:0003895
   chemical: 1M6
   context: [ex_virio, in_virio, in_vitro]
+  rna_type: total
   pH: null
   adapter_3p: null
   adapter_5p: null

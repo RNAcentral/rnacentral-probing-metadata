@@ -9,6 +9,7 @@ experiment:
   obi: OBI:0001015
   chemical: DMS
   context: [in_vivo, in_vitro]
+  rna_type: mRNA
   pH: 7.4
   adapter_3p: ACTGTAGGCACCATCAAT
   adapter_5p: null

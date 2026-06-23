@@ -10,6 +10,7 @@ experiment:
   principle: RT-stop
   pH: 7.5
   context: [in_vivo]
+  rna_type: mRNA
   adapter_3p: GGAAGAGCACACGTCTGAACTCCAGTCAC
   adapter_5p: null
   umi_pattern: NNNNNNNNNNNNN

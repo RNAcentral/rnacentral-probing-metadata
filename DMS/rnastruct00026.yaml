@@ -10,6 +10,7 @@ experiment:
   obi: OBI:0001015
   chemical: DMS
   context: [in_vivo, ex_virio]
+  rna_type: total
   pH: null
   adapter_3p: null
   adapter_5p: null

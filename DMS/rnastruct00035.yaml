@@ -9,6 +9,7 @@ experiment:
   obi: OBI:0001015
   chemical: DMS
   context: [in_vivo, denatured]
+  rna_type: total
   pH: null
   adapter_3p: null
   adapter_5p: null

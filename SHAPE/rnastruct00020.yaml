@@ -9,6 +9,7 @@ experiment:
   obi: OBI:0003886
   chemical: NAI
   context: [in_vivo, in_vitro]
+  rna_type: mRNA
   pH: null
   adapter_3p: null
   adapter_5p: null

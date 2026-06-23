@@ -29,9 +29,11 @@ To add a new dataset to this repository:
 5. The `sample_group` field is the per-sample grouping label in the final samplesheet. Samples sharing the same `sample_group` value are analysed together. It is not limited to cell lines — use it to encode any biologically meaningful grouping, such as organism strain, tissue or developmental stage, genotype, `in_vivo`/`in_vitro` context, viral isolate, drug treatment, or perturbation. Use underscores instead of whitespace.
    - Examples from current metadata include `K562_in_vivo` and `K562_in_vitro` to distinguish sample context, and `embryonic_64c_CHX` or `embryonic_64c_PatA` to distinguish developmental stage and drug treatment.
 
-6. If including an OBI id, use a valid term from the [Ontology for Biomedical Investigations](http://obi-ontology.org/) / [obi-ontology/obi](https://github.com/obi-ontology/obi). If the experimental context is provided, it must be one of in_vivo, in_vitro, denatured, ex_vivo, in_virio or ex_virio.
+6. The optional `rna_type` field describes what RNA fraction was captured for library preparation. Use one of `mRNA` (polyadenylated mRNA selected with oligo-dT), `total` (total or rRNA-depleted RNA, no poly-A selection), or `sRNA` (small RNA, typically <200 nt).
 
-7. All other fields are optional and can be set to null if not available.
+7. If including an OBI id, use a valid term from the [Ontology for Biomedical Investigations](http://obi-ontology.org/) / [obi-ontology/obi](https://github.com/obi-ontology/obi). If the experimental context is provided, it must be one of in_vivo, in_vitro, denatured, ex_vivo, in_virio or ex_virio.
+
+8. All other fields are optional and can be set to null if not available.
 
 ## Installation
 
