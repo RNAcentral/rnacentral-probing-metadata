@@ -36,3 +36,5 @@ raw_data:
       sample_group: mES
       condition: treated
       replicate: 1
+
+comment: keep exceptionally as quality dataset even without replicates

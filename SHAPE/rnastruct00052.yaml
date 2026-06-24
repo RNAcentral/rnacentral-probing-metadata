@@ -70,3 +70,5 @@ raw_data:
     sample_group: zika_BeH815744
     condition: denatured
     replicate: 3
+
+comment: null

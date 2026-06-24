@@ -35,3 +35,5 @@ raw_data:
     sample_group: HIV-1_NL4-3
     condition: untreated
     replicate: 1
+
+comment: failed QC, no biological replicates

@@ -70,3 +70,5 @@ raw_data:
     sample_group: zika_HPF2013
     condition: denatured
     replicate: 3
+
+comment: null

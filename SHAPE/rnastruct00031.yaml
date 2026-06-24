@@ -46,3 +46,5 @@ raw_data:
     sample_group: SARS-CoV-2_USA-WA1
     condition: untreated
     replicate: 2
+
+comment: null

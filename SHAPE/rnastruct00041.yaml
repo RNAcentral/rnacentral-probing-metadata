@@ -41,3 +41,5 @@ raw_data:
     sample_group: SARS-CoV-2_Delta382
     condition: untreated
     replicate: 1
+
+comment: failed QC, no biological replicates

@@ -40,3 +40,5 @@ raw_data:
     sample_group: dengue_EDEN2270
     condition: denatured
     replicate: 1
+
+comment: failed QC, no biological replicates

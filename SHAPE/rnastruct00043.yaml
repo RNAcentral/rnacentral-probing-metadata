@@ -69,3 +69,5 @@ raw_data:
     sample_group: HEK293_cytoplasm_vitro
     condition: treated
     replicate: 1
+
+comment: null, same sample fractionated

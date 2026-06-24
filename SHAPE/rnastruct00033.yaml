@@ -35,3 +35,5 @@ raw_data:
     sample_group: IAV_Udorn
     condition: untreated
     replicate: 1
+
+comment: failed QC, no biological replicates

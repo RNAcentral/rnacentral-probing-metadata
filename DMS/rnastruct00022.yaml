@@ -61,3 +61,5 @@ raw_data:
     sample_group: MG1655_vivo
     condition: treated
     replicate: 2
+
+comment: "failed QC: no biological replicates for most conditions"

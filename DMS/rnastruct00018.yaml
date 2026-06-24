@@ -51,61 +51,63 @@ raw_data:
     replicate: 2
   - accession: GSM2515737
     sample_name: Standard_primer_biotin_untreated_r1
-    sample_group: Oryza_sativa
+    sample_group: Oryza_sativa_biotin
     condition: untreated
     replicate: 1
   - accession: GSM2515738
     sample_name: Standard_primer_biotin_untreated_r2
-    sample_group: Oryza_sativa
+    sample_group: Oryza_sativa_biotin
     condition: untreated
     replicate: 2
   - accession: GSM2515739
     sample_name: Standard_primer_biotin_DMS_r1
-    sample_group: Oryza_sativa
+    sample_group: Oryza_sativa_biotin
     condition: treated
     replicate: 1
   - accession: GSM2515740
     sample_name: Standard_primer_biotin_DMS_r2
-    sample_group: Oryza_sativa
+    sample_group: Oryza_sativa_biotin
     condition: treated
     replicate: 2
   - accession: GSM2515746
     sample_name: Custom_primer_untreated_r1
-    sample_group: Oryza_sativa
+    sample_group: Oryza_sativa_Custom_primer
     condition: untreated
     replicate: 1
   - accession: GSM2515747
     sample_name: Custom_primer_untreated_r2
-    sample_group: Oryza_sativa
+    sample_group: Oryza_sativa_Custom_primer
     condition: untreated
     replicate: 2
   - accession: GSM2515748
     sample_name: Custom_primer_DMS_r1
-    sample_group: Oryza_sativa
+    sample_group: Oryza_sativa_Custom_primer
     condition: treated
     replicate: 1
   - accession: GSM2515749
     sample_name: Custom_primer_DMS_r2
-    sample_group: Oryza_sativa
+    sample_group: Oryza_sativa_Custom_primer
     condition: treated
     replicate: 2
   - accession: GSM2515751
     sample_name: Custom_primer_biotin_untreated_r1
-    sample_group: Oryza_sativa
+    sample_group: Oryza_sativa_Custom_primer_biotin
     condition: untreated
     replicate: 1
   - accession: GSM2515752
     sample_name: Custom_primer_biotin_untreated_r2
-    sample_group: Oryza_sativa
+    sample_group: Oryza_sativa_Custom_primer_biotin
     condition: untreated
     replicate: 2
   - accession: GSM2515753
     sample_name: Custom_primer_biotin_DMS_r1
-    sample_group: Oryza_sativa
+    sample_group: Oryza_sativa_Custom_primer_biotin
     condition: treated
     replicate: 1
   - accession: GSM2515754
     sample_name: Custom_primer_biotin_DMS_r2
-    sample_group: Oryza_sativa
+    sample_group: Oryza_sativa_Custom_primer_biotin
     condition: treated
     replicate: 2
+
+comment: null

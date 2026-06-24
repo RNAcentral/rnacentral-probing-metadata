@@ -55,3 +55,5 @@ raw_data:
     sample_group: dengue_S16803_in_vitro
     condition: untreated
     replicate: 1
+
+comment: failed QC, no biological replicates

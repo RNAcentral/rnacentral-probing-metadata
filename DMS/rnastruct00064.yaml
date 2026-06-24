@@ -47,3 +47,5 @@ raw_data:
     sample_group: E_coli_TOP10_ex_vivo
     condition: treated
     replicate: 1
+
+comment: skip, this is for rf-jackknife benchmarking, not for general use

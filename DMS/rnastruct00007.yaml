@@ -37,3 +37,5 @@ raw_data:
     sample_group: Parasynechococcus_marenigrum_WH_8102
     condition: treated
     replicate: 1
+    
+comment: failed QC, no biological replicates

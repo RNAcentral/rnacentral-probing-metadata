@@ -87,3 +87,5 @@ raw_data:
     sample_group: HEK293T
     condition: untreated
     replicate: 6
+
+comment: null

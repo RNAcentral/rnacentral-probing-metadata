@@ -47,3 +47,5 @@ raw_data:
     sample_group: SARS-CoV-2_USA-WA1_ex_virio
     condition: treated
     replicate: 1
+
+comment: "failed QC: no biological replicates"

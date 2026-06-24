@@ -9,7 +9,7 @@ experiment:
   principle: MaP
   obi: OBI:0003886
   chemical: NAI
-  context: [in_vivo, denatured]
+  context: [in_vivo]
   rna_type: total
   pH: null
   adapter_3p: null
@@ -24,6 +24,8 @@ raw_data:
   repository: GEO
   accession: GSE106483
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106483
+  # Excluded from this curation:
+  # - GSM2838761 (dengue_EDEN863_denatured_r1): only 1 denatured replicate; no rep2 to pair with treated_r2.
   run_accessions:
   - accession: GSM2838759
     sample_name: dengue_EDEN863_treated_r1
@@ -35,11 +37,6 @@ raw_data:
     sample_group: dengue_EDEN863
     condition: untreated
     replicate: 1
-  - accession: GSM2838761
-    sample_name: dengue_EDEN863_denatured_r1
-    sample_group: dengue_EDEN863
-    condition: denatured
-    replicate: 1
   - accession: GSM2838762
     sample_name: dengue_EDEN863_treated_r2
     sample_group: dengue_EDEN863
@@ -50,3 +47,5 @@ raw_data:
     sample_group: dengue_EDEN863
     condition: untreated
     replicate: 2
+
+comment: null
