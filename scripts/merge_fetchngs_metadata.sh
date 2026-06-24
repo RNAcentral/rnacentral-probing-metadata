@@ -40,7 +40,11 @@ for yaml in "${repo_dir}"/SHAPE/*.yaml "${repo_dir}"/DMS/*.yaml; do
     --metadata "${yaml}" \
     --out "${out_csv}"
 
-  merged_outputs+=("${out_csv}")
+  if [ -s "${out_csv}" ]; then
+    merged_outputs+=("${out_csv}")
+  else
+    skipped_count=$((skipped_count + 1))
+  fi
 done
 
 manifest="${merged_dir}/rnastruct_samplesheets_manifest.txt"

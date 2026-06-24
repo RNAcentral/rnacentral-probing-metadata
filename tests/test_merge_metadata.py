@@ -1,3 +1,4 @@
+"""Tests for scripts/merge_metadata.py."""
 from __future__ import annotations
 
 import csv
@@ -21,6 +22,7 @@ SHAPE_YAML = REPO_ROOT / "SHAPE" / "rnastruct00001.yaml"
 
 
 def test_extract_run_metadata_map_includes_sample_fields():
+    """extract_run_metadata_map returns a dict keyed by accession with sample fields."""
     metadata = {
         "raw_data": {
             "run_accessions": [
@@ -47,43 +49,65 @@ def test_extract_run_metadata_map_includes_sample_fields():
     }
 
 
-def test_extract_run_metadata_map_skips_failed_qc():
-    metadata = {
-        "raw_data": {
-            "run_accessions": [
-                {
-                    "accession": "GSM1",
-                    "sample_name": "HeLa_treated_r1",
-                    "sample_group": "HeLa",
-                    "condition": "treated",
-                    "replicate": 1,
-                    "comment": "failed QC: no biological replicates",
-                },
-                {
-                    "accession": "GSM2",
-                    "sample_name": "HeLa_treated_r2",
-                    "sample_group": "HeLa",
-                    "condition": "treated",
-                    "replicate": 2,
-                    "comment": None,
-                },
-            ]
-        }
-    }
+def test_main_skips_dataset_with_failed_qc_comment(tmp_path, monkeypatch, capsys):
+    """main() returns 0 and writes no output when the dataset comment starts with 'failed QC'."""
+    samplesheet_path = tmp_path / "fetchngs.csv"
+    metadata_path = tmp_path / "metadata.yaml"
+    output_path = tmp_path / "merged.csv"
 
-    result = merge_metadata.extract_run_metadata_map(metadata)
+    samplesheet_path.write_text(
+        "sample_alias,fastq_1,fastq_2\nGSM1,s1_R1.fastq.gz,\n",
+        encoding="utf-8",
+    )
+    metadata_path.write_text(
+        (
+            "dataset_id: rnastruct99999\n"
+            "organism: Homo sapiens\n"
+            "experiment:\n"
+            "  chemical: DMS\n"
+            "  principle: MaP\n"
+            "raw_data:\n"
+            "  run_accessions:\n"
+            "  - accession: GSM1\n"
+            "    sample_name: HeLa_treated_r1\n"
+            "    sample_group: HeLa\n"
+            "    condition: treated\n"
+            "    replicate: 1\n"
+            'comment: "failed QC: no biological replicates"\n'
+        ),
+        encoding="utf-8",
+    )
 
-    assert "GSM1" not in result
-    assert "GSM2" in result
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "merge_metadata.py",
+            "--samplesheet",
+            str(samplesheet_path),
+            "--metadata",
+            str(metadata_path),
+            "--out",
+            str(output_path),
+        ],
+    )
+
+    rc = merge_metadata.main()
+    assert rc == 0
+    assert not output_path.exists()
+    err = capsys.readouterr().err
+    assert "Skipping rnastruct99999" in err
+    assert "failed QC" in err
 
 
 def test_extract_organism_name_keeps_non_viral_organism_unchanged():
+    """Non-viral organism names are returned as-is."""
     metadata = {"organism": "Homo sapiens", "strain": "not-used"}
 
     assert merge_metadata.extract_organism_name(metadata) == "Homo sapiens"
 
 
 def test_extract_organism_name_adds_strain_for_viral_organism():
+    """Viral organism names have the strain appended in parentheses."""
     metadata = {
         "organism": "Influenza A virus",
         "strain": "A/Puerto Rico/8/1934(H1N1)",
@@ -96,6 +120,7 @@ def test_extract_organism_name_adds_strain_for_viral_organism():
 
 
 def test_main_writes_new_sample_metadata_columns(tmp_path, monkeypatch, capsys):
+    """main() produces a samplesheet with the expected header and sample_group values."""
     samplesheet_path = tmp_path / "fetchngs.csv"
     output_path = tmp_path / "merged.csv"
 
@@ -151,6 +176,7 @@ def test_main_writes_new_sample_metadata_columns(tmp_path, monkeypatch, capsys):
 
 
 def test_main_writes_viral_organism_with_strain(tmp_path, monkeypatch):
+    """main() appends the strain to the organism name for viral datasets."""
     samplesheet_path = tmp_path / "fetchngs.csv"
     metadata_path = tmp_path / "metadata.yaml"
     output_path = tmp_path / "merged.csv"
@@ -203,6 +229,7 @@ def test_main_writes_viral_organism_with_strain(tmp_path, monkeypatch):
 def test_main_matches_experiment_accession_when_sample_alias_is_descriptive(
     tmp_path, monkeypatch
 ):
+    """main() falls back to experiment_accession when sample_alias is not a GEO/SRA ID."""
     samplesheet_path = tmp_path / "fetchngs.csv"
     metadata_path = tmp_path / "metadata.yaml"
     output_path = tmp_path / "merged.csv"

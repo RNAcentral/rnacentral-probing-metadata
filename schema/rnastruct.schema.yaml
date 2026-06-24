@@ -112,8 +112,6 @@ classes:
       replicate:
         required: true
         range: integer
-      comment:
-        range: string
 
 enums:
   SchemaVersionEnum:

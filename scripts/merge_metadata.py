@@ -5,7 +5,7 @@ Output format:
 sample,sample_id,fastq_1,fastq_2,method,principle,sample_group,
 condition,replicate,organism,pH,adapter_3p,adapter_5p,umi_pattern
 
-Samples whose comment field starts with "failed QC" are excluded.
+Datasets whose top-level comment starts with "failed QC" are skipped entirely.
 """
 
 from __future__ import annotations
@@ -55,13 +55,8 @@ def read_yaml(path: Path) -> dict:
     return data
 
 
-def _is_failed_qc(item: dict) -> bool:
-    comment = str(item.get("comment") or "")
-    return comment.startswith("failed QC")
-
-
 def extract_run_metadata_map(metadata: dict) -> dict[str, dict[str, str]]:
-    """Map accession IDs to per-sample metadata, skipping failed-QC entries."""
+    """Map accession IDs to per-sample metadata."""
     raw_data = metadata.get("raw_data")
     if not isinstance(raw_data, dict):
         raise ValueError("Metadata YAML is missing a 'raw_data' mapping.")
@@ -71,8 +66,6 @@ def extract_run_metadata_map(metadata: dict) -> dict[str, dict[str, str]]:
 
     result = {}
     for item in run_accessions:
-        if _is_failed_qc(item):
-            continue
         accession = str(item["accession"]).strip()
         result[accession] = {
             "sample_name": str(item["sample_name"]).strip(),
@@ -184,6 +177,15 @@ def main() -> int:
         raise ValueError(f"Empty samplesheet: {samplesheet_path}")
 
     metadata = read_yaml(metadata_path)
+    dataset_id = metadata.get("dataset_id", str(metadata_path))
+    dataset_comment = str(metadata.get("comment") or "")
+    if dataset_comment.startswith("failed QC"):
+        print(
+            f"Skipping {dataset_id}: {dataset_comment}",
+            file=sys.stderr,
+        )
+        return 0
+
     run_metadata_map = extract_run_metadata_map(metadata)
     dataset_id = metadata.get("dataset_id", "")
     experiment = metadata.get("experiment") or {}
