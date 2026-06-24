@@ -41,4 +41,4 @@ raw_data:
     condition: treated
     replicate: 1
 
-comment: failed QC, no biological replicates
+comment: "failed QC: no biological replicates"
