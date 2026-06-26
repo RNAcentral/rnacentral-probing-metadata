@@ -1,7 +1,9 @@
 dataset_id: rnastruct00018
 schema_version: "1.0.0"
 
-organism: Oryza sativa
+organism:
+  scientific_name: Oryza sativa
+  ncbi_taxon: 4530
 
 experiment:
   method: Structure-seq2

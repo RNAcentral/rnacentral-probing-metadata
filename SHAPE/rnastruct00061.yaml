@@ -1,8 +1,10 @@
 dataset_id: rnastruct00061
 schema_version: "1.0.0"
 
-organism: Dengue virus
-strain: S16803
+organism:
+  scientific_name: Dengue virus
+  ncbi_taxon: 12637
+  strain: S16803
 
 experiment:
   method: SHAPE-MaP

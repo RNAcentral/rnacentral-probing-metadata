@@ -1,8 +1,10 @@
 dataset_id: rnastruct00051
 schema_version: "1.0.0"
 
-organism: Zika virus
-strain: MR766  # African strain; GenBank ID AY632535.
+organism:
+  scientific_name: Zika virus
+  ncbi_taxon: 64320
+  strain: MR766  # African strain; GenBank ID AY632535.
 
 experiment:
   method: NAI-MaP

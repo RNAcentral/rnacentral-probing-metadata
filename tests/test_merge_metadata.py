@@ -62,7 +62,9 @@ def test_main_skips_dataset_with_failed_qc_comment(tmp_path, monkeypatch, capsys
     metadata_path.write_text(
         (
             "dataset_id: rnastruct99999\n"
-            "organism: Homo sapiens\n"
+            "organism:\n"
+            "  scientific_name: Homo sapiens\n"
+            "  ncbi_taxon: 9606\n"
             "experiment:\n"
             "  chemical: DMS\n"
             "  principle: MaP\n"
@@ -101,7 +103,9 @@ def test_main_skips_dataset_with_failed_qc_comment(tmp_path, monkeypatch, capsys
 
 def test_extract_organism_name_keeps_non_viral_organism_unchanged():
     """Non-viral organism names are returned as-is."""
-    metadata = {"organism": "Homo sapiens", "strain": "not-used"}
+    metadata = {
+        "organism": {"scientific_name": "Homo sapiens", "ncbi_taxon": "9606"},
+    }
 
     assert merge_metadata.extract_organism_name(metadata) == "Homo sapiens"
 
@@ -109,8 +113,11 @@ def test_extract_organism_name_keeps_non_viral_organism_unchanged():
 def test_extract_organism_name_adds_strain_for_viral_organism():
     """Viral organism names have the strain appended in parentheses."""
     metadata = {
-        "organism": "Influenza A virus",
-        "strain": "A/Puerto Rico/8/1934(H1N1)",
+        "organism": {
+            "scientific_name": "Influenza A virus",
+            "ncbi_taxon": "11520",
+            "strain": "A/Puerto Rico/8/1934(H1N1)",
+        },
     }
 
     assert (
@@ -188,8 +195,10 @@ def test_main_writes_viral_organism_with_strain(tmp_path, monkeypatch):
     metadata_path.write_text(
         (
             "dataset_id: rnastruct00014\n"
-            "organism: Influenza A virus\n"
-            "strain: A/Puerto Rico/8/1934(H1N1)\n"
+            "organism:\n"
+            "  scientific_name: Influenza A virus\n"
+            "  ncbi_taxon: 11520\n"
+            "  strain: A/Puerto Rico/8/1934(H1N1)\n"
             "experiment:\n"
             "  chemical: DMS\n"
             "  principle: MaP\n"
@@ -245,8 +254,10 @@ def test_main_matches_experiment_accession_when_sample_alias_is_descriptive(
     metadata_path.write_text(
         (
             "dataset_id: rnastruct00015\n"
-            "organism: Influenza A virus\n"
-            "strain: A/Puerto Rico/8/1934(H1N1)\n"
+            "organism:\n"
+            "  scientific_name: Influenza A virus\n"
+            "  ncbi_taxon: 11520\n"
+            "  strain: A/Puerto Rico/8/1934(H1N1)\n"
             "experiment:\n"
             "  chemical: 1M7\n"
             "  principle: MaP\n"

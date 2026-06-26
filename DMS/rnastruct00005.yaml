@@ -1,7 +1,9 @@
 dataset_id: rnastruct00005
 schema_version: "1.0.0"
 
-organism: Danio rerio
+organism:
+  scientific_name: Danio rerio
+  ncbi_taxon: 7955
 
 experiment:
   method: DMS-seq

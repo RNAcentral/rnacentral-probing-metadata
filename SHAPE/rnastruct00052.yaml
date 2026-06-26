@@ -1,8 +1,10 @@
 dataset_id: rnastruct00052
 schema_version: "1.0.0"
 
-organism: Zika virus
-strain: BeH815744  # Brazil/Polynesia strain; GenBank ID KU365780.
+organism:
+  scientific_name: Zika virus
+  ncbi_taxon: 64320
+  strain: BeH815744  # Brazil/Polynesia strain; GenBank ID KU365780.
 
 experiment:
   method: NAI-MaP

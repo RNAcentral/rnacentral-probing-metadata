@@ -1,7 +1,9 @@
 dataset_id: rnastruct00007
 schema_version: "1.0.0"
 
-organism: Parasynechococcus marenigrum
+organism:
+  scientific_name: Parasynechococcus marenigrum
+  ncbi_taxon: 84588  # reclassified from Synechococcus sp. WH8102; NCBI retains taxid 84588
 
 experiment:
   method: DMS-seq

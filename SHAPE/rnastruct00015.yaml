@@ -1,8 +1,10 @@
 dataset_id: rnastruct00015
 schema_version: "1.0.0"
 
-organism: Influenza A virus
-strain: A/Puerto Rico/8/1934(H1N1)  # PR8 abbreviation for A/Puerto Rico/8/1934(H1N1).
+organism:
+  scientific_name: Influenza A virus
+  ncbi_taxon: 11520
+  strain: A/Puerto Rico/8/1934(H1N1)  # PR8 abbreviation for A/Puerto Rico/8/1934(H1N1).
 
 experiment:
   method: SHAPE-MaP

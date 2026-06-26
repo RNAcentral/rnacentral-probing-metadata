@@ -125,14 +125,14 @@ def normalize_method(chemical: str) -> str:
 def extract_organism_name(metadata: dict) -> str:
     """Return samplesheet organism name, including viral strain when present."""
     organism = metadata.get("organism")
-    if isinstance(organism, str):
+    if isinstance(organism, dict):
+        organism_name = str(organism.get("scientific_name", "")).strip()
+    elif isinstance(organism, str):
         organism_name = organism.strip()
-    elif isinstance(organism, dict):
-        organism_name = str(organism.get("name", "")).strip()
     else:
         organism_name = ""
 
-    strain = str(metadata.get("strain", "")).strip()
+    strain = str((organism.get("strain", "") if isinstance(organism, dict) else "")).strip()
     if organism_name in VIRAL_ORGANISMS and strain:
         return f"{organism_name} ({strain})"
     return organism_name

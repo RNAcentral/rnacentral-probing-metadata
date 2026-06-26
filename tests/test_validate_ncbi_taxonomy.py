@@ -76,8 +76,10 @@ def test_validate_metadata_file_passes_when_viral_strain_resolves(tmp_path):
     yaml_path.write_text(
         (
             "dataset_id: rnastruct00014\n"
-            "organism: Influenza A virus\n"
-            "strain: A/Puerto Rico/8/1934(H1N1)\n"
+            "organism:\n"
+            "  scientific_name: Influenza A virus\n"
+            "  ncbi_taxon: 11520\n"
+            "  strain: A/Puerto Rico/8/1934(H1N1)\n"
             "raw_data:\n"
             "  repository: GEO\n"
             "  accession: GSE122286\n"
@@ -99,8 +101,10 @@ def test_validate_metadata_file_accepts_sars_cov_2_species_level_taxon(tmp_path)
     yaml_path.write_text(
         (
             "dataset_id: rnastruct00026\n"
-            "organism: SARS-CoV-2\n"
-            "strain: USA-WA1/2020\n"
+            "organism:\n"
+            "  scientific_name: SARS-CoV-2\n"
+            "  ncbi_taxon: 2697049\n"
+            "  strain: USA-WA1/2020\n"
         ),
         encoding="utf-8",
     )
@@ -116,14 +120,14 @@ def test_validate_metadata_file_accepts_sars_cov_2_species_level_taxon(tmp_path)
 def test_validate_metadata_file_requires_strain_for_viral_organism(tmp_path):
     yaml_path = tmp_path / "rnastruct00014.yaml"
     yaml_path.write_text(
-        "dataset_id: rnastruct00014\norganism: Influenza A virus\n",
+        "dataset_id: rnastruct00014\norganism:\n  scientific_name: Influenza A virus\n  ncbi_taxon: 11520\n",
         encoding="utf-8",
     )
 
     issues = validate_ncbi_taxonomy.validate_metadata_file(yaml_path, search=lambda name: [])
 
     assert issues == [
-        f"{yaml_path}: viral organism 'Influenza A virus' requires top-level strain"
+        f"{yaml_path}: viral organism 'Influenza A virus' requires organism.strain"
     ]
 
 
@@ -132,8 +136,10 @@ def test_validate_metadata_file_reports_unresolved_strain(tmp_path):
     yaml_path.write_text(
         (
             "dataset_id: rnastruct00014\n"
-            "organism: Influenza A virus\n"
-            "strain: Unknown\n"
+            "organism:\n"
+            "  scientific_name: Influenza A virus\n"
+            "  ncbi_taxon: 11520\n"
+            "  strain: Unknown\n"
         ),
         encoding="utf-8",
     )
@@ -173,8 +179,10 @@ def test_validate_metadata_file_reports_ncbi_lookup_error(tmp_path):
     yaml_path.write_text(
         (
             "dataset_id: rnastruct00014\n"
-            "organism: Influenza A virus\n"
-            "strain: A/Puerto Rico/8/1934(H1N1)\n"
+            "organism:\n"
+            "  scientific_name: Influenza A virus\n"
+            "  ncbi_taxon: 11520\n"
+            "  strain: A/Puerto Rico/8/1934(H1N1)\n"
         ),
         encoding="utf-8",
     )
@@ -194,8 +202,10 @@ def test_validate_metadata_files_caches_taxonomy_searches(tmp_path):
     second_path = tmp_path / "second.yaml"
     content = (
         "dataset_id: rnastruct00014\n"
-        "organism: Influenza A virus\n"
-        "strain: A/Puerto Rico/8/1934(H1N1)\n"
+        "organism:\n"
+        "  scientific_name: Influenza A virus\n"
+        "  ncbi_taxon: 11520\n"
+        "  strain: A/Puerto Rico/8/1934(H1N1)\n"
     )
     first_path.write_text(content, encoding="utf-8")
     second_path.write_text(content, encoding="utf-8")

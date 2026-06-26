@@ -1,8 +1,10 @@
 dataset_id: rnastruct00029
 schema_version: "1.0.0"
 
-organism: SARS-CoV-2
-strain: IPBCAMS-YL01/2020  # GEO reports SARS-CoV-2 isolate IPBCAMS-YL01/2020.
+organism:
+  scientific_name: SARS-CoV-2
+  ncbi_taxon: 2697049
+  strain: IPBCAMS-YL01/2020  # GEO reports SARS-CoV-2 isolate IPBCAMS-YL01/2020.
 
 experiment:
   method: icSHAPE

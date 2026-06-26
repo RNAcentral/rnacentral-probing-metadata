@@ -1,8 +1,10 @@
 dataset_id: rnastruct00050
 schema_version: "1.0.0"
 
-organism: Dengue virus
-strain: EDEN2270  # Dengue serotype 4 is reported as EDEN2270 in the paper, with the Genbank ID GQ398256.1.
+organism:
+  scientific_name: Dengue virus
+  ncbi_taxon: 12637
+  strain: EDEN2270  # Dengue serotype 4 is reported as EDEN2270 in the paper, with the Genbank ID GQ398256.1.
 
 experiment:
   method: NAI-MaP

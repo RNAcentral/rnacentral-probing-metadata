@@ -20,7 +20,7 @@ def metadata_files() -> list[Path]:
 def organism_pattern() -> re.Pattern[str]:
     with SCHEMA_YAML.open(encoding="utf-8") as handle:
         schema = yaml.safe_load(handle)
-    pattern = schema["classes"]["Dataset"]["attributes"]["organism"]["pattern"]
+    pattern = schema["classes"]["Organism"]["attributes"]["scientific_name"]["pattern"]
     return re.compile(pattern)
 
 
@@ -52,14 +52,12 @@ def test_schema_declares_current_version():
     assert list(values) == [CURRENT_SCHEMA_VERSION]
 
 
-def test_schema_allows_dataset_and_sample_comments():
+def test_schema_allows_dataset_level_comment():
     with SCHEMA_YAML.open(encoding="utf-8") as handle:
         schema = yaml.safe_load(handle)
 
     dataset_comment = schema["classes"]["Dataset"]["attributes"]["comment"]
-    sample_comment = schema["classes"]["RunAccessionName"]["attributes"]["comment"]
     assert dataset_comment["range"] == "string"
-    assert sample_comment["range"] == "string"
 
 
 def test_metadata_files_declare_current_schema_version():

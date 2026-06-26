@@ -1,7 +1,9 @@
 dataset_id: rnastruct00037
 schema_version: "1.0.0"
 
-organism: Saccharomyces cerevisiae
+organism:
+  scientific_name: Saccharomyces cerevisiae
+  ncbi_taxon: 4932
 
 experiment:
   method: DMS-MaPseq

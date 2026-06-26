@@ -173,13 +173,17 @@ def validate_metadata_file(
     if not isinstance(data, dict):
         return [f"{path}: top-level YAML must be a mapping"]
 
-    organism = str(data.get("organism", "")).strip()
+    organism_data = data.get("organism") or {}
+    if isinstance(organism_data, dict):
+        organism = str(organism_data.get("scientific_name", "")).strip()
+    else:
+        organism = str(organism_data).strip()
     if organism not in VIRAL_ORGANISMS:
         return []
 
-    strain = str(data.get("strain", "")).strip()
+    strain = str((organism_data.get("strain", "") if isinstance(organism_data, dict) else "")).strip()
     if not strain:
-        return [f"{path}: viral organism '{organism}' requires top-level strain"]
+        return [f"{path}: viral organism '{organism}' requires organism.strain"]
 
     try:
         resolved = resolve_viral_taxonomy(organism, strain, search=search)

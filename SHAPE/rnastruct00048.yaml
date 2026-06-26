@@ -1,8 +1,10 @@
 dataset_id: rnastruct00048
 schema_version: "1.0.0"
 
-organism: Dengue virus
-strain: EDEN863  # Dengue serotype 3 is reported as EDEN863 in the paper, with the Genbank ID EU081190.1.
+organism:
+  scientific_name: Dengue virus
+  ncbi_taxon: 12637
+  strain: EDEN863  # Dengue serotype 3 is reported as EDEN863 in the paper, with the Genbank ID EU081190.1.
 
 experiment:
   method: NAI-MaP

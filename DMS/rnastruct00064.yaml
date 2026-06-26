@@ -1,7 +1,9 @@
 dataset_id: rnastruct00064
 schema_version: "1.0.0"
 
-organism: Escherichia coli
+organism:
+  scientific_name: Escherichia coli
+  ncbi_taxon: 562
 
 experiment:
   method: DMS-MaPseq

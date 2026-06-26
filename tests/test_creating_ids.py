@@ -39,11 +39,14 @@ def test_extract_ids_reads_raw_data_run_accessions_only():
     assert creating_ids.extract_ids(data) == EXPECTED_IDS
 
 
-def test_extract_ids_ignores_optional_top_level_strain():
+def test_extract_ids_ignores_organism_strain():
     data = {
         "dataset_id": "rnastruct00014",
-        "organism": "Influenza A virus",
-        "strain": "A/Puerto Rico/8/1934(H1N1)",
+        "organism": {
+            "scientific_name": "Influenza A virus",
+            "ncbi_taxon": "11520",
+            "strain": "A/Puerto Rico/8/1934(H1N1)",
+        },
         "raw_data": {
             "run_accessions": [
                 {"accession": "GSM3463231"},

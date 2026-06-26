@@ -1,8 +1,10 @@
 dataset_id: rnastruct00047
 schema_version: "1.0.0"
 
-organism: Dengue virus
-strain: EDEN3295  # Dengue serotype 2 is reported as EDEN3295 in the paper, with the Genbank ID EU081177.1.
+organism:
+  scientific_name: Dengue virus
+  ncbi_taxon: 12637
+  strain: EDEN3295  # Dengue serotype 2 is reported as EDEN3295 in the paper, with the Genbank ID EU081177.1.
 
 experiment:
   method: NAI-MaP

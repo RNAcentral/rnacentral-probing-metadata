@@ -1,8 +1,10 @@
 dataset_id: rnastruct00024
 schema_version: "1.0.0"
 
-organism: Rotavirus A
-strain: RF  # Paper reports bovine rotavirus A strain RF, G6P6[1].
+organism:
+  scientific_name: Rotavirus A
+  ncbi_taxon: 28875
+  strain: RF  # Paper reports bovine rotavirus A strain RF, G6P6[1].
 
 experiment:
   method: SHAPE-MaP

@@ -1,8 +1,10 @@
 dataset_id: rnastruct00053
 schema_version: "1.0.0"
 
-organism: Zika virus
-strain: HPF2013  # French Polynesia strain; GenBank ID KJ776791.
+organism:
+  scientific_name: Zika virus
+  ncbi_taxon: 64320
+  strain: HPF2013  # French Polynesia strain; GenBank ID KJ776791.
 
 experiment:
   method: NAI-MaP

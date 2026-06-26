@@ -1,7 +1,9 @@
 dataset_id: rnastruct00019
 schema_version: "1.0.0"
 
-organism: Pseudomonas putida
+organism:
+  scientific_name: Pseudomonas putida
+  ncbi_taxon: 303
 
 experiment:
   method: DMS-seq

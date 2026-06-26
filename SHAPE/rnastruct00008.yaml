@@ -1,8 +1,10 @@
 dataset_id: rnastruct00008
 schema_version: "1.0.0"
 
-organism: Zika virus
-strain: KJ776791_HPF2013  # Paper reports the French Polynesia ZIKV strain as KJ776791_HPF2013.
+organism:
+  scientific_name: Zika virus
+  ncbi_taxon: 64320
+  strain: KJ776791_HPF2013  # Paper reports the French Polynesia ZIKV strain as KJ776791_HPF2013.
 
 experiment:
   method: NAI-MaP

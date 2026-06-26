@@ -1,7 +1,9 @@
 dataset_id: rnastruct00043
 schema_version: "1.0.0"
 
-organism: Homo sapiens
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxon: 9606
 
 experiment:
   method: icSHAPE

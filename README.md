@@ -16,9 +16,13 @@ To add a new dataset to this repository:
 6. If the checks pass, someone from RNAcentral will review and merge the pull request.
 7. If the checks fail, inspect the GitHub Actions logs, fix the reported issue in the YAML, and update the pull request.
 
+Note that **biological replication is required.** Each treated `sample_group` must have at least 2 biological replicates. Datasets that do not meet this criterion will not be accepted. Rare exceptions may be considered for datasets that probe a large number of biologically distinct conditions — for example, many different cell lines, subcellular fractions, or developmental stages — where the breadth of coverage partially compensates for the absence of within-group replication. Please include a justification in the pull request description if required.
+
 ## Creating a new YAML file
 
-1. Start from the template: use the example file (rnastruct00001.yaml) as a guide. Your YAML should follow the same structure. If your dataset includes multiple organisms, create one YAML file per organism (e.g. one for Homo sapiens, one for Mus musculus).
+A fully annotated template with inline field descriptions is available at [`docs/template.yaml`](docs/template.yaml). Use it as your starting point.
+
+1. Start from the template: copy [`docs/template.yaml`](docs/template.yaml) and rename it. If your dataset includes multiple organisms, create one YAML file per organism (e.g. one for Homo sapiens, one for Mus musculus).
 
 2. Choose a dataset id that is a consecutive number from the last one in the repo (e.g. rnastruct00010). Check both DMS/ and SHAPE/ to find the latest id number.
 

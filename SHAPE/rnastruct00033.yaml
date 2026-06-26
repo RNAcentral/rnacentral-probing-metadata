@@ -1,8 +1,10 @@
 dataset_id: rnastruct00033
 schema_version: "1.0.0"
 
-organism: Influenza A virus
-strain: A/Udorn/307/1972(H3N2)  # Udorn abbreviation for A/Udorn/307/1972(H3N2).
+organism:
+  scientific_name: Influenza A virus
+  ncbi_taxon: 11520
+  strain: A/Udorn/307/1972(H3N2)  # Udorn abbreviation for A/Udorn/307/1972(H3N2).
 
 experiment:
   method: SHAPE-MaP

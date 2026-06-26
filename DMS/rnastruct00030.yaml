@@ -1,8 +1,10 @@
 dataset_id: rnastruct00030
 schema_version: "1.0.0"
 
-organism: SARS-CoV-2
-strain: Leiden-0002  # Paper reports SARS-CoV-2/Leiden-0002, GenBank MT510999.
+organism:
+  scientific_name: SARS-CoV-2
+  ncbi_taxon: 2697049
+  strain: Leiden-0002  # Paper reports SARS-CoV-2/Leiden-0002, GenBank MT510999.
 
 experiment:
   method: DMS-MaPseq
