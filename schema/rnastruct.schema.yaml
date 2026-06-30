@@ -45,9 +45,8 @@ classes:
         pattern: "^([A-Z][a-z]+ [a-z]+(?: [a-z]+)?|Influenza A virus|SARS-CoV-2|Zika virus|HIV|Rotavirus A|Dengue virus|Parasynechococcus marenigrum)$"
       ncbi_taxon:
         required: true
-        range: string
+        range: integer
         description: NCBI Taxonomy ID as a plain integer, e.g. 9606.
-        pattern: "^\\d+$"
       strain:
         range: string
         description: Strain or isolate name; required for viral datasets when all samples share the same reference strain.
