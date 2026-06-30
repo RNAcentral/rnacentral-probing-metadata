@@ -13,7 +13,7 @@ experiment:
   context: [in_vivo]
   rna_type: total
   pH: null
-  adapter_3p: null
+  adapter_3p: CTGTAGGCACCATCAAT
   adapter_5p: null
   umi_pattern: null
 
