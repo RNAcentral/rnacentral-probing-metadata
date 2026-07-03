@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Zika virus
-  ncbi_taxon: 64320
+  ncbi_taxid: 64320
   strain: MR766  # African strain; GenBank ID AY632535.
 
 experiment:
@@ -11,6 +11,7 @@ experiment:
   principle: MaP
   obi: OBI:0003886
   chemical: NAI
+  RT_enzyme: M-MLV
   context: [in_vivo, denatured]
   rna_type: total
   pH: null

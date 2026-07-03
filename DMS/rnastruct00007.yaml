@@ -3,13 +3,14 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Parasynechococcus marenigrum
-  ncbi_taxon: 84588  # reclassified from Synechococcus sp. WH8102; NCBI retains taxid 84588
+  ncbi_taxid: 84588  # reclassified from Synechococcus sp. WH8102; NCBI retains taxid 84588
 
 experiment:
   method: DMS-seq
   principle: RT-stop
   obi: OBI:0001015
   chemical: DMS
+  RT_enzyme: M-MLV
   context: [in_vitro]
   rna_type: total
   pH: 7.0

@@ -3,13 +3,14 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Mus musculus
-  ncbi_taxon: 10090
+  ncbi_taxid: 10090
 
 experiment:
   method: icSHAPE
   principle: RT-stop
   obi: OBI:0003887
   chemical: NAI-N3
+  RT_enzyme: M-MLV
   context: [in_vivo, in_vitro]
   rna_type: mRNA
   pH: null

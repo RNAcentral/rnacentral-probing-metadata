@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Dengue virus
-  ncbi_taxon: 12637
+  ncbi_taxid: 12637
   strain: EDEN3295  # Dengue serotype 2 is reported as EDEN3295 in the paper, with the Genbank ID EU081177.1.
 
 experiment:
@@ -11,6 +11,7 @@ experiment:
   principle: MaP
   obi: OBI:0003886
   chemical: NAI
+  RT_enzyme: M-MLV
   context: [in_vivo, denatured]
   rna_type: total
   pH: null

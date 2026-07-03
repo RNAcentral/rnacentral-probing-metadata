@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Influenza A virus
-  ncbi_taxon: 11520
+  ncbi_taxid: 11320
   strain: A/WSN/1933(H1N1)  # Paper reports influenza A/WSN/33 (WSN).
 
 experiment:
@@ -11,6 +11,7 @@ experiment:
   principle: RT-stop
   obi: OBI:0003887
   chemical: NAI-N3
+  RT_enzyme: M-MLV
   context: [in_vivo, in_virio]
   rna_type: total
   pH: null

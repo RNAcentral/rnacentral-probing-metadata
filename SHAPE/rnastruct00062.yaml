@@ -3,13 +3,14 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Homo sapiens
-  ncbi_taxon: 9606
+  ncbi_taxid: 9606
 
 experiment:
   method: SHAPE-MaP
   principle: MaP
   obi: OBI:0003888
   chemical: 2A3
+  RT_enzyme: M-MLV
   context: [in_vivo]
   rna_type: mRNA
   pH: null

@@ -3,13 +3,14 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Homo sapiens
-  ncbi_taxon: 9606
+  ncbi_taxid: 9606
 
 experiment:
   method: DMS-MaPseq
   principle: MaP
   obi: OBI:0001015
   chemical: DMS
+  RT_enzyme: Group II intron
   context: [in_vivo]
   rna_type: total
   pH: null

@@ -64,7 +64,7 @@ def test_main_skips_dataset_with_failed_qc_comment(tmp_path, monkeypatch, capsys
             "dataset_id: rnastruct99999\n"
             "organism:\n"
             "  scientific_name: Homo sapiens\n"
-            "  ncbi_taxon: 9606\n"
+            "  ncbi_taxid: 9606\n"
             "experiment:\n"
             "  chemical: DMS\n"
             "  principle: MaP\n"
@@ -104,7 +104,7 @@ def test_main_skips_dataset_with_failed_qc_comment(tmp_path, monkeypatch, capsys
 def test_extract_organism_name_keeps_non_viral_organism_unchanged():
     """Non-viral organism names are returned as-is."""
     metadata = {
-        "organism": {"scientific_name": "Homo sapiens", "ncbi_taxon": "9606"},
+        "organism": {"scientific_name": "Homo sapiens", "ncbi_taxid": "9606"},
     }
 
     assert merge_metadata.extract_organism_name(metadata) == "Homo sapiens"
@@ -115,7 +115,7 @@ def test_extract_organism_name_adds_strain_for_viral_organism():
     metadata = {
         "organism": {
             "scientific_name": "Influenza A virus",
-            "ncbi_taxon": "11520",
+            "ncbi_taxid": "11520",
             "strain": "A/Puerto Rico/8/1934(H1N1)",
         },
     }
@@ -159,7 +159,7 @@ def test_main_writes_new_sample_metadata_columns(tmp_path, monkeypatch, capsys):
 
     header = output_path.read_text(encoding="utf-8").splitlines()[0]
     assert header == (
-        "sample,sample_id,fastq_1,fastq_2,method,principle,"
+        "sample,sample_id,fastq_1,fastq_2,method,principle,chemical,RT_enzyme,"
         "sample_group,condition,replicate,organism,pH,adapter_3p,adapter_5p,umi_pattern"
     )
 
@@ -197,7 +197,7 @@ def test_main_writes_viral_organism_with_strain(tmp_path, monkeypatch):
             "dataset_id: rnastruct00014\n"
             "organism:\n"
             "  scientific_name: Influenza A virus\n"
-            "  ncbi_taxon: 11520\n"
+            "  ncbi_taxid: 11520\n"
             "  strain: A/Puerto Rico/8/1934(H1N1)\n"
             "experiment:\n"
             "  chemical: DMS\n"
@@ -256,7 +256,7 @@ def test_main_matches_experiment_accession_when_sample_alias_is_descriptive(
             "dataset_id: rnastruct00015\n"
             "organism:\n"
             "  scientific_name: Influenza A virus\n"
-            "  ncbi_taxon: 11520\n"
+            "  ncbi_taxid: 11520\n"
             "  strain: A/Puerto Rico/8/1934(H1N1)\n"
             "experiment:\n"
             "  chemical: 1M7\n"

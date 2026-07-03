@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Influenza A virus
-  ncbi_taxon: 11520
+  ncbi_taxid: 11320
   strain: A/Puerto Rico/8/1934(H1N1)
 
 experiment:
@@ -11,6 +11,7 @@ experiment:
   principle: MaP
   obi: OBI:0001015
   chemical: DMS
+  RT_enzyme: Group II intron
   context: [in_vivo, in_vitro, denatured]
   rna_type: mRNA
   pH: null

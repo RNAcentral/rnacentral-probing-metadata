@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: SARS-CoV-2
-  ncbi_taxon: 2697049
+  ncbi_taxid: 2697049
   strain: USA-WA1/2020  # GEO reports SARS-CoV-2 strain USA-WA1/2020, passage 6.
 
 experiment:
@@ -11,6 +11,7 @@ experiment:
   principle: MaP
   obi: OBI:0001015
   chemical: DMS
+  RT_enzyme: Group II intron
   context: [in_vivo, ex_virio]
   rna_type: total
   pH: null

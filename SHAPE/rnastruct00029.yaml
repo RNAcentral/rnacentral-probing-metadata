@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: SARS-CoV-2
-  ncbi_taxon: 2697049
+  ncbi_taxid: 2697049
   strain: IPBCAMS-YL01/2020  # GEO reports SARS-CoV-2 isolate IPBCAMS-YL01/2020.
 
 experiment:
@@ -11,6 +11,7 @@ experiment:
   principle: RT-stop
   obi: OBI:0003887
   chemical: NAI-N3
+  RT_enzyme: M-MLV
   context: [in_vivo, in_vitro]
   rna_type: total
   pH: 7.5

@@ -3,13 +3,14 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Danio rerio
-  ncbi_taxon: 7955
+  ncbi_taxid: 7955
 
 experiment:
   method: DMS-seq
   principle: RT-stop
   obi: OBI:0001015
   chemical: DMS
+  RT_enzyme: M-MLV
   context: [in_vivo, in_vitro]
   rna_type: mRNA
   pH: 7.4

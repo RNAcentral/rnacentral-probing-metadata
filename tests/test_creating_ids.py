@@ -44,7 +44,7 @@ def test_extract_ids_ignores_organism_strain():
         "dataset_id": "rnastruct00014",
         "organism": {
             "scientific_name": "Influenza A virus",
-            "ncbi_taxon": "11520",
+            "ncbi_taxid": "11520",
             "strain": "A/Puerto Rico/8/1934(H1N1)",
         },
         "raw_data": {

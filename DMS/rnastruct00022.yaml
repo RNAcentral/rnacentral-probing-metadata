@@ -3,13 +3,14 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Escherichia coli
-  ncbi_taxon: 562
+  ncbi_taxid: 562
 
 experiment:
   method: DMS-seq
   principle: RT-stop
   obi: OBI:0001015
   chemical: DMS
+  RT_enzyme: M-MLV
   context: [in_vivo, in_vitro]
   rna_type: total
   pH: 8.0

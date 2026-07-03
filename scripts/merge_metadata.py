@@ -2,7 +2,7 @@
 """Build a pipeline samplesheet from fetchngs CSV + dataset YAML.
 
 Output format:
-sample,sample_id,fastq_1,fastq_2,method,principle,sample_group,
+sample,sample_id,fastq_1,fastq_2,method,principle,chemical,RT_enzyme,sample_group,
 condition,replicate,organism,pH,adapter_3p,adapter_5p,umi_pattern
 
 Datasets whose top-level comment starts with "failed QC" are skipped entirely.
@@ -153,6 +153,8 @@ def _build_out_row(
         "fastq_2": fetchngs_row.get("fastq_2", ""),
         "method": method,
         "principle": experiment.get("principle", ""),
+        "chemical": experiment.get("chemical", ""),
+        "RT_enzyme": experiment.get("RT_enzyme", ""),
         "sample_group": run_metadata["sample_group"],
         "condition": run_metadata["condition"],
         "replicate": run_metadata["replicate"],
@@ -229,6 +231,8 @@ def main() -> int:
         "fastq_2",
         "method",
         "principle",
+        "chemical",
+        "RT_enzyme",
         "sample_group",
         "condition",
         "replicate",

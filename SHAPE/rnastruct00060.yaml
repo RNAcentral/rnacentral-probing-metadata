@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Dengue virus
-  ncbi_taxon: 12637
+  ncbi_taxid: 12637
   strain: S16803
 
 experiment:
@@ -11,6 +11,7 @@ experiment:
   principle: MaP
   obi: OBI:0003885
   chemical: 1M7
+  RT_enzyme: M-MLV
   context: [ex_virio, in_virio, in_vitro]
   rna_type: total
   pH: null

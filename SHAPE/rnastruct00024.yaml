@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Rotavirus A
-  ncbi_taxon: 28875
+  ncbi_taxid: 28875
   strain: RF  # Paper reports bovine rotavirus A strain RF, G6P6[1].
 
 experiment:
@@ -11,6 +11,7 @@ experiment:
   principle: MaP
   obi: OBI:0003896
   chemical: 5NIA
+  RT_enzyme: M-MLV
   context: [in_vitro]
   rna_type: total
   pH: 7.5

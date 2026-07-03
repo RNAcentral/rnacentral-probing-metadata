@@ -3,13 +3,14 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Arabidopsis thaliana
-  ncbi_taxon: 3702
+  ncbi_taxid: 3702
 
 experiment:
   method: Nuc-SHAPE-Structure-Seq
   principle: RT-stop
   obi: OBI:0003886
   chemical: NAI
+  RT_enzyme: M-MLV
   context: [in_vivo]
   rna_type: mRNA
   pH: 7.5

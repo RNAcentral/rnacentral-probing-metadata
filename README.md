@@ -26,7 +26,7 @@ A fully annotated template with inline field descriptions is available at [`docs
 
 2. Choose a dataset id that is a consecutive number from the last one in the repo (e.g. rnastruct00010). Check both DMS/ and SHAPE/ to find the latest id number.
 
-3. You must also include the metadata schema version (`schema_version: "1.0.0"`), organism name, the method (which can be SHAPE or DMS variants) and principal (RT-stop or MaP) of this experiement, a publication DOI, and fill out the raw_data section. For non-viral datasets, use the Latin name (e.g. Homo sapiens). For viral datasets, use the common virus name used by NCBI Taxonomy rather than a Latin name. For viral datasets only, the strain field is also required.
+3. You must also include the metadata schema version (currently 1.0.0), the organism scientific_name and ncbi_taxid, the method (which can be SHAPE or DMS variants), principal (RT-stop or MaP), RT enzyme type (M-MLV or Group II intron), a publication DOI, and fill out the raw_data section. For viral datasets, use the common virus name used by NCBI Taxonomy rather than a scientific name, along with its NCBI Taxonomy ID. For viral datasets only, the strain field is also required.
 
 4. Each sample listed under run_accessions should include a biologically meaningful and distinguishable sample_name, along with sample_group (no white spaces), condition (one of untreated, treated, or denatured), and replicate (just a number). The sample accession id must be supported by nf-core/fetchngs (e.g. SRA, ENA, DDBJ, GEO; [see the fetchngs documentation for the full list](https://nf-co.re/fetchngs/1.12.0/docs/usage)).
 
@@ -75,9 +75,11 @@ The validator (`linkml-validate` against `schema/rnastruct.schema.yaml`) makes s
 The required fields are: 
 - `dataset_id`, which must match the `rnastruct00001` naming convention
 - `schema_version`, which must be the current metadata schema version (`1.0.0`)
-- `organism`, using the Latin name format for non-viral datasets and the common virus name used by NCBI Taxonomy for viral datasets
+- `organism.scientific_name`, using the Latin name format for non-viral datasets and the common virus name used by NCBI Taxonomy for viral datasets
+- `organism.ncbi_taxid`, the NCBI Taxonomy ID as a plain integer (e.g. `9606`)
 - `experiment.method`, which must contain `SHAPE` or `DMS`
 - `experiment.principle`, which must be `RT-stop` or `MaP`
+- `experiment.RT_enzyme`, which must be one of `M-MLV` or `Group II intron`
 - `publication.doi`
 - `raw_data.repository`, which must be one of `SRA`, `ENA`, `GEO`, or `DDBJ`
 - `raw_data.accession`
@@ -96,4 +98,4 @@ The `Validate Metadata` GitHub Actions workflow validates metadata files with th
 1. Validates each selected YAML file against the metadata schema.
 2. Checks uniqueness of dataset IDs and run accession IDs across all metadata files.
 3. Validates OBI IDs.
-4. Validates viral strains by checking if it exists in NCBI taxonomy.
+4. Validates that `organism.ncbi_taxid` exists in NCBI Taxonomy and matches `organism.scientific_name`, and that viral datasets provide `organism.strain`.

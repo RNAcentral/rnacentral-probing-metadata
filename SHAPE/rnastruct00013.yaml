@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Influenza A virus
-  ncbi_taxon: 11520
+  ncbi_taxid: 11320
   strain: A/WSN/1933(H1N1)  # SRA ScientificName reports Influenza A virus (A/WSN/1933(H1N1)).
 
 experiment:
@@ -11,6 +11,7 @@ experiment:
   principle: MaP
   obi: OBI:0003885
   chemical: 1M7
+  RT_enzyme: M-MLV
   context: [in_vitro, in_virio, denatured]
   rna_type: total
   pH: 8.0

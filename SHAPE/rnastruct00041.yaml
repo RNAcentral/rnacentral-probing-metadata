@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: SARS-CoV-2
-  ncbi_taxon: 2697049
+  ncbi_taxid: 2697049
   strain: EPI_ISL_414378  # GEO reports the Delta382 SARS-CoV-2 background as EPI_ISL_414378.
 
 experiment:
@@ -11,6 +11,7 @@ experiment:
   principle: MaP
   obi: OBI:0003886
   chemical: NAI
+  RT_enzyme: M-MLV
   context: [in_vivo, denatured]
   rna_type: total
   pH: null

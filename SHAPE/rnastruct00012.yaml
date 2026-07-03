@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: HIV
-  ncbi_taxon: 11676
+  ncbi_taxid: 11676
   strain: HIV-1_NL4-3  # SRA sample name reports HIV NL4-3 plus NMIA.
 
 experiment:
@@ -11,6 +11,7 @@ experiment:
   principle: MaP
   obi: OBI:0001026
   chemical: NMIA
+  RT_enzyme: M-MLV
   context: [ex_virio]
   rna_type: total
   pH: 8.0
