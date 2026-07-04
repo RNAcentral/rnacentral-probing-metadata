@@ -55,6 +55,9 @@ classes:
     attributes:
       method:
         required: true
+      principle:
+        required: true
+        range: PrincipleEnum
       obi:
         range: string
       chemical:
@@ -68,9 +71,6 @@ classes:
         multivalued: true
       rna_type:
         range: RnaTypeEnum
-      principle:
-        required: true
-        range: PrincipleEnum
       pH:
         range: float
       adapter_3p:

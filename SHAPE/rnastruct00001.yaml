@@ -7,13 +7,13 @@ organism:
 
 experiment:
   method: icSHAPE
+  principle: RT-stop
   obi: OBI:0003887
   chemical: NAI-N3
   RT_enzyme: M-MLV
-  principle: RT-stop
-  pH: 7.5
   context: [in_vivo]
   rna_type: mRNA
+  pH: 7.5
   adapter_3p: GGAAGAGCACACGTCTGAACTCCAGTCAC
   adapter_5p: null
   umi_pattern: NNNNNNNNNNNNN

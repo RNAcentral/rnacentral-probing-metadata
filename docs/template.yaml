@@ -8,12 +8,12 @@ organism:
 
 experiment:
   method: # Required # Name of the probing protocol. e.g. SHAPE-MaP, icSHAPE, DMS-MaPseq, DMS-seq, NAI-MaP, Structure-seq2
+  principle: # Required # Reverse transcription approach. One of: RT-stop, MaP
   obi: # Optional # OBI ontology term for the probing chemistry. SHAPE reagents: OBI:0003886. DMS: OBI:0001015. icSHAPE (NAI-N3): OBI:0003887
   chemical: # Required # Chemical probe used. One of: DMS, 1M7, NAI, NAI-N3, 2A3, I5, 1M4, 6A3, B5, NIC, BzCN, 1M6, NMIA, 5NIA
   RT_enzyme: # Required # Reverse transcriptase enzyme used. One of: M-MLV, Group II intron
   context: # Required # Probing context(s) as a list. One or more of: in_vivo, in_vitro, ex_vivo, in_virio, ex_virio, denatured. e.g. [in_vivo]
   rna_type: # Optional # RNA fraction captured. One of: mRNA (oligo-dT selected), total (total or rRNA-depleted), sRNA (small RNA <200 nt)
-  principle: # Required # Reverse transcription approach. One of: RT-stop, MaP
   pH: # Optional # Reaction pH as a number. e.g. 7.4
   adapter_3p: # Optional # 3′ adapter sequence to trim. e.g. GGAAGAGCACACGTCTGAACTCCAGTCAC
   adapter_5p: # Optional # 5′ adapter sequence to trim.

@@ -7,13 +7,13 @@ organism:
 
 experiment:
   method: DMS-seq
+  principle: RT-stop
   obi: OBI:0001015
   chemical: DMS
   RT_enzyme: M-MLV
-  principle: RT-stop
-  pH: 7.4
   context: [in_vivo, in_vitro]
   rna_type: mRNA
+  pH: 7.4
   adapter_3p: null  # not known
   adapter_5p: null  # not known
   umi_pattern: null  # not used
