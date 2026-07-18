@@ -1,0 +1,91 @@
+dataset_id: rnastruct00085
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Listeria monocytogenes
+  ncbi_taxid: 1639
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003885
+  chemical: 1M7
+  RT_enzyme: M-MLV
+  context: [in_vitro]
+  rna_type: total
+  pH: 8.0
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1261/rna.079926.123
+  year: 2024
+
+raw_data:
+  repository: GEO
+  accession: GSE274121
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274121
+  run_accessions:
+  - accession: SRR30153254
+    sample_name: SreA_GGapt_primerMaP_1M7_treated_r1
+    sample_group: SreA_GGapt
+    condition: treated
+    replicate: 1
+  - accession: SRR30153247
+    sample_name: SreA_GGapt_primerMaP_1M7_treated_r2
+    sample_group: SreA_GGapt
+    condition: treated
+    replicate: 2
+  - accession: SRR30153253
+    sample_name: SreA_GGapt_primerMaP_DMSO_untreated_r1
+    sample_group: SreA_GGapt
+    condition: untreated
+    replicate: 1
+  - accession: SRR30153248
+    sample_name: SreA_GGapt_primerMaP_DMSO_untreated_r2
+    sample_group: SreA_GGapt
+    condition: untreated
+    replicate: 2
+  - accession: SRR30153250
+    sample_name: SreA_GGapt_Cassette_primerMaP_1M7_treated_r1
+    sample_group: SreA_GGapt_Cassette
+    condition: treated
+    replicate: 1
+  - accession: SRR30153252
+    sample_name: SreA_GGapt_Cassette_primerMaP_1M7_treated_r2
+    sample_group: SreA_GGapt_Cassette
+    condition: treated
+    replicate: 2
+  - accession: SRR30153251
+    sample_name: SreA_GGapt_Cassette_primerMaP_DMSO_untreated_r1
+    sample_group: SreA_GGapt_Cassette
+    condition: untreated
+    replicate: 1
+  - accession: SRR30153241
+    sample_name: SreA_GGapt_Cassette_primerMaP_DMSO_untreated_r2
+    sample_group: SreA_GGapt_Cassette
+    condition: untreated
+    replicate: 2
+  - accession: SRR30153242
+    sample_name: SreA_FL_Cassette_primerMaP_1M7_treated_r1
+    sample_group: SreA_FL_Cassette
+    condition: treated
+    replicate: 1
+  - accession: SRR30153244
+    sample_name: SreA_FL_Cassette_primerMaP_1M7_treated_r2
+    sample_group: SreA_FL_Cassette
+    condition: treated
+    replicate: 2
+  - accession: SRR30153243
+    sample_name: SreA_FL_Cassette_primerMaP_DMSO_untreated_r1
+    sample_group: SreA_FL_Cassette
+    condition: untreated
+    replicate: 1
+  - accession: SRR30153245
+    sample_name: SreA_FL_Cassette_primerMaP_DMSO_untreated_r2
+    sample_group: SreA_FL_Cassette
+    condition: untreated
+    replicate: 2
+
+comment: null

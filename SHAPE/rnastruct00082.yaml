@@ -1,0 +1,214 @@
+dataset_id: rnastruct00082
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Bacillus cereus
+  ncbi_taxid: 1396
+
+experiment:
+  method: TECprobe-LM
+  principle: MaP
+  obi: OBI:0003894
+  chemical: BzCN
+  RT_enzyme: M-MLV
+  context: [in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-025-60425-w
+  year: 2025
+
+raw_data:
+  repository: SRA
+  accession: PRJNA992462
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA992462
+  # Split from the multi-organism BioProject PRJNA992462 (one YAML per source RNA/organism).
+  # In-vitro cotranscriptional SHAPE probing (TECprobe-LM, BzCN). Each *_sN suffix is a folding
+  # checkpoint of the same biological replicate; groups have >=2 biological replicates (distinct SAMN).
+  run_accessions:
+  - accession: SRR25193973
+    sample_name: Bcereus_crcB_PK_0mM_fluoride_treated_r1_s1
+    sample_group: Bcereus_crcB_PK_0mM_fluoride
+    condition: treated
+    replicate: 1
+  - accession: SRR25193972
+    sample_name: Bcereus_crcB_PK_0mM_fluoride_treated_r1_s2
+    sample_group: Bcereus_crcB_PK_0mM_fluoride
+    condition: treated
+    replicate: 1
+  - accession: SRR25193961
+    sample_name: Bcereus_crcB_PK_0mM_fluoride_treated_r1_s3
+    sample_group: Bcereus_crcB_PK_0mM_fluoride
+    condition: treated
+    replicate: 1
+  - accession: SRR25193950
+    sample_name: Bcereus_crcB_PK_0mM_fluoride_treated_r2_s1
+    sample_group: Bcereus_crcB_PK_0mM_fluoride
+    condition: treated
+    replicate: 2
+  - accession: SRR25193939
+    sample_name: Bcereus_crcB_PK_0mM_fluoride_treated_r2_s2
+    sample_group: Bcereus_crcB_PK_0mM_fluoride
+    condition: treated
+    replicate: 2
+  - accession: SRR25193928
+    sample_name: Bcereus_crcB_PK_0mM_fluoride_treated_r2_s3
+    sample_group: Bcereus_crcB_PK_0mM_fluoride
+    condition: treated
+    replicate: 2
+  - accession: SRR25193917
+    sample_name: Bcereus_crcB_PK_0mM_fluoride_treated_r3_s1
+    sample_group: Bcereus_crcB_PK_0mM_fluoride
+    condition: treated
+    replicate: 3
+  - accession: SRR25193906
+    sample_name: Bcereus_crcB_PK_0mM_fluoride_treated_r3_s2
+    sample_group: Bcereus_crcB_PK_0mM_fluoride
+    condition: treated
+    replicate: 3
+  - accession: SRR25193897
+    sample_name: Bcereus_crcB_PK_0mM_fluoride_treated_r3_s3
+    sample_group: Bcereus_crcB_PK_0mM_fluoride
+    condition: treated
+    replicate: 3
+  - accession: SRR25193896
+    sample_name: Bcereus_crcB_PK_0mM_fluoride_treated_r4_s1
+    sample_group: Bcereus_crcB_PK_0mM_fluoride
+    condition: treated
+    replicate: 4
+  - accession: SRR25193971
+    sample_name: Bcereus_crcB_PK_0mM_fluoride_treated_r4_s2
+    sample_group: Bcereus_crcB_PK_0mM_fluoride
+    condition: treated
+    replicate: 4
+  - accession: SRR25193970
+    sample_name: Bcereus_crcB_PK_0mM_fluoride_treated_r4_s3
+    sample_group: Bcereus_crcB_PK_0mM_fluoride
+    condition: treated
+    replicate: 4
+  - accession: SRR25193969
+    sample_name: Bcereus_crcB_PK_10mM_fluoride_treated_r1_s1
+    sample_group: Bcereus_crcB_PK_10mM_fluoride
+    condition: treated
+    replicate: 1
+  - accession: SRR25193968
+    sample_name: Bcereus_crcB_PK_10mM_fluoride_treated_r1_s2
+    sample_group: Bcereus_crcB_PK_10mM_fluoride
+    condition: treated
+    replicate: 1
+  - accession: SRR25193967
+    sample_name: Bcereus_crcB_PK_10mM_fluoride_treated_r1_s3
+    sample_group: Bcereus_crcB_PK_10mM_fluoride
+    condition: treated
+    replicate: 1
+  - accession: SRR25193966
+    sample_name: Bcereus_crcB_PK_10mM_fluoride_treated_r2_s1
+    sample_group: Bcereus_crcB_PK_10mM_fluoride
+    condition: treated
+    replicate: 2
+  - accession: SRR25193965
+    sample_name: Bcereus_crcB_PK_10mM_fluoride_treated_r2_s2
+    sample_group: Bcereus_crcB_PK_10mM_fluoride
+    condition: treated
+    replicate: 2
+  - accession: SRR25193964
+    sample_name: Bcereus_crcB_PK_10mM_fluoride_treated_r2_s3
+    sample_group: Bcereus_crcB_PK_10mM_fluoride
+    condition: treated
+    replicate: 2
+  - accession: SRR25193963
+    sample_name: Bcereus_crcB_PK_10mM_fluoride_treated_r3_s1
+    sample_group: Bcereus_crcB_PK_10mM_fluoride
+    condition: treated
+    replicate: 3
+  - accession: SRR25193962
+    sample_name: Bcereus_crcB_PK_10mM_fluoride_treated_r3_s2
+    sample_group: Bcereus_crcB_PK_10mM_fluoride
+    condition: treated
+    replicate: 3
+  - accession: SRR25193960
+    sample_name: Bcereus_crcB_PK_10mM_fluoride_treated_r3_s3
+    sample_group: Bcereus_crcB_PK_10mM_fluoride
+    condition: treated
+    replicate: 3
+  - accession: SRR25193959
+    sample_name: Bcereus_crcB_PK_10mM_fluoride_treated_r4_s1
+    sample_group: Bcereus_crcB_PK_10mM_fluoride
+    condition: treated
+    replicate: 4
+  - accession: SRR25193958
+    sample_name: Bcereus_crcB_PK_10mM_fluoride_treated_r4_s2
+    sample_group: Bcereus_crcB_PK_10mM_fluoride
+    condition: treated
+    replicate: 4
+  - accession: SRR25193957
+    sample_name: Bcereus_crcB_PK_10mM_fluoride_treated_r4_s3
+    sample_group: Bcereus_crcB_PK_10mM_fluoride
+    condition: treated
+    replicate: 4
+  - accession: SRR25193956
+    sample_name: Bcereus_crcB_term_0mM_fluoride_treated_r1_s1
+    sample_group: Bcereus_crcB_term_0mM_fluoride
+    condition: treated
+    replicate: 1
+  - accession: SRR25193955
+    sample_name: Bcereus_crcB_term_0mM_fluoride_treated_r1_s2
+    sample_group: Bcereus_crcB_term_0mM_fluoride
+    condition: treated
+    replicate: 1
+  - accession: SRR25193954
+    sample_name: Bcereus_crcB_term_0mM_fluoride_treated_r1_s3
+    sample_group: Bcereus_crcB_term_0mM_fluoride
+    condition: treated
+    replicate: 1
+  - accession: SRR25193953
+    sample_name: Bcereus_crcB_term_0mM_fluoride_treated_r2_s1
+    sample_group: Bcereus_crcB_term_0mM_fluoride
+    condition: treated
+    replicate: 2
+  - accession: SRR25193952
+    sample_name: Bcereus_crcB_term_0mM_fluoride_treated_r2_s2
+    sample_group: Bcereus_crcB_term_0mM_fluoride
+    condition: treated
+    replicate: 2
+  - accession: SRR25193951
+    sample_name: Bcereus_crcB_term_0mM_fluoride_treated_r2_s3
+    sample_group: Bcereus_crcB_term_0mM_fluoride
+    condition: treated
+    replicate: 2
+  - accession: SRR25193949
+    sample_name: Bcereus_crcB_term_10mM_fluoride_treated_r1_s1
+    sample_group: Bcereus_crcB_term_10mM_fluoride
+    condition: treated
+    replicate: 1
+  - accession: SRR25193948
+    sample_name: Bcereus_crcB_term_10mM_fluoride_treated_r1_s2
+    sample_group: Bcereus_crcB_term_10mM_fluoride
+    condition: treated
+    replicate: 1
+  - accession: SRR25193947
+    sample_name: Bcereus_crcB_term_10mM_fluoride_treated_r1_s3
+    sample_group: Bcereus_crcB_term_10mM_fluoride
+    condition: treated
+    replicate: 1
+  - accession: SRR25193946
+    sample_name: Bcereus_crcB_term_10mM_fluoride_treated_r2_s1
+    sample_group: Bcereus_crcB_term_10mM_fluoride
+    condition: treated
+    replicate: 2
+  - accession: SRR25193945
+    sample_name: Bcereus_crcB_term_10mM_fluoride_treated_r2_s2
+    sample_group: Bcereus_crcB_term_10mM_fluoride
+    condition: treated
+    replicate: 2
+  - accession: SRR25193944
+    sample_name: Bcereus_crcB_term_10mM_fluoride_treated_r2_s3
+    sample_group: Bcereus_crcB_term_10mM_fluoride
+    condition: treated
+    replicate: 2
+
+comment: null

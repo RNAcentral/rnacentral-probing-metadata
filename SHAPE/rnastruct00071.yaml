@@ -1,0 +1,191 @@
+dataset_id: rnastruct00071
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003896
+  chemical: 5NIA
+  RT_enzyme: M-MLV
+  context: [in_vivo, ex_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1261/rna.080488.125
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE243328
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243328
+  run_accessions:
+  - accession: SRR26071591
+    sample_name: LNCaP_invivo_DMSO_untreated_rep1_amp1
+    sample_group: LNCaP_in_cell # probed inside LNCaP cells (in vivo)
+    condition: untreated
+    replicate: 1
+  - accession: SRR26071589
+    sample_name: LNCaP_invivo_DMSO_untreated_rep1_amp2
+    sample_group: LNCaP_in_cell
+    condition: untreated
+    replicate: 1
+  - accession: SRR26071587
+    sample_name: LNCaP_invivo_DMSO_untreated_rep1_amp3
+    sample_group: LNCaP_in_cell
+    condition: untreated
+    replicate: 1
+  - accession: SRR26071585
+    sample_name: LNCaP_invivo_DMSO_untreated_rep1_amp4
+    sample_group: LNCaP_in_cell
+    condition: untreated
+    replicate: 1
+  - accession: SRR26071583
+    sample_name: LNCaP_invivo_DMSO_untreated_rep2_amp1
+    sample_group: LNCaP_in_cell
+    condition: untreated
+    replicate: 2
+  - accession: SRR26071581
+    sample_name: LNCaP_invivo_DMSO_untreated_rep2_amp2
+    sample_group: LNCaP_in_cell
+    condition: untreated
+    replicate: 2
+  - accession: SRR26071579
+    sample_name: LNCaP_invivo_DMSO_untreated_rep2_amp3
+    sample_group: LNCaP_in_cell
+    condition: untreated
+    replicate: 2
+  - accession: SRR26071577
+    sample_name: LNCaP_invivo_DMSO_untreated_rep2_amp4
+    sample_group: LNCaP_in_cell
+    condition: untreated
+    replicate: 2
+  - accession: SRR26071590
+    sample_name: LNCaP_invivo_SHAPE_treated_rep1_amp1
+    sample_group: LNCaP_in_cell
+    condition: treated
+    replicate: 1
+  - accession: SRR26071588
+    sample_name: LNCaP_invivo_SHAPE_treated_rep1_amp2
+    sample_group: LNCaP_in_cell
+    condition: treated
+    replicate: 1
+  - accession: SRR26071586
+    sample_name: LNCaP_invivo_SHAPE_treated_rep1_amp3
+    sample_group: LNCaP_in_cell
+    condition: treated
+    replicate: 1
+  - accession: SRR26071584
+    sample_name: LNCaP_invivo_SHAPE_treated_rep1_amp4
+    sample_group: LNCaP_in_cell
+    condition: treated
+    replicate: 1
+  - accession: SRR26071582
+    sample_name: LNCaP_invivo_SHAPE_treated_rep2_amp1
+    sample_group: LNCaP_in_cell
+    condition: treated
+    replicate: 2
+  - accession: SRR26071580
+    sample_name: LNCaP_invivo_SHAPE_treated_rep2_amp2
+    sample_group: LNCaP_in_cell
+    condition: treated
+    replicate: 2
+  - accession: SRR26071578
+    sample_name: LNCaP_invivo_SHAPE_treated_rep2_amp3
+    sample_group: LNCaP_in_cell
+    condition: treated
+    replicate: 2
+  - accession: SRR26071576
+    sample_name: LNCaP_invivo_SHAPE_treated_rep2_amp4
+    sample_group: LNCaP_in_cell
+    condition: treated
+    replicate: 2
+  - accession: SRR26071575
+    sample_name: LNCaP_exvivo_DMSO_untreated_rep1_amp1
+    sample_group: LNCaP_ex_cell # deproteinized/refolded RNA (ex cellulo)
+    condition: untreated
+    replicate: 1
+  - accession: SRR26071571
+    sample_name: LNCaP_exvivo_DMSO_untreated_rep1_amp2
+    sample_group: LNCaP_ex_cell
+    condition: untreated
+    replicate: 1
+  - accession: SRR26071569
+    sample_name: LNCaP_exvivo_DMSO_untreated_rep1_amp3
+    sample_group: LNCaP_ex_cell
+    condition: untreated
+    replicate: 1
+  - accession: SRR26071567
+    sample_name: LNCaP_exvivo_DMSO_untreated_rep1_amp4
+    sample_group: LNCaP_ex_cell
+    condition: untreated
+    replicate: 1
+  - accession: SRR26071565
+    sample_name: LNCaP_exvivo_DMSO_untreated_rep2_amp1
+    sample_group: LNCaP_ex_cell
+    condition: untreated
+    replicate: 2
+  - accession: SRR26071563
+    sample_name: LNCaP_exvivo_DMSO_untreated_rep2_amp2
+    sample_group: LNCaP_ex_cell
+    condition: untreated
+    replicate: 2
+  - accession: SRR26071561
+    sample_name: LNCaP_exvivo_DMSO_untreated_rep2_amp3
+    sample_group: LNCaP_ex_cell
+    condition: untreated
+    replicate: 2
+  - accession: SRR26071559
+    sample_name: LNCaP_exvivo_DMSO_untreated_rep2_amp4
+    sample_group: LNCaP_ex_cell
+    condition: untreated
+    replicate: 2
+  - accession: SRR26071574
+    sample_name: LNCaP_exvivo_SHAPE_treated_rep1_amp1
+    sample_group: LNCaP_ex_cell
+    condition: treated
+    replicate: 1
+  - accession: SRR26071570
+    sample_name: LNCaP_exvivo_SHAPE_treated_rep1_amp2
+    sample_group: LNCaP_ex_cell
+    condition: treated
+    replicate: 1
+  - accession: SRR26071568
+    sample_name: LNCaP_exvivo_SHAPE_treated_rep1_amp3
+    sample_group: LNCaP_ex_cell
+    condition: treated
+    replicate: 1
+  - accession: SRR26071566
+    sample_name: LNCaP_exvivo_SHAPE_treated_rep1_amp4
+    sample_group: LNCaP_ex_cell
+    condition: treated
+    replicate: 1
+  - accession: SRR26071564
+    sample_name: LNCaP_exvivo_SHAPE_treated_rep2_amp1
+    sample_group: LNCaP_ex_cell
+    condition: treated
+    replicate: 2
+  - accession: SRR26071562
+    sample_name: LNCaP_exvivo_SHAPE_treated_rep2_amp2
+    sample_group: LNCaP_ex_cell
+    condition: treated
+    replicate: 2
+  - accession: SRR26071560
+    sample_name: LNCaP_exvivo_SHAPE_treated_rep2_amp3
+    sample_group: LNCaP_ex_cell
+    condition: treated
+    replicate: 2
+  - accession: SRR26071558
+    sample_name: LNCaP_exvivo_SHAPE_treated_rep2_amp4
+    sample_group: LNCaP_ex_cell
+    condition: treated
+    replicate: 2
+
+comment: null

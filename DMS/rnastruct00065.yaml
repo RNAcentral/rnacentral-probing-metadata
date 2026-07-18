@@ -1,0 +1,241 @@
+dataset_id: rnastruct00065
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo, in_vitro]
+  rna_type: sRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-025-59435-5
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE262888
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262888
+  run_accessions:
+  - accession: SRR28510981
+    sample_name: HEK293_AsO2stress_DMminus_DMS0_untreated_r1
+    sample_group: HEK293_AsO2stress_DMminus # sodium arsenite (NaAsO2) oxidative stress, without AlkB demethylase
+    condition: untreated
+    replicate: 1
+  - accession: SRR28510969
+    sample_name: HEK293_AsO2stress_DMminus_DMS0_untreated_r2
+    sample_group: HEK293_AsO2stress_DMminus
+    condition: untreated
+    replicate: 2
+  - accession: SRR28510957
+    sample_name: HEK293_AsO2stress_DMminus_DMS0_untreated_r3
+    sample_group: HEK293_AsO2stress_DMminus
+    condition: untreated
+    replicate: 3
+  - accession: SRR28510980
+    sample_name: HEK293_AsO2stress_DMminus_DMS0.02_treated_r1
+    sample_group: HEK293_AsO2stress_DMminus
+    condition: treated
+    replicate: 1
+  - accession: SRR28510968
+    sample_name: HEK293_AsO2stress_DMminus_DMS0.02_treated_r2
+    sample_group: HEK293_AsO2stress_DMminus
+    condition: treated
+    replicate: 2
+  - accession: SRR28510956
+    sample_name: HEK293_AsO2stress_DMminus_DMS0.02_treated_r3
+    sample_group: HEK293_AsO2stress_DMminus
+    condition: treated
+    replicate: 3
+  - accession: SRR28510979
+    sample_name: HEK293_AsO2stress_DMminus_DMS0.05_treated_r1
+    sample_group: HEK293_AsO2stress_DMminus
+    condition: treated
+    replicate: 1
+  - accession: SRR28510967
+    sample_name: HEK293_AsO2stress_DMminus_DMS0.05_treated_r2
+    sample_group: HEK293_AsO2stress_DMminus
+    condition: treated
+    replicate: 2
+  - accession: SRR28510955
+    sample_name: HEK293_AsO2stress_DMminus_DMS0.05_treated_r3
+    sample_group: HEK293_AsO2stress_DMminus
+    condition: treated
+    replicate: 3
+  - accession: SRR28510975
+    sample_name: HEK293_AsO2stress_DMplus_DMS0_untreated_r1
+    sample_group: HEK293_AsO2stress_DMplus # sodium arsenite (NaAsO2) oxidative stress, with AlkB demethylase
+    condition: untreated
+    replicate: 1
+  - accession: SRR28510963
+    sample_name: HEK293_AsO2stress_DMplus_DMS0_untreated_r2
+    sample_group: HEK293_AsO2stress_DMplus
+    condition: untreated
+    replicate: 2
+  - accession: SRR28510951
+    sample_name: HEK293_AsO2stress_DMplus_DMS0_untreated_r3
+    sample_group: HEK293_AsO2stress_DMplus
+    condition: untreated
+    replicate: 3
+  - accession: SRR28510974
+    sample_name: HEK293_AsO2stress_DMplus_DMS0.02_treated_r1
+    sample_group: HEK293_AsO2stress_DMplus
+    condition: treated
+    replicate: 1
+  - accession: SRR28510962
+    sample_name: HEK293_AsO2stress_DMplus_DMS0.02_treated_r2
+    sample_group: HEK293_AsO2stress_DMplus
+    condition: treated
+    replicate: 2
+  - accession: SRR28510950
+    sample_name: HEK293_AsO2stress_DMplus_DMS0.02_treated_r3
+    sample_group: HEK293_AsO2stress_DMplus
+    condition: treated
+    replicate: 3
+  - accession: SRR28510973
+    sample_name: HEK293_AsO2stress_DMplus_DMS0.05_treated_r1
+    sample_group: HEK293_AsO2stress_DMplus
+    condition: treated
+    replicate: 1
+  - accession: SRR28510961
+    sample_name: HEK293_AsO2stress_DMplus_DMS0.05_treated_r2
+    sample_group: HEK293_AsO2stress_DMplus
+    condition: treated
+    replicate: 2
+  - accession: SRR28510949
+    sample_name: HEK293_AsO2stress_DMplus_DMS0.05_treated_r3
+    sample_group: HEK293_AsO2stress_DMplus
+    condition: treated
+    replicate: 3
+  - accession: SRR28510990
+    sample_name: HEK293_invitro_DMminus_DMS0.05_treated_r1
+    sample_group: HEK293_invitro_DMminus # in-vitro refolded RNA, without AlkB demethylase
+    condition: treated
+    replicate: 1
+  - accession: SRR28510989
+    sample_name: HEK293_invitro_DMminus_DMS0.05_treated_r2
+    sample_group: HEK293_invitro_DMminus
+    condition: treated
+    replicate: 2
+  - accession: SRR28510988
+    sample_name: HEK293_invitro_DMminus_DMS0.05_treated_r3
+    sample_group: HEK293_invitro_DMminus
+    condition: treated
+    replicate: 3
+  - accession: SRR28510987
+    sample_name: HEK293_invitro_DMplus_DMS0.05_treated_r1
+    sample_group: HEK293_invitro_DMplus # in-vitro refolded RNA, with AlkB demethylase
+    condition: treated
+    replicate: 1
+  - accession: SRR28510986
+    sample_name: HEK293_invitro_DMplus_DMS0.05_treated_r2
+    sample_group: HEK293_invitro_DMplus
+    condition: treated
+    replicate: 2
+  - accession: SRR28510985
+    sample_name: HEK293_invitro_DMplus_DMS0.05_treated_r3
+    sample_group: HEK293_invitro_DMplus
+    condition: treated
+    replicate: 3
+  - accession: SRR28510984
+    sample_name: HEK293_invivo_DMminus_DMS0_untreated_r1
+    sample_group: HEK293_invivo_DMminus # unstressed in-cell, without AlkB demethylase
+    condition: untreated
+    replicate: 1
+  - accession: SRR28510972
+    sample_name: HEK293_invivo_DMminus_DMS0_untreated_r2
+    sample_group: HEK293_invivo_DMminus
+    condition: untreated
+    replicate: 2
+  - accession: SRR28510960
+    sample_name: HEK293_invivo_DMminus_DMS0_untreated_r3
+    sample_group: HEK293_invivo_DMminus
+    condition: untreated
+    replicate: 3
+  - accession: SRR28510983
+    sample_name: HEK293_invivo_DMminus_DMS0.02_treated_r1
+    sample_group: HEK293_invivo_DMminus
+    condition: treated
+    replicate: 1
+  - accession: SRR28510971
+    sample_name: HEK293_invivo_DMminus_DMS0.02_treated_r2
+    sample_group: HEK293_invivo_DMminus
+    condition: treated
+    replicate: 2
+  - accession: SRR28510959
+    sample_name: HEK293_invivo_DMminus_DMS0.02_treated_r3
+    sample_group: HEK293_invivo_DMminus
+    condition: treated
+    replicate: 3
+  - accession: SRR28510982
+    sample_name: HEK293_invivo_DMminus_DMS0.05_treated_r1
+    sample_group: HEK293_invivo_DMminus
+    condition: treated
+    replicate: 1
+  - accession: SRR28510970
+    sample_name: HEK293_invivo_DMminus_DMS0.05_treated_r2
+    sample_group: HEK293_invivo_DMminus
+    condition: treated
+    replicate: 2
+  - accession: SRR28510958
+    sample_name: HEK293_invivo_DMminus_DMS0.05_treated_r3
+    sample_group: HEK293_invivo_DMminus
+    condition: treated
+    replicate: 3
+  - accession: SRR28510978
+    sample_name: HEK293_invivo_DMplus_DMS0_untreated_r1
+    sample_group: HEK293_invivo_DMplus # unstressed in-cell, with AlkB demethylase
+    condition: untreated
+    replicate: 1
+  - accession: SRR28510966
+    sample_name: HEK293_invivo_DMplus_DMS0_untreated_r2
+    sample_group: HEK293_invivo_DMplus
+    condition: untreated
+    replicate: 2
+  - accession: SRR28510954
+    sample_name: HEK293_invivo_DMplus_DMS0_untreated_r3
+    sample_group: HEK293_invivo_DMplus
+    condition: untreated
+    replicate: 3
+  - accession: SRR28510977
+    sample_name: HEK293_invivo_DMplus_DMS0.02_treated_r1
+    sample_group: HEK293_invivo_DMplus
+    condition: treated
+    replicate: 1
+  - accession: SRR28510965
+    sample_name: HEK293_invivo_DMplus_DMS0.02_treated_r2
+    sample_group: HEK293_invivo_DMplus
+    condition: treated
+    replicate: 2
+  - accession: SRR28510953
+    sample_name: HEK293_invivo_DMplus_DMS0.02_treated_r3
+    sample_group: HEK293_invivo_DMplus
+    condition: treated
+    replicate: 3
+  - accession: SRR28510976
+    sample_name: HEK293_invivo_DMplus_DMS0.05_treated_r1
+    sample_group: HEK293_invivo_DMplus
+    condition: treated
+    replicate: 1
+  - accession: SRR28510964
+    sample_name: HEK293_invivo_DMplus_DMS0.05_treated_r2
+    sample_group: HEK293_invivo_DMplus
+    condition: treated
+    replicate: 2
+  - accession: SRR28510952
+    sample_name: HEK293_invivo_DMplus_DMS0.05_treated_r3
+    sample_group: HEK293_invivo_DMplus
+    condition: treated
+    replicate: 3
+
+comment: null

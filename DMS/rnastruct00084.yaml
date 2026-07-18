@@ -1,0 +1,331 @@
+dataset_id: rnastruct00084
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Escherichia coli
+  ncbi_taxid: 562
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vitro, denatured]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1093/nar/gkaf477
+  year: 2025
+
+raw_data:
+  repository: SRA
+  accession: PRJNA1197522
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1197522
+  run_accessions:
+  - accession: SRR31709389
+    sample_name: alx_aptamer_eqm_DMSdc_pH7.2_denatured_r1
+    sample_group: alx_aptamer_eqm_pH7.2_denat
+    condition: denatured
+    replicate: 1
+  - accession: SRR31709378
+    sample_name: alx_aptamer_eqm_DMSdc_pH7.2_denatured_r2
+    sample_group: alx_aptamer_eqm_pH7.2_denat
+    condition: denatured
+    replicate: 2
+  - accession: SRR31709388
+    sample_name: alx_aptamer_eqm_DMSplus_pH7.2_minusMn_treated_r1
+    sample_group: alx_aptamer_eqm_pH7.2_minusMn
+    condition: treated
+    replicate: 1
+  - accession: SRR31709377
+    sample_name: alx_aptamer_eqm_DMSplus_pH7.2_minusMn_treated_r2
+    sample_group: alx_aptamer_eqm_pH7.2_minusMn
+    condition: treated
+    replicate: 2
+  - accession: SRR31709387
+    sample_name: alx_aptamer_eqm_DMSminus_pH7.2_minusMn_untreated_r1
+    sample_group: alx_aptamer_eqm_pH7.2_minusMn
+    condition: untreated
+    replicate: 1
+  - accession: SRR31709376
+    sample_name: alx_aptamer_eqm_DMSminus_pH7.2_minusMn_untreated_r2
+    sample_group: alx_aptamer_eqm_pH7.2_minusMn
+    condition: untreated
+    replicate: 2
+  - accession: SRR31709386
+    sample_name: alx_aptamer_eqm_DMSplus_pH7.2_plusMn_treated_r1
+    sample_group: alx_aptamer_eqm_pH7.2_plusMn
+    condition: treated
+    replicate: 1
+  - accession: SRR31709375
+    sample_name: alx_aptamer_eqm_DMSplus_pH7.2_plusMn_treated_r2
+    sample_group: alx_aptamer_eqm_pH7.2_plusMn
+    condition: treated
+    replicate: 2
+  - accession: SRR31709385
+    sample_name: alx_aptamer_eqm_DMSminus_pH7.2_plusMn_untreated_r1
+    sample_group: alx_aptamer_eqm_pH7.2_plusMn
+    condition: untreated
+    replicate: 1
+  - accession: SRR31709464
+    sample_name: alx_aptamer_eqm_DMSminus_pH7.2_plusMn_untreated_r2
+    sample_group: alx_aptamer_eqm_pH7.2_plusMn
+    condition: untreated
+    replicate: 2
+  - accession: SRR31709384
+    sample_name: alx_aptamer_eqm_DMSdc_pH8.5_denatured_r1
+    sample_group: alx_aptamer_eqm_pH8.5_denat
+    condition: denatured
+    replicate: 1
+  - accession: SRR31709463
+    sample_name: alx_aptamer_eqm_DMSdc_pH8.5_denatured_r2
+    sample_group: alx_aptamer_eqm_pH8.5_denat
+    condition: denatured
+    replicate: 2
+  - accession: SRR31709383
+    sample_name: alx_aptamer_eqm_DMSplus_pH8.5_minusMn_treated_r1
+    sample_group: alx_aptamer_eqm_pH8.5_minusMn
+    condition: treated
+    replicate: 1
+  - accession: SRR31709462
+    sample_name: alx_aptamer_eqm_DMSplus_pH8.5_minusMn_treated_r2
+    sample_group: alx_aptamer_eqm_pH8.5_minusMn
+    condition: treated
+    replicate: 2
+  - accession: SRR31709382
+    sample_name: alx_aptamer_eqm_DMSminus_pH8.5_minusMn_untreated_r1
+    sample_group: alx_aptamer_eqm_pH8.5_minusMn
+    condition: untreated
+    replicate: 1
+  - accession: SRR31709461
+    sample_name: alx_aptamer_eqm_DMSminus_pH8.5_minusMn_untreated_r2
+    sample_group: alx_aptamer_eqm_pH8.5_minusMn
+    condition: untreated
+    replicate: 2
+  - accession: SRR31709381
+    sample_name: alx_aptamer_eqm_DMSplus_pH8.5_plusMn_treated_r1
+    sample_group: alx_aptamer_eqm_pH8.5_plusMn
+    condition: treated
+    replicate: 1
+  - accession: SRR31709460
+    sample_name: alx_aptamer_eqm_DMSplus_pH8.5_plusMn_treated_r2
+    sample_group: alx_aptamer_eqm_pH8.5_plusMn
+    condition: treated
+    replicate: 2
+  - accession: SRR31709380
+    sample_name: alx_aptamer_eqm_DMSminus_pH8.5_plusMn_untreated_r1
+    sample_group: alx_aptamer_eqm_pH8.5_plusMn
+    condition: untreated
+    replicate: 1
+  - accession: SRR31709459
+    sample_name: alx_aptamer_eqm_DMSminus_pH8.5_plusMn_untreated_r2
+    sample_group: alx_aptamer_eqm_pH8.5_plusMn
+    condition: untreated
+    replicate: 2
+  - accession: SRR31709433
+    sample_name: alx_fulllength_eqm_DMSdc_pH7.2_denatured_r1
+    sample_group: alx_fulllength_eqm_pH7.2_denat
+    condition: denatured
+    replicate: 1
+  - accession: SRR31709422
+    sample_name: alx_fulllength_eqm_DMSdc_pH7.2_denatured_r2
+    sample_group: alx_fulllength_eqm_pH7.2_denat
+    condition: denatured
+    replicate: 2
+  - accession: SRR31709432
+    sample_name: alx_fulllength_eqm_DMSplus_pH7.2_minusMn_treated_r1
+    sample_group: alx_fulllength_eqm_pH7.2_minusMn
+    condition: treated
+    replicate: 1
+  - accession: SRR31709421
+    sample_name: alx_fulllength_eqm_DMSplus_pH7.2_minusMn_treated_r2
+    sample_group: alx_fulllength_eqm_pH7.2_minusMn
+    condition: treated
+    replicate: 2
+  - accession: SRR31709431
+    sample_name: alx_fulllength_eqm_DMSminus_pH7.2_minusMn_untreated_r1
+    sample_group: alx_fulllength_eqm_pH7.2_minusMn
+    condition: untreated
+    replicate: 1
+  - accession: SRR31709420
+    sample_name: alx_fulllength_eqm_DMSminus_pH7.2_minusMn_untreated_r2
+    sample_group: alx_fulllength_eqm_pH7.2_minusMn
+    condition: untreated
+    replicate: 2
+  - accession: SRR31709430
+    sample_name: alx_fulllength_eqm_DMSplus_pH7.2_plusMn_treated_r1
+    sample_group: alx_fulllength_eqm_pH7.2_plusMn
+    condition: treated
+    replicate: 1
+  - accession: SRR31709419
+    sample_name: alx_fulllength_eqm_DMSplus_pH7.2_plusMn_treated_r2
+    sample_group: alx_fulllength_eqm_pH7.2_plusMn
+    condition: treated
+    replicate: 2
+  - accession: SRR31709429
+    sample_name: alx_fulllength_eqm_DMSminus_pH7.2_plusMn_untreated_r1
+    sample_group: alx_fulllength_eqm_pH7.2_plusMn
+    condition: untreated
+    replicate: 1
+  - accession: SRR31709418
+    sample_name: alx_fulllength_eqm_DMSminus_pH7.2_plusMn_untreated_r2
+    sample_group: alx_fulllength_eqm_pH7.2_plusMn
+    condition: untreated
+    replicate: 2
+  - accession: SRR31709428
+    sample_name: alx_fulllength_eqm_DMSdc_pH8.5_denatured_r1
+    sample_group: alx_fulllength_eqm_pH8.5_denat
+    condition: denatured
+    replicate: 1
+  - accession: SRR31709417
+    sample_name: alx_fulllength_eqm_DMSdc_pH8.5_denatured_r2
+    sample_group: alx_fulllength_eqm_pH8.5_denat
+    condition: denatured
+    replicate: 2
+  - accession: SRR31709427
+    sample_name: alx_fulllength_eqm_DMSplus_pH8.5_minusMn_treated_r1
+    sample_group: alx_fulllength_eqm_pH8.5_minusMn
+    condition: treated
+    replicate: 1
+  - accession: SRR31709416
+    sample_name: alx_fulllength_eqm_DMSplus_pH8.5_minusMn_treated_r2
+    sample_group: alx_fulllength_eqm_pH8.5_minusMn
+    condition: treated
+    replicate: 2
+  - accession: SRR31709426
+    sample_name: alx_fulllength_eqm_DMSminus_pH8.5_minusMn_untreated_r1
+    sample_group: alx_fulllength_eqm_pH8.5_minusMn
+    condition: untreated
+    replicate: 1
+  - accession: SRR31709415
+    sample_name: alx_fulllength_eqm_DMSminus_pH8.5_minusMn_untreated_r2
+    sample_group: alx_fulllength_eqm_pH8.5_minusMn
+    condition: untreated
+    replicate: 2
+  - accession: SRR31709425
+    sample_name: alx_fulllength_eqm_DMSplus_pH8.5_plusMn_treated_r1
+    sample_group: alx_fulllength_eqm_pH8.5_plusMn
+    condition: treated
+    replicate: 1
+  - accession: SRR31709414
+    sample_name: alx_fulllength_eqm_DMSplus_pH8.5_plusMn_treated_r2
+    sample_group: alx_fulllength_eqm_pH8.5_plusMn
+    condition: treated
+    replicate: 2
+  - accession: SRR31709424
+    sample_name: alx_fulllength_eqm_DMSminus_pH8.5_plusMn_untreated_r1
+    sample_group: alx_fulllength_eqm_pH8.5_plusMn
+    condition: untreated
+    replicate: 1
+  - accession: SRR31709413
+    sample_name: alx_fulllength_eqm_DMSminus_pH8.5_plusMn_untreated_r2
+    sample_group: alx_fulllength_eqm_pH8.5_plusMn
+    condition: untreated
+    replicate: 2
+  - accession: SRR31709491
+    sample_name: mntP_fulllength_eqm_DMSdc_pH7.2_denatured_r1
+    sample_group: mntP_fulllength_eqm_pH7.2_denat
+    condition: denatured
+    replicate: 1
+  - accession: SRR31709480
+    sample_name: mntP_fulllength_eqm_DMSdc_pH7.2_denatured_r2
+    sample_group: mntP_fulllength_eqm_pH7.2_denat
+    condition: denatured
+    replicate: 2
+  - accession: SRR31709490
+    sample_name: mntP_fulllength_eqm_DMSplus_pH7.2_minusMn_treated_r1
+    sample_group: mntP_fulllength_eqm_pH7.2_minusMn
+    condition: treated
+    replicate: 1
+  - accession: SRR31709479
+    sample_name: mntP_fulllength_eqm_DMSplus_pH7.2_minusMn_treated_r2
+    sample_group: mntP_fulllength_eqm_pH7.2_minusMn
+    condition: treated
+    replicate: 2
+  - accession: SRR31709489
+    sample_name: mntP_fulllength_eqm_DMSminus_pH7.2_minusMn_untreated_r1
+    sample_group: mntP_fulllength_eqm_pH7.2_minusMn
+    condition: untreated
+    replicate: 1
+  - accession: SRR31709478
+    sample_name: mntP_fulllength_eqm_DMSminus_pH7.2_minusMn_untreated_r2
+    sample_group: mntP_fulllength_eqm_pH7.2_minusMn
+    condition: untreated
+    replicate: 2
+  - accession: SRR31709488
+    sample_name: mntP_fulllength_eqm_DMSplus_pH7.2_plusMn_treated_r1
+    sample_group: mntP_fulllength_eqm_pH7.2_plusMn
+    condition: treated
+    replicate: 1
+  - accession: SRR31709477
+    sample_name: mntP_fulllength_eqm_DMSplus_pH7.2_plusMn_treated_r2
+    sample_group: mntP_fulllength_eqm_pH7.2_plusMn
+    condition: treated
+    replicate: 2
+  - accession: SRR31709487
+    sample_name: mntP_fulllength_eqm_DMSminus_pH7.2_plusMn_untreated_r1
+    sample_group: mntP_fulllength_eqm_pH7.2_plusMn
+    condition: untreated
+    replicate: 1
+  - accession: SRR31709476
+    sample_name: mntP_fulllength_eqm_DMSminus_pH7.2_plusMn_untreated_r2
+    sample_group: mntP_fulllength_eqm_pH7.2_plusMn
+    condition: untreated
+    replicate: 2
+  - accession: SRR31709486
+    sample_name: mntP_fulllength_eqm_DMSdc_pH8.5_denatured_r1
+    sample_group: mntP_fulllength_eqm_pH8.5_denat
+    condition: denatured
+    replicate: 1
+  - accession: SRR31709475
+    sample_name: mntP_fulllength_eqm_DMSdc_pH8.5_denatured_r2
+    sample_group: mntP_fulllength_eqm_pH8.5_denat
+    condition: denatured
+    replicate: 2
+  - accession: SRR31709485
+    sample_name: mntP_fulllength_eqm_DMSplus_pH8.5_minusMn_treated_r1
+    sample_group: mntP_fulllength_eqm_pH8.5_minusMn
+    condition: treated
+    replicate: 1
+  - accession: SRR31709474
+    sample_name: mntP_fulllength_eqm_DMSplus_pH8.5_minusMn_treated_r2
+    sample_group: mntP_fulllength_eqm_pH8.5_minusMn
+    condition: treated
+    replicate: 2
+  - accession: SRR31709484
+    sample_name: mntP_fulllength_eqm_DMSminus_pH8.5_minusMn_untreated_r1
+    sample_group: mntP_fulllength_eqm_pH8.5_minusMn
+    condition: untreated
+    replicate: 1
+  - accession: SRR31709473
+    sample_name: mntP_fulllength_eqm_DMSminus_pH8.5_minusMn_untreated_r2
+    sample_group: mntP_fulllength_eqm_pH8.5_minusMn
+    condition: untreated
+    replicate: 2
+  - accession: SRR31709483
+    sample_name: mntP_fulllength_eqm_DMSplus_pH8.5_plusMn_treated_r1
+    sample_group: mntP_fulllength_eqm_pH8.5_plusMn
+    condition: treated
+    replicate: 1
+  - accession: SRR31709472
+    sample_name: mntP_fulllength_eqm_DMSplus_pH8.5_plusMn_treated_r2
+    sample_group: mntP_fulllength_eqm_pH8.5_plusMn
+    condition: treated
+    replicate: 2
+  - accession: SRR31709482
+    sample_name: mntP_fulllength_eqm_DMSminus_pH8.5_plusMn_untreated_r1
+    sample_group: mntP_fulllength_eqm_pH8.5_plusMn
+    condition: untreated
+    replicate: 1
+  - accession: SRR31709471
+    sample_name: mntP_fulllength_eqm_DMSminus_pH8.5_plusMn_untreated_r2
+    sample_group: mntP_fulllength_eqm_pH8.5_plusMn
+    condition: untreated
+    replicate: 2
+
+comment: null

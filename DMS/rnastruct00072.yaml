@@ -1,0 +1,72 @@
+dataset_id: rnastruct00072
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Human bocavirus
+  ncbi_taxid: 329641
+  strain: HBoV1  # Human bocavirus 1 (NCBI taxid 689403); pIHBoV1 infectious clone used in the study.
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo, in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1073/pnas.2320782121
+  year: 2024
+
+raw_data:
+  repository: SRA
+  accession: PRJNA955716
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA955716
+  run_accessions:
+  - accession: SRR24170475
+    sample_name: BocaSR_incell_DMS_treated_r1
+    sample_group: BocaSR_incell
+    condition: treated
+    replicate: 1
+  - accession: SRR24170474
+    sample_name: BocaSR_incell_DMS_treated_r2
+    sample_group: BocaSR_incell
+    condition: treated
+    replicate: 2
+  - accession: SRR24170477
+    sample_name: BocaSR_incell_untreated_r1
+    sample_group: BocaSR_incell
+    condition: untreated
+    replicate: 1
+  - accession: SRR24170476
+    sample_name: BocaSR_incell_untreated_r2
+    sample_group: BocaSR_incell
+    condition: untreated
+    replicate: 2
+  - accession: SRR24170471
+    sample_name: BocaSR_invitro_DMS_treated_r1
+    sample_group: BocaSR_invitro
+    condition: treated
+    replicate: 1
+  - accession: SRR24170470
+    sample_name: BocaSR_invitro_DMS_treated_r2
+    sample_group: BocaSR_invitro
+    condition: treated
+    replicate: 2
+  - accession: SRR24170473
+    sample_name: BocaSR_invitro_untreated_r1
+    sample_group: BocaSR_invitro
+    condition: untreated
+    replicate: 1
+  - accession: SRR24170472
+    sample_name: BocaSR_invitro_untreated_r2
+    sample_group: BocaSR_invitro
+    condition: untreated
+    replicate: 2
+
+comment: null

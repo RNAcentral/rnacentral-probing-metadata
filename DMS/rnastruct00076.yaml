@@ -1,0 +1,211 @@
+dataset_id: rnastruct00076
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Bacillus subtilis
+  ncbi_taxid: 1423
+
+experiment:
+  method: TECprobe-VL
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-026-69648-x
+  year: 2026
+
+raw_data:
+  repository: SRA
+  accession: PRJNA938111
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA938111
+  run_accessions:
+  - accession: SRR23610434
+    sample_name: gcvT_wt_1mMgly_treated_r1
+    sample_group: wt_1mMgly # wild-type gcvT glycine riboswitch, 1 mM glycine
+    condition: treated
+    replicate: 1
+  - accession: SRR23610433
+    sample_name: gcvT_wt_1mMgly_treated_r2
+    sample_group: wt_1mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR23610436
+    sample_name: gcvT_wt_0mMgly_treated_r1
+    sample_group: wt_0mMgly # wild-type gcvT glycine riboswitch, 0 mM glycine (apo)
+    condition: treated
+    replicate: 1
+  - accession: SRR23610435
+    sample_name: gcvT_wt_0mMgly_treated_r2
+    sample_group: wt_0mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR23646370
+    sample_name: gcvT_U81G_1mMgly_treated_r1
+    sample_group: U81G_1mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR23646369
+    sample_name: gcvT_U81G_1mMgly_treated_r2
+    sample_group: U81G_1mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR23646372
+    sample_name: gcvT_U81G_0mMgly_treated_r1
+    sample_group: U81G_0mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR23646371
+    sample_name: gcvT_U81G_0mMgly_treated_r2
+    sample_group: U81G_0mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR23646366
+    sample_name: gcvT_U179G_1mMgly_treated_r1
+    sample_group: U179G_1mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR23646365
+    sample_name: gcvT_U179G_1mMgly_treated_r2
+    sample_group: U179G_1mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR23646368
+    sample_name: gcvT_U179G_0mMgly_treated_r1
+    sample_group: U179G_0mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR23646367
+    sample_name: gcvT_U179G_0mMgly_treated_r2
+    sample_group: U179G_0mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR24359922
+    sample_name: gcvT_A76G_1mMgly_treated_r2
+    sample_group: A76G_1mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR24359921
+    sample_name: gcvT_A76G_1mMgly_treated_r4
+    sample_group: A76G_1mMgly
+    condition: treated
+    replicate: 4
+  - accession: SRR24359926
+    sample_name: gcvT_A76G_0mMgly_treated_r1
+    sample_group: A76G_0mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR24359925
+    sample_name: gcvT_A76G_0mMgly_treated_r2
+    sample_group: A76G_0mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR24359918
+    sample_name: gcvT_C53A_1mMgly_treated_r1
+    sample_group: C53A_1mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR24359917
+    sample_name: gcvT_C53A_1mMgly_treated_r2
+    sample_group: C53A_1mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR24359920
+    sample_name: gcvT_C53A_0mMgly_treated_r1
+    sample_group: C53A_0mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR24359919
+    sample_name: gcvT_C53A_0mMgly_treated_r3
+    sample_group: C53A_0mMgly
+    condition: treated
+    replicate: 3
+  - accession: SRR24359924
+    sample_name: gcvT_G182T_1mMgly_treated_r1
+    sample_group: G182T_1mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR24359923
+    sample_name: gcvT_G182T_1mMgly_treated_r2
+    sample_group: G182T_1mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR24359916
+    sample_name: gcvT_G182T_0mMgly_treated_r1
+    sample_group: G182T_0mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR24359915
+    sample_name: gcvT_G182T_0mMgly_treated_r2
+    sample_group: G182T_0mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR33237761
+    sample_name: gcvT_U81G_U179G_1mMgly_treated_r1
+    sample_group: U81G_U179G_1mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR33237760
+    sample_name: gcvT_U81G_U179G_1mMgly_treated_r2
+    sample_group: U81G_U179G_1mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR33237765
+    sample_name: gcvT_U81G_U179G_0mMgly_treated_r1
+    sample_group: U81G_U179G_0mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR33237764
+    sample_name: gcvT_U81G_U179G_0mMgly_treated_r2
+    sample_group: U81G_U179G_0mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR33237763
+    sample_name: gcvT_deltaP0_1mMgly_treated_r1
+    sample_group: deltaP0_1mMgly # P0 helix deletion variant
+    condition: treated
+    replicate: 1
+  - accession: SRR33237762
+    sample_name: gcvT_deltaP0_1mMgly_treated_r2
+    sample_group: deltaP0_1mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR33237755
+    sample_name: gcvT_deltaP0_0mMgly_treated_r1
+    sample_group: deltaP0_0mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR33237754
+    sample_name: gcvT_deltaP0_0mMgly_treated_r2
+    sample_group: deltaP0_0mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR33237757
+    sample_name: gcvT_A75U_A76G_1mMgly_treated_r1
+    sample_group: A75U_A76G_1mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR33237756
+    sample_name: gcvT_A75U_A76G_1mMgly_treated_r2
+    sample_group: A75U_A76G_1mMgly
+    condition: treated
+    replicate: 2
+  - accession: SRR33237759
+    sample_name: gcvT_A75U_A76G_0mMgly_treated_r1
+    sample_group: A75U_A76G_0mMgly
+    condition: treated
+    replicate: 1
+  - accession: SRR33237758
+    sample_name: gcvT_A75U_A76G_0mMgly_treated_r2
+    sample_group: A75U_A76G_0mMgly
+    condition: treated
+    replicate: 2
+
+comment: null

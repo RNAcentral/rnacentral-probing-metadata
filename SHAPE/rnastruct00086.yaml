@@ -1,0 +1,91 @@
+dataset_id: rnastruct00086
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Carnobacterium antarcticum
+  ncbi_taxid: 2126436
+
+experiment:
+  method: ReCo-icSHAPE-seq
+  principle: RT-stop
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1093/nar/gkad056
+  year: 2023
+
+raw_data:
+  repository: SRA
+  accession: PRJNA906919
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA906919
+  run_accessions:
+  - accession: SRR22515456
+    sample_name: Can_WT_apo_NAI_treated_r1
+    sample_group: Can_WT_apo # wild-type preQ1-II riboswitch, ligand-free (no preQ1)
+    condition: treated
+    replicate: 1
+  - accession: SRR22515452
+    sample_name: Can_WT_apo_NAI_treated_r2
+    sample_group: Can_WT_apo
+    condition: treated
+    replicate: 2
+  - accession: SRR22515455
+    sample_name: Can_WT_bound_NAI_treated_r1
+    sample_group: Can_WT_bound # wild-type preQ1-II riboswitch, preQ1-bound
+    condition: treated
+    replicate: 1
+  - accession: SRR22515451
+    sample_name: Can_WT_bound_NAI_treated_r2
+    sample_group: Can_WT_bound
+    condition: treated
+    replicate: 2
+  - accession: SRR22515450
+    sample_name: Can_C17U_apo_NAI_treated_r1
+    sample_group: Can_C17U_apo # C17U mutant, ligand-free
+    condition: treated
+    replicate: 1
+  - accession: SRR22515448
+    sample_name: Can_C17U_apo_NAI_treated_r2
+    sample_group: Can_C17U_apo
+    condition: treated
+    replicate: 2
+  - accession: SRR22515449
+    sample_name: Can_C17U_bound_NAI_treated_r1
+    sample_group: Can_C17U_bound # C17U mutant, preQ1-bound
+    condition: treated
+    replicate: 1
+  - accession: SRR22515447
+    sample_name: Can_C17U_bound_NAI_treated_r2
+    sample_group: Can_C17U_bound
+    condition: treated
+    replicate: 2
+  - accession: SRR22515453
+    sample_name: Can_C31U_apo_NAI_treated_r1
+    sample_group: Can_C31U_apo # C31U mutant, ligand-free
+    condition: treated
+    replicate: 1
+  - accession: SRR22515445
+    sample_name: Can_C31U_apo_NAI_treated_r2
+    sample_group: Can_C31U_apo
+    condition: treated
+    replicate: 2
+  - accession: SRR22515446
+    sample_name: Can_C31U_bound_NAI_treated_r1
+    sample_group: Can_C31U_bound # C31U mutant, preQ1-bound
+    condition: treated
+    replicate: 1
+  - accession: SRR22515454
+    sample_name: Can_C31U_bound_NAI_treated_r2
+    sample_group: Can_C31U_bound
+    condition: treated
+    replicate: 2
+
+comment: null

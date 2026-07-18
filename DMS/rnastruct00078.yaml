@@ -1,0 +1,91 @@
+dataset_id: rnastruct00078
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Methanosarcina acetivorans
+  ncbi_taxid: 2214
+
+experiment:
+  method: Structure-seq2
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1261/rna.079687.123
+  year: 2023
+
+raw_data:
+  repository: GEO
+  accession: GSE229536
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229536
+  run_accessions:
+  - accession: SRR24149702
+    sample_name: Macetivorans_acetate_invivo_DMS_treated_r1
+    sample_group: Macetivorans_acetate_invivo
+    condition: treated
+    replicate: 1
+  - accession: SRR24149701
+    sample_name: Macetivorans_acetate_invivo_DMS_treated_r2
+    sample_group: Macetivorans_acetate_invivo
+    condition: treated
+    replicate: 2
+  - accession: SRR24149700
+    sample_name: Macetivorans_acetate_invivo_DMS_treated_r3
+    sample_group: Macetivorans_acetate_invivo
+    condition: treated
+    replicate: 3
+  - accession: SRR24149708
+    sample_name: Macetivorans_acetate_invivo_control_untreated_r1
+    sample_group: Macetivorans_acetate_invivo
+    condition: untreated
+    replicate: 1
+  - accession: SRR24149706
+    sample_name: Macetivorans_acetate_invivo_control_untreated_r2
+    sample_group: Macetivorans_acetate_invivo
+    condition: untreated
+    replicate: 2
+  - accession: SRR24149705
+    sample_name: Macetivorans_acetate_invivo_control_untreated_r3
+    sample_group: Macetivorans_acetate_invivo
+    condition: untreated
+    replicate: 3
+  - accession: SRR24149704
+    sample_name: Macetivorans_methanol_invivo_DMS_treated_r1
+    sample_group: Macetivorans_methanol_invivo
+    condition: treated
+    replicate: 1
+  - accession: SRR24149707
+    sample_name: Macetivorans_methanol_invivo_DMS_treated_r2
+    sample_group: Macetivorans_methanol_invivo
+    condition: treated
+    replicate: 2
+  - accession: SRR24149703
+    sample_name: Macetivorans_methanol_invivo_DMS_treated_r3
+    sample_group: Macetivorans_methanol_invivo
+    condition: treated
+    replicate: 3
+  - accession: SRR24149711
+    sample_name: Macetivorans_methanol_invivo_control_untreated_r1
+    sample_group: Macetivorans_methanol_invivo
+    condition: untreated
+    replicate: 1
+  - accession: SRR24149710
+    sample_name: Macetivorans_methanol_invivo_control_untreated_r2
+    sample_group: Macetivorans_methanol_invivo
+    condition: untreated
+    replicate: 2
+  - accession: SRR24149709
+    sample_name: Macetivorans_methanol_invivo_control_untreated_r3
+    sample_group: Macetivorans_methanol_invivo
+    condition: untreated
+    replicate: 3
+
+comment: null

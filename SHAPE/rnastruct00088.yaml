@@ -1,0 +1,91 @@
+dataset_id: rnastruct00088
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Bacillus subtilis
+  ncbi_taxid: 1423
+
+experiment:
+  method: SHAPE-Seq
+  principle: RT-stop
+  obi: OBI:0003894
+  chemical: BzCN
+  RT_enzyme: M-MLV
+  context: [in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1093/nar/gkac102
+  year: 2022
+
+raw_data:
+  repository: SRA
+  accession: PRJNA776034
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA776034
+  run_accessions:
+  - accession: SRR16848075
+    sample_name: Bsubtilis_yxjA_135_cotrans_BzCN_treated_r1
+    sample_group: yxjA_135_cotrans # cotranscriptional SHAPE-Seq, 135 nt intermediate transcript
+    condition: treated
+    replicate: 1
+  - accession: SRR16848074
+    sample_name: Bsubtilis_yxjA_135_cotrans_BzCN_treated_r2
+    sample_group: yxjA_135_cotrans
+    condition: treated
+    replicate: 2
+  - accession: SRR16848071
+    sample_name: Bsubtilis_yxjA_160_cotrans_BzCN_treated_r1
+    sample_group: yxjA_160_cotrans # cotranscriptional SHAPE-Seq, 160 nt intermediate transcript
+    condition: treated
+    replicate: 1
+  - accession: SRR16848070
+    sample_name: Bsubtilis_yxjA_160_cotrans_BzCN_treated_r2
+    sample_group: yxjA_160_cotrans
+    condition: treated
+    replicate: 2
+  - accession: SRR16848069
+    sample_name: Bsubtilis_yxjA_220_cotrans_BzCN_treated_r1
+    sample_group: yxjA_220_cotrans # cotranscriptional SHAPE-Seq, 220 nt full-length transcript
+    condition: treated
+    replicate: 1
+  - accession: SRR16848068
+    sample_name: Bsubtilis_yxjA_220_cotrans_BzCN_treated_r2
+    sample_group: yxjA_220_cotrans
+    condition: treated
+    replicate: 2
+  - accession: SRR16848067
+    sample_name: Bsubtilis_yxjA_135_EQ_BzCN_treated_r1
+    sample_group: yxjA_135_EQ # equilibrium-refolded SHAPE-Seq, 135 nt intermediate transcript
+    condition: treated
+    replicate: 1
+  - accession: SRR16848066
+    sample_name: Bsubtilis_yxjA_135_EQ_BzCN_treated_r2
+    sample_group: yxjA_135_EQ
+    condition: treated
+    replicate: 2
+  - accession: SRR16848065
+    sample_name: Bsubtilis_yxjA_160_EQ_BzCN_treated_r1
+    sample_group: yxjA_160_EQ # equilibrium-refolded SHAPE-Seq, 160 nt intermediate transcript
+    condition: treated
+    replicate: 1
+  - accession: SRR16848064
+    sample_name: Bsubtilis_yxjA_160_EQ_BzCN_treated_r2
+    sample_group: yxjA_160_EQ
+    condition: treated
+    replicate: 2
+  - accession: SRR16848073
+    sample_name: Bsubtilis_yxjA_220_EQ_BzCN_treated_r1
+    sample_group: yxjA_220_EQ # equilibrium-refolded SHAPE-Seq, 220 nt full-length transcript
+    condition: treated
+    replicate: 1
+  - accession: SRR16848072
+    sample_name: Bsubtilis_yxjA_220_EQ_BzCN_treated_r2
+    sample_group: yxjA_220_EQ
+    condition: treated
+    replicate: 2
+
+comment: null

@@ -1,0 +1,64 @@
+dataset_id: rnastruct00080
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Escherichia coli
+  ncbi_taxid: 562
+
+experiment:
+  method: TECprobe-LM
+  principle: MaP
+  obi: OBI:0003894
+  chemical: BzCN
+  RT_enzyme: M-MLV
+  context: [in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-025-60425-w
+  year: 2025
+
+raw_data:
+  repository: SRA
+  accession: PRJNA992462
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA992462
+  # Split from the multi-organism BioProject PRJNA992462 (one YAML per source RNA/organism).
+  # In-vitro cotranscriptional SHAPE probing (TECprobe-LM, BzCN). Each *_sN suffix is a folding
+  # checkpoint of the same biological replicate; groups have >=2 biological replicates (distinct SAMN).
+  run_accessions:
+  - accession: SRR25193903
+    sample_name: ecoli_SRP_hairpin_treated_r1_s1
+    sample_group: ecoli_SRP_hairpin
+    condition: treated
+    replicate: 1
+  - accession: SRR25193902
+    sample_name: ecoli_SRP_hairpin_treated_r1_s2
+    sample_group: ecoli_SRP_hairpin
+    condition: treated
+    replicate: 1
+  - accession: SRR25193901
+    sample_name: ecoli_SRP_hairpin_treated_r1_s3
+    sample_group: ecoli_SRP_hairpin
+    condition: treated
+    replicate: 1
+  - accession: SRR25193900
+    sample_name: ecoli_SRP_hairpin_treated_r2_s1
+    sample_group: ecoli_SRP_hairpin
+    condition: treated
+    replicate: 2
+  - accession: SRR25193899
+    sample_name: ecoli_SRP_hairpin_treated_r2_s2
+    sample_group: ecoli_SRP_hairpin
+    condition: treated
+    replicate: 2
+  - accession: SRR25193898
+    sample_name: ecoli_SRP_hairpin_treated_r2_s3
+    sample_group: ecoli_SRP_hairpin
+    condition: treated
+    replicate: 2
+
+comment: null

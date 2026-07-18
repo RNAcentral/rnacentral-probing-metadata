@@ -1,0 +1,51 @@
+dataset_id: rnastruct00075
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Saccharomyces cerevisiae
+  ncbi_taxid: 4932
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: NNNNNNNNNN
+
+publication:
+  doi: 10.1038/s41594-025-01565-x
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE209857
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE209857
+  run_accessions:
+  - accession: GSM6402544
+    sample_name: Scerevisiae_invivo_pladB_DMS_treated_r1
+    sample_group: Scerevisiae_invivo # in-cell DMS-MaPseq of pre-mRNA/intron structure
+    condition: treated
+    replicate: 1
+  - accession: GSM6402545
+    sample_name: Scerevisiae_invivo_pladB_DMS_treated_r2
+    sample_group: Scerevisiae_invivo
+    condition: treated
+    replicate: 2
+  - accession: GSM6402546
+    sample_name: Scerevisiae_invivo_noPladB_DMS_treated_r1
+    sample_group: Scerevisiae_invivo # no-pladB control: DMS treatment without splicing inhibition
+    condition: treated
+    replicate: 1
+  - accession: GSM6402547
+    sample_name: Scerevisiae_invivo_pladB_Nomod_untreated_r1
+    sample_group: Scerevisiae_invivo # no-modification control: splicing inhibition only, no DMS
+    condition: untreated
+    replicate: 1
+
+comment: null

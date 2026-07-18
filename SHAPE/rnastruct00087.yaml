@@ -1,0 +1,91 @@
+dataset_id: rnastruct00087
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Clostridium beijerinckii
+  ncbi_taxid: 1520
+
+experiment:
+  method: TECprobe
+  principle: MaP
+  obi: OBI:0003894 # BzCN (benzoyl cyanide)
+  chemical: BzCN
+  RT_enzyme: M-MLV
+  context: [in_vitro]
+  rna_type: sRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-023-43395-9
+  year: 2023
+
+raw_data:
+  repository: SRA
+  accession: PRJNA929456
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA929456
+  run_accessions:
+  - accession: SRR23292888
+    sample_name: Cbe_ZTP_VL_BzCN_1mM_ZMP_treated_r1
+    sample_group: ZTP_VL_1mM_ZMP # variable-length cotranscriptional (TECprobe-VL), ligand present
+    condition: treated
+    replicate: 1
+  - accession: SRR23292877
+    sample_name: Cbe_ZTP_VL_BzCN_1mM_ZMP_treated_r2
+    sample_group: ZTP_VL_1mM_ZMP
+    condition: treated
+    replicate: 2
+  - accession: SRR23292907
+    sample_name: Cbe_ZTP_VL_BzCN_0mM_ZMP_treated_r1
+    sample_group: ZTP_VL_0mM_ZMP # variable-length cotranscriptional (TECprobe-VL), ligand absent
+    condition: treated
+    replicate: 1
+  - accession: SRR23292906
+    sample_name: Cbe_ZTP_VL_BzCN_0mM_ZMP_treated_r2
+    sample_group: ZTP_VL_0mM_ZMP
+    condition: treated
+    replicate: 2
+  - accession: SRR23292894
+    sample_name: Cbe_ZTP_SL_BzCN_1mM_ZMP_500uM_NTP_treated_r1
+    sample_group: ZTP_SL_1mM_ZMP_500uM_NTP # single-length cotranscriptional (TECprobe-SL), ligand present
+    condition: treated
+    replicate: 1
+  - accession: SRR23292893
+    sample_name: Cbe_ZTP_SL_BzCN_1mM_ZMP_500uM_NTP_treated_r2
+    sample_group: ZTP_SL_1mM_ZMP_500uM_NTP
+    condition: treated
+    replicate: 2
+  - accession: SRR23292896
+    sample_name: Cbe_ZTP_SL_BzCN_1mM_ZMP_100uM_NTP_treated_r1
+    sample_group: ZTP_SL_1mM_ZMP_100uM_NTP # single-length cotranscriptional (TECprobe-SL), ligand present
+    condition: treated
+    replicate: 1
+  - accession: SRR23292895
+    sample_name: Cbe_ZTP_SL_BzCN_1mM_ZMP_100uM_NTP_treated_r2
+    sample_group: ZTP_SL_1mM_ZMP_100uM_NTP
+    condition: treated
+    replicate: 2
+  - accession: SRR23292899
+    sample_name: Cbe_ZTP_SL_BzCN_0mM_ZMP_100uM_NTP_treated_r1
+    sample_group: ZTP_SL_0mM_ZMP_100uM_NTP # single-length cotranscriptional (TECprobe-SL), ligand absent
+    condition: treated
+    replicate: 1
+  - accession: SRR23292897
+    sample_name: Cbe_ZTP_SL_BzCN_0mM_ZMP_100uM_NTP_treated_r2
+    sample_group: ZTP_SL_0mM_ZMP_100uM_NTP
+    condition: treated
+    replicate: 2
+  - accession: SRR23292905
+    sample_name: Cbe_ZTP_SL_BzCN_0mM_ZMP_500uM_NTP_treated_r1
+    sample_group: ZTP_SL_0mM_ZMP_500uM_NTP # single-length cotranscriptional (TECprobe-SL), ligand absent
+    condition: treated
+    replicate: 1
+  - accession: SRR23292898
+    sample_name: Cbe_ZTP_SL_BzCN_0mM_ZMP_500uM_NTP_treated_r2
+    sample_group: ZTP_SL_0mM_ZMP_500uM_NTP
+    condition: treated
+    replicate: 2
+
+comment: null

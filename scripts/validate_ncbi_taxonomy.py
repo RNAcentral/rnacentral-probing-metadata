@@ -27,6 +27,7 @@ VIRAL_ORGANISMS = {
 NCBI_ORGANISM_ALIASES = {
     "SARS-CoV-2": "Severe acute respiratory syndrome coronavirus 2",
     "HIV": "Human immunodeficiency virus 1",
+    "Escherichia phage T4": "Tequatrovirus T4",
 }
 
 NCBI_ESUMMARY_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"

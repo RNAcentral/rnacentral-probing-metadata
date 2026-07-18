@@ -1,0 +1,91 @@
+dataset_id: rnastruct00069
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Plasmodium falciparum
+  ncbi_taxid: 5833
+
+experiment:
+  method: icSHAPE
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  RT_enzyme: M-MLV
+  context: [in_vivo, denatured]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.3389/fcell.2021.766532
+  year: 2021
+
+raw_data:
+  repository: SRA
+  accession: PRJNA625172
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA625172
+  run_accessions:
+  - accession: SRR11547060
+    sample_name: Pf_trophozoite_26C_invivo_NAIN3_treated_r1
+    sample_group: Pf_trophozoite_26C # trophozoite stage, 26 C cold shock
+    condition: treated
+    replicate: 1
+  - accession: SRR11547059
+    sample_name: Pf_trophozoite_26C_invivo_NAIN3_treated_r2
+    sample_group: Pf_trophozoite_26C
+    condition: treated
+    replicate: 2
+  - accession: SRR11547058
+    sample_name: Pf_trophozoite_26C_invivo_DMSO_untreated_r1
+    sample_group: Pf_trophozoite_26C
+    condition: untreated
+    replicate: 1
+  - accession: SRR11547057
+    sample_name: Pf_trophozoite_26C_invivo_DMSO_untreated_r2
+    sample_group: Pf_trophozoite_26C
+    condition: untreated
+    replicate: 2
+  - accession: SRR11547092
+    sample_name: Pf_trophozoite_26C_denatured_NAIN3_r1
+    sample_group: Pf_trophozoite_26C
+    condition: denatured
+    replicate: 1
+  - accession: SRR11547091
+    sample_name: Pf_trophozoite_26C_denatured_NAIN3_r2
+    sample_group: Pf_trophozoite_26C
+    condition: denatured
+    replicate: 2
+  - accession: SRR11547084
+    sample_name: Pf_ring_26C_invivo_NAIN3_treated_r1
+    sample_group: Pf_ring_26C # ring stage, 26 C cold shock
+    condition: treated
+    replicate: 1
+  - accession: SRR11547083
+    sample_name: Pf_ring_26C_invivo_NAIN3_treated_r2
+    sample_group: Pf_ring_26C
+    condition: treated
+    replicate: 2
+  - accession: SRR11547081
+    sample_name: Pf_ring_26C_invivo_DMSO_untreated_r1
+    sample_group: Pf_ring_26C
+    condition: untreated
+    replicate: 1
+  - accession: SRR11547080
+    sample_name: Pf_ring_26C_invivo_DMSO_untreated_r2
+    sample_group: Pf_ring_26C
+    condition: untreated
+    replicate: 2
+  - accession: SRR11547079
+    sample_name: Pf_ring_26C_denatured_NAIN3_r1
+    sample_group: Pf_ring_26C
+    condition: denatured
+    replicate: 1
+  - accession: SRR11547078
+    sample_name: Pf_ring_26C_denatured_NAIN3_r2
+    sample_group: Pf_ring_26C
+    condition: denatured
+    replicate: 2
+
+comment: null
