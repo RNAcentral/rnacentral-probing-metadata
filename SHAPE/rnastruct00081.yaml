@@ -1,0 +1,214 @@
+dataset_id: rnastruct00081
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Clostridium beijerinckii
+  ncbi_taxid: 1520
+
+experiment:
+  method: TECprobe-LM
+  principle: MaP
+  obi: OBI:0003894
+  chemical: BzCN
+  RT_enzyme: M-MLV
+  context: [in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-025-60425-w
+  year: 2025
+
+raw_data:
+  repository: SRA
+  accession: PRJNA992462
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA992462
+  # Split from the multi-organism BioProject PRJNA992462 (one YAML per source RNA/organism).
+  # In-vitro cotranscriptional SHAPE probing (TECprobe-LM, BzCN). Each *_sN suffix is a folding
+  # checkpoint of the same biological replicate; groups have >=2 biological replicates (distinct SAMN).
+  run_accessions:
+  - accession: SRR25193943
+    sample_name: Cbeijerinckii_pfl_PK_0mM_ZMP_treated_r5_s1
+    sample_group: Cbeijerinckii_pfl_PK_0mM_ZMP
+    condition: treated
+    replicate: 5
+  - accession: SRR25193942
+    sample_name: Cbeijerinckii_pfl_PK_0mM_ZMP_treated_r5_s2
+    sample_group: Cbeijerinckii_pfl_PK_0mM_ZMP
+    condition: treated
+    replicate: 5
+  - accession: SRR25193941
+    sample_name: Cbeijerinckii_pfl_PK_0mM_ZMP_treated_r5_s3
+    sample_group: Cbeijerinckii_pfl_PK_0mM_ZMP
+    condition: treated
+    replicate: 5
+  - accession: SRR25193940
+    sample_name: Cbeijerinckii_pfl_PK_0mM_ZMP_treated_r6_s1
+    sample_group: Cbeijerinckii_pfl_PK_0mM_ZMP
+    condition: treated
+    replicate: 6
+  - accession: SRR25193938
+    sample_name: Cbeijerinckii_pfl_PK_0mM_ZMP_treated_r6_s2
+    sample_group: Cbeijerinckii_pfl_PK_0mM_ZMP
+    condition: treated
+    replicate: 6
+  - accession: SRR25193937
+    sample_name: Cbeijerinckii_pfl_PK_0mM_ZMP_treated_r6_s3
+    sample_group: Cbeijerinckii_pfl_PK_0mM_ZMP
+    condition: treated
+    replicate: 6
+  - accession: SRR25193936
+    sample_name: Cbeijerinckii_pfl_PK_0mM_ZMP_treated_r7_s1
+    sample_group: Cbeijerinckii_pfl_PK_0mM_ZMP
+    condition: treated
+    replicate: 7
+  - accession: SRR25193935
+    sample_name: Cbeijerinckii_pfl_PK_0mM_ZMP_treated_r7_s2
+    sample_group: Cbeijerinckii_pfl_PK_0mM_ZMP
+    condition: treated
+    replicate: 7
+  - accession: SRR25193934
+    sample_name: Cbeijerinckii_pfl_PK_0mM_ZMP_treated_r7_s3
+    sample_group: Cbeijerinckii_pfl_PK_0mM_ZMP
+    condition: treated
+    replicate: 7
+  - accession: SRR25193933
+    sample_name: Cbeijerinckii_pfl_PK_0mM_ZMP_treated_r8_s1
+    sample_group: Cbeijerinckii_pfl_PK_0mM_ZMP
+    condition: treated
+    replicate: 8
+  - accession: SRR25193932
+    sample_name: Cbeijerinckii_pfl_PK_0mM_ZMP_treated_r8_s2
+    sample_group: Cbeijerinckii_pfl_PK_0mM_ZMP
+    condition: treated
+    replicate: 8
+  - accession: SRR25193931
+    sample_name: Cbeijerinckii_pfl_PK_0mM_ZMP_treated_r8_s3
+    sample_group: Cbeijerinckii_pfl_PK_0mM_ZMP
+    condition: treated
+    replicate: 8
+  - accession: SRR25193930
+    sample_name: Cbeijerinckii_pfl_PK_1mM_ZMP_treated_r5_s1
+    sample_group: Cbeijerinckii_pfl_PK_1mM_ZMP
+    condition: treated
+    replicate: 5
+  - accession: SRR25193929
+    sample_name: Cbeijerinckii_pfl_PK_1mM_ZMP_treated_r5_s2
+    sample_group: Cbeijerinckii_pfl_PK_1mM_ZMP
+    condition: treated
+    replicate: 5
+  - accession: SRR25193927
+    sample_name: Cbeijerinckii_pfl_PK_1mM_ZMP_treated_r5_s3
+    sample_group: Cbeijerinckii_pfl_PK_1mM_ZMP
+    condition: treated
+    replicate: 5
+  - accession: SRR25193926
+    sample_name: Cbeijerinckii_pfl_PK_1mM_ZMP_treated_r6_s1
+    sample_group: Cbeijerinckii_pfl_PK_1mM_ZMP
+    condition: treated
+    replicate: 6
+  - accession: SRR25193925
+    sample_name: Cbeijerinckii_pfl_PK_1mM_ZMP_treated_r6_s2
+    sample_group: Cbeijerinckii_pfl_PK_1mM_ZMP
+    condition: treated
+    replicate: 6
+  - accession: SRR25193924
+    sample_name: Cbeijerinckii_pfl_PK_1mM_ZMP_treated_r6_s3
+    sample_group: Cbeijerinckii_pfl_PK_1mM_ZMP
+    condition: treated
+    replicate: 6
+  - accession: SRR25193923
+    sample_name: Cbeijerinckii_pfl_PK_1mM_ZMP_treated_r7_s1
+    sample_group: Cbeijerinckii_pfl_PK_1mM_ZMP
+    condition: treated
+    replicate: 7
+  - accession: SRR25193922
+    sample_name: Cbeijerinckii_pfl_PK_1mM_ZMP_treated_r7_s2
+    sample_group: Cbeijerinckii_pfl_PK_1mM_ZMP
+    condition: treated
+    replicate: 7
+  - accession: SRR25193921
+    sample_name: Cbeijerinckii_pfl_PK_1mM_ZMP_treated_r7_s3
+    sample_group: Cbeijerinckii_pfl_PK_1mM_ZMP
+    condition: treated
+    replicate: 7
+  - accession: SRR25193920
+    sample_name: Cbeijerinckii_pfl_PK_1mM_ZMP_treated_r8_s1
+    sample_group: Cbeijerinckii_pfl_PK_1mM_ZMP
+    condition: treated
+    replicate: 8
+  - accession: SRR25193919
+    sample_name: Cbeijerinckii_pfl_PK_1mM_ZMP_treated_r8_s2
+    sample_group: Cbeijerinckii_pfl_PK_1mM_ZMP
+    condition: treated
+    replicate: 8
+  - accession: SRR25193918
+    sample_name: Cbeijerinckii_pfl_PK_1mM_ZMP_treated_r8_s3
+    sample_group: Cbeijerinckii_pfl_PK_1mM_ZMP
+    condition: treated
+    replicate: 8
+  - accession: SRR25193916
+    sample_name: Cbeijerinckii_pfl_term_0mM_ZMP_treated_r1_s1
+    sample_group: Cbeijerinckii_pfl_term_0mM_ZMP
+    condition: treated
+    replicate: 1
+  - accession: SRR25193915
+    sample_name: Cbeijerinckii_pfl_term_0mM_ZMP_treated_r1_s2
+    sample_group: Cbeijerinckii_pfl_term_0mM_ZMP
+    condition: treated
+    replicate: 1
+  - accession: SRR25193914
+    sample_name: Cbeijerinckii_pfl_term_0mM_ZMP_treated_r1_s3
+    sample_group: Cbeijerinckii_pfl_term_0mM_ZMP
+    condition: treated
+    replicate: 1
+  - accession: SRR25193913
+    sample_name: Cbeijerinckii_pfl_term_0mM_ZMP_treated_r3_s1
+    sample_group: Cbeijerinckii_pfl_term_0mM_ZMP
+    condition: treated
+    replicate: 3
+  - accession: SRR25193912
+    sample_name: Cbeijerinckii_pfl_term_0mM_ZMP_treated_r3_s2
+    sample_group: Cbeijerinckii_pfl_term_0mM_ZMP
+    condition: treated
+    replicate: 3
+  - accession: SRR25193911
+    sample_name: Cbeijerinckii_pfl_term_0mM_ZMP_treated_r3_s3
+    sample_group: Cbeijerinckii_pfl_term_0mM_ZMP
+    condition: treated
+    replicate: 3
+  - accession: SRR25193910
+    sample_name: Cbeijerinckii_pfl_term_1mM_ZMP_treated_r1_s1
+    sample_group: Cbeijerinckii_pfl_term_1mM_ZMP
+    condition: treated
+    replicate: 1
+  - accession: SRR25193909
+    sample_name: Cbeijerinckii_pfl_term_1mM_ZMP_treated_r1_s2
+    sample_group: Cbeijerinckii_pfl_term_1mM_ZMP
+    condition: treated
+    replicate: 1
+  - accession: SRR25193908
+    sample_name: Cbeijerinckii_pfl_term_1mM_ZMP_treated_r1_s3
+    sample_group: Cbeijerinckii_pfl_term_1mM_ZMP
+    condition: treated
+    replicate: 1
+  - accession: SRR25193907
+    sample_name: Cbeijerinckii_pfl_term_1mM_ZMP_treated_r3_s1
+    sample_group: Cbeijerinckii_pfl_term_1mM_ZMP
+    condition: treated
+    replicate: 3
+  - accession: SRR25193905
+    sample_name: Cbeijerinckii_pfl_term_1mM_ZMP_treated_r3_s2
+    sample_group: Cbeijerinckii_pfl_term_1mM_ZMP
+    condition: treated
+    replicate: 3
+  - accession: SRR25193904
+    sample_name: Cbeijerinckii_pfl_term_1mM_ZMP_treated_r3_s3
+    sample_group: Cbeijerinckii_pfl_term_1mM_ZMP
+    condition: treated
+    replicate: 3
+
+comment: null

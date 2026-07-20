@@ -1,0 +1,77 @@
+dataset_id: rnastruct00074
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Escherichia phage T4
+  ncbi_taxid: 10665
+  strain: T4
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: AGATCGGAAGAGCACACGTCT,AGATCGGAAGAGCGTCGTGTAG
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-026-70801-9
+  year: 2026
+
+raw_data:
+  repository: GEO
+  accession: GSE302505
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302505
+  # In-vitro transcribed and refolded T4 td group I intron probed with DMS (same study as
+  # rnastruct00062). Re-added from the previously removed rnastruct00063 in the current schema.
+  # All samples are DMS-probed; groups differ by ligand: no drug (Control), methotrexate (MTX),
+  # and MTX + 5 mM GTP (tests competitive rescue of splicing inhibition). Every group has >=2
+  # biological replicates (distinct SAMN sample accessions).
+  run_accessions:
+  - accession: GSM9436217
+    sample_name: T4_td_intron_invitro_control_DMS_treated_r1
+    sample_group: T4_td_intron_control
+    condition: treated
+    replicate: 1
+  - accession: GSM9436218
+    sample_name: T4_td_intron_invitro_control_DMS_treated_r2
+    sample_group: T4_td_intron_control
+    condition: treated
+    replicate: 2
+  - accession: GSM9436219
+    sample_name: T4_td_intron_invitro_control_DMS_treated_r3
+    sample_group: T4_td_intron_control
+    condition: treated
+    replicate: 3
+  - accession: GSM9436220
+    sample_name: T4_td_intron_invitro_MTX_DMS_treated_r1
+    sample_group: T4_td_intron_MTX
+    condition: treated
+    replicate: 1
+  - accession: GSM9436221
+    sample_name: T4_td_intron_invitro_MTX_DMS_treated_r2
+    sample_group: T4_td_intron_MTX
+    condition: treated
+    replicate: 2
+  - accession: GSM9436222
+    sample_name: T4_td_intron_invitro_MTX_DMS_treated_r3
+    sample_group: T4_td_intron_MTX
+    condition: treated
+    replicate: 3
+  - accession: GSM9436223
+    sample_name: T4_td_intron_invitro_MTX_GTP_DMS_treated_r1
+    sample_group: T4_td_intron_MTX_GTP
+    condition: treated
+    replicate: 1
+  - accession: GSM9436224
+    sample_name: T4_td_intron_invitro_MTX_GTP_DMS_treated_r2
+    sample_group: T4_td_intron_MTX_GTP
+    condition: treated
+    replicate: 2
+
+comment: null

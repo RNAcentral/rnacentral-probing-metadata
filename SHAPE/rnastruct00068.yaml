@@ -1,0 +1,211 @@
+dataset_id: rnastruct00068
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Saccharomyces cerevisiae
+  ncbi_taxid: 4932
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo, ex_vivo, in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1093/nar/gkae494
+  year: 2024
+
+raw_data:
+  repository: SRA
+  accession: PRJNA1072546
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1072546
+  run_accessions:
+  - accession: SRR27843461
+    sample_name: Scerevisiae_Ty3_gRNA_in_vivo_NAI_amp1357_treated_r1
+    sample_group: Ty3_gRNA_in_vivo # Ty3 genomic RNA probed inside yeast cells
+    condition: treated
+    replicate: 1
+  - accession: SRR27843491
+    sample_name: Scerevisiae_Ty3_gRNA_in_vivo_NAI_amp1357_treated_r2
+    sample_group: Ty3_gRNA_in_vivo
+    condition: treated
+    replicate: 2
+  - accession: SRR27843459
+    sample_name: Scerevisiae_Ty3_gRNA_in_vivo_NAI_amp2468_treated_r1
+    sample_group: Ty3_gRNA_in_vivo
+    condition: treated
+    replicate: 1
+  - accession: SRR27843489
+    sample_name: Scerevisiae_Ty3_gRNA_in_vivo_NAI_amp2468_treated_r2
+    sample_group: Ty3_gRNA_in_vivo
+    condition: treated
+    replicate: 2
+  - accession: SRR27843460
+    sample_name: Scerevisiae_Ty3_gRNA_in_vivo_DMSO_amp1357_untreated_r1
+    sample_group: Ty3_gRNA_in_vivo
+    condition: untreated
+    replicate: 1
+  - accession: SRR27843490
+    sample_name: Scerevisiae_Ty3_gRNA_in_vivo_DMSO_amp1357_untreated_r2
+    sample_group: Ty3_gRNA_in_vivo
+    condition: untreated
+    replicate: 2
+  - accession: SRR27843458
+    sample_name: Scerevisiae_Ty3_gRNA_in_vivo_DMSO_amp2468_untreated_r1
+    sample_group: Ty3_gRNA_in_vivo
+    condition: untreated
+    replicate: 1
+  - accession: SRR27843488
+    sample_name: Scerevisiae_Ty3_gRNA_in_vivo_DMSO_amp2468_untreated_r2
+    sample_group: Ty3_gRNA_in_vivo
+    condition: untreated
+    replicate: 2
+  - accession: SRR27843495
+    sample_name: Scerevisiae_Ty3_gRNA_ex_vivo_NAI_amp1357_treated_r1
+    sample_group: Ty3_gRNA_ex_vivo # Ty3 genomic RNA, extracted/deproteinized (ex vivo)
+    condition: treated
+    replicate: 1
+  - accession: SRR27843487
+    sample_name: Scerevisiae_Ty3_gRNA_ex_vivo_NAI_amp1357_treated_r2
+    sample_group: Ty3_gRNA_ex_vivo
+    condition: treated
+    replicate: 2
+  - accession: SRR27843493
+    sample_name: Scerevisiae_Ty3_gRNA_ex_vivo_NAI_amp2468_treated_r1
+    sample_group: Ty3_gRNA_ex_vivo
+    condition: treated
+    replicate: 1
+  - accession: SRR27843484
+    sample_name: Scerevisiae_Ty3_gRNA_ex_vivo_NAI_amp2468_treated_r2
+    sample_group: Ty3_gRNA_ex_vivo
+    condition: treated
+    replicate: 2
+  - accession: SRR27843494
+    sample_name: Scerevisiae_Ty3_gRNA_ex_vivo_DMSO_amp1357_untreated_r1
+    sample_group: Ty3_gRNA_ex_vivo
+    condition: untreated
+    replicate: 1
+  - accession: SRR27843486
+    sample_name: Scerevisiae_Ty3_gRNA_ex_vivo_DMSO_amp1357_untreated_r2
+    sample_group: Ty3_gRNA_ex_vivo
+    condition: untreated
+    replicate: 2
+  - accession: SRR27843492
+    sample_name: Scerevisiae_Ty3_gRNA_ex_vivo_DMSO_amp2468_untreated_r1
+    sample_group: Ty3_gRNA_ex_vivo
+    condition: untreated
+    replicate: 1
+  - accession: SRR27843483
+    sample_name: Scerevisiae_Ty3_gRNA_ex_vivo_DMSO_amp2468_untreated_r2
+    sample_group: Ty3_gRNA_ex_vivo
+    condition: untreated
+    replicate: 2
+  - accession: SRR27843473
+    sample_name: Scerevisiae_Ty3_invitro_3end_monomer_NAI_treated_r1
+    sample_group: Ty3_invitro_3end_monomer # in-vitro transcribed 3' region, monomer
+    condition: treated
+    replicate: 1
+  - accession: SRR27843467
+    sample_name: Scerevisiae_Ty3_invitro_3end_monomer_NAI_treated_r2
+    sample_group: Ty3_invitro_3end_monomer
+    condition: treated
+    replicate: 2
+  - accession: SRR27843472
+    sample_name: Scerevisiae_Ty3_invitro_3end_monomer_DMSO_untreated_r1
+    sample_group: Ty3_invitro_3end_monomer
+    condition: untreated
+    replicate: 1
+  - accession: SRR27843466
+    sample_name: Scerevisiae_Ty3_invitro_3end_monomer_DMSO_untreated_r2
+    sample_group: Ty3_invitro_3end_monomer
+    condition: untreated
+    replicate: 2
+  - accession: SRR27843471
+    sample_name: Scerevisiae_Ty3_invitro_3end_monomer_tRNAcomplex_NAI_treated_r1
+    sample_group: Ty3_invitro_3end_complex_tRNA # in-vitro 3' region in complex with primer tRNA
+    condition: treated
+    replicate: 1
+  - accession: SRR27843465
+    sample_name: Scerevisiae_Ty3_invitro_3end_monomer_tRNAcomplex_NAI_treated_r2
+    sample_group: Ty3_invitro_3end_complex_tRNA
+    condition: treated
+    replicate: 2
+  - accession: SRR27843470
+    sample_name: Scerevisiae_Ty3_invitro_3end_monomer_tRNAcomplex_DMSO_untreated_r1
+    sample_group: Ty3_invitro_3end_complex_tRNA
+    condition: untreated
+    replicate: 1
+  - accession: SRR27843464
+    sample_name: Scerevisiae_Ty3_invitro_3end_monomer_tRNAcomplex_DMSO_untreated_r2
+    sample_group: Ty3_invitro_3end_complex_tRNA
+    condition: untreated
+    replicate: 2
+  - accession: SRR27843482
+    sample_name: Scerevisiae_Ty3_invitro_5end_monomer_NAI_treated_r1
+    sample_group: Ty3_invitro_5end_monomer # in-vitro transcribed 5' region, monomer
+    condition: treated
+    replicate: 1
+  - accession: SRR28826815
+    sample_name: Scerevisiae_Ty3_invitro_5end_monomer_NAI_treated_r2
+    sample_group: Ty3_invitro_5end_monomer
+    condition: treated
+    replicate: 2
+  - accession: SRR27843481
+    sample_name: Scerevisiae_Ty3_invitro_5end_monomer_DMSO_untreated_r1
+    sample_group: Ty3_invitro_5end_monomer
+    condition: untreated
+    replicate: 1
+  - accession: SRR28826814
+    sample_name: Scerevisiae_Ty3_invitro_5end_monomer_DMSO_untreated_r2
+    sample_group: Ty3_invitro_5end_monomer
+    condition: untreated
+    replicate: 2
+  - accession: SRR28826791
+    sample_name: Scerevisiae_Ty3_invitro_5end_dimer_NAI_treated_r1
+    sample_group: Ty3_invitro_5end_dimer # in-vitro 5' region, dimer form
+    condition: treated
+    replicate: 1
+  - accession: SRR28826789
+    sample_name: Scerevisiae_Ty3_invitro_5end_dimer_NAI_treated_r2
+    sample_group: Ty3_invitro_5end_dimer
+    condition: treated
+    replicate: 2
+  - accession: SRR28826790
+    sample_name: Scerevisiae_Ty3_invitro_5end_dimer_DMSO_untreated_r1
+    sample_group: Ty3_invitro_5end_dimer
+    condition: untreated
+    replicate: 1
+  - accession: SRR28826788
+    sample_name: Scerevisiae_Ty3_invitro_5end_dimer_DMSO_untreated_r2
+    sample_group: Ty3_invitro_5end_dimer
+    condition: untreated
+    replicate: 2
+  - accession: SRR28826799
+    sample_name: Scerevisiae_Ty3_invitro_5end_delPAL6_monomer_NAI_treated_r1
+    sample_group: Ty3_invitro_5end_delPAL6_monomer # in-vitro 5' region with PAL6 palindrome deleted, monomer
+    condition: treated
+    replicate: 1
+  - accession: SRR28826797
+    sample_name: Scerevisiae_Ty3_invitro_5end_delPAL6_monomer_NAI_treated_r2
+    sample_group: Ty3_invitro_5end_delPAL6_monomer
+    condition: treated
+    replicate: 2
+  - accession: SRR28826798
+    sample_name: Scerevisiae_Ty3_invitro_5end_delPAL6_monomer_DMSO_untreated_r1
+    sample_group: Ty3_invitro_5end_delPAL6_monomer
+    condition: untreated
+    replicate: 1
+  - accession: SRR28826796
+    sample_name: Scerevisiae_Ty3_invitro_5end_delPAL6_monomer_DMSO_untreated_r2
+    sample_group: Ty3_invitro_5end_delPAL6_monomer
+    condition: untreated
+    replicate: 2
+
+comment: null

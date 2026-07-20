@@ -1,0 +1,151 @@
+dataset_id: rnastruct00077
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Bacillus subtilis
+  ncbi_taxid: 1423
+
+experiment:
+  method: Structure-seq2
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1261/rna.079652.123
+  year: 2023
+
+raw_data:
+  repository: GEO
+  accession: GSE224126
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE224126
+  run_accessions:
+  - accession: SRR23286054
+    sample_name: Bsub_23C_minusDMS_untreated_r1
+    sample_group: Bsub_23C
+    condition: untreated
+    replicate: 1
+  - accession: SRR23286053
+    sample_name: Bsub_23C_minusDMS_untreated_r2
+    sample_group: Bsub_23C
+    condition: untreated
+    replicate: 2
+  - accession: SRR23286052
+    sample_name: Bsub_23C_minusDMS_untreated_r3
+    sample_group: Bsub_23C
+    condition: untreated
+    replicate: 3
+  - accession: SRR23286048
+    sample_name: Bsub_23C_plusDMS_treated_r1
+    sample_group: Bsub_23C
+    condition: treated
+    replicate: 1
+  - accession: SRR23286047
+    sample_name: Bsub_23C_plusDMS_treated_r2
+    sample_group: Bsub_23C
+    condition: treated
+    replicate: 2
+  - accession: SRR23286046
+    sample_name: Bsub_23C_plusDMS_treated_r3
+    sample_group: Bsub_23C
+    condition: treated
+    replicate: 3
+  - accession: SRR23286051
+    sample_name: Bsub_30C_minusDMS_untreated_r1
+    sample_group: Bsub_30C
+    condition: untreated
+    replicate: 1
+  - accession: SRR23286050
+    sample_name: Bsub_30C_minusDMS_untreated_r2
+    sample_group: Bsub_30C
+    condition: untreated
+    replicate: 2
+  - accession: SRR23286049
+    sample_name: Bsub_30C_minusDMS_untreated_r3
+    sample_group: Bsub_30C
+    condition: untreated
+    replicate: 3
+  - accession: SRR23286045
+    sample_name: Bsub_30C_plusDMS_treated_r1
+    sample_group: Bsub_30C
+    condition: treated
+    replicate: 1
+  - accession: SRR23286044
+    sample_name: Bsub_30C_plusDMS_treated_r2
+    sample_group: Bsub_30C
+    condition: treated
+    replicate: 2
+  - accession: SRR23286043
+    sample_name: Bsub_30C_plusDMS_treated_r3
+    sample_group: Bsub_30C
+    condition: treated
+    replicate: 3
+  - accession: SRR23286042
+    sample_name: Bsub_37C_minusDMS_untreated_r1
+    sample_group: Bsub_37C
+    condition: untreated
+    replicate: 1
+  - accession: SRR23286041
+    sample_name: Bsub_37C_minusDMS_untreated_r2
+    sample_group: Bsub_37C
+    condition: untreated
+    replicate: 2
+  - accession: SRR23286040
+    sample_name: Bsub_37C_minusDMS_untreated_r3
+    sample_group: Bsub_37C
+    condition: untreated
+    replicate: 3
+  - accession: SRR23286036
+    sample_name: Bsub_37C_plusDMS_treated_r1
+    sample_group: Bsub_37C
+    condition: treated
+    replicate: 1
+  - accession: SRR23286035
+    sample_name: Bsub_37C_plusDMS_treated_r2
+    sample_group: Bsub_37C
+    condition: treated
+    replicate: 2
+  - accession: SRR23286034
+    sample_name: Bsub_37C_plusDMS_treated_r3
+    sample_group: Bsub_37C
+    condition: treated
+    replicate: 3
+  - accession: SRR23286039
+    sample_name: Bsub_42C_minusDMS_untreated_r1
+    sample_group: Bsub_42C
+    condition: untreated
+    replicate: 1
+  - accession: SRR23286038
+    sample_name: Bsub_42C_minusDMS_untreated_r2
+    sample_group: Bsub_42C
+    condition: untreated
+    replicate: 2
+  - accession: SRR23286037
+    sample_name: Bsub_42C_minusDMS_untreated_r3
+    sample_group: Bsub_42C
+    condition: untreated
+    replicate: 3
+  - accession: SRR23286033
+    sample_name: Bsub_42C_plusDMS_treated_r1
+    sample_group: Bsub_42C
+    condition: treated
+    replicate: 1
+  - accession: SRR23286032
+    sample_name: Bsub_42C_plusDMS_treated_r2
+    sample_group: Bsub_42C
+    condition: treated
+    replicate: 2
+  - accession: SRR23286031
+    sample_name: Bsub_42C_plusDMS_treated_r3
+    sample_group: Bsub_42C
+    condition: treated
+    replicate: 3
+
+comment: null

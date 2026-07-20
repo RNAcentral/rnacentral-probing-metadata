@@ -1,0 +1,182 @@
+dataset_id: rnastruct00079
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: SARS-CoV-2
+  ncbi_taxid: 2697049
+  strain: WT (Wuhan-Hu-1/Singapore lineage), Alpha (B.1.1.7), Beta (B.1.351.3), Delta (B.1.617.2), Omicron (XBB)  # Five variants probed in-cell; taxid 2697049.
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-025-63297-2
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE279203
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279203
+  run_accessions:
+  - accession: GSM8564205
+    sample_name: VeroE6_SARSCoV2_WT_incell_NAI_treated_r1
+    sample_group: SHAPE_WT
+    condition: treated
+    replicate: 1
+  - accession: GSM8564206
+    sample_name: VeroE6_SARSCoV2_WT_incell_NAI_treated_r2
+    sample_group: SHAPE_WT
+    condition: treated
+    replicate: 2
+  - accession: GSM8564207
+    sample_name: VeroE6_SARSCoV2_WT_incell_DMSO_untreated_r1
+    sample_group: SHAPE_WT
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564208
+    sample_name: VeroE6_SARSCoV2_WT_incell_DMSO_untreated_r2
+    sample_group: SHAPE_WT
+    condition: untreated
+    replicate: 2
+  - accession: GSM8564203
+    sample_name: VeroE6_SARSCoV2_WT_incell_unmodified_untreated_r1
+    sample_group: SHAPE_WT
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564204
+    sample_name: VeroE6_SARSCoV2_WT_incell_unmodified_untreated_r2
+    sample_group: SHAPE_WT
+    condition: untreated
+    replicate: 2
+  - accession: GSM8564211
+    sample_name: VeroE6_SARSCoV2_Alpha_incell_NAI_treated_r1
+    sample_group: SHAPE_ALPHA
+    condition: treated
+    replicate: 1
+  - accession: GSM8564212
+    sample_name: VeroE6_SARSCoV2_Alpha_incell_NAI_treated_r2
+    sample_group: SHAPE_ALPHA
+    condition: treated
+    replicate: 2
+  - accession: GSM8564213
+    sample_name: VeroE6_SARSCoV2_Alpha_incell_DMSO_untreated_r1
+    sample_group: SHAPE_ALPHA
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564214
+    sample_name: VeroE6_SARSCoV2_Alpha_incell_DMSO_untreated_r2
+    sample_group: SHAPE_ALPHA
+    condition: untreated
+    replicate: 2
+  - accession: GSM8564209
+    sample_name: VeroE6_SARSCoV2_Alpha_incell_unmodified_untreated_r1
+    sample_group: SHAPE_ALPHA
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564210
+    sample_name: VeroE6_SARSCoV2_Alpha_incell_unmodified_untreated_r2
+    sample_group: SHAPE_ALPHA
+    condition: untreated
+    replicate: 2
+  - accession: GSM8564217
+    sample_name: VeroE6_SARSCoV2_Beta_incell_NAI_treated_r1
+    sample_group: SHAPE_BETA
+    condition: treated
+    replicate: 1
+  - accession: GSM8564218
+    sample_name: VeroE6_SARSCoV2_Beta_incell_NAI_treated_r2
+    sample_group: SHAPE_BETA
+    condition: treated
+    replicate: 2
+  - accession: GSM8564219
+    sample_name: VeroE6_SARSCoV2_Beta_incell_DMSO_untreated_r1
+    sample_group: SHAPE_BETA
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564220
+    sample_name: VeroE6_SARSCoV2_Beta_incell_DMSO_untreated_r2
+    sample_group: SHAPE_BETA
+    condition: untreated
+    replicate: 2
+  - accession: GSM8564215
+    sample_name: VeroE6_SARSCoV2_Beta_incell_unmodified_untreated_r1
+    sample_group: SHAPE_BETA
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564216
+    sample_name: VeroE6_SARSCoV2_Beta_incell_unmodified_untreated_r2
+    sample_group: SHAPE_BETA
+    condition: untreated
+    replicate: 2
+  - accession: GSM8564223
+    sample_name: VeroE6_SARSCoV2_Delta_incell_NAI_treated_r1
+    sample_group: SHAPE_DELTA
+    condition: treated
+    replicate: 1
+  - accession: GSM8564224
+    sample_name: VeroE6_SARSCoV2_Delta_incell_NAI_treated_r2
+    sample_group: SHAPE_DELTA
+    condition: treated
+    replicate: 2
+  - accession: GSM8564225
+    sample_name: VeroE6_SARSCoV2_Delta_incell_DMSO_untreated_r1
+    sample_group: SHAPE_DELTA
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564226
+    sample_name: VeroE6_SARSCoV2_Delta_incell_DMSO_untreated_r2
+    sample_group: SHAPE_DELTA
+    condition: untreated
+    replicate: 2
+  - accession: GSM8564221
+    sample_name: VeroE6_SARSCoV2_Delta_incell_unmodified_untreated_r1
+    sample_group: SHAPE_DELTA
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564222
+    sample_name: VeroE6_SARSCoV2_Delta_incell_unmodified_untreated_r2
+    sample_group: SHAPE_DELTA
+    condition: untreated
+    replicate: 2
+  - accession: GSM8564229
+    sample_name: VeroE6_SARSCoV2_Omicron_incell_NAI_treated_r1
+    sample_group: SHAPE_OMICRON
+    condition: treated
+    replicate: 1
+  - accession: GSM8564230
+    sample_name: VeroE6_SARSCoV2_Omicron_incell_NAI_treated_r2
+    sample_group: SHAPE_OMICRON
+    condition: treated
+    replicate: 2
+  - accession: GSM8564231
+    sample_name: VeroE6_SARSCoV2_Omicron_incell_DMSO_untreated_r1
+    sample_group: SHAPE_OMICRON
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564232
+    sample_name: VeroE6_SARSCoV2_Omicron_incell_DMSO_untreated_r2
+    sample_group: SHAPE_OMICRON
+    condition: untreated
+    replicate: 2
+  - accession: GSM8564227
+    sample_name: VeroE6_SARSCoV2_Omicron_incell_unmodified_untreated_r1
+    sample_group: SHAPE_OMICRON
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564228
+    sample_name: VeroE6_SARSCoV2_Omicron_incell_unmodified_untreated_r2
+    sample_group: SHAPE_OMICRON
+    condition: untreated
+    replicate: 2
+
+comment: null

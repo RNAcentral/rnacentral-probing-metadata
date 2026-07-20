@@ -1,0 +1,71 @@
+dataset_id: rnastruct00083
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: SHALiPE-seq
+  principle: RT-stop
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1093/nar/gkaf820
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE272797
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE272797
+  run_accessions:
+  - accession: SRR29920057
+    sample_name: HEK293T_Ctrl_NAI_treated_r1
+    sample_group: HEK293T_Ctrl
+    condition: treated
+    replicate: 1
+  - accession: SRR29920056
+    sample_name: HEK293T_Ctrl_NAI_treated_r2
+    sample_group: HEK293T_Ctrl
+    condition: treated
+    replicate: 2
+  - accession: SRR29920061
+    sample_name: HEK293T_Ctrl_DMSO_untreated_r1
+    sample_group: HEK293T_Ctrl
+    condition: untreated
+    replicate: 1
+  - accession: SRR29920060
+    sample_name: HEK293T_Ctrl_DMSO_untreated_r2
+    sample_group: HEK293T_Ctrl
+    condition: untreated
+    replicate: 2
+  - accession: SRR29920055
+    sample_name: HEK293T_TDP43kd_NAI_treated_r1
+    sample_group: HEK293T_TDP43_kd
+    condition: treated
+    replicate: 1
+  - accession: SRR29920054
+    sample_name: HEK293T_TDP43kd_NAI_treated_r2
+    sample_group: HEK293T_TDP43_kd
+    condition: treated
+    replicate: 2
+  - accession: SRR29920059
+    sample_name: HEK293T_TDP43kd_DMSO_untreated_r1
+    sample_group: HEK293T_TDP43_kd
+    condition: untreated
+    replicate: 1
+  - accession: SRR29920058
+    sample_name: HEK293T_TDP43kd_DMSO_untreated_r2
+    sample_group: HEK293T_TDP43_kd
+    condition: untreated
+    replicate: 2
+
+comment: null

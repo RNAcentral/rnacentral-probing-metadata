@@ -1,0 +1,45 @@
+dataset_id: rnastruct00073
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41587-025-02739-0
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE247244
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247244
+  # Human transcriptome-wide DMS-MaPseq subset of GSE247244 (the same study as rnastruct00064,
+  # which curates only the E. coli benchmarking samples). Two biological replicates (distinct
+  # SAMN sample accessions). The E. coli mRNA samples in this series are technical replicates
+  # only (one biosample, two runs each), so they are not curated here.
+  run_accessions:
+  - accession: GSM9050879
+    sample_name: HEK293_total_RNA_DMS_treated_r1
+    sample_group: HEK293_total
+    condition: treated
+    replicate: 1
+  - accession: GSM9050880
+    sample_name: HEK293_total_RNA_DMS_treated_r2
+    sample_group: HEK293_total
+    condition: treated
+    replicate: 2
+
+comment: null

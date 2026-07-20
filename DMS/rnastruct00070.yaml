@@ -1,0 +1,156 @@
+dataset_id: rnastruct00070
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: NNNN
+
+publication:
+  doi: 10.1038/s41467-025-56149-6
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE245536
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245536
+  run_accessions:
+  - accession: SRR26405922
+    sample_name: HeLa_CR45_DMS_treated_r1
+    sample_group: HeLa_CR45 # endogenous hTR CR4/5 domain, HeLa
+    condition: treated
+    replicate: 1
+  - accession: SRR26405921
+    sample_name: HeLa_CR45_DMS_treated_r2
+    sample_group: HeLa_CR45
+    condition: treated
+    replicate: 2
+  - accession: SRR30426956
+    sample_name: HeLa_CR45_DMS_treated_r3
+    sample_group: HeLa_CR45
+    condition: treated
+    replicate: 3
+  - accession: SRR30426955
+    sample_name: HeLa_CR45_DMS_treated_r4
+    sample_group: HeLa_CR45
+    condition: treated
+    replicate: 4
+  - accession: SRR26405927
+    sample_name: HeLa_CR45_untreated_r1
+    sample_group: HeLa_CR45
+    condition: untreated
+    replicate: 1
+  - accession: SRR26405926
+    sample_name: HeLa_PK_DMS_treated_r1
+    sample_group: HeLa_PK # endogenous hTR pseudoknot/template domain, HeLa
+    condition: treated
+    replicate: 1
+  - accession: SRR30426959
+    sample_name: HeLa_PK_DMS_treated_r2
+    sample_group: HeLa_PK
+    condition: treated
+    replicate: 2
+  - accession: SRR30426958
+    sample_name: HeLa_PK_DMS_treated_r3
+    sample_group: HeLa_PK
+    condition: treated
+    replicate: 3
+  - accession: SRR30426957
+    sample_name: HeLa_PK_DMS_treated_r4
+    sample_group: HeLa_PK
+    condition: treated
+    replicate: 4
+  - accession: SRR26405928
+    sample_name: HeLa_PK_untreated_r1
+    sample_group: HeLa_PK
+    condition: untreated
+    replicate: 1
+  - accession: SRR30426952
+    sample_name: BJ_CR45_DMS_treated_r1
+    sample_group: BJ_CR45 # endogenous hTR CR4/5 domain, BJ fibroblasts
+    condition: treated
+    replicate: 1
+  - accession: SRR30426951
+    sample_name: BJ_CR45_DMS_treated_r2
+    sample_group: BJ_CR45
+    condition: treated
+    replicate: 2
+  - accession: SRR30426953
+    sample_name: BJ_CR45_untreated_r1
+    sample_group: BJ_CR45
+    condition: untreated
+    replicate: 1
+  - accession: SRR26405912
+    sample_name: HeLa_hTR_WT_transfection_DMS_treated_r1
+    sample_group: HeLa_hTR_WT_transfection # transfected wild-type hTR, HeLa
+    condition: treated
+    replicate: 1
+  - accession: SRR26405911
+    sample_name: HeLa_hTR_WT_transfection_DMS_treated_r2
+    sample_group: HeLa_hTR_WT_transfection
+    condition: treated
+    replicate: 2
+  - accession: SRR26405916
+    sample_name: HeLa_hTR_WT_transfection_untreated_r1
+    sample_group: HeLa_hTR_WT_transfection
+    condition: untreated
+    replicate: 1
+  - accession: SRR26405910
+    sample_name: HeLa_hTR_G270C_transfection_DMS_treated_r1
+    sample_group: HeLa_hTR_G270C_transfection # transfected hTR G270C mutant
+    condition: treated
+    replicate: 1
+  - accession: SRR26405909
+    sample_name: HeLa_hTR_G270C_transfection_DMS_treated_r2
+    sample_group: HeLa_hTR_G270C_transfection
+    condition: treated
+    replicate: 2
+  - accession: SRR26405915
+    sample_name: HeLa_hTR_G270C_transfection_untreated_r1
+    sample_group: HeLa_hTR_G270C_transfection
+    condition: untreated
+    replicate: 1
+  - accession: SRR26405908
+    sample_name: HeLa_hTR_C277G_A218T_transfection_DMS_treated_r1
+    sample_group: HeLa_hTR_C277G_A218T_transfection # transfected hTR C277G/A218T double mutant
+    condition: treated
+    replicate: 1
+  - accession: SRR26405907
+    sample_name: HeLa_hTR_C277G_A218T_transfection_DMS_treated_r2
+    sample_group: HeLa_hTR_C277G_A218T_transfection
+    condition: treated
+    replicate: 2
+  - accession: SRR26405914
+    sample_name: HeLa_hTR_C277G_A218T_transfection_untreated_r1
+    sample_group: HeLa_hTR_C277G_A218T_transfection
+    condition: untreated
+    replicate: 1
+  - accession: SRR26405906
+    sample_name: HeLa_hTR_G270C_C277G_A218T_transfection_DMS_treated_r1
+    sample_group: HeLa_hTR_G270C_C277G_A218T_transfection # transfected hTR G270C/C277G/A218T triple mutant
+    condition: treated
+    replicate: 1
+  - accession: SRR26405905
+    sample_name: HeLa_hTR_G270C_C277G_A218T_transfection_DMS_treated_r2
+    sample_group: HeLa_hTR_G270C_C277G_A218T_transfection
+    condition: treated
+    replicate: 2
+  - accession: SRR26405913
+    sample_name: HeLa_hTR_G270C_C277G_A218T_transfection_untreated_r1
+    sample_group: HeLa_hTR_G270C_C277G_A218T_transfection
+    condition: untreated
+    replicate: 1
+
+comment: null
