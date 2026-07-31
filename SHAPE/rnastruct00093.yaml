@@ -6,12 +6,12 @@ organism:
   ncbi_taxid: 9606
 
 experiment:
-  method: fSHAPE
-  principle: MaP
-  obi: OBI:0003886
-  chemical: NAI
+  method: icSHAPE
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
   RT_enzyme: M-MLV
-  context: [in_vivo, in_vitro]
+  context: [in_vivo]
   rna_type: total
   pH: null
   adapter_3p: null
@@ -19,103 +19,43 @@ experiment:
   umi_pattern: null
 
 publication:
-  doi: 10.1016/j.molcel.2020.11.014
-  year: 2020
+  doi: 10.1038/nature11247
+  year: 2012
 
 raw_data:
   repository: GEO
-  accession: GSE149767
-  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149767
+  accession: GSE143120
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143120
   run_accessions:
-  - accession: GSM4512071
-    sample_name: K562_invivo_NAI_treated_r1
+  - accession: GSM4250758
+    sample_name: K562_invivo_NAIN3_treated_r1
     sample_group: K562_invivo
     condition: treated
     replicate: 1
-  - accession: GSM4512072
-    sample_name: K562_invivo_NAI_treated_r2
+  - accession: GSM4250759
+    sample_name: K562_invivo_NAIN3_treated_r2
     sample_group: K562_invivo
     condition: treated
     replicate: 2
-  - accession: GSM4795047
-    sample_name: K562_invivo_untreated_r1
+  - accession: GSM4250760
+    sample_name: K562_invivo_NAIN3_treated_r3
+    sample_group: K562_invivo
+    condition: treated
+    replicate: 3
+  - accession: GSM4250706
+    sample_name: K562_invivo_DMSO_untreated_r1
     sample_group: K562_invivo
     condition: untreated
     replicate: 1
-  - accession: GSM4795048
-    sample_name: K562_invivo_untreated_r2
+  - accession: GSM4250707
+    sample_name: K562_invivo_DMSO_untreated_r2
     sample_group: K562_invivo
     condition: untreated
     replicate: 2
-  - accession: GSM4512073
-    sample_name: K562_invitro_NAI_treated_r1
-    sample_group: K562_invitro
-    condition: treated
-    replicate: 1
-  - accession: GSM4512074
-    sample_name: K562_invitro_NAI_treated_r2
-    sample_group: K562_invitro
-    condition: treated
-    replicate: 2
-  - accession: GSM4512075
-    sample_name: HepG2_invivo_NAI_treated_r1
-    sample_group: HepG2_invivo
-    condition: treated
-    replicate: 1
-  - accession: GSM4512076
-    sample_name: HepG2_invivo_NAI_treated_r2
-    sample_group: HepG2_invivo
-    condition: treated
-    replicate: 2
-  - accession: GSM4795049
-    sample_name: HepG2_invivo_untreated_r1
-    sample_group: HepG2_invivo
+  - accession: GSM4250708
+    sample_name: K562_invivo_DMSO_untreated_r3
+    sample_group: K562_invivo
     condition: untreated
-    replicate: 1
-  - accession: GSM4795050
-    sample_name: HepG2_invivo_untreated_r2
-    sample_group: HepG2_invivo
-    condition: untreated
-    replicate: 2
-  - accession: GSM4512077
-    sample_name: HepG2_invitro_NAI_treated_r1
-    sample_group: HepG2_invitro
-    condition: treated
-    replicate: 1
-  - accession: GSM4512078
-    sample_name: HepG2_invitro_NAI_treated_r2
-    sample_group: HepG2_invitro
-    condition: treated
-    replicate: 2
-  - accession: GSM4512079
-    sample_name: HeLa_invivo_NAI_treated_r1
-    sample_group: HeLa_invivo
-    condition: treated
-    replicate: 1
-  - accession: GSM4512080
-    sample_name: HeLa_invivo_NAI_treated_r2
-    sample_group: HeLa_invivo
-    condition: treated
-    replicate: 2
-  - accession: GSM4795051
-    sample_name: HeLa_invivo_untreated_r1
-    sample_group: HeLa_invivo
-    condition: untreated
-    replicate: 1
-  - accession: GSM4795052
-    sample_name: HeLa_invivo_untreated_r2
-    sample_group: HeLa_invivo
-    condition: untreated
-    replicate: 2
-  - accession: GSM4512081
-    sample_name: HeLa_invitro_NAI_treated_r1
-    sample_group: HeLa_invitro
-    condition: treated
-    replicate: 1
-  - accession: GSM4512082
-    sample_name: HeLa_invitro_NAI_treated_r2
-    sample_group: HeLa_invitro
-    condition: treated
-    replicate: 2
+    replicate: 3
 
-comment: "Paywalled paper: only the transcriptome-wide fSHAPE arm is included (3 cell lines, in-cell and deproteinised in vitro, 2 replicates each). The SHAPE-eCLIP / fSHAPE-eCLIP IP+Input libraries in GSE149767 are excluded - they are protein-footprint pulldowns, not a plain structurome. The untreated pair per cell line is filed under the in_vivo group. RT_enzyme and rna_type follow the standard SHAPE-MaP protocol - confirm."
+comment: "ENCODE icSHAPE, K562. GEO splits this experiment across two series: GSE143120 holds the NAI-N3 samples (used as raw_data.accession) and GSE143096 holds the matched DMSO controls, which are included here as the untreated runs. Do NOT expand GSE143120 via its SRA project - it resolves to the whole ENCODE BioProject (57k runs); fetch the listed GSMs directly. The DOI is the ENCODE flagship paper, which is what GEO links; replace it if an icSHAPE-specific citation exists. RT_enzyme and rna_type follow the standard icSHAPE protocol."

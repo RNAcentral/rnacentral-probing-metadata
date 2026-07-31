@@ -18,33 +18,35 @@ per-paper reject gate.
 - Raw triage table: regenerate with `.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/find_probing_candidates.py > candidates.tsv`
 - Expansion of any accession into ENA runs: `.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py <GSE|PRJNA>`
 
-## YAMLs created this session (24 made, 10 kept as 00065-00074)
+## YAMLs created this session (24 made, 10 kept as 00063 + 00065-00073)
 
 Originally 00065-00088. **A later scope decision removed every targeted /
 single-RNA dataset** (the reject gate now requires transcriptome-wide scope - see
-SKILL.md), so 14 of the 24 were deleted and the survivors renumbered.
+SKILL.md), so 14 of the 24 were deleted and the survivors renumbered. The human
+DMS-MaPseq arm then took the long-vacant `00063` slot so that it sits next to
+`00064`, the *E. coli* arm of the same paper; everything above it shifted down one.
 
 ### Kept (transcriptome-wide)
 
 | YAML | DOI | Accession | Dataset | was |
 |------|-----|-----------|---------|-----|
+| `DMS/rnastruct00063` | 10.1038/s41587-025-02739-0 | GSE247244 | Human HEK293 total RNA, DMS-MaPseq | 00073 |
 | `DMS/rnastruct00065` | 10.1038/s41467-025-59435-5 | GSE262888 | Human tRNA structurome, DMS-MaPseq (HEK293) | 00065 |
 | `SHAPE/rnastruct00066` | 10.1038/s41467-024-54000-y | GSE237160 | DHX36 structurome - human HEK293T, NAI Structure-seq | 00066 |
 | `SHAPE/rnastruct00067` | 10.1038/s41467-024-54000-y | GSE237160 | DHX36 structurome - mouse C2C12, NAI Structure-seq | 00067 |
 | `SHAPE/rnastruct00068` | 10.3389/fcell.2021.766532 | PRJNA625172 | *P. falciparum* structurome, icSHAPE/NAI-N3 | 00069 |
-| `DMS/rnastruct00069` | 10.1038/s41587-025-02739-0 | GSE247244 | Human HEK293 total RNA, DMS-MaPseq | 00073 |
-| `DMS/rnastruct00070` | 10.1038/s41594-025-01565-x | GSE209857 | *S. cerevisiae* intron structurome, DMS-MaPseq | 00075 |
-| `DMS/rnastruct00071` | 10.1261/rna.079652.123 | GSE224126 | *B. subtilis* RNA thermometers, DMS Structure-seq2 | 00077 |
-| `DMS/rnastruct00072` | 10.1261/rna.079687.123 | GSE229536 | *M. acetivorans* (Archaea), DMS Structure-seq2 | 00078 |
-| `SHAPE/rnastruct00073` | 10.1038/s41467-025-63297-2 | GSE279203 | SARS-CoV-2 (5 variants), SHAPE-MaP/NAI - whole viral genome | 00079 |
-| `SHAPE/rnastruct00074` | 10.1093/nar/gkaf820 | GSE272797 | TDP-43 study, human SHALiPE-seq/NAI | 00083 |
+| `DMS/rnastruct00069` | 10.1038/s41594-025-01565-x | GSE209857 | *S. cerevisiae* intron structurome, DMS-MaPseq | 00075 |
+| `DMS/rnastruct00070` | 10.1261/rna.079652.123 | GSE224126 | *B. subtilis* RNA thermometers, DMS Structure-seq2 | 00077 |
+| `DMS/rnastruct00071` | 10.1261/rna.079687.123 | GSE229536 | *M. acetivorans* (Archaea), DMS Structure-seq2 | 00078 |
+| `SHAPE/rnastruct00072` | 10.1038/s41467-025-63297-2 | GSE279203 | SARS-CoV-2 (5 variants), SHAPE-MaP/NAI - whole viral genome | 00079 |
+| `SHAPE/rnastruct00073` | 10.1093/nar/gkaf820 | GSE272797 | TDP-43 study, human SHALiPE-seq/NAI | 00083 |
 
-⚠️ `00071` (was 00077): GEO per-sample metadata is corrupt - the ±DMS
+⚠️ `00070` (was 00077): GEO per-sample metadata is corrupt - the ±DMS
 treated/untreated direction and temperature labels were reconstructed from
 filenames; verify before pipeline use.
 
 Two judgement calls kept as transcriptome-wide: `00065` (tRNA structurome - a
-whole RNA class, no gene selection) and `00070` (genome-wide DMS-MaPseq that is
+whole RNA class, no gene selection) and `00069` (genome-wide DMS-MaPseq that is
 merely *analysed* for introns).
 
 ### Removed as targeted (were 00068-00088)
@@ -107,11 +109,11 @@ survivors after renumbering. Repo now holds **82** datasets.
 
 | YAML | DOI | Accession | Dataset |
 |------|-----|-----------|---------|
-| `SHAPE/rnastruct00075` | 10.7554/elife.103923 | GSE271098 | PEDV genome (strain AJ1102), SHAPE-MaP/NAI in Vero E6 |
-| `SHAPE/rnastruct00076` | 10.1038/s41564-025-02047-y | **GSE275594** | Yellow fever 17D/Asibi/Dakar, SHAPE-MaP/2A3 (accession corrected - PRJNA1153987 is plain viral genome sequencing) |
-| `DMS/rnastruct00077` | 10.3390/plants14050780 | PRJNA1175151 | *A. thaliana* +/- MMS DNA damage, DMS-MaPseq |
-| `SHAPE/rnastruct00078` | 10.1093/nar/gkae404 | PRJEB71404 | Bluetongue virus (BTV-1) all 10 segments + complexes, SHAPE-MaP/1M7 (102 runs) |
-| `DMS/rnastruct00079` | 10.1016/j.celrep.2024.114544 | GSE216157 | *P. savastanoi* Hfq structurome, DMS-seq (paywalled) |
+| `SHAPE/rnastruct00074` | 10.7554/elife.103923 | GSE271098 | PEDV genome (strain AJ1102), SHAPE-MaP/NAI in Vero E6 |
+| `SHAPE/rnastruct00075` | 10.1038/s41564-025-02047-y | **GSE275594** | Yellow fever 17D/Asibi/Dakar, SHAPE-MaP/2A3 (accession corrected - PRJNA1153987 is plain viral genome sequencing) |
+| `DMS/rnastruct00076` | 10.3390/plants14050780 | PRJNA1175151 | *A. thaliana* +/- MMS DNA damage, DMS-MaPseq |
+| `SHAPE/rnastruct00077` | 10.1093/nar/gkae404 | PRJEB71404 | Bluetongue virus (BTV-1) all 10 segments + complexes, SHAPE-MaP/1M7 (102 runs) |
+| `DMS/rnastruct00078` | 10.1016/j.celrep.2024.114544 | GSE216157 | *P. savastanoi* Hfq structurome, DMS-seq (paywalled) |
 
 ...plus `00080`-`00083` from the full-history sweep, listed in
 [`full-sweep-backlog.md`](full-sweep-backlog.md).

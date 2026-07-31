@@ -2,8 +2,8 @@ dataset_id: rnastruct00069
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Homo sapiens
-  ncbi_taxid: 9606
+  scientific_name: Saccharomyces cerevisiae
+  ncbi_taxid: 4932
 
 experiment:
   method: DMS-MaPseq
@@ -16,30 +16,36 @@ experiment:
   pH: null
   adapter_3p: null
   adapter_5p: null
-  umi_pattern: null
+  umi_pattern: NNNNNNNNNN
 
 publication:
-  doi: 10.1038/s41587-025-02739-0
+  doi: 10.1038/s41594-025-01565-x
   year: 2025
 
 raw_data:
   repository: GEO
-  accession: GSE247244
-  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247244
-  # Human transcriptome-wide DMS-MaPseq subset of GSE247244 (the same study as rnastruct00064,
-  # which curates only the E. coli benchmarking samples). Two biological replicates (distinct
-  # SAMN sample accessions). The E. coli mRNA samples in this series are technical replicates
-  # only (one biosample, two runs each), so they are not curated here.
+  accession: GSE209857
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE209857
   run_accessions:
-  - accession: GSM9050879
-    sample_name: HEK293_total_RNA_DMS_treated_r1
-    sample_group: HEK293_total
+  - accession: GSM6402544
+    sample_name: Scerevisiae_invivo_pladB_DMS_treated_r1
+    sample_group: Scerevisiae_invivo # in-cell DMS-MaPseq of pre-mRNA/intron structure
     condition: treated
     replicate: 1
-  - accession: GSM9050880
-    sample_name: HEK293_total_RNA_DMS_treated_r2
-    sample_group: HEK293_total
+  - accession: GSM6402545
+    sample_name: Scerevisiae_invivo_pladB_DMS_treated_r2
+    sample_group: Scerevisiae_invivo
     condition: treated
     replicate: 2
+  - accession: GSM6402546
+    sample_name: Scerevisiae_invivo_noPladB_DMS_treated_r1
+    sample_group: Scerevisiae_invivo # no-pladB control: DMS treatment without splicing inhibition
+    condition: treated
+    replicate: 1
+  - accession: GSM6402547
+    sample_name: Scerevisiae_invivo_pladB_Nomod_untreated_r1
+    sample_group: Scerevisiae_invivo # no-modification control: splicing inhibition only, no DMS
+    condition: untreated
+    replicate: 1
 
 comment: null

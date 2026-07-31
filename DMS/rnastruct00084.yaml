@@ -2,8 +2,8 @@ dataset_id: rnastruct00084
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Escherichia coli
-  ncbi_taxid: 562
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
 
 experiment:
   method: Structure-seq2
@@ -12,49 +12,49 @@ experiment:
   chemical: DMS
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total
+  rna_type: mRNA
   pH: null
   adapter_3p: null
   adapter_5p: null
   umi_pattern: null
 
 publication:
-  doi: 10.1093/nar/gkad807
-  year: 2023
+  doi: 10.1093/nargab/lqac082
+  year: 2022
 
 raw_data:
   repository: GEO
-  accession: GSE233607
-  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233607
+  accession: GSE210478
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210478
   run_accessions:
-  - accession: SRR24750381
-    sample_name: Ecoli_WT_invivo_DMS_treated_r1
-    sample_group: Ecoli_WT_invivo
+  - accession: SRR20801871
+    sample_name: BJAB_B1_EBV_invivo_DMS_treated_r1
+    sample_group: BJAB_B1_EBV_invivo
     condition: treated
     replicate: 1
-  - accession: SRR24750378
-    sample_name: Ecoli_WT_invivo_DMS_treated_r2
-    sample_group: Ecoli_WT_invivo
+  - accession: SRR20801870
+    sample_name: BJAB_B1_EBV_invivo_DMS_treated_r2
+    sample_group: BJAB_B1_EBV_invivo
     condition: treated
     replicate: 2
-  - accession: SRR24750375
-    sample_name: Ecoli_WT_invivo_DMS_treated_r3
-    sample_group: Ecoli_WT_invivo
+  - accession: SRR20801869
+    sample_name: BJAB_B1_EBV_invivo_DMS_treated_r3
+    sample_group: BJAB_B1_EBV_invivo
     condition: treated
     replicate: 3
-  - accession: SRR24750382
-    sample_name: Ecoli_WT_invivo_untreated_r1
-    sample_group: Ecoli_WT_invivo
+  - accession: SRR20801868
+    sample_name: BJAB_B1_EBV_invivo_untreated_r1
+    sample_group: BJAB_B1_EBV_invivo
     condition: untreated
     replicate: 1
-  - accession: SRR24750379
-    sample_name: Ecoli_WT_invivo_untreated_r2
-    sample_group: Ecoli_WT_invivo
+  - accession: SRR20801867
+    sample_name: BJAB_B1_EBV_invivo_untreated_r2
+    sample_group: BJAB_B1_EBV_invivo
     condition: untreated
     replicate: 2
-  - accession: SRR24750376
-    sample_name: Ecoli_WT_invivo_untreated_r3
-    sample_group: Ecoli_WT_invivo
+  - accession: SRR20801866
+    sample_name: BJAB_B1_EBV_invivo_untreated_r3
+    sample_group: BJAB_B1_EBV_invivo
     condition: untreated
     replicate: 3
 

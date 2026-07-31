@@ -34,24 +34,24 @@ Most of both groups are pre-2022, which the old 2022+ date cap could never see.
 
 | YAML | Accession | Dataset |
 |------|-----------|---------|
-| `DMS/rnastruct00080` | GSE124866 | *A. thaliana* shoot/root +/- salt, Structure-seq2 (24 runs) |
-| `DMS/rnastruct00081` | GSE100714 | Rice 22 C vs 42 C heat structurome, Structure-seq2 |
-| `DMS/rnastruct00082` | GSE148936 | *B. subtilis* +/- amino acids, Structure-seq2 |
-| `DMS/rnastruct00083` | GSE134865 | MCF7 +/- hippuristanol (eIF4A), Structure-seq2 |
-| `DMS/rnastruct00084` | GSE233607 | *E. coli* in vivo, Structure-seq2 (DMS arm; EDC arm has no schema chemical) |
-| `DMS/rnastruct00085` | GSE210478 | EBV-infected BJAB-B1 transcriptome, Structure-seq2 |
-| `DMS/rnastruct00086` | GSE254895 | *E. coli* in vivo DMS-MaP (DMS control arm of the ETC-reagent paper) |
-| `DMS/rnastruct00087` | GSE102069 | HFF across an HCMV infection timecourse, DMS-seq |
-| `DMS/rnastruct00088` | GSE246523 | Human mitochondrial mRNA structurome, mitoDMS-MaPseq |
-| `DMS/rnastruct00089` | GSE236224 | Neuronal differentiation, DMS arm (hESC + NPC) |
-| `SHAPE/rnastruct00090` | GSE156671 | Neuronal differentiation, icSHAPE arm (D0/D7/D8/D14, 2 batches) |
-| `DMS/rnastruct00091` | GSE254264 | Yeast CoSTseq arm (nascent RNA base-pairing) |
-| `DMS/rnastruct00092` | GSE254264 | Yeast DMS-MaPseq arm (mature-RNA comparator) |
-| `SHAPE/rnastruct00093` | GSE149767 | fSHAPE in K562 / HepG2 / HeLa, in-cell + deproteinised |
-| `SHAPE/rnastruct00094` | GSE143120 + GSE143096 | ENCODE icSHAPE, K562 (NAI-N3 series + its DMSO series) |
-| `SHAPE/rnastruct00095` | GSE143121 + GSE142946 | ENCODE icSHAPE, HepG2 |
-| `SHAPE/rnastruct00096` | GSE143102 + GSE142891 | ENCODE icSHAPE, GM12878 |
-| `SHAPE/rnastruct00097` | GSE288910 | HeLa arsenite stress + recovery, icSHAPE / FracSHAPE (80 samples, 18 groups) |
+| `DMS/rnastruct00079` | GSE124866 | *A. thaliana* shoot/root +/- salt, Structure-seq2 (24 runs) |
+| `DMS/rnastruct00080` | GSE100714 | Rice 22 C vs 42 C heat structurome, Structure-seq2 |
+| `DMS/rnastruct00081` | GSE148936 | *B. subtilis* +/- amino acids, Structure-seq2 |
+| `DMS/rnastruct00082` | GSE134865 | MCF7 +/- hippuristanol (eIF4A), Structure-seq2 |
+| `DMS/rnastruct00083` | GSE233607 | *E. coli* in vivo, Structure-seq2 (DMS arm; EDC arm has no schema chemical) |
+| `DMS/rnastruct00084` | GSE210478 | EBV-infected BJAB-B1 transcriptome, Structure-seq2 |
+| `DMS/rnastruct00085` | GSE254895 | *E. coli* in vivo DMS-MaP (DMS control arm of the ETC-reagent paper) |
+| `DMS/rnastruct00086` | GSE102069 | HFF across an HCMV infection timecourse, DMS-seq |
+| `DMS/rnastruct00087` | GSE246523 | Human mitochondrial mRNA structurome, mitoDMS-MaPseq |
+| `DMS/rnastruct00088` | GSE236224 | Neuronal differentiation, DMS arm (hESC + NPC) |
+| `SHAPE/rnastruct00089` | GSE156671 | Neuronal differentiation, icSHAPE arm (D0/D7/D8/D14, 2 batches) |
+| `DMS/rnastruct00090` | GSE254264 | Yeast CoSTseq arm (nascent RNA base-pairing) |
+| `DMS/rnastruct00091` | GSE254264 | Yeast DMS-MaPseq arm (mature-RNA comparator) |
+| `SHAPE/rnastruct00092` | GSE149767 | fSHAPE in K562 / HepG2 / HeLa, in-cell + deproteinised |
+| `SHAPE/rnastruct00093` | GSE143120 + GSE143096 | ENCODE icSHAPE, K562 (NAI-N3 series + its DMSO series) |
+| `SHAPE/rnastruct00094` | GSE143121 + GSE142946 | ENCODE icSHAPE, HepG2 |
+| `SHAPE/rnastruct00095` | GSE143102 + GSE142891 | ENCODE icSHAPE, GM12878 |
+| `SHAPE/rnastruct00096` | GSE288910 | HeLa arsenite stress + recovery, icSHAPE / FracSHAPE (80 samples, 18 groups) |
 
 Two more were curated and then **deleted on the scope rule** (targeted, not
 transcriptome-wide): GSE270001 (Powassan 3'UTR/sfRNA constructs, DMS and 1M7 arms)
@@ -238,7 +238,7 @@ Kept only so a future sweep does not re-surface them as new.
 
 | Accession | Year | n | Note | Study |
 |---|---|---|---|---|
-| GSE100715 | 2018 | 32 | superseries of GSE100714, already curated as 00081 | Genome-wide RNA structurome reprogramming by acute heat shock globally regulates |
+| GSE100715 | 2018 | 32 | superseries of GSE100714, already curated as 00080 | Genome-wide RNA structurome reprogramming by acute heat shock globally regulates |
 | GSE083821 | 2017 | 22 | same as GSE83821 (removed as targeted) | High-throughput RNA structure probing reveals critical folding events during ear |
 | GSE097609 | 2017 | 20 | same as GSE97609 | Interpreting Reverse Transcriptase Termination and Mutation Events for Greater I |
 

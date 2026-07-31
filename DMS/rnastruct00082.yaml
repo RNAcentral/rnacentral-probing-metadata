@@ -2,8 +2,8 @@ dataset_id: rnastruct00082
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Bacillus subtilis
-  ncbi_taxid: 1423
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
 
 experiment:
   method: Structure-seq2
@@ -12,79 +12,79 @@ experiment:
   chemical: DMS
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total
+  rna_type: mRNA
   pH: null
   adapter_3p: null
   adapter_5p: null
   umi_pattern: null
 
 publication:
-  doi: 10.1261/rna.075986.120
-  year: 2020
+  doi: 10.1186/s13059-019-1901-2
+  year: 2019
 
 raw_data:
   repository: GEO
-  accession: GSE148936
-  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE148936
+  accession: GSE134865
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134865
   run_accessions:
-  - accession: SRR11574079
-    sample_name: Bsubtilis_minusAA_DMS_treated_r1
-    sample_group: Bsubtilis_minusAA
+  - accession: SRR9834214
+    sample_name: MCF7_control_DMS_treated_r1
+    sample_group: MCF7_control
     condition: treated
     replicate: 1
-  - accession: SRR11574080
-    sample_name: Bsubtilis_minusAA_DMS_treated_r2
-    sample_group: Bsubtilis_minusAA
+  - accession: SRR9834215
+    sample_name: MCF7_control_DMS_treated_r2
+    sample_group: MCF7_control
     condition: treated
     replicate: 2
-  - accession: SRR11574081
-    sample_name: Bsubtilis_minusAA_DMS_treated_r3
-    sample_group: Bsubtilis_minusAA
+  - accession: SRR9834216
+    sample_name: MCF7_control_DMS_treated_r3
+    sample_group: MCF7_control
     condition: treated
     replicate: 3
-  - accession: SRR11574076
-    sample_name: Bsubtilis_minusAA_untreated_r1
-    sample_group: Bsubtilis_minusAA
+  - accession: SRR9834211
+    sample_name: MCF7_control_untreated_r1
+    sample_group: MCF7_control
     condition: untreated
     replicate: 1
-  - accession: SRR11574077
-    sample_name: Bsubtilis_minusAA_untreated_r2
-    sample_group: Bsubtilis_minusAA
+  - accession: SRR9834212
+    sample_name: MCF7_control_untreated_r2
+    sample_group: MCF7_control
     condition: untreated
     replicate: 2
-  - accession: SRR11574078
-    sample_name: Bsubtilis_minusAA_untreated_r3
-    sample_group: Bsubtilis_minusAA
+  - accession: SRR9834213
+    sample_name: MCF7_control_untreated_r3
+    sample_group: MCF7_control
     condition: untreated
     replicate: 3
-  - accession: SRR11574073
-    sample_name: Bsubtilis_plusAA_DMS_treated_r1
-    sample_group: Bsubtilis_plusAA
+  - accession: SRR9834220
+    sample_name: MCF7_hippuristanol_DMS_treated_r1
+    sample_group: MCF7_hippuristanol
     condition: treated
     replicate: 1
-  - accession: SRR11574074
-    sample_name: Bsubtilis_plusAA_DMS_treated_r2
-    sample_group: Bsubtilis_plusAA
+  - accession: SRR9834221
+    sample_name: MCF7_hippuristanol_DMS_treated_r2
+    sample_group: MCF7_hippuristanol
     condition: treated
     replicate: 2
-  - accession: SRR11574075
-    sample_name: Bsubtilis_plusAA_DMS_treated_r3
-    sample_group: Bsubtilis_plusAA
+  - accession: SRR9834222
+    sample_name: MCF7_hippuristanol_DMS_treated_r3
+    sample_group: MCF7_hippuristanol
     condition: treated
     replicate: 3
-  - accession: SRR11574070
-    sample_name: Bsubtilis_plusAA_untreated_r1
-    sample_group: Bsubtilis_plusAA
+  - accession: SRR9834217
+    sample_name: MCF7_hippuristanol_untreated_r1
+    sample_group: MCF7_hippuristanol
     condition: untreated
     replicate: 1
-  - accession: SRR11574071
-    sample_name: Bsubtilis_plusAA_untreated_r2
-    sample_group: Bsubtilis_plusAA
+  - accession: SRR9834218
+    sample_name: MCF7_hippuristanol_untreated_r2
+    sample_group: MCF7_hippuristanol
     condition: untreated
     replicate: 2
-  - accession: SRR11574072
-    sample_name: Bsubtilis_plusAA_untreated_r3
-    sample_group: Bsubtilis_plusAA
+  - accession: SRR9834219
+    sample_name: MCF7_hippuristanol_untreated_r3
+    sample_group: MCF7_hippuristanol
     condition: untreated
     replicate: 3
 

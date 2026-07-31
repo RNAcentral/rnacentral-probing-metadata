@@ -2,130 +2,150 @@ dataset_id: rnastruct00079
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Pseudomonas savastanoi
-  ncbi_taxid: 264730
+  scientific_name: Arabidopsis thaliana
+  ncbi_taxid: 3702
 
 experiment:
-  method: DMS-seq
+  method: Structure-seq2
   principle: RT-stop
   obi: OBI:0001015
   chemical: DMS
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total
-  pH: null
+  rna_type: mRNA
+  pH: 7.5
   adapter_3p: null
   adapter_5p: null
   umi_pattern: null
 
 publication:
-  doi: 10.1016/j.celrep.2024.114544
-  year: 2024
+  doi: 10.1261/rna.072850.119
+  year: 2020
 
 raw_data:
   repository: GEO
-  accession: GSE216157
-  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE216157
+  accession: GSE124866
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE124866
   run_accessions:
-  - accession: SRR21981119
-    sample_name: Psav_WT_MM_DMS_treated_r1
-    sample_group: Psav_WT_MM
+  - accession: SRR8424696
+    sample_name: Athaliana_root_control_DMS_treated_r1
+    sample_group: Athaliana_root_control
     condition: treated
     replicate: 1
-  - accession: SRR21981118
-    sample_name: Psav_WT_MM_DMS_treated_r2
-    sample_group: Psav_WT_MM
+  - accession: SRR8424697
+    sample_name: Athaliana_root_control_DMS_treated_r2
+    sample_group: Athaliana_root_control
     condition: treated
     replicate: 2
-  - accession: SRR21981121
-    sample_name: Psav_WT_MM_untreated_r1
-    sample_group: Psav_WT_MM
+  - accession: SRR8424698
+    sample_name: Athaliana_root_control_DMS_treated_r3
+    sample_group: Athaliana_root_control
+    condition: treated
+    replicate: 3
+  - accession: SRR8424690
+    sample_name: Athaliana_root_control_untreated_r1
+    sample_group: Athaliana_root_control
     condition: untreated
     replicate: 1
-  - accession: SRR21981120
-    sample_name: Psav_WT_MM_untreated_r2
-    sample_group: Psav_WT_MM
+  - accession: SRR8424691
+    sample_name: Athaliana_root_control_untreated_r2
+    sample_group: Athaliana_root_control
     condition: untreated
     replicate: 2
-  - accession: SRR21981123
-    sample_name: Psav_WT_KB_DMS_treated_r1
-    sample_group: Psav_WT_KB
+  - accession: SRR8424692
+    sample_name: Athaliana_root_control_untreated_r3
+    sample_group: Athaliana_root_control
+    condition: untreated
+    replicate: 3
+  - accession: SRR8424699
+    sample_name: Athaliana_root_salt_DMS_treated_r1
+    sample_group: Athaliana_root_salt
     condition: treated
     replicate: 1
-  - accession: SRR21981122
-    sample_name: Psav_WT_KB_DMS_treated_r2
-    sample_group: Psav_WT_KB
+  - accession: SRR8424700
+    sample_name: Athaliana_root_salt_DMS_treated_r2
+    sample_group: Athaliana_root_salt
     condition: treated
     replicate: 2
-  - accession: SRR21981125
-    sample_name: Psav_WT_KB_untreated_r1
-    sample_group: Psav_WT_KB
+  - accession: SRR8424701
+    sample_name: Athaliana_root_salt_DMS_treated_r3
+    sample_group: Athaliana_root_salt
+    condition: treated
+    replicate: 3
+  - accession: SRR8424693
+    sample_name: Athaliana_root_salt_untreated_r1
+    sample_group: Athaliana_root_salt
     condition: untreated
     replicate: 1
-  - accession: SRR21981124
-    sample_name: Psav_WT_KB_untreated_r2
-    sample_group: Psav_WT_KB
+  - accession: SRR8424694
+    sample_name: Athaliana_root_salt_untreated_r2
+    sample_group: Athaliana_root_salt
     condition: untreated
     replicate: 2
-  - accession: SRR21981127
-    sample_name: Psav_hrpL_DMS_treated_r1
-    sample_group: Psav_hrpL
+  - accession: SRR8424695
+    sample_name: Athaliana_root_salt_untreated_r3
+    sample_group: Athaliana_root_salt
+    condition: untreated
+    replicate: 3
+  - accession: SRR8424684
+    sample_name: Athaliana_shoot_control_DMS_treated_r1
+    sample_group: Athaliana_shoot_control
     condition: treated
     replicate: 1
-  - accession: SRR21981126
-    sample_name: Psav_hrpL_DMS_treated_r2
-    sample_group: Psav_hrpL
+  - accession: SRR8424685
+    sample_name: Athaliana_shoot_control_DMS_treated_r2
+    sample_group: Athaliana_shoot_control
     condition: treated
     replicate: 2
-  - accession: SRR21981129
-    sample_name: Psav_hrpL_untreated_r1
-    sample_group: Psav_hrpL
+  - accession: SRR8424686
+    sample_name: Athaliana_shoot_control_DMS_treated_r3
+    sample_group: Athaliana_shoot_control
+    condition: treated
+    replicate: 3
+  - accession: SRR8424678
+    sample_name: Athaliana_shoot_control_untreated_r1
+    sample_group: Athaliana_shoot_control
     condition: untreated
     replicate: 1
-  - accession: SRR21981128
-    sample_name: Psav_hrpL_untreated_r2
-    sample_group: Psav_hrpL
+  - accession: SRR8424679
+    sample_name: Athaliana_shoot_control_untreated_r2
+    sample_group: Athaliana_shoot_control
     condition: untreated
     replicate: 2
-  - accession: SRR21981111
-    sample_name: Psav_hfq_DMS_treated_r1
-    sample_group: Psav_hfq
+  - accession: SRR8424680
+    sample_name: Athaliana_shoot_control_untreated_r3
+    sample_group: Athaliana_shoot_control
+    condition: untreated
+    replicate: 3
+  - accession: SRR8424687
+    sample_name: Athaliana_shoot_salt_DMS_treated_r1
+    sample_group: Athaliana_shoot_salt
     condition: treated
     replicate: 1
-  - accession: SRR21981110
-    sample_name: Psav_hfq_DMS_treated_r2
-    sample_group: Psav_hfq
+  - accession: SRR8424688
+    sample_name: Athaliana_shoot_salt_DMS_treated_r2
+    sample_group: Athaliana_shoot_salt
     condition: treated
     replicate: 2
-  - accession: SRR21981113
-    sample_name: Psav_hfq_untreated_r1
-    sample_group: Psav_hfq
-    condition: untreated
-    replicate: 1
-  - accession: SRR21981112
-    sample_name: Psav_hfq_untreated_r2
-    sample_group: Psav_hfq
-    condition: untreated
-    replicate: 2
-  - accession: SRR21981115
-    sample_name: Psav_hfq_25_DMS_treated_r1
-    sample_group: Psav_hfq_25
+  - accession: SRR8424689
+    sample_name: Athaliana_shoot_salt_DMS_treated_r3
+    sample_group: Athaliana_shoot_salt
     condition: treated
-    replicate: 1
-  - accession: SRR21981114
-    sample_name: Psav_hfq_25_DMS_treated_r2
-    sample_group: Psav_hfq_25
-    condition: treated
-    replicate: 2
-  - accession: SRR21981117
-    sample_name: Psav_hfq_25_untreated_r1
-    sample_group: Psav_hfq_25
+    replicate: 3
+  - accession: SRR8424681
+    sample_name: Athaliana_shoot_salt_untreated_r1
+    sample_group: Athaliana_shoot_salt
     condition: untreated
     replicate: 1
-  - accession: SRR21981116
-    sample_name: Psav_hfq_25_untreated_r2
-    sample_group: Psav_hfq_25
+  - accession: SRR8424682
+    sample_name: Athaliana_shoot_salt_untreated_r2
+    sample_group: Athaliana_shoot_salt
     condition: untreated
     replicate: 2
+  - accession: SRR8424683
+    sample_name: Athaliana_shoot_salt_untreated_r3
+    sample_group: Athaliana_shoot_salt
+    condition: untreated
+    replicate: 3
 
-comment: "NEEDS MANUAL VERIFICATION (paywalled paper): method/principle (DMS-seq RT-stop vs MaP) and RT_enzyme inferred from GEO sample names; sample_group labels MM = minimal medium, KB = King s B medium, hrpL/hfq = mutant backgrounds, hfq_25 = second hfq series. RNA-seq and Ribo-seq runs in GSE216157 are deliberately excluded."
+comment: null
