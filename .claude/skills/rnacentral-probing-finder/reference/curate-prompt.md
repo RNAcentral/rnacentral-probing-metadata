@@ -34,7 +34,13 @@ STEPS:
    RNA-seq / MeRIP / functional-screen, and use only the probing runs.
 3. DECISION — qualifies ONLY IF (a) genuine chemical probing (SHAPE or DMS family)
    AND (b) each treated `sample_group` has ≥2 biological replicates (a titration or
-   time-course is NOT biological replication). If not, write NO file and return
+   time-course is NOT biological replication) AND (c) it is **transcriptome-wide**,
+   not targeted. Reject anything using gene-specific RT/PCR primers, an amplicon,
+   a single lncRNA/mRNA/riboswitch/intron, a designed construct, or a panel of a
+   few chosen RNAs — no matter how well replicated. A **whole viral genome** does
+   qualify. Tell: run titles naming a gene (`AR_V7`, `COX1_P3`, `sfRNA1`) →
+   targeted; titles naming a condition or tissue (`Shoot_plusSalt_plusDMS_rep1`)
+   → transcriptome-wide. If it fails any of (a)/(b)/(c), write NO file and return
    exactly: `REJECT <rnastruct#####>: <one-line reason>`.
 4. If it qualifies, fill a copy of `docs/template.yaml` at `<folder>/<rnastruct#####>.yaml`
    (`DMS/` if the chemical is DMS; `SHAPE/` for a SHAPE reagent). Follow the

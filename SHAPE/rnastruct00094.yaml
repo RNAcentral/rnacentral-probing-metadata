@@ -1,0 +1,61 @@
+dataset_id: rnastruct00094
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: icSHAPE
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/nature11247
+  year: 2012
+
+raw_data:
+  repository: GEO
+  accession: GSE143120
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143120
+  run_accessions:
+  - accession: GSM4250758
+    sample_name: K562_invivo_NAIN3_treated_r1
+    sample_group: K562_invivo
+    condition: treated
+    replicate: 1
+  - accession: GSM4250759
+    sample_name: K562_invivo_NAIN3_treated_r2
+    sample_group: K562_invivo
+    condition: treated
+    replicate: 2
+  - accession: GSM4250760
+    sample_name: K562_invivo_NAIN3_treated_r3
+    sample_group: K562_invivo
+    condition: treated
+    replicate: 3
+  - accession: GSM4250706
+    sample_name: K562_invivo_DMSO_untreated_r1
+    sample_group: K562_invivo
+    condition: untreated
+    replicate: 1
+  - accession: GSM4250707
+    sample_name: K562_invivo_DMSO_untreated_r2
+    sample_group: K562_invivo
+    condition: untreated
+    replicate: 2
+  - accession: GSM4250708
+    sample_name: K562_invivo_DMSO_untreated_r3
+    sample_group: K562_invivo
+    condition: untreated
+    replicate: 3
+
+comment: "ENCODE icSHAPE, K562. GEO splits this experiment across two series: GSE143120 holds the NAI-N3 samples (used as raw_data.accession) and GSE143096 holds the matched DMSO controls, which are included here as the untreated runs. Do NOT expand GSE143120 via its SRA project - it resolves to the whole ENCODE BioProject (57k runs); fetch the listed GSMs directly. The DOI is the ENCODE flagship paper, which is what GEO links; replace it if an icSHAPE-specific citation exists. RT_enzyme and rna_type follow the standard icSHAPE protocol."

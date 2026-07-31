@@ -47,10 +47,45 @@ Pick year ranges newer than what the repo already has (check with
 Read `/tmp/summary.txt` for the ACCESSIBLE list (open access, ready to curate) and
 the PAYWALLED list (flag those DOIs for a human — you cannot read their full text).
 
+### 1b. ALSO sweep GEO directly — literature search alone misses most datasets
+
+A no-date-limit rerun showed the literature query finds only a minority of
+deposited probing datasets: many sit in papers whose **abstract never uses a
+probing term** (the assay is one panel of a bigger study). Always run this
+second, independent angle:
+
+```bash
+# per method/reagent term -> GEO series uids -> esummary for accession/taxon/pmid
+curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=DMS-MaPseq%5BAll+Fields%5D+AND+gse%5BEntry+Type%5D&retmax=300&retmode=json"
+```
+
+Terms that paid off: `DMS-MaPseq`, `SHAPE-MaP`, `icSHAPE`, `Structure-seq`,
+`Structure-seq2`, `DMS-seq`, `DMS-MaP`, `SHAPE-seq`, `DMS probing`,
+`RNA structure probing`, `RNA structurome`, `NAI-N3`, `SHALiPE`, `keth-seq`,
+`PORE-cupine`, `CIRS-seq`, `DANCE-MaP`, `PAIR-MaP`, `LASER-seq`.
+
+And for **paywalled** papers, recover the accession without journal access:
+
+```bash
+curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&db=gds&id=<PMID>&retmode=json"
+```
+
+### 1c. Triage mechanically before reading anything
+
+Resolve each candidate series to its SRA project, pull every run's sample and
+experiment title, and count probing keywords. Series with ≥2 keyword-matching
+run titles are worth a human look; the rest usually aren't. This turns hundreds
+of candidates into a ranked list for free — see `docs/full-sweep-backlog.md` for
+the worked run and `docs/full_sweep_triage.tsv` for the output format.
+
 ### 2. Shortlist by judgement
 
-From the ACCESSIBLE hits, keep genuine **transcriptome-wide or targeted probing
-studies**; drop:
+From the ACCESSIBLE hits, keep only genuine **transcriptome-wide** probing
+studies (see the scope gate below); drop:
+- **targeted / single-RNA studies** — one gene's amplicon, one lncRNA, a
+  riboswitch construct, a pri-miRNA panel, in vitro transcripts of one RNA.
+  These are the single most common false positive: the chemistry and the
+  replication are both fine, so only the scope test catches them,
 - re-analysis / method / tool papers whose accession is **already in the repo**
   (these grep-match a *re-used* accession — always a skip),
 - pure image-processing "shape" false positives, protocol chapters, reviews.
@@ -78,11 +113,34 @@ Collect subagent results. Renumber survivors so ids are consecutive with no gaps
 left by rejects (rename file + update the `dataset_id:` line). Then run the full
 validation suite (step 6 below) across all new files.
 
-## The reject gate (both must hold)
+## The reject gate (all three must hold)
 
 A candidate becomes a YAML **only if**:
 - **(a)** it is genuine chemical probing (a SHAPE or DMS-family method), AND
-- **(b)** every *treated* `sample_group` has **≥2 biological replicates**.
+- **(b)** every *treated* `sample_group` has **≥2 biological replicates**, AND
+- **(c)** it is **transcriptome-wide** — the library covers the whole
+  transcriptome (or the whole genome of a virus), not a selected RNA.
+
+### (c) the scope gate — how to decide
+
+**Keep:**
+- rRNA-depleted or poly(A)-selected libraries probed and sequenced genome-wide
+  (Structure-seq / Structure-seq2, DMS-seq, icSHAPE, DMS-MaPseq genome-wide mode).
+- A **whole viral genome** — one RNA molecule, but it is that organism's entire
+  transcriptome. All segments of a segmented virus counts.
+- A whole RNA *class* sequenced without gene selection (e.g. the tRNA structurome).
+
+**Reject:**
+- Gene-specific RT or PCR primers → an amplicon. Look for "target-specific",
+  "targeted DMS-MaPseq", "gene specific primer / GSP", "amplicon" in the methods.
+- One lncRNA, one mRNA, one riboswitch, one intron, a designed construct, or a
+  panel of a few chosen RNAs — however many replicates it has.
+- In vitro transcripts of a selected RNA (unless it is the whole viral genome).
+
+Fastest tell in practice: **the run/sample titles name a gene**
+(`AR_V7`, `RORCWT`, `COX1_P3`, `PANDA`, `sfRNA1`) → targeted. Titles name a
+condition or tissue (`Shoot_plusSalt_plusDMS_rep1`, `minusAA_plusDMS_rep2`) →
+transcriptome-wide.
 
 Common rejects: single modified sample + control (no replication); a concentration
 or time *titration* (not biological replicates); a BioProject that is mostly plain

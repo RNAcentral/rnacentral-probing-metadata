@@ -1,0 +1,91 @@
+dataset_id: rnastruct00087
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: DMS-seq
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo, denatured]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2018.09.003
+  year: 2018
+
+raw_data:
+  repository: GEO
+  accession: GSE102069
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE102069
+  run_accessions:
+  - accession: GSM2722722
+    sample_name: HFF_uninfected_DMS_treated_r1
+    sample_group: HFF_uninfected
+    condition: treated
+    replicate: 1
+  - accession: GSM2722723
+    sample_name: HFF_uninfected_DMS_treated_r2
+    sample_group: HFF_uninfected
+    condition: treated
+    replicate: 2
+  - accession: GSM2722724
+    sample_name: HFF_uninfected_untreated_r1
+    sample_group: HFF_uninfected
+    condition: untreated
+    replicate: 1
+  - accession: GSM2722725
+    sample_name: HFF_uninfected_denatured_r1
+    sample_group: HFF_uninfected
+    condition: denatured
+    replicate: 1
+  - accession: GSM2722726
+    sample_name: HFF_HCMV_05hpi_DMS_treated_r1
+    sample_group: HFF_HCMV_05hpi
+    condition: treated
+    replicate: 1
+  - accession: GSM2722727
+    sample_name: HFF_HCMV_05hpi_DMS_treated_r2
+    sample_group: HFF_HCMV_05hpi
+    condition: treated
+    replicate: 2
+  - accession: GSM2722728
+    sample_name: HFF_HCMV_24hpi_DMS_treated_r1
+    sample_group: HFF_HCMV_24hpi
+    condition: treated
+    replicate: 1
+  - accession: GSM2722729
+    sample_name: HFF_HCMV_24hpi_DMS_treated_r2
+    sample_group: HFF_HCMV_24hpi
+    condition: treated
+    replicate: 2
+  - accession: GSM2722730
+    sample_name: HFF_HCMV_72hpi_DMS_treated_r1
+    sample_group: HFF_HCMV_72hpi
+    condition: treated
+    replicate: 1
+  - accession: GSM2722731
+    sample_name: HFF_HCMV_72hpi_DMS_treated_r2
+    sample_group: HFF_HCMV_72hpi
+    condition: treated
+    replicate: 2
+  - accession: GSM2722732
+    sample_name: HFF_HCMV_72hpi_untreated_r1
+    sample_group: HFF_HCMV_72hpi
+    condition: untreated
+    replicate: 1
+  - accession: GSM2722733
+    sample_name: HFF_HCMV_72hpi_denatured_r1
+    sample_group: HFF_HCMV_72hpi
+    condition: denatured
+    replicate: 1
+
+comment: "NEEDS MANUAL VERIFICATION (paywalled paper, no PMC full text): design taken from the GEO series record (in vivo DMS, linker ligation, RT, circularisation - classic DMS-seq). RT_enzyme and rna_type (poly(A)) are inferred from the standard DMS-seq protocol. Human foreskin fibroblasts across an HCMV infection timecourse; the two unreplicated +/- puromycin 72 hpi samples (GSM3262201/2) are excluded."

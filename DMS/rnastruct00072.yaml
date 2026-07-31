@@ -2,17 +2,16 @@ dataset_id: rnastruct00072
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Human bocavirus
-  ncbi_taxid: 329641
-  strain: HBoV1  # Human bocavirus 1 (NCBI taxid 689403); pIHBoV1 infectious clone used in the study.
+  scientific_name: Methanosarcina acetivorans
+  ncbi_taxid: 2214
 
 experiment:
-  method: DMS-MaPseq
-  principle: MaP
+  method: Structure-seq2
+  principle: RT-stop
   obi: OBI:0001015
   chemical: DMS
-  RT_enzyme: Group II intron
-  context: [in_vivo, in_vitro]
+  RT_enzyme: M-MLV
+  context: [in_vivo]
   rna_type: total
   pH: null
   adapter_3p: null
@@ -20,53 +19,73 @@ experiment:
   umi_pattern: null
 
 publication:
-  doi: 10.1073/pnas.2320782121
-  year: 2024
+  doi: 10.1261/rna.079687.123
+  year: 2023
 
 raw_data:
-  repository: SRA
-  accession: PRJNA955716
-  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA955716
+  repository: GEO
+  accession: GSE229536
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229536
   run_accessions:
-  - accession: SRR24170475
-    sample_name: BocaSR_incell_DMS_treated_r1
-    sample_group: BocaSR_incell
+  - accession: SRR24149702
+    sample_name: Macetivorans_acetate_invivo_DMS_treated_r1
+    sample_group: Macetivorans_acetate_invivo
     condition: treated
     replicate: 1
-  - accession: SRR24170474
-    sample_name: BocaSR_incell_DMS_treated_r2
-    sample_group: BocaSR_incell
+  - accession: SRR24149701
+    sample_name: Macetivorans_acetate_invivo_DMS_treated_r2
+    sample_group: Macetivorans_acetate_invivo
     condition: treated
     replicate: 2
-  - accession: SRR24170477
-    sample_name: BocaSR_incell_untreated_r1
-    sample_group: BocaSR_incell
+  - accession: SRR24149700
+    sample_name: Macetivorans_acetate_invivo_DMS_treated_r3
+    sample_group: Macetivorans_acetate_invivo
+    condition: treated
+    replicate: 3
+  - accession: SRR24149708
+    sample_name: Macetivorans_acetate_invivo_control_untreated_r1
+    sample_group: Macetivorans_acetate_invivo
     condition: untreated
     replicate: 1
-  - accession: SRR24170476
-    sample_name: BocaSR_incell_untreated_r2
-    sample_group: BocaSR_incell
+  - accession: SRR24149706
+    sample_name: Macetivorans_acetate_invivo_control_untreated_r2
+    sample_group: Macetivorans_acetate_invivo
     condition: untreated
     replicate: 2
-  - accession: SRR24170471
-    sample_name: BocaSR_invitro_DMS_treated_r1
-    sample_group: BocaSR_invitro
+  - accession: SRR24149705
+    sample_name: Macetivorans_acetate_invivo_control_untreated_r3
+    sample_group: Macetivorans_acetate_invivo
+    condition: untreated
+    replicate: 3
+  - accession: SRR24149704
+    sample_name: Macetivorans_methanol_invivo_DMS_treated_r1
+    sample_group: Macetivorans_methanol_invivo
     condition: treated
     replicate: 1
-  - accession: SRR24170470
-    sample_name: BocaSR_invitro_DMS_treated_r2
-    sample_group: BocaSR_invitro
+  - accession: SRR24149707
+    sample_name: Macetivorans_methanol_invivo_DMS_treated_r2
+    sample_group: Macetivorans_methanol_invivo
     condition: treated
     replicate: 2
-  - accession: SRR24170473
-    sample_name: BocaSR_invitro_untreated_r1
-    sample_group: BocaSR_invitro
+  - accession: SRR24149703
+    sample_name: Macetivorans_methanol_invivo_DMS_treated_r3
+    sample_group: Macetivorans_methanol_invivo
+    condition: treated
+    replicate: 3
+  - accession: SRR24149711
+    sample_name: Macetivorans_methanol_invivo_control_untreated_r1
+    sample_group: Macetivorans_methanol_invivo
     condition: untreated
     replicate: 1
-  - accession: SRR24170472
-    sample_name: BocaSR_invitro_untreated_r2
-    sample_group: BocaSR_invitro
+  - accession: SRR24149710
+    sample_name: Macetivorans_methanol_invivo_control_untreated_r2
+    sample_group: Macetivorans_methanol_invivo
     condition: untreated
     replicate: 2
+  - accession: SRR24149709
+    sample_name: Macetivorans_methanol_invivo_control_untreated_r3
+    sample_group: Macetivorans_methanol_invivo
+    condition: untreated
+    replicate: 3
 
 comment: null

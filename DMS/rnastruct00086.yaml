@@ -1,0 +1,61 @@
+dataset_id: rnastruct00086
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Escherichia coli
+  ncbi_taxid: 562
+
+experiment:
+  method: DMS-MaP
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1261/rna.079974.124
+  year: 2024
+
+raw_data:
+  repository: GEO
+  accession: GSE254895
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254895
+  run_accessions:
+  - accession: SRR27843612
+    sample_name: Ecoli_invivo_DMS_treated_r1
+    sample_group: Ecoli_invivo_TGIRT55
+    condition: treated
+    replicate: 1
+  - accession: SRR27843611
+    sample_name: Ecoli_invivo_DMS_treated_r2
+    sample_group: Ecoli_invivo_TGIRT55
+    condition: treated
+    replicate: 2
+  - accession: SRR27843610
+    sample_name: Ecoli_invivo_DMS_treated_r3
+    sample_group: Ecoli_invivo_TGIRT55
+    condition: treated
+    replicate: 3
+  - accession: SRR27843618
+    sample_name: Ecoli_invivo_untreated_r1
+    sample_group: Ecoli_invivo_TGIRT55
+    condition: untreated
+    replicate: 1
+  - accession: SRR27843617
+    sample_name: Ecoli_invivo_untreated_r2
+    sample_group: Ecoli_invivo_TGIRT55
+    condition: untreated
+    replicate: 2
+  - accession: SRR27843616
+    sample_name: Ecoli_invivo_untreated_r3
+    sample_group: Ecoli_invivo_TGIRT55
+    condition: untreated
+    replicate: 3
+
+comment: null

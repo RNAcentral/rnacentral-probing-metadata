@@ -2,150 +2,70 @@ dataset_id: rnastruct00077
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Bacillus subtilis
-  ncbi_taxid: 1423
+  scientific_name: Arabidopsis thaliana
+  ncbi_taxid: 3702
 
 experiment:
-  method: Structure-seq2
-  principle: RT-stop
+  method: DMS-MaPseq
+  principle: MaP
   obi: OBI:0001015
   chemical: DMS
-  RT_enzyme: M-MLV
+  RT_enzyme: Group II intron
   context: [in_vivo]
-  rna_type: total
-  pH: null
+  rna_type: mRNA
+  pH: 7.5
   adapter_3p: null
   adapter_5p: null
   umi_pattern: null
 
 publication:
-  doi: 10.1261/rna.079652.123
-  year: 2023
+  doi: 10.3390/plants14050780
+  year: 2025
 
 raw_data:
-  repository: GEO
-  accession: GSE224126
-  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE224126
+  repository: SRA
+  accession: PRJNA1175151
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1175151
   run_accessions:
-  - accession: SRR23286054
-    sample_name: Bsub_23C_minusDMS_untreated_r1
-    sample_group: Bsub_23C
-    condition: untreated
-    replicate: 1
-  - accession: SRR23286053
-    sample_name: Bsub_23C_minusDMS_untreated_r2
-    sample_group: Bsub_23C
-    condition: untreated
-    replicate: 2
-  - accession: SRR23286052
-    sample_name: Bsub_23C_minusDMS_untreated_r3
-    sample_group: Bsub_23C
-    condition: untreated
-    replicate: 3
-  - accession: SRR23286048
-    sample_name: Bsub_23C_plusDMS_treated_r1
-    sample_group: Bsub_23C
+  - accession: SRR31049249
+    sample_name: Athaliana_seedling_mock_DMS_treated_r1
+    sample_group: Athaliana_seedling_mock
     condition: treated
     replicate: 1
-  - accession: SRR23286047
-    sample_name: Bsub_23C_plusDMS_treated_r2
-    sample_group: Bsub_23C
+  - accession: SRR31049248
+    sample_name: Athaliana_seedling_mock_DMS_treated_r2
+    sample_group: Athaliana_seedling_mock
     condition: treated
     replicate: 2
-  - accession: SRR23286046
-    sample_name: Bsub_23C_plusDMS_treated_r3
-    sample_group: Bsub_23C
+  - accession: SRR31049247
+    sample_name: Athaliana_seedling_mock_DMS_treated_r3
+    sample_group: Athaliana_seedling_mock
     condition: treated
     replicate: 3
-  - accession: SRR23286051
-    sample_name: Bsub_30C_minusDMS_untreated_r1
-    sample_group: Bsub_30C
+  - accession: SRR31049246
+    sample_name: Athaliana_seedling_mock_untreated_r1
+    sample_group: Athaliana_seedling_mock
     condition: untreated
     replicate: 1
-  - accession: SRR23286050
-    sample_name: Bsub_30C_minusDMS_untreated_r2
-    sample_group: Bsub_30C
-    condition: untreated
-    replicate: 2
-  - accession: SRR23286049
-    sample_name: Bsub_30C_minusDMS_untreated_r3
-    sample_group: Bsub_30C
-    condition: untreated
-    replicate: 3
-  - accession: SRR23286045
-    sample_name: Bsub_30C_plusDMS_treated_r1
-    sample_group: Bsub_30C
+  - accession: SRR31049245
+    sample_name: Athaliana_seedling_MMS_DMS_treated_r1
+    sample_group: Athaliana_seedling_MMS
     condition: treated
     replicate: 1
-  - accession: SRR23286044
-    sample_name: Bsub_30C_plusDMS_treated_r2
-    sample_group: Bsub_30C
+  - accession: SRR31049244
+    sample_name: Athaliana_seedling_MMS_DMS_treated_r2
+    sample_group: Athaliana_seedling_MMS
     condition: treated
     replicate: 2
-  - accession: SRR23286043
-    sample_name: Bsub_30C_plusDMS_treated_r3
-    sample_group: Bsub_30C
+  - accession: SRR31049243
+    sample_name: Athaliana_seedling_MMS_DMS_treated_r3
+    sample_group: Athaliana_seedling_MMS
     condition: treated
     replicate: 3
-  - accession: SRR23286042
-    sample_name: Bsub_37C_minusDMS_untreated_r1
-    sample_group: Bsub_37C
+  - accession: SRR31049242
+    sample_name: Athaliana_seedling_MMS_untreated_r1
+    sample_group: Athaliana_seedling_MMS
     condition: untreated
     replicate: 1
-  - accession: SRR23286041
-    sample_name: Bsub_37C_minusDMS_untreated_r2
-    sample_group: Bsub_37C
-    condition: untreated
-    replicate: 2
-  - accession: SRR23286040
-    sample_name: Bsub_37C_minusDMS_untreated_r3
-    sample_group: Bsub_37C
-    condition: untreated
-    replicate: 3
-  - accession: SRR23286036
-    sample_name: Bsub_37C_plusDMS_treated_r1
-    sample_group: Bsub_37C
-    condition: treated
-    replicate: 1
-  - accession: SRR23286035
-    sample_name: Bsub_37C_plusDMS_treated_r2
-    sample_group: Bsub_37C
-    condition: treated
-    replicate: 2
-  - accession: SRR23286034
-    sample_name: Bsub_37C_plusDMS_treated_r3
-    sample_group: Bsub_37C
-    condition: treated
-    replicate: 3
-  - accession: SRR23286039
-    sample_name: Bsub_42C_minusDMS_untreated_r1
-    sample_group: Bsub_42C
-    condition: untreated
-    replicate: 1
-  - accession: SRR23286038
-    sample_name: Bsub_42C_minusDMS_untreated_r2
-    sample_group: Bsub_42C
-    condition: untreated
-    replicate: 2
-  - accession: SRR23286037
-    sample_name: Bsub_42C_minusDMS_untreated_r3
-    sample_group: Bsub_42C
-    condition: untreated
-    replicate: 3
-  - accession: SRR23286033
-    sample_name: Bsub_42C_plusDMS_treated_r1
-    sample_group: Bsub_42C
-    condition: treated
-    replicate: 1
-  - accession: SRR23286032
-    sample_name: Bsub_42C_plusDMS_treated_r2
-    sample_group: Bsub_42C
-    condition: treated
-    replicate: 2
-  - accession: SRR23286031
-    sample_name: Bsub_42C_plusDMS_treated_r3
-    sample_group: Bsub_42C
-    condition: treated
-    replicate: 3
 
 comment: null

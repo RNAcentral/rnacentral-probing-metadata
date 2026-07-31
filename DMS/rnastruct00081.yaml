@@ -1,0 +1,91 @@
+dataset_id: rnastruct00081
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Oryza sativa
+  ncbi_taxid: 4530
+
+experiment:
+  method: Structure-seq2
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1073/pnas.1807988115
+  year: 2018
+
+raw_data:
+  repository: GEO
+  accession: GSE100714
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100714
+  run_accessions:
+  - accession: SRR5796931
+    sample_name: Osativa_seedling_22C_DMS_treated_r1
+    sample_group: Osativa_seedling_22C
+    condition: treated
+    replicate: 1
+  - accession: SRR5796932
+    sample_name: Osativa_seedling_22C_DMS_treated_r2
+    sample_group: Osativa_seedling_22C
+    condition: treated
+    replicate: 2
+  - accession: SRR5796933
+    sample_name: Osativa_seedling_22C_DMS_treated_r3
+    sample_group: Osativa_seedling_22C
+    condition: treated
+    replicate: 3
+  - accession: SRR5796928
+    sample_name: Osativa_seedling_22C_untreated_r1
+    sample_group: Osativa_seedling_22C
+    condition: untreated
+    replicate: 1
+  - accession: SRR5796929
+    sample_name: Osativa_seedling_22C_untreated_r2
+    sample_group: Osativa_seedling_22C
+    condition: untreated
+    replicate: 2
+  - accession: SRR5796930
+    sample_name: Osativa_seedling_22C_untreated_r3
+    sample_group: Osativa_seedling_22C
+    condition: untreated
+    replicate: 3
+  - accession: SRR5796937
+    sample_name: Osativa_seedling_42C_DMS_treated_r1
+    sample_group: Osativa_seedling_42C
+    condition: treated
+    replicate: 1
+  - accession: SRR5796938
+    sample_name: Osativa_seedling_42C_DMS_treated_r2
+    sample_group: Osativa_seedling_42C
+    condition: treated
+    replicate: 2
+  - accession: SRR5796939
+    sample_name: Osativa_seedling_42C_DMS_treated_r3
+    sample_group: Osativa_seedling_42C
+    condition: treated
+    replicate: 3
+  - accession: SRR5796934
+    sample_name: Osativa_seedling_42C_untreated_r1
+    sample_group: Osativa_seedling_42C
+    condition: untreated
+    replicate: 1
+  - accession: SRR5796935
+    sample_name: Osativa_seedling_42C_untreated_r2
+    sample_group: Osativa_seedling_42C
+    condition: untreated
+    replicate: 2
+  - accession: SRR5796936
+    sample_name: Osativa_seedling_42C_untreated_r3
+    sample_group: Osativa_seedling_42C
+    condition: untreated
+    replicate: 3
+
+comment: null

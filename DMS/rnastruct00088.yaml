@@ -1,0 +1,51 @@
+dataset_id: rnastruct00088
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: mitoDMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [ex_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1126/science.adm9238
+  year: 2024
+
+raw_data:
+  repository: GEO
+  accession: GSE246523
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246523
+  run_accessions:
+  - accession: GSM7870476
+    sample_name: HEK293T_mito_WT_DMS_treated_r1
+    sample_group: HEK293T_mito_WT
+    condition: treated
+    replicate: 1
+  - accession: GSM7870477
+    sample_name: HEK293T_mito_WT_DMS_treated_r2
+    sample_group: HEK293T_mito_WT
+    condition: treated
+    replicate: 2
+  - accession: GSM7870478
+    sample_name: HEK293T_mito_KO_DMS_treated_r1
+    sample_group: HEK293T_mito_KO
+    condition: treated
+    replicate: 1
+  - accession: GSM7870479
+    sample_name: HEK293T_mito_KO_DMS_treated_r2
+    sample_group: HEK293T_mito_KO
+    condition: treated
+    replicate: 2
+
+comment: "NEEDS MANUAL VERIFICATION (paywalled paper, no PMC full text): design taken from the GEO series record - mitochondria isolated from HEK-293T then incubated with DMS (recorded here as ex_vivo), TGIRT-mediated mutational profiling. No untreated control was deposited. The gene knocked out in the KO group is not stated in GEO - identify it and rename the sample_group."

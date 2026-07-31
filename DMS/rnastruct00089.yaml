@@ -1,0 +1,76 @@
+dataset_id: rnastruct00089
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2021.09.027
+  year: 2021
+
+raw_data:
+  repository: GEO
+  accession: GSE236224
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE236224
+  run_accessions:
+  - accession: GSM7520061
+    sample_name: NPC_invivo_DMS_treated_r1
+    sample_group: NPC_invivo
+    condition: treated
+    replicate: 1
+  - accession: GSM7520062
+    sample_name: NPC_invivo_DMS_treated_r2
+    sample_group: NPC_invivo
+    condition: treated
+    replicate: 2
+  - accession: GSM7520063
+    sample_name: NPC_invivo_DMS_treated_r3
+    sample_group: NPC_invivo
+    condition: treated
+    replicate: 3
+  - accession: GSM7520056
+    sample_name: NPC_invivo_untreated_r1
+    sample_group: NPC_invivo
+    condition: untreated
+    replicate: 1
+  - accession: GSM7520058
+    sample_name: NPC_invivo_untreated_r2
+    sample_group: NPC_invivo
+    condition: untreated
+    replicate: 2
+  - accession: GSM7520059
+    sample_name: hESC_invivo_DMS_treated_r1
+    sample_group: hESC_invivo
+    condition: treated
+    replicate: 1
+  - accession: GSM7520060
+    sample_name: hESC_invivo_DMS_treated_r2
+    sample_group: hESC_invivo
+    condition: treated
+    replicate: 2
+  - accession: GSM7520055
+    sample_name: hESC_invivo_untreated_r1
+    sample_group: hESC_invivo
+    condition: untreated
+    replicate: 1
+  - accession: GSM7520057
+    sample_name: hESC_invivo_untreated_r2
+    sample_group: hESC_invivo
+    condition: untreated
+    replicate: 2
+
+comment: "NEEDS MANUAL VERIFICATION (paywalled paper, no PMC full text): this is the 4% DMS arm of the neuronal-differentiation study; the companion icSHAPE arm is GSE156671 (curated separately). The GEO overall_design line says icSHAPE but every sample here is labelled 4% DMS - method/principle/RT_enzyme are inferred as DMS-MaPseq and need confirming."
