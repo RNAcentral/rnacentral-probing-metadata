@@ -1,0 +1,113 @@
+gse	class	year	n_runs	note	title
+GSE285333	WIDE	2026	102	multi-site DMS probing in living cells; human/E. coli/Tetrahymena	Simultaneous mapping of RNA secondary, tertiary, and quaternary structure in living cells 
+GSE255779	TARGETED	2025	8	18S rRNA	The integrated stress response finetunes 18S nonfunctional rRNA decay (DMS-MaPseq)
+GSE254264	WIDE	2025	65	CoST-seq + DMS-MaPseq, yeast, glucose/galactose, biol reps	Rapid folding of nascent RNA regulates eukaryotic RNA biogenesis
+GSE256185	TARGETED	2025	122	single RNA / amplicon / construct	Quantitative profiling of human translation initiation reveals elements that potently regu
+GSE244468	WIDE	2025	42	HIV-1 infected cells; probing arm is the viral genome	The translational landscape of HIV-1 infected cells reveals key gene regulatory principles
+GSE239954	TARGETED	2025	93	single RNA / amplicon / construct	Characterization of group I introns in generating circular RNAs as vaccines
+GSE283716	TARGETED	2025	89	single RNA / amplicon / construct	Structural determinants of inverted Alu-mediated backsplicing revealed by -MaP and -JuMP
+GSE248680	TARGETED	2025	40	single RNA / amplicon / construct	Therapeutic application of circular RNA aptamers in a mouse model of psoriasis
+GSE248679	TARGETED	2025	22	EPIC circRNA constructs	circSHAPE-MaP of EPIC
+GSE246246	TARGETED	2025	6	engineered circRNA constructs	NicOPURE: Nickless RNA Circularization and One-Step Purification with Engineered Group II 
+GSE264057	TARGETED	2025	9	translational enhancer constructs	Cellular translational enhancer elements that recruit eukaryotic initiation factor 3
+GSE279023	TARGETED	2025	4	JUN / EGFR 5UTR	Functional screen for mediators of onco-mRNA translation specificity [II]
+GSE255740	TARGETED	2025	6	MYC 5UTR	Functional screen for mediators of onco-mRNA translation specificity [DMS-seq]
+GSE188445	TARGETED	2025	47	single RNA / amplicon / construct	Structural features within the NORAD long noncoding RNA underlie efficient repression of P
+GSE255784	TARGETED	2025	46	18S rRNA	The integrated stress response finetunes 18S nonfunctional rRNA decay
+GSE283338	TARGETED	2025	68	single RNA / amplicon / construct	Proximity mediated effects of RNA regulatory proteins (mRNA as a proxisome).
+GSE286293	TARGETED	2025	41	group II intron / RNase P / TPP constructs	A Small Cationic Probe for Accurate, Punctate Discovery of RNA Tertiary Structure.
+GSE230495	TARGETED	2025	32	F8 exon 16 variants	OpenASO: RNA Rescue-designing splice-modulating antisense oligonucleotides through communi
+GSE228168	BORDERLINE	2024	26	mostly NAPseq/CAPseq; one SHAPE-MaP NAI-N3 pair	Full-length Sequencing of Non-capped RNAs Reveals the Heterogeneity of RNA Processing and 
+GSE220470	TARGETED	2024	8	15.5K-bound RNAs (RIP)	RIP-PEN-SHAPE-MaP for 15.5K-interacted RNAs
+GSE228970	TARGETED	2024	33	single RNA / amplicon / construct	Promotion of TLR7-MyD88-dependent Inflammation and Autoimmunity through Stem-loop Changes 
+GSE243220	TARGETED	2024	16	single RNA / amplicon / construct	In-cell structure analysis of antisense Gadd45α SINEB2-a deletion mutants
+GSE224534	TARGETED	2024	20	single RNA / amplicon / construct	In-cell RNA secondary structure analysis of functional SINE transcripts
+GSE219083	TARGETED	2024	54	single RNA / amplicon / construct	G-quadruplex folding in Xist RNA antagonizes PRC2 activity for step-wise regulation of X-c
+GSE219079	TARGETED	2024	24	single RNA / amplicon / construct	Epigenetic regulation by dynamic RNA G-quadruplex folding and unfolding (DMS-Seq)
+GSE271825	TARGETED	2024	30	AKT2 / pUG / Spinach constructs	RNA tertiary structure and conformational dynamics revealed by BASH MaP
+GSE254895	WIDE	2024	33	new G/U reagent in vivo, E. coli, repA-C	A new reagent for in vivo structure probing of RNA G and U residues that improves RNA stru
+GSE246523	WIDE	2024	4	human mitochondrial mRNA structurome (n=4, check replication)	The human mitochondrial mRNA structurome reveals mechanisms of gene expression.
+GSE255191	BORDERLINE	2024	4	cortical neurons +/- bicuculline, only 4 runs	Alternative translation initiation produces synaptic organizer proteoforms with distinct l
+GSE191144	TARGETED	2023	16	single RNA / amplicon / construct	Investigating the NRAS 5’ UTR as a Target for Small Molecules
+GSE196625	TARGETED	2023	30	pre-rRNA amplicons	URB1 ensures 3' end processing of pre-rRNAs to prevent exosome-dependent degradation and i
+GSE225730	BORDERLINE	2023	60	in vitro T7 E. coli tRNA pool - whole class but synthetic	tRNA structure-seq in peptide-rich droplets
+GSE233607	WIDE	2023	9	E. coli in-cell DMS + EDC, control/DMS/EDC rep1-3	In vivo-like nearest neighbor parameters accurately predict fractional RNA base-pairing in
+GSE210296	TARGETED	2022	8	OsNRT2.3 / OsNRT1.1B	High-temperature adaptation of an OsNRT2.3 allele is thermoregulated by small RNAs
+GSE188649	TARGETED	2022	11	AdML minigene	[SHAPE-MaP_4_mM] U1 snRNP regulates recruitment of early spliceosomal components by disrup
+GSE163112	TARGETED	2022	4	single RNA / amplicon / construct	Enhancer RNAs make multivalent interactions with NELF to stimulate Pol II pause release [S
+GSE174217	TARGETED	2022	20	single RNA / amplicon / construct	Distinct MUNC lncRNA structural domains regulate transcription of different promyogenic fa
+GSE190787	TARGETED	2022	12	single RNA / amplicon / construct	A disease-linked lncRNA mutation in RNase MRP inhibits ribosome synthesis [RMRP_SHAPE]
+GSE171021	TARGETED	2022	24	single RNA / amplicon / construct	A disease-linked lncRNA mutation in RNase MRP inhibits ribosome synthesis
+GSE210478	WIDE	2022	6	EBV-infected BJAB-B1 transcriptome, DMS	DMS probing of and sequencing of the EBV infected BJAB-B1 transcriptome
+GSE183941	TARGETED	2022	32	single RNA / amplicon / construct	RNA circles with minimized immunogenicity as potent PKR inhibitors.
+GSE160161	TARGETED	2021	108	pre-40S rRNA	Using DMS-MaPseq to dissect structural differences of ribosomal RNA in different pre-40S i
+GSE147506	TARGETED	2021	20	single RNA / amplicon / construct	Key role of dysregulated SF3A3 translation in MYC-induced breast tumorigenesis
+GSE147504	TARGETED	2021	5	single RNA / amplicon / construct	Targeted DMS probing of SF3A3 5' UTR
+GSE168393	TARGETED	2021	4	yvrE / ctc genes	Translational activation by an alternative sigma factor in Bacillus subtilis
+GSE183927	TARGETED	2021	16	single RNA / amplicon / construct	ANKRD52_SHAPE-MaP
+GSE159719	TARGETED	2021	13	one low-abundance pre-mRNA	RNA structure probing to characterize RNA-protein interations on a low abundance pre-mRNA 
+GSE173177	TARGETED	2021	9	AdML minigene	Discovery of pre-mRNA structural scaffold as a contributor to mammalian splicing code [In 
+GSE173175	TARGETED	2021	50	AdML minigene	Discovery of a pre-mRNA structural scaffold as a contributor to the mammalian splicing cod
+GSE174140	TARGETED	2021	12	single RNA / amplicon / construct	lncRNA SLERT controls phase separation of FC/DFCs to facilitate Pol I transcription
+GSE163494	TARGETED	2021	4	pasRNA_ABAT	Shape of promoter antisense RNAs regulates ligand-induced transcription activation [Shape-
+GSE154563	WIDE	2021	36	new SHAPE reagent in living cells: E. coli, B. subtilis, human	SHAPE analysis of RNA structure in living cells with unprecedented accuracy
+GSE236224	WIDE	2021	9	genome-wide structure changes, human neurogenesis	Genome-wide RNA structure changes during human neurogenesis modulate gene regulatory netwo
+GSE148202	BORDERLINE	2021	58	tRNA / small-RNA class-wide, mito polycistronic processing	ALKBH7-mediated demethylation regulates mitochondrial  polycistronic RNA processing
+GSE149018	WIDE	2021	42	tNet-MaPseq nascent transcriptome, WT vs slow Pol II, rep1-3	Alternative RNA Stuctures Formed During Transcription Depend on Elongation Rate and Modify
+GSE152483	TARGETED	2021	87	RNase P, XIST, U1, Rmrp	Analysis of RNA-protein networks with RNP-MaP defines functional hubs on RNA.
+GSE153303	BORDERLINE	2021	10	A549 +/- DRB / a-amanitin; check probing vs PARIS-type assay	Conserved long-range base pairings are associated with pre-mRNA processing of human genes.
+GSE115159	REJECT	2020	6	DMS concentration titration, not biological replicates	Regulation of Translation Elongation Revealed by Ribosome Profiling [Dataset_2]
+GSE115158	REJECT	2020	15	DMS concentration titration, not biological replicates	Regulation of Translation Elongation Revealed by Ribosome Profiling [Dataset_1]
+GSE162569	TARGETED	2020	27	SARS-CoV-2 fragments, not the genome	Genomic RNA elements drive phase separation of the SARS-CoV-2 nucleocapsid
+GSE156312	TARGETED	2020	99	aptamer + small molecule	PEARL-seq: A Photoaffinity Platform for the Analysis of Small Molecule-RNA Interactions
+GSE143496	REJECT	2020	25	ribo-depleted RNA-seq, not probing	Species-specific processing of long noncoding RNAs contributes to non-conserved functions 
+GSE140048	TARGETED	2020	20	single RNA / amplicon / construct	SHAPE and DMS probing of SLNCR1 lncRNA conserved region 403-780
+GSE149767	WIDE	2020	40	SHAPE-eCLIP / fSHAPE, transcriptome-wide	Footprinting SHAPE-eCLIP reveals transcriptome-wide hydrogen bonds at RNA-protein interfac
+GSE146407	TARGETED	2020	8	single RNA / amplicon / construct	In vivo structure analysis of SINEUP RNA
+GSE149061	TARGETED	2020	6	polyA constructs / HIV 3UTR	Anomalous Reverse Transcription through Chemical Modifications in Polyadenosine Stretches.
+GSE122199	REJECT	2019	104	piRNA IP + RNA-seq, not probing	Planarians recruit piRNAs for mRNA turnover in adult stem cells
+GSE135211	BORDERLINE	2019	35	has a cell-free Total RNA +/-DMS pair, rest is named ncRNAs	PAIR-MaP visualizes RNA base pairing complexity in human and bacterial non-coding RNAs
+GSE118309	TARGETED	2019	42	7SK, Xist fragments	Carbodiimide reagents for the chemical probing of RNA structure in cells
+GSE111962	REJECT	2018	2	transcriptome-wide but only 2 runs, no replicates	RNA Framework: an all-in-one toolkit for the analysis of RNA structures and post-transcrip
+GSE108857	TARGETED	2018	6	single RNA / amplicon / construct	SWI/SNF subunit CHR2 remodels pri-miRNAs via microprocessor component SE to inhibit miRNA 
+GSE103421	WIDE	2018	63	E. coli cold shock DMS-seq timecourse (drop the cspA DMS-MaPseq arm)	A stress response that monitors and regulates mRNA structure is central to cold-shock adap
+GSE110516	TARGETED	2018	8	pre-let-7	secondary structure based on icSHAPE of pre-let-7 and hDicer-TRBP  bound pre-let-7
+GSE102069	WIDE	2018	30	human infection timecourse, DMS + denatured controls	Unraveling cis-regulatory elements by mapping structural changes in mRNAs
+GSE105112	TARGETED	2018	12	30S ribosome variants	Structural characterization of ribosome variants
+GSE100715	DUPLICATE	2018	32	superseries of GSE100714, already curated as 00081	Genome-wide RNA structurome reprogramming by acute heat shock globally regulates mRNA abun
+GSE109652	TARGETED	2018	16	single RNA / amplicon / construct	Transcription elongation rate affects nascent histone pre-mRNA folding and 3' end processi
+GSE106868	TARGETED	2018	6	single RNA / amplicon / construct	Maturation of the 90S pre-ribosome requires Mrd1 dependent U3 snoRNA and 35S pre-rRNA stru
+GSE97609	TARGETED	2017	20	18S rRNA	Interpreting reverse transcriptase termination and mutation events for greater insight int
+GSE95567	WIDE	2017	41	E. coli DMS-seq total + ribo-depleted (drop SPET-seq arm)	In vivo probing of nascent RNA structures reveals principles of cotranscriptional folding
+GSE85619	TARGETED	2017	8	80S ribosome	Inhibition of eukaryotic translation by the antitumor natural product Agelastatin A
+GSE083821	DUPLICATE	2017	22	same as GSE83821 (removed as targeted)	High-throughput RNA structure probing reveals critical folding events during early 60S rib
+GSE097609	DUPLICATE	2017	20	same as GSE97609	Interpreting Reverse Transcriptase Termination and Mutation Events for Greater Insight int
+GSE72599	TARGETED	2016	12	single RNA / amplicon / construct	7SK-BAF axis controls pervasive transcription at enhancers [icShape]
+GSE69143	TARGETED	2016	74	single RNA / amplicon / construct	7SK-BAF axis controls pervasive transcription at enhancers
+GSE67667	TARGETED	2015	13	single RNA / amplicon / construct	Probing Xist RNA structure in cells using Targeted Structure-Seq
+GSE067667	TARGETED	2015	13	single RNA / amplicon / construct	Probing Xist RNA Structure in Cells Using Targeted Structure-Seq.
+GSE052878	TARGETED	2014	41	pre-rRNA 40S	Snapshots of pre-rRNA structural flexibility reveal eukaryotic 40S assembly dynamics at nu
+GSE143121	WIDE	2012	57368	ENCODE icSHAPE HepG2 - filter runs to the series GSMs	icSHAPE from HepG2 (ENCSR992XHC)
+GSE143120	WIDE	2012	57368	ENCODE icSHAPE K562 - filter runs to the series GSMs	icSHAPE from K562 (ENCSR976RFC)
+GSE143102	WIDE	2012	57368	ENCODE icSHAPE GM12878 - filter runs to the series GSMs	icSHAPE from GM12878 (ENCSR836VQU)
+GSE143096	WIDE	2012	57368	ENCODE icSHAPE K562 - filter runs to the series GSMs	icSHAPE from K562 (ENCSR803XFA)
+GSE142946	WIDE	2012	57368	ENCODE icSHAPE HepG2 - filter runs to the series GSMs	icSHAPE from HepG2 (ENCSR286LXS)
+GSE142891	WIDE	2012	57368	ENCODE icSHAPE GM12878 - filter runs to the series GSMs	icSHAPE from GM12878 (ENCSR052BBY)
+GSE230167	TARGETED	?	3	single RNA / amplicon / construct	Structural basis for pre-miRNA-31 biogenesis
+GSE183045	TARGETED	?	64	SSU processome rRNA	Using DMS-MaPseq to dissect structural differences of ribosomal RNA in different SSU Proce
+GSE327654	TARGETED	?	6	single RNA / amplicon / construct	CONCR lncRNA organizes a 3´-end structural domain that engages DDX11 for DNA replication a
+GSE331520	TARGETED	?	37	single RNA / amplicon / construct	Conserved structural features of the lncRNA HOTAIR in breast cancer cells
+GSE309111	WIDE	?	8	nanopore DRS structure ensembles	Direct RNA sequencing and signal alignment reveal RNA structure ensembles in a eukaryotic 
+GSE309440	TARGETED	?	28	single RNA / amplicon / construct	Probing the structure of the lncRNA DAMER and its interaction with ATF4 mRNA using SHAPE-M
+GSE149534	TARGETED	?	16	single RNA / amplicon / construct	Long noncoding RNA CCTT recruits CENP-C to centromeres by directly binding to centromeric 
+GSE149529	TARGETED	?	6	single RNA / amplicon / construct	Long noncoding RNA CCTT recruits CENP-C to centromeres by directly binding to centromeric 
+GSE130687	TARGETED	?	32	HIV-1 5UTR	An epitranscriptomic switch at the 5´-UTR controls genome selection during HIV-1 genomic R
+GSE81525	TARGETED	?	36	SERPINA1 constructs	An RNA structure-mediated post-transcriptional model of α-1-antitrypsin deficiency
+GSE288910	WIDE	?	126	HeLa stress granules; DMS subsets need separating from Ribo/RNA-seq	RNA structure directs RNA partitioning and is actively disrupted inside stress granules to
+GSE156671	WIDE	?	99	genome-wide structure, neuronal differentiation (n=99)	Genome-wide structure changes during neuronal differentiation drive gene regulatory networ
+GSE225383	TARGETED	?	73	RNase P / RMRP	Enhanced DMS-MaP enables superior RNA structural analysis
+GSE304703	WIDE	?	8	nanopore DRS structure ensembles (RNA004)	Direct RNA sequencing and signal alignment reveal RNA structure ensembles in a eukaryotic 
+GSE304702	WIDE	?	105	nanopore DRS structure ensembles, Candida albicans	Direct RNA sequencing and signal alignment reveal RNA structure ensembles in a eukaryotic 
+GSE245141	WIDE	?	22	transcriptome-wide probing with temporal resolution	Transcriptome-wide RNA structure probing with temporal resolution
+GSE133361	BORDERLINE	?	86	nanopore; mixes designed constructs with H9 cell samples	Determination of isoform-specific RNA structure with nanopore long reads
+GSE273118	TARGETED	?	28	ModT ncRNA	A conserved structured non-coding RNA coordinates growth and virulence in Clostridioides d

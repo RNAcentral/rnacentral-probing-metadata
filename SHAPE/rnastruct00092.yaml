@@ -1,0 +1,121 @@
+dataset_id: rnastruct00092
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: fSHAPE
+  principle: MaP
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo, in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2020.11.014
+  year: 2020
+
+raw_data:
+  repository: GEO
+  accession: GSE149767
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149767
+  run_accessions:
+  - accession: GSM4512071
+    sample_name: K562_invivo_NAI_treated_r1
+    sample_group: K562_invivo
+    condition: treated
+    replicate: 1
+  - accession: GSM4512072
+    sample_name: K562_invivo_NAI_treated_r2
+    sample_group: K562_invivo
+    condition: treated
+    replicate: 2
+  - accession: GSM4795047
+    sample_name: K562_invivo_untreated_r1
+    sample_group: K562_invivo
+    condition: untreated
+    replicate: 1
+  - accession: GSM4795048
+    sample_name: K562_invivo_untreated_r2
+    sample_group: K562_invivo
+    condition: untreated
+    replicate: 2
+  - accession: GSM4512073
+    sample_name: K562_invitro_NAI_treated_r1
+    sample_group: K562_invitro
+    condition: treated
+    replicate: 1
+  - accession: GSM4512074
+    sample_name: K562_invitro_NAI_treated_r2
+    sample_group: K562_invitro
+    condition: treated
+    replicate: 2
+  - accession: GSM4512075
+    sample_name: HepG2_invivo_NAI_treated_r1
+    sample_group: HepG2_invivo
+    condition: treated
+    replicate: 1
+  - accession: GSM4512076
+    sample_name: HepG2_invivo_NAI_treated_r2
+    sample_group: HepG2_invivo
+    condition: treated
+    replicate: 2
+  - accession: GSM4795049
+    sample_name: HepG2_invivo_untreated_r1
+    sample_group: HepG2_invivo
+    condition: untreated
+    replicate: 1
+  - accession: GSM4795050
+    sample_name: HepG2_invivo_untreated_r2
+    sample_group: HepG2_invivo
+    condition: untreated
+    replicate: 2
+  - accession: GSM4512077
+    sample_name: HepG2_invitro_NAI_treated_r1
+    sample_group: HepG2_invitro
+    condition: treated
+    replicate: 1
+  - accession: GSM4512078
+    sample_name: HepG2_invitro_NAI_treated_r2
+    sample_group: HepG2_invitro
+    condition: treated
+    replicate: 2
+  - accession: GSM4512079
+    sample_name: HeLa_invivo_NAI_treated_r1
+    sample_group: HeLa_invivo
+    condition: treated
+    replicate: 1
+  - accession: GSM4512080
+    sample_name: HeLa_invivo_NAI_treated_r2
+    sample_group: HeLa_invivo
+    condition: treated
+    replicate: 2
+  - accession: GSM4795051
+    sample_name: HeLa_invivo_untreated_r1
+    sample_group: HeLa_invivo
+    condition: untreated
+    replicate: 1
+  - accession: GSM4795052
+    sample_name: HeLa_invivo_untreated_r2
+    sample_group: HeLa_invivo
+    condition: untreated
+    replicate: 2
+  - accession: GSM4512081
+    sample_name: HeLa_invitro_NAI_treated_r1
+    sample_group: HeLa_invitro
+    condition: treated
+    replicate: 1
+  - accession: GSM4512082
+    sample_name: HeLa_invitro_NAI_treated_r2
+    sample_group: HeLa_invitro
+    condition: treated
+    replicate: 2
+
+comment: "Paywalled paper: only the transcriptome-wide fSHAPE arm is included (3 cell lines, in-cell and deproteinised in vitro, 2 replicates each). The SHAPE-eCLIP / fSHAPE-eCLIP IP+Input libraries in GSE149767 are excluded - they are protein-footprint pulldowns, not a plain structurome. The untreated pair per cell line is filed under the in_vivo group. RT_enzyme and rna_type follow the standard SHAPE-MaP protocol - confirm."

@@ -1,0 +1,621 @@
+year_range	doi	pub_year	open_access	pmcid	accession	title
+2022-2023	10.1016/bs.mie.2023.03.021	2023	N			Sequencing-based analysis of RNA structures in living cells with 2A3 via SHAPE-MaP.
+2022-2023	10.1007/978-1-0716-3191-1_6	2023	N			Chemical Probing of RNA Structure In Vivo Using SHAPE-MaP and DMS-MaP.
+2022-2023	10.1007/s00018-023-04764-1	2023	Y	PMC10153785		In vivo secondary structural analysis of Influenza A virus genomic RNA.
+2022-2023	10.1093/nar/gkad522	2023	Y	PMC10484685	GSE225383	Mutation signature filtering enables high-fidelity RNA structure probing at all four nucleobases with DMS.
+2022-2023	10.1128/jvi.00635-23	2023	Y	PMC10308922	PRJNA936272	The Highly Conserved Stem-Loop II Motif Is Dispensable for SARS-CoV-2.
+2022-2023	10.3390/ijms24097890	2023	Y	PMC10178110	PRJEB60419	The Evaluation of SHAPE-MaP RNA Structure Probing Protocols Reveals a Novel Role of Mn<sup>2+</sup> in the Detection of 2'-OH Adducts.
+2022-2023	10.1016/j.csbj.2023.10.036	2023	Y	PMC10632597		Comprehensive in virio structure probing analysis of the influenza A virus identifies functional RNA structures involved in viral genome replication.
+2022-2023	10.1016/bs.mie.2023.06.003	2023	N			RNA G-quadruplex (rG4) structure detection using RTS and SHALiPE assays.
+2022-2023	10.1093/nar/gkac435	2022	Y	PMC9252807		Web-based platform for analysis of RNA folding from high throughput chemical probing data.
+2022-2023	10.1038/s41467-022-31875-3	2022	Y	PMC9307511	GSE117840	Differential analysis of RNA structure probing experiments at nucleotide resolution: uncovering regulatory functions of RNA structure.
+2022-2023	10.1073/pnas.2201237119	2022	Y	PMC9231505		Genome-wide analysis of the <i>in vivo</i> tRNA structurome reveals RNA structural and modification dynamics under heat stress.
+2022-2023	10.1007/978-1-0716-1851-6_16	2022	N			In Vivo RNA Structure Probing with DMS-MaPseq.
+2022-2023	10.1038/s41467-023-43395-9	2023	Y	PMC10687018	PRJNA929456	Observation of coordinated RNA folding events by systematic cotranscriptional RNA structure probing.
+2022-2023	10.1007/978-1-0716-2421-0_17	2022	N			Cotranscriptional RNA Chemical Probing.
+2022-2023	10.3791/64820	2022	N			Probing RNA Structure with Dimethyl Sulfate Mutational Profiling with Sequencing In Vitro and in Cells.
+2022-2023	10.1007/978-1-0716-2413-5_14	2022	N			Determination of RNA Structure with In Vitro SHAPE Experiments.
+2022-2023	10.1016/j.ymeth.2022.05.001	2022	N	PMC10152975		Using DMS-MaPseq to uncover the roles of DEAD-box proteins in ribosome assembly.
+2022-2023	10.1261/rna.079687.123	2023	Y	PMC10578495	GSE229536	In vivo structure probing of RNA in <i>Archaea</i>: novel insights into the ribosome structure of <i>Methanosarcina acetivorans</i>.
+2022-2023	10.1038/s41592-023-01862-7	2023	Y	PMC10250195	SRP424422	Nano-DMS-MaP allows isoform-specific RNA structure determination.
+2022-2023	10.1371/journal.pone.0288070	2023	Y	PMC10328344		RNA structural probing of guanine and uracil nucleotides in yeast.
+2022-2023	10.1186/s12859-022-05037-7	2022	Y	PMC9783404	GSE60034	Deciphering the role of RNA structure in translation efficiency.
+2022-2023	10.1016/j.jmb.2022.167635	2022	N			Computational Approaches for RNA Structure Ensemble Deconvolution from Structure Probing Data.
+2022-2023	10.1016/j.jbc.2023.105443	2023	Y	PMC10704376		tRNA m<sup>1</sup>G9 modification depends on substrate-specific RNA conformational changes induced by the methyltransferase Trm10.
+2022-2023	10.1016/bs.mie.2023.05.008	2023	N			Capture the in vivo intact RNA structurome by CAP-STRUCTURE-seq.
+2022-2023	10.1002/cpz1.830	2023	N			Using 5' <sup>32</sup> P-labeled Primer and Reverse Transcription to Probe RNA Structure.
+2022-2023	10.1073/pnas.2122660119	2022	Y	PMC9171761		SHAPE-enabled fragment-based ligand discovery for RNA.
+2022-2023	10.1021/acscentsci.2c00149	2022	Y	PMC9228567	PRJNA767082	Interrogating RNA-Small Molecule Interactions with Structure Probing and Artificial Intelligence-Augmented Molecular Simulations.
+2022-2023	10.1007/978-1-0716-3191-1_5	2023	N			SHAPE to Probe RNA Structure and RNA-Protein Interactions In Vitro.
+2022-2023	10.1371/journal.pgen.1010669	2023	Y	PMC10358904		The oxidative stress response, in particular the katY gene, is temperature-regulated in Yersinia pseudotuberculosis.
+2022-2023	10.1021/jacs.3c07736	2023	N			Characterizing Protonation-Coupled Conformational Ensembles in RNA via pH-Differential Mutational Profiling with DMS Probing.
+2022-2023	10.1016/j.jmb.2023.168417	2024	N			Analysis of Telomerase RNA Structure in Physcomitrium patens Indicates Functionally Relevant Transitions Between OPEN and CLOSED Conformations.
+2022-2023	10.1007/978-1-0716-3191-1_7	2023	N			Analysis of RNA-Protein Interaction Networks Using RNP-MaP.
+2022-2023	10.1021/acs.accounts.2c00782	2023	N	PMC10078950		Single-Molecule Correlated Chemical Probing: A Revolution in RNA Structure Analysis.
+2022-2023	10.1371/journal.pone.0270863	2022	Y	PMC9436142	PRJEB44384	The in vivo RNA structurome of the malaria parasite Plasmodium falciparum, a protozoan with an A/U-rich transcriptome.
+2022-2023	10.1016/j.csbj.2023.12.040	2024	Y	PMC10808905		DeepFusion: A deep bimodal information fusion network for unraveling protein-RNA interactions using in vivo RNA structures.
+2022-2023	10.1016/j.ijbiomac.2023.128062	2024	N			Variable eIF4E-binding sites and their synergistic effect on cap-independent translation in a novel IRES of wheat yellow mosaic virus RNA2 isolates.
+2022-2023	10.1038/s41576-022-00546-w	2023	Y	PMC9644009		Probing the dynamic RNA structurome and its functions.
+2022-2023	10.1038/s41467-023-36156-1	2023	Y	PMC9872083	PRJNA868816	3D RNA-scaffolded wireframe origami.
+2022-2023	10.1038/s41467-022-29398-y	2022	Y	PMC8971488	GSE189259	SHAPE-guided RNA structure homology search and motif discovery.
+2022-2023	10.1007/s11427-021-2116-2	2022	Y	PMC9206424		Recent advances in RNA structurome.
+2022-2023	10.1242/jeb.246544	2023	N			Exploring the adaptability of the secondary structure of mRNA to temperature in intertidal snails based on SHAPE experiments.
+2022-2023	10.1093/nargab/lqac082	2022	Y	PMC9585548	GSE210478	Thermodynamic and structural characterization of an EBV infected B-cell lymphoma transcriptome.
+2022-2023	10.1016/bs.mie.2023.05.006	2023	N	PMC10917389		Structure-seq of tRNAs and other short RNAs in droplets and in vivo.
+2022-2023	10.1038/s41418-023-01127-y	2023	Y	PMC10070458		The p53 endoplasmic reticulum stress-response pathway evolved in humans but not in mice via PERK-regulated p53 mRNA structures.
+2022-2023	10.1007/978-1-0716-2687-0_8	2023	N			Prediction of Dynamic RBP-RNA Interactions Using PrismNet.
+2022-2023	10.1016/bs.mie.2023.02.020	2023	N	PMC10994722		Chemical crosslinking and ligation methods for in vivo analysis of RNA structures and interactions.
+2022-2023	10.1261/rna.079840.123	2023	Y	PMC10726167		Identification of a putative Gag binding site critical for feline immunodeficiency virus genomic RNA packaging.
+2022-2023	10.1093/nar/gkad353	2023	Y	PMC10320048		PrismNet: predicting protein-RNA interaction using in vivo RNA structural information.
+2022-2023	10.1093/nar/gkad807	2023	Y	PMC10639048	GSE233607	In vivo-like nearest neighbor parameters improve prediction of fractional RNA base-pairing in cells.
+2022-2023	10.1261/rna.079190.122	2023	Y	PMC9945442		RNA:RNA interaction in ternary complexes resolved by chemical probing.
+2022-2023	10.1016/j.xgen.2022.100097	2022	Y	PMC8896822	PRJNA634693	Direct detection of RNA modifications and structure using single-molecule nanopore sequencing.
+2022-2023	10.1128/jvi.00448-23	2023	Y	PMC10231185		Role of RNA Domain Structure and Orientation in the Coxsackievirus B3 Virulence Phenotype.
+2022-2023	10.1039/d3cc00043e	2023	N	PMC10089805		Cycloaddition enabled mutational profiling of 5-vinyluridine in RNA.
+2022-2023	10.1261/rna.079388.122	2023	Y	PMC10159000	PRJNA816530	Structural analysis of MALAT1 long noncoding RNA in cells and in evolution.
+2022-2023	10.1080/17460441.2022.2134852	2023	N			Discovery of RNA-targeted small molecules through the merging of experimental and computational technologies.
+2022-2023	10.1093/nar/gkac405	2022	Y	PMC9410897		ShapeSorter: a fully probabilistic method for detecting conserved RNA structure features supported by SHAPE evidence.
+2022-2023	10.3390/v15020295	2023	Y	PMC9959730		RNA Structure in the 5' Untranslated Region of Enterovirus D68 Strains with Differing Neurovirulence Phenotypes.
+2022-2023	10.1038/s41467-023-35811-x	2023	Y	PMC9839774	GSE200706	Stress promotes RNA G-quadruplex folding in human cells.
+2022-2023	10.1186/s12985-022-01824-z	2022	Y	PMC9137147		Conserved RNA secondary structure in Cherry virus A 5'-UTR associated with translation regulation.
+2022-2023	10.1093/nar/gkac284	2022	Y	PMC9122605		Eukaryotic initiation factor 4F promotes a reorientation of eukaryotic initiation factor 3 binding on the 5' and the 3' UTRs of barley yellow dwarf virus mRNA.
+2022-2023	10.1021/acs.jctc.3c00084	2023	Y	PMC10308816		Molecular Dynamics Simulations with Grand-Canonical Reweighting Suggest Cooperativity Effects in RNA Structure Probing Experiments.
+2022-2023	10.7717/peerj.14335	2022	Y	PMC9756865		Predicting RNA secondary structure by a neural network: what features may be learned?
+2022-2023	10.1016/j.tig.2023.10.001	2023	N			Predicting RNA structures and functions by artificial intelligence.
+2022-2023	10.1093/nar/gkad296	2023	Y	PMC10320080		e-RNA: a collection of web-servers for the prediction and visualisation of RNA secondary structure and their functional features.
+2022-2023	10.3390/ijms23115903	2022	Y	PMC9180208		The Second Class of Tetrahydrofolate (THF-II) Riboswitches Recognizes the Tetrahydrofolic Acid Ligand via Local Conformation Changes.
+2022-2023	10.1371/journal.pgen.1010862	2023	Y	PMC10695388		A disease associated mutant reveals how Ltv1 orchestrates RP assembly and rRNA folding of the small ribosomal subunit head.
+2022-2023	10.1016/j.jbc.2023.103028	2023	Y	PMC9930382		The 5'UTR of HCoV-OC43 adopts a topologically constrained structure to intrinsically repress translation.
+2022-2023	10.32607/actanaturae.26826	2023	Y	PMC10790352		Cooperation and Competition of RNA Secondary Structure and RNA-Protein Interactions in the Regulation of Alternative Splicing.
+2022-2023	10.1021/acs.biochem.3c00579	2024	N	PMC10896073		Validating the EMCV IRES Secondary Structure with Structure-Function Analysis.
+2022-2023	10.7717/peerj.14361	2022	Y	PMC9651051		ScanFold 2.0: a rapid approach for identifying potential structured RNA targets in genomes and transcriptomes.
+2022-2023	10.1039/d3sc00957b	2023	Y	PMC10094363		Transcriptome-wide identification of single-stranded RNA binding proteins.
+2022-2023	10.1093/ve/vead056	2023	Y	PMC10492445		Evolution of transient RNA structure-RNA polymerase interactions in respiratory RNA virus genomes.
+2022-2023	10.1007/978-1-0716-2695-5_12	2023	N			Probing of Fluorogenic RNA Aptamers via Supramolecular Förster Resonance Energy Transfer with a Universal Fluorescent Nucleobase Analog.
+2022-2023	10.1016/j.fmre.2023.06.001	2023	Y	PMC11197651		RNA structure determination: From 2D to 3D.
+2022-2023	10.1016/j.jbc.2022.101934	2022	Y	PMC9142559		The bacterial yjdF riboswitch regulates translation through its tRNA-like fold.
+2022-2023	10.1093/nar/gkac007	2022	Y	PMC8860577		Structural characterization of a new subclass of panicum mosaic virus-like 3' cap-independent translation enhancer.
+2022-2023	10.1093/nar/gkad224	2023	Y	PMC10201433		RNA origami scaffolds facilitate cryo-EM characterization of a Broccoli-Pepper aptamer FRET pair.
+2022-2023	10.1261/rna.079652.123	2023	Y	PMC10573289	GSE224126	Transcriptome-wide probing reveals RNA thermometers that regulate translation of glycerol permease genes in <i>Bacillus subtilis</i>.
+2022-2023	10.1002/cplu.202200256	2022	Y	PMC9828840		RNA Chemical Labeling with Site-Specific, Relative Quantification by Mass Spectrometry for the Structural Study of a Neomycin-Sensing Riboswitch Aptamer Domain.
+2022-2023	10.3389/fped.2023.1286786	2023	Y	PMC10755014		Expression and clinical implications of PARs in the stenotic tissue of ureteropelvic junction obstruction.
+2022-2023	10.1016/j.mex.2023.102275	2023	Y	PMC10336498		Discovery of RNA secondary structural motifs using sequence-ordered thermodynamic stability and comparative sequence analysis.
+2022-2023	10.1186/s12864-023-09234-3	2023	Y	PMC10018874	PRJNA756617	Genome-wide identification of Kanamycin B binding RNA in Escherichia coli.
+2022-2023	10.1016/j.jmb.2022.167667	2022	N			RNA Thermometer-coordinated Assembly of the Yersinia Injectisome.
+2022-2023	10.7717/peerj.16414	2023	Y	PMC10691357	GSE127188	Long-range RNA structures in the human transcriptome beyond evolutionarily conserved regions.
+2022-2023	10.1016/j.csbj.2023.01.007	2023	Y	PMC9876829		RNAsmc: A integrated tool for comparing RNA secondary structure and evaluating allosteric effects.
+2022-2023	10.1002/prot.26584	2023	N	PMC10840738		Breaking the conformational ensemble barrier: Ensemble structure modeling challenges in CASP15.
+2022-2023	10.1016/j.sbi.2022.102503	2023	N			Integrating experimental data with molecular simulations to investigate RNA structural dynamics.
+2022-2023	10.1002/prot.26574	2023	N			RNA tertiary structure modeling with BRiQ potential in CASP15.
+2022-2023	10.3390/v14071556	2022	Y	PMC9315659		Phosphomimetic S207D Lysyl-tRNA Synthetase Binds HIV-1 5'UTR in an Open Conformation and Increases RNA Dynamics.
+2022-2023	10.1093/bib/bbad421	2023	Y	PMC10753535		A Hitchhiker's guide to RNA-RNA structure and interaction prediction tools.
+2022-2023	10.1016/j.jmb.2022.167688	2022	N	PMC9474619		Solution Structure of NPSL2, A Regulatory Element in the oncomiR-1 RNA.
+2022-2023	10.1371/journal.ppat.1010362	2022	Y	PMC8903280		Relaxing the restricted structural dynamics in the human hepatitis B virus RNA encapsidation signal enables replication initiation in vitro.
+2022-2023	10.1016/j.chembiol.2023.10.022	2024	N	PMC10841764		2'-OH as a universal handle for studying intracellular RNAs.
+2022-2023	10.1016/bs.mie.2023.09.001	2023	N			D-Seq: Genome-wide detection of dihydrouridine modifications in RNA.
+2022-2023	10.1186/s13046-023-02752-8	2023	Y	PMC10386627		The new world of RNA diagnostics and therapeutics.
+2022-2023	10.32607/actanaturae.11893	2023	Y	PMC10154773	GSE127188	RNAcontacts: A Pipeline for Predicting Contacts from RNA Proximity Ligation Assays.
+2022-2023	10.1016/j.jbc.2022.102759	2023	Y	PMC9801127		Application of mutational profiling: New functional analyses reveal the tRNA recognition mechanism of tRNA m<sup>1</sup>A22 methyltransferase.
+2022-2023	10.1016/bs.mie.2023.02.021	2023	N			Functional analysis of tRNA modification enzymes using mutational profiling.
+2022-2023	10.1016/j.ceb.2023.102250	2023	N			Functional domains of nuclear long noncoding RNAs: Insights into gene regulation and intracellular architecture.
+2022-2023	10.1021/acs.jpcb.3c03553	2023	N			Hierarchical Hydration Dynamics of RNA with Nano-Water-Pool at Its Core.
+2022-2023	10.1016/j.jbc.2023.105548	2024	Y	PMC10805700		Global RNA modifications to the MALAT1 triple helix differentially affect thermostability and weaken binding to METTL16.
+2022-2023	10.12703/r/11-39	2022	Y	PMC9816876		Brief considerations on targeting RNA with small molecules.
+2022-2023	10.1002/prot.26583	2023	N	PMC10841231		Advancing RNA 3D structure prediction: Exploring hierarchical and hybrid approaches in CASP15.
+2022-2023	10.3389/fpls.2023.1222186	2023	Y	PMC10352661		Mitochondrial genome annotation with MFannot: a critical analysis of gene identification and gene model prediction.
+2022-2023	10.1073/pnas.2304082120	2023	Y	PMC10293807		Pervasive RNA folding is crucial for narnavirus genome maintenance.
+2022-2023	10.1016/j.biochi.2023.07.014	2023	N			Development of a highly optimized procedure for the discovery of RNA G-quadruplexes by combining several strategies.
+2022-2023	10.1002/prot.26644	2023	N	PMC10697286		CASP15 cryo-EM protein and RNA targets: Refinement and analysis using experimental maps.
+2022-2023	10.1093/nar/gkac775	2022	Y	PMC9723614	PRJEB36658	Long-read single-molecule RNA structure sequencing using nanopore.
+2022-2023	10.3389/fpls.2022.938570	2022	Y	PMC9450479		RNA structure mediated thermoregulation: What can we learn from plants?
+2022-2023	10.1261/rna.079427.122	2023	Y	PMC10578472		A transient intermediate RNA structure underlies the regulatory function of the <i>E. coli thiB</i> TPP translational riboswitch.
+2022-2023	10.3390/ijms24098158	2023	Y	PMC10179140		Dengue Virus Capsid Protein Facilitates Genome Compaction and Packaging.
+2022-2023	10.1021/acs.accounts.3c00450	2023	N	PMC11025531		Chemoproteomic Approaches to Studying RNA Modification-Associated Proteins.
+2022-2023	10.1042/bsr20220149	2023	Y	PMC9977717		How does precursor RNA structure influence RNA processing and gene expression?
+2022-2023	10.1210/endocr/bqad076	2023	N	PMC10227867		Novel Candidate Regulators and Developmental Trajectory of Pituitary Thyrotropes.
+2022-2023	10.1261/rna.079486.122	2023	Y	PMC10351890		Occurrence and classification of T-shaped interactions between nucleobases in RNA structures.
+2022-2023	10.1016/j.jmb.2023.168210	2023	N			Arena: Rapid and Accurate Reconstruction of Full Atomic RNA Structures From Coarse-grained Models.
+2022-2023	10.1080/07391102.2023.2214231	2024	N			Synthesis, NMR kinetics and dynamic structure of a 17-mer heptaloop RNA hairpin carrying a 3-<i>N</i>-methyluridine nucleotide residue in the loop region.
+2022-2023	10.1093/bib/bbad210	2023	N			Machine learning modeling of RNA structures: methods, challenges and future perspectives.
+2022-2023	10.15252/embr.202256021	2023	Y	PMC10328067	PRJNA855586	SRSF3 shapes the structure of miR-17-92 cluster RNA and promotes selective processing of miR-17 and miR-20a.
+2022-2023	10.1080/07391102.2022.2116110	2023	N			Assessment of tools for RNA secondary structure prediction and extraction: a final-user perspective.
+2022-2023	10.1016/bs.mie.2023.07.003	2023	N			RT-based Sanger sequencing of RNAs containing complex RNA repetitive elements.
+2022-2023	10.3390/cancers15051582	2023	Y	PMC10001201		Discovering Synergistic Compounds with BYL-719 in PI3K Overactivated Basal-like PDXs.
+2022-2023	10.1016/j.molcel.2022.02.009	2022	N	PMC9081252		Discovery of a large-scale, cell-state-responsive allosteric switch in the 7SK RNA using DANCE-MaP.
+2022-2023	10.1128/mmbr.00082-23	2023	N	PMC10732063		Negative and ambisense RNA virus ribonucleocapsids: more than protective armor.
+2022-2023	10.1016/j.molcel.2023.09.016	2023	N	PMC10841463		tRNA renovatio: Rebirth through fragmentation.
+2022-2023	10.1016/j.molcel.2023.10.026	2023	N			Structural basis of RNA-induced autoregulation of the DExH-type RNA helicase maleless.
+2022-2023	10.1002/prot.26550	2023	N	PMC10792523		RNA target highlights in CASP15: Evaluation of predicted models by structure providers.
+2022-2023	10.1016/j.cell.2023.05.032	2023	N			Structural RNA components supervise the sequential DNA cleavage in R2 retrotransposon.
+2022-2023	10.1002/mco2.198	2023	Y	PMC9790047		SOX2-positive retinal stem cells are identified in adult human pars plicata by single-cell transcriptomic analyses.
+2022-2023	10.1016/j.compbiolchem.2023.107878	2023	N			P-FARFAR2: A multithreaded greedy approach to sampling low-energy RNA structures in Rosetta FARFAR2.
+2022-2023	10.1080/07391102.2023.2292296	2025	N	PMC11176267		Elaborated pseudoknots that stimulate -1 programmed ribosomal frameshifting or stop codon readthrough in RNA viruses.
+2022-2023	10.1021/acs.jpca.2c00456	2022	N			Using Unassigned NMR Chemical Shifts to Model RNA Secondary Structure.
+2022-2023	10.3389/fmolb.2022.1044126	2022	Y	PMC9649582		An overview of structural approaches to study therapeutic RNAs.
+2022-2023	10.1093/nar/gkac102	2022	Y	PMC9756952	PRJNA776034	Cotranscriptional RNA strand exchange underlies the gene regulation mechanism in a purine-sensing transcriptional riboswitch.
+2022-2023	10.15252/embj.2023114400	2023	N	PMC10577639		The plant noncoding transcriptome: a versatile environmental sensor.
+2022-2023	10.1016/j.heliyon.2023.e18011	2023	Y	PMC10362307	GSE56363	Lumican is a potential predictor on the efficacy of concurrent chemoradiotherapy in cervical squamous cell carcinoma.
+2022-2023	10.1007/978-1-0716-2687-0_13	2023	N			Auto-DRRAFTER: Automated RNA Modeling Based on Cryo-EM Density.
+2022-2023	10.3389/fpls.2022.868771	2022	Y	PMC9108716		The Potential Role of RNA Structure in Crop Molecular Breeding.
+2022-2023	10.1016/j.tig.2022.03.016	2022	N	PMC9378604		Singling out motor neurons in the age of single-cell transcriptomics.
+2022-2023	10.1186/s13578-023-00972-1	2023	Y	PMC9922466		HIV co-opts a cellular antiviral mechanism, activation of stress kinase PKR by its RNA, to enable splicing of rev/tat mRNA.
+2022-2023	10.1093/nar/gkad868	2023	Y	PMC10681803		Dynamic ParB-DNA interactions initiate and maintain a partition condensate for bacterial chromosome segregation.
+2022-2023	10.1073/pnas.2112677119	2022	Y	PMC9169933		Thoughts on how to think (and talk) about RNA structure.
+2022-2023	10.1111/febs.16742	2023	N			Versatile RNA: overlooked gems of the transcriptome.
+2022-2023	10.1073/pnas.2218425120	2023	Y	PMC10193934		Universality in RNA and DNA deformations induced by salt, temperature change, stretching force, and protein binding.
+2022-2023	10.1073/pnas.2217053120	2023	Y	PMC10104495	GSE226865	Structure-first identification of RNA elements that regulate dengue virus genome architecture and replication.
+2022-2023	10.1073/pnas.2220485120	2023	Y	PMC10243134		Dissecting the energetic architecture within an RNA tertiary structural motif via high-throughput thermodynamic measurements.
+2022-2023	10.1016/j.jmb.2023.168181	2023	N			D-ORB: A Web Server to Extract Structural Features of Related But Unaligned RNA Sequences.
+2022-2023	10.3389/fgene.2023.1072995	2023	Y	PMC9900029	GSE137897	Single-cell analysis reveals melanocytes may promote inflammation in chronic wounds through cathepsin G.
+2022-2023	10.1093/bib/bbad049	2023	N			Identification of metal ion-binding sites in RNA structures using deep learning method.
+2022-2023	10.1093/bib/bbad225	2023	N			C-RCPred: a multi-objective algorithm for interactive secondary structure prediction of RNA complexes integrating user knowledge and SHAPE data.
+2022-2023	10.1016/j.ygcen.2023.114233	2023	N			Different neuroendocrine cell types in the pars intercerebralis of Periplaneta americana produce their own specific IGF-related peptides.
+2022-2023	10.1016/j.tibs.2022.12.002	2023	N	PMC12550694		RNA levers and switches controlling viral gene expression.
+2022-2023	10.1261/rna.079291.122	2022	Y	PMC9670806		Experimental evidence for the correlation between RNA structural fluctuations and the frequency of beneficial mutations.
+2022-2023	10.3390/ijms23105850	2022	Y	PMC9144543		A Structural Potential of Rare Trinucleotide Repeat Tracts in RNA.
+2022-2023	10.1371/journal.ppat.1010888	2022	Y	PMC9553062		Complex and simple translational readthrough signals in pea enation mosaic virus 1 and potato leafroll virus, respectively.
+2022-2023	10.1021/acs.biochem.3c00506	2024	N			Flanking Sequence Cotranscriptionally Regulates Twister Ribozyme Activity.
+2022-2023	10.1158/0008-5472.can-22-2510	2023	Y	PMC10390863		Profiling the Somatic Mutational Landscape of Breast Tumors from Hispanic/Latina Women Reveals Conserved and Unique Characteristics.
+2022-2023	10.1261/rna.079506.122	2023	Y	PMC10187676		Structural and dynamic effects of pseudouridine modifications on noncanonical interactions in RNA.
+2022-2023	10.1016/j.csbj.2022.05.028	2022	Y	PMC9136272		SSRTool: A web tool for evaluating RNA secondary structure predictions based on species-specific functional interpretability.
+2022-2023	10.1002/prot.26515	2023	N	PMC10713864		New prediction categories in CASP15.
+2022-2023	10.1021/acschembio.1c00880	2022	N	PMC8938680		Subsite Ligand Recognition and Cooperativity in the TPP Riboswitch: Implications for Fragment-Linking in RNA Ligand Discovery.
+2022-2023	10.1016/j.virusres.2022.198966	2023	Y	PMC9561399	GSE158052	Natural selection pressure exerted on "Silent" mutations during the evolution of SARS-CoV-2: Evidence from codon usage and RNA structure.
+2022-2023	10.1002/cbic.202300228	2023	N			A Protonated Cytidine Stabilizes the Ligand-Binding Pocket in the PreQ<sub>1</sub> Riboswitch in Thermophilic Bacteria.
+2022-2023	10.1093/nar/gkac212	2022	Y	PMC9023295	PRJNA816904	NMR-derived secondary structure of the full-length Ox40 mRNA 3'UTR and its multivalent binding to the immunoregulatory RBP Roquin.
+2022-2023	10.1007/978-1-0716-2768-6_13	2023	N			RNA Structure Determination by High-Throughput Structural Analysis.
+2022-2023	10.1093/nar/gkad056	2023	Y	PMC10018353	PRJNA906919	A riboswitch separated from its ribosome-binding site still regulates translation.
+2022-2023	10.1093/bib/bbad110	2023	N			A computational approach for the identification of distant homologs of bacterial riboswitches based on inverse RNA folding.
+2022-2023	10.3390/cimb45010039	2023	Y	PMC9857539		Cooperative Binding of SRSF3 to Structured 3'ss-α Exon RNA during α Exon Inclusion in the ZO-1 mRNA.
+2022-2023	10.1002/chem.202201749	2022	N			Targeting Pathogenic DNA and RNA Repeats: A Conceptual Therapeutic Way for Repeat Expansion Diseases.
+2022-2023	10.3389/fmolb.2022.869601	2022	Y	PMC9168262		Deep Learning in RNA Structure Studies.
+2022-2023	10.3389/fpls.2022.926953	2022	Y	PMC9242502		A Key Molecular Regulator, RNA G-Quadruplex and Its Function in Plants.
+2022-2023	10.1007/978-1-0716-2687-0_2	2023	N	PMC11268537		Probing RNA Structures and Interactions Using Fluorescence Lifetime Analyses.
+2022-2023	10.1261/rna.079378.122	2023	Y	PMC10158990		Exploring structural determinants and the role of nucleolin in formation of the long-range interactions between untranslated regions of p53 mRNA.
+2022-2023	10.1128/jvi.01949-22	2023	N	PMC10134800		Specialized <i>cis</i>-Acting RNA Elements Balance Genome Cyclization to Ensure Efficient Replication of Yellow Fever Virus.
+2022-2023	10.1093/nargab/lqab127	2022	Y	PMC8759568		Prediction and analysis of functional RNA structures within the integrative genomics viewer.
+2022-2023	10.3389/fgene.2022.1037134	2022	Y	PMC9650216		Modification mapping by nanopore sequencing.
+2022-2023	10.1016/j.jbc.2023.105225	2023	Y	PMC10562873		Emerging functional principles of tRNA-derived small RNAs and other regulatory small RNAs.
+2022-2023	10.3390/ijms24021232	2023	Y	PMC9860923		Structural and Functional RNA Motifs of SARS-CoV-2 and Influenza A Virus as a Target of Viral Inhibitors.
+2022-2023	10.1016/j.ymeth.2022.06.009	2022	N			Determination of RNA-ligand interactions with the photoaffinity platform PEARL-seq.
+2022-2023	10.1186/s12859-022-04943-0	2022	Y	PMC9569039		IndelsRNAmute: predicting deleterious multiple point substitutions and indels mutations.
+2022-2023	10.1158/1078-0432.ccr-22-0632	2022	N	PMC7613712		Hepatocellular Carcinoma in Mongolia Delineates Unique Molecular Traits and a Mutational Signature Associated with Environmental Agents.
+2022-2023	10.1080/17460441.2022.2111414	2023	N			Strategies for targeting RNA with small molecule drugs.
+2022-2023	10.1093/bib/bbac205	2022	N			Secondary structure prediction of long noncoding RNA: review and experimental comparison of existing approaches.
+2022-2023	10.1016/j.crmeth.2022.100334	2022	Y	PMC9701603		Systematic generation and imaging of tandem repeats reveal base-pairing properties that promote RNA aggregation.
+2022-2023	10.3390/biom12111605	2022	Y	PMC9687910		Structural Consequences of Deproteinating the 50S Ribosome.
+2022-2023	10.1128/jvi.00038-23	2023	Y	PMC10062133	PRJNA929486	Deletion of the s2m RNA Structure in the Avian Coronavirus Infectious Bronchitis Virus and Human Astrovirus Results in Sequence Insertions.
+2022-2023	10.1002/ijc.34551	2023	N			Prognostic impact of kallikrein-related peptidase transcript levels in prostate cancer.
+2022-2023	10.1007/s12010-023-04740-2	2024	N			Hsa_circ_0054220 Upregulates HMGA1 by the Competitive RNA Pattern to Promote Neural Impairment in MPTP Model of Parkinson's Disease.
+2022-2023	10.1002/wrna.1715	2022	N			Detecting RNA-RNA interactome.
+2022-2023	10.3389/fgene.2022.840369	2022	Y	PMC9159357	GSE189899	Neuronal Cells Display Distinct Stability Controls of Alternative Polyadenylation mRNA Isoforms, Long Non-Coding RNAs, and Mitochondrial RNAs.
+2022-2023	10.1128/mmbr.00057-21	2022	Y	PMC9491204		Lessons Learned and Yet-to-Be Learned on the Importance of RNA Structure in SARS-CoV-2 Replication.
+2022-2023	10.1007/978-1-0716-2593-4_27	2022	N			Nonradioactive In Situ Hybridization of MT1 Melatonin Receptor for the Identification of Melatonin Target Cells.
+2022-2023	10.1111/febs.16889	2023	N			Non-canonical nucleosides: Biomimetic triphosphorylation, incorporation into mRNA and effects on translation and structure.
+2022-2023	10.7554/elife.73888	2022	Y	PMC9236610	PRJNA762079	Quantitative prediction of variant effects on alternative splicing in <i>MAPT</i> using endogenous pre-messenger RNA structure probing.
+2022-2023	10.1093/molbev/msab280	2022	Y	PMC8763027		Phenotype Bias Determines How Natural RNA Structures Occupy the Morphospace of All Possible Shapes.
+2022-2023	10.1007/s12035-023-03809-7	2024	N			Emerging Role of Long Noncoding RNAs in Regulating Inflammasome-Mediated Neurodegeneration in Parkinson's Disease.
+2022-2023	10.1007/978-1-0716-2687-0_11	2023	N			Combining Biophysical Methods for Structure-Function Analyses of RNA in Solution.
+2022-2023	10.3390/v14081795	2022	Y	PMC9415818		Computational and Experimental Approaches to Study the RNA Secondary Structures of RNA Viruses.
+2022-2023	10.1093/ve/veac051	2022	Y	PMC9272599		Evolutionary traits of Tick-borne encephalitis virus: Pervasive non-coding RNA structure conservation and molecular epidemiology.
+2022-2023	10.1007/s13353-022-00730-y	2023	Y	PMC9837009		In silico and in vitro analysis of the impact of single substitutions within EXO-motifs on Hsa-MiR-1246 intercellular transfer in breast cancer cell.
+2022-2023	10.1016/j.jmb.2022.167802	2022	N	PMC10084733		The promise of cryo-EM to explore RNA structural dynamics.
+2022-2023	10.1016/j.gpb.2022.10.006	2023	Y	PMC10787121		RNA Structural Dynamics Modulate EGFR-TKI Resistance Through Controlling YRDC Translation in NSCLC Cells.
+2022-2023	10.3390/v15030722	2023	Y	PMC10057905		Structure-Based Regulatory Role for the 5'UTR of RCNMV RNA2.
+2022-2023	10.1261/rna.079129.122	2022	Y	PMC9014876		Vault RNA1-1 riboregulates the autophagic function of p62 by binding to lysine 7 and arginine 21, both of which are critical for p62 oligomerization.
+2022-2023	10.1080/21655979.2023.2297320	2024	Y	PMC10761085		Isolation of three different sizes of exosomes in an Asian population with different retinal diseases before and after treatment: preliminary results.
+2022-2023	10.1016/j.pneurobio.2023.102477	2023	N			Trigeminal nerve stimulation restores hippocampal dopamine deficiency to promote cognitive recovery in traumatic brain injury.
+2022-2023	10.1007/s11262-023-01998-w	2023	N			Complete genome sequence analysis, morphology and structural protein identification of two Bacillus subtilis phages, BSTP4 and BSTP6, which may form a new species in the genus Salasvirus.
+2022-2023	10.1007/978-1-0716-1851-6_2	2022	N			Predicting RNA Secondary Structure Using In Vitro and In Vivo Data.
+2022-2023	10.1016/j.prp.2023.155013	2024	N			Comprehensive molecular analysis of driver mutations in non-small cell lung carcinomas and its correlation with PD-L1 expression, An Indian perspective.
+2022-2023	10.1111/acel.13958	2023	Y	PMC10577548		Inhibition of abnormal C/EBPβ/α-Syn signaling pathway through activation of Nrf2 ameliorates Parkinson's disease-like pathology.
+2022-2023	10.1186/s12859-021-04540-7	2022	Y	PMC8812003		RNA secondary structure prediction with convolutional neural networks.
+2022-2023	10.1007/s00702-023-02604-x	2023	N			Genes critical for development and differentiation of dopaminergic neurons are downregulated in Parkinson's disease.
+2022-2023	10.1016/j.redox.2022.102430	2022	Y	PMC9396399		CircSV2b participates in oxidative stress regulation through miR-5107-5p-Foxk1-Akt1 axis in Parkinson's disease.
+2022-2023	10.1002/wrna.1714	2022	Y	PMC9539567		Deep structural insights into RNA-binding disordered protein regions.
+2022-2023	10.1261/rna.079678.123	2023	Y	PMC10573300		Structure and ion-dependent folding of k-junctions.
+2022-2023	10.1097/icb.0000000000001153	2023	N			RARE CASE OF ABIOTROPHIA DEFECTIVA BLEB-ASSOCIATED ENDOPHTHALMITIS.
+2022-2023	10.3390/ijms231911050	2022	Y	PMC9570297		Variant-Specific Analysis Reveals a Novel Long-Range RNA-RNA Interaction in SARS-CoV-2 Orf1a.
+2022-2023	10.1002/2211-5463.13400	2022	Y	PMC9157412		Picornavirus translation strategies.
+2022-2023	10.3390/life12020203	2022	Y	PMC8880406		Promising Assays for Examining a Putative Role of Ribosomal Heterogeneity in COVID-19 Susceptibility and Severity.
+2022-2023	10.1016/j.jchemneu.2023.102236	2023	N			Non-coding RNAs as key players in the neurodegenerative diseases: Multi-platform strategies and approaches for exploring the Genome's dark matter.
+2022-2023	10.3390/v14122615	2022	Y	PMC9780821		Novel 3' Proximal Replication Elements in Umbravirus Genomes.
+2022-2023	10.1093/jxb/erac322	2023	N			Keeping up with the miRNAs: current paradigms of the biogenesis pathway.
+2022-2023	10.1093/bib/bbab540	2022	Y	PMC8790951		Protein-RNA interaction prediction with deep learning: structure matters.
+2022-2023	10.1073/pnas.2213117119	2022	Y	PMC9860313		Discovery of small molecules that target a tertiary-structured RNA.
+2022-2023	10.3389/fmicb.2022.866187	2022	Y	PMC8971849		Refining Mitochondrial Intron Classification With ERPIN: Identification Based on Conservation of Sequence Plus Secondary Structure Motifs.
+2022-2023	10.1016/j.jmb.2022.167585	2022	N	PMC9474592		Regulation of Gene Expression Through Effector-dependent Conformational Switching by Cobalamin Riboswitches.
+2022-2023	10.1007/978-1-0716-2380-0_17	2022	N			Large-Scale Analysis of RNA-Protein Interactions for Functional RNA Motif Discovery Using FOREST.
+2022-2023	10.3390/v14092007	2022	Y	PMC9503155		Cell Compartment-Specific Folding of Ty1 Long Terminal Repeat Retrotransposon RNA Genome.
+2022-2023	10.3390/ijms232012503	2022	Y	PMC9603980		Different RNA Elements Control Viral Protein Synthesis in Polerovirus Isolates Evolved in Separate Geographical Regions.
+2022-2023	10.1016/j.jmb.2023.168259	2023	N	PMC10543557		An Evolutionarily Conserved Strategy for Ribosome Binding and Host Translation Inhibition by β-coronavirus Non-structural Protein 1.
+2022-2023	10.3390/biom13050866	2023	Y	PMC10216711		Emerging Quantitative Biochemical, Structural, and Biophysical Methods for Studying Ribosome and Protein-RNA Complex Assembly.
+2022-2023	10.1007/978-1-0716-2413-5_16	2022	N	PMC9426256		Toeprint Assays for Detecting RNA Structure and Protein-RNA Interactions.
+2022-2023	10.1016/j.jmb.2023.168070	2023	N	PMC10152882		Context-dependence of T-loop Mediated Long-range RNA Tertiary Interactions.
+2022-2023	10.1021/acs.accounts.3c00471	2023	Y	PMC10666283		Chemical Expansion of the Methyltransferase Reaction: Tools for DNA Labeling and Epigenome Analysis.
+2022-2023	10.1080/14712598.2022.2121646	2022	N			Advancements in ocular gene therapy delivery: vectors and subretinal, intravitreal, and suprachoroidal techniques.
+2022-2023	10.1093/jas/skac365	2023	N	PMC9833037		Exploring differentially expressed genes in hypothalamic, pars tuberalis and pineal gland transcriptomes in different sexual behavior phenotypes in rams using RNA-Seq.
+2022-2023	10.3390/v15040971	2023	Y	PMC10141212		Conserved Sequences in the 5' and 3' Untranslated Regions of Jingmenvirus Group Representatives.
+2022-2023	10.1128/jvi.01736-21	2022	N	PMC9006961		Identification of Novel 5' and 3' Translation Enhancers in Umbravirus-Like Coat Protein-Deficient RNA Replicons.
+2022-2023	10.1016/j.celrep.2021.110208	2022	Y	PMC8844886	GSE116470	Subcellular and regional localization of mRNA translation in midbrain dopamine neurons.
+2022-2023	10.3389/fopht.2023.1116838	2023	Y	PMC10327885		miR-92a and integrin expression in fibrovascular membranes in proliferative diabetic retinopathy.
+2022-2023	10.1080/15476286.2023.2247247	2023	Y	PMC10478742		Shortened CRISPR-Cas9 arrays enable multiplexed gene targeting in bacteria from a smaller DNA footprint.
+2022-2023	10.3390/ijms23179709	2022	Y	PMC9456389		Structural Characteristics of the 5'-Terminal Region of Mouse p53 mRNA and Identification of Proteins That Bind to This mRNA Region.
+2022-2023	10.3390/biomedicines11092483	2023	Y	PMC10526147		Purified Serum IgG from a Patient with Anti-IgLON5 Antibody Cause Long-Term Movement Disorders with Impaired Dopaminergic Pathways in Mice.
+2022-2023	10.3390/v14020322	2022	Y	PMC8878378		Secondary Structure of Subgenomic RNA M of SARS-CoV-2.
+2022-2023	10.1016/j.curtheres.2023.100718	2023	Y	PMC10630595		Evaluation of Rosuvastatin Therapy on <i>SIRT1</i> Gene Expression in Patients with Multiple Sclerosis: An Uncontrolled Clinical Trial.
+2022-2023	10.1261/rna.078967.121	2022	Y	PMC8925976		T-hairpin structure found in the RNA element involved in piRNA biogenesis.
+2022-2023	10.1016/j.molcel.2022.09.036	2022	Y	PMC9636002	SRP033205	Alternative cleavage and polyadenylation generates downstream uncapped RNA isoforms with translation potential.
+2022-2023	10.3389/fcell.2022.1078927	2022	Y	PMC9768605	GSE171581	A region-dependent allele-biased expression of Dopa decarboxylase in mouse brain.
+2022-2023	10.1128/jb.00613-21	2022	N	PMC8923229		Expression of the DeaD RNA Helicase Is Regulated at Multiple Levels through Its Long mRNA 5' Untranslated Region.
+2022-2023	10.1515/tnsci-2022-0237	2022	Y	PMC9438968	PRJNA756542	Single-cell analysis of gene expression in the substantia nigra pars compacta of a pesticide-induced mouse model of Parkinson's disease.
+2022-2023	10.1016/j.compbiomed.2023.106801	2023	N			Single-cell transcriptomics reveals the interaction between peripheral CD4<sup>+</sup> CTLs and mesencephalic endothelial cells mediated by IFNG in Parkinson's disease.
+2022-2023	10.3389/fmolb.2022.871499	2022	Y	PMC9061996		Targeting the N-Terminus Domain of the Coronavirus Nucleocapsid Protein Induces Abnormal Oligomerization via Allosteric Modulation.
+2022-2023	10.1080/15476286.2022.2092351	2022	Y	PMC9584556		Evidence for selection on SARS-CoV-2 RNA translation revealed by the evolutionary dynamics of mutations in UTRs and CDSs.
+2022-2023	10.1073/pnas.2212196119	2022	Y	PMC9546618		Discovery of prolactin-like in lamprey: Role in osmoregulation and new insight into the evolution of the growth hormone/prolactin family.
+2022-2023	10.1523/jneurosci.0930-22.2023	2023	Y	PMC10573758		Contributions of the Sodium Leak Channel NALCN to Pacemaking of Medial Ventral Tegmental Area and Substantia Nigra Dopaminergic Neurons.
+2022-2023	10.1016/j.jchemneu.2022.102191	2023	N			Amino acid transporter Asc-1 (SLC7A10) expression is altered in basal ganglia in experimental Parkinsonism and L-dopa-induced dyskinesia model mice.
+2022-2023	10.1002/jnr.25094	2022	N			Novel insights into the role of circular RNAs in Parkinson disease: An emerging renaissance in the management of neurodegenerative diseases.
+2022-2023	10.3390/ijms23179739	2022	Y	PMC9456372		Post-COVID-19 Parkinsonism and Parkinson's Disease Pathogenesis: The Exosomal Cargo Hypothesis.
+2022-2023	10.1097/qai.0000000000003171	2023	Y	PMC10069752		Tenofovir Concentration Is Not Enough in Intraocular Tissues of Patients With HIV infection.
+2022-2023	10.1177/11769343221103887	2022	Y	PMC9185011		Investigating the Genomic Background of CRISPR-Cas Genomes for CRISPR-Based Antimicrobials.
+2022-2023	10.1080/15548627.2023.2196889	2023	N	PMC10392753		<i>CircEPS15</i>, as a sponge of <i>MIR24-3p</i> ameliorates neuronal damage in Parkinson disease through boosting PINK1-PRKN-mediated mitophagy.
+2022-2023	10.1523/eneuro.0393-21.2021	2022	Y	PMC8805200		Mechanism of miR-132-3p Promoting Neuroinflammation and Dopaminergic Neurodegeneration in Parkinson's Disease.
+2022-2023	10.1016/j.jhazmat.2022.128459	2022	N			Brain single-nucleus transcriptomics highlights that polystyrene nanoplastics potentially induce Parkinson's disease-like neurodegeneration by causing energy metabolism disorders in mice.
+2022-2023	10.1007/s00702-023-02687-6	2024	Y	PMC11192832		A sporadic Parkinson's disease model via silencing of the ubiquitin-proteasome/E3 ligase component, SKP1A.
+2022-2023	10.1002/jcp.30807	2022	N			Favorable effect of rivaroxaban against vascular dysfunction in diabetic mice by inhibiting NLRP3 inflammasome activation.
+2022-2023	10.1182/bloodadvances.2022007444	2022	Y	PMC9023084		Platelet activation by SARS-CoV-2 implicates the release of active tissue factor by infected cells.
+2023-2024	10.1002/cpz1.70038	2024	N			DMS-MapSeq Analysis of Antisense Oligonucleotide Binding to lncRNA PANDA.
+2023-2024	10.1261/rna.079926.123	2024	Y	PMC11648929	GSE274121	Template switching enables chemical probing of native RNA structures.
+2023-2024	10.1016/j.molcel.2024.02.005	2024	N			Structural atlas of human primary microRNAs generated by SHAPE-MaP.
+2023-2024	10.1038/s41592-024-02335-1	2024	Y	PMC11399106	GSE266070	A systematic search for RNA structural switches across the human transcriptome.
+2023-2024	10.1007/978-1-0716-3519-3_4	2024	N			RNA Secondary Structure Modeling Following the IPANEMAP Workflow.
+2023-2024	10.1093/nargab/lqae143	2024	Y	PMC11500451	PRJNA1122119	Intronic RNA secondary structural information captured for the human <i>MYC</i> pre-mRNA.
+2023-2024	10.3390/microorganisms12091794	2024	Y	PMC11434300		Chikungunya Virus RNA Secondary Structures Impact Defective Viral Genome Production.
+2023-2024	10.1038/s41596-024-00959-3	2024	N			Isoform-specific RNA structure determination using Nano-DMS-MaP.
+2023-2024	10.1007/978-1-0716-3918-4_20	2024	N			RNA Folding, Mutation, and Detection.
+2023-2024	10.1007/s44307-024-00010-2	2024	Y	PMC11740852		RNA structure: implications in viral infections and neurodegenerative diseases.
+2023-2024	10.1016/j.celrep.2024.114544	2024	N			Hfq mediates transcriptome-wide RNA structurome reprogramming under virulence-inducing conditions in a phytopathogen.
+2023-2024	10.1093/nar/gkae220	2024	Y	PMC11194067	PRJNA1048882	The RNA secondary structure of androgen receptor-FL and V7 transcripts reveals novel regulatory regions.
+2023-2024	10.1016/j.antiviral.2024.105946	2024	N			Targeting sgRNA N secondary structure as a way of inhibiting SARS-CoV-2 replication.
+2023-2024	10.1261/rna.079974.124	2024	Y	PMC11182018		A new reagent for in vivo structure probing of RNA G and U residues that improves RNA structure prediction alone and combined with DMS.
+2023-2024	10.1073/pnas.2403063121	2024	Y	PMC11228461		An RNA pseudoknot mediates toxin translation and antitoxin inhibition.
+2023-2024	10.1093/nar/gkae404	2024	Y	PMC11317150	PRJEB71404	Recruitment of multi-segment genomic RNAs by Bluetongue virus requires a preformed RNA network.
+2023-2024	10.1371/journal.pgen.1011100	2024	Y	PMC11421799	GSE243809	RluA is the major mRNA pseudouridine synthase in Escherichia coli.
+2023-2024	10.1126/science.adm9238	2024	N	PMC11510358		The human mitochondrial mRNA structurome reveals mechanisms of gene expression.
+2023-2024	10.1128/mbio.02621-23	2024	Y	PMC10865803		Specific RNA structures in the 5' untranslated region of the human cytomegalovirus major immediate early transcript are critical for efficient virus replication.
+2023-2024	10.1021/acschembio.4c00538	2024	N	PMC11683664		Disulfide Tethering to Map Small Molecule Binding Sites Transcriptome-wide.
+2023-2024	10.1089/cmb.2024.0519	2024	N			Phylogenetic and Chemical Probing Information as Soft Constraints in RNA Secondary Structure Prediction.
+2023-2024	10.1093/nar/gkae348	2024	Y	PMC11223795		SHAPEwarp-web: sequence-agnostic search for structurally homologous RNA regions across databases of chemical probing data.
+2023-2024	10.1016/j.xpro.2024.103471	2024	Y	PMC11656088	GSE219083	Protocol for mapping RNA G-quadruplex for chromatin-bound RNA using d-rG4-seq.
+2023-2024	10.3390/v16030421	2024	Y	PMC10974462		Structural Impact of the Interaction of the Influenza A Virus Nucleoprotein with Genomic RNA Segments.
+2023-2024	10.1261/rna.079767.123	2024	Y	PMC11251524		Magnesium ions mitigate metastable states in the regulatory landscape of mRNA elements.
+2023-2024	10.7554/elife.98540	2024	Y	PMC11614387	GSE271825	RNA tertiary structure and conformational dynamics revealed by BASH MaP.
+2023-2024	10.1186/s13059-024-03186-x	2024	Y	PMC10885604	PRJNA1049869	Structured 3' UTRs destabilize mRNAs in plants.
+2023-2024	10.1016/j.jbc.2024.107317	2024	Y	PMC11145556		Probing RNA structure and dynamics using nanopore and next generation sequencing.
+2023-2024	10.1016/j.sbi.2024.102877	2024	N	PMC11392614		Visualizing RNA structure ensembles by single-molecule correlated chemical probing.
+2023-2024	10.1261/rna.079837.123	2024	Y	PMC11251518		A novel reporter for helicase activity in translation uncovers DDX3X interactions.
+2023-2024	10.1093/nar/gkad1159	2024	Y	PMC10810284	PRJNA1004643	Visualizing a two-state conformational ensemble in stem-loop 3 of the transcriptional regulator 7SK RNA.
+2023-2024	10.3390/v16060861	2024	Y	PMC11209300		A 44-Nucleotide Region in the Chikungunya Virus 3' UTR Dictates Viral Fitness in Disparate Host Cells.
+2023-2024	10.1007/978-1-0716-4027-2_7	2024	N			Structural Analysis of the Hepatitis B Virus RNA Encapsidation Signal ε by Selective 2'-Hydroxyl Acylation Analyzed by Primer Extension (SHAPE).
+2023-2024	10.1016/j.sbi.2024.102933	2024	N			The role of RNA structure in 3' end processing in eukaryotes.
+2023-2024	10.1016/j.sbi.2024.102908	2024	N			Structural and biophysical dissection of RNA conformational ensembles.
+2023-2024	10.1038/s41592-023-02128-y	2024	Y	PMC10927541	PRJNA946372	RNA structure profiling at single-cell resolution reveals new determinants of cell identity.
+2023-2024	10.1038/s41598-024-75208-4	2024	Y	PMC11535051		KRAS G12C mutation in NSCLC in a small genetic center: insights into sotorasib therapy response potential.
+2023-2024	10.1007/s13205-024-04057-9	2024	N	PMC11344749		Computational exploration of protein structure dynamics and RNA structural consequences of &lt;i&gt;PKD1&lt;/i&gt; missense variants: implications in ADPKD pathogenesis.
+2023-2024	10.1093/nar/gkae356	2024	Y	PMC11223799		SimRNAweb v2.0: a web server for RNA folding simulations and 3D structure modeling, with optional restraints and enhanced analysis of folding trajectories.
+2023-2024	10.1111/febs.17368	2025	N			A guide to RNA structure analysis and RNA-targeting methods.
+2023-2024	10.1186/s12859-024-05704-x	2024	Y	PMC11264973	GSE145805	AStruct: detection of allele-specific RNA secondary structure in structuromic probing data.
+2023-2024	10.3390/ncrna10060055	2024	Y	PMC11587127		Comparison of Three Computational Tools for the Prediction of RNA Tertiary Structures.
+2023-2024	10.4310/cis.241021213225	2024	N	PMC11545564		smFRET-assisted RNA structure prediction.
+2023-2024	10.1371/journal.pbio.3002948	2024	Y	PMC11706538	GSE165672	The conserved noncoding RNA ModT coordinates growth and virulence in Clostridioides difficile.
+2023-2024	10.1371/journal.pone.0297105	2024	Y	PMC10868834		De novo prediction of RNA 3D structures with deep generative models.
+2023-2024	10.1021/acs.biochem.4c00343	2024	N	PMC11489888		Fingerprinting Tertiary Structure in Complex RNAs Using Single-Molecule Correlated Chemical Probing.
+2023-2024	10.3390/molecules29245978	2024	Y	PMC11676819		RNA Stability: A Review of the Role of Structural Features and Environmental Conditions.
+2023-2024	10.1002/anie.202417370	2025	Y	PMC11773311		Selective Nonenzymatic Formation of Biologically Common RNA Hairpins.
+2023-2024	10.1093/nar/gkae089	2024	Y	PMC10954457	GSE182552	RNAvigate: efficient exploration of RNA chemical probing datasets.
+2023-2024	10.1261/rna.080013.124	2024	Y	PMC11331406		Modeling the structure and DAP5-binding site of the FGF-9 5'-UTR RNA utilized in cap-independent translation.
+2023-2024	10.3390/ijms26010110	2024	Y	PMC11719923		RNA Structure: Past, Future, and Gene Therapy Applications.
+2023-2024	10.1093/nar/gkae289	2024	N			Towards parsimonious generative modeling of RNA families.
+2023-2024	10.1002/wrna.1869	2024	N			Synthetic antibodies for accelerated RNA crystallography.
+2023-2024	10.3390/ijms26010236	2024	Y	PMC11720287		Localization of Melanocortin 1 Receptor in the Substantia Nigra.
+2023-2024	10.1093/nar/gkae185	2024	Y	PMC11162794	GSE223117	Conserved intronic secondary structures with concealed branch sites regulate alternative splicing of poison exons.
+2023-2024	10.1016/j.omtn.2024.102278	2024	Y	PMC11364014		Evaluation of the effect of RNA secondary structure on Cas13d-mediated target RNA cleavage.
+2023-2024	10.1038/s41467-024-52235-3	2024	Y	PMC11408619	PRJNA1077397	Mechanistic analysis of Riboswitch Ligand interactions provides insights into pharmacological control over gene expression.
+2023-2024	10.1093/nar/gkad1120	2024	Y	PMC10810187		Co-transcriptional folding of the glmS ribozyme enables a rapid response to metabolite.
+2023-2024	10.1007/978-1-0716-3565-0_7	2024	N			Investigation of sRNA-mRNA Interactions in Bacillus subtilis In Vivo.
+2023-2024	10.1080/15257770.2024.2421307	2025	N			Catalytic cleavage of an RNA substrate that bypasses the reorganization of its secondary structure during substrate recognition by a &lt;i&gt;trans&lt;/i&gt;-acting VS ribozyme.
+2023-2024	10.1038/s41467-024-45517-3	2024	Y	PMC10881587	GSE146407	Decryption of sequence, structure, and functional features of SINE repeat elements in SINEUP non-coding RNA-mediated post-transcriptional gene regulation.
+2023-2024	10.3389/fimmu.2024.1414121	2024	Y	PMC11550977	GSE149614	Single-cell and bulk transcriptomic datasets enable the development of prognostic models based on dynamic changes in the tumor immune microenvironment in patients with hepatocellular carcinoma and portal vein tumor thrombus.
+2023-2024	10.1042/bsr20240139	2024	Y	PMC11499389		The role of structure in regulatory RNA elements.
+2023-2024	10.1093/nar/gkae144	2024	Y	PMC11014237		Conserved structures and dynamics in 5'-proximal regions of Betacoronavirus RNA genomes.
+2023-2024	10.1002/marc.202400606	2024	Y	PMC11661666		Atomistic Simulations Reveal Crucial Role of Metal Ions for Ligand Binding in Guanidine-I Riboswitch.
+2023-2024	10.1093/narmme/ugae002	2024	Y	PMC10840451		A compact regulatory RNA element in mouse Hsp70 mRNA.
+2023-2024	10.1134/s0006297924120137	2024	N			Role of Non-Canonical Stacking Interactions of Heterocyclic RNA Bases in Ribosome Function.
+2023-2024	10.1007/s00277-024-05698-9	2024	N			Analysis of mutation profiles in extranodal NK/T-cell lymphoma: clinical and prognostic correlations.
+2023-2024	10.1261/rna.079713.123	2024	Y	PMC10870365		Dissection of protein and RNA regions required for SPEN binding to XIST A-repeat RNA.
+2023-2024	10.1016/j.jbc.2024.108015	2025	Y	PMC11728972		mRNA vaccine sequence and structure design and optimization: Advances and challenges.
+2023-2024	10.1093/narmme/ugae024	2024	Y	PMC11667243		Triplex H-DNA structure: the long and winding road from the discovery to its role in human disease.
+2023-2024	10.3390/ijms251910682	2024	Y	PMC11477058		Riboswitch Mechanisms for Regulation of P1 Helix Stability.
+2023-2024	10.1042/bst20231304	2024	Y	PMC11555692		Phase separation and viral factories: unveiling the physical processes supporting RNA packaging in dsRNA viruses.
+2023-2024	10.1128/jvi.01160-24	2024	N	PMC11494990		Translation of HIV-1 unspliced RNA is regulated by 5' untranslated region structure.
+2023-2024	10.1261/rna.079977.124	2024	Y	PMC11019749		Structural and functional effects of inosine modification in mRNA.
+2023-2024	10.1016/j.molcel.2024.10.015	2024	N			A functional connection between the Microprocessor and a variant NEXT complex.
+2023-2024	10.3389/fimmu.2024.1247382	2024	Y	PMC10853448	GSE22459	Integrated analysis reveals crosstalk between pyroptosis and immune regulation in renal fibrosis.
+2023-2024	10.1093/nar/gkae349	2024	Y	PMC11194097		Structure of an internal loop motif with three consecutive U•U mismatches from stem-loop 1 in the 3'-UTR of the SARS-CoV-2 genomic RNA.
+2023-2024	10.1016/j.jmb.2024.168767	2024	N	PMC11563921		Structure of Essential RNA Regulatory Elements in the West Nile Virus 3'-Terminal Stem Loop.
+2023-2024	10.1093/nar/gkad1034	2024	Y	PMC10783525	GSE230495	An intronic RNA element modulates Factor VIII exon-16 splicing.
+2023-2024	10.1016/j.jbc.2024.107547	2024	Y	PMC11342760		RNA thermometers are widespread upstream of ABC transporter genes in bacteria.
+2023-2024	10.1002/advs.202307541	2024	Y	PMC11095206		ACE mRNA (Additional Chimeric Element incorporated IVT mRNA) for Enhancing Protein Expression by Modulating Immunogenicity.
+2023-2024	10.1016/j.bpc.2024.107307	2024	N			Introns with branchpoint-distant 3' splice sites: Splicing mechanism and regulatory roles.
+2023-2024	10.3390/v16091506	2024	Y	PMC11437399		Putting a Kink in HIV-1 Particle Infectivity: Rocaglamide Inhibits HIV-1 Replication by Altering Gag-Genomic RNA Interaction.
+2023-2024	10.1128/spectrum.00450-24	2024	Y	PMC11218506		Characterization of the dual regulation by a c-di-GMP riboswitch Bc1 with a long expression platform from &lt;i&gt;Bacillus thuringiensis&lt;/i&gt;.
+2023-2024	10.1016/j.jmb.2024.168833	2024	N			Cryo-EM Structure of raiA ncRNA From Clostridium Reveals a New RNA 3D Fold.
+2023-2024	10.1016/j.jbc.2024.107318	2024	Y	PMC11143913		The discovery of a catalytic RNA within RNase P and its legacy.
+2023-2024	10.1016/j.mad.2024.111942	2024	N			Understanding the (epi)genetic dysregulation in Parkinson's disease through an integrative brain competitive endogenous RNA network.
+2023-2024	10.1007/s10753-024-02125-z	2025	N			MicroRNAs Modulating Neuroinflammation in Parkinson's disease.
+2023-2024	10.1073/pnas.2312080121	2024	Y	PMC11260092	GSE228446	The West Nile virus genome harbors essential riboregulatory elements with conserved and host-specific functional roles.
+2023-2024	10.1080/17460441.2024.2313455	2024	N			Recent applications of artificial intelligence in RNA-targeted small molecule drug discovery.
+2023-2024	10.1016/j.jmb.2024.168552	2024	N	PMC11377173		RNA3DB: A structurally-dissimilar dataset split for training and benchmarking deep learning models for RNA structure prediction.
+2023-2024	10.1016/j.molcel.2024.07.034	2024	N			Rho-dependent transcriptional switches regulate the bacterial response to cold shock.
+2023-2024	10.7554/elife.90948	2024	Y	PMC11161173	PRJNA995387	Enhancing CRISPR prime editing by reducing misfolded pegRNA interactions.
+2023-2024	10.1093/bfgp/elac050	2024	N	PMC10799312		Experimental and computational methods for studying the dynamics of RNA-RNA interactions in SARS-COV2 genomes.
+2023-2024	10.1007/978-1-0716-3565-0_20	2024	N			sRNA Structural Modeling Based on NMR Data.
+2023-2024	10.3389/fmicb.2024.1362067	2024	Y	PMC10926079	PRJNA714002	Probing RNA structural landscapes across <i>Candida</i> yeast genomes.
+2023-2024	10.1097/qai.0000000000003426	2024	N			The Association of Intraocular Efavirenz Concentrations and HIV-1 Viral Load Among Persons With HIV.
+2023-2024	10.1261/rna.079796.123	2024	Y	PMC11098461		High-resolution RNA tertiary structures in Zika virus stem-loop A for the development of inhibitory small molecules.
+2023-2024	10.1261/rna.079768.123	2024	Y	PMC10870377		Diversity and modularity of tyrosine-accepting tRNA-like structures.
+2023-2024	10.1016/j.celrep.2024.114485	2024	N			A type III-Dv CRISPR-Cas system is controlled by the transcription factor RpaB and interacts with the DEAD-box RNA helicase CrhR.
+2023-2024	10.3855/jidc.20136	2024	N			Complete Genome Sequencing, Annotation, and Mutational Profiling of the Novel Clade I Human Mpox Virus, Kamituga Strain.
+2023-2024	10.1016/j.neuropharm.2024.110227	2025	N	PMC12641275		Effects of genetic knockdown of the serotonin transporter on established L-DOPA-induced dyskinesia and gene expression in hemiparkinsonian rats.
+2023-2024	10.1016/j.molcel.2024.04.015	2024	N	PMC11505738		G-quadruplex folding in Xist RNA antagonizes PRC2 activity for stepwise regulation of X chromosome inactivation.
+2023-2024	10.1007/s11033-024-09587-2	2024	N			Orexin B protects dopaminergic neurons from 1-Methyl-4-phenyl-1,2,3,6-tetrahydropyridine-induced neurotoxicity associated with reduced extracellular signal-regulated kinase phosphorylation.
+2023-2024	10.1007/s12035-024-04261-x	2025	N			Mechanistic Evaluation of miRNAs and Their Targeted Genes in the Pathogenesis and Therapeutics of Parkinson's Disease.
+2023-2024	10.1007/978-1-0716-3519-3_15	2024	N			The Multiscale Ernwin/SPQR RNA Structure Prediction Pipeline.
+2023-2024	10.3390/genes15020176	2024	Y	PMC10887915		Research Progress of Group II Intron Splicing Factors in Land Plant Mitochondria.
+2023-2024	10.1073/pnas.2320493121	2024	Y	PMC10927501	PRJNA1039878	Tertiary folds of the SL5 RNA from the 5' proximal region of SARS-CoV-2 and related coronaviruses.
+2023-2024	10.3390/microorganisms12020239	2024	Y	PMC10893285		Untranslated Regions of a Segmented Kindia Tick Virus Genome Are Highly Conserved and Contain Multiple Regulatory Elements for Viral Replication.
+2023-2024	10.1038/s41531-024-00715-0	2024	Y	PMC11102563	PRJNA1054046	Upregulated ECM genes and increased synaptic activity in Parkinson's human DA neurons with PINK1/ PRKN mutations.
+2023-2024	10.3390/v16020205	2024	Y	PMC10893052		Translational Control of Alphavirus-Host Interactions: Implications in Viral Evolution, Tropism and Antiviral Response.
+2023-2024	10.1016/j.jbc.2024.105730	2024	Y	PMC10907184		Flipping the script: Understanding riboswitches from an alternative perspective.
+2023-2024	10.1161/atvbaha.123.320157	2024	N			TF-FVIIa PAR2-β-Arrestin Signaling Sustains Organ Dysfunction in Coxsackievirus B3 Infection of Mice.
+2023-2024	10.1093/brain/awad260	2024	N			Aggregation and beyond: alpha-synuclein-based biomarkers in synucleinopathies.
+2023-2024	10.1016/j.ajhg.2024.08.016	2024	N	PMC11480803		Alu insertion-mediated dsRNA structure formation with pre-existing Alu elements as a disease-causing mechanism.
+2023-2024	10.1038/s41531-023-00620-y	2024	Y	PMC10764951	GSE246112	Transcriptomic profiling of early synucleinopathy in rats induced with preformed fibrils.
+2023-2024	10.1186/s12974-024-03210-8	2024	Y	PMC11368013	GSE264525	Suppression of the JAK/STAT pathway inhibits neuroinflammation in the line 61-PFF mouse model of Parkinson's disease.
+2023-2024	10.1016/j.neuint.2024.105766	2024	N			Lateral habenula 5-HT&lt;sub&gt;1B&lt;/sub&gt; receptors are involved in regulation of anxiety-like behaviors in parkinsonian rats.
+2023-2024	10.1016/j.molcel.2024.08.032	2024	N	PMC11490368		Alternative translation initiation produces synaptic organizer proteoforms with distinct localization and functions.
+2023-2024	10.1182/blood.2023021149	2024	N	PMC10940062		Nucleic acid sensing promotes inflammatory monocyte migration through biased coagulation factor VIIa signaling.
+2023-2024	10.1016/j.xops.2024.100539	2024	Y	PMC11365369		Liquid Biopsy for Proliferative Diabetic Retinopathy: Single-Cell Transcriptomics of Human Vitreous Reveals Inflammatory T-Cell Signature.
+2024-2025	10.1021/acschembio.5c00548	2025	N	PMC12616407		SHAPE-Based Chemical Probes for Studying preQ&lt;sub&gt;1&lt;/sub&gt;-RNA Interactions in Living Bacteria.
+2024-2025	10.1016/bs.mie.2025.10.008	2025	N			RNA structure analyzed by chemical probing and mutational profiling with sequencing (MaPseq).
+2024-2025	10.1016/j.xplc.2025.101680	2026	Y	PMC13084106		Unfolding of RNA secondary structure impairs RNA stability to fine-tune phosphate starvation responses in rice roots.
+2024-2025	10.1002/cpz1.70209	2025	Y	PMC12447860		Profiling RNA G-Quadruplexes In vivo.
+2024-2025	10.1038/s41467-025-60425-w	2025	Y	PMC12126503	PRJNA992462	Sequential structure probing of cotranscriptional RNA folding intermediates.
+2024-2025	10.3390/plants14050780	2025	Y	PMC11901513	PRJNA1175151	DNA Damaging Agents Induce RNA Structural and Transcriptional Changes for Genes Associated with Redox Homeostasis in &lt;i&gt;Arabidopsis thaliana&lt;/i&gt;.
+2024-2025	10.1093/nar/gkaf290	2025	Y	PMC12000872	PRJNA1182414	Investigating the interplay between RNA structural dynamics and RNA chemical probing experiments.
+2024-2025	10.1093/nar/gkae1117	2025	Y	PMC11701657		RASP v2.0: an updated atlas for RNA structure probing data.
+2024-2025	10.1016/j.ijbiomac.2025.139896	2025	N			Identification of G-quadruplex nucleic acid structures by high-throughput sequencing: A review.
+2024-2025	10.1093/nargab/lqaf028	2025	Y	PMC11934922		IPANEMAP Suite: a pipeline for probing-informed RNA structure modeling.
+2024-2025	10.1016/j.molcel.2025.03.022	2025	N			Tracking the folding of RNA at its birth.
+2024-2025	10.1016/j.jbc.2025.108418	2025	Y	PMC12018109	PRJNA1203256	Stress-induced changes in endogenous TP53 mRNA 5' regulatory region.
+2024-2025	10.1111/mmi.70039	2026	Y	PMC12871923		The FsrA-Mediated Iron-Sparing Response Regulates the Biosynthesis of the Epipeptide EPE in Bacillus subtilis.
+2024-2025	10.1021/acs.jcim.5c00812	2025	N			A Multiscale Study to Characterize SHAPE Probe/RNA Molecules Prereactive Complex and Its Role in Initiating the SHAPE Reaction.
+2024-2025	10.1007/978-1-0716-4079-1_12	2025	N			SHAPE Probing to Screen Computationally Designed RNA.
+2024-2025	10.1093/nar/gkaf433	2025	Y	PMC12093144	GSE283716	Structural determinants of inverted Alu-mediated backsplicing revealed by -MaP and -JuMP.
+2024-2025	10.1016/j.jbc.2025.110468	2025	Y	PMC12357095		The impact of RNA chemical probing reagents on RNA-binding proteins.
+2024-2025	10.1021/jacs.5c11898	2025	Y	PMC12532193		Covalent Probes Reveal Small-Molecule Binding Pockets in Structured RNA and Enable Bioactive Compound Design.
+2024-2025	10.1021/acs.biochem.4c00468	2025	N			Influence of Magnesium Ions and Crowding Agents on Structure and Stability of RNA Aptamers.
+2024-2025	10.1016/j.jbc.2025.111119	2026	Y	PMC12857270		The RNA thermometer motif ROSE-G regulates ABC transporter gene expression in bacteria.
+2024-2025	10.1016/j.cell.2025.09.014	2025	N			Pan-modification profiling facilitates a cross-evolutionary dissection of the thermoregulated ribosomal epitranscriptome.
+2024-2025	10.1093/nar/gkaf820	2025	Y	PMC12407096	GSE273602	TDP-43 binds to RNA G-quadruplex structure and regulates mRNA stability and translation.
+2024-2025	10.1002/advs.202506314	2025	Y	PMC12520504		diPaRIS: Dynamic and Interpretable Protein-RNA Interactions Prediction With U-Shaped Network and Novel Structure Encoding.
+2024-2025	10.1093/nar/gkaf283	2025	Y	PMC11992675		Tailoring and reversing m6A editing with sequential RNA bioorthogonal chemistry.
+2024-2025	10.3390/biology14040432	2025	Y	PMC12024694		RNA Binding to CCRRM of PABPN1 Induces Conformation Change.
+2024-2025	10.7554/elife.103923	2025	Y	PMC12221299	GSE271098	Exploiting functional regions in the viral RNA genome as druggable entities.
+2024-2025	10.1093/nargab/lqaf001	2025	Y	PMC11780854		Consistent features observed in structural probing data of eukaryotic RNAs.
+2024-2025	10.1002/anie.202517243	2026	Y	PMC12865241		Site-Selective Ligand Selection by Mutational Profiling for Covalent RNA Targeting.
+2024-2025	10.1021/jacsau.5c01280	2025	Y	PMC12728637	GSE286293	A Small Cationic Probe for Accurate, Punctate Discovery of RNA Tertiary Structure.
+2024-2025	10.1093/nar/gkaf701	2025	Y	PMC12311782	PRJNA1165154	SEISMICgraph: a web-based tool for RNA structure data visualization.
+2024-2025	10.1093/nargab/lqaf171	2025	Y	PMC12684387		A method for estimating energy parameters of RNAs by differentiating base-pairing probabilities.
+2024-2025	10.1016/j.stem.2025.11.001	2025	N	PMC12826796		Space-associated stem cell hallmarks of aging and resilience in astronauts.
+2024-2025	10.1016/j.jbc.2025.110686	2025	Y	PMC12605026	GSE229536	Cryo-EM study and in vivo chemical mapping of the Methanosarcina acetivorans ribosome and its dimerization via a repurposed enzyme and translation factor.
+2024-2025	10.1080/15476286.2025.2570043	2025	Y	PMC12520072	GSE63569	Precursor RNA structural patterns at SF3B1 mutation sensitive cryptic 3' splice sites.
+2024-2025	10.1021/jacs.5c13970	2025	N			An Unexpected Adenosine-Alkylating Ribozyme Emerged by Target Site Relocation during in Vitro Selection.
+2024-2025	10.1128/jvi.02167-24	2025	Y	PMC7617654		An intra-family conserved high-order RNA structure within the M ORF is important for arterivirus subgenomic RNA accumulation and infectious virus production.
+2024-2025	10.1186/s13036-025-00601-0	2025	Y	PMC12822233		Universal and quantitative detection of double-stranded RNAs as a signature of pan-virus infections using a luciferase-based biosensor.
+2024-2025	10.21873/cgp.20552	2025	Y	PMC12577606		Investigating the Roles of MAPKs as Precision Oncology Targets: A Multi-cancer Expression and Survival Study.
+2024-2025	10.1039/d5cb00078e	2026	Y	PMC12580927		RNA-binding fluorogenic probes: G-clamp conjugated with a thiazole orange derivative for screening RNA-binding small molecules.
+2024-2025	10.1038/s41598-025-12992-7	2025	Y	PMC12343946		Comparative analysis of library preparation approaches for FFPE gene expression profiling and related recommendations.
+2024-2025	10.1038/s41467-025-63297-2	2025	Y	PMC12475128	GSE279203	A conserved long-range RNA interaction in SARS-CoV-2 recruits ADAR1 to enhance virus proliferation.
+2024-2025	10.1016/j.jbc.2025.110282	2025	Y	PMC12268651		Regulatory helix plays a key role in genetic ON-OFF switching for the 2'-deoxyguanosine-sensing mRNA element.
+2024-2025	10.3389/fimmu.2025.1727298	2025	Y	PMC12727913	GSE174554	COL8A1 as a pro-inflammatory mediator bridges immune evasion and therapy resistance in glioma.
+2024-2025	10.1016/j.csbj.2025.10.003	2025	Y	PMC12513224		When does molecular dynamics improve RNA models? Insights from CASP15 and practical guidelines.
+2024-2025	10.3389/fpls.2025.1688991	2025	Y	PMC12689509		Transcriptome-wide prediction of heat-sensitive RNA structures in &lt;i&gt;Zea mays&lt;/i&gt;.
+2024-2025	10.1128/jmbe.00139-25	2025	Y	PMC12687630		An interdisciplinary approach in teaching RNA secondary structure prediction to first-year undergraduate students using an automated deep learning RNA 3D model prediction tool.
+2024-2025	10.1038/s41467-025-66265-y	2025	Y	PMC12714719	GSE266263	Designing molecular RNA switches with Restricted Boltzmann machines.
+2024-2025	10.1038/s41598-025-02082-z	2025	Y	PMC12102362	PRJNA1134665	A comparative analysis of mRNA enrichment strategies and guidance for improving their efficiency.
+2024-2025	10.1016/j.ijbiomac.2025.149883	2026	N			MsipNet: a multi-scale representation learning framework for predicting protein-RNA interaction.
+2024-2025	10.1093/gpbjnl/qzaf127	2025	Y	PMC13197129		On the Completeness of Existing RNA Fragment Structures.
+2024-2025	10.1016/j.xpro.2025.103677	2025	Y	PMC11952794		Protocol for forming G-quadruplexes from double-stranded DNA during transcription.
+2024-2025	10.1261/rna.080414.125	2025	N			Solution structure determination and biophysical characterization studies of 7SK RNP and 7SL SRP RNAs.
+2024-2025	10.1093/nar/gkaf834	2025	Y	PMC12392093		DEAD-box helicase intrinsically disordered domains and structural dynamics of HIV-1 RNA are required to reveal DDX3X catalytic efficiency.
+2024-2025	10.1186/s13578-025-01470-2	2025	Y	PMC12492894		Challenges and opportunities in technologies and methods for lncRNA structure determination.
+2024-2025	10.1038/s41594-025-01565-x	2025	Y	PMC12350175	GSE209857	Comprehensive analysis of Saccharomyces cerevisiae intron structures in vivo.
+2024-2025	10.1038/s41416-025-03127-w	2025	Y	PMC12480914		A cancer-associated TP53 synonymous mutation induces synthesis of the p53 isoform p53/47.
+2024-2025	10.1007/s12032-025-03116-2	2025	N			Multi-omics integration reveals CYP2B6 as a central node in the molecular landscape of non-small cell lung cancer.
+2024-2025	10.1016/j.apsb.2025.12.017	2026	Y	PMC12891845		Harnessing deep learning to accelerate the development of antibodies and aptamers.
+2024-2025	10.1093/nar/gkaf477	2025	Y	PMC12153347	PRJNA1197522	Structurally distinct manganese-sensing riboswitch aptamers regulate different expression platform architectures.
+2024-2025	10.1186/s13015-025-00278-6	2025	Y	PMC12553252		RNA inverse folding can be solved in linear time for structures without isolated stacks or base pairs.
+2024-2025	10.1261/rna.080383.125	2025	Y	PMC12084888		Constructing an active chimeric pRNA ring with a stoichiometry of six and identifying 12 domains of the pRNA ring binding to the 12-subunit channel of phi29 DNA-packaging motor.
+2024-2025	10.1007/978-981-96-9428-0_5	2025	N			Prediction of Circular RNA Secondary Structures and Their Targets.
+2024-2025	10.3390/cells14050383	2025	Y	PMC11898529		The LSmAD Domain of Ataxin-2 Modulates the Structure and RNA Binding of Its Preceding LSm Domain.
+2024-2025	10.1002/wrna.70029	2025	N			Lost in Translation: When the Rules Do Not Apply.
+2024-2025	10.1016/j.biochi.2025.10.018	2026	N			Are Traditional mutant controls sufficient to identify true RNA G-quadruplex binding proteins?
+2024-2025	10.1021/acs.biochem.5c00160	2025	N			Emergent and Convergent Features in the Laboratory Evolution of Polymerase Ribozymes.
+2024-2025	10.1016/j.celrep.2025.116739	2026	Y	PMC12951691		A ribosome-bound pseudoknot in the HCV coding region stimulates viral growth by tuning viral translation.
+2024-2025	10.1016/j.csbj.2025.03.021	2025	Y	PMC11982051		Transformers in RNA structure prediction: A review.
+2024-2025	10.1261/rna.080460.125	2025	Y	PMC12360210		RNA aptamers as tools for the purification and analysis of in vivo assembled ribonucleoproteins.
+2024-2025	10.1016/j.ncrna.2025.05.010	2025	Y	PMC12173672		Computational discovery of conserved RNA structures and functional characterization of a structured lncRNA in &lt;i&gt;Leishmania braziliensis&lt;/i&gt;.
+2024-2025	10.1038/s41598-025-21072-9	2025	Y	PMC12550061		Exploring GNRA tetraloop-like motifs in nucleic acid 3D structures.
+2024-2025	10.1016/j.xplc.2025.101575	2026	Y	PMC12902235	PRJNA762705	In vivo RNA structure influences the translation and stability of plant long non-coding RNAs.
+2024-2025	10.1038/s41598-025-07041-2	2025	Y	PMC12215848		Comprehensive datasets for RNA design, machine learning, and beyond.
+2024-2025	10.1002/2211-5463.70122	2026	Y	PMC12871560		Interplay between RNA-protein interactions and RNA structures in gene regulation.
+2024-2025	10.1038/s41564-025-02047-y	2025	Y	PMC12313524	PRJNA1153987	Amino acid changes in two viral proteins drive attenuation of the yellow fever 17D vaccine.
+2024-2025	10.1038/s41598-025-20519-3	2025	Y	PMC12534491		In-cell NMR spectra of chemically unmodified RNA at physiological temperature with extended lifetime through RNase inhibitor cocktail in living human cells.
+2024-2025	10.3389/fbinf.2025.1690229	2025	Y	PMC12672545		Computational analysis of transcriptome data and mapping of functional networks in Parkinson's disease.
+2024-2025	10.1073/pnas.2504034122	2025	N	PMC12519161		CAR-SPLASH identifies nascent pre-mRNA structures implicated in kinetic coupling and alternative splicing.
+2024-2025	10.1016/j.ijbiomac.2025.149185	2026	N			Translatable circular RNAs: Mechanism, function and clinical application.
+2024-2025	10.1093/gpbjnl/qzaf078	2025	Y	PMC13198871	PRJNA1071355	Differential Evolution of CDS and UTR Non-canonical RNA G-quadruplex Structures in Eukaryotic Transcriptomes.
+2024-2025	10.1002/prot.70034	2026	N			Enhancing RNA 3D Structure Prediction: A Hybrid Approach Combining Expert Knowledge and Computational Tools in CASP16.
+2024-2025	10.1016/j.jmb.2025.169012	2025	N	PMC12353319		RNAproDB: A Webserver and Interactive Database for Analyzing Protein-RNA Interactions.
+2024-2025	10.1080/07391102.2025.2563688	2025	N			Computational identification of potential tandem pseudoknots in the 5'UTR and start codon regions of human mRNAs.
+2024-2025	10.1002/prot.26856	2026	N	PMC12354339		Enhancing RNA 3D Structure Prediction in CASP16: Integrating Physics-Based Modeling With Machine Learning for Improved Predictions.
+2024-2025	10.1016/j.jbc.2025.110172	2025	Y	PMC12205651	GSE279192	A 36-base hairpin within lncRNA DRAIC, which is modulated by alternative splicing, interacts with the IKKα coiled-coil domain and inhibits NF-κB and tumor cell phenotypes.
+2024-2025	10.1146/annurev-virology-100422-031237	2025	N			Conduits, Doppelgängers, and Chimeras: RNA Structures at the Virus-Host Interface.
+2024-2025	10.1177/18758592241308730	2025	Y	PMC12288606		CXCL1 and CXCL8: Reliable and feasible biomarkers differentiating intrapulmonary metastasis from multiple primary neoplasms in non-small cell lung cancers.
+2024-2025	10.1093/ve/veae115	2025	Y	PMC11776705		SARS-CoV-2 CoCoPUTs: analyzing GISAID and NCBI data to obtain codon statistics, mutations, and free energy over a multiyear period.
+2024-2025	10.1002/prot.70072	2026	N	PMC13185081		Assessment of Nucleic Acid Structure Prediction in CASP16.
+2024-2025	10.1093/bib/bbaf616	2025	Y	PMC12661943		A comprehensive benchmarking of the AlphaFold3 for predicting biomacromolecules and their interactions.
+2024-2025	10.1142/s0219720025300011	2025	N			A brief review and comparative analysis of RNA secondary structure prediction tools.
+2024-2025	10.1093/bib/bbaf137	2025	Y	PMC11982019		Comprehensive benchmarking of large language models for RNA secondary structure prediction.
+2024-2025	10.1016/j.sbi.2025.102991	2025	N			Deep learning for RNA structure prediction.
+2024-2025	10.62347/fkds7259	2025	N	PMC12261183		CDKN2A and matrix metalloproteinases: key regulators of cellular senescence in squamous cell carcinoma.
+2024-2025	10.1128/mbio.01984-25	2025	Y	PMC12421834		A U508C synonymous mutation in the SARS-CoV-2 deletion hotspot reduces deletion frequency and accelerates viral clearance.
+2024-2025	10.7554/elife.102550	2025	Y	PMC12180898	GSE61508	Mapping HIV-1 RNA structure, homodimers, long-range interactions and persistent domains by HiCapR.
+2024-2025	10.1093/femsml/uqaf022	2025	Y	PMC12464536		Involvement of RNase J in CRISPR RNA maturation in the cyanobacterium &lt;i&gt;Synechocystis&lt;/i&gt; sp. PCC 6803.
+2024-2025	10.1016/j.jmb.2025.169410	2025	N			Role of Antitoxin RNA Pseudoknot in Regulating Toxin Activity and Toxin-antitoxin RNP Complex Assembly.
+2024-2025	10.1107/s2059798325000592	2025	Y	PMC11804252		Has AlphaFold3 achieved success for RNA?
+2024-2025	10.1261/rna.080215.124	2025	N			Evaluation of novel computational methods to identify RNA-binding protein footprints from structural data.
+2024-2025	10.1007/978-1-0716-4079-1_16	2025	N			Datasets for Benchmarking RNA Design Algorithms.
+2024-2025	10.1261/rna.080288.124	2025	N	PMC12265936		OpenASO: RNA Rescue-designing splice-modulating antisense oligonucleotides through community science.
+2024-2025	10.3390/molecules30081777	2025	Y	PMC12029786		Biochemical Characterization of a Non-G4-Type RNA Aptamer That Lights Up a GFP-like Fluorogenic Ligand.
+2024-2025	10.1038/s44321-025-00304-5	2025	Y	PMC12514043	GSE301761	Manipulating Zika virus RNA tertiary structure for developing tissue-specific attenuated vaccines.
+2024-2025	10.1261/rna.080413.125	2025	N			Crystallographic and cryoEM analyses reveal SARS-CoV-2 SL5 is a mobile T-shaped four-way junction with deep pockets.
+2024-2025	10.1002/prot.70033	2026	Y	PMC12321240		Structure Modeling Protocols for Protein Multimer and RNA in CASP16 With Enhanced MSAs, Model Ranking, and Deep Learning.
+2024-2025	10.1007/s12561-024-09466-1	2026	Y	PMC12904911	GSE75688	Canopy2: Tumor Phylogeny Inference by Bulk DNA and Single-Cell RNA Sequencing.
+2024-2025	10.1002/prot.70099	2026	Y	PMC12750033		Cryo-EM Analysis in CASP16.
+2024-2025	10.1146/annurev-arplant-083123-055521	2025	N			RNA Structure: Function and Application in Plant Biology.
+2024-2025	10.1007/978-1-0716-4079-1_2	2025	N			Sequence Design Using RNAstructure.
+2024-2025	10.1016/j.cell.2025.06.007	2025	N			Recessive epistasis of a synonymous mutation confers cucumber domestication through epitranscriptomic regulation.
+2024-2025	10.1002/prot.70030	2026	N			Accurate Biomolecular Structure Prediction in CASP16 With Optimized Inputs to State-Of-The-Art Predictors.
+2024-2025	10.1002/cbic.202401047	2025	N			Structural Biology of RNA and Protein-RNA Complexes after AlphaFold3.
+2024-2025	10.1261/rna.080335.124	2025	Y	PMC11912913		Role of the sarcin-ricin loop of 23S rRNA in biogenesis of the 50S ribosomal subunit.
+2024-2025	10.1098/rsif.2024.0878	2025	Y	PMC11999736		Principles of &lt;i&gt;in vitro&lt;/i&gt; selection of ribozymes from random sequence libraries.
+2024-2025	10.1089/jir.2024.0229	2025	N	PMC12491954		Sequence Diversity in the 3' Untranslated Region of Alphavirus Modulates IFIT2-Dependent Restriction in a Cell Type-Dependent Manner.
+2024-2025	10.1093/biomethods/bpae097	2025	Y	PMC11729747		Robust RNA secondary structure prediction with a mixture of deep learning and physics-based experts.
+2024-2025	10.1136/jitc-2024-010024	2025	Y	PMC11927434	GSE263115	Comprehensive immunophenotyping of gastric adenocarcinoma identifies an inflamed class of tumors amenable to immunotherapies.
+2024-2025	10.1016/j.str.2025.01.017	2025	N	PMC13007290		Selective deuteration of an RNA:RNA complex for structural analysis using small-angle scattering.
+2024-2025	10.1523/jneurosci.1717-25.2025	2025	N	PMC12696632		A Peptidergic Neural System Connects the Circadian Clock to the Photoperiodic Control of Reproductive Diapause in the Bug &lt;i&gt;Riptortus pedestris&lt;/i&gt;.
+2024-2025	10.1016/bs.pmbts.2025.05.002	2025	N			Structural prediction of potent non-coding RNAs.
+2024-2025	10.4103/nrr.nrr-d-25-00380	2026	N			Nigrostriatal dopaminergic vulnerability in Parkinson's disease: Neuroprotective strategies.
+2024-2025	10.1016/j.tips.2025.06.007	2025	N			Structure-function-guided drug development efforts to target lncRNAs.
+2024-2025	10.1002/jnr.70084	2025	Y	PMC12516300	GSE302532	Moderate Chronic Treadmill Exercise Slows Dopaminergic Neuron Loss in a Rat Model of Parkinson's Disease and Alters RNA Content of Circulating Plasma Exosomes.
+2024-2025	10.1016/j.jbc.2025.108251	2025	Y	PMC11919584		Polyamines enhance repeat-associated non-AUG translation from CCUG repeats by stabilizing the tertiary structure of RNA.
+2024-2025	10.1073/pnas.2418418122	2025	Y	PMC12002268		Structural switching dynamically controls the doubly pseudoknotted Rous sarcoma virus-programmed ribosomal frameshifting element.
+2024-2025	10.1128/jvi.01919-24	2025	Y	PMC11998532		Hairpin inserts in viral genomes are stable when they conform to the thermodynamic properties of viral RNA substructures.
+2024-2025	10.1007/978-1-0716-4079-1_1	2025	N			Sequence Design for RNA-RNA Interactions.
+2024-2025	10.3390/brainsci15101080	2025	Y	PMC12563713		miR-218 Regulates the Excitability of VTA Dopamine Neurons and the Mesoaccumbens Pathway in Mice.
+2024-2025	10.1002/advs.202410908	2025	Y	PMC12120708		Delivery of A Chemically Modified Noncoding RNA Domain Improves Dystrophic Myotube Function.
+2024-2025	10.1016/j.nbd.2025.106899	2025	N			A novel mouse model of chronic neuronopathic Gaucher disease exhibits Parkinson's disease-like phenotypes.
+2024-2025	10.1016/j.jmb.2025.169451	2025	N			Insights About the Structure and Recognition Mechanism of the Rev Response Element of HIV-1 Revealed by FRET-monitored Mutagenesis and Modeling.
+2024-2025	10.1016/j.celrep.2025.115236	2025	Y	PMC11921876		A conserved class of viral RNA structures regulates translation reinitiation through dynamic ribosome interactions.
+2024-2025	10.21037/tcr-2025-971	2025	Y	PMC12611398	GSE210038	Prognostic significance of key immune cell functional alterations in clear cell renal cell carcinoma.
+2024-2025	10.1002/prot.70076	2026	Y	PMC12703882		Progress and Bottlenecks for Deep Learning in Computational Structure Biology: CASP Round XVI.
+2024-2025	10.7717/peerj.19367	2025	Y	PMC12045275		Genetic variations of the &lt;i&gt;SHFL&lt;/i&gt; gene associated with hepatitis C virus (HCV) infection in Yunnan population.
+2024-2025	10.7150/thno.104698	2025	Y	PMC11729565		Optimized circular RNA vaccines for superior cancer immunotherapy.
+2024-2025	10.1007/s12035-025-05274-w	2025	N			18β-Glycyrrhetinic Acid Regulates Endoplasmic Reticulum Stress and Autophagy Dysregulation in the MPTP/p-Induced Model of Parkinson Disease.
+2024-2025	10.1111/cns.70472	2025	Y	PMC12168485		Dopaminergic Neuron-Derived AIMP1 Promotes Neurodegeneration via CD23-Dependent Microglial Activation.
+2024-2025	10.1080/15476286.2025.2471643	2025	Y	PMC11913385		Characterization of the binding features between SARS-CoV-2 5'-proximal transcripts of genomic RNA and nucleocapsid proteins.
+2024-2025	10.1007/s00018-025-05660-6	2025	Y	PMC11977062		Loss of NgBR causes neuronal damage through decreasing KAT7-mediated RFX1 acetylation and FGF1 expression.
+2024-2025	10.1261/rna.080274.124	2025	Y	PMC12001964		Conformational heterogeneity in the dGsw purine riboswitch: role of Mg&lt;sup&gt;2+&lt;/sup&gt; and 2'-dG in aptamer folding.
+2024-2025	10.1242/jeb.250528	2025	N			Corazonin mediates photoperiodically induced diapause in the bean bug Riptortus pedestris.
+2024-2025	10.1016/j.jmb.2025.169317	2025	Y	PMC12801146		Structural Features Within Precursor microRNA-20a Regulate Dicer-TRBP Processing.
+2024-2025	10.1152/physiolgenomics.00073.2025	2025	N	PMC12679999		The transcriptomes of hypothalamic micropunches reveal sex differences in regulatory processes across hibernation in the Arctic ground squirrel.
+2024-2025	10.1016/j.ymthe.2025.01.049	2025	N	PMC11897814		FKBP51 inhibition ameliorates neurodegeneration and motor dysfunction in the neuromelanin-SNCA mouse model of Parkinson's disease.
+2024-2025	10.1016/j.jare.2025.07.060	2026	Y	PMC13131434		Spike RBD drives sustained Parkinson's disease progression via microglia-neuron crosstalk-mediated RTP801 upregulation.
+2024-2025	10.1038/s41531-025-00981-6	2025	Y	PMC12078614	GSE289241	Differential memory enrichment of cytotoxic CD4 T cells in Parkinson's disease patients reactive to α-synuclein.
+2024-2025	10.1016/j.ccell.2025.02.027	2025	N	PMC12124822		Small-molecule RNA therapeutics to target prostate cancer.
+2024-2025	10.1016/j.molcel.2025.02.025	2025	N	PMC12009195		Rapid folding of nascent RNA regulates eukaryotic RNA biogenesis.
+2024-2025	10.1016/j.expneurol.2025.115239	2025	N			Involvement of the basolateral amygdaloid nucleus anterior part 5-HT&lt;sub&gt;7&lt;/sub&gt; receptors in the regulation of anxiety-like behaviors in hemiparkinsonian rats.
+2024-2025	10.3389/fimmu.2025.1591123	2025	Y	PMC12271198	GSE183904	Integrative single-cell and spatial transcriptomics uncover ELK4-mediated mechanisms in &lt;i&gt;NDUFAB1&lt;/i&gt;+ tumor cells driving gastric cancer progression, metabolic reprogramming, and immune evasion.
+2024-2025	10.1242/bio.061677	2025	Y	PMC11957448		A CRISPR mis-insertion in the Zic3 5'UTR inhibits in vivo translation and is predicted to result in formation of an mRNA stem-loop hairpin.
+2024-2025	10.1186/s12864-025-11636-4	2025	Y	PMC12063418	PRJNA1172176	Isoform-resolution single-cell RNA sequencing reveals the transcriptional panorama of adult Baoshan pig testis cells.
+2024-2025	10.1016/j.jare.2025.05.050	2026	Y	PMC12957797		Fibrinogen exacerbates α-synuclein aggregation and mitochondrial dysfunction via alpha5beta3 integrin in Parkinson's disease.
+2024-2025	10.1016/j.heliyon.2025.e42237	2025	Y	PMC11815678	GSE173839	A novel gene signature for predicting outcome in colorectal cancer patients based on tumor cell-endothelial cell interaction via single-cell sequencing and machine learning.
+2025-2026	10.1261/rna.081029.126	2026	N			Optimized tRNA structure-seq reveals robust tRNA secondary structures in &lt;i&gt;S. cerevisiae&lt;/i&gt; under mild stress conditions.
+2025-2026	10.3791/69945	2026	N	PMC13108907		Comparative RNA Structure Analysis of Nascent and Mature Transcripts in Saccharomyces cerevisiae.
+2025-2026	10.1093/bib/bbag301	2026	Y	PMC13267909	GSE131506	VIRSE: a variational Bayesian framework for RNA structural ensemble inference.
+2025-2026	10.1016/j.jbc.2026.113194	2026	N			SARS-CoV-2 5'-UTR stem-loops activate the antiviral protein oligoadenylate synthetase 1 (OAS1).
+2025-2026	10.1002/chem.202503291	2026	Y	PMC13037363		Recent Advances in Chemical Probing Strategies for RNA Structure Determination In Vivo.
+2025-2026	10.1261/rna.080775.125	2026	Y	PMC13085925		Structure-informed mutagenesis identifies combinatorial contributions to mouse insulin receptor IRES function.
+2025-2026	10.3390/v18040470	2026	Y	PMC13120261		SHAPE-MaP-Based Assessment of the Structure of Citrus Tristeza Virus Long Non-Coding RNA.
+2025-2026	10.1186/s13059-026-04115-w	2026	N			FIRST-seq: a nanopore-based cDNA sequencing platform for RNA modification and structure profiling.
+2025-2026	10.1038/s41592-026-03069-y	2026	Y	PMC13167473	GSE304702	Direct RNA sequencing and signal alignment reveal RNA structure ensembles in a eukaryotic cell.
+2025-2026	10.1093/gpbjnl/qzag052	2026	N			NanoRAPID: A Deep Learning-based Framework for Single-molecule RNA Structure Analysis Using Nanopore Direct RNA Sequencing.
+2025-2026	10.1016/j.molcel.2026.03.029	2026	N	PMC13120737		Multi-site DMS probing reveals higher-order structure of RNA-protein complexes in living cells.
+2025-2026	10.1016/j.cell.2025.12.030	2026	N	PMC12866964		Mechanistic insights into RNA chaperoning by Ro60 and La autoantigens.
+2025-2026	10.1007/s00439-026-02830-9	2026	Y	PMC13149559		A novel splice site variant in DEGS1 leads to aberrant splicing and loss of DEGS1 enzyme activity, a VUS resolved.
+2025-2026	10.1186/s12985-026-03105-5	2026	Y	PMC13011282		Identification and comparison of RNA structures in 5'- and 3'-terminal genomic regions across four coronavirus genera by SHAPE analysis.
+2025-2026	10.3390/v18050543	2026	Y	PMC13211532		Decoding the Structural Complexity of Viral RNAs with SHAPE to Guide Antiviral Therapeutics.
+2025-2026	10.1021/acschembio.6c00184	2026	Y	PMC13288477		Mapping the Structure and Conformational Landscape of the 10-23 DNAzyme.
+2025-2026	10.1016/j.bbamcr.2026.120171	2026	N	PMC13287626		Folding the message: mRNA structure as a regulatory layer of human mitochondrial gene expression.
+2025-2026	10.1094/phyto-05-25-0158-sc	2026	N			Nuclear Inclusion Protein b Interaction Sites &lt;sup&gt;3597&lt;/sup&gt;AUU and &lt;sup&gt;3607&lt;/sup&gt;GGCU Are Crucial to the Replication of Wheat Yellow Mosaic Virus RNA2.
+2025-2026	10.1038/s41467-026-69648-x	2026	Y	PMC13018625	PRJNA938111	Co-transcriptional folding orchestrates sequential multi-effector sensing by a glycine tandem riboswitch.
+2025-2026	10.1016/j.omtn.2026.102968	2026	Y	PMC13264038		Rational design of hammerhead ribozymes as CD93 silencing tools for vascular diseases.
+2025-2026	10.21769/bioprotoc.5453	2026	N			Enhancement of RNA Imaging Platforms by the Use of Peptide Nucleic Acid-Based Linkers.
+2025-2026	10.3389/fmicb.2026.1771046	2026	N			The sRNA LhrC5 and Hfq post-transcriptionally regulate ferritin expression in &lt;i&gt;Listeria monocytogenes&lt;/i&gt;.
+2025-2026	10.1093/nargab/lqag044	2026	Y	PMC13129543		RNAStructuromeDB: a transcriptome-wide database of predicted RNA secondary structures with integrated APIs for functional annotation and RNA-targeted drug discovery.
+2025-2026	10.1099/jgv.0.002268	2026	Y	PMC13224872		The SL-I structural element of the 3' UTR region of West Nile virus participates in the regulation of viral translation.
+2025-2026	10.1261/rna.080846.125	2026	Y	PMC12990807		Deep learning for RNA secondary structure determination: gauging generalizability and broadening the scope of traditional methods.
+2025-2026	10.1261/rna.080638.125	2026	N	PMC13255729		Distribution and structural diversity of type IV internal ribosome entry sites.
+2025-2026	10.1016/j.virol.2026.110846	2026	N			The influence of natural adaptation of the DCS-PK structure on the replication efficiency of Zika virus.
+2025-2026	10.3791/70886	2026	N			Visualization and Quantification of Intermolecular RNA Base Pairing in in vitro RNA Clusters Using Split Broccoli RNA Reporters.
+2025-2026	10.1093/nar/gkag672	2026	N			Characterizing RNA 3D structural features from DMS reactivity.
+2025-2026	10.21769/bioprotoc.5575	2026	N			High-Resolution Mapping of RNA-RNA Interactions Across the HIV-1 Genome With HicapR.
+2025-2026	10.1038/s41467-026-70097-9	2026	Y	PMC13002888	PRJNA1392914	Systematic identification of variant-specific RNA structure-small molecule interactions exemplified by RNA G-quadruplexes.
+2025-2026	10.1126/sciadv.aeb6806	2026	Y	PMC13196742	PRJNA1375461	Unlocking translational control of specialized metabolism in plants through 5'UTR structure.
+2025-2026	10.1371/journal.pone.0345208	2026	N			DMS-informed secondary structure modeling of Epstein-Barr Virus LMP-1 pre-mRNA defines novel elements spanning introns.
+2025-2026	10.1002/wrna.70051	2026	N			Noncoding RNAs and the Architecture of Gene Regulation: Focus on Long and Small Regulatory RNAs.
+2025-2026	10.1016/j.celrep.2026.117451	2026	N			Pnky lncRNA secondary structure maps identify functional regions that control neurogenesis in neural stem cells.
+2025-2026	10.3760/cma.j.cn511374-20260107-00013	2026	N			[Advance in the application of molecular ruler-based RNA 3D dynamic analysis for the interpretation of variants of uncertain significance].
+2025-2026	10.1128/jvi.00898-26	2026	N			Comparative analysis of flavivirus sfRNA dynamics and secondary structure.
+2025-2026	10.1007/s11427-026-3331-5	2026	N			RNA regulation in plants.
+2025-2026	10.3390/ijms27114728	2026	Y	PMC13257266		Dissection of the EIAV Core Packaging Region Identifies SL2 Stem and SL2-SL3 Junction as Gag-Associated Packaging Determinants and Antiviral Targets.
+2025-2026	10.1128/jvi.00882-26	2026	N			GC content mismatch of transgene destabilizes RNA virus genomes.
+2025-2026	10.1038/s42003-026-09819-0	2026	Y	PMC13172522		Cleavage region organizes the structural architecture of the SINE-derived B2 repressive ribozyme.
+2025-2026	10.1016/j.jbc.2026.113264	2026	N			Intragenomic riboregulatory interaction modulates the conformation of the hepatitis C virus 3'X RNA.
+2025-2026	10.1155/humu/6998123	2026	Y	PMC13179470	GSE43378	A Propionate Metabolism-Based Gene Signature Reveals Immunogenomic and Transcriptomic Determinants of Prognosis in Glioblastoma Through Multiomics Integration.
+2025-2026	10.1002/anie.1434064	2026	N			Structure-Encoded Oxidation Enables Nucleotide-Resolved RNA Editing, Conjugation, and Structural Probing.
+2025-2026	10.1002/wrna.70042	2026	N			Structural and Functional Diversity of RNA-Containing Toxin-Antitoxin Systems.
+2025-2026	10.1126/sciadv.adz4967	2026	Y	PMC12935039	GSE262014	Diverse database and machine learning model to narrow the generalization gap in RNA structure prediction.
+2025-2026	10.3390/biology15060457	2026	Y	PMC13023823		R3J-AGNN: GNN-Based Prediction of Inter-Branch Angles in RNA Three-Way Junctions from Secondary Structure.
+2025-2026	10.1016/j.jmb.2026.169701	2026	N	PMC13175443		Nucleotide-Resolution Mapping Reveals Specific MLE Binding Site on roX2 lncRNA.
+2025-2026	10.1002/brv.70188	2026	N			RNA-centric world of retroviruses: unravelling the molecular strategies of genomic RNA packaging.
+2025-2026	10.1080/15476286.2026.2644525	2026	Y	PMC12990946		Molecular insights into dynamic RNA quaternary assemblies.
+2025-2026	10.1261/rna.080976.126	2026	N			Cancer-associated synonymous mutations reveal stress signal-dependent mRNA folding that selectively modulates protein function.
+2025-2026	10.1016/j.jbc.2026.111441	2026	Y	PMC13191251		Alternative probe chemistries for single-molecule analysis of long noncoding RNA.
+2025-2026	10.5009/gnl250363	2026	Y	PMC13180509	GSE39582	Identification of Poor Prognosis-Associated Fibroblast Subpopulation Signature Genes Utilizing the Scissor Algorithm to Classify Colorectal Cancer Subtypes and Evaluate the Immune Landscape.
+2025-2026	10.1016/j.ygcen.2026.114899	2026	N			Multiplex in situ hybridization chain reaction reveals the spatial organization of six pituitary hormone mRNAs in the Japanese eel.
+2025-2026	10.1038/s44318-026-00769-1	2026	Y	PMC13187072		A leader-repeat hairpin blocks extraneous CRISPR RNA production in diverse CRISPR-Cas13 systems.
+2025-2026	10.1007/978-1-0716-4670-0_12	2026	N			Unveiling Functional Long-Range RNA Structures via RIC-seq Analysis.
+2025-2026	10.1128/jvi.00355-26	2026	Y	PMC13288635		An IRES-like cis-acting element located within the EV-A71 coding region drives translation independent of the 5'-IRES and modulates viral fitness through regulated binding of viral RNA to 3D polymerase.
+2025-2026	10.1128/jvi.00303-26	2026	Y	PMC13288613		Lost in translation: interferon-stimulated genes targeting flavivirus protein synthesis.
+2025-2026	10.1007/s12035-026-05870-4	2026	N			Regulation of HSP90AA1/NRF2 by BDNF Contributes to the Attenuation of Rotenone-Induced Oxidative Stress in Parkinson's Disease Models.
+2025-2026	10.1007/978-1-0716-4670-0_3	2026	N	PMC12614253		Integrated Analysis of Cross-Link-Ligation Data for the Detection of RNA 2D/3D Structures and Interactions In Vivo.
+2025-2026	10.1093/jxb/erag063	2026	N			Review: Specificity determinants of the plant splicing code.
+2025-2026	10.3390/v18010128	2026	Y	PMC12846624		Making Sense from Structure: What the Immune System Sees in Viral RNA.
+2025-2026	10.1073/pnas.2529073123	2026	Y	PMC12798952		ADAR-GPT: A continually fine-tuned language model for predicting A-to-I RNA editing sites.
+2025-2026	10.3389/abp.2026.15861	2026	Y	PMC12960278		Structural potential of the 5' noncoding regions of the mRNAs encoding p53 isoforms.
+2025-2026	10.1007/978-1-0716-5084-4_5	2026	N			Analyzing Structural Heterogeneity in RNA Using Fluorescence-Detected Circular Dichroism Spectroscopy.
+2025-2026	10.1261/rna.080730.125	2026	N			Ancestral intronic splicing regulatory elements in the SCNα gene family.
+2025-2026	10.3390/cells15020105	2026	Y	PMC12838836		Decoding the lncRNA World: Comprehensive Approaches to lncRNA Structure and Interactome Studies.
+2025-2026	10.1093/bib/bbag009	2026	Y	PMC12834306		Decoding RNA triple helices: identification from sequence and secondary structure.
+2025-2026	10.3760/cma.j.cn112151-20250708-00453	2026	N			[Prognostic stratification value of MLH1 promoter methylation in endometrioid endometrial carcinomas with a dMMR molecular phenotype].
+2025-2026	10.1186/s12863-026-01462-2	2026	N			Single nuclear RNA sequencing shows altered microglial and astrocytic functions in post-mortem Parkinson's disease tissue.
+2025-2026	10.1080/15476286.2026.2638283	2026	Y	PMC12962679		Sequence and ionic requirements of pUG fold quadruplexes.
+2025-2026	10.3390/ijms27062613	2026	Y	PMC13026550		Structural Remodeling and Enzymatic Replacement Shape the Evolution of Organellar Group II Introns in &lt;i&gt;Ulva&lt;/i&gt;.
+2025-2026	10.1111/febs.70462	2026	N			Coordinated translation initiation determines -1 programmed ribosomal frameshifting efficiency of chromosomal genes to impact on cell fitness.
+2025-2026	10.1007/s12539-025-00806-3	2026	N			Multi-Network Co-expression Analysis Enhances Biological Insights from Single-Cell Gene Expression.
+2025-2026	10.1038/s41419-025-08391-5	2026	Y	PMC13061952	GSE8397	TMBIM6 enhances dopaminergic neuron survival by modulating the IRE1a pathway in Parkinson's disease.
+2025-2026	10.1016/j.celrep.2026.116982	2026	Y	PMC13034579		A bicistronic viral genome uses a compact type IV IRES near its 3' end to express a transmembrane protein.

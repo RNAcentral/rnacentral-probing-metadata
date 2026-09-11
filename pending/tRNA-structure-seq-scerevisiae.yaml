@@ -1,0 +1,39 @@
+# STUB - paywalled paper, NOT yet valid against schema/rnastruct.schema.yaml.
+# Fill in every TODO (especially raw_data.accession and run_accessions), then move
+# this file into DMS/ or SHAPE/ and renumber dataset_id to the next free rnastruct#####.
+dataset_id: TODO
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Saccharomyces cerevisiae
+  ncbi_taxid: 4932
+
+experiment:
+  method: tRNA structure-seq
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: TODO
+  context: [in_vivo]
+  rna_type: sRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1261/rna.081029.126
+  year: 2026
+
+raw_data:
+  repository: TODO
+  accession: TODO
+  landing_page: TODO
+  run_accessions:
+  - accession: TODO
+    sample_name: TODO
+    sample_group: TODO
+    condition: TODO
+    replicate: 1
+
+comment: "PAYWALLED - Optimized tRNA structure-seq reveals robust tRNA secondary structures in Saccharomyces cerevisiae (RNA 2026). No GEO/SRA link from PubMed as of 2026-07-27; find the accession in the paper. Chemical/principle/RT_enzyme are guesses from the structure-seq family - verify."

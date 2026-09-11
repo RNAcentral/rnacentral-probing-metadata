@@ -1,0 +1,61 @@
+dataset_id: rnastruct00094
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: icSHAPE
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/nature11247
+  year: 2012
+
+raw_data:
+  repository: GEO
+  accession: GSE143121
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143121
+  run_accessions:
+  - accession: GSM4250761
+    sample_name: HepG2_invivo_NAIN3_treated_r1
+    sample_group: HepG2_invivo
+    condition: treated
+    replicate: 1
+  - accession: GSM4250762
+    sample_name: HepG2_invivo_NAIN3_treated_r2
+    sample_group: HepG2_invivo
+    condition: treated
+    replicate: 2
+  - accession: GSM4250763
+    sample_name: HepG2_invivo_NAIN3_treated_r3
+    sample_group: HepG2_invivo
+    condition: treated
+    replicate: 3
+  - accession: GSM4247326
+    sample_name: HepG2_invivo_DMSO_untreated_r1
+    sample_group: HepG2_invivo
+    condition: untreated
+    replicate: 1
+  - accession: GSM4247327
+    sample_name: HepG2_invivo_DMSO_untreated_r2
+    sample_group: HepG2_invivo
+    condition: untreated
+    replicate: 2
+  - accession: GSM4247328
+    sample_name: HepG2_invivo_DMSO_untreated_r3
+    sample_group: HepG2_invivo
+    condition: untreated
+    replicate: 3
+
+comment: "ENCODE icSHAPE, HepG2. GEO splits this experiment across two series: GSE143121 holds the NAI-N3 samples (used as raw_data.accession) and GSE142946 holds the matched DMSO controls, which are included here as the untreated runs. Do NOT expand GSE143121 via its SRA project - it resolves to the whole ENCODE BioProject (57k runs); fetch the listed GSMs directly. The DOI is the ENCODE flagship paper, which is what GEO links; replace it if an icSHAPE-specific citation exists. RT_enzyme and rna_type follow the standard icSHAPE protocol."

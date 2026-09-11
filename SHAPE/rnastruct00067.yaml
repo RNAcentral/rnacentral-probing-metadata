@@ -1,0 +1,71 @@
+dataset_id: rnastruct00067
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Mus musculus
+  ncbi_taxid: 10090
+
+experiment:
+  method: Structure-seq
+  principle: RT-stop
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-024-54000-y
+  year: 2024
+
+raw_data:
+  repository: GEO
+  accession: GSE237160
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE237160
+  run_accessions:
+  - accession: SRR25248920
+    sample_name: C2C12_WT_NAI_treated_r1
+    sample_group: C2C12_WT
+    condition: treated
+    replicate: 1
+  - accession: SRR25248918
+    sample_name: C2C12_WT_NAI_treated_r2
+    sample_group: C2C12_WT
+    condition: treated
+    replicate: 2
+  - accession: SRR25248917
+    sample_name: C2C12_WT_DMSO_untreated_r1
+    sample_group: C2C12_WT
+    condition: untreated
+    replicate: 1
+  - accession: SRR25248916
+    sample_name: C2C12_WT_DMSO_untreated_r2
+    sample_group: C2C12_WT
+    condition: untreated
+    replicate: 2
+  - accession: SRR25248915
+    sample_name: C2C12_Dhx36_KO_NAI_treated_r1
+    sample_group: C2C12_Dhx36_KO
+    condition: treated
+    replicate: 1
+  - accession: SRR25248914
+    sample_name: C2C12_Dhx36_KO_NAI_treated_r2
+    sample_group: C2C12_Dhx36_KO
+    condition: treated
+    replicate: 2
+  - accession: SRR25248913
+    sample_name: C2C12_Dhx36_KO_DMSO_untreated_r1
+    sample_group: C2C12_Dhx36_KO
+    condition: untreated
+    replicate: 1
+  - accession: SRR25248912
+    sample_name: C2C12_Dhx36_KO_DMSO_untreated_r2
+    sample_group: C2C12_Dhx36_KO
+    condition: untreated
+    replicate: 2
+
+comment: null
