@@ -32,13 +32,13 @@ raw_data:
   # only (one biosample, two runs each), so they are not curated here.
   run_accessions:
   - accession: GSM9050879
-    sample_name: HEK293_total_RNA_DMS_treated_r1
-    sample_group: HEK293_total
+    sample_name: HEK293_DMS_treated_r1
+    sample_group: HEK293
     condition: treated
     replicate: 1
   - accession: GSM9050880
-    sample_name: HEK293_total_RNA_DMS_treated_r2
-    sample_group: HEK293_total
+    sample_name: HEK293_DMS_treated_r2
+    sample_group: HEK293
     condition: treated
     replicate: 2
 
