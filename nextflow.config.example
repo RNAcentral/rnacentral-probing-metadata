@@ -15,7 +15,7 @@ params {
     nxf_singularity_cachedir = "/path/to/.singularity_cache"
 
     // nf-core/fetchngs version to run.
-    fetchngs_revision = "1.12.0"
+    fetchngs_revision = "1.13.0"
 
     // Nextflow profile to use for fetchngs (e.g. "slurm", "lsf", "local").
     fetchngs_profile = "slurm"
