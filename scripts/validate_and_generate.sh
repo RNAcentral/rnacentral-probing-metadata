@@ -56,6 +56,8 @@ for yaml in "${yamls[@]}"; do
   echo "Validating OBI ID for ${yaml}"
   python3 scripts/validate_obi_ids.py "${yaml}"
 
+  # creating_ids.py writes nothing (and removes a stale CSV) when the dataset
+  # comment starts with "failed QC" or "skip", so fetchngs never downloads it.
   echo "Generating ${output}"
   python3 scripts/creating_ids.py "${yaml}" "${output}"
 done

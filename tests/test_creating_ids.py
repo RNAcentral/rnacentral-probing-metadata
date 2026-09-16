@@ -71,3 +71,54 @@ def test_main_writes_csv_and_returns_zero(tmp_path, monkeypatch, capsys):
     assert rc == 0
     assert csv_path.read_text(encoding="utf-8") == "\n".join(EXPECTED_IDS) + "\n"
     assert f"Wrote 10 IDs to {csv_path}." in capsys.readouterr().err
+
+
+def _skipped_yaml(tmp_path: Path, comment: str) -> Path:
+    yaml_path = tmp_path / "rnastruct99999.yaml"
+    yaml_path.write_text(
+        (
+            "dataset_id: rnastruct99999\n"
+            "raw_data:\n"
+            "  run_accessions:\n"
+            "  - accession: GSM1\n"
+            f"comment: {comment}\n"
+        ),
+        encoding="utf-8",
+    )
+    return yaml_path
+
+
+def test_skip_reason_matches_failed_qc_and_skip_prefixes():
+    assert creating_ids.skip_reason({"comment": "failed QC: no biological replicates"})
+    assert creating_ids.skip_reason({"comment": "skip, benchmarking only"})
+    assert creating_ids.skip_reason({"comment": "Skip: case-insensitive"})
+    assert creating_ids.skip_reason({"comment": None}) is None
+    assert creating_ids.skip_reason({"comment": "null, same sample fractionated"}) is None
+    assert creating_ids.skip_reason({}) is None
+
+
+def test_main_writes_no_csv_for_skipped_dataset(tmp_path, monkeypatch, capsys):
+    csv_path = tmp_path / "ids" / "rnastruct99999.csv"
+    yaml_path = _skipped_yaml(tmp_path, '"failed QC: no biological replicates"')
+
+    monkeypatch.setattr("sys.argv", ["creating_ids.py", str(yaml_path), str(csv_path)])
+
+    rc = creating_ids.main()
+
+    assert rc == 0
+    assert not csv_path.exists()
+    assert "Skipping rnastruct99999: failed QC" in capsys.readouterr().err
+
+
+def test_main_removes_stale_csv_for_skipped_dataset(tmp_path, monkeypatch, capsys):
+    csv_path = tmp_path / "rnastruct99999.csv"
+    csv_path.write_text("GSM1\n", encoding="utf-8")
+    yaml_path = _skipped_yaml(tmp_path, "skip, this is for benchmarking")
+
+    monkeypatch.setattr("sys.argv", ["creating_ids.py", str(yaml_path), str(csv_path)])
+
+    rc = creating_ids.main()
+
+    assert rc == 0
+    assert not csv_path.exists()
+    assert f"Removed stale {csv_path}." in capsys.readouterr().err

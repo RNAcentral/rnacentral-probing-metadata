@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import csv
 import importlib.util
+import pytest
 from pathlib import Path
 
 
@@ -49,8 +50,12 @@ def test_extract_run_metadata_map_includes_sample_fields():
     }
 
 
-def test_main_skips_dataset_with_failed_qc_comment(tmp_path, monkeypatch, capsys):
-    """main() returns 0 and writes no output when the dataset comment starts with 'failed QC'."""
+@pytest.mark.parametrize(
+    "comment",
+    ['"failed QC: no biological replicates"', "skip, this is for benchmarking only"],
+)
+def test_main_skips_dataset_with_failed_qc_comment(tmp_path, monkeypatch, capsys, comment):
+    """main() returns 0 and writes no output when the comment starts with 'failed QC' or 'skip'."""
     samplesheet_path = tmp_path / "fetchngs.csv"
     metadata_path = tmp_path / "metadata.yaml"
     output_path = tmp_path / "merged.csv"
@@ -75,7 +80,7 @@ def test_main_skips_dataset_with_failed_qc_comment(tmp_path, monkeypatch, capsys
             "    sample_group: HeLa\n"
             "    condition: treated\n"
             "    replicate: 1\n"
-            'comment: "failed QC: no biological replicates"\n'
+            f"comment: {comment}\n"
         ),
         encoding="utf-8",
     )
@@ -98,7 +103,7 @@ def test_main_skips_dataset_with_failed_qc_comment(tmp_path, monkeypatch, capsys
     assert not output_path.exists()
     err = capsys.readouterr().err
     assert "Skipping rnastruct99999" in err
-    assert "failed QC" in err
+    assert comment.strip('"') in err
 
 
 def test_extract_organism_name_keeps_non_viral_organism_unchanged():

@@ -35,7 +35,7 @@ process VALIDATE_AND_GENERATE {
   find "${ids_dir}" -maxdepth 1 -type f -name '*.csv' | sort > ids_manifest.txt
 
   if [ ! -s ids_manifest.txt ]; then
-    echo "ERROR: no CSV files were generated in ${ids_dir}" >&2
+    echo "ERROR: no CSV files were generated in ${ids_dir} (datasets whose comment starts with 'failed QC' or 'skip' produce no CSV)" >&2
     exit 1
   fi
   """

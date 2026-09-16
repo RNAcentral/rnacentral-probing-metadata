@@ -5,7 +5,8 @@ Output format:
 sample,sample_id,fastq_1,fastq_2,method,principle,chemical,RT_enzyme,sample_group,
 condition,replicate,organism,pH,adapter_3p,adapter_5p,umi_pattern
 
-Datasets whose top-level comment starts with "failed QC" are skipped entirely.
+Datasets whose top-level comment starts with "failed QC" or "skip" are skipped
+entirely (same rule as creating_ids.py, which stops them being downloaded).
 """
 
 from __future__ import annotations
@@ -17,6 +18,9 @@ from pathlib import Path
 
 import yaml
 
+
+# Keep in sync with SKIP_COMMENT_PREFIXES in creating_ids.py.
+SKIP_COMMENT_PREFIXES = ("failed QC", "skip")
 
 VIRAL_ORGANISMS = {
     "Influenza A virus",
@@ -180,8 +184,8 @@ def main() -> int:
 
     metadata = read_yaml(metadata_path)
     dataset_id = metadata.get("dataset_id", str(metadata_path))
-    dataset_comment = str(metadata.get("comment") or "")
-    if dataset_comment.startswith("failed QC"):
+    dataset_comment = str(metadata.get("comment") or "").strip()
+    if dataset_comment.lower().startswith(tuple(p.lower() for p in SKIP_COMMENT_PREFIXES)):
         print(
             f"Skipping {dataset_id}: {dataset_comment}",
             file=sys.stderr,

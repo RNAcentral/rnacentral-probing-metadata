@@ -14,6 +14,21 @@ except ImportError:
     raise
 
 
+# Top-level ``comment`` prefixes that mark a dataset as excluded from the pipeline.
+# Shared with merge_metadata.py so that skipped datasets are neither downloaded nor merged.
+SKIP_COMMENT_PREFIXES = ("failed QC", "skip")
+
+
+def skip_reason(data: dict) -> str | None:
+    """Return the dataset comment if it marks the dataset as skipped, else None."""
+    comment = str(data.get("comment") or "").strip()
+    lowered = comment.lower()
+    for prefix in SKIP_COMMENT_PREFIXES:
+        if lowered.startswith(prefix.lower()):
+            return comment
+    return None
+
+
 def extract_ids(data: dict) -> list[str]:
     """Extract run accessions from parsed YAML metadata."""
     if not isinstance(data, dict):
@@ -39,7 +54,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
             "Extract IDs from a YAML file and write to a single-column CSV file. "
-            "Use raw_data.run_accessions[].accession values only."
+            "Use raw_data.run_accessions[].accession values only. "
+            "Datasets whose top-level comment starts with 'failed QC' or 'skip' "
+            "produce no CSV, so they are never passed to fetchngs."
         )
     )
     parser.add_argument("yaml_path", help="Path to input YAML file")
@@ -52,9 +69,21 @@ def main() -> int:
     except yaml.YAMLError as exc:
         raise ValueError(f"Failed to parse YAML file {args.yaml_path}: {exc}") from exc
 
+    output_path = Path(args.output_csv)
+
+    reason = skip_reason(data)
+    if reason is not None:
+        dataset_id = data.get("dataset_id", args.yaml_path)
+        sys.stderr.write(f"Skipping {dataset_id}: {reason}\n")
+        # Remove any CSV left over from before the dataset was marked as skipped,
+        # otherwise RUN_FETCHNGS would still pick it up from the ids directory.
+        if output_path.exists():
+            output_path.unlink()
+            sys.stderr.write(f"Removed stale {output_path}.\n")
+        return 0
+
     ids = extract_ids(data)
 
-    output_path = Path(args.output_csv)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as handle:
         handle.write("\n".join(ids))
