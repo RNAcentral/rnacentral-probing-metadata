@@ -26,6 +26,7 @@ VIRAL_ORGANISMS = {
     "Influenza A virus",
     "SARS-CoV-2",
     "Zika virus",
+    "Dengue virus",
     "HIV",
     "Rotavirus A",
 }
