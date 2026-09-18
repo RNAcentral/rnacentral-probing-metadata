@@ -26,106 +26,110 @@ raw_data:
   repository: GEO
   accession: GSE216157
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE216157
+  # Only the DMS-seq runs are listed; the RNA-seq, Ribo-seq and Hfq RIP-seq libraries in
+  # GSE216157 are deliberately excluded. Method confirmed from the paper's STAR Methods:
+  # in vivo DMS (750 uL in 15 mL, 2 min, 28C), RNase H rRNA depletion, SuperScript III
+  # RT-stop libraries analysed with StructureFold2; two biological replicates per condition.
   run_accessions:
   - accession: SRR21981119
-    sample_name: Pseudomonas_savastanoi_WT_MM_treated_r1
-    sample_group: Pseudomonas_savastanoi_WT_MM
+    sample_name: Pseudomonas_savastanoi_WT_grown_on_MM_treated_r1
+    sample_group: Pseudomonas_savastanoi_WT_grown_on_MM # WT/pHM1-EV (empty vector) P. savastanoi pv. phaseolicola 1448A, KB pre-culture then induced 6 h in minimal medium (MM, pH 5.7; hrp/T3SS-inducing)
     condition: treated
     replicate: 1
   - accession: SRR21981118
-    sample_name: Pseudomonas_savastanoi_WT_MM_treated_r2
-    sample_group: Pseudomonas_savastanoi_WT_MM
+    sample_name: Pseudomonas_savastanoi_WT_grown_on_MM_treated_r2
+    sample_group: Pseudomonas_savastanoi_WT_grown_on_MM
     condition: treated
     replicate: 2
   - accession: SRR21981121
-    sample_name: Pseudomonas_savastanoi_WT_MM_untreated_r1
-    sample_group: Pseudomonas_savastanoi_WT_MM
+    sample_name: Pseudomonas_savastanoi_WT_grown_on_MM_untreated_r1
+    sample_group: Pseudomonas_savastanoi_WT_grown_on_MM
     condition: untreated
     replicate: 1
   - accession: SRR21981120
-    sample_name: Pseudomonas_savastanoi_WT_MM_untreated_r2
-    sample_group: Pseudomonas_savastanoi_WT_MM
+    sample_name: Pseudomonas_savastanoi_WT_grown_on_MM_untreated_r2
+    sample_group: Pseudomonas_savastanoi_WT_grown_on_MM
     condition: untreated
     replicate: 2
   - accession: SRR21981123
-    sample_name: Pseudomonas_savastanoi_WT_KB_treated_r1
-    sample_group: Pseudomonas_savastanoi_WT_KB
+    sample_name: Pseudomonas_savastanoi_WT_grown_on_KB_treated_r1
+    sample_group: Pseudomonas_savastanoi_WT_grown_on_KB # WT/pHM1-EV grown in King's B rich medium (KB; non-inducing)
     condition: treated
     replicate: 1
   - accession: SRR21981122
-    sample_name: Pseudomonas_savastanoi_WT_KB_treated_r2
-    sample_group: Pseudomonas_savastanoi_WT_KB
+    sample_name: Pseudomonas_savastanoi_WT_grown_on_KB_treated_r2
+    sample_group: Pseudomonas_savastanoi_WT_grown_on_KB
     condition: treated
     replicate: 2
   - accession: SRR21981125
-    sample_name: Pseudomonas_savastanoi_WT_KB_untreated_r1
-    sample_group: Pseudomonas_savastanoi_WT_KB
+    sample_name: Pseudomonas_savastanoi_WT_grown_on_KB_untreated_r1
+    sample_group: Pseudomonas_savastanoi_WT_grown_on_KB
     condition: untreated
     replicate: 1
   - accession: SRR21981124
-    sample_name: Pseudomonas_savastanoi_WT_KB_untreated_r2
-    sample_group: Pseudomonas_savastanoi_WT_KB
+    sample_name: Pseudomonas_savastanoi_WT_grown_on_KB_untreated_r2
+    sample_group: Pseudomonas_savastanoi_WT_grown_on_KB
     condition: untreated
     replicate: 2
   - accession: SRR21981127
-    sample_name: Pseudomonas_savastanoi_hrpL_treated_r1
-    sample_group: Pseudomonas_savastanoi_hrpL
+    sample_name: Pseudomonas_savastanoi_hrpL_grown_on_MM_treated_r1
+    sample_group: Pseudomonas_savastanoi_hrpL_grown_on_MM # delta-hrpL mutant (T3SS sigma factor), induced in MM
     condition: treated
     replicate: 1
   - accession: SRR21981126
-    sample_name: Pseudomonas_savastanoi_hrpL_treated_r2
-    sample_group: Pseudomonas_savastanoi_hrpL
+    sample_name: Pseudomonas_savastanoi_hrpL_grown_on_MM_treated_r2
+    sample_group: Pseudomonas_savastanoi_hrpL_grown_on_MM
     condition: treated
     replicate: 2
   - accession: SRR21981129
-    sample_name: Pseudomonas_savastanoi_hrpL_untreated_r1
-    sample_group: Pseudomonas_savastanoi_hrpL
+    sample_name: Pseudomonas_savastanoi_hrpL_grown_on_MM_untreated_r1
+    sample_group: Pseudomonas_savastanoi_hrpL_grown_on_MM
     condition: untreated
     replicate: 1
   - accession: SRR21981128
-    sample_name: Pseudomonas_savastanoi_hrpL_untreated_r2
-    sample_group: Pseudomonas_savastanoi_hrpL
+    sample_name: Pseudomonas_savastanoi_hrpL_grown_on_MM_untreated_r2
+    sample_group: Pseudomonas_savastanoi_hrpL_grown_on_MM
     condition: untreated
     replicate: 2
   - accession: SRR21981111
-    sample_name: Pseudomonas_savastanoi_hfq_treated_r1
-    sample_group: Pseudomonas_savastanoi_hfq
+    sample_name: Pseudomonas_savastanoi_hfq_grown_on_MM_treated_r1
+    sample_group: Pseudomonas_savastanoi_hfq_grown_on_MM # delta-hfq/pHM1-EV (empty vector), induced in MM
     condition: treated
     replicate: 1
   - accession: SRR21981110
-    sample_name: Pseudomonas_savastanoi_hfq_treated_r2
-    sample_group: Pseudomonas_savastanoi_hfq
+    sample_name: Pseudomonas_savastanoi_hfq_grown_on_MM_treated_r2
+    sample_group: Pseudomonas_savastanoi_hfq_grown_on_MM
     condition: treated
     replicate: 2
   - accession: SRR21981113
-    sample_name: Pseudomonas_savastanoi_hfq_untreated_r1
-    sample_group: Pseudomonas_savastanoi_hfq
+    sample_name: Pseudomonas_savastanoi_hfq_grown_on_MM_untreated_r1
+    sample_group: Pseudomonas_savastanoi_hfq_grown_on_MM
     condition: untreated
     replicate: 1
   - accession: SRR21981112
-    sample_name: Pseudomonas_savastanoi_hfq_untreated_r2
-    sample_group: Pseudomonas_savastanoi_hfq
+    sample_name: Pseudomonas_savastanoi_hfq_grown_on_MM_untreated_r2
+    sample_group: Pseudomonas_savastanoi_hfq_grown_on_MM
     condition: untreated
     replicate: 2
   - accession: SRR21981115
-    sample_name: Pseudomonas_savastanoi_hfq_25_treated_r1
-    sample_group: Pseudomonas_savastanoi_hfq_25
+    sample_name: Pseudomonas_savastanoi_hfq_25_grown_on_MM_treated_r1
+    sample_group: Pseudomonas_savastanoi_hfq_25_grown_on_MM # delta-hfq/pHM1-hfq(Y25D) - complemented with the Hfq Y25D point mutant, induced in MM
     condition: treated
     replicate: 1
   - accession: SRR21981114
-    sample_name: Pseudomonas_savastanoi_hfq_25_treated_r2
-    sample_group: Pseudomonas_savastanoi_hfq_25
+    sample_name: Pseudomonas_savastanoi_hfq_25_grown_on_MM_treated_r2
+    sample_group: Pseudomonas_savastanoi_hfq_25_grown_on_MM
     condition: treated
     replicate: 2
   - accession: SRR21981117
-    sample_name: Pseudomonas_savastanoi_hfq_25_untreated_r1
-    sample_group: Pseudomonas_savastanoi_hfq_25
+    sample_name: Pseudomonas_savastanoi_hfq_25_grown_on_MM_untreated_r1
+    sample_group: Pseudomonas_savastanoi_hfq_25_grown_on_MM
     condition: untreated
     replicate: 1
   - accession: SRR21981116
-    sample_name: Pseudomonas_savastanoi_hfq_25_untreated_r2
-    sample_group: Pseudomonas_savastanoi_hfq_25
+    sample_name: Pseudomonas_savastanoi_hfq_25_grown_on_MM_untreated_r2
+    sample_group: Pseudomonas_savastanoi_hfq_25_grown_on_MM
     condition: untreated
     replicate: 2
 
-comment: "NEEDS MANUAL VERIFICATION (paywalled paper): method/principle (DMS-seq RT-stop vs MaP) and RT_enzyme inferred from GEO sample names; sample_group labels MM = minimal medium, KB = King s B medium, hrpL/hfq = mutant backgrounds, hfq_25 = second hfq series. RNA-seq and Ribo-seq runs in GSE216157 are deliberately excluded."
+comment: null

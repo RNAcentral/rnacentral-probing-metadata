@@ -29,7 +29,7 @@ raw_data:
   run_accessions:
   - accession: SRR20801871
     sample_name: BJAB_B1_EBV_treated_r1
-    sample_group: BJAB_B1_EBV
+    sample_group: BJAB_B1_EBV # BJAB-B1: human Burkitt-type B-cell lymphoma line BJAB latently infected with Epstein-Barr virus (EBV); in-cell DMS probing of host + viral transcriptome, DPBS mock as untreated
     condition: treated
     replicate: 1
   - accession: SRR20801870

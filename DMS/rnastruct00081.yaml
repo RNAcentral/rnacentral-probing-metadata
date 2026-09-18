@@ -29,7 +29,7 @@ raw_data:
   run_accessions:
   - accession: SRR11574079
     sample_name: Bacillus_subtilis_minusAA_treated_r1
-    sample_group: Bacillus_subtilis_minusAA
+    sample_group: Bacillus_subtilis_minusAA # -AA: grown in minimal medium + glutamine only (amino-acid starvation)
     condition: treated
     replicate: 1
   - accession: SRR11574080
@@ -59,7 +59,7 @@ raw_data:
     replicate: 3
   - accession: SRR11574073
     sample_name: Bacillus_subtilis_plusAA_treated_r1
-    sample_group: Bacillus_subtilis_plusAA
+    sample_group: Bacillus_subtilis_plusAA # +AA: grown in ACH medium + tryptophan (all amino acids present)
     condition: treated
     replicate: 1
   - accession: SRR11574074

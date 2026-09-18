@@ -29,7 +29,7 @@ raw_data:
   run_accessions:
   - accession: SRR9834214
     sample_name: MCF7_control_treated_r1
-    sample_group: MCF7_control
+    sample_group: MCF7_control # MCF7 human breast adenocarcinoma cell line (ER+), vehicle-treated control
     condition: treated
     replicate: 1
   - accession: SRR9834215
@@ -59,7 +59,7 @@ raw_data:
     replicate: 3
   - accession: SRR9834220
     sample_name: MCF7_hippuristanol_treated_r1
-    sample_group: MCF7_hippuristanol
+    sample_group: MCF7_hippuristanol # MCF7 cells treated with hippuristanol, a small-molecule inhibitor of the eIF4A1 RNA helicase (blocks translation initiation)
     condition: treated
     replicate: 1
   - accession: SRR9834221

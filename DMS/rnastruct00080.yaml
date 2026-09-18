@@ -28,63 +28,63 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100714
   run_accessions:
   - accession: SRR5796931
-    sample_name: Osativa_seedling_22C_treated_r1
-    sample_group: Osativa_seedling_22C
+    sample_name: Oryza_sativa_seedling_22C_treated_r1
+    sample_group: Oryza_sativa_seedling_22C
     condition: treated
     replicate: 1
   - accession: SRR5796932
-    sample_name: Osativa_seedling_22C_treated_r2
-    sample_group: Osativa_seedling_22C
+    sample_name: Oryza_sativa_seedling_22C_treated_r2
+    sample_group: Oryza_sativa_seedling_22C
     condition: treated
     replicate: 2
   - accession: SRR5796933
-    sample_name: Osativa_seedling_22C_treated_r3
-    sample_group: Osativa_seedling_22C
+    sample_name: Oryza_sativa_seedling_22C_treated_r3
+    sample_group: Oryza_sativa_seedling_22C
     condition: treated
     replicate: 3
   - accession: SRR5796928
-    sample_name: Osativa_seedling_22C_untreated_r1
-    sample_group: Osativa_seedling_22C
+    sample_name: Oryza_sativa_seedling_22C_untreated_r1
+    sample_group: Oryza_sativa_seedling_22C
     condition: untreated
     replicate: 1
   - accession: SRR5796929
-    sample_name: Osativa_seedling_22C_untreated_r2
-    sample_group: Osativa_seedling_22C
+    sample_name: Oryza_sativa_seedling_22C_untreated_r2
+    sample_group: Oryza_sativa_seedling_22C
     condition: untreated
     replicate: 2
   - accession: SRR5796930
-    sample_name: Osativa_seedling_22C_untreated_r3
-    sample_group: Osativa_seedling_22C
+    sample_name: Oryza_sativa_seedling_22C_untreated_r3
+    sample_group: Oryza_sativa_seedling_22C
     condition: untreated
     replicate: 3
   - accession: SRR5796937
-    sample_name: Osativa_seedling_42C_treated_r1
-    sample_group: Osativa_seedling_42C
+    sample_name: Oryza_sativa_seedling_42C_treated_r1
+    sample_group: Oryza_sativa_seedling_42C
     condition: treated
     replicate: 1
   - accession: SRR5796938
-    sample_name: Osativa_seedling_42C_treated_r2
-    sample_group: Osativa_seedling_42C
+    sample_name: Oryza_sativa_seedling_42C_treated_r2
+    sample_group: Oryza_sativa_seedling_42C
     condition: treated
     replicate: 2
   - accession: SRR5796939
-    sample_name: Osativa_seedling_42C_treated_r3
-    sample_group: Osativa_seedling_42C
+    sample_name: Oryza_sativa_seedling_42C_treated_r3
+    sample_group: Oryza_sativa_seedling_42C
     condition: treated
     replicate: 3
   - accession: SRR5796934
-    sample_name: Osativa_seedling_42C_untreated_r1
-    sample_group: Osativa_seedling_42C
+    sample_name: Oryza_sativa_seedling_42C_untreated_r1
+    sample_group: Oryza_sativa_seedling_42C
     condition: untreated
     replicate: 1
   - accession: SRR5796935
-    sample_name: Osativa_seedling_42C_untreated_r2
-    sample_group: Osativa_seedling_42C
+    sample_name: Oryza_sativa_seedling_42C_untreated_r2
+    sample_group: Oryza_sativa_seedling_42C
     condition: untreated
     replicate: 2
   - accession: SRR5796936
-    sample_name: Osativa_seedling_42C_untreated_r3
-    sample_group: Osativa_seedling_42C
+    sample_name: Oryza_sativa_seedling_42C_untreated_r3
+    sample_group: Oryza_sativa_seedling_42C
     condition: untreated
     replicate: 3
 

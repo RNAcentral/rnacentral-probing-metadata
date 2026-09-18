@@ -26,10 +26,14 @@ raw_data:
   repository: GEO
   accession: GSE254895
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254895
+  # Only the DMS arm of GSE254895 is listed: in-cell DMS-MaP of E. coli with TGIRT-III RT at 55C
+  # (GEO groups DMS_tgirt55 / UT_tgirt55). The rest of the series benchmarks the new G/U-probing
+  # carbodiimide reagent ETC across RT enzymes and temperatures (tgirt50-70, marathon, ssii, hivrt)
+  # and is excluded because ETC is not a DMS/SHAPE-family reagent.
   run_accessions:
   - accession: SRR27843612
     sample_name: Escherichia_coli_TGIRT55_treated_r1
-    sample_group: Escherichia_coli_TGIRT55
+    sample_group: Escherichia_coli_TGIRT55 #TGIRT-III RT at 55C
     condition: treated
     replicate: 1
   - accession: SRR27843611
