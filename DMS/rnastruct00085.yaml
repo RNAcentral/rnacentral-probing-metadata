@@ -30,6 +30,9 @@ raw_data:
   # (GEO groups DMS_tgirt55 / UT_tgirt55). The rest of the series benchmarks the new G/U-probing
   # carbodiimide reagent ETC across RT enzymes and temperatures (tgirt50-70, marathon, ssii, hivrt)
   # and is excluded because ETC is not a DMS/SHAPE-family reagent.
+  # Libraries are random-primed undepleted total RNA (no rRNA depletion); the paper analyses rRNA
+  # only, so mRNA coverage will be low. The DMS arm was the paper's positive control and 55C gave
+  # the lowest RT background - kept deliberately as an rRNA-focused in-cell structurome.
   run_accessions:
   - accession: SRR27843612
     sample_name: Escherichia_coli_TGIRT55_treated_r1

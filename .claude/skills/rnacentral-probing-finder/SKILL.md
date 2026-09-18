@@ -129,6 +129,9 @@ A candidate becomes a YAML **only if**:
 - A **whole viral genome** — one RNA molecule, but it is that organism's entire
   transcriptome. All segments of a segmented virus counts.
 - A whole RNA *class* sequenced without gene selection (e.g. the tRNA structurome).
+- Undepleted total RNA that the paper only analyses for rRNA (e.g. an RT/reagent
+  benchmark on 16S/23S). It is still an unselected library; keep it and say in a
+  YAML comment that mRNA coverage will be low (decision on rnastruct00085).
 
 **Reject:**
 - Gene-specific RT or PCR primers → an amplicon. Look for "target-specific",
