@@ -29,22 +29,22 @@ raw_data:
   run_accessions:
   - accession: GSM4512071
     sample_name: K562_invivo_NAI_treated_r1
-    sample_group: K562_invivo
+    sample_group: K562
     condition: treated
     replicate: 1
   - accession: GSM4512072
     sample_name: K562_invivo_NAI_treated_r2
-    sample_group: K562_invivo
+    sample_group: K562
     condition: treated
     replicate: 2
   - accession: GSM4795047
     sample_name: K562_invivo_untreated_r1
-    sample_group: K562_invivo
+    sample_group: K562
     condition: untreated
     replicate: 1
   - accession: GSM4795048
     sample_name: K562_invivo_untreated_r2
-    sample_group: K562_invivo
+    sample_group: K562
     condition: untreated
     replicate: 2
   - accession: GSM4512073
@@ -59,22 +59,22 @@ raw_data:
     replicate: 2
   - accession: GSM4512075
     sample_name: HepG2_invivo_NAI_treated_r1
-    sample_group: HepG2_invivo
+    sample_group: HepG2
     condition: treated
     replicate: 1
   - accession: GSM4512076
     sample_name: HepG2_invivo_NAI_treated_r2
-    sample_group: HepG2_invivo
+    sample_group: HepG2
     condition: treated
     replicate: 2
   - accession: GSM4795049
     sample_name: HepG2_invivo_untreated_r1
-    sample_group: HepG2_invivo
+    sample_group: HepG2
     condition: untreated
     replicate: 1
   - accession: GSM4795050
     sample_name: HepG2_invivo_untreated_r2
-    sample_group: HepG2_invivo
+    sample_group: HepG2
     condition: untreated
     replicate: 2
   - accession: GSM4512077
@@ -89,22 +89,22 @@ raw_data:
     replicate: 2
   - accession: GSM4512079
     sample_name: HeLa_invivo_NAI_treated_r1
-    sample_group: HeLa_invivo
+    sample_group: HeLa
     condition: treated
     replicate: 1
   - accession: GSM4512080
     sample_name: HeLa_invivo_NAI_treated_r2
-    sample_group: HeLa_invivo
+    sample_group: HeLa
     condition: treated
     replicate: 2
   - accession: GSM4795051
     sample_name: HeLa_invivo_untreated_r1
-    sample_group: HeLa_invivo
+    sample_group: HeLa
     condition: untreated
     replicate: 1
   - accession: GSM4795052
     sample_name: HeLa_invivo_untreated_r2
-    sample_group: HeLa_invivo
+    sample_group: HeLa
     condition: untreated
     replicate: 2
   - accession: GSM4512081

@@ -29,22 +29,22 @@ raw_data:
   run_accessions:
   - accession: GSM4250720
     sample_name: GM12878_invivo_NAIN3_treated_r1
-    sample_group: GM12878_invivo
+    sample_group: GM12878
     condition: treated
     replicate: 1
   - accession: GSM4250721
     sample_name: GM12878_invivo_NAIN3_treated_r2
-    sample_group: GM12878_invivo
+    sample_group: GM12878
     condition: treated
     replicate: 2
   - accession: GSM4247180
     sample_name: GM12878_invivo_DMSO_untreated_r1
-    sample_group: GM12878_invivo
+    sample_group: GM12878
     condition: untreated
     replicate: 1
   - accession: GSM4247181
     sample_name: GM12878_invivo_DMSO_untreated_r2
-    sample_group: GM12878_invivo
+    sample_group: GM12878
     condition: untreated
     replicate: 2
 

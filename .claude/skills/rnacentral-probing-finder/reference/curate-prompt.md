@@ -54,6 +54,14 @@ STEPS:
    - `principle`: RT-stop (truncation) vs MaP (mutational profiling).
    - `condition`: no-probe/DMSO/(−)reagent → untreated; probe → treated; heat →
      denatured. `sample_group`: no whitespace, underscores.
+   - Naming: in vivo is the default — NO `_invivo`/`_vivo` suffix; the bare cell
+     line or strain (exactly as GEO states it: HEK293 ≠ HEK293T; `BY4741`, not
+     `Scerevisiae`) is the group, suffix only the exceptions (`_invitro`,
+     `_AsO2stress`, `_DMplus`). Different perturbations (±drug, WT/mutant) →
+     different groups; a probe-dose series → ONE group, replicates numbered
+     sequentially across doses, dose tag in `sample_name` only. Within the file,
+     `sample_name` and `(sample_group, condition, replicate)` must be unique
+     (CI does not check this — verify yourself).
    - Viral: NCBI common name + top-level `strain:` (schema pattern rejects trailing
      digits in `scientific_name` — use the validating parent name).
    - `comment: null`.

@@ -29,32 +29,32 @@ raw_data:
   run_accessions:
   - accession: SRR27843612
     sample_name: Ecoli_invivo_DMS_treated_r1
-    sample_group: Ecoli_invivo_TGIRT55
+    sample_group: Ecoli_TGIRT55
     condition: treated
     replicate: 1
   - accession: SRR27843611
     sample_name: Ecoli_invivo_DMS_treated_r2
-    sample_group: Ecoli_invivo_TGIRT55
+    sample_group: Ecoli_TGIRT55
     condition: treated
     replicate: 2
   - accession: SRR27843610
     sample_name: Ecoli_invivo_DMS_treated_r3
-    sample_group: Ecoli_invivo_TGIRT55
+    sample_group: Ecoli_TGIRT55
     condition: treated
     replicate: 3
   - accession: SRR27843618
     sample_name: Ecoli_invivo_untreated_r1
-    sample_group: Ecoli_invivo_TGIRT55
+    sample_group: Ecoli_TGIRT55
     condition: untreated
     replicate: 1
   - accession: SRR27843617
     sample_name: Ecoli_invivo_untreated_r2
-    sample_group: Ecoli_invivo_TGIRT55
+    sample_group: Ecoli_TGIRT55
     condition: untreated
     replicate: 2
   - accession: SRR27843616
     sample_name: Ecoli_invivo_untreated_r3
-    sample_group: Ecoli_invivo_TGIRT55
+    sample_group: Ecoli_TGIRT55
     condition: untreated
     replicate: 3
 

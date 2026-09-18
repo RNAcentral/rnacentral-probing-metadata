@@ -153,7 +153,7 @@ RNA-seq with one probing pair.
 - **condition**: no probe / DMSO / (−)reagent → `untreated`; probe added →
   `treated`; heat/denaturant control → `denatured`.
 - **sample_group**: the axis samples are analysed together on; everything except
-  the probe level. **No whitespace — underscores.**
+  the probe level. **No whitespace — underscores.** See the naming rules below.
 - **principle**: truncation / RT-stop method (Structure-seq, icSHAPE) → `RT-stop`;
   mutational profiling (MaP) → `MaP`.
 - **RT_enzyme**: TGIRT / MarathonRT / group II → `Group II intron`;
@@ -174,6 +174,35 @@ RNA-seq with one probing pair.
 - `comment: null`, and leave unknown optional fields (`pH`, adapters, `umi_pattern`)
   `null` unless the paper states them.
 
+### Sample naming rules (lessons from the 00063–00096 re-curation)
+
+- **In vivo is the default — never suffix it.** No `_invivo` / `_in_vivo` /
+  `_vivo` on `sample_group`. The bare cell line / strain is the in-cell group
+  (`HEK293T`, `K562`); only the exception gets a suffix (`K562_invitro`,
+  `HEK293T_AsO2stress`, `HEK293T_DMplus`). Likewise don't encode `rna_type` in
+  names (`HEK293_total_RNA` → `HEK293`); the field already records it.
+- **Group name = cell line or strain exactly as the repository states it.** Read
+  the GEO `characteristics` / `source_name` lines (`expand_accession.py` output):
+  HEK293 vs HEK293**T** matters. For yeast/bacteria use the strain (`BY4741`,
+  `JWY6147`, `YOH001`) or `Scer_<genotype>` (`Scer_dbp3del`); never the bare
+  species (`Scerevisiae`, `Saccharomyces_cerevisiae_vivo`).
+- **Different perturbations are different groups.** ±drug, ±demethylase, WT vs
+  mutant, stress vs unstressed → separate `sample_group`s (`YOH001_pladB` /
+  `YOH001_noPladB`), each with its own replicate numbering. Sharing one group and
+  re-using replicate 1 for two perturbations is the classic silent error.
+- **Probe-dose series stay in ONE group.** Several concentrations of the same
+  reagent on the same sample are *not* separate groups (they would need duplicated
+  controls) and the dose is unimportant to the pipeline: keep them together, number
+  treated replicates sequentially across doses (2% → r1–r3, 5% → r4–r6), and keep
+  the dose tag in `sample_name` only. Decode the tag first — GEO's `DMS0.02` is
+  2 % v/v DMS, not DMSO; check the methods.
+- **`(sample_group, condition, replicate)` and `sample_name` must be unique within
+  the file.** `check_metadata_uniqueness.py` does NOT check this (it only checks
+  ids across files) — run the snippet in the validate step. The `_rN` suffix of
+  `sample_name` should equal `replicate`.
+- An untreated/no-probe control with a single replicate is fine; the ≥2 rule
+  applies to *treated* groups only.
+
 ## Validate (the repo's CI checks) — every new file must pass all four
 
 ```bash
@@ -181,6 +210,19 @@ RNA-seq with one probing pair.
 .venv/bin/python scripts/validate_obi_ids.py <file>
 .venv/bin/python scripts/validate_ncbi_taxonomy.py <file>
 .venv/bin/python scripts/check_metadata_uniqueness.py   # whole-repo, run once at the end
+```
+
+Plus the within-file check the CI scripts don't do:
+
+```bash
+.venv/bin/python - <file> <<'PY'
+import sys, yaml, collections
+runs = yaml.safe_load(open(sys.argv[1]))["raw_data"]["run_accessions"]
+for key in (lambda r: r["sample_name"], lambda r: (r["sample_group"], r["condition"], r["replicate"])):
+    dup = [k for k, n in collections.Counter(map(key, runs)).items() if n > 1]
+    if dup: sys.exit(f"DUPLICATE within {sys.argv[1]}: {dup}")
+print("within-file uniqueness OK")
+PY
 ```
 
 Note: this repo's shell is **zsh**, which does not word-split unquoted variables —
