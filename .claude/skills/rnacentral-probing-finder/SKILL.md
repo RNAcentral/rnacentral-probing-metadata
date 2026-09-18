@@ -146,6 +146,21 @@ Common rejects: single modified sample + control (no replication); a concentrati
 or time *titration* (not biological replicates); a BioProject that is mostly plain
 RNA-seq with one probing pair.
 
+**Partially replicated designs**: if only one arm is replicated (e.g. drug-treated
+n=2 but the no-drug control arm and the untreated control are n=1), do not keep
+just the replicated arm when it is a perturbation rather than a baseline — fail the
+dataset. Conversely, an unreplicated *extra* arm inside an otherwise replicated
+design (a n=1 ± puromycin pair, a n=1 cell line) is simply dropped from
+`run_accessions` with a note in `comment`.
+
+**If a YAML already exists** (re-curation, or a file written before the gate was
+applied), keep the file and mark it instead of deleting it, using the repo's
+canonical wording so downstream tooling can filter on it:
+`comment: "failed QC: no biological replicates"`,
+`"failed QC: no biological replicates for most conditions"`, or
+`"failed QC: no biological replicates for untreated"`. Any non-null `comment`
+excludes the file from pipeline processing; `comment: null` means "run it".
+
 ## Field-mapping rules (the judgement step)
 
 - **Folder**: `DMS/` if the chemical is DMS; `SHAPE/` for SHAPE reagents (NAI,
@@ -183,19 +198,34 @@ RNA-seq with one probing pair.
   names (`HEK293_total_RNA` → `HEK293`); the field already records it.
 - **Group name = cell line or strain exactly as the repository states it.** Read
   the GEO `characteristics` / `source_name` lines (`expand_accession.py` output):
-  HEK293 vs HEK293**T** matters. For yeast/bacteria use the strain (`BY4741`,
-  `JWY6147`, `YOH001`) or `Scer_<genotype>` (`Scer_dbp3del`); never the bare
-  species (`Scerevisiae`, `Saccharomyces_cerevisiae_vivo`).
+  HEK293 vs HEK293**T** matters. For yeast use the strain (`BY4741`, `JWY6147`,
+  `YOH001`) or `Scer_<genotype>` (`Scer_dbp3del`); never the bare species
+  (`Scerevisiae`).
+- **Bacteria / archaea: full binomial with underscores, or the strain.**
+  `Bacillus_subtilis_37C`, `Escherichia_coli_WT`, `Methanosarcina_acetivorans_acetate`,
+  or a named strain (`MG1655_delta_gcvB`, `E_coli_DH5a`). No ad-hoc abbreviations
+  (`Bsub`, `Ecoli`, `Psav`, `Macetivorans`).
 - **Different perturbations are different groups.** ±drug, ±demethylase, WT vs
   mutant, stress vs unstressed → separate `sample_group`s (`YOH001_pladB` /
   `YOH001_noPladB`), each with its own replicate numbering. Sharing one group and
   re-using replicate 1 for two perturbations is the classic silent error.
-- **Probe-dose series stay in ONE group.** Several concentrations of the same
-  reagent on the same sample are *not* separate groups (they would need duplicated
-  controls) and the dose is unimportant to the pipeline: keep them together, number
-  treated replicates sequentially across doses (2% → r1–r3, 5% → r4–r6), and keep
-  the dose tag in `sample_name` only. Decode the tag first — GEO's `DMS0.02` is
-  2 % v/v DMS, not DMSO; check the methods.
+- **Probe-dose series: keep ONE dose.** Several concentrations of the same
+  reagent are neither biological replicates nor separate groups (they'd need
+  duplicated controls, and a run accession may appear only once in the repo).
+  Pick the dose the paper analyses (usually the higher/standard one), list it as
+  r1–rN, and drop the others. Don't renumber a second dose as r4–r6: the pipeline
+  pairs controls by replicate number (see below), so r4–r6 would have no untreated
+  and fail the all-or-none rf-normfactor check. Decode the tag first — GEO's
+  `DMS0.02` is 2 % v/v DMS, not DMSO; check the methods.
+- **Every treated replicate needs a control with the same replicate number.**
+  nf-core/rnastructurome pairs on `sample_group` + `replicate` exactly; with
+  `fuzzy_untreated_pairing` (default on) it falls back to (1) an untreated whose
+  `sample_group` shares the text *before the first underscore* at the **same
+  replicate**, then (2) the single untreated control if the whole file has exactly
+  one. Anything else leaves that treated sample without a control and, because
+  other groups have one, `rf-normfactor` errors (all-or-none). So: untreated
+  r1–r3 for treated r1–r3; one lone untreated is fine only if it is the *only*
+  untreated in the file.
 - **`(sample_group, condition, replicate)` and `sample_name` must be unique within
   the file.** `check_metadata_uniqueness.py` does NOT check this (it only checks
   ids across files) — run the snippet in the validate step. The `_rN` suffix of

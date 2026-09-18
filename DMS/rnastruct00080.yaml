@@ -28,17 +28,17 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE100714
   run_accessions:
   - accession: SRR5796931
-    sample_name: Osativa_seedling_22C_DMS_treated_r1
+    sample_name: Osativa_seedling_22C_treated_r1
     sample_group: Osativa_seedling_22C
     condition: treated
     replicate: 1
   - accession: SRR5796932
-    sample_name: Osativa_seedling_22C_DMS_treated_r2
+    sample_name: Osativa_seedling_22C_treated_r2
     sample_group: Osativa_seedling_22C
     condition: treated
     replicate: 2
   - accession: SRR5796933
-    sample_name: Osativa_seedling_22C_DMS_treated_r3
+    sample_name: Osativa_seedling_22C_treated_r3
     sample_group: Osativa_seedling_22C
     condition: treated
     replicate: 3
@@ -58,17 +58,17 @@ raw_data:
     condition: untreated
     replicate: 3
   - accession: SRR5796937
-    sample_name: Osativa_seedling_42C_DMS_treated_r1
+    sample_name: Osativa_seedling_42C_treated_r1
     sample_group: Osativa_seedling_42C
     condition: treated
     replicate: 1
   - accession: SRR5796938
-    sample_name: Osativa_seedling_42C_DMS_treated_r2
+    sample_name: Osativa_seedling_42C_treated_r2
     sample_group: Osativa_seedling_42C
     condition: treated
     replicate: 2
   - accession: SRR5796939
-    sample_name: Osativa_seedling_42C_DMS_treated_r3
+    sample_name: Osativa_seedling_42C_treated_r3
     sample_group: Osativa_seedling_42C
     condition: treated
     replicate: 3

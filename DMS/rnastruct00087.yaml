@@ -28,22 +28,22 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246523
   run_accessions:
   - accession: GSM7870476
-    sample_name: HEK293T_mito_WT_DMS_treated_r1
+    sample_name: HEK293T_mito_WT_treated_r1
     sample_group: HEK293T_mito_WT
     condition: treated
     replicate: 1
   - accession: GSM7870477
-    sample_name: HEK293T_mito_WT_DMS_treated_r2
+    sample_name: HEK293T_mito_WT_treated_r2
     sample_group: HEK293T_mito_WT
     condition: treated
     replicate: 2
   - accession: GSM7870478
-    sample_name: HEK293T_mito_KO_DMS_treated_r1
+    sample_name: HEK293T_mito_KO_treated_r1
     sample_group: HEK293T_mito_KO
     condition: treated
     replicate: 1
   - accession: GSM7870479
-    sample_name: HEK293T_mito_KO_DMS_treated_r2
+    sample_name: HEK293T_mito_KO_treated_r2
     sample_group: HEK293T_mito_KO
     condition: treated
     replicate: 2

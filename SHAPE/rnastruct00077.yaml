@@ -29,512 +29,512 @@ raw_data:
   landing_page: https://www.ebi.ac.uk/ena/browser/view/PRJEB71404
   run_accessions:
   - accession: ERR12384337
-    sample_name: BTV_segment1_invitro_1M7_treated_r1
+    sample_name: BTV_segment1_treated_r1
     sample_group: BTV_segment1
     condition: treated
     replicate: 1
   - accession: ERR12384336
-    sample_name: BTV_segment1_invitro_DMSO_untreated_r1
+    sample_name: BTV_segment1_untreated_r1
     sample_group: BTV_segment1
     condition: untreated
     replicate: 1
   - accession: ERR12384335
-    sample_name: BTV_segment1_invitro_denatured_r1
+    sample_name: BTV_segment1_denatured_r1
     sample_group: BTV_segment1
     condition: denatured
     replicate: 1
   - accession: ERR12384340
-    sample_name: BTV_segment2_invitro_1M7_treated_r1
+    sample_name: BTV_segment2_treated_r1
     sample_group: BTV_segment2
     condition: treated
     replicate: 1
   - accession: ERR12384339
-    sample_name: BTV_segment2_invitro_DMSO_untreated_r1
+    sample_name: BTV_segment2_untreated_r1
     sample_group: BTV_segment2
     condition: untreated
     replicate: 1
   - accession: ERR12384338
-    sample_name: BTV_segment2_invitro_denatured_r1
+    sample_name: BTV_segment2_denatured_r1
     sample_group: BTV_segment2
     condition: denatured
     replicate: 1
   - accession: ERR12384343
-    sample_name: BTV_segment3_invitro_1M7_treated_r1
+    sample_name: BTV_segment3_treated_r1
     sample_group: BTV_segment3
     condition: treated
     replicate: 1
   - accession: ERR12384342
-    sample_name: BTV_segment3_invitro_DMSO_untreated_r1
+    sample_name: BTV_segment3_untreated_r1
     sample_group: BTV_segment3
     condition: untreated
     replicate: 1
   - accession: ERR12384341
-    sample_name: BTV_segment3_invitro_denatured_r1
+    sample_name: BTV_segment3_denatured_r1
     sample_group: BTV_segment3
     condition: denatured
     replicate: 1
   - accession: ERR12384346
-    sample_name: BTV_segment4_invitro_1M7_treated_r1
+    sample_name: BTV_segment4_treated_r1
     sample_group: BTV_segment4
     condition: treated
     replicate: 1
   - accession: ERR12384345
-    sample_name: BTV_segment4_invitro_DMSO_untreated_r1
+    sample_name: BTV_segment4_untreated_r1
     sample_group: BTV_segment4
     condition: untreated
     replicate: 1
   - accession: ERR12384344
-    sample_name: BTV_segment4_invitro_denatured_r1
+    sample_name: BTV_segment4_denatured_r1
     sample_group: BTV_segment4
     condition: denatured
     replicate: 1
   - accession: ERR12384349
-    sample_name: BTV_segment5_invitro_1M7_treated_r1
+    sample_name: BTV_segment5_treated_r1
     sample_group: BTV_segment5
     condition: treated
     replicate: 1
   - accession: ERR12384348
-    sample_name: BTV_segment5_invitro_DMSO_untreated_r1
+    sample_name: BTV_segment5_untreated_r1
     sample_group: BTV_segment5
     condition: untreated
     replicate: 1
   - accession: ERR12384347
-    sample_name: BTV_segment5_invitro_denatured_r1
+    sample_name: BTV_segment5_denatured_r1
     sample_group: BTV_segment5
     condition: denatured
     replicate: 1
   - accession: ERR12384352
-    sample_name: BTV_segment6_invitro_1M7_treated_r1
+    sample_name: BTV_segment6_treated_r1
     sample_group: BTV_segment6
     condition: treated
     replicate: 1
   - accession: ERR12384061
-    sample_name: BTV_segment6_invitro_1M7_treated_r2
+    sample_name: BTV_segment6_treated_r2
     sample_group: BTV_segment6
     condition: treated
     replicate: 2
   - accession: ERR12384351
-    sample_name: BTV_segment6_invitro_DMSO_untreated_r1
+    sample_name: BTV_segment6_untreated_r1
     sample_group: BTV_segment6
     condition: untreated
     replicate: 1
   - accession: ERR12384060
-    sample_name: BTV_segment6_invitro_DMSO_untreated_r2
+    sample_name: BTV_segment6_untreated_r2
     sample_group: BTV_segment6
     condition: untreated
     replicate: 2
   - accession: ERR12384350
-    sample_name: BTV_segment6_invitro_denatured_r1
+    sample_name: BTV_segment6_denatured_r1
     sample_group: BTV_segment6
     condition: denatured
     replicate: 1
   - accession: ERR12384059
-    sample_name: BTV_segment6_invitro_denatured_r2
+    sample_name: BTV_segment6_denatured_r2
     sample_group: BTV_segment6
     condition: denatured
     replicate: 2
   - accession: ERR12384355
-    sample_name: BTV_segment7_invitro_1M7_treated_r1
+    sample_name: BTV_segment7_treated_r1
     sample_group: BTV_segment7
     condition: treated
     replicate: 1
   - accession: ERR12384064
-    sample_name: BTV_segment7_invitro_1M7_treated_r2
+    sample_name: BTV_segment7_treated_r2
     sample_group: BTV_segment7
     condition: treated
     replicate: 2
   - accession: ERR12384354
-    sample_name: BTV_segment7_invitro_DMSO_untreated_r1
+    sample_name: BTV_segment7_untreated_r1
     sample_group: BTV_segment7
     condition: untreated
     replicate: 1
   - accession: ERR12384063
-    sample_name: BTV_segment7_invitro_DMSO_untreated_r2
+    sample_name: BTV_segment7_untreated_r2
     sample_group: BTV_segment7
     condition: untreated
     replicate: 2
   - accession: ERR12384353
-    sample_name: BTV_segment7_invitro_denatured_r1
+    sample_name: BTV_segment7_denatured_r1
     sample_group: BTV_segment7
     condition: denatured
     replicate: 1
   - accession: ERR12384062
-    sample_name: BTV_segment7_invitro_denatured_r2
+    sample_name: BTV_segment7_denatured_r2
     sample_group: BTV_segment7
     condition: denatured
     replicate: 2
   - accession: ERR12384358
-    sample_name: BTV_segment8_invitro_1M7_treated_r1
+    sample_name: BTV_segment8_treated_r1
     sample_group: BTV_segment8
     condition: treated
     replicate: 1
   - accession: ERR12384067
-    sample_name: BTV_segment8_invitro_1M7_treated_r2
+    sample_name: BTV_segment8_treated_r2
     sample_group: BTV_segment8
     condition: treated
     replicate: 2
   - accession: ERR12384357
-    sample_name: BTV_segment8_invitro_DMSO_untreated_r1
+    sample_name: BTV_segment8_untreated_r1
     sample_group: BTV_segment8
     condition: untreated
     replicate: 1
   - accession: ERR12384066
-    sample_name: BTV_segment8_invitro_DMSO_untreated_r2
+    sample_name: BTV_segment8_untreated_r2
     sample_group: BTV_segment8
     condition: untreated
     replicate: 2
   - accession: ERR12384356
-    sample_name: BTV_segment8_invitro_denatured_r1
+    sample_name: BTV_segment8_denatured_r1
     sample_group: BTV_segment8
     condition: denatured
     replicate: 1
   - accession: ERR12384065
-    sample_name: BTV_segment8_invitro_denatured_r2
+    sample_name: BTV_segment8_denatured_r2
     sample_group: BTV_segment8
     condition: denatured
     replicate: 2
   - accession: ERR12384361
-    sample_name: BTV_segment9_invitro_1M7_treated_r1
+    sample_name: BTV_segment9_treated_r1
     sample_group: BTV_segment9
     condition: treated
     replicate: 1
   - accession: ERR12384070
-    sample_name: BTV_segment9_invitro_1M7_treated_r2
+    sample_name: BTV_segment9_treated_r2
     sample_group: BTV_segment9
     condition: treated
     replicate: 2
   - accession: ERR12384360
-    sample_name: BTV_segment9_invitro_DMSO_untreated_r1
+    sample_name: BTV_segment9_untreated_r1
     sample_group: BTV_segment9
     condition: untreated
     replicate: 1
   - accession: ERR12384069
-    sample_name: BTV_segment9_invitro_DMSO_untreated_r2
+    sample_name: BTV_segment9_untreated_r2
     sample_group: BTV_segment9
     condition: untreated
     replicate: 2
   - accession: ERR12384359
-    sample_name: BTV_segment9_invitro_denatured_r1
+    sample_name: BTV_segment9_denatured_r1
     sample_group: BTV_segment9
     condition: denatured
     replicate: 1
   - accession: ERR12384068
-    sample_name: BTV_segment9_invitro_denatured_r2
+    sample_name: BTV_segment9_denatured_r2
     sample_group: BTV_segment9
     condition: denatured
     replicate: 2
   - accession: ERR12384334
-    sample_name: BTV_segment10_invitro_1M7_treated_r1
+    sample_name: BTV_segment10_treated_r1
     sample_group: BTV_segment10
     condition: treated
     replicate: 1
   - accession: ERR12384058
-    sample_name: BTV_segment10_invitro_1M7_treated_r2
+    sample_name: BTV_segment10_treated_r2
     sample_group: BTV_segment10
     condition: treated
     replicate: 2
   - accession: ERR12384333
-    sample_name: BTV_segment10_invitro_DMSO_untreated_r1
+    sample_name: BTV_segment10_untreated_r1
     sample_group: BTV_segment10
     condition: untreated
     replicate: 1
   - accession: ERR12384057
-    sample_name: BTV_segment10_invitro_DMSO_untreated_r2
+    sample_name: BTV_segment10_untreated_r2
     sample_group: BTV_segment10
     condition: untreated
     replicate: 2
   - accession: ERR12384332
-    sample_name: BTV_segment10_invitro_denatured_r1
+    sample_name: BTV_segment10_denatured_r1
     sample_group: BTV_segment10
     condition: denatured
     replicate: 1
   - accession: ERR12384056
-    sample_name: BTV_segment10_invitro_denatured_r2
+    sample_name: BTV_segment10_denatured_r2
     sample_group: BTV_segment10
     condition: denatured
     replicate: 2
   - accession: ERR12384085
-    sample_name: BTV_complex_B1_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B1_treated_r1
     sample_group: BTV_complex_B1
     condition: treated
     replicate: 1
   - accession: ERR12384046
-    sample_name: BTV_complex_B1_invitro_1M7_treated_r2
+    sample_name: BTV_complex_B1_treated_r2
     sample_group: BTV_complex_B1
     condition: treated
     replicate: 2
   - accession: ERR12384084
-    sample_name: BTV_complex_B1_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B1_untreated_r1
     sample_group: BTV_complex_B1
     condition: untreated
     replicate: 1
   - accession: ERR12384045
-    sample_name: BTV_complex_B1_invitro_DMSO_untreated_r2
+    sample_name: BTV_complex_B1_untreated_r2
     sample_group: BTV_complex_B1
     condition: untreated
     replicate: 2
   - accession: ERR12384083
-    sample_name: BTV_complex_B1_invitro_denatured_r1
+    sample_name: BTV_complex_B1_denatured_r1
     sample_group: BTV_complex_B1
     condition: denatured
     replicate: 1
   - accession: ERR12384044
-    sample_name: BTV_complex_B1_invitro_denatured_r2
+    sample_name: BTV_complex_B1_denatured_r2
     sample_group: BTV_complex_B1
     condition: denatured
     replicate: 2
   - accession: ERR12384088
-    sample_name: BTV_complex_B2_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B2_treated_r1
     sample_group: BTV_complex_B2
     condition: treated
     replicate: 1
   - accession: ERR12384087
-    sample_name: BTV_complex_B2_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B2_untreated_r1
     sample_group: BTV_complex_B2
     condition: untreated
     replicate: 1
   - accession: ERR12384086
-    sample_name: BTV_complex_B2_invitro_denatured_r1
+    sample_name: BTV_complex_B2_denatured_r1
     sample_group: BTV_complex_B2
     condition: denatured
     replicate: 1
   - accession: ERR12384091
-    sample_name: BTV_complex_B3_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B3_treated_r1
     sample_group: BTV_complex_B3
     condition: treated
     replicate: 1
   - accession: ERR12384049
-    sample_name: BTV_complex_B3_invitro_1M7_treated_r2
+    sample_name: BTV_complex_B3_treated_r2
     sample_group: BTV_complex_B3
     condition: treated
     replicate: 2
   - accession: ERR12384090
-    sample_name: BTV_complex_B3_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B3_untreated_r1
     sample_group: BTV_complex_B3
     condition: untreated
     replicate: 1
   - accession: ERR12384048
-    sample_name: BTV_complex_B3_invitro_DMSO_untreated_r2
+    sample_name: BTV_complex_B3_untreated_r2
     sample_group: BTV_complex_B3
     condition: untreated
     replicate: 2
   - accession: ERR12384089
-    sample_name: BTV_complex_B3_invitro_denatured_r1
+    sample_name: BTV_complex_B3_denatured_r1
     sample_group: BTV_complex_B3
     condition: denatured
     replicate: 1
   - accession: ERR12384047
-    sample_name: BTV_complex_B3_invitro_denatured_r2
+    sample_name: BTV_complex_B3_denatured_r2
     sample_group: BTV_complex_B3
     condition: denatured
     replicate: 2
   - accession: ERR12384094
-    sample_name: BTV_complex_B4_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B4_treated_r1
     sample_group: BTV_complex_B4
     condition: treated
     replicate: 1
   - accession: ERR12384093
-    sample_name: BTV_complex_B4_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B4_untreated_r1
     sample_group: BTV_complex_B4
     condition: untreated
     replicate: 1
   - accession: ERR12384092
-    sample_name: BTV_complex_B4_invitro_denatured_r1
+    sample_name: BTV_complex_B4_denatured_r1
     sample_group: BTV_complex_B4
     condition: denatured
     replicate: 1
   - accession: ERR12384097
-    sample_name: BTV_complex_B5_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B5_treated_r1
     sample_group: BTV_complex_B5
     condition: treated
     replicate: 1
   - accession: ERR12384096
-    sample_name: BTV_complex_B5_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B5_untreated_r1
     sample_group: BTV_complex_B5
     condition: untreated
     replicate: 1
   - accession: ERR12384095
-    sample_name: BTV_complex_B5_invitro_denatured_r1
+    sample_name: BTV_complex_B5_denatured_r1
     sample_group: BTV_complex_B5
     condition: denatured
     replicate: 1
   - accession: ERR12384100
-    sample_name: BTV_complex_B6_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B6_treated_r1
     sample_group: BTV_complex_B6
     condition: treated
     replicate: 1
   - accession: ERR12384052
-    sample_name: BTV_complex_B6_invitro_1M7_treated_r2
+    sample_name: BTV_complex_B6_treated_r2
     sample_group: BTV_complex_B6
     condition: treated
     replicate: 2
   - accession: ERR12384099
-    sample_name: BTV_complex_B6_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B6_untreated_r1
     sample_group: BTV_complex_B6
     condition: untreated
     replicate: 1
   - accession: ERR12384051
-    sample_name: BTV_complex_B6_invitro_DMSO_untreated_r2
+    sample_name: BTV_complex_B6_untreated_r2
     sample_group: BTV_complex_B6
     condition: untreated
     replicate: 2
   - accession: ERR12384098
-    sample_name: BTV_complex_B6_invitro_denatured_r1
+    sample_name: BTV_complex_B6_denatured_r1
     sample_group: BTV_complex_B6
     condition: denatured
     replicate: 1
   - accession: ERR12384050
-    sample_name: BTV_complex_B6_invitro_denatured_r2
+    sample_name: BTV_complex_B6_denatured_r2
     sample_group: BTV_complex_B6
     condition: denatured
     replicate: 2
   - accession: ERR12384103
-    sample_name: BTV_complex_B7_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B7_treated_r1
     sample_group: BTV_complex_B7
     condition: treated
     replicate: 1
   - accession: ERR12384055
-    sample_name: BTV_complex_B7_invitro_1M7_treated_r2
+    sample_name: BTV_complex_B7_treated_r2
     sample_group: BTV_complex_B7
     condition: treated
     replicate: 2
   - accession: ERR12384102
-    sample_name: BTV_complex_B7_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B7_untreated_r1
     sample_group: BTV_complex_B7
     condition: untreated
     replicate: 1
   - accession: ERR12384054
-    sample_name: BTV_complex_B7_invitro_DMSO_untreated_r2
+    sample_name: BTV_complex_B7_untreated_r2
     sample_group: BTV_complex_B7
     condition: untreated
     replicate: 2
   - accession: ERR12384101
-    sample_name: BTV_complex_B7_invitro_denatured_r1
+    sample_name: BTV_complex_B7_denatured_r1
     sample_group: BTV_complex_B7
     condition: denatured
     replicate: 1
   - accession: ERR12384053
-    sample_name: BTV_complex_B7_invitro_denatured_r2
+    sample_name: BTV_complex_B7_denatured_r2
     sample_group: BTV_complex_B7
     condition: denatured
     replicate: 2
   - accession: ERR12384106
-    sample_name: BTV_complex_B8_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B8_treated_r1
     sample_group: BTV_complex_B8
     condition: treated
     replicate: 1
   - accession: ERR12384105
-    sample_name: BTV_complex_B8_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B8_untreated_r1
     sample_group: BTV_complex_B8
     condition: untreated
     replicate: 1
   - accession: ERR12384104
-    sample_name: BTV_complex_B8_invitro_denatured_r1
+    sample_name: BTV_complex_B8_denatured_r1
     sample_group: BTV_complex_B8
     condition: denatured
     replicate: 1
   - accession: ERR12384109
-    sample_name: BTV_complex_B9_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B9_treated_r1
     sample_group: BTV_complex_B9
     condition: treated
     replicate: 1
   - accession: ERR12384108
-    sample_name: BTV_complex_B9_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B9_untreated_r1
     sample_group: BTV_complex_B9
     condition: untreated
     replicate: 1
   - accession: ERR12384107
-    sample_name: BTV_complex_B9_invitro_denatured_r1
+    sample_name: BTV_complex_B9_denatured_r1
     sample_group: BTV_complex_B9
     condition: denatured
     replicate: 1
   - accession: ERR12384073
-    sample_name: BTV_complex_B10_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B10_treated_r1
     sample_group: BTV_complex_B10
     condition: treated
     replicate: 1
   - accession: ERR12384040
-    sample_name: BTV_complex_B10_invitro_1M7_treated_r2
+    sample_name: BTV_complex_B10_treated_r2
     sample_group: BTV_complex_B10
     condition: treated
     replicate: 2
   - accession: ERR12384072
-    sample_name: BTV_complex_B10_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B10_untreated_r1
     sample_group: BTV_complex_B10
     condition: untreated
     replicate: 1
   - accession: ERR12384039
-    sample_name: BTV_complex_B10_invitro_DMSO_untreated_r2
+    sample_name: BTV_complex_B10_untreated_r2
     sample_group: BTV_complex_B10
     condition: untreated
     replicate: 2
   - accession: ERR12384071
-    sample_name: BTV_complex_B10_invitro_denatured_r1
+    sample_name: BTV_complex_B10_denatured_r1
     sample_group: BTV_complex_B10
     condition: denatured
     replicate: 1
   - accession: ERR12384038
-    sample_name: BTV_complex_B10_invitro_denatured_r2
+    sample_name: BTV_complex_B10_denatured_r2
     sample_group: BTV_complex_B10
     condition: denatured
     replicate: 2
   - accession: ERR12384076
-    sample_name: BTV_complex_B11_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B11_treated_r1
     sample_group: BTV_complex_B11
     condition: treated
     replicate: 1
   - accession: ERR12384075
-    sample_name: BTV_complex_B11_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B11_untreated_r1
     sample_group: BTV_complex_B11
     condition: untreated
     replicate: 1
   - accession: ERR12384074
-    sample_name: BTV_complex_B11_invitro_denatured_r1
+    sample_name: BTV_complex_B11_denatured_r1
     sample_group: BTV_complex_B11
     condition: denatured
     replicate: 1
   - accession: ERR12384079
-    sample_name: BTV_complex_B12_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B12_treated_r1
     sample_group: BTV_complex_B12
     condition: treated
     replicate: 1
   - accession: ERR12384043
-    sample_name: BTV_complex_B12_invitro_1M7_treated_r2
+    sample_name: BTV_complex_B12_treated_r2
     sample_group: BTV_complex_B12
     condition: treated
     replicate: 2
   - accession: ERR12384078
-    sample_name: BTV_complex_B12_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B12_untreated_r1
     sample_group: BTV_complex_B12
     condition: untreated
     replicate: 1
   - accession: ERR12384042
-    sample_name: BTV_complex_B12_invitro_DMSO_untreated_r2
+    sample_name: BTV_complex_B12_untreated_r2
     sample_group: BTV_complex_B12
     condition: untreated
     replicate: 2
   - accession: ERR12384077
-    sample_name: BTV_complex_B12_invitro_denatured_r1
+    sample_name: BTV_complex_B12_denatured_r1
     sample_group: BTV_complex_B12
     condition: denatured
     replicate: 1
   - accession: ERR12384041
-    sample_name: BTV_complex_B12_invitro_denatured_r2
+    sample_name: BTV_complex_B12_denatured_r2
     sample_group: BTV_complex_B12
     condition: denatured
     replicate: 2
   - accession: ERR12384082
-    sample_name: BTV_complex_B13_invitro_1M7_treated_r1
+    sample_name: BTV_complex_B13_treated_r1
     sample_group: BTV_complex_B13
     condition: treated
     replicate: 1
   - accession: ERR12384081
-    sample_name: BTV_complex_B13_invitro_DMSO_untreated_r1
+    sample_name: BTV_complex_B13_untreated_r1
     sample_group: BTV_complex_B13
     condition: untreated
     replicate: 1
   - accession: ERR12384080
-    sample_name: BTV_complex_B13_invitro_denatured_r1
+    sample_name: BTV_complex_B13_denatured_r1
     sample_group: BTV_complex_B13
     condition: denatured
     replicate: 1

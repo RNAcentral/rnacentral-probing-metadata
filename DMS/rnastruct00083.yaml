@@ -28,33 +28,33 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233607
   run_accessions:
   - accession: SRR24750381
-    sample_name: Ecoli_WT_invivo_DMS_treated_r1
-    sample_group: Ecoli_WT
+    sample_name: Escherichia_coli_WT_treated_r1
+    sample_group: Escherichia_coli_WT
     condition: treated
     replicate: 1
   - accession: SRR24750378
-    sample_name: Ecoli_WT_invivo_DMS_treated_r2
-    sample_group: Ecoli_WT
+    sample_name: Escherichia_coli_WT_treated_r2
+    sample_group: Escherichia_coli_WT
     condition: treated
     replicate: 2
   - accession: SRR24750375
-    sample_name: Ecoli_WT_invivo_DMS_treated_r3
-    sample_group: Ecoli_WT
+    sample_name: Escherichia_coli_WT_treated_r3
+    sample_group: Escherichia_coli_WT
     condition: treated
     replicate: 3
   - accession: SRR24750382
-    sample_name: Ecoli_WT_invivo_untreated_r1
-    sample_group: Ecoli_WT
+    sample_name: Escherichia_coli_WT_untreated_r1
+    sample_group: Escherichia_coli_WT
     condition: untreated
     replicate: 1
   - accession: SRR24750379
-    sample_name: Ecoli_WT_invivo_untreated_r2
-    sample_group: Ecoli_WT
+    sample_name: Escherichia_coli_WT_untreated_r2
+    sample_group: Escherichia_coli_WT
     condition: untreated
     replicate: 2
   - accession: SRR24750376
-    sample_name: Ecoli_WT_invivo_untreated_r3
-    sample_group: Ecoli_WT
+    sample_name: Escherichia_coli_WT_untreated_r3
+    sample_group: Escherichia_coli_WT
     condition: untreated
     replicate: 3
 

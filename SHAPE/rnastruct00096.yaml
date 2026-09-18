@@ -28,402 +28,402 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288910
   run_accessions:
   - accession: GSM8778484
-    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2_NAIN3_treated_r1
+    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2_treated_r1
     sample_group: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2
     condition: treated
     replicate: 1
   - accession: GSM8778486
-    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2_NAIN3_treated_r2
+    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2_treated_r2
     sample_group: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2
     condition: treated
     replicate: 2
   - accession: GSM8778483
-    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2_DMSO_untreated_r1
+    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2_untreated_r1
     sample_group: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2
     condition: untreated
     replicate: 1
   - accession: GSM8778485
-    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2_DMSO_untreated_r2
+    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2_untreated_r2
     sample_group: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2
     condition: untreated
     replicate: 2
   - accession: GSM8778492
-    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2ATPdepletion_NAIN3_treated_r1
+    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2ATPdepletion_treated_r1
     sample_group: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2ATPdepletion
     condition: treated
     replicate: 1
   - accession: GSM8778494
-    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2ATPdepletion_NAIN3_treated_r2
+    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2ATPdepletion_treated_r2
     sample_group: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2ATPdepletion
     condition: treated
     replicate: 2
   - accession: GSM8778491
-    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2ATPdepletion_DMSO_untreated_r1
+    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2ATPdepletion_untreated_r1
     sample_group: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2ATPdepletion
     condition: untreated
     replicate: 1
   - accession: GSM8778493
-    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2ATPdepletion_DMSO_untreated_r2
+    sample_name: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2ATPdepletion_untreated_r2
     sample_group: FracSHAPEATPdep_HeLa_RNAGranule_NaAsO2ATPdepletion
     condition: untreated
     replicate: 2
   - accession: GSM8778480
-    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2_NAIN3_treated_r1
+    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2_treated_r1
     sample_group: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2
     condition: treated
     replicate: 1
   - accession: GSM8778482
-    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2_NAIN3_treated_r2
+    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2_treated_r2
     sample_group: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2
     condition: treated
     replicate: 2
   - accession: GSM8778479
-    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2_DMSO_untreated_r1
+    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2_untreated_r1
     sample_group: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2
     condition: untreated
     replicate: 1
   - accession: GSM8778481
-    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2_DMSO_untreated_r2
+    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2_untreated_r2
     sample_group: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2
     condition: untreated
     replicate: 2
   - accession: GSM8778488
-    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2ATPdepletion_NAIN3_treated_r1
+    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2ATPdepletion_treated_r1
     sample_group: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2ATPdepletion
     condition: treated
     replicate: 1
   - accession: GSM8778490
-    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2ATPdepletion_NAIN3_treated_r2
+    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2ATPdepletion_treated_r2
     sample_group: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2ATPdepletion
     condition: treated
     replicate: 2
   - accession: GSM8778487
-    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2ATPdepletion_DMSO_untreated_r1
+    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2ATPdepletion_untreated_r1
     sample_group: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2ATPdepletion
     condition: untreated
     replicate: 1
   - accession: GSM8778489
-    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2ATPdepletion_DMSO_untreated_r2
+    sample_name: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2ATPdepletion_untreated_r2
     sample_group: FracSHAPEATPdep_HeLa_SolubleCytosol_NaAsO2ATPdepletion
     condition: untreated
     replicate: 2
   - accession: GSM8778470
-    sample_name: FracSHAPE_HeLa_RNAGranule_NaAsO2_NAIN3_treated_r1
+    sample_name: FracSHAPE_HeLa_RNAGranule_NaAsO2_treated_r1
     sample_group: FracSHAPE_HeLa_RNAGranule_NaAsO2
     condition: treated
     replicate: 1
   - accession: GSM8778471
-    sample_name: FracSHAPE_HeLa_RNAGranule_NaAsO2_NAIN3_treated_r2
+    sample_name: FracSHAPE_HeLa_RNAGranule_NaAsO2_treated_r2
     sample_group: FracSHAPE_HeLa_RNAGranule_NaAsO2
     condition: treated
     replicate: 2
   - accession: GSM8778472
-    sample_name: FracSHAPE_HeLa_RNAGranule_NaAsO2_NAIN3_treated_r3
+    sample_name: FracSHAPE_HeLa_RNAGranule_NaAsO2_treated_r3
     sample_group: FracSHAPE_HeLa_RNAGranule_NaAsO2
     condition: treated
     replicate: 3
   - accession: GSM8778467
-    sample_name: FracSHAPE_HeLa_RNAGranule_NaAsO2_DMSO_untreated_r1
+    sample_name: FracSHAPE_HeLa_RNAGranule_NaAsO2_untreated_r1
     sample_group: FracSHAPE_HeLa_RNAGranule_NaAsO2
     condition: untreated
     replicate: 1
   - accession: GSM8778468
-    sample_name: FracSHAPE_HeLa_RNAGranule_NaAsO2_DMSO_untreated_r2
+    sample_name: FracSHAPE_HeLa_RNAGranule_NaAsO2_untreated_r2
     sample_group: FracSHAPE_HeLa_RNAGranule_NaAsO2
     condition: untreated
     replicate: 2
   - accession: GSM8778469
-    sample_name: FracSHAPE_HeLa_RNAGranule_NaAsO2_DMSO_untreated_r3
+    sample_name: FracSHAPE_HeLa_RNAGranule_NaAsO2_untreated_r3
     sample_group: FracSHAPE_HeLa_RNAGranule_NaAsO2
     condition: untreated
     replicate: 3
   - accession: GSM8778458
-    sample_name: FracSHAPE_HeLa_RNAGranule_Untreated_NAIN3_treated_r1
+    sample_name: FracSHAPE_HeLa_RNAGranule_Untreated_treated_r1
     sample_group: FracSHAPE_HeLa_RNAGranule_Untreated
     condition: treated
     replicate: 1
   - accession: GSM8778459
-    sample_name: FracSHAPE_HeLa_RNAGranule_Untreated_NAIN3_treated_r2
+    sample_name: FracSHAPE_HeLa_RNAGranule_Untreated_treated_r2
     sample_group: FracSHAPE_HeLa_RNAGranule_Untreated
     condition: treated
     replicate: 2
   - accession: GSM8778460
-    sample_name: FracSHAPE_HeLa_RNAGranule_Untreated_NAIN3_treated_r3
+    sample_name: FracSHAPE_HeLa_RNAGranule_Untreated_treated_r3
     sample_group: FracSHAPE_HeLa_RNAGranule_Untreated
     condition: treated
     replicate: 3
   - accession: GSM8778455
-    sample_name: FracSHAPE_HeLa_RNAGranule_Untreated_DMSO_untreated_r1
+    sample_name: FracSHAPE_HeLa_RNAGranule_Untreated_untreated_r1
     sample_group: FracSHAPE_HeLa_RNAGranule_Untreated
     condition: untreated
     replicate: 1
   - accession: GSM8778456
-    sample_name: FracSHAPE_HeLa_RNAGranule_Untreated_DMSO_untreated_r2
+    sample_name: FracSHAPE_HeLa_RNAGranule_Untreated_untreated_r2
     sample_group: FracSHAPE_HeLa_RNAGranule_Untreated
     condition: untreated
     replicate: 2
   - accession: GSM8778457
-    sample_name: FracSHAPE_HeLa_RNAGranule_Untreated_DMSO_untreated_r3
+    sample_name: FracSHAPE_HeLa_RNAGranule_Untreated_untreated_r3
     sample_group: FracSHAPE_HeLa_RNAGranule_Untreated
     condition: untreated
     replicate: 3
   - accession: GSM8778464
-    sample_name: FracSHAPE_HeLa_SolubleCytosol_NaAsO2_NAIN3_treated_r1
+    sample_name: FracSHAPE_HeLa_SolubleCytosol_NaAsO2_treated_r1
     sample_group: FracSHAPE_HeLa_SolubleCytosol_NaAsO2
     condition: treated
     replicate: 1
   - accession: GSM8778465
-    sample_name: FracSHAPE_HeLa_SolubleCytosol_NaAsO2_NAIN3_treated_r2
+    sample_name: FracSHAPE_HeLa_SolubleCytosol_NaAsO2_treated_r2
     sample_group: FracSHAPE_HeLa_SolubleCytosol_NaAsO2
     condition: treated
     replicate: 2
   - accession: GSM8778466
-    sample_name: FracSHAPE_HeLa_SolubleCytosol_NaAsO2_NAIN3_treated_r3
+    sample_name: FracSHAPE_HeLa_SolubleCytosol_NaAsO2_treated_r3
     sample_group: FracSHAPE_HeLa_SolubleCytosol_NaAsO2
     condition: treated
     replicate: 3
   - accession: GSM8778461
-    sample_name: FracSHAPE_HeLa_SolubleCytosol_NaAsO2_DMSO_untreated_r1
+    sample_name: FracSHAPE_HeLa_SolubleCytosol_NaAsO2_untreated_r1
     sample_group: FracSHAPE_HeLa_SolubleCytosol_NaAsO2
     condition: untreated
     replicate: 1
   - accession: GSM8778462
-    sample_name: FracSHAPE_HeLa_SolubleCytosol_NaAsO2_DMSO_untreated_r2
+    sample_name: FracSHAPE_HeLa_SolubleCytosol_NaAsO2_untreated_r2
     sample_group: FracSHAPE_HeLa_SolubleCytosol_NaAsO2
     condition: untreated
     replicate: 2
   - accession: GSM8778463
-    sample_name: FracSHAPE_HeLa_SolubleCytosol_NaAsO2_DMSO_untreated_r3
+    sample_name: FracSHAPE_HeLa_SolubleCytosol_NaAsO2_untreated_r3
     sample_group: FracSHAPE_HeLa_SolubleCytosol_NaAsO2
     condition: untreated
     replicate: 3
   - accession: GSM8778452
-    sample_name: FracSHAPE_HeLa_SolubleCytosol_Untreated_NAIN3_treated_r1
+    sample_name: FracSHAPE_HeLa_SolubleCytosol_Untreated_treated_r1
     sample_group: FracSHAPE_HeLa_SolubleCytosol_Untreated
     condition: treated
     replicate: 1
   - accession: GSM8778453
-    sample_name: FracSHAPE_HeLa_SolubleCytosol_Untreated_NAIN3_treated_r2
+    sample_name: FracSHAPE_HeLa_SolubleCytosol_Untreated_treated_r2
     sample_group: FracSHAPE_HeLa_SolubleCytosol_Untreated
     condition: treated
     replicate: 2
   - accession: GSM8778454
-    sample_name: FracSHAPE_HeLa_SolubleCytosol_Untreated_NAIN3_treated_r3
+    sample_name: FracSHAPE_HeLa_SolubleCytosol_Untreated_treated_r3
     sample_group: FracSHAPE_HeLa_SolubleCytosol_Untreated
     condition: treated
     replicate: 3
   - accession: GSM8778449
-    sample_name: FracSHAPE_HeLa_SolubleCytosol_Untreated_DMSO_untreated_r1
+    sample_name: FracSHAPE_HeLa_SolubleCytosol_Untreated_untreated_r1
     sample_group: FracSHAPE_HeLa_SolubleCytosol_Untreated
     condition: untreated
     replicate: 1
   - accession: GSM8778450
-    sample_name: FracSHAPE_HeLa_SolubleCytosol_Untreated_DMSO_untreated_r2
+    sample_name: FracSHAPE_HeLa_SolubleCytosol_Untreated_untreated_r2
     sample_group: FracSHAPE_HeLa_SolubleCytosol_Untreated
     condition: untreated
     replicate: 2
   - accession: GSM8778451
-    sample_name: FracSHAPE_HeLa_SolubleCytosol_Untreated_DMSO_untreated_r3
+    sample_name: FracSHAPE_HeLa_SolubleCytosol_Untreated_untreated_r3
     sample_group: FracSHAPE_HeLa_SolubleCytosol_Untreated
     condition: untreated
     replicate: 3
   - accession: GSM8778422
-    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2_NAIN3_treated_r1
+    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2_treated_r1
     sample_group: icSHAPE_HeLa_WholeCell_NaAsO2
     condition: treated
     replicate: 1
   - accession: GSM8778424
-    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2_NAIN3_treated_r2
+    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2_treated_r2
     sample_group: icSHAPE_HeLa_WholeCell_NaAsO2
     condition: treated
     replicate: 2
   - accession: GSM8778421
-    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2_DMSO_untreated_r1
+    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2_untreated_r1
     sample_group: icSHAPE_HeLa_WholeCell_NaAsO2
     condition: untreated
     replicate: 1
   - accession: GSM8778423
-    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2_DMSO_untreated_r2
+    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2_untreated_r2
     sample_group: icSHAPE_HeLa_WholeCell_NaAsO2
     condition: untreated
     replicate: 2
   - accession: GSM8778496
-    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siControl_NAIN3_treated_r1
+    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siControl_treated_r1
     sample_group: icSHAPE_HeLa_WholeCell_NaAsO2siControl
     condition: treated
     replicate: 1
   - accession: GSM8778498
-    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siControl_NAIN3_treated_r2
+    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siControl_treated_r2
     sample_group: icSHAPE_HeLa_WholeCell_NaAsO2siControl
     condition: treated
     replicate: 2
   - accession: GSM8778495
-    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siControl_DMSO_untreated_r1
+    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siControl_untreated_r1
     sample_group: icSHAPE_HeLa_WholeCell_NaAsO2siControl
     condition: untreated
     replicate: 1
   - accession: GSM8778497
-    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siControl_DMSO_untreated_r2
+    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siControl_untreated_r2
     sample_group: icSHAPE_HeLa_WholeCell_NaAsO2siControl
     condition: untreated
     replicate: 2
   - accession: GSM8778500
-    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siDDX3X_NAIN3_treated_r1
+    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siDDX3X_treated_r1
     sample_group: icSHAPE_HeLa_WholeCell_NaAsO2siDDX3X
     condition: treated
     replicate: 1
   - accession: GSM8778502
-    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siDDX3X_NAIN3_treated_r2
+    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siDDX3X_treated_r2
     sample_group: icSHAPE_HeLa_WholeCell_NaAsO2siDDX3X
     condition: treated
     replicate: 2
   - accession: GSM8778499
-    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siDDX3X_DMSO_untreated_r1
+    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siDDX3X_untreated_r1
     sample_group: icSHAPE_HeLa_WholeCell_NaAsO2siDDX3X
     condition: untreated
     replicate: 1
   - accession: GSM8778501
-    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siDDX3X_DMSO_untreated_r2
+    sample_name: icSHAPE_HeLa_WholeCell_NaAsO2siDDX3X_untreated_r2
     sample_group: icSHAPE_HeLa_WholeCell_NaAsO2siDDX3X
     condition: untreated
     replicate: 2
   - accession: GSM8778426
-    sample_name: icSHAPE_HeLa_WholeCell_Recover1h_NAIN3_treated_r1
+    sample_name: icSHAPE_HeLa_WholeCell_Recover1h_treated_r1
     sample_group: icSHAPE_HeLa_WholeCell_Recover1h
     condition: treated
     replicate: 1
   - accession: GSM8778428
-    sample_name: icSHAPE_HeLa_WholeCell_Recover1h_NAIN3_treated_r2
+    sample_name: icSHAPE_HeLa_WholeCell_Recover1h_treated_r2
     sample_group: icSHAPE_HeLa_WholeCell_Recover1h
     condition: treated
     replicate: 2
   - accession: GSM8778425
-    sample_name: icSHAPE_HeLa_WholeCell_Recover1h_DMSO_untreated_r1
+    sample_name: icSHAPE_HeLa_WholeCell_Recover1h_untreated_r1
     sample_group: icSHAPE_HeLa_WholeCell_Recover1h
     condition: untreated
     replicate: 1
   - accession: GSM8778427
-    sample_name: icSHAPE_HeLa_WholeCell_Recover1h_DMSO_untreated_r2
+    sample_name: icSHAPE_HeLa_WholeCell_Recover1h_untreated_r2
     sample_group: icSHAPE_HeLa_WholeCell_Recover1h
     condition: untreated
     replicate: 2
   - accession: GSM8778430
-    sample_name: icSHAPE_HeLa_WholeCell_Recover2h_NAIN3_treated_r1
+    sample_name: icSHAPE_HeLa_WholeCell_Recover2h_treated_r1
     sample_group: icSHAPE_HeLa_WholeCell_Recover2h
     condition: treated
     replicate: 1
   - accession: GSM8778432
-    sample_name: icSHAPE_HeLa_WholeCell_Recover2h_NAIN3_treated_r2
+    sample_name: icSHAPE_HeLa_WholeCell_Recover2h_treated_r2
     sample_group: icSHAPE_HeLa_WholeCell_Recover2h
     condition: treated
     replicate: 2
   - accession: GSM8778429
-    sample_name: icSHAPE_HeLa_WholeCell_Recover2h_DMSO_untreated_r1
+    sample_name: icSHAPE_HeLa_WholeCell_Recover2h_untreated_r1
     sample_group: icSHAPE_HeLa_WholeCell_Recover2h
     condition: untreated
     replicate: 1
   - accession: GSM8778431
-    sample_name: icSHAPE_HeLa_WholeCell_Recover2h_DMSO_untreated_r2
+    sample_name: icSHAPE_HeLa_WholeCell_Recover2h_untreated_r2
     sample_group: icSHAPE_HeLa_WholeCell_Recover2h
     condition: untreated
     replicate: 2
   - accession: GSM8778418
-    sample_name: icSHAPE_HeLa_WholeCell_Untreated_NAIN3_treated_r1
+    sample_name: icSHAPE_HeLa_WholeCell_Untreated_treated_r1
     sample_group: icSHAPE_HeLa_WholeCell_Untreated
     condition: treated
     replicate: 1
   - accession: GSM8778420
-    sample_name: icSHAPE_HeLa_WholeCell_Untreated_NAIN3_treated_r2
+    sample_name: icSHAPE_HeLa_WholeCell_Untreated_treated_r2
     sample_group: icSHAPE_HeLa_WholeCell_Untreated
     condition: treated
     replicate: 2
   - accession: GSM8778417
-    sample_name: icSHAPE_HeLa_WholeCell_Untreated_DMSO_untreated_r1
+    sample_name: icSHAPE_HeLa_WholeCell_Untreated_untreated_r1
     sample_group: icSHAPE_HeLa_WholeCell_Untreated
     condition: untreated
     replicate: 1
   - accession: GSM8778419
-    sample_name: icSHAPE_HeLa_WholeCell_Untreated_DMSO_untreated_r2
+    sample_name: icSHAPE_HeLa_WholeCell_Untreated_untreated_r2
     sample_group: icSHAPE_HeLa_WholeCell_Untreated
     condition: untreated
     replicate: 2
   - accession: GSM8778438
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_NaAsO2_NAIN3_treated_r1
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_NaAsO2_treated_r1
     sample_group: icSHAPE_InvitroRefolded_WholeCell_NaAsO2
     condition: treated
     replicate: 1
   - accession: GSM8778440
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_NaAsO2_NAIN3_treated_r2
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_NaAsO2_treated_r2
     sample_group: icSHAPE_InvitroRefolded_WholeCell_NaAsO2
     condition: treated
     replicate: 2
   - accession: GSM8778437
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_NaAsO2_DMSO_untreated_r1
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_NaAsO2_untreated_r1
     sample_group: icSHAPE_InvitroRefolded_WholeCell_NaAsO2
     condition: untreated
     replicate: 1
   - accession: GSM8778439
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_NaAsO2_DMSO_untreated_r2
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_NaAsO2_untreated_r2
     sample_group: icSHAPE_InvitroRefolded_WholeCell_NaAsO2
     condition: untreated
     replicate: 2
   - accession: GSM8778442
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover1h_NAIN3_treated_r1
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover1h_treated_r1
     sample_group: icSHAPE_InvitroRefolded_WholeCell_Recover1h
     condition: treated
     replicate: 1
   - accession: GSM8778444
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover1h_NAIN3_treated_r2
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover1h_treated_r2
     sample_group: icSHAPE_InvitroRefolded_WholeCell_Recover1h
     condition: treated
     replicate: 2
   - accession: GSM8778441
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover1h_DMSO_untreated_r1
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover1h_untreated_r1
     sample_group: icSHAPE_InvitroRefolded_WholeCell_Recover1h
     condition: untreated
     replicate: 1
   - accession: GSM8778443
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover1h_DMSO_untreated_r2
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover1h_untreated_r2
     sample_group: icSHAPE_InvitroRefolded_WholeCell_Recover1h
     condition: untreated
     replicate: 2
   - accession: GSM8778446
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover2h_NAIN3_treated_r1
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover2h_treated_r1
     sample_group: icSHAPE_InvitroRefolded_WholeCell_Recover2h
     condition: treated
     replicate: 1
   - accession: GSM8778448
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover2h_NAIN3_treated_r2
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover2h_treated_r2
     sample_group: icSHAPE_InvitroRefolded_WholeCell_Recover2h
     condition: treated
     replicate: 2
   - accession: GSM8778445
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover2h_DMSO_untreated_r1
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover2h_untreated_r1
     sample_group: icSHAPE_InvitroRefolded_WholeCell_Recover2h
     condition: untreated
     replicate: 1
   - accession: GSM8778447
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover2h_DMSO_untreated_r2
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_Recover2h_untreated_r2
     sample_group: icSHAPE_InvitroRefolded_WholeCell_Recover2h
     condition: untreated
     replicate: 2
   - accession: GSM8778434
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_Untreated_NAIN3_treated_r1
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_Untreated_treated_r1
     sample_group: icSHAPE_InvitroRefolded_WholeCell_Untreated
     condition: treated
     replicate: 1
   - accession: GSM8778436
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_Untreated_NAIN3_treated_r2
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_Untreated_treated_r2
     sample_group: icSHAPE_InvitroRefolded_WholeCell_Untreated
     condition: treated
     replicate: 2
   - accession: GSM8778433
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_Untreated_DMSO_untreated_r1
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_Untreated_untreated_r1
     sample_group: icSHAPE_InvitroRefolded_WholeCell_Untreated
     condition: untreated
     replicate: 1
   - accession: GSM8778435
-    sample_name: icSHAPE_InvitroRefolded_WholeCell_Untreated_DMSO_untreated_r2
+    sample_name: icSHAPE_InvitroRefolded_WholeCell_Untreated_untreated_r2
     sample_group: icSHAPE_InvitroRefolded_WholeCell_Untreated
     condition: untreated
     replicate: 2

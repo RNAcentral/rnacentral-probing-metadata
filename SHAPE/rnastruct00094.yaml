@@ -28,32 +28,32 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143121
   run_accessions:
   - accession: GSM4250761
-    sample_name: HepG2_invivo_NAIN3_treated_r1
+    sample_name: HepG2_treated_r1
     sample_group: HepG2
     condition: treated
     replicate: 1
   - accession: GSM4250762
-    sample_name: HepG2_invivo_NAIN3_treated_r2
+    sample_name: HepG2_treated_r2
     sample_group: HepG2
     condition: treated
     replicate: 2
   - accession: GSM4250763
-    sample_name: HepG2_invivo_NAIN3_treated_r3
+    sample_name: HepG2_treated_r3
     sample_group: HepG2
     condition: treated
     replicate: 3
   - accession: GSM4247326
-    sample_name: HepG2_invivo_DMSO_untreated_r1
+    sample_name: HepG2_untreated_r1
     sample_group: HepG2
     condition: untreated
     replicate: 1
   - accession: GSM4247327
-    sample_name: HepG2_invivo_DMSO_untreated_r2
+    sample_name: HepG2_untreated_r2
     sample_group: HepG2
     condition: untreated
     replicate: 2
   - accession: GSM4247328
-    sample_name: HepG2_invivo_DMSO_untreated_r3
+    sample_name: HepG2_untreated_r3
     sample_group: HepG2
     condition: untreated
     replicate: 3

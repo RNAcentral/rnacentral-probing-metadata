@@ -33,7 +33,10 @@ STEPS:
    (run accession + sample title). Identify which runs are probing vs plain
    RNA-seq / MeRIP / functional-screen, and use only the probing runs.
 3. DECISION — qualifies ONLY IF (a) genuine chemical probing (SHAPE or DMS family)
-   AND (b) each treated `sample_group` has ≥2 biological replicates (a titration or
+   AND (b) each treated `sample_group` has ≥2 biological replicates AND its
+   controls are replicated too (a perturbation arm at n=2 with n=1 controls fails;
+   an existing file that fails gets `comment: "failed QC: no biological replicates
+   [for most conditions|for untreated]"` rather than deletion) (a titration or
    time-course is NOT biological replication) AND (c) it is **transcriptome-wide**,
    not targeted. Reject anything using gene-specific RT/PCR primers, an amplicon,
    a single lncRNA/mRNA/riboswitch/intron, a designed construct, or a panel of a
@@ -56,10 +59,13 @@ STEPS:
      denatured. `sample_group`: no whitespace, underscores.
    - Naming: in vivo is the default — NO `_invivo`/`_vivo` suffix; the bare cell
      line or strain (exactly as GEO states it: HEK293 ≠ HEK293T; `BY4741`, not
-     `Scerevisiae`) is the group, suffix only the exceptions (`_invitro`,
-     `_AsO2stress`, `_DMplus`). Different perturbations (±drug, WT/mutant) →
-     different groups; a probe-dose series → ONE group, replicates numbered
-     sequentially across doses, dose tag in `sample_name` only. Within the file,
+     `Scerevisiae`; bacteria/archaea = full binomial `Bacillus_subtilis_37C` or
+     strain `MG1655`, never `Bsub`/`Ecoli`) is the group, suffix only the
+     exceptions (`_invitro`, `_AsO2stress`, `_DMplus`). Different perturbations
+     (±drug, WT/mutant) → different groups. A probe-dose series → keep ONE dose
+     as r1–rN and drop the rest. Every treated replicate number needs an untreated
+     at the same `sample_group`+`replicate` (the pipeline pairs on that; a lone
+     untreated is only OK if it is the file's sole untreated). Within the file,
      `sample_name` and `(sample_group, condition, replicate)` must be unique
      (CI does not check this — verify yourself).
    - Viral: NCBI common name + top-level `strain:` (schema pattern rejects trailing

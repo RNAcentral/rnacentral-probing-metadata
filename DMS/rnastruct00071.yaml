@@ -28,63 +28,63 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229536
   run_accessions:
   - accession: SRR24149702
-    sample_name: Macetivorans_acetate_invivo_DMS_treated_r1
-    sample_group: Macetivorans_acetate
+    sample_name: Methanosarcina_acetivorans_grown_on_acetate_treated_r1
+    sample_group: Methanosarcina_acetivorans_grown_on_acetate # cells grown on acetate as the methanogenic substrate (slower growth)
     condition: treated
     replicate: 1
   - accession: SRR24149701
-    sample_name: Macetivorans_acetate_invivo_DMS_treated_r2
-    sample_group: Macetivorans_acetate
+    sample_name: Methanosarcina_acetivorans_grown_on_acetate_treated_r2
+    sample_group: Methanosarcina_acetivorans_grown_on_acetate
     condition: treated
     replicate: 2
   - accession: SRR24149700
-    sample_name: Macetivorans_acetate_invivo_DMS_treated_r3
-    sample_group: Macetivorans_acetate
+    sample_name: Methanosarcina_acetivorans_grown_on_acetate_treated_r3
+    sample_group: Methanosarcina_acetivorans_grown_on_acetate
     condition: treated
     replicate: 3
   - accession: SRR24149708
-    sample_name: Macetivorans_acetate_invivo_control_untreated_r1
-    sample_group: Macetivorans_acetate
+    sample_name: Methanosarcina_acetivorans_grown_on_acetate_untreated_r1
+    sample_group: Methanosarcina_acetivorans_grown_on_acetate
     condition: untreated
     replicate: 1
   - accession: SRR24149706
-    sample_name: Macetivorans_acetate_invivo_control_untreated_r2
-    sample_group: Macetivorans_acetate
+    sample_name: Methanosarcina_acetivorans_grown_on_acetate_untreated_r2
+    sample_group: Methanosarcina_acetivorans_grown_on_acetate
     condition: untreated
     replicate: 2
   - accession: SRR24149705
-    sample_name: Macetivorans_acetate_invivo_control_untreated_r3
-    sample_group: Macetivorans_acetate
+    sample_name: Methanosarcina_acetivorans_grown_on_acetate_untreated_r3
+    sample_group: Methanosarcina_acetivorans_grown_on_acetate
     condition: untreated
     replicate: 3
   - accession: SRR24149704
-    sample_name: Macetivorans_methanol_invivo_DMS_treated_r1
-    sample_group: Macetivorans_methanol
+    sample_name: Methanosarcina_acetivorans_grown_on_methanol_treated_r1
+    sample_group: Methanosarcina_acetivorans_grown_on_methanol # cells grown on methanol as the methanogenic substrate (faster growth)
     condition: treated
     replicate: 1
   - accession: SRR24149707
-    sample_name: Macetivorans_methanol_invivo_DMS_treated_r2
-    sample_group: Macetivorans_methanol
+    sample_name: Methanosarcina_acetivorans_grown_on_methanol_treated_r2
+    sample_group: Methanosarcina_acetivorans_grown_on_methanol
     condition: treated
     replicate: 2
   - accession: SRR24149703
-    sample_name: Macetivorans_methanol_invivo_DMS_treated_r3
-    sample_group: Macetivorans_methanol
+    sample_name: Methanosarcina_acetivorans_grown_on_methanol_treated_r3
+    sample_group: Methanosarcina_acetivorans_grown_on_methanol
     condition: treated
     replicate: 3
   - accession: SRR24149711
-    sample_name: Macetivorans_methanol_invivo_control_untreated_r1
-    sample_group: Macetivorans_methanol
+    sample_name: Methanosarcina_acetivorans_grown_on_methanol_untreated_r1
+    sample_group: Methanosarcina_acetivorans_grown_on_methanol
     condition: untreated
     replicate: 1
   - accession: SRR24149710
-    sample_name: Macetivorans_methanol_invivo_control_untreated_r2
-    sample_group: Macetivorans_methanol
+    sample_name: Methanosarcina_acetivorans_grown_on_methanol_untreated_r2
+    sample_group: Methanosarcina_acetivorans_grown_on_methanol
     condition: untreated
     replicate: 2
   - accession: SRR24149709
-    sample_name: Macetivorans_methanol_invivo_control_untreated_r3
-    sample_group: Macetivorans_methanol
+    sample_name: Methanosarcina_acetivorans_grown_on_methanol_untreated_r3
+    sample_group: Methanosarcina_acetivorans_grown_on_methanol
     condition: untreated
     replicate: 3
 

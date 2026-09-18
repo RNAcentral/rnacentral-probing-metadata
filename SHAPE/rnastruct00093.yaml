@@ -28,32 +28,32 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143120
   run_accessions:
   - accession: GSM4250758
-    sample_name: K562_invivo_NAIN3_treated_r1
+    sample_name: K562_treated_r1
     sample_group: K562
     condition: treated
     replicate: 1
   - accession: GSM4250759
-    sample_name: K562_invivo_NAIN3_treated_r2
+    sample_name: K562_treated_r2
     sample_group: K562
     condition: treated
     replicate: 2
   - accession: GSM4250760
-    sample_name: K562_invivo_NAIN3_treated_r3
+    sample_name: K562_treated_r3
     sample_group: K562
     condition: treated
     replicate: 3
   - accession: GSM4250706
-    sample_name: K562_invivo_DMSO_untreated_r1
+    sample_name: K562_untreated_r1
     sample_group: K562
     condition: untreated
     replicate: 1
   - accession: GSM4250707
-    sample_name: K562_invivo_DMSO_untreated_r2
+    sample_name: K562_untreated_r2
     sample_group: K562
     condition: untreated
     replicate: 2
   - accession: GSM4250708
-    sample_name: K562_invivo_DMSO_untreated_r3
+    sample_name: K562_untreated_r3
     sample_group: K562
     condition: untreated
     replicate: 3

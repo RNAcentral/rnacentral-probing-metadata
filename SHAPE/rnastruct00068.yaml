@@ -28,62 +28,62 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA625172
   run_accessions:
   - accession: SRR11547060
-    sample_name: Pf_trophozoite_26C_invivo_NAIN3_treated_r1
+    sample_name: Pf_trophozoite_26C_treated_r1
     sample_group: Pf_trophozoite_26C # trophozoite stage, 26 C cold shock
     condition: treated
     replicate: 1
   - accession: SRR11547059
-    sample_name: Pf_trophozoite_26C_invivo_NAIN3_treated_r2
+    sample_name: Pf_trophozoite_26C_treated_r2
     sample_group: Pf_trophozoite_26C
     condition: treated
     replicate: 2
   - accession: SRR11547058
-    sample_name: Pf_trophozoite_26C_invivo_DMSO_untreated_r1
+    sample_name: Pf_trophozoite_26C_untreated_r1
     sample_group: Pf_trophozoite_26C
     condition: untreated
     replicate: 1
   - accession: SRR11547057
-    sample_name: Pf_trophozoite_26C_invivo_DMSO_untreated_r2
+    sample_name: Pf_trophozoite_26C_untreated_r2
     sample_group: Pf_trophozoite_26C
     condition: untreated
     replicate: 2
   - accession: SRR11547092
-    sample_name: Pf_trophozoite_26C_denatured_NAIN3_r1
+    sample_name: Pf_trophozoite_26C_denatured_r1
     sample_group: Pf_trophozoite_26C
     condition: denatured
     replicate: 1
   - accession: SRR11547091
-    sample_name: Pf_trophozoite_26C_denatured_NAIN3_r2
+    sample_name: Pf_trophozoite_26C_denatured_r2
     sample_group: Pf_trophozoite_26C
     condition: denatured
     replicate: 2
   - accession: SRR11547084
-    sample_name: Pf_ring_26C_invivo_NAIN3_treated_r1
+    sample_name: Pf_ring_26C_treated_r1
     sample_group: Pf_ring_26C # ring stage, 26 C cold shock
     condition: treated
     replicate: 1
   - accession: SRR11547083
-    sample_name: Pf_ring_26C_invivo_NAIN3_treated_r2
+    sample_name: Pf_ring_26C_treated_r2
     sample_group: Pf_ring_26C
     condition: treated
     replicate: 2
   - accession: SRR11547081
-    sample_name: Pf_ring_26C_invivo_DMSO_untreated_r1
+    sample_name: Pf_ring_26C_untreated_r1
     sample_group: Pf_ring_26C
     condition: untreated
     replicate: 1
   - accession: SRR11547080
-    sample_name: Pf_ring_26C_invivo_DMSO_untreated_r2
+    sample_name: Pf_ring_26C_untreated_r2
     sample_group: Pf_ring_26C
     condition: untreated
     replicate: 2
   - accession: SRR11547079
-    sample_name: Pf_ring_26C_denatured_NAIN3_r1
+    sample_name: Pf_ring_26C_denatured_r1
     sample_group: Pf_ring_26C
     condition: denatured
     replicate: 1
   - accession: SRR11547078
-    sample_name: Pf_ring_26C_denatured_NAIN3_r2
+    sample_name: Pf_ring_26C_denatured_r2
     sample_group: Pf_ring_26C
     condition: denatured
     replicate: 2

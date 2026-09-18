@@ -28,103 +28,103 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE216157
   run_accessions:
   - accession: SRR21981119
-    sample_name: Psav_WT_MM_DMS_treated_r1
-    sample_group: Psav_WT_MM
+    sample_name: Pseudomonas_savastanoi_WT_MM_treated_r1
+    sample_group: Pseudomonas_savastanoi_WT_MM
     condition: treated
     replicate: 1
   - accession: SRR21981118
-    sample_name: Psav_WT_MM_DMS_treated_r2
-    sample_group: Psav_WT_MM
+    sample_name: Pseudomonas_savastanoi_WT_MM_treated_r2
+    sample_group: Pseudomonas_savastanoi_WT_MM
     condition: treated
     replicate: 2
   - accession: SRR21981121
-    sample_name: Psav_WT_MM_untreated_r1
-    sample_group: Psav_WT_MM
+    sample_name: Pseudomonas_savastanoi_WT_MM_untreated_r1
+    sample_group: Pseudomonas_savastanoi_WT_MM
     condition: untreated
     replicate: 1
   - accession: SRR21981120
-    sample_name: Psav_WT_MM_untreated_r2
-    sample_group: Psav_WT_MM
+    sample_name: Pseudomonas_savastanoi_WT_MM_untreated_r2
+    sample_group: Pseudomonas_savastanoi_WT_MM
     condition: untreated
     replicate: 2
   - accession: SRR21981123
-    sample_name: Psav_WT_KB_DMS_treated_r1
-    sample_group: Psav_WT_KB
+    sample_name: Pseudomonas_savastanoi_WT_KB_treated_r1
+    sample_group: Pseudomonas_savastanoi_WT_KB
     condition: treated
     replicate: 1
   - accession: SRR21981122
-    sample_name: Psav_WT_KB_DMS_treated_r2
-    sample_group: Psav_WT_KB
+    sample_name: Pseudomonas_savastanoi_WT_KB_treated_r2
+    sample_group: Pseudomonas_savastanoi_WT_KB
     condition: treated
     replicate: 2
   - accession: SRR21981125
-    sample_name: Psav_WT_KB_untreated_r1
-    sample_group: Psav_WT_KB
+    sample_name: Pseudomonas_savastanoi_WT_KB_untreated_r1
+    sample_group: Pseudomonas_savastanoi_WT_KB
     condition: untreated
     replicate: 1
   - accession: SRR21981124
-    sample_name: Psav_WT_KB_untreated_r2
-    sample_group: Psav_WT_KB
+    sample_name: Pseudomonas_savastanoi_WT_KB_untreated_r2
+    sample_group: Pseudomonas_savastanoi_WT_KB
     condition: untreated
     replicate: 2
   - accession: SRR21981127
-    sample_name: Psav_hrpL_DMS_treated_r1
-    sample_group: Psav_hrpL
+    sample_name: Pseudomonas_savastanoi_hrpL_treated_r1
+    sample_group: Pseudomonas_savastanoi_hrpL
     condition: treated
     replicate: 1
   - accession: SRR21981126
-    sample_name: Psav_hrpL_DMS_treated_r2
-    sample_group: Psav_hrpL
+    sample_name: Pseudomonas_savastanoi_hrpL_treated_r2
+    sample_group: Pseudomonas_savastanoi_hrpL
     condition: treated
     replicate: 2
   - accession: SRR21981129
-    sample_name: Psav_hrpL_untreated_r1
-    sample_group: Psav_hrpL
+    sample_name: Pseudomonas_savastanoi_hrpL_untreated_r1
+    sample_group: Pseudomonas_savastanoi_hrpL
     condition: untreated
     replicate: 1
   - accession: SRR21981128
-    sample_name: Psav_hrpL_untreated_r2
-    sample_group: Psav_hrpL
+    sample_name: Pseudomonas_savastanoi_hrpL_untreated_r2
+    sample_group: Pseudomonas_savastanoi_hrpL
     condition: untreated
     replicate: 2
   - accession: SRR21981111
-    sample_name: Psav_hfq_DMS_treated_r1
-    sample_group: Psav_hfq
+    sample_name: Pseudomonas_savastanoi_hfq_treated_r1
+    sample_group: Pseudomonas_savastanoi_hfq
     condition: treated
     replicate: 1
   - accession: SRR21981110
-    sample_name: Psav_hfq_DMS_treated_r2
-    sample_group: Psav_hfq
+    sample_name: Pseudomonas_savastanoi_hfq_treated_r2
+    sample_group: Pseudomonas_savastanoi_hfq
     condition: treated
     replicate: 2
   - accession: SRR21981113
-    sample_name: Psav_hfq_untreated_r1
-    sample_group: Psav_hfq
+    sample_name: Pseudomonas_savastanoi_hfq_untreated_r1
+    sample_group: Pseudomonas_savastanoi_hfq
     condition: untreated
     replicate: 1
   - accession: SRR21981112
-    sample_name: Psav_hfq_untreated_r2
-    sample_group: Psav_hfq
+    sample_name: Pseudomonas_savastanoi_hfq_untreated_r2
+    sample_group: Pseudomonas_savastanoi_hfq
     condition: untreated
     replicate: 2
   - accession: SRR21981115
-    sample_name: Psav_hfq_25_DMS_treated_r1
-    sample_group: Psav_hfq_25
+    sample_name: Pseudomonas_savastanoi_hfq_25_treated_r1
+    sample_group: Pseudomonas_savastanoi_hfq_25
     condition: treated
     replicate: 1
   - accession: SRR21981114
-    sample_name: Psav_hfq_25_DMS_treated_r2
-    sample_group: Psav_hfq_25
+    sample_name: Pseudomonas_savastanoi_hfq_25_treated_r2
+    sample_group: Pseudomonas_savastanoi_hfq_25
     condition: treated
     replicate: 2
   - accession: SRR21981117
-    sample_name: Psav_hfq_25_untreated_r1
-    sample_group: Psav_hfq_25
+    sample_name: Pseudomonas_savastanoi_hfq_25_untreated_r1
+    sample_group: Pseudomonas_savastanoi_hfq_25
     condition: untreated
     replicate: 1
   - accession: SRR21981116
-    sample_name: Psav_hfq_25_untreated_r2
-    sample_group: Psav_hfq_25
+    sample_name: Pseudomonas_savastanoi_hfq_25_untreated_r2
+    sample_group: Pseudomonas_savastanoi_hfq_25
     condition: untreated
     replicate: 2
 

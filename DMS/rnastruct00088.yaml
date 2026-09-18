@@ -28,47 +28,47 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE236224
   run_accessions:
   - accession: GSM7520061
-    sample_name: NPC_invivo_DMS_treated_r1
+    sample_name: NPC_treated_r1
     sample_group: NPC
     condition: treated
     replicate: 1
   - accession: GSM7520062
-    sample_name: NPC_invivo_DMS_treated_r2
+    sample_name: NPC_treated_r2
     sample_group: NPC
     condition: treated
     replicate: 2
   - accession: GSM7520063
-    sample_name: NPC_invivo_DMS_treated_r3
+    sample_name: NPC_treated_r3
     sample_group: NPC
     condition: treated
     replicate: 3
   - accession: GSM7520056
-    sample_name: NPC_invivo_untreated_r1
+    sample_name: NPC_untreated_r1
     sample_group: NPC
     condition: untreated
     replicate: 1
   - accession: GSM7520058
-    sample_name: NPC_invivo_untreated_r2
+    sample_name: NPC_untreated_r2
     sample_group: NPC
     condition: untreated
     replicate: 2
   - accession: GSM7520059
-    sample_name: hESC_invivo_DMS_treated_r1
+    sample_name: hESC_treated_r1
     sample_group: hESC
     condition: treated
     replicate: 1
   - accession: GSM7520060
-    sample_name: hESC_invivo_DMS_treated_r2
+    sample_name: hESC_treated_r2
     sample_group: hESC
     condition: treated
     replicate: 2
   - accession: GSM7520055
-    sample_name: hESC_invivo_untreated_r1
+    sample_name: hESC_untreated_r1
     sample_group: hESC
     condition: untreated
     replicate: 1
   - accession: GSM7520057
-    sample_name: hESC_invivo_untreated_r2
+    sample_name: hESC_untreated_r2
     sample_group: hESC
     condition: untreated
     replicate: 2

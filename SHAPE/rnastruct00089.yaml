@@ -28,157 +28,157 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156671
   run_accessions:
   - accession: GSM4736474
-    sample_name: hNeuron_D0_batch1_NAIN3_treated_r1
+    sample_name: hNeuron_D0_batch1_treated_r1
     sample_group: hNeuron_D0_batch1
     condition: treated
     replicate: 1
   - accession: GSM4736475
-    sample_name: hNeuron_D0_batch1_NAIN3_treated_r2
+    sample_name: hNeuron_D0_batch1_treated_r2
     sample_group: hNeuron_D0_batch1
     condition: treated
     replicate: 2
   - accession: GSM4736472
-    sample_name: hNeuron_D0_batch1_DMSO_untreated_r1
+    sample_name: hNeuron_D0_batch1_untreated_r1
     sample_group: hNeuron_D0_batch1
     condition: untreated
     replicate: 1
   - accession: GSM4736473
-    sample_name: hNeuron_D0_batch1_DMSO_untreated_r2
+    sample_name: hNeuron_D0_batch1_untreated_r2
     sample_group: hNeuron_D0_batch1
     condition: untreated
     replicate: 2
   - accession: GSM4736490
-    sample_name: hNeuron_D0_batch2_NAIN3_treated_r1
+    sample_name: hNeuron_D0_batch2_treated_r1
     sample_group: hNeuron_D0_batch2
     condition: treated
     replicate: 1
   - accession: GSM4736491
-    sample_name: hNeuron_D0_batch2_NAIN3_treated_r2
+    sample_name: hNeuron_D0_batch2_treated_r2
     sample_group: hNeuron_D0_batch2
     condition: treated
     replicate: 2
   - accession: GSM4736488
-    sample_name: hNeuron_D0_batch2_DMSO_untreated_r1
+    sample_name: hNeuron_D0_batch2_untreated_r1
     sample_group: hNeuron_D0_batch2
     condition: untreated
     replicate: 1
   - accession: GSM4736489
-    sample_name: hNeuron_D0_batch2_DMSO_untreated_r2
+    sample_name: hNeuron_D0_batch2_untreated_r2
     sample_group: hNeuron_D0_batch2
     condition: untreated
     replicate: 2
   - accession: GSM4736478
-    sample_name: hNeuron_D7_batch1_NAIN3_treated_r1
+    sample_name: hNeuron_D7_batch1_treated_r1
     sample_group: hNeuron_D7_batch1
     condition: treated
     replicate: 1
   - accession: GSM4736479
-    sample_name: hNeuron_D7_batch1_NAIN3_treated_r2
+    sample_name: hNeuron_D7_batch1_treated_r2
     sample_group: hNeuron_D7_batch1
     condition: treated
     replicate: 2
   - accession: GSM4736476
-    sample_name: hNeuron_D7_batch1_DMSO_untreated_r1
+    sample_name: hNeuron_D7_batch1_untreated_r1
     sample_group: hNeuron_D7_batch1
     condition: untreated
     replicate: 1
   - accession: GSM4736477
-    sample_name: hNeuron_D7_batch1_DMSO_untreated_r2
+    sample_name: hNeuron_D7_batch1_untreated_r2
     sample_group: hNeuron_D7_batch1
     condition: untreated
     replicate: 2
   - accession: GSM4736494
-    sample_name: hNeuron_D7_batch2_NAIN3_treated_r1
+    sample_name: hNeuron_D7_batch2_treated_r1
     sample_group: hNeuron_D7_batch2
     condition: treated
     replicate: 1
   - accession: GSM4736495
-    sample_name: hNeuron_D7_batch2_NAIN3_treated_r2
+    sample_name: hNeuron_D7_batch2_treated_r2
     sample_group: hNeuron_D7_batch2
     condition: treated
     replicate: 2
   - accession: GSM4736492
-    sample_name: hNeuron_D7_batch2_DMSO_untreated_r1
+    sample_name: hNeuron_D7_batch2_untreated_r1
     sample_group: hNeuron_D7_batch2
     condition: untreated
     replicate: 1
   - accession: GSM4736493
-    sample_name: hNeuron_D7_batch2_DMSO_untreated_r2
+    sample_name: hNeuron_D7_batch2_untreated_r2
     sample_group: hNeuron_D7_batch2
     condition: untreated
     replicate: 2
   - accession: GSM4736482
-    sample_name: hNeuron_D8_batch1_NAIN3_treated_r1
+    sample_name: hNeuron_D8_batch1_treated_r1
     sample_group: hNeuron_D8_batch1
     condition: treated
     replicate: 1
   - accession: GSM4736483
-    sample_name: hNeuron_D8_batch1_NAIN3_treated_r2
+    sample_name: hNeuron_D8_batch1_treated_r2
     sample_group: hNeuron_D8_batch1
     condition: treated
     replicate: 2
   - accession: GSM4736480
-    sample_name: hNeuron_D8_batch1_DMSO_untreated_r1
+    sample_name: hNeuron_D8_batch1_untreated_r1
     sample_group: hNeuron_D8_batch1
     condition: untreated
     replicate: 1
   - accession: GSM4736481
-    sample_name: hNeuron_D8_batch1_DMSO_untreated_r2
+    sample_name: hNeuron_D8_batch1_untreated_r2
     sample_group: hNeuron_D8_batch1
     condition: untreated
     replicate: 2
   - accession: GSM4736497
-    sample_name: hNeuron_D8_batch2_NAIN3_treated_r1
+    sample_name: hNeuron_D8_batch2_treated_r1
     sample_group: hNeuron_D8_batch2
     condition: treated
     replicate: 1
   - accession: GSM4736498
-    sample_name: hNeuron_D8_batch2_NAIN3_treated_r2
+    sample_name: hNeuron_D8_batch2_treated_r2
     sample_group: hNeuron_D8_batch2
     condition: treated
     replicate: 2
   - accession: GSM4736496
-    sample_name: hNeuron_D8_batch2_DMSO_untreated_r2
+    sample_name: hNeuron_D8_batch2_untreated_r2
     sample_group: hNeuron_D8_batch2
     condition: untreated
     replicate: 2
   - accession: GSM4736486
-    sample_name: hNeuron_D14_batch1_NAIN3_treated_r1
+    sample_name: hNeuron_D14_batch1_treated_r1
     sample_group: hNeuron_D14_batch1
     condition: treated
     replicate: 1
   - accession: GSM4736487
-    sample_name: hNeuron_D14_batch1_NAIN3_treated_r2
+    sample_name: hNeuron_D14_batch1_treated_r2
     sample_group: hNeuron_D14_batch1
     condition: treated
     replicate: 2
   - accession: GSM4736484
-    sample_name: hNeuron_D14_batch1_DMSO_untreated_r1
+    sample_name: hNeuron_D14_batch1_untreated_r1
     sample_group: hNeuron_D14_batch1
     condition: untreated
     replicate: 1
   - accession: GSM4736485
-    sample_name: hNeuron_D14_batch1_DMSO_untreated_r2
+    sample_name: hNeuron_D14_batch1_untreated_r2
     sample_group: hNeuron_D14_batch1
     condition: untreated
     replicate: 2
   - accession: GSM4736501
-    sample_name: hNeuron_D14_batch2_NAIN3_treated_r1
+    sample_name: hNeuron_D14_batch2_treated_r1
     sample_group: hNeuron_D14_batch2
     condition: treated
     replicate: 1
   - accession: GSM4736502
-    sample_name: hNeuron_D14_batch2_NAIN3_treated_r2
+    sample_name: hNeuron_D14_batch2_treated_r2
     sample_group: hNeuron_D14_batch2
     condition: treated
     replicate: 2
   - accession: GSM4736499
-    sample_name: hNeuron_D14_batch2_DMSO_untreated_r1
+    sample_name: hNeuron_D14_batch2_untreated_r1
     sample_group: hNeuron_D14_batch2
     condition: untreated
     replicate: 1
   - accession: GSM4736500
-    sample_name: hNeuron_D14_batch2_DMSO_untreated_r2
+    sample_name: hNeuron_D14_batch2_untreated_r2
     sample_group: hNeuron_D14_batch2
     condition: untreated
     replicate: 2

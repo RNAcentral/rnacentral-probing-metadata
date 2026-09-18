@@ -28,107 +28,107 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254264
   run_accessions:
   - accession: GSM8036986
-    sample_name: Scer_dbp3del_DMS_treated_r1
+    sample_name: Scer_dbp3del_treated_r1
     sample_group: Scer_dbp3del
     condition: treated
     replicate: 1
   - accession: GSM8036987
-    sample_name: Scer_dbp3del_DMS_treated_r2
+    sample_name: Scer_dbp3del_treated_r2
     sample_group: Scer_dbp3del
     condition: treated
     replicate: 2
   - accession: GSM8036988
-    sample_name: Scer_dbp3del_DMS_treated_r3
+    sample_name: Scer_dbp3del_treated_r3
     sample_group: Scer_dbp3del
     condition: treated
     replicate: 3
   - accession: GSM8036989
-    sample_name: Scer_dbp7del_DMS_treated_r1
+    sample_name: Scer_dbp7del_treated_r1
     sample_group: Scer_dbp7del
     condition: treated
     replicate: 1
   - accession: GSM8036990
-    sample_name: Scer_dbp7del_DMS_treated_r2
+    sample_name: Scer_dbp7del_treated_r2
     sample_group: Scer_dbp7del
     condition: treated
     replicate: 2
   - accession: GSM8036991
-    sample_name: Scer_dbp7del_DMS_treated_r3
+    sample_name: Scer_dbp7del_treated_r3
     sample_group: Scer_dbp7del
     condition: treated
     replicate: 3
   - accession: GSM8037008
-    sample_name: Scer_dbp7del_rRNA_DMS_treated_r1
+    sample_name: Scer_dbp7del_rRNA_treated_r1
     sample_group: Scer_dbp7del_rRNA
     condition: treated
     replicate: 1
   - accession: GSM8037009
-    sample_name: Scer_dbp7del_rRNA_DMS_treated_r2
+    sample_name: Scer_dbp7del_rRNA_treated_r2
     sample_group: Scer_dbp7del_rRNA
     condition: treated
     replicate: 2
   - accession: GSM8037010
-    sample_name: Scer_dbp7del_rRNA_DMS_treated_r3
+    sample_name: Scer_dbp7del_rRNA_treated_r3
     sample_group: Scer_dbp7del_rRNA
     condition: treated
     replicate: 3
   - accession: GSM8626470
-    sample_name: Scer_dst1del_DMS_treated_r1
+    sample_name: Scer_dst1del_treated_r1
     sample_group: Scer_dst1del
     condition: treated
     replicate: 1
   - accession: GSM8626471
-    sample_name: Scer_dst1del_DMS_treated_r2
+    sample_name: Scer_dst1del_treated_r2
     sample_group: Scer_dst1del
     condition: treated
     replicate: 2
   - accession: GSM8626472
-    sample_name: Scer_dst1del_DMS_treated_r3
+    sample_name: Scer_dst1del_treated_r3
     sample_group: Scer_dst1del
     condition: treated
     replicate: 3
   - accession: GSM8036983
-    sample_name: Scer_spt4del_DMS_treated_r1
+    sample_name: Scer_spt4del_treated_r1
     sample_group: Scer_spt4del
     condition: treated
     replicate: 1
   - accession: GSM8036984
-    sample_name: Scer_spt4del_DMS_treated_r2
+    sample_name: Scer_spt4del_treated_r2
     sample_group: Scer_spt4del
     condition: treated
     replicate: 2
   - accession: GSM8036985
-    sample_name: Scer_spt4del_DMS_treated_r3
+    sample_name: Scer_spt4del_treated_r3
     sample_group: Scer_spt4del
     condition: treated
     replicate: 3
   - accession: GSM8036992
-    sample_name: Scer_stm1del_DMS_treated_r1
+    sample_name: Scer_stm1del_treated_r1
     sample_group: Scer_stm1del
     condition: treated
     replicate: 1
   - accession: GSM8036993
-    sample_name: Scer_stm1del_DMS_treated_r2
+    sample_name: Scer_stm1del_treated_r2
     sample_group: Scer_stm1del
     condition: treated
     replicate: 2
   - accession: GSM8036994
-    sample_name: Scer_stm1del_DMS_treated_r3
+    sample_name: Scer_stm1del_treated_r3
     sample_group: Scer_stm1del
     condition: treated
     replicate: 3
   - accession: GSM8036978
-    sample_name: Scer_wildtype_DMS_treated_r1
+    sample_name: Scer_wildtype_treated_r1
     sample_group: Scer_wildtype
     condition: treated
     replicate: 1
   - accession: GSM8036979
-    sample_name: Scer_wildtype_DMS_treated_r2
+    sample_name: Scer_wildtype_treated_r2
     sample_group: Scer_wildtype
     condition: treated
     replicate: 2
   - accession: GSM8036980
-    sample_name: Scer_wildtype_DMS_treated_r3
+    sample_name: Scer_wildtype_treated_r3
     sample_group: Scer_wildtype
     condition: treated
     replicate: 3
@@ -143,17 +143,17 @@ raw_data:
     condition: untreated
     replicate: 2
   - accession: GSM8037005
-    sample_name: Scer_wildtype_rRNA_DMS_treated_r1
+    sample_name: Scer_wildtype_rRNA_treated_r1
     sample_group: Scer_wildtype_rRNA
     condition: treated
     replicate: 1
   - accession: GSM8037006
-    sample_name: Scer_wildtype_rRNA_DMS_treated_r2
+    sample_name: Scer_wildtype_rRNA_treated_r2
     sample_group: Scer_wildtype_rRNA
     condition: treated
     replicate: 2
   - accession: GSM8037007
-    sample_name: Scer_wildtype_rRNA_DMS_treated_r3
+    sample_name: Scer_wildtype_rRNA_treated_r3
     sample_group: Scer_wildtype_rRNA
     condition: treated
     replicate: 3

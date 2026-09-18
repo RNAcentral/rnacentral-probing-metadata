@@ -28,32 +28,32 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210478
   run_accessions:
   - accession: SRR20801871
-    sample_name: BJAB_B1_EBV_invivo_DMS_treated_r1
+    sample_name: BJAB_B1_EBV_treated_r1
     sample_group: BJAB_B1_EBV
     condition: treated
     replicate: 1
   - accession: SRR20801870
-    sample_name: BJAB_B1_EBV_invivo_DMS_treated_r2
+    sample_name: BJAB_B1_EBV_treated_r2
     sample_group: BJAB_B1_EBV
     condition: treated
     replicate: 2
   - accession: SRR20801869
-    sample_name: BJAB_B1_EBV_invivo_DMS_treated_r3
+    sample_name: BJAB_B1_EBV_treated_r3
     sample_group: BJAB_B1_EBV
     condition: treated
     replicate: 3
   - accession: SRR20801868
-    sample_name: BJAB_B1_EBV_invivo_untreated_r1
+    sample_name: BJAB_B1_EBV_untreated_r1
     sample_group: BJAB_B1_EBV
     condition: untreated
     replicate: 1
   - accession: SRR20801867
-    sample_name: BJAB_B1_EBV_invivo_untreated_r2
+    sample_name: BJAB_B1_EBV_untreated_r2
     sample_group: BJAB_B1_EBV
     condition: untreated
     replicate: 2
   - accession: SRR20801866
-    sample_name: BJAB_B1_EBV_invivo_untreated_r3
+    sample_name: BJAB_B1_EBV_untreated_r3
     sample_group: BJAB_B1_EBV
     condition: untreated
     replicate: 3

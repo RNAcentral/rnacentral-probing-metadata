@@ -28,42 +28,42 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE237160
   run_accessions:
   - accession: SRR25248919
-    sample_name: HEK293T_WT_NAI_treated_r1
+    sample_name: HEK293T_WT_treated_r1
     sample_group: HEK293T_WT
     condition: treated
     replicate: 1
   - accession: SRR25248927
-    sample_name: HEK293T_WT_NAI_treated_r2
+    sample_name: HEK293T_WT_treated_r2
     sample_group: HEK293T_WT
     condition: treated
     replicate: 2
   - accession: SRR25248926
-    sample_name: HEK293T_WT_DMSO_untreated_r1
+    sample_name: HEK293T_WT_untreated_r1
     sample_group: HEK293T_WT
     condition: untreated
     replicate: 1
   - accession: SRR25248925
-    sample_name: HEK293T_WT_DMSO_untreated_r2
+    sample_name: HEK293T_WT_untreated_r2
     sample_group: HEK293T_WT
     condition: untreated
     replicate: 2
   - accession: SRR25248924
-    sample_name: HEK293T_DHX36_KO_NAI_treated_r1
+    sample_name: HEK293T_DHX36_KO_treated_r1
     sample_group: HEK293T_DHX36_KO
     condition: treated
     replicate: 1
   - accession: SRR25248923
-    sample_name: HEK293T_DHX36_KO_NAI_treated_r2
+    sample_name: HEK293T_DHX36_KO_treated_r2
     sample_group: HEK293T_DHX36_KO
     condition: treated
     replicate: 2
   - accession: SRR25248922
-    sample_name: HEK293T_DHX36_KO_DMSO_untreated_r1
+    sample_name: HEK293T_DHX36_KO_untreated_r1
     sample_group: HEK293T_DHX36_KO
     condition: untreated
     replicate: 1
   - accession: SRR25248921
-    sample_name: HEK293T_DHX36_KO_DMSO_untreated_r2
+    sample_name: HEK293T_DHX36_KO_untreated_r2
     sample_group: HEK293T_DHX36_KO
     condition: untreated
     replicate: 2

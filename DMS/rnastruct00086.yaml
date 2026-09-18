@@ -28,12 +28,12 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE102069
   run_accessions:
   - accession: GSM2722722
-    sample_name: HFF_uninfected_DMS_treated_r1
+    sample_name: HFF_uninfected_treated_r1
     sample_group: HFF_uninfected
     condition: treated
     replicate: 1
   - accession: GSM2722723
-    sample_name: HFF_uninfected_DMS_treated_r2
+    sample_name: HFF_uninfected_treated_r2
     sample_group: HFF_uninfected
     condition: treated
     replicate: 2
@@ -48,32 +48,32 @@ raw_data:
     condition: denatured
     replicate: 1
   - accession: GSM2722726
-    sample_name: HFF_HCMV_05hpi_DMS_treated_r1
+    sample_name: HFF_HCMV_05hpi_treated_r1
     sample_group: HFF_HCMV_05hpi
     condition: treated
     replicate: 1
   - accession: GSM2722727
-    sample_name: HFF_HCMV_05hpi_DMS_treated_r2
+    sample_name: HFF_HCMV_05hpi_treated_r2
     sample_group: HFF_HCMV_05hpi
     condition: treated
     replicate: 2
   - accession: GSM2722728
-    sample_name: HFF_HCMV_24hpi_DMS_treated_r1
+    sample_name: HFF_HCMV_24hpi_treated_r1
     sample_group: HFF_HCMV_24hpi
     condition: treated
     replicate: 1
   - accession: GSM2722729
-    sample_name: HFF_HCMV_24hpi_DMS_treated_r2
+    sample_name: HFF_HCMV_24hpi_treated_r2
     sample_group: HFF_HCMV_24hpi
     condition: treated
     replicate: 2
   - accession: GSM2722730
-    sample_name: HFF_HCMV_72hpi_DMS_treated_r1
+    sample_name: HFF_HCMV_72hpi_treated_r1
     sample_group: HFF_HCMV_72hpi
     condition: treated
     replicate: 1
   - accession: GSM2722731
-    sample_name: HFF_HCMV_72hpi_DMS_treated_r2
+    sample_name: HFF_HCMV_72hpi_treated_r2
     sample_group: HFF_HCMV_72hpi
     condition: treated
     replicate: 2
