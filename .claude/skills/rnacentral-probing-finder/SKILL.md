@@ -23,7 +23,9 @@ on the `europepmc-search` skill for discovery.
 Two bundled scripts do the mechanical, LLM-free work:
 - `.claude/skills/rnacentral-probing-finder/scripts/find_probing_candidates.py` — per-year Europe PMC search → dedup vs repo
   DOIs → resolve open-access + the study's own accession. Prints a TSV + an
-  ACCESSIBLE / PAYWALLED summary.
+  ACCESSIBLE / PAYWALLED summary. Accessions come from the open-access full text
+  where there is one, and otherwise from Europe PMC's text-mined annotations, so
+  paywalled hits still surface an accession.
 - `.claude/skills/rnacentral-probing-finder/scripts/expand_accession.py` — `GSExxxxx` / `PRJNAxxxxx` → ENA run list
   (run accession + sample title).
 
@@ -47,6 +49,15 @@ Pick year ranges newer than what the repo already has (check with
 Read `/tmp/summary.txt` for the ACCESSIBLE list (open access, ready to curate) and
 the PAYWALLED list (flag those DOIs for a human — you cannot read their full text).
 
+**Always re-run the trailing 12 months, even if a sweep "already covered" them.**
+Europe PMC indexes continuously, so a range is never finished — it keeps filling in
+behind you. The Cell 2026 norovirus paper (rnastruct00097/00098) was missed for
+exactly this reason and nothing else: the sweep ran 2026-07-19, the paper was first
+indexed 2026-08-22. Both the literature query and the GEO sweep below match it
+perfectly — it simply did not exist yet. Check `git log -1 --format=%ad` on
+`docs/sweep_*.tsv` to see when the last sweep ran, and re-sweep from a few months
+before that date. Adding query terms would not have helped; re-running would.
+
 ### 1b. ALSO sweep GEO directly — literature search alone misses most datasets
 
 A no-date-limit rerun showed the literature query finds only a minority of
@@ -64,11 +75,27 @@ Terms that paid off: `DMS-MaPseq`, `SHAPE-MaP`, `icSHAPE`, `Structure-seq`,
 `RNA structure probing`, `RNA structurome`, `NAI-N3`, `SHALiPE`, `keth-seq`,
 `PORE-cupine`, `CIRS-seq`, `DANCE-MaP`, `PAIR-MaP`, `LASER-seq`.
 
-And for **paywalled** papers, recover the accession without journal access:
+And for **paywalled** papers, recover the accession without journal access. Try both
+— they fail independently:
 
 ```bash
+# (1) Europe PMC text-mined accessions. Works on author manuscripts and other non-OA
+#     records whose fullTextXML 500s or is withheld. Up to 8 ids per call; the
+#     response is NOT in request order, so key on each record's own "pmcid" field.
+curl -s "https://www.ebi.ac.uk/europepmc/annotations_api/annotationsByArticleIds?articleIds=PMC%3A<PMCID>&type=Accession%20Numbers&format=JSON"
+
+# (2) NCBI elink. Only works once GEO has been linked to the PMID, which lags.
 curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&db=gds&id=<PMID>&retmode=json"
 ```
+
+`find_probing_candidates.py` already applies (1) automatically to every hit it could
+not resolve from full text, and reports those under **PAYWALLED but ACCESSION
+RECOVERED**. Worked example: the Cell 2026 norovirus paper is `isOpenAccess: N`,
+its `fullTextXML` returns HTTP 500, and elink returned nothing — (1) returned
+`GSE310315` on the first call. Re-running (1) over the 336 already-swept rows that
+had a PMCID but no accession recovered 14, all of them paywalled rows the old code
+never even attempted; among them the Ro60/La series in `pending/` and
+`GSE285333` (10.1016/j.molcel.2026.03.029), which is still uncurated.
 
 ### 1c. Triage mechanically before reading anything
 
@@ -264,7 +291,12 @@ list files literally in `for` loops, don't pass a `$FILES` string.
 ## Notes
 
 - Do NOT run git. Produce validated YAMLs and report; let the user commit.
-- Paywalled candidates cannot be auto-curated — return their DOIs for manual review.
+- Paywalled candidates cannot be auto-curated from full text — but if an accession was
+  recovered, the GEO/SRA record alone usually carries enough (design, reagent, buffer,
+  replicates) to curate. rnastruct00097/00098 were built entirely from the GEO SOFT
+  file (`ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/<acc>/soft/<acc>_family.soft.gz`)
+  with no access to the paper. Return DOIs for manual review only when there is no
+  accession either.
 - Subagents occasionally die on a transient API error; just relaunch that one id.
 - See `docs/finding-datasets-with-europepmc.md` and `docs/candidate-datasets.md`
   for the worked example this skill generalises.

@@ -29,6 +29,7 @@ import urllib.request
 from pathlib import Path
 
 EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest"
+ANNOTATIONS = "https://www.ebi.ac.uk/europepmc/annotations_api/annotationsByArticleIds"
 REPO = Path.cwd()  # skill runs from repo root; DMS/ and SHAPE/ are here
 
 # Broad-recall probing terms. Named methods, reagents, and generic phrases so
@@ -126,6 +127,39 @@ def resolve_accession(pmcid: str) -> str:
     return hit.group(0) if hit else ""
 
 
+def accessions_from_annotations(pmcids: list[str]) -> dict[str, str]:
+    """Text-mined accessions for up to 8 PMCIDs, via the Europe PMC annotations API.
+
+    This is the ONLY angle that works for author-manuscript / non-open-access
+    records: `fullTextXML` 500s or is withheld for them, but Europe PMC still
+    text-mines the deposited text and exposes the accessions here. It is also the
+    only angle that worked for the paper that motivated it (Cell 2026 norovirus,
+    PMC13586799 -> GSE310315), where pubmed->gds elink returned nothing too.
+
+    Results come back in arbitrary order, so key on each record's own `pmcid`
+    field - never on the request order.
+    """
+    if not pmcids:
+        return {}
+    q = urllib.parse.urlencode({
+        "articleIds": ",".join("PMC:" + p for p in pmcids[:8]),
+        "type": "Accession Numbers",
+        "format": "JSON",
+    })
+    try:
+        data = json.loads(get(f"{ANNOTATIONS}?{q}"))
+    except Exception:  # noqa: BLE001
+        return {}
+    out: dict[str, str] = {}
+    for art in data:
+        pmc = art.get("pmcid") or ""
+        for a in art.get("annotations", []):
+            exact = (a.get("exact") or "").strip()
+            if pmc and ACC_RE.fullmatch(exact):
+                out.setdefault(pmc, exact)
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--ranges", nargs="+",
@@ -139,8 +173,10 @@ def main() -> int:
     print("year_range\tdoi\tpub_year\topen_access\tpmcid\taccession\ttitle")
     accessible: list[tuple[str, str, str]] = []   # (doi, accession, title)
     paywalled: list[tuple[str, str, str]] = []     # (doi, year, title)
+    recovered: list[tuple[str, str, str]] = []     # paywalled, but accession text-mined
     seen_doi: set[str] = set()
 
+    rows: list[dict] = []
     for rng in args.ranges:
         yf, yt = (int(x) for x in rng.split("-"))
         for r in search(yf, yt):
@@ -148,18 +184,39 @@ def main() -> int:
             if not doi or doi in have or doi in seen_doi:
                 continue
             seen_doi.add(doi)
-            oa = r.get("isOpenAccess") == "Y"
-            pmcid = r.get("pmcid") or ""
-            title = (r.get("title") or "").replace("\t", " ").strip()
-            acc = ""
-            if oa and pmcid and not args.no_accession:
-                acc = resolve_accession(pmcid)
-            print(f"{rng}\t{doi}\t{r.get('pubYear','')}\t"
-                  f"{'Y' if oa else 'N'}\t{pmcid}\t{acc}\t{title}")
-            if oa:
-                accessible.append((doi, acc, title))
-            else:
-                paywalled.append((doi, r.get("pubYear", ""), title))
+            rows.append({
+                "rng": rng, "doi": doi, "year": r.get("pubYear", ""),
+                "oa": r.get("isOpenAccess") == "Y", "pmcid": r.get("pmcid") or "",
+                "title": (r.get("title") or "").replace("\t", " ").strip(),
+                "acc": "",
+            })
+
+    if not args.no_accession:
+        # Pass 1: open-access full text (richest - picks the data-availability accession).
+        for row in rows:
+            if row["oa"] and row["pmcid"]:
+                row["acc"] = resolve_accession(row["pmcid"])
+        # Pass 2: text-mined annotations for everything still unresolved, INCLUDING
+        # paywalled rows. Do not gate this on open access: author manuscripts and
+        # other non-OA records have no fetchable full text but are still text-mined,
+        # and that is the only way their accession ever surfaces.
+        todo = [r["pmcid"] for r in rows if r["pmcid"] and not r["acc"]]
+        mined: dict[str, str] = {}
+        for i in range(0, len(todo), 8):
+            mined.update(accessions_from_annotations(todo[i:i + 8]))
+        for row in rows:
+            if not row["acc"]:
+                row["acc"] = mined.get(row["pmcid"], "")
+
+    for row in rows:
+        print(f"{row['rng']}\t{row['doi']}\t{row['year']}\t"
+              f"{'Y' if row['oa'] else 'N'}\t{row['pmcid']}\t{row['acc']}\t{row['title']}")
+        if row["oa"]:
+            accessible.append((row["doi"], row["acc"], row["title"]))
+        elif row["acc"]:
+            recovered.append((row["doi"], row["acc"], row["title"]))
+        else:
+            paywalled.append((row["doi"], row["year"], row["title"]))
 
     def block(label: str, rows: list) -> None:
         print(f"\n### {label} ({len(rows)})", file=sys.stderr)
@@ -168,7 +225,9 @@ def main() -> int:
 
     block("ACCESSIBLE (open access — ready to expand into YAML)",
           [(d, a or "NO-ACCESSION-FOUND", t[:80]) for d, a, t in accessible])
-    block("PAYWALLED (flag for manual review)",
+    block("PAYWALLED but ACCESSION RECOVERED (curate from the repository record)",
+          [(d, a, t[:80]) for d, a, t in recovered])
+    block("PAYWALLED, no accession (flag for manual review)",
           [(d, y, t[:90]) for d, y, t in paywalled])
     return 0
 
