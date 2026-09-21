@@ -39,7 +39,7 @@ raw_data:
     replicate: 2
   - accession: GSM1464039
     sample_name: mESC_in_vitro_r1
-    sample_group: mES_vitro
+    sample_group: mES_vitro # no in-vitro DMSO was deposited; the paper normalises against the in-vivo DMSO, which the pipeline borrows via the shared mES token (METTL3KO_mES is named KO-first so it cannot tie)
     condition: treated
     replicate: 1
   - accession: GSM1464040
@@ -59,22 +59,22 @@ raw_data:
     replicate: 2
   - accession: GSM1565484
     sample_name: mESC_METTL3_KO_untreated_r1
-    sample_group: mES_METTL3_KO
+    sample_group: METTL3KO_mES
     condition: untreated
     replicate: 1
   - accession: GSM1565485
     sample_name: mESC_METTL3_KO_untreated_r2
-    sample_group: mES_METTL3_KO
+    sample_group: METTL3KO_mES
     condition: untreated
     replicate: 2
   - accession: GSM1565486
     sample_name: mESC_METTL3_KO_treated_r1
-    sample_group: mES_METTL3_KO
+    sample_group: METTL3KO_mES
     condition: treated
     replicate: 1
   - accession: GSM1565487
     sample_name: mESC_METTL3_KO_treated_r2
-    sample_group: mES_METTL3_KO
+    sample_group: METTL3KO_mES
     condition: treated
     replicate: 2
 

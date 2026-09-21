@@ -104,6 +104,21 @@ raw_data:
     sample_group: HEK293T_invitro
     condition: treated
     replicate: 3
+  - accession: SRR18302291
+    sample_name: HEK293T_invitro_untreated_r1
+    sample_group: HEK293T_invitro
+    condition: untreated
+    replicate: 1
+  - accession: SRR18302290
+    sample_name: HEK293T_invitro_untreated_r2
+    sample_group: HEK293T_invitro
+    condition: untreated
+    replicate: 2
+  - accession: SRR18302289
+    sample_name: HEK293T_invitro_untreated_r3
+    sample_group: HEK293T_invitro
+    condition: untreated
+    replicate: 3
   - accession: SRR28510987
     sample_name: HEK293T_invitro_DMplus_treated_r1
     sample_group: HEK293T_invitro_DMplus # in-vitro refolded RNA, with AlkB demethylase
@@ -118,6 +133,21 @@ raw_data:
     sample_name: HEK293T_invitro_DMplus_treated_r3
     sample_group: HEK293T_invitro_DMplus
     condition: treated
+    replicate: 3
+  - accession: SRR18302288
+    sample_name: HEK293T_invitro_DMplus_untreated_r1
+    sample_group: HEK293T_invitro_DMplus
+    condition: untreated
+    replicate: 1
+  - accession: SRR18302287
+    sample_name: HEK293T_invitro_DMplus_untreated_r2
+    sample_group: HEK293T_invitro_DMplus
+    condition: untreated
+    replicate: 2
+  - accession: SRR18302286
+    sample_name: HEK293T_invitro_DMplus_untreated_r3
+    sample_group: HEK293T_invitro_DMplus
+    condition: untreated
     replicate: 3
   - accession: SRR28510984
     sample_name: HEK293T_untreated_r1

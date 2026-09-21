@@ -12,7 +12,7 @@ experiment:
   chemical: DMS
   RT_enzyme: Group II intron
   context: [in_vivo]
-  rna_type: total
+  rna_type: mRNA
   pH: 8.0
   adapter_3p: AAGATCGGAAGAGCACACGTCTGAACTCCAGTCAC,AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
   adapter_5p: null
@@ -54,21 +54,6 @@ raw_data:
     sample_group: BY4741_dbp7KO
     condition: treated
     replicate: 2
-  - accession: GSM8037008
-    sample_name: rRNA_BY4741_dbp7KO_treated_r1
-    sample_group: rRNA_BY4741_dbp7KO # mature-rRNA DMS-MaPseq: total RNA fragmented directly, no biotin pulldown or oligo-dT, so mostly rRNA; the mature comparator to nascent rRNA in CoSTseq.
-    condition: treated
-    replicate: 1
-  - accession: GSM8037009
-    sample_name: rRNA_BY4741_dbp7KO_treated_r2
-    sample_group: rRNA_BY4741_dbp7KO
-    condition: treated
-    replicate: 2
-  - accession: GSM8037010
-    sample_name: rRNA_BY4741_dbp7KO_treated_r3
-    sample_group: rRNA_BY4741_dbp7KO
-    condition: treated
-    replicate: 3
   - accession: GSM8626470
     sample_name: BY4741_dst1KO_treated_r1
     sample_group: BY4741_dst1KO
@@ -119,20 +104,5 @@ raw_data:
     sample_group: BY4741_WT
     condition: untreated
     replicate: 2
-  - accession: GSM8037005
-    sample_name: rRNA_BY4741_WT_treated_r1
-    sample_group: rRNA_BY4741_WT # mature-rRNA DMS-MaPseq: total RNA fragmented directly, no biotin pulldown or oligo-dT, so mostly rRNA; the mature comparator to nascent rRNA in CoSTseq.
-    condition: treated
-    replicate: 1
-  - accession: GSM8037006
-    sample_name: rRNA_BY4741_WT_treated_r2
-    sample_group: rRNA_BY4741_WT
-    condition: treated
-    replicate: 2
-  - accession: GSM8037007
-    sample_name: rRNA_BY4741_WT_treated_r3
-    sample_group: rRNA_BY4741_WT
-    condition: treated
-    replicate: 3
 
 comment: null
