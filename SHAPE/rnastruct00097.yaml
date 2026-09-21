@@ -1,0 +1,59 @@
+dataset_id: rnastruct00097
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Murine norovirus
+  ncbi_taxid: 357231
+  strain: CW3  # MNV-1 clone CW3, GenBank EF014462.1 (7382 nt); exact taxid 223997 has a trailing digit the scientific_name pattern rejects.
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003888
+  chemical: 2A3
+  RT_enzyme: Group II intron
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.cell.2026.07.051
+  year: 2026
+
+raw_data:
+  repository: GEO
+  accession: GSE310315
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310315
+  # SHAPE-MaP arm of GSE310315 (GSM9293933-GSM9293936). The fbDMS-MaP arm of the same series
+  # (GSM9293937-GSM9293940) is curated separately as rnastruct00098.
+  # In cellulo probing of the MNV genome in infected BV2 mouse microglial cells (MNV CW3, MOI 0.05,
+  # 24 h post-infection). 2A3 at 100 mM final in PBS, 15 min at 37C; DMSO vehicle is the unmodified
+  # control. Reverse transcription with MarathonRT (group II intron RT), then PCR.
+  # Scope: the libraries are tiled amplicons, but they cover the complete 7.4 kb MNV genome - i.e. the
+  # whole viral transcriptome, not a selected gene - so this is kept under the whole-viral-genome rule.
+  run_accessions:
+  - accession: GSM9293933
+    sample_name: MNV_CW3_BV2_treated_r1
+    sample_group: MNV_CW3_BV2
+    condition: treated
+    replicate: 1
+  - accession: GSM9293935
+    sample_name: MNV_CW3_BV2_treated_r2
+    sample_group: MNV_CW3_BV2
+    condition: treated
+    replicate: 2
+  - accession: GSM9293934
+    sample_name: MNV_CW3_BV2_untreated_r1
+    sample_group: MNV_CW3_BV2
+    condition: untreated
+    replicate: 1
+  - accession: GSM9293936
+    sample_name: MNV_CW3_BV2_untreated_r2
+    sample_group: MNV_CW3_BV2
+    condition: untreated
+    replicate: 2
+
+comment: null

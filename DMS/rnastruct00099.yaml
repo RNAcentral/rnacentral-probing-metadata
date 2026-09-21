@@ -1,0 +1,89 @@
+dataset_id: rnastruct00099
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Escherichia coli
+  ncbi_taxid: 562
+
+experiment:
+  method: msDMS-MaP
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo, in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2026.03.029
+  year: 2026
+
+raw_data:
+  repository: GEO
+  accession: GSE285333
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285333
+  # multi-site DMS-MaP (msDMS-MaP): an optimised RT reads out N7-G methylation alongside the usual
+  # N1-A/N3-C signal, so one DMS experiment reports secondary, tertiary and quaternary structure.
+  # ONLY the E. coli rRNA arm is included. GEO states "Amplicon libraries were prepared by 2-step PCR.
+  # Ribosomal libaries were prepared via Nextera" - the rRNA samples are therefore randomly fragmented
+  # unselected total-RNA libraries, not amplicons, and are kept under the same rule as rnastruct00085.
+  # The paper analyses rRNA only, so mRNA coverage will be low.
+  # Excluded from GSE285333 (all targeted 2-step-PCR amplicons of one named RNA - fail the scope gate):
+  # - 7SK in HEK293T / RPE1 / HeLa, in-cell and cell-free, and the IVT 7SK +/-Larp7 series
+  # - U1 / U2 snRNA, human RNase P, Tetrahymena P4-P6, TPP riboswitch ligand titration, E. coli tmRNA
+  # - the 16S/23S rRNA amplicon MnCl2 x pH RT-condition titration (method optimisation, not replicates)
+  # Also excluded: the cell-free -Mg rRNA pair (GSM9612346/GSM9612349), a single unreplicated
+  # refolding condition; and all of GSE285334, which is RNP-MaP protein-crosslinking, not chemical probing.
+  run_accessions:
+  - accession: GSM9612344
+    sample_name: Escherichia_coli_K12_treated_r1
+    sample_group: Escherichia_coli_K12
+    condition: treated
+    replicate: 1
+  - accession: GSM9612345
+    sample_name: Escherichia_coli_K12_treated_r2
+    sample_group: Escherichia_coli_K12
+    condition: treated
+    replicate: 2
+  - accession: GSM9612347
+    sample_name: Escherichia_coli_K12_untreated_r1
+    sample_group: Escherichia_coli_K12
+    condition: untreated
+    replicate: 1
+  - accession: GSM9612348
+    sample_name: Escherichia_coli_K12_untreated_r2
+    sample_group: Escherichia_coli_K12
+    condition: untreated
+    replicate: 2
+  # Cell-free arm: total RNA extracted then refolded protein-free, probed in vitro.
+  - accession: GSM8700904
+    sample_name: Escherichia_coli_K12_invitro_treated_r1
+    sample_group: Escherichia_coli_K12_invitro
+    condition: treated
+    replicate: 1
+  - accession: GSM8700906
+    sample_name: Escherichia_coli_K12_invitro_treated_r2
+    sample_group: Escherichia_coli_K12_invitro
+    condition: treated
+    replicate: 2
+  - accession: GSM8700905
+    sample_name: Escherichia_coli_K12_invitro_untreated_r1
+    sample_group: Escherichia_coli_K12_invitro
+    condition: untreated
+    replicate: 1
+  - accession: GSM8700907
+    sample_name: Escherichia_coli_K12_invitro_untreated_r2
+    sample_group: Escherichia_coli_K12_invitro
+    condition: untreated
+    replicate: 2
+  - accession: GSM8700908
+    sample_name: Escherichia_coli_K12_invitro_denatured_r1  # max-reactivity denaturing control
+    sample_group: Escherichia_coli_K12_invitro
+    condition: denatured
+    replicate: 1
+
+comment: "Paywalled paper (PMC13120737 is in Europe PMC but its fullTextXML is withheld), curated from the GEO record. RT_enzyme inferred as M-MLV: the msDMS-MaP RT is a Mn2+/pH-tuned MaP reverse transcription read out with ShapeMapper2/DanceMapper, and the one GEO sample that used MarathonRT labels it explicitly - confirm against the methods. pH refers to the probing buffer and is not stated for the rRNA samples; the pH values in the excluded amplicon titration are RT conditions."

@@ -35,33 +35,33 @@ raw_data:
   # the lowest RT background - kept deliberately as an rRNA-focused in-cell structurome.
   run_accessions:
   - accession: SRR27843612
-    sample_name: Escherichia_coli_TGIRT55_treated_r1
-    sample_group: Escherichia_coli_TGIRT55 #TGIRT-III RT at 55C
+    sample_name: Escherichia_coli_treated_r1
+    sample_group: Escherichia_coli #TGIRT-III RT at 55C
     condition: treated
     replicate: 1
   - accession: SRR27843611
-    sample_name: Escherichia_coli_TGIRT55_treated_r2
-    sample_group: Escherichia_coli_TGIRT55
+    sample_name: Escherichia_coli_treated_r2
+    sample_group: Escherichia_coli
     condition: treated
     replicate: 2
   - accession: SRR27843610
-    sample_name: Escherichia_coli_TGIRT55_treated_r3
-    sample_group: Escherichia_coli_TGIRT55
+    sample_name: Escherichia_coli_treated_r3
+    sample_group: Escherichia_coli
     condition: treated
     replicate: 3
   - accession: SRR27843618
-    sample_name: Escherichia_coli_TGIRT55_untreated_r1
-    sample_group: Escherichia_coli_TGIRT55
+    sample_name: Escherichia_coli_untreated_r1
+    sample_group: Escherichia_coli
     condition: untreated
     replicate: 1
   - accession: SRR27843617
-    sample_name: Escherichia_coli_TGIRT55_untreated_r2
-    sample_group: Escherichia_coli_TGIRT55
+    sample_name: Escherichia_coli_untreated_r2
+    sample_group: Escherichia_coli
     condition: untreated
     replicate: 2
   - accession: SRR27843616
-    sample_name: Escherichia_coli_TGIRT55_untreated_r3
-    sample_group: Escherichia_coli_TGIRT55
+    sample_name: Escherichia_coli_untreated_r3
+    sample_group: Escherichia_coli
     condition: untreated
     replicate: 3
 
