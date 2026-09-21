@@ -13,10 +13,10 @@ experiment:
   RT_enzyme: Group II intron
   context: [in_vivo]
   rna_type: total
-  pH: null
-  adapter_3p: null
+  pH: 8.0
+  adapter_3p: AAGATCGGAAGAGCACACGTCTGAACTCCAGTCAC,AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
   adapter_5p: null
-  umi_pattern: null
+  umi_pattern: NNNNNNN
 
 publication:
   doi: 10.1016/j.molcel.2025.02.025
@@ -26,136 +26,113 @@ raw_data:
   repository: GEO
   accession: GSE254264
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254264
+  # Excluded from this curation:
+  # - GSM8036980 (DMS-MaPseq wildtype DMS-treated biol rep 3): GEO has three DMS-treated wildtype
+  #   replicates but only two untreated.
+  # - GSM8036988, GSM8036991, GSM8626472, GSM8036985, GSM8036994 (dbp3, dbp7, dst1, spt4, stm1 knockout
+  #   DMS-treated biol rep 3): the knockouts have no untreated of their own and borrow the BY4741_WT
+  #   untreated of the same replicate through the fuzzy fallback (hence the shared BY4741 prefix), and
+  #   there is no wildtype untreated rep 3 to borrow.
   run_accessions:
   - accession: GSM8036986
-    sample_name: Scer_dbp3del_treated_r1
-    sample_group: Scer_dbp3del
+    sample_name: BY4741_dbp3KO_treated_r1
+    sample_group: BY4741_dbp3KO
     condition: treated
     replicate: 1
   - accession: GSM8036987
-    sample_name: Scer_dbp3del_treated_r2
-    sample_group: Scer_dbp3del
+    sample_name: BY4741_dbp3KO_treated_r2
+    sample_group: BY4741_dbp3KO
     condition: treated
     replicate: 2
-  - accession: GSM8036988
-    sample_name: Scer_dbp3del_treated_r3
-    sample_group: Scer_dbp3del
-    condition: treated
-    replicate: 3
   - accession: GSM8036989
-    sample_name: Scer_dbp7del_treated_r1
-    sample_group: Scer_dbp7del
+    sample_name: BY4741_dbp7KO_treated_r1
+    sample_group: BY4741_dbp7KO
     condition: treated
     replicate: 1
   - accession: GSM8036990
-    sample_name: Scer_dbp7del_treated_r2
-    sample_group: Scer_dbp7del
+    sample_name: BY4741_dbp7KO_treated_r2
+    sample_group: BY4741_dbp7KO
     condition: treated
     replicate: 2
-  - accession: GSM8036991
-    sample_name: Scer_dbp7del_treated_r3
-    sample_group: Scer_dbp7del
-    condition: treated
-    replicate: 3
   - accession: GSM8037008
-    sample_name: Scer_dbp7del_rRNA_treated_r1
-    sample_group: Scer_dbp7del_rRNA
+    sample_name: rRNA_BY4741_dbp7KO_treated_r1
+    sample_group: rRNA_BY4741_dbp7KO # mature-rRNA DMS-MaPseq: total RNA fragmented directly, no biotin pulldown or oligo-dT, so mostly rRNA; the mature comparator to nascent rRNA in CoSTseq.
     condition: treated
     replicate: 1
   - accession: GSM8037009
-    sample_name: Scer_dbp7del_rRNA_treated_r2
-    sample_group: Scer_dbp7del_rRNA
+    sample_name: rRNA_BY4741_dbp7KO_treated_r2
+    sample_group: rRNA_BY4741_dbp7KO
     condition: treated
     replicate: 2
   - accession: GSM8037010
-    sample_name: Scer_dbp7del_rRNA_treated_r3
-    sample_group: Scer_dbp7del_rRNA
+    sample_name: rRNA_BY4741_dbp7KO_treated_r3
+    sample_group: rRNA_BY4741_dbp7KO
     condition: treated
     replicate: 3
   - accession: GSM8626470
-    sample_name: Scer_dst1del_treated_r1
-    sample_group: Scer_dst1del
+    sample_name: BY4741_dst1KO_treated_r1
+    sample_group: BY4741_dst1KO
     condition: treated
     replicate: 1
   - accession: GSM8626471
-    sample_name: Scer_dst1del_treated_r2
-    sample_group: Scer_dst1del
+    sample_name: BY4741_dst1KO_treated_r2
+    sample_group: BY4741_dst1KO
     condition: treated
     replicate: 2
-  - accession: GSM8626472
-    sample_name: Scer_dst1del_treated_r3
-    sample_group: Scer_dst1del
-    condition: treated
-    replicate: 3
   - accession: GSM8036983
-    sample_name: Scer_spt4del_treated_r1
-    sample_group: Scer_spt4del
+    sample_name: BY4741_spt4KO_treated_r1
+    sample_group: BY4741_spt4KO
     condition: treated
     replicate: 1
   - accession: GSM8036984
-    sample_name: Scer_spt4del_treated_r2
-    sample_group: Scer_spt4del
+    sample_name: BY4741_spt4KO_treated_r2
+    sample_group: BY4741_spt4KO
     condition: treated
     replicate: 2
-  - accession: GSM8036985
-    sample_name: Scer_spt4del_treated_r3
-    sample_group: Scer_spt4del
-    condition: treated
-    replicate: 3
   - accession: GSM8036992
-    sample_name: Scer_stm1del_treated_r1
-    sample_group: Scer_stm1del
+    sample_name: BY4741_stm1KO_treated_r1
+    sample_group: BY4741_stm1KO
     condition: treated
     replicate: 1
   - accession: GSM8036993
-    sample_name: Scer_stm1del_treated_r2
-    sample_group: Scer_stm1del
+    sample_name: BY4741_stm1KO_treated_r2
+    sample_group: BY4741_stm1KO
     condition: treated
     replicate: 2
-  - accession: GSM8036994
-    sample_name: Scer_stm1del_treated_r3
-    sample_group: Scer_stm1del
-    condition: treated
-    replicate: 3
   - accession: GSM8036978
-    sample_name: Scer_wildtype_treated_r1
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_treated_r1
+    sample_group: BY4741_WT
     condition: treated
     replicate: 1
   - accession: GSM8036979
-    sample_name: Scer_wildtype_treated_r2
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_treated_r2
+    sample_group: BY4741_WT
     condition: treated
     replicate: 2
-  - accession: GSM8036980
-    sample_name: Scer_wildtype_treated_r3
-    sample_group: Scer_wildtype
-    condition: treated
-    replicate: 3
   - accession: GSM8036981
-    sample_name: Scer_wildtype_untreated_r1
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_untreated_r1
+    sample_group: BY4741_WT
     condition: untreated
     replicate: 1
   - accession: GSM8036982
-    sample_name: Scer_wildtype_untreated_r2
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_untreated_r2
+    sample_group: BY4741_WT
     condition: untreated
     replicate: 2
   - accession: GSM8037005
-    sample_name: Scer_wildtype_rRNA_treated_r1
-    sample_group: Scer_wildtype_rRNA
+    sample_name: rRNA_BY4741_WT_treated_r1
+    sample_group: rRNA_BY4741_WT # mature-rRNA DMS-MaPseq: total RNA fragmented directly, no biotin pulldown or oligo-dT, so mostly rRNA; the mature comparator to nascent rRNA in CoSTseq.
     condition: treated
     replicate: 1
   - accession: GSM8037006
-    sample_name: Scer_wildtype_rRNA_treated_r2
-    sample_group: Scer_wildtype_rRNA
+    sample_name: rRNA_BY4741_WT_treated_r2
+    sample_group: rRNA_BY4741_WT
     condition: treated
     replicate: 2
   - accession: GSM8037007
-    sample_name: Scer_wildtype_rRNA_treated_r3
-    sample_group: Scer_wildtype_rRNA
+    sample_name: rRNA_BY4741_WT_treated_r3
+    sample_group: rRNA_BY4741_WT
     condition: treated
     replicate: 3
 
-comment: "Paywalled paper: DMS-MaPseq arm of GSE254264, the mature-RNA comparator for the CoSTseq arm (rnastruct00090). RT_enzyme inferred as TGIRT per standard DMS-MaPseq. Groups ending _rRNA are the rRNA-targeted libraries of the same strains - drop them if only mRNA is wanted."
+comment: null

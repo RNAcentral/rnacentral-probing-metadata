@@ -10,9 +10,9 @@ experiment:
   principle: MaP
   obi: OBI:0001015
   chemical: DMS
-  RT_enzyme: Group II intron
+  RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total
+  rna_type: mRNA
   pH: null
   adapter_3p: null
   adapter_5p: null
@@ -26,6 +26,12 @@ raw_data:
   repository: GEO
   accession: GSE236224
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE236224
+  # Excluded from this curation:
+  # - GSM7520063 (NPC-4% DMS-Rep3): GEO has three DMS-treated NPC replicates but only two DMSO controls.
+  #   nf-core/rnastructurome pairs treated with untreated on sample_group + replicate, and its fuzzy
+  #   fallback only reuses a control when the arm holds exactly one; with NPC_1 and NPC_2 both present
+  #   r3 would get no control and be scored treated-only (Zubradt) while r1/r2 are scored against DMSO
+  #   (Siegfried). Dropping r3 keeps every NPC replicate on the same scoring method.
   run_accessions:
   - accession: GSM7520061
     sample_name: NPC_treated_r1
@@ -37,11 +43,6 @@ raw_data:
     sample_group: NPC
     condition: treated
     replicate: 2
-  - accession: GSM7520063
-    sample_name: NPC_treated_r3
-    sample_group: NPC
-    condition: treated
-    replicate: 3
   - accession: GSM7520056
     sample_name: NPC_untreated_r1
     sample_group: NPC
@@ -73,4 +74,4 @@ raw_data:
     condition: untreated
     replicate: 2
 
-comment: "NEEDS MANUAL VERIFICATION (paywalled paper, no PMC full text): this is the 4% DMS arm of the neuronal-differentiation study; the companion icSHAPE arm is GSE156671 (curated separately). The GEO overall_design line says icSHAPE but every sample here is labelled 4% DMS - method/principle/RT_enzyme are inferred as DMS-MaPseq and need confirming."
+comment: null

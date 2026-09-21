@@ -6,15 +6,15 @@ organism:
   ncbi_taxid: 562
 
 experiment:
-  method: msDMS-MaP
+  method: msDMS-MaP  # multi-site DMS-MaP: MarathonRT reads N7-G methylation alongside N1-A/N3-C, giving secondary, tertiary and quaternary structure from one DMS experiment
   principle: MaP
   obi: OBI:0001015
   chemical: DMS
-  RT_enzyme: M-MLV
+  RT_enzyme: Group II intron
   context: [in_vivo, in_vitro]
   rna_type: total
-  pH: null
-  adapter_3p: null
+  pH: 8.3
+  adapter_3p: CTGTCTCTTATACACATCT
   adapter_5p: null
   umi_pattern: null
 
@@ -26,17 +26,7 @@ raw_data:
   repository: GEO
   accession: GSE285333
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285333
-  # multi-site DMS-MaP (msDMS-MaP): an optimised RT reads out N7-G methylation alongside the usual
-  # N1-A/N3-C signal, so one DMS experiment reports secondary, tertiary and quaternary structure.
-  # ONLY the E. coli rRNA arm is included. GEO states "Amplicon libraries were prepared by 2-step PCR.
-  # Ribosomal libaries were prepared via Nextera" - the rRNA samples are therefore randomly fragmented
-  # unselected total-RNA libraries, not amplicons, and are kept under the same rule as rnastruct00085.
-  # The paper analyses rRNA only, so mRNA coverage will be low.
-  # Excluded from GSE285333 (all targeted 2-step-PCR amplicons of one named RNA - fail the scope gate):
-  # - 7SK in HEK293T / RPE1 / HeLa, in-cell and cell-free, and the IVT 7SK +/-Larp7 series
-  # - U1 / U2 snRNA, human RNase P, Tetrahymena P4-P6, TPP riboswitch ligand titration, E. coli tmRNA
-  # - the 16S/23S rRNA amplicon MnCl2 x pH RT-condition titration (method optimisation, not replicates)
-  # Also excluded: the cell-free -Mg rRNA pair (GSM9612346/GSM9612349), a single unreplicated
+  # Excluded: the cell-free -Mg rRNA pair (GSM9612346/GSM9612349), a single unreplicated
   # refolding condition; and all of GSE285334, which is RNP-MaP protein-crosslinking, not chemical probing.
   run_accessions:
   - accession: GSM9612344
@@ -86,4 +76,4 @@ raw_data:
     condition: denatured
     replicate: 1
 
-comment: "Paywalled paper (PMC13120737 is in Europe PMC but its fullTextXML is withheld), curated from the GEO record. RT_enzyme inferred as M-MLV: the msDMS-MaP RT is a Mn2+/pH-tuned MaP reverse transcription read out with ShapeMapper2/DanceMapper, and the one GEO sample that used MarathonRT labels it explicitly - confirm against the methods. pH refers to the probing buffer and is not stated for the rRNA samples; the pH values in the excluded amplicon titration are RT conditions."
+comment: null

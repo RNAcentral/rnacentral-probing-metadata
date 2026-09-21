@@ -29,31 +29,25 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310315
   # fbDMS-MaP arm of GSE310315 (GSM9293937-GSM9293940). The SHAPE-MaP arm of the same series
   # (GSM9293933-GSM9293936) is curated separately as rnastruct00097.
-  # In cellulo probing of the MNV genome in infected BV2 mouse microglial cells (MNV CW3, MOI 0.05,
-  # 24 h post-infection). DMS at 170 mM final in 1 M bicine pH 8.3, 6 min at 37C; ethanol vehicle is
-  # the unmodified control. Reverse transcription with MarathonRT (group II intron RT), then PCR.
-  # The bicine pH 8.3 buffer is what makes this "fbDMS" - it extends DMS readout beyond A/C.
-  # Scope: the libraries are tiled amplicons, but they cover the complete 7.4 kb MNV genome - i.e. the
-  # whole viral transcriptome, not a selected gene - so this is kept under the whole-viral-genome rule.
   run_accessions:
   - accession: GSM9293937
-    sample_name: MNV_CW3_BV2_treated_r1
-    sample_group: MNV_CW3_BV2
+    sample_name: Murine_norovirus_CW3_BV2_treated_r1
+    sample_group: Murine_norovirus_CW3_BV2 # MNV-1 clone CW3 probed in infected BV-2 cells, an immortalised C57BL/6 mouse microglial line permissive for murine norovirus
     condition: treated
     replicate: 1
   - accession: GSM9293939
-    sample_name: MNV_CW3_BV2_treated_r2
-    sample_group: MNV_CW3_BV2
+    sample_name: Murine_norovirus_CW3_BV2_treated_r2
+    sample_group: Murine_norovirus_CW3_BV2
     condition: treated
     replicate: 2
   - accession: GSM9293938
-    sample_name: MNV_CW3_BV2_untreated_r1
-    sample_group: MNV_CW3_BV2
+    sample_name: Murine_norovirus_CW3_BV2_untreated_r1
+    sample_group: Murine_norovirus_CW3_BV2
     condition: untreated
     replicate: 1
   - accession: GSM9293940
-    sample_name: MNV_CW3_BV2_untreated_r2
-    sample_group: MNV_CW3_BV2
+    sample_name: Murine_norovirus_CW3_BV2_untreated_r2
+    sample_group: Murine_norovirus_CW3_BV2
     condition: untreated
     replicate: 2
 

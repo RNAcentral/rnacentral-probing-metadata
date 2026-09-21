@@ -6,17 +6,17 @@ organism:
   ncbi_taxid: 4932
 
 experiment:
-  method: CoSTseq
+  method: CoSTseq  # co-transcriptional structure sequencing: DMS-MaP of nascent RNA (biotin-CTP run-on + streptavidin pulldown), reads carry the Pol 3-prime end position
   principle: MaP
   obi: OBI:0001015
   chemical: DMS
   RT_enzyme: Group II intron
   context: [in_vivo]
   rna_type: total
-  pH: null
-  adapter_3p: null
+  pH: 8.0
+  adapter_3p: AAGATCGGAAGAGCACACGTCTGAACTCCAGTCAC,AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
   adapter_5p: null
-  umi_pattern: null
+  umi_pattern: NNNNNNN
 
 publication:
   doi: 10.1016/j.molcel.2025.02.025
@@ -26,201 +26,177 @@ raw_data:
   repository: GEO
   accession: GSE254264
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254264
+  # Excluded from this curation:
+  # - GSM8036957, GSM8036958, GSM8036959, GSM8036960 (CoSTseq wildtype DMS-treated biol reps 6-9): GEO has
+  #   nine DMS-treated wildtype replicates but only five untreated.
+  # - GSM8036997 (YKW100 galactose DMS-treated biol rep 3) and GSM8037000 (YKW100 glucose DMS-treated
+  #   biol rep 3): three treated per condition but only two untreated.
+  #   Dropping them keeps every replicate in a group on the same scoring method.
   run_accessions:
   - accession: GSM8036995
-    sample_name: Scer_YKW100_galactose_treated_r1
-    sample_group: Scer_YKW100_galactose
+    sample_name: YKW100_galactose_treated_r1
+    sample_group: YKW100_galactose
     condition: treated
     replicate: 1
   - accession: GSM8036996
-    sample_name: Scer_YKW100_galactose_treated_r2
-    sample_group: Scer_YKW100_galactose
+    sample_name: YKW100_galactose_treated_r2
+    sample_group: YKW100_galactose
     condition: treated
     replicate: 2
-  - accession: GSM8036997
-    sample_name: Scer_YKW100_galactose_treated_r3
-    sample_group: Scer_YKW100_galactose
-    condition: treated
-    replicate: 3
   - accession: GSM8037001
-    sample_name: Scer_YKW100_galactose_untreated_r1
-    sample_group: Scer_YKW100_galactose
+    sample_name: YKW100_galactose_untreated_r1
+    sample_group: YKW100_galactose
     condition: untreated
     replicate: 1
   - accession: GSM8037002
-    sample_name: Scer_YKW100_galactose_untreated_r2
-    sample_group: Scer_YKW100_galactose
+    sample_name: YKW100_galactose_untreated_r2
+    sample_group: YKW100_galactose
     condition: untreated
     replicate: 2
   - accession: GSM8036998
-    sample_name: Scer_YKW100_glucose_treated_r1
-    sample_group: Scer_YKW100_glucose
+    sample_name: YKW100_glucose_treated_r1
+    sample_group: YKW100_glucose
     condition: treated
     replicate: 1
   - accession: GSM8036999
-    sample_name: Scer_YKW100_glucose_treated_r2
-    sample_group: Scer_YKW100_glucose
+    sample_name: YKW100_glucose_treated_r2
+    sample_group: YKW100_glucose
     condition: treated
     replicate: 2
-  - accession: GSM8037000
-    sample_name: Scer_YKW100_glucose_treated_r3
-    sample_group: Scer_YKW100_glucose
-    condition: treated
-    replicate: 3
   - accession: GSM8037003
-    sample_name: Scer_YKW100_glucose_untreated_r1
-    sample_group: Scer_YKW100_glucose
+    sample_name: YKW100_glucose_untreated_r1
+    sample_group: YKW100_glucose
     condition: untreated
     replicate: 1
   - accession: GSM8037004
-    sample_name: Scer_YKW100_glucose_untreated_r2
-    sample_group: Scer_YKW100_glucose
+    sample_name: YKW100_glucose_untreated_r2
+    sample_group: YKW100_glucose
     condition: untreated
     replicate: 2
   - accession: GSM8036969
-    sample_name: Scer_dbp3del_treated_r1
-    sample_group: Scer_dbp3del
+    sample_name: BY4741_dbp3KO_treated_r1
+    sample_group: BY4741_dbp3KO
     condition: treated
     replicate: 1
   - accession: GSM8036970
-    sample_name: Scer_dbp3del_treated_r2
-    sample_group: Scer_dbp3del
+    sample_name: BY4741_dbp3KO_treated_r2
+    sample_group: BY4741_dbp3KO
     condition: treated
     replicate: 2
   - accession: GSM8036971
-    sample_name: Scer_dbp3del_treated_r3
-    sample_group: Scer_dbp3del
+    sample_name: BY4741_dbp3KO_treated_r3
+    sample_group: BY4741_dbp3KO
     condition: treated
     replicate: 3
   - accession: GSM8036972
-    sample_name: Scer_dbp7del_treated_r1
-    sample_group: Scer_dbp7del
+    sample_name: BY4741_dbp7KO_treated_r1
+    sample_group: BY4741_dbp7KO
     condition: treated
     replicate: 1
   - accession: GSM8036973
-    sample_name: Scer_dbp7del_treated_r2
-    sample_group: Scer_dbp7del
+    sample_name: BY4741_dbp7KO_treated_r2
+    sample_group: BY4741_dbp7KO
     condition: treated
     replicate: 2
   - accession: GSM8036974
-    sample_name: Scer_dbp7del_treated_r3
-    sample_group: Scer_dbp7del
+    sample_name: BY4741_dbp7KO_treated_r3
+    sample_group: BY4741_dbp7KO
     condition: treated
     replicate: 3
   - accession: GSM8626467
-    sample_name: Scer_dst1del_treated_r1
-    sample_group: Scer_dst1del
+    sample_name: BY4741_dst1KO_treated_r1
+    sample_group: BY4741_dst1KO
     condition: treated
     replicate: 1
   - accession: GSM8626468
-    sample_name: Scer_dst1del_treated_r2
-    sample_group: Scer_dst1del
+    sample_name: BY4741_dst1KO_treated_r2
+    sample_group: BY4741_dst1KO
     condition: treated
     replicate: 2
   - accession: GSM8626469
-    sample_name: Scer_dst1del_treated_r3
-    sample_group: Scer_dst1del
+    sample_name: BY4741_dst1KO_treated_r3
+    sample_group: BY4741_dst1KO
     condition: treated
     replicate: 3
   - accession: GSM8036966
-    sample_name: Scer_spt4del_treated_r1
-    sample_group: Scer_spt4del
+    sample_name: BY4741_spt4KO_treated_r1
+    sample_group: BY4741_spt4KO
     condition: treated
     replicate: 1
   - accession: GSM8036967
-    sample_name: Scer_spt4del_treated_r2
-    sample_group: Scer_spt4del
+    sample_name: BY4741_spt4KO_treated_r2
+    sample_group: BY4741_spt4KO
     condition: treated
     replicate: 2
   - accession: GSM8036968
-    sample_name: Scer_spt4del_treated_r3
-    sample_group: Scer_spt4del
+    sample_name: BY4741_spt4KO_treated_r3
+    sample_group: BY4741_spt4KO
     condition: treated
     replicate: 3
   - accession: GSM8036975
-    sample_name: Scer_stm1del_treated_r1
-    sample_group: Scer_stm1del
+    sample_name: BY4741_stm1KO_treated_r1
+    sample_group: BY4741_stm1KO
     condition: treated
     replicate: 1
   - accession: GSM8036976
-    sample_name: Scer_stm1del_treated_r2
-    sample_group: Scer_stm1del
+    sample_name: BY4741_stm1KO_treated_r2
+    sample_group: BY4741_stm1KO
     condition: treated
     replicate: 2
   - accession: GSM8036977
-    sample_name: Scer_stm1del_treated_r3
-    sample_group: Scer_stm1del
+    sample_name: BY4741_stm1KO_treated_r3
+    sample_group: BY4741_stm1KO
     condition: treated
     replicate: 3
   - accession: GSM8036952
-    sample_name: Scer_wildtype_treated_r1
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_treated_r1
+    sample_group: BY4741_WT
     condition: treated
     replicate: 1
   - accession: GSM8036953
-    sample_name: Scer_wildtype_treated_r2
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_treated_r2
+    sample_group: BY4741_WT
     condition: treated
     replicate: 2
   - accession: GSM8036954
-    sample_name: Scer_wildtype_treated_r3
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_treated_r3
+    sample_group: BY4741_WT
     condition: treated
     replicate: 3
   - accession: GSM8036955
-    sample_name: Scer_wildtype_treated_r4
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_treated_r4
+    sample_group: BY4741_WT
     condition: treated
     replicate: 4
   - accession: GSM8036956
-    sample_name: Scer_wildtype_treated_r5
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_treated_r5
+    sample_group: BY4741_WT
     condition: treated
     replicate: 5
-  - accession: GSM8036957
-    sample_name: Scer_wildtype_treated_r6
-    sample_group: Scer_wildtype
-    condition: treated
-    replicate: 6
-  - accession: GSM8036958
-    sample_name: Scer_wildtype_treated_r7
-    sample_group: Scer_wildtype
-    condition: treated
-    replicate: 7
-  - accession: GSM8036959
-    sample_name: Scer_wildtype_treated_r8
-    sample_group: Scer_wildtype
-    condition: treated
-    replicate: 8
-  - accession: GSM8036960
-    sample_name: Scer_wildtype_treated_r9
-    sample_group: Scer_wildtype
-    condition: treated
-    replicate: 9
   - accession: GSM8036961
-    sample_name: Scer_wildtype_untreated_r1
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_untreated_r1
+    sample_group: BY4741_WT
     condition: untreated
     replicate: 1
   - accession: GSM8036962
-    sample_name: Scer_wildtype_untreated_r2
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_untreated_r2
+    sample_group: BY4741_WT
     condition: untreated
     replicate: 2
   - accession: GSM8036963
-    sample_name: Scer_wildtype_untreated_r3
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_untreated_r3
+    sample_group: BY4741_WT
     condition: untreated
     replicate: 3
   - accession: GSM8036964
-    sample_name: Scer_wildtype_untreated_r4
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_untreated_r4
+    sample_group: BY4741_WT
     condition: untreated
     replicate: 4
   - accession: GSM8036965
-    sample_name: Scer_wildtype_untreated_r5
-    sample_group: Scer_wildtype
+    sample_name: BY4741_WT_untreated_r5
+    sample_group: BY4741_WT
     condition: untreated
     replicate: 5
 
-comment: "Paywalled paper: CoSTseq arm of GSE254264 (nascent RNA base-pairing, transcriptome-wide). principle/RT_enzyme inferred from the DMS-MaPseq readout it is benchmarked against - confirm. The DMS-MaPseq arm of the same series is curated as rnastruct00091."
+comment: null

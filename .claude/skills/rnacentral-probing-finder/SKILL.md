@@ -181,7 +181,9 @@ n=2 but the no-drug control arm and the untreated control are n=1), do not keep
 just the replicated arm when it is a perturbation rather than a baseline — fail the
 dataset. Conversely, an unreplicated *extra* arm inside an otherwise replicated
 design (a n=1 ± puromycin pair, a n=1 cell line) is simply dropped from
-`run_accessions` with a note in `comment`.
+`run_accessions` and listed in the `# Excluded from this curation:` block (see
+"Where curation notes go" below) — never in `comment`, which would take the
+whole file out of the pipeline.
 
 **If a YAML already exists** (re-curation, or a file written before the gate was
 applied), keep the file and mark it instead of deleting it, using the repo's
@@ -215,9 +217,26 @@ excludes the file from pipeline processing; `comment: null` means "run it".
   top-level `strain:`. The schema's `scientific_name` pattern rejects trailing
   digits (e.g. "Human bocavirus 1" fails) — use the parent species name that
   validates and capture the sub-species in `strain:` with an inline note of the
-  exact taxid.
+  exact taxid. In `sample_group` / `sample_name` **spell the virus out** with
+  underscores, then strain, then host cell / context:
+  `Murine_norovirus_CW3_BV2`, `SARS-CoV-2_USA-WA1`, `dengue_EDEN2270` — not an
+  abbreviation (`MNV_CW3`, `ZIKV_`, `IAV_`, `PEDV_`; older files still have
+  these).
 - `comment: null`, and leave unknown optional fields (`pH`, adapters, `umi_pattern`)
-  `null` unless the paper states them.
+  `null` unless the paper states them. The **authors' analysis repo** (GitHub /
+  Zenodo link in the key-resources table) is often the only place adapters and
+  UMIs are spelled out: look for the fastp / cutadapt / umi_tools call. For
+  paired-end libraries `adapter_3p` is the R1,R2 read-through pair, comma-separated
+  (`AAGATCGGAAGAGCACACGTCTGAACTCCAGTCAC,AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT`);
+  `umi_pattern` is the UMI at the 5′ end of read 1. Derive them from the
+  oligo table (5′ adapter → R1 side, template-switching / RT primer → R2 side)
+  and check against the pipeline's `--adapter_sequence` values (rnastruct00090).
+  `pH` is the pH of the probing buffer the reagent is added in (Bicine pH 8.0 →
+  `8.0`), not the RT buffer.
+- **Non-standard `method` names get an inline YAML comment** on the same line
+  explaining what the assay is — e.g. `method: CoSTseq  # DMS-MaP of nascent RNA
+  (biotin-CTP run-on + streptavidin pulldown)` — so nobody has to open the paper
+  to learn it is a DMS-MaP variant.
 
 ### Sample naming rules (lessons from the 00063–00096 re-curation)
 
@@ -229,8 +248,10 @@ excludes the file from pipeline processing; `comment: null` means "run it".
 - **Group name = cell line or strain exactly as the repository states it.** Read
   the GEO `characteristics` / `source_name` lines (`expand_accession.py` output):
   HEK293 vs HEK293**T** matters. For yeast use the strain (`BY4741`, `JWY6147`,
-  `YOH001`) or `Scer_<genotype>` (`Scer_dbp3del`); never the bare species
-  (`Scerevisiae`).
+  `YOH001`) and put the genotype after it: `BY4741_WT`, `BY4741_dbp3KO`,
+  `YKW100_galactose`. Never the bare species (`Scerevisiae`) and not
+  `Scer_<genotype>` — the strain must be the **first token** so mutant arms
+  can borrow the wild-type untreated (see pairing below).
 - **Bacteria / archaea: full binomial with underscores, or the strain.**
   `Bacillus_subtilis_37C`, `Escherichia_coli_WT`, `Methanosarcina_acetivorans_acetate`,
   or a named strain (`MG1655_delta_gcvB`, `E_coli_DH5a`). No ad-hoc abbreviations
@@ -245,23 +266,61 @@ excludes the file from pipeline processing; `comment: null` means "run it".
   Pick the dose the paper analyses (usually the higher/standard one), list it as
   r1–rN, and drop the others. Don't renumber a second dose as r4–r6: the pipeline
   pairs controls by replicate number (see below), so r4–r6 would have no untreated
-  and fail the all-or-none rf-normfactor check. Decode the tag first — GEO's
+  and be scored on a different method from r1–r3. Decode the tag first — GEO's
   `DMS0.02` is 2 % v/v DMS, not DMSO; check the methods.
 - **Every treated replicate needs a control with the same replicate number.**
-  nf-core/rnastructurome pairs on `sample_group` + `replicate` exactly; with
-  `fuzzy_untreated_pairing` (default on) it falls back to (1) an untreated whose
-  `sample_group` shares the text *before the first underscore* at the **same
-  replicate**, then (2) the single untreated control if the whole file has exactly
-  one. Anything else leaves that treated sample without a control and, because
-  other groups have one, `rf-normfactor` errors (all-or-none). So: untreated
-  r1–r3 for treated r1–r3; one lone untreated is fine only if it is the *only*
-  untreated in the file.
+  nf-core/rnastructurome (`normalise_reactivities` + `selectClosestControl`)
+  pairs on `sample_group` + `replicate` exactly. With `fuzzy_untreated_pairing`
+  (default on) a treated group with no untreated of its own falls back to the
+  untreated whose `sample_group` shares the **longest run of leading `_`-tokens**
+  (at least one), preferring the **same replicate**; if none is at the same
+  replicate and the closest arm holds **exactly one** control, that one is reused
+  across replicates; otherwise the treated sample gets **no control** and is
+  scored treated-only (Zubradt) while its siblings are scored against untreated
+  (Siegfried) — a silent within-group inconsistency, not an error.
+  Consequences for curation:
+  - **More treated than untreated in a group → drop the surplus treated**
+    replicates (those with no untreated at the same number) and list them in
+    the exclusion block. Do this even when the authors never used the untreated
+    for background subtraction (CoSTseq only shows it as a no-DMS negative
+    control): we pair because we have the samples; it is our curation choice,
+    say so in the block (rnastruct00090 / 00091).
+  - **Mutant / perturbation arms with no untreated of their own** borrow the
+    wild-type one, so name them to share the leading token with the WT group
+    (`BY4741_WT` ← `BY4741_dbp3KO`; `HFF_uninfected` ← `HFF_infected_HCMV_72hr`)
+    and check a WT untreated exists at **every replicate number the mutant
+    uses** — if WT has untreated r1–r2 only, the mutants' r3 must go too
+    (rnastruct00091 lost r3 of five knockouts this way).
+  - **Different library types must NOT share the leading token.** Mature-rRNA
+    libraries (fragmented total RNA) next to oligo-dT mRNA libraries of the same
+    strain get a distinct prefix (`rRNA_BY4741_WT`) so they do not borrow the
+    mRNA untreated; with no untreated at all they are scored treated-only,
+    consistently within the group, which is fine.
+  - One lone untreated is fine only if it is the *only* untreated in its arm.
+- **Where curation notes go.** `comment:` is a pipeline switch: any non-null
+  value takes the file **out of processing**, so it holds only the canonical
+  `failed QC: …` strings. Everything else — omitted libraries and why, kept-but-
+  unusual groups, which arm of a series this file is — goes in a YAML comment
+  block between `landing_page:` and `run_accessions:`, headed
+  `# Excluded from this curation:` with one `# - <accessions> (<what>): <why>`
+  bullet per omission (rnastruct00026, 00057, 00088, 00090, 00091 are the
+  models). **What a group *is*** — the cell line, the perturbation, an unusual
+  library type — goes as an inline `# …` on the `sample_group:` line of the
+  group's **first** sample (`sample_group: MCF7_hippuristanol # MCF7 treated
+  with hippuristanol, an eIF4A1 inhibitor`; rnastruct00076/00081/00082/00091),
+  not as a comment block above the sample. Wet-lab detail that is already
+  captured by schema fields (buffer, RT enzyme, adapters) does not need
+  repeating anywhere.
 - **`(sample_group, condition, replicate)` and `sample_name` must be unique within
   the file.** `check_metadata_uniqueness.py` does NOT check this (it only checks
   ids across files) — run the snippet in the validate step. The `_rN` suffix of
   `sample_name` should equal `replicate`.
-- An untreated/no-probe control with a single replicate is fine; the ≥2 rule
-  applies to *treated* groups only.
+- An untreated/no-probe **or denatured** control with a single replicate is
+  fine; the ≥2 rule applies to *treated* groups only. A lone denatured is the
+  one case the fuzzy fallback handles cleanly (single control in the closest
+  arm → shared by every replicate and every prefix-matching group), so keep it
+  (rnastruct00099 GSM8700908) — it does mean prefix-matching arms are all
+  normalised against that one denatured reference.
 
 ## Validate (the repo's CI checks) — every new file must pass all four
 

@@ -64,8 +64,13 @@ STEPS:
      exceptions (`_invitro`, `_AsO2stress`, `_DMplus`). Different perturbations
      (±drug, WT/mutant) → different groups. A probe-dose series → keep ONE dose
      as r1–rN and drop the rest. Every treated replicate number needs an untreated
-     at the same `sample_group`+`replicate` (the pipeline pairs on that; a lone
-     untreated is only OK if it is the file's sole untreated). Within the file,
+     at the same `sample_group`+`replicate` (the pipeline pairs on that); more
+     treated than untreated → drop the surplus treated and list them under a
+     `# Excluded from this curation:` YAML comment block placed before
+     `run_accessions:` (never in `comment:`, which disables the file). Mutant
+     arms without their own untreated borrow the WT one only if they share the
+     leading `_`-token (`BY4741_WT` / `BY4741_dbp3KO`) and WT has an untreated at
+     every replicate number they use. Within the file,
      `sample_name` and `(sample_group, condition, replicate)` must be unique
      (CI does not check this — verify yourself).
    - Viral: NCBI common name + top-level `strain:` (schema pattern rejects trailing
