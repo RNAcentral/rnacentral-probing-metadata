@@ -152,6 +152,7 @@ enums:
       in_vivo:
       in_vitro:
       ex_vivo:
+      in_organello:
       in_virio:
       ex_virio:
       denatured:

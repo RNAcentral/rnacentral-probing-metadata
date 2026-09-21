@@ -35,7 +35,7 @@ A fully annotated template with inline field descriptions is available at [`docs
 
 6. The optional `rna_type` field describes what RNA fraction was captured for library preparation. Use one of `mRNA` (polyadenylated mRNA selected with oligo-dT), `total` (total or rRNA-depleted RNA, no poly-A selection), or `sRNA` (small RNA, typically <200 nt).
 
-7. If including an OBI id, use a valid term from the [Ontology for Biomedical Investigations](http://obi-ontology.org/) / [obi-ontology/obi](https://github.com/obi-ontology/obi). If the experimental context is provided, it must be one of in_vivo, in_vitro, denatured, ex_vivo, in_virio or ex_virio.
+7. If including an OBI id, use a valid term from the [Ontology for Biomedical Investigations](http://obi-ontology.org/) / [obi-ontology/obi](https://github.com/obi-ontology/obi). If the experimental context is provided, it must be one of in_vivo, in_vitro, denatured, ex_vivo, in_organello, in_virio or ex_virio.
 
 8. All other fields are optional and can be set to null if not available.
 
@@ -89,7 +89,7 @@ The required fields are:
 All other fields are optional and, if not known, can be `null`.
 
 For viral datasets the optional top-level field `strain` should be provided and should describe the strain hared by all samples in the dataset. This field is not required for non-viral datasets. If a viral study includes multiple strains create one YAML file per strain.
-The optional field `experiment.context`, when provided, must use one or more of: `in_vivo`, `in_vitro`, `ex_vivo`, `in_virio`, `ex_virio`, or `denatured`.
+The optional field `experiment.context`, when provided, must use one or more of: `in_vivo`, `in_vitro`, `ex_vivo`, `in_virio`, `ex_virio`, or `denatured`. The `in_*` values mean the RNA was probed inside an intact compartment, with its proteins still bound: a cell (`in_vivo`), an isolated but functional organelle (`in_organello`) or a virus particle (`in_virio`). The `ex_*` values mean the RNA was extracted from that compartment first and probed outside it (`ex_vivo`, `ex_virio`), while `in_vitro` covers purified or transcribed RNA refolded from scratch.
 
 ## GitHub Actions checks
 
