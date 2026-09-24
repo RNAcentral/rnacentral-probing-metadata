@@ -141,14 +141,22 @@ Schema change: `Porcine epidemic diarrhea virus` added to the
 `organism.scientific_name` pattern alternation (4-word viral name that the
 binomial/trinomial branch cannot match).
 
-## Paywalled stubs filed in `pending/`
+## Paywalled stubs (resolved, `pending/` removed Sept 2026)
 
-Seven paywalled candidates could not be resolved to an accession even via
-PubMed→GEO/BioProject elinks. Stub YAMLs with everything derivable pre-filled and
-the rest marked `TODO` live in `pending/` (outside `DMS/`/`SHAPE/` so CI stays
-green): tRNA structure-seq yeast, synonymous-mutation mRNA folding, Ro60/La,
-SARS-CoV-2 5'UTR/OAS1, flavivirus sfRNA, *Physcomitrium* telomerase RNA, and the
-DEAD-box ribosome-assembly Methods chapter. See `pending/README.md`.
+Seven paywalled candidates could not be resolved to an accession via
+PubMed→GEO/BioProject elinks and were parked as stub YAMLs in `pending/`. All seven
+were later rejected and the folder deleted:
+
+- **Scope gate:** SARS-CoV-2 5'UTR/OAS1, flavivirus sfRNA, *Physcomitrium*
+  telomerase RNA, the DEAD-box ribosome-assembly Methods chapter, Ro60/La (in vitro
+  SHAPE-MaP of transcribed pre-5S rRNAs only; GSE290478 is 2 RIP-seq runs, no
+  probing reads deposited) and synonymous-mutation mRNA folding (in-cell SHAPE-MaP
+  of *TP53* mRNA only).
+- **Replicate gate:** yeast tRNA structure-seq - accession found by SRA text search,
+  not elink: **DDBJ PRJDB40244** (DRA026194, 12 runs, BY4743). The tRNA structurome
+  is in scope, but the in vivo, heat, CHX and NaCl arms are each one pooled
+  `rep123` library (±DMS); only the in vitro baseline has two runs (`rep1`,
+  `rep23`).
 
 ## Open-access candidates worth reviewing next (WORKED — all resolved above)
 
@@ -202,13 +210,13 @@ curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&
 | 10.1016/j.celrep.2024.114544 | 2024 | Hfq mediates transcriptome-wide RNA structurome reprogramming under virulence | GSE216157 → 00079 |
 | 10.1021/acschembio.4c00538 | 2024 | Disulfide Tethering to Map Small Molecule Binding Sites Transcriptome-wide | GSE261913 → removed (targeted: COX1 amplicons) |
 | 10.1002/cpz1.70038 | 2024 | DMS-MapSeq analysis of ASO binding to lncRNA PANDA (targeted) | GSE250290 → removed (targeted: lncRNA PANDA) |
-| 10.1016/j.cell.2025.12.030 | 2026 | Mechanistic insights into RNA chaperoning by Ro60 and La autoantigens | GSE290478 = RIP-Seq only → stub |
-| 10.1261/rna.081029.126 | 2026 | Optimized tRNA structure-seq reveals robust tRNA secondary structures in *S. cerevisiae* | no elink → stub |
-| 10.1261/rna.080976.126 | 2026 | Cancer-associated synonymous mutations reveal stress-dependent mRNA folding | no elink → stub |
-| 10.1016/j.jbc.2026.113194 | 2026 | SARS-CoV-2 5'-UTR stem-loops activate OAS1 (viral) | no elink → stub |
-| 10.1128/jvi.00898-26 | 2026 | Comparative analysis of flavivirus sfRNA dynamics and secondary structure (viral) | no elink → stub |
-| 10.1016/j.jmb.2023.168417 | 2024 | Telomerase RNA structure in *Physcomitrium patens* (targeted) | no elink → stub |
-| 10.1016/j.ymeth.2022.05.001 | 2022 | DMS-MaPseq of DEAD-box proteins in ribosome assembly | no elink → stub |
+| 10.1016/j.cell.2025.12.030 | 2026 | Mechanistic insights into RNA chaperoning by Ro60 and La autoantigens | GSE290478 = RIP-Seq only → rejected (scope: in vitro pre-5S rRNA) |
+| 10.1261/rna.081029.126 | 2026 | Optimized tRNA structure-seq reveals robust tRNA secondary structures in *S. cerevisiae* | DDBJ PRJDB40244 → rejected (pooled replicates) |
+| 10.1261/rna.080976.126 | 2026 | Cancer-associated synonymous mutations reveal stress-dependent mRNA folding | no elink → rejected (scope: *TP53* mRNA only) |
+| 10.1016/j.jbc.2026.113194 | 2026 | SARS-CoV-2 5'-UTR stem-loops activate OAS1 (viral) | no elink → rejected (scope) |
+| 10.1128/jvi.00898-26 | 2026 | Comparative analysis of flavivirus sfRNA dynamics and secondary structure (viral) | no elink → rejected (scope) |
+| 10.1016/j.jmb.2023.168417 | 2024 | Telomerase RNA structure in *Physcomitrium patens* (targeted) | no elink → rejected (scope) |
+| 10.1016/j.ymeth.2022.05.001 | 2022 | DMS-MaPseq of DEAD-box proteins in ribosome assembly | no elink → rejected (scope) |
 
 ### Not datasets — protocols, methods, modeling, or off-topic false positives (ignore)
 

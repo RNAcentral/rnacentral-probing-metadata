@@ -31,6 +31,7 @@ from pathlib import Path
 EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest"
 ANNOTATIONS = "https://www.ebi.ac.uk/europepmc/annotations_api/annotationsByArticleIds"
 REPO = Path.cwd()  # skill runs from repo root; DMS/ and SHAPE/ are here
+EXCLUDED = Path(__file__).resolve().parent.parent / "excluded_dois.tsv"
 
 # Broad-recall probing terms. Named methods, reagents, and generic phrases so
 # method-innovation papers (e.g. nanopore PORE-cupine, new SHAPE/DMS variants) are
@@ -83,6 +84,13 @@ def existing_dois() -> set[str]:
                 s = line.strip()
                 if s.startswith("doi:"):
                     dois.add(s.split(":", 1)[1].strip().lower())
+    # Papers already triaged and rejected (scope / replicates / not RNA), so a
+    # sweep does not surface them again. Append a row when you reject one.
+    if EXCLUDED.exists():
+        for line in EXCLUDED.read_text().splitlines()[1:]:
+            doi = line.split("\t", 1)[0].strip().lower()
+            if doi:
+                dois.add(doi)
     return dois
 
 

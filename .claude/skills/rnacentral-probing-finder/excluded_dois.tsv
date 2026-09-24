@@ -1,0 +1,13 @@
+doi	accession	gate	reason
+10.1016/j.cell.2025.12.030	GSE290478	scope	Ro60/La: in vitro SHAPE-MaP of transcribed pre-5S rRNAs only; GSE290478 holds 2 RIP-seq runs, no probing reads
+10.1261/rna.080976.126		scope	in-cell SHAPE-MaP of TP53 mRNA only; genome-wide data is plain RNA-seq
+10.1261/rna.081029.126	PRJDB40244	replicates	yeast tRNA structure-seq: in vivo/heat/CHX/NaCl arms are single pooled rep123 libraries
+10.1016/j.jbc.2026.113194		scope	SARS-CoV-2 5'UTR stem-loops only
+10.1128/jvi.00898-26		scope	flavivirus sfRNA only
+10.1016/j.jmb.2023.168417		scope	Physcomitrium telomerase RNA only
+10.1016/j.ymeth.2022.05.001		scope	DEAD-box ribosome-assembly Methods chapter; pre-rRNA only
+10.1016/j.molcel.2024.02.005	GSE254361	scope	pri-miRNA panel (targeted)
+10.1021/acschembio.4c00538	GSE261913	scope	COX1 amplicons (targeted)
+10.1002/cpz1.70038	GSE250290	scope	lncRNA PANDA (targeted)
+10.1038/s44319-025-00598-z	PRJNA1219967	not RNA	DMS-seq of adenoviral DNA
+10.1016/j.jbc.2025.110172	GSE279192	replicates	lncRNA DRAIC: one 5NIA and one DMSO run (also targeted)

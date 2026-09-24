@@ -94,7 +94,7 @@ RECOVERED**. Worked example: the Cell 2026 norovirus paper is `isOpenAccess: N`,
 its `fullTextXML` returns HTTP 500, and elink returned nothing — (1) returned
 `GSE310315` on the first call. Re-running (1) over the 336 already-swept rows that
 had a PMCID but no accession recovered 14, all of them paywalled rows the old code
-never even attempted; among them the Ro60/La series in `pending/` and
+never even attempted; among them the Ro60/La series (since dropped on the scope rule) and
 `GSE285333` (10.1016/j.molcel.2026.03.029), which is still uncurated.
 
 ### 1c. Triage mechanically before reading anything
@@ -210,6 +210,10 @@ A candidate becomes a YAML **only if**:
 - **(b)** every *treated* `sample_group` has **≥2 biological replicates**, AND
 - **(c)** it is **transcriptome-wide** — the library covers the whole
   transcriptome (or the whole genome of a virus), not a selected RNA.
+
+**Record every rejection** as a row in `excluded_dois.tsv` (doi, accession, gate,
+reason). `find_probing_candidates.py` treats those DOIs like ones already in
+`DMS/`/`SHAPE/`, so a rejected paper does not resurface in the next sweep.
 
 ### (c) the scope gate — how to decide
 
