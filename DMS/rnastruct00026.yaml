@@ -12,7 +12,7 @@ experiment:
   obi: OBI:0001015
   chemical: DMS
   RT_enzyme: Group II intron
-  context: [in_vivo, ex_virio]
+  context: [in_vivo]
   rna_type: total
   pH: null
   adapter_3p: null
@@ -29,6 +29,8 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE153851
   # Excluded from this curation:
   # - GSM4656063/GSM4656064 (283nt and 85nt in vitro-transcribed fragments): structural validation controls only, not full-genome infected-cell samples.
+  # - GSM4656062 (ex_virio_treated): genomic RNA extracted from virions and refolded before probing; a single
+  #   library with no replicate and no ex-virio untreated, so the arm is dropped.
   run_accessions:
   - accession: GSM4656059
     sample_name: usa_wa1_treated_r1
@@ -45,10 +47,5 @@ raw_data:
     sample_group: SARS-CoV-2_USA-WA1
     condition: untreated
     replicate: 1
-  - accession: GSM4656062
-    sample_name: usa_wa1_ex_virio_treated  # genomic RNA extracted from virions and refolded before probing
-    sample_group: SARS-CoV-2_USA-WA1_ex_virio
-    condition: treated
-    replicate: 1
 
-comment: "failed QC: no biological replicates"
+comment: null

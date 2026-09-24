@@ -1,10 +1,10 @@
-dataset_id: rnastruct00075
+dataset_id: rnastruct00106
 schema_version: "1.0.0"
 
 organism:
   scientific_name: Yellow fever virus
   ncbi_taxid: 11089
-  strain: 17D  # GEO reports strain 17D; full-length infectious clone of the 17D-204 vaccine strain.
+  strain: Dakar  # GEO reports strain Dakar, the YF-DakH1279 isolate.
 
 experiment:
   method: SHAPE-MaP
@@ -29,26 +29,26 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275594
   # In-cell SHAPE-MaP on infected Huh7 cells; DMSO is the 2A3 vehicle control.
   # GSE275594 is a SuperSeries: only its 12 SHAPE-MaP libraries are curated, the bulk RNA-seq
-  # arm is out of scope. The three strains are one file each; rnastruct00105, rnastruct00106 cover the other two.
+  # arm is out of scope. The three strains are one file each; rnastruct00075, rnastruct00105 cover the other two.
   run_accessions:
-  - accession: GSM8480565
-    sample_name: Yellow_fever_17D_2A3_treated_r1
-    sample_group: Yellow_fever_17D
+  - accession: GSM8480573
+    sample_name: Yellow_fever_Dakar_2A3_treated_r1
+    sample_group: Yellow_fever_Dakar
     condition: treated
     replicate: 1
-  - accession: GSM8480566
-    sample_name: Yellow_fever_17D_2A3_treated_r2
-    sample_group: Yellow_fever_17D
+  - accession: GSM8480574
+    sample_name: Yellow_fever_Dakar_2A3_treated_r2
+    sample_group: Yellow_fever_Dakar
     condition: treated
     replicate: 2
-  - accession: GSM8480567
-    sample_name: Yellow_fever_17D_DMSO_untreated_r1
-    sample_group: Yellow_fever_17D
+  - accession: GSM8480575
+    sample_name: Yellow_fever_Dakar_DMSO_untreated_r1
+    sample_group: Yellow_fever_Dakar
     condition: untreated
     replicate: 1
-  - accession: GSM8480568
-    sample_name: Yellow_fever_17D_DMSO_untreated_r2
-    sample_group: Yellow_fever_17D
+  - accession: GSM8480576
+    sample_name: Yellow_fever_Dakar_DMSO_untreated_r2
+    sample_group: Yellow_fever_Dakar
     condition: untreated
     replicate: 2
 

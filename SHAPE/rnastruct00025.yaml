@@ -12,7 +12,7 @@ experiment:
   obi: OBI:0003886
   chemical: NAI
   RT_enzyme: M-MLV
-  context: [in_vivo, in_vitro]
+  context: [in_vitro]
   rna_type: total
   pH: null
   adapter_3p: null
@@ -27,25 +27,12 @@ raw_data:
   repository: GEO
   accession: GSE151327
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE151327
-  # In vivo samples are SARS-CoV-2-infected Vero E6 cells; DMSO is the vehicle control for NAI.
   # cell_line omits host information and keeps only viral strain plus probing context for grouping.
   # Odd/even are amplicon tiling pools from the same in vitro SHAPE condition, group them by replicate.
+  # Excluded from this curation:
+  # - GSM4892124/GSM4892125 (in_vivo_treated_r1/r2) and GSM4892123 (in_vivo_untreated): the in vivo
+  #   libraries are not sequenced deeply enough on the viral genome for high-quality reactivities.
   run_accessions:
-  - accession: GSM4892124
-    sample_name: leiden_0002_in_vivo_treated_r1
-    sample_group: SARS-CoV-2_Leiden-0002_in_vivo
-    condition: treated
-    replicate: 1
-  - accession: GSM4892125
-    sample_name: leiden_0002_in_vivo_treated_r2
-    sample_group: SARS-CoV-2_Leiden-0002_in_vivo
-    condition: treated
-    replicate: 2
-  - accession: GSM4892123
-    sample_name: leiden_0002_in_vivo_untreated
-    sample_group: SARS-CoV-2_Leiden-0002_in_vivo
-    condition: untreated
-    replicate: 1
   - accession: GSM4572509
     sample_name: leiden_0002_in_vitro_untreated_odd_r1
     sample_group: SARS-CoV-2_Leiden-0002_in_vitro

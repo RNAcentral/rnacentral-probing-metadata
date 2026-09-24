@@ -29,18 +29,18 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271098
   run_accessions:
   - accession: SRR29651914
-    sample_name: VeroE6_PEDV_incell_NAI_treated_r1
-    sample_group: PEDV_incell
+    sample_name: Porcine_epidemic_diarrhea_virus_AJ1102_NAI_treated_r1
+    sample_group: Porcine_epidemic_diarrhea_virus_AJ1102
     condition: treated
     replicate: 1
   - accession: SRR29651913
-    sample_name: VeroE6_PEDV_incell_NAI_treated_r2
-    sample_group: PEDV_incell
+    sample_name: Porcine_epidemic_diarrhea_virus_AJ1102_NAI_treated_r2
+    sample_group: Porcine_epidemic_diarrhea_virus_AJ1102
     condition: treated
     replicate: 2
   - accession: SRR29651912
-    sample_name: VeroE6_PEDV_incell_DMSO_untreated_r1
-    sample_group: PEDV_incell
+    sample_name: Porcine_epidemic_diarrhea_virus_AJ1102_DMSO_untreated_r1
+    sample_group: Porcine_epidemic_diarrhea_virus_AJ1102
     condition: untreated
     replicate: 1
 

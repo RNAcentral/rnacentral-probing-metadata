@@ -38,7 +38,7 @@ DMS-MaPseq arm then took the long-vacant `00063` slot so that it sits next to
 | `DMS/rnastruct00069` | 10.1038/s41594-025-01565-x | GSE209857 | *S. cerevisiae* intron structurome, DMS-MaPseq | 00075 |
 | `DMS/rnastruct00070` | 10.1261/rna.079652.123 | GSE224126 | *B. subtilis* RNA thermometers, DMS Structure-seq2 | 00077 |
 | `DMS/rnastruct00071` | 10.1261/rna.079687.123 | GSE229536 | *M. acetivorans* (Archaea), DMS Structure-seq2 | 00078 |
-| `SHAPE/rnastruct00072` | 10.1038/s41467-025-63297-2 | GSE279203 | SARS-CoV-2 (5 variants), SHAPE-MaP/NAI - whole viral genome | 00079 |
+| `SHAPE/rnastruct00072`, `00101`-`00104` | 10.1038/s41467-025-63297-2 | GSE279203 | SARS-CoV-2 WT/Alpha/Beta/Delta/Omicron XBB (one file per variant), SHAPE-MaP/NAI - whole viral genome | 00079 |
 | `SHAPE/rnastruct00073` | 10.1093/nar/gkaf820 | GSE272797 | TDP-43 study, human SHALiPE-seq/NAI | 00083 |
 
 ⚠️ `00070` (was 00077): GEO per-sample metadata is corrupt - the ±DMS
@@ -110,7 +110,7 @@ survivors after renumbering. Repo now holds **82** datasets.
 | YAML | DOI | Accession | Dataset |
 |------|-----|-----------|---------|
 | `SHAPE/rnastruct00074` | 10.7554/elife.103923 | GSE271098 | PEDV genome (strain AJ1102), SHAPE-MaP/NAI in Vero E6 |
-| `SHAPE/rnastruct00075` | 10.1038/s41564-025-02047-y | **GSE275594** | Yellow fever 17D/Asibi/Dakar, SHAPE-MaP/2A3 (accession corrected - PRJNA1153987 is plain viral genome sequencing) |
+| `SHAPE/rnastruct00075`, `00105`-`00106` | 10.1038/s41564-025-02047-y | **GSE275594** | Yellow fever 17D/Asibi/Dakar, SHAPE-MaP/2A3, one file per strain (accession corrected - PRJNA1153987 is plain viral genome sequencing) |
 | `DMS/rnastruct00076` | 10.3390/plants14050780 | PRJNA1175151 | *A. thaliana* +/- MMS DNA damage, DMS-MaPseq |
 | `SHAPE/rnastruct00077` | 10.1093/nar/gkae404 | PRJEB71404 | Bluetongue virus (BTV-1) all 10 segments + complexes, SHAPE-MaP/1M7 (102 runs) |
 | `DMS/rnastruct00078` | 10.1016/j.celrep.2024.114544 | GSE216157 | *P. savastanoi* Hfq structurome, DMS-seq (paywalled) |
