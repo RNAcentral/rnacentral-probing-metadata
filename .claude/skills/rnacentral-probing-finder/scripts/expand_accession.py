@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Expand a study accession into ENA run records for a metadata YAML.
 
-Given a GEO series (GSExxxxx) or an SRA/ENA project (PRJNAxxxxx / PRJEBxxxxx),
+Given a GEO series (GSExxxxx) or an SRA/ENA/DDBJ project (PRJNA / PRJEB / PRJDB),
 resolve the underlying project and print, per run:
-    run_accession  sample_accession  sample_title  experiment_title
+    run_accession  sample_accession  sample_title  experiment_title  library_name
+
+DDBJ runs often leave the titles generic; the condition is in library_name.
 
 This is the mechanical half of building `raw_data.run_accessions`; a human still
 maps sample titles to condition (treated/untreated/denatured), sample_group and
@@ -38,7 +40,7 @@ def geo_to_project(gse: str) -> str:
 
 
 def ena_runs(project: str) -> list[list[str]]:
-    fields = "run_accession,sample_accession,sample_title,experiment_title"
+    fields = "run_accession,sample_accession,sample_title,experiment_title,library_name"
     url = (f"{ENA}?accession={project}&result=read_run&fields={fields}"
            f"&format=tsv")
     rows = [line.split("\t") for line in get(url).splitlines()]
@@ -47,7 +49,7 @@ def ena_runs(project: str) -> list[list[str]]:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("accession", help="GSExxxxx, PRJNAxxxxx or PRJEBxxxxx")
+    ap.add_argument("accession", help="GSExxxxx, PRJNAxxxxx, PRJEBxxxxx or PRJDBxxxxx")
     ap.add_argument("--tsv", action="store_true", help="raw TSV instead of aligned")
     args = ap.parse_args()
 
@@ -57,11 +59,11 @@ def main() -> int:
     rows = ena_runs(project)
     print(f"# runs: {len(rows)}", file=sys.stderr)
     for r in rows:
-        r = (r + ["", "", "", ""])[:4]
+        r = (r + [""] * 5)[:5]
         if args.tsv:
             print("\t".join(r))
         else:
-            print(f"{r[0]:14} {r[1]:14} {r[2][:45]:45} {r[3][:45]}")
+            print(f"{r[0]:14} {r[1]:14} {r[2][:40]:40} {r[3][:40]:40} {r[4]}")
     return 0
 
 

@@ -1,86 +1,34 @@
-# Per-candidate curation prompt (one subagent per paper)
+# Per-candidate curation prompt
 
-Spawn a `general-purpose` subagent per shortlisted candidate. Fill in the four
-`<...>` placeholders. The subagent produces one validated YAML or a REJECT line.
+Give one `general-purpose` subagent this text per candidate, with the `<…>` filled in.
 
 ---
 
-You are curating ONE RNA chemical-probing dataset into a metadata YAML for the repo
-at `<REPO_ABS_PATH>` (this is your cwd). Work ONLY in that repo and modify ONLY the
-one new YAML you create. Do NOT run git.
+Curate ONE RNA chemical-probing dataset into a metadata YAML in the repo at
+`<REPO_ABS_PATH>` (your cwd). Create only that one file; don't run git.
 
-CANDIDATE:
 - DOI: `<DOI>`
-- Data accession (from the candidate table): `<ACCESSION>`
+- Accession: `<ACCESSION>`
 - Description: `<ONE_LINE>`
-- Assigned dataset_id: `<rnastruct#####>`
+- dataset_id: `<rnastruct#####>`
 
-READ FIRST (only these, to learn conventions): `docs/template.yaml`,
-`DMS/rnastruct00065.yaml`, `SHAPE/rnastruct00066.yaml`. For viral datasets also read
-one existing file that has a `strain:` field.
+Rules: `.claude/skills/rnacentral-probing-finder/SKILL.md` — read "Gate",
+"Field mapping", "Naming", "Control pairing" and "Where notes go"; they override
+anything below. Examples: `docs/template.yaml`, `DMS/rnastruct00090.yaml`,
+`SHAPE/rnastruct00096.yaml`; for viral data also `SHAPE/rnastruct00101.yaml`.
 
-STEPS:
-1. Resolve PMCID + open-access flag:
-   `curl -s 'https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%22<DOI>%22&format=json&resultType=lite' | python3 -c "import sys,json;r=json.load(sys.stdin)['resultList']['result'][0];print(r.get('pmcid'),r.get('isOpenAccess'))"`
-   Then download the full text to a temp file and GREP it (never read the whole XML
-   into context):
-   `curl -s 'https://www.ebi.ac.uk/europepmc/webservices/rest/<PMCID>/fullTextXML' -o /tmp/<id>.xml`
-   Grep for: the probing method, the chemical probe, the RT enzyme, pH, in
-   vivo/in vitro/in virio, virus strain (if viral), and the **data-availability**
-   paragraph. CONFIRM `<ACCESSION>` is THIS study's OWN data, not a cited/re-used
-   dataset. If it is re-used, find the study's real accession.
-2. Get the run list: `.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py <ACCESSION> --tsv`
-   (run accession + sample title). Identify which runs are probing vs plain
-   RNA-seq / MeRIP / functional-screen, and use only the probing runs.
-3. DECISION — qualifies ONLY IF (a) genuine chemical probing (SHAPE or DMS family)
-   AND (b) each treated `sample_group` has ≥2 biological replicates AND its
-   controls are replicated too (a perturbation arm at n=2 with n=1 controls fails;
-   an existing file that fails gets `comment: "failed QC: no biological replicates
-   [for most conditions|for untreated]"` rather than deletion) (a titration or
-   time-course is NOT biological replication) AND (c) it is **transcriptome-wide**,
-   not targeted. Reject anything using gene-specific RT/PCR primers, an amplicon,
-   a single lncRNA/mRNA/riboswitch/intron, a designed construct, or a panel of a
-   few chosen RNAs — no matter how well replicated. A **whole viral genome** does
-   qualify. Tell: run titles naming a gene (`AR_V7`, `COX1_P3`, `sfRNA1`) →
-   targeted; titles naming a condition or tissue (`Shoot_plusSalt_plusDMS_rep1`)
-   → transcriptome-wide. If it fails any of (a)/(b)/(c), write NO file and return
-   exactly: `REJECT <rnastruct#####>: <one-line reason>`.
-4. If it qualifies, fill a copy of `docs/template.yaml` at `<folder>/<rnastruct#####>.yaml`
-   (`DMS/` if the chemical is DMS; `SHAPE/` for a SHAPE reagent). Follow the
-   field-mapping rules in the parent SKILL.md exactly, especially:
-   - `rna_type` MUST be `mRNA`/`total`/`sRNA` (null FAILS); default `total`.
-   - `obi` must match `chemical` (DMS=OBI:0001015, NAI=OBI:0003886, NAI-N3=OBI:0003887,
-     1M7=OBI:0003885, 2A3=OBI:0003888, NMIA=OBI:0001026, 1M6=OBI:0003895,
-     5NIA=OBI:0003896; else null).
-   - `RT_enzyme`: TGIRT/Marathon/group II → `Group II intron`; SuperScript/Maxima →
-     `M-MLV` (ignore "M-MLV buffer" red herrings).
-   - `principle`: RT-stop (truncation) vs MaP (mutational profiling).
-   - `condition`: no-probe/DMSO/(−)reagent → untreated; probe → treated; heat →
-     denatured. `sample_group`: no whitespace, underscores.
-   - Naming: in vivo is the default — NO `_invivo`/`_vivo` suffix; the bare cell
-     line or strain (exactly as GEO states it: HEK293 ≠ HEK293T; `BY4741`, not
-     `Scerevisiae`; bacteria/archaea = full binomial `Bacillus_subtilis_37C` or
-     strain `MG1655`, never `Bsub`/`Ecoli`) is the group, suffix only the
-     exceptions (`_invitro`, `_AsO2stress`, `_DMplus`). Different perturbations
-     (±drug, WT/mutant) → different groups. A probe-dose series → keep ONE dose
-     as r1–rN and drop the rest. Every treated replicate number needs an untreated
-     at the same `sample_group`+`replicate` (the pipeline pairs on that); more
-     treated than untreated → drop the surplus treated and list them under a
-     `# Excluded from this curation:` YAML comment block placed before
-     `run_accessions:` (never in `comment:`, which disables the file). Mutant
-     arms without their own untreated borrow the WT one only if they share the
-     leading `_`-token (`BY4741_WT` / `BY4741_dbp3KO`) and WT has an untreated at
-     every replicate number they use. Within the file,
-     `sample_name` and `(sample_group, condition, replicate)` must be unique
-     (CI does not check this — verify yourself).
-   - Viral: NCBI common name + top-level `strain:` (schema pattern rejects trailing
-     digits in `scientific_name` — use the validating parent name).
-   - `comment: null`.
-5. Validate and fix until clean:
-   `.venv/bin/linkml-validate -s schema/rnastruct.schema.yaml <folder>/<rnastruct#####>.yaml`
-   (must say "No issues found"),
-   `.venv/bin/python scripts/validate_obi_ids.py <folder>/<rnastruct#####>.yaml`,
-   `.venv/bin/python scripts/validate_ncbi_taxonomy.py <folder>/<rnastruct#####>.yaml`.
-6. RETURN a one-paragraph summary: id, folder, doi, accession, organism,
-   method/chemical/principle/RT_enzyme, #runs, #sample_groups, replicate structure,
-   and validation status. OR the REJECT line.
+1. Get the PMCID and open-access flag:
+   `curl -s 'https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%22<DOI>%22&format=json&resultType=lite'`.
+   Fetch the full text to a file (SKILL.md step 3.1) and **grep** it for method,
+   probe, RT enzyme, pH, context, strain, and the data-availability paragraph.
+   Confirm `<ACCESSION>` is this study's own data; if not, find the real one.
+2. `.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py <ACCESSION> --tsv`
+   and keep only the probing runs.
+3. If gate (a) or (c) fails, write nothing and return exactly
+   `REJECT <rnastruct#####>: <one-line reason>`. If only replication (b) falls
+   short, curate anyway and list the unreplicated groups in your summary.
+4. Otherwise write `<DMS|SHAPE>/<rnastruct#####>.yaml` from the template and run
+   every check in SKILL.md "Validate" until clean.
+5. Return one paragraph: id, folder, DOI, accession, organism, method / chemical /
+   principle / RT_enzyme, run and group counts, replicate layout, anything
+   excluded, validation status.
