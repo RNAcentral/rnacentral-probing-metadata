@@ -105,6 +105,37 @@ run titles are worth a human look; the rest usually aren't. This turns hundreds
 of candidates into a ranked list for free — see `docs/full-sweep-backlog.md` for
 the worked run and `docs/full_sweep_triage.tsv` for the output format.
 
+### 1d. Re-check the PAYWALLED pile — `isOpenAccess: N` does not mean unreadable
+
+Europe PMC's OA flag is about the **licence**, not availability. Author manuscripts
+(`authMan: Y`) sit at `isOpenAccess: N` yet are free to read, and the triage drops
+them before anything is ever fetched. That pile is worth a second pass; use the
+normal step-3 fetch, which falls back to NCBI when Europe PMC errors:
+
+```bash
+# every triage row that has a PMCID but was not called open access
+awk -F'\t' 'NR>1 && $5!="" && $4!="Y"{print $5}' docs/full_sweep_papers.tsv |
+while read -r p; do
+  curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=$p&retmode=xml" -o "$p.xml"
+  [ "$(grep -c '<body' "$p.xml")" -gt 0 ] && echo "RECOVERED $p"
+  sleep 0.4
+done
+```
+
+Scale as of Sept 2026: `docs/full_sweep_papers.tsv` holds **544** rows that are
+`oa=N` *with* a PMCID. A 12-row sample recovered **3** with a real `<body>`, so
+expect roughly a quarter of the pile to be curatable. rnastruct00092 is the worked
+case: filed as "Paywalled paper" with guessed fields, but PMC8074864 (`inEPMC: Y`,
+`authMan: Y`, `isOpenAccess: N`) yields ~187 kB of full text. Misses cluster on
+**old PMCIDs** (roughly `PMC1######` and below — pre-XML scans with no `<body>`),
+so work the pile newest-first.
+
+**The two archives hold the same records** — a 15-PMCID spread from `PMC53364` to
+`PMC12679999` was 15/15 present in Europe PMC, all `inEPMC: Y`, and 24/24 recent
+PMC `SHAPE-MaP` hits likewise. So there is no need to search both. The only reason
+to keep NCBI in the loop is **delivery**: Europe PMC's `fullTextXML` returns
+`HTTP 500` for some records it does index, and NCBI serves those fine.
+
 ### 2. Shortlist by judgement
 
 From the ACCESSIBLE hits, keep only genuine **transcriptome-wide** probing
@@ -124,11 +155,43 @@ full-text reading stays out of the main context. Assign each a unique
 `rnastruct#####` id up front (next consecutive across BOTH folders). Give each the
 per-candidate prompt in `reference/curate-prompt.md`. Each subagent must:
 
-1. Resolve PMCID + open-access, then `curl` the Europe PMC full-text XML to a temp
-   file and **grep** it (never read the whole XML into context) for method,
-   chemical, RT enzyme, pH, context, and the **data-availability** paragraph.
+1. Resolve PMCID + open-access, then `curl` the full text to a temp file and
+   **grep** it (never read the whole XML into context) for method, chemical, RT
+   enzyme, pH, context, and the **data-availability** paragraph.
+
+   **Europe PMC first, NCBI PMC as the backup.** Both archives index the same
+   records (see 1d), so there is nothing to gain from searching both — but Europe
+   PMC's `fullTextXML` answers `HTTP 500` for some records it does hold, and NCBI
+   serves those. `curl -s` exits 0 on a 500 and writes the JSON error body to your
+   file, so **never trust the exit code — test the content**:
+   ```bash
+   curl -s "https://www.ebi.ac.uk/europepmc/webservices/rest/<PMCID>/fullTextXML" -o paper.xml
+   grep -q "<body" paper.xml ||
+     curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=<PMCID>&retmode=xml" -o paper.xml
+   grep -c "<body" paper.xml   # 1 = real full text; 0 = neither archive served it
+   ```
+   Worked case: 10.1016/j.molcel.2020.11.014 (rnastruct00092) was curated as
+   "Paywalled paper" with guessed fields; Europe PMC 500s on it while efetch on
+   PMC8074864 returns ~187 kB. A PMC link a user pastes is the same thing — take
+   the `PMC#######` out of it and use efetch, rather than fetching the article
+   page as HTML.
+
+   **When a paper only becomes readable later**, re-check the fields the original
+   curation guessed and drop the caveat from the file. `rna_type` is the one that
+   is usually wrong: "poly(A)+ selected" in the methods means `mRNA`, not `total`
+   (rnastruct00089 was `total` until its methods turned up).
 2. **Confirm the accession is the study's own**, not a cited/re-used one (the #1
    error). If it is re-used, find the real accession from the data-availability text.
+   **Then check what is actually in the series.** A GEO accession is often a
+   SuperSeries, or mixes probing with RNA-seq / ribosome profiling / decay
+   libraries, so count the sample types before assuming the series is all probing:
+   ```bash
+   curl -s "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=<GSE>&targ=gsm&form=text&view=brief" \
+     | grep '^!Sample_title' | sed -E 's/(rep[0-9]+|batch[0-9]+|D[0-9]+|[0-9]+h)//g' | sort | uniq -c
+   ```
+   GSE275594 is a SuperSeries whose probing arm is 12 of its samples; GSE156671 is
+   95 samples of which 31 are icSHAPE. Put the non-probing libraries in the
+   `# Excluded from this curation:` block so the count is auditable.
 3. `.claude/skills/rnacentral-probing-finder/scripts/expand_accession.py <acc>` for the run list.
 4. Apply the **reject gate** (below). If it fails, write no file and report
    `REJECT <id>: <reason>`.
@@ -166,6 +229,16 @@ A candidate becomes a YAML **only if**:
 - One lncRNA, one mRNA, one riboswitch, one intron, a designed construct, or a
   panel of a few chosen RNAs — however many replicates it has.
 - In vitro transcripts of a selected RNA (unless it is the whole viral genome).
+- **Subsets of a segmented genome.** The ten segments each probed on their own are
+  the whole genome and are kept; arbitrary *combinations* of some segments
+  (co-folded complexes, assembly intermediates) are selected subsets and are not.
+  Drop the combination arm and keep the single-segment arm (rnastruct00077 lost 13
+  `complex_B*` groups, 57 runs, this way).
+- **Conditions whose label nothing defines.** If neither the repository nor the
+  paper says what a group's condition *is* — an opaque `B7`, an unexplained code —
+  the reactivities would reach RNAcentral under a condition no reader can
+  interpret. Exclude the arm and say in the block that the composition is
+  undocumented. Do not guess it from the paper's narrative.
 
 Fastest tell in practice: **the run/sample titles name a gene**
 (`AR_V7`, `RORCWT`, `COX1_P3`, `PANDA`, `sfRNA1`) → targeted. Titles name a
@@ -190,8 +263,14 @@ applied), keep the file and mark it instead of deleting it, using the repo's
 canonical wording so downstream tooling can filter on it:
 `comment: "failed QC: no biological replicates"`,
 `"failed QC: no biological replicates for most conditions"`, or
-`"failed QC: no biological replicates for untreated"`. Any non-null `comment`
-excludes the file from pipeline processing; `comment: null` means "run it".
+`"failed QC: no biological replicates for untreated"`.
+
+**Only a `failed QC` comment excludes a file.** `scripts/merge_metadata.py` tests
+`dataset_comment.startswith("failed QC")` and skips those; every other comment,
+however long, is processed normally (rnastruct00092 / 00094 / 00096 all carry prose
+comments and still run). So the reason to keep curation notes out of `comment:` is
+the repo convention below, **not** a pipeline switch — do not claim otherwise in a
+YAML or a commit message.
 
 ## Field-mapping rules (the judgement step)
 
@@ -199,6 +278,13 @@ excludes the file from pipeline processing; `comment: null` means "run it".
   NAI-N3, 1M7, 2A3, NMIA, 5NIA, …).
 - **condition**: no probe / DMSO / (−)reagent → `untreated`; probe added →
   `treated`; heat/denaturant control → `denatured`.
+  **Three arms means read the protocol, not the titles.** A MaP series with
+  NAI + DMSO + "unmodified" is not two untreated arms: DMSO is the vehicle control
+  (`untreated`) and the "unmodified"/"no-reagent" portion is usually the
+  **denaturing control** the library prep needs (Smola et al. 2015), so it is
+  `denatured` and `denatured` joins `context`. Two untreated at the same replicate
+  number is the tell that one of them is mislabelled (rnastruct00072 and its
+  00101–00104 siblings were curated this way first).
 - **sample_group**: the axis samples are analysed together on; everything except
   the probe level. **No whitespace — underscores.** See the naming rules below.
 - **principle**: truncation / RT-stop method (Structure-seq, icSHAPE) → `RT-stop`;
@@ -218,10 +304,41 @@ excludes the file from pipeline processing; `comment: null` means "run it".
   digits (e.g. "Human bocavirus 1" fails) — use the parent species name that
   validates and capture the sub-species in `strain:` with an inline note of the
   exact taxid. In `sample_group` / `sample_name` **spell the virus out** with
-  underscores, then strain, then host cell / context:
-  `Murine_norovirus_CW3_BV2`, `SARS-CoV-2_USA-WA1`, `dengue_EDEN2270` — not an
-  abbreviation (`MNV_CW3`, `ZIKV_`, `IAV_`, `PEDV_`; older files still have
-  these).
+  underscores, then the strain: `SARS-CoV-2_USA-WA1`, `Bluetongue_virus_segment1`,
+  `Porcine_epidemic_diarrhea_virus_AJ1102` — not an abbreviation (`MNV_CW3`,
+  `ZIKV_`, `IAV_`, `PEDV_`, `BTV_`; older files still have these). Drop a
+  redundant `virus` token when the strain already identifies the isolate
+  (`Yellow_fever_Dakar`, not `Yellow_fever_virus_Dakar`).
+  **No host cell and no context token in the name** — `VeroE6_`, `Huh7_`,
+  `_incell` are already carried by schema fields, so `SARSCoV2_WT_NAI_treated_r1`,
+  not `VeroE6_SARSCoV2_WT_incell_NAI_treated_r1` (user decision, Sept 2026;
+  `Murine_norovirus_CW3_BV2` predates it). Rename `sample_name` and `sample_group`
+  together — a mismatch between the two is a defect.
+- **One strain per file.** `organism.strain` names the single reference the whole
+  file is probed against, so a series covering several strains becomes several
+  files, not one file with a comma-separated `strain:`. Nothing in the schema
+  catches this — `strain: 17D (vaccine), Asibi, Dakar` validated cleanly — so grep
+  for it: `grep -n "strain:.*," SHAPE/*.yaml DMS/*.yaml`. Keep the lowest existing
+  id for the first arm, allocate new consecutive ids for the rest, and cross-
+  reference the siblings in the `#` block (GSE279203 → 00072 + 00101–00104;
+  GSE275594 → 00075 + 00105–00106).
+- **Strain for a GISAID-only isolate**: record the bare `EPI_ISL_#######` with the
+  variant name in an inline comment. Many SARS-CoV-2 variants were never deposited
+  in GenBank — check before assuming a GenBank accession exists, and prefer the
+  paper's methods over GEO's `data_processing`, which is often copied from an
+  earlier submission (rnastruct00072: methods say EPI_ISL_574502, GEO says
+  EPI_ISL_407987).
+- **Check the pipeline can actually resolve the viral genome.** `merge_metadata.py`
+  emits the organism as `<scientific_name> (<strain>)`, which nf-core/rnastructurome
+  normalises to a key (lowercase, non-`[a-z0-9_]` → `_`) and looks up in
+  `conf/viral_genomes.config`. On a miss it tries Ensembl, then falls back to a
+  loose NCBI keyword search that returns whatever matches — for
+  `SARS-CoV-2 (EPI_ISL_574502)` that is *Theobroma cacao* snoRNAs, silently. After
+  curating a viral dataset, derive the key and confirm it is in that map; if it is
+  not, say so in the `#` block so whoever runs it knows to pass `--fasta`. As of
+  Sept 2026 ~20 viral files miss, including every SARS-CoV-2, Dengue, HIV and
+  Rotavirus entry (Dengue misses because `merge_metadata.py`'s `VIRAL_ORGANISMS`
+  set omits it, so its strain never reaches the organism string at all).
 - `comment: null`, and leave unknown optional fields (`pH`, adapters, `umi_pattern`)
   `null` unless the paper states them. The **authors' analysis repo** (GitHub /
   Zenodo link in the key-resources table) is often the only place adapters and
@@ -279,12 +396,22 @@ excludes the file from pipeline processing; `comment: null` means "run it".
   scored treated-only (Zubradt) while its siblings are scored against untreated
   (Siegfried) — a silent within-group inconsistency, not an error.
   Consequences for curation:
-  - **More treated than untreated in a group → drop the surplus treated**
-    replicates (those with no untreated at the same number) and list them in
-    the exclusion block. Do this even when the authors never used the untreated
-    for background subtraction (CoSTseq only shows it as a no-DMS negative
-    control): we pair because we have the samples; it is our curation choice,
-    say so in the block (rnastruct00090 / 00091).
+  - **More treated than untreated — count the untreated first.**
+    - **Exactly one untreated in the arm → keep every treated replicate.**
+      `selectClosestControl` reuses that single control across replicates (the
+      "exactly one control" branch above), so the group is scored consistently
+      and nothing needs dropping. Do **not** drop the surplus and do **not** fail
+      the file: rnastruct00005 / 00014 / 00017 / 00074 / 00076 / 00086 are all
+      active on this layout.
+    - **Two or more untreated, still fewer than treated → drop the surplus
+      treated** (those with no untreated at the same number) and list them in the
+      exclusion block. Here the fallback has several candidates at other
+      replicates, cannot choose, and leaves the extra treated scored treated-only
+      while its siblings are scored against untreated (rnastruct00040).
+    Do this even when the authors never used the untreated for background
+    subtraction (CoSTseq only shows it as a no-DMS negative control): we pair
+    because we have the samples; it is our curation choice, say so in the block
+    (rnastruct00090 / 00091).
   - **Mutant / perturbation arms with no untreated of their own** borrow the
     wild-type one, so name them to share the leading token with the WT group
     (`BY4741_WT` ← `BY4741_dbp3KO`; `HFF_uninfected` ← `HFF_infected_HCMV_72hr`)

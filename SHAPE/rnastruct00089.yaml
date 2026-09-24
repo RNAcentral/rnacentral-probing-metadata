@@ -12,7 +12,7 @@ experiment:
   chemical: NAI-N3
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total
+  rna_type: mRNA
   pH: null
   adapter_3p: null
   adapter_5p: null
@@ -26,161 +26,165 @@ raw_data:
   repository: GEO
   accession: GSE156671
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156671
+  # Each day was probed in two independent batches. 
+  # GEO has no DMSO rep1 for D8 batch2, so H9_earlyNeuron_D8 has no untreated at r3.
+  # Excluded from this curation:
+  # - The RNA-seq, ribosome-profiling and RNA-decay libraries in GSE156671.
   run_accessions:
   - accession: GSM4736474
-    sample_name: hNeuron_D0_batch1_treated_r1
-    sample_group: hNeuron_D0_batch1
+    sample_name: H9_hESC_D0_batch1_treated_r1
+    sample_group: H9_hESC_D0 # undifferentiated H9 hESC, the starting point
     condition: treated
     replicate: 1
   - accession: GSM4736475
-    sample_name: hNeuron_D0_batch1_treated_r2
-    sample_group: hNeuron_D0_batch1
+    sample_name: H9_hESC_D0_batch1_treated_r2
+    sample_group: H9_hESC_D0
     condition: treated
     replicate: 2
   - accession: GSM4736472
-    sample_name: hNeuron_D0_batch1_untreated_r1
-    sample_group: hNeuron_D0_batch1
+    sample_name: H9_hESC_D0_batch1_untreated_r1
+    sample_group: H9_hESC_D0
     condition: untreated
     replicate: 1
   - accession: GSM4736473
-    sample_name: hNeuron_D0_batch1_untreated_r2
-    sample_group: hNeuron_D0_batch1
+    sample_name: H9_hESC_D0_batch1_untreated_r2
+    sample_group: H9_hESC_D0
     condition: untreated
     replicate: 2
   - accession: GSM4736490
-    sample_name: hNeuron_D0_batch2_treated_r1
-    sample_group: hNeuron_D0_batch2
+    sample_name: H9_hESC_D0_batch2_treated_r3
+    sample_group: H9_hESC_D0
     condition: treated
-    replicate: 1
+    replicate: 3
   - accession: GSM4736491
-    sample_name: hNeuron_D0_batch2_treated_r2
-    sample_group: hNeuron_D0_batch2
+    sample_name: H9_hESC_D0_batch2_treated_r4
+    sample_group: H9_hESC_D0
     condition: treated
-    replicate: 2
+    replicate: 4
   - accession: GSM4736488
-    sample_name: hNeuron_D0_batch2_untreated_r1
-    sample_group: hNeuron_D0_batch2
+    sample_name: H9_hESC_D0_batch2_untreated_r3
+    sample_group: H9_hESC_D0
     condition: untreated
-    replicate: 1
+    replicate: 3
   - accession: GSM4736489
-    sample_name: hNeuron_D0_batch2_untreated_r2
-    sample_group: hNeuron_D0_batch2
+    sample_name: H9_hESC_D0_batch2_untreated_r4
+    sample_group: H9_hESC_D0
     condition: untreated
-    replicate: 2
+    replicate: 4
   - accession: GSM4736478
-    sample_name: hNeuron_D7_batch1_treated_r1
-    sample_group: hNeuron_D7_batch1
+    sample_name: H9_NPC_D7_batch1_treated_r1
+    sample_group: H9_NPC_D7 # neural progenitor, after 7 days of neural induction
     condition: treated
     replicate: 1
   - accession: GSM4736479
-    sample_name: hNeuron_D7_batch1_treated_r2
-    sample_group: hNeuron_D7_batch1
+    sample_name: H9_NPC_D7_batch1_treated_r2
+    sample_group: H9_NPC_D7
     condition: treated
     replicate: 2
   - accession: GSM4736476
-    sample_name: hNeuron_D7_batch1_untreated_r1
-    sample_group: hNeuron_D7_batch1
+    sample_name: H9_NPC_D7_batch1_untreated_r1
+    sample_group: H9_NPC_D7
     condition: untreated
     replicate: 1
   - accession: GSM4736477
-    sample_name: hNeuron_D7_batch1_untreated_r2
-    sample_group: hNeuron_D7_batch1
+    sample_name: H9_NPC_D7_batch1_untreated_r2
+    sample_group: H9_NPC_D7
     condition: untreated
     replicate: 2
   - accession: GSM4736494
-    sample_name: hNeuron_D7_batch2_treated_r1
-    sample_group: hNeuron_D7_batch2
+    sample_name: H9_NPC_D7_batch2_treated_r3
+    sample_group: H9_NPC_D7
     condition: treated
-    replicate: 1
+    replicate: 3
   - accession: GSM4736495
-    sample_name: hNeuron_D7_batch2_treated_r2
-    sample_group: hNeuron_D7_batch2
+    sample_name: H9_NPC_D7_batch2_treated_r4
+    sample_group: H9_NPC_D7
     condition: treated
-    replicate: 2
+    replicate: 4
   - accession: GSM4736492
-    sample_name: hNeuron_D7_batch2_untreated_r1
-    sample_group: hNeuron_D7_batch2
+    sample_name: H9_NPC_D7_batch2_untreated_r3
+    sample_group: H9_NPC_D7
     condition: untreated
-    replicate: 1
+    replicate: 3
   - accession: GSM4736493
-    sample_name: hNeuron_D7_batch2_untreated_r2
-    sample_group: hNeuron_D7_batch2
+    sample_name: H9_NPC_D7_batch2_untreated_r4
+    sample_group: H9_NPC_D7
     condition: untreated
-    replicate: 2
+    replicate: 4
   - accession: GSM4736482
-    sample_name: hNeuron_D8_batch1_treated_r1
-    sample_group: hNeuron_D8_batch1
+    sample_name: H9_earlyNeuron_D8_batch1_treated_r1
+    sample_group: H9_earlyNeuron_D8 # one day past the NPC stage; the early-neuron label is inferred from the key-resources table
     condition: treated
     replicate: 1
   - accession: GSM4736483
-    sample_name: hNeuron_D8_batch1_treated_r2
-    sample_group: hNeuron_D8_batch1
+    sample_name: H9_earlyNeuron_D8_batch1_treated_r2
+    sample_group: H9_earlyNeuron_D8
     condition: treated
     replicate: 2
   - accession: GSM4736480
-    sample_name: hNeuron_D8_batch1_untreated_r1
-    sample_group: hNeuron_D8_batch1
+    sample_name: H9_earlyNeuron_D8_batch1_untreated_r1
+    sample_group: H9_earlyNeuron_D8
     condition: untreated
     replicate: 1
   - accession: GSM4736481
-    sample_name: hNeuron_D8_batch1_untreated_r2
-    sample_group: hNeuron_D8_batch1
+    sample_name: H9_earlyNeuron_D8_batch1_untreated_r2
+    sample_group: H9_earlyNeuron_D8
     condition: untreated
     replicate: 2
   - accession: GSM4736497
-    sample_name: hNeuron_D8_batch2_treated_r1
-    sample_group: hNeuron_D8_batch2
+    sample_name: H9_earlyNeuron_D8_batch2_treated_r3
+    sample_group: H9_earlyNeuron_D8
     condition: treated
-    replicate: 1
+    replicate: 3
   - accession: GSM4736498
-    sample_name: hNeuron_D8_batch2_treated_r2
-    sample_group: hNeuron_D8_batch2
+    sample_name: H9_earlyNeuron_D8_batch2_treated_r4
+    sample_group: H9_earlyNeuron_D8
     condition: treated
-    replicate: 2
+    replicate: 4
   - accession: GSM4736496
-    sample_name: hNeuron_D8_batch2_untreated_r2
-    sample_group: hNeuron_D8_batch2
+    sample_name: H9_earlyNeuron_D8_batch2_untreated_r4
+    sample_group: H9_earlyNeuron_D8
     condition: untreated
-    replicate: 2
+    replicate: 4
   - accession: GSM4736486
-    sample_name: hNeuron_D14_batch1_treated_r1
-    sample_group: hNeuron_D14_batch1
+    sample_name: H9_neuron_D14_batch1_treated_r1
+    sample_group: H9_neuron_D14 # neuron, after 7 days in neuronal differentiation medium
     condition: treated
     replicate: 1
   - accession: GSM4736487
-    sample_name: hNeuron_D14_batch1_treated_r2
-    sample_group: hNeuron_D14_batch1
+    sample_name: H9_neuron_D14_batch1_treated_r2
+    sample_group: H9_neuron_D14
     condition: treated
     replicate: 2
   - accession: GSM4736484
-    sample_name: hNeuron_D14_batch1_untreated_r1
-    sample_group: hNeuron_D14_batch1
+    sample_name: H9_neuron_D14_batch1_untreated_r1
+    sample_group: H9_neuron_D14
     condition: untreated
     replicate: 1
   - accession: GSM4736485
-    sample_name: hNeuron_D14_batch1_untreated_r2
-    sample_group: hNeuron_D14_batch1
+    sample_name: H9_neuron_D14_batch1_untreated_r2
+    sample_group: H9_neuron_D14
     condition: untreated
     replicate: 2
   - accession: GSM4736501
-    sample_name: hNeuron_D14_batch2_treated_r1
-    sample_group: hNeuron_D14_batch2
+    sample_name: H9_neuron_D14_batch2_treated_r3
+    sample_group: H9_neuron_D14
     condition: treated
-    replicate: 1
+    replicate: 3
   - accession: GSM4736502
-    sample_name: hNeuron_D14_batch2_treated_r2
-    sample_group: hNeuron_D14_batch2
+    sample_name: H9_neuron_D14_batch2_treated_r4
+    sample_group: H9_neuron_D14
     condition: treated
-    replicate: 2
+    replicate: 4
   - accession: GSM4736499
-    sample_name: hNeuron_D14_batch2_untreated_r1
-    sample_group: hNeuron_D14_batch2
+    sample_name: H9_neuron_D14_batch2_untreated_r3
+    sample_group: H9_neuron_D14
     condition: untreated
-    replicate: 1
+    replicate: 3
   - accession: GSM4736500
-    sample_name: hNeuron_D14_batch2_untreated_r2
-    sample_group: hNeuron_D14_batch2
+    sample_name: H9_neuron_D14_batch2_untreated_r4
+    sample_group: H9_neuron_D14
     condition: untreated
-    replicate: 2
+    replicate: 4
 
-comment: "Paywalled paper: RT_enzyme and rna_type follow the standard icSHAPE protocol. Only the icSHAPE runs are included - the RNA-seq, ribosome-profiling and RNA-decay samples in GSE156671 are excluded. Differentiation days D0/D7/D8/D14 were probed in two independent batches; batch is kept in sample_group so batches are not pooled."
+comment: null

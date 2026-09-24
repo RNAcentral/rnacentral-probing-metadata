@@ -7,12 +7,12 @@ organism:
 
 experiment:
   method: fSHAPE
-  principle: MaP
-  obi: OBI:0003886
-  chemical: NAI
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
   RT_enzyme: M-MLV
   context: [in_vivo, in_vitro]
-  rna_type: total
+  rna_type: mRNA
   pH: null
   adapter_3p: null
   adapter_5p: null
@@ -26,6 +26,8 @@ raw_data:
   repository: GEO
   accession: GSE149767
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149767
+  # Excluded from this curation:
+  # The 22 SHAPE-eCLIP / fSHAPE-eCLIP IP and Input libraries.
   run_accessions:
   - accession: GSM4512071
     sample_name: K562_treated_r1
@@ -118,4 +120,4 @@ raw_data:
     condition: treated
     replicate: 2
 
-comment: "Paywalled paper: only the transcriptome-wide fSHAPE arm is included (3 cell lines, in-cell and deproteinised in vitro, 2 replicates each). The SHAPE-eCLIP / fSHAPE-eCLIP IP+Input libraries in GSE149767 are excluded - they are protein-footprint pulldowns, not a plain structurome. The untreated pair per cell line is filed under the in_vivo group. RT_enzyme and rna_type follow the standard SHAPE-MaP protocol - confirm."
+comment: null

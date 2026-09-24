@@ -12,7 +12,7 @@ experiment:
   chemical: NAI-N3
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total
+  rna_type: mRNA
   pH: null
   adapter_3p: null
   adapter_5p: null
@@ -26,6 +26,10 @@ raw_data:
   repository: GEO
   accession: GSE143120
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143120
+  # ENCODE ENCSR976RFC (Spitale lab); its libraries are polyadenylated mRNA, hence rna_type mRNA.
+  # The DMSO controls live in GSE143096, not GSE143120; both are listed below as untreated runs.
+  # Do NOT expand GSE143120 via its SRA project - it resolves to the whole ENCODE BioProject
+  # (57k runs). Fetch the listed GSMs directly.
   run_accessions:
   - accession: GSM4250758
     sample_name: K562_treated_r1
@@ -58,4 +62,4 @@ raw_data:
     condition: untreated
     replicate: 3
 
-comment: "ENCODE icSHAPE, K562. GEO splits this experiment across two series: GSE143120 holds the NAI-N3 samples (used as raw_data.accession) and GSE143096 holds the matched DMSO controls, which are included here as the untreated runs. Do NOT expand GSE143120 via its SRA project - it resolves to the whole ENCODE BioProject (57k runs); fetch the listed GSMs directly. The DOI is the ENCODE flagship paper, which is what GEO links; replace it if an icSHAPE-specific citation exists. RT_enzyme and rna_type follow the standard icSHAPE protocol."
+comment: null
