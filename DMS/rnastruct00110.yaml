@@ -1,0 +1,76 @@
+dataset_id: rnastruct00110
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Escherichia coli
+  ncbi_taxid: 562
+
+experiment:
+  method: DMS-seq
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo, in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2018.02.035
+  year: 2018
+
+raw_data:
+  repository: GEO
+  accession: GSE103421
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103421
+  # Kept as a special case: a cold-shock time course (37C to 10C) with csp mutants, one replicate per in vivo
+  # condition. Every sample is at 10C. No no-DMS libraries were deposited, so all arms are scored treated-only.
+  # Excluded from this curation:
+  # - Ribosome profiling, mRNA-seq and total RNA-seq libraries.
+  # - GSM2801051-GSM2801055, GSM2946865-GSM2946871 (DMS-MaPseq of purified cspA mRNA): targeted amplicons.
+  run_accessions:
+  - accession: GSM2771014
+    sample_name: MG1655_30min_treated_r1
+    sample_group: MG1655_30min  # 30 min after shift from 37C to 10C (growth arrest)
+    condition: treated
+    replicate: 1
+  - accession: GSM2771015
+    sample_name: MG1655_6h_treated_r1
+    sample_group: MG1655_6h  # 6 h after the shift (acclimation)
+    condition: treated
+    replicate: 1
+  - accession: GSM2771016
+    sample_name: MG1655_8h_treated_r1
+    sample_group: MG1655_8h  # 8 h after the shift (growth resumed)
+    condition: treated
+    replicate: 1
+  - accession: GSM2771017
+    sample_name: MG1655_dcspABEG_8h_treated_r1
+    sample_group: MG1655_dcspABEG_8h  # cspA, cspB, cspE, cspG deletion, 8 h after the shift
+    condition: treated
+    replicate: 1
+  - accession: GSM2771018
+    sample_name: MG1655_dcspBG_8h_treated_r1
+    sample_group: MG1655_dcspBG_8h  # cspB, cspG deletion, 8 h after the shift
+    condition: treated
+    replicate: 1
+  - accession: GSM2801050
+    sample_name: MG1655_kasugamycin_treated_r1
+    sample_group: MG1655_kasugamycin  # 6 h after the shift, then 10 mg/mL kasugamycin (blocks translation initiation) for 40 min
+    condition: treated
+    replicate: 1
+  - accession: GSM2801048
+    sample_name: MG1655_invitro_treated_r1
+    sample_group: MG1655_invitro  # purified mRNA refolded and probed at 10C
+    condition: treated
+    replicate: 1
+  - accession: GSM2801049
+    sample_name: MG1655_invitro_treated_r2
+    sample_group: MG1655_invitro
+    condition: treated
+    replicate: 2
+
+comment: null

@@ -1,0 +1,56 @@
+dataset_id: rnastruct00116
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Dengue virus
+  ncbi_taxid: 12637
+  strain: DV4-H24  # DENV serotype 4 WHO reference strain, as named in the paper (probably H241); no GenBank ID given.
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003888
+  chemical: 2A3
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1128/jvi.00898-26
+  year: 2026
+
+raw_data:
+  repository: SRA
+  accession: PRJNA1443375
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1443375
+  # sfRNA (XRN1-resistant 3'-UTR fragment) of PRJNA1443375, one file per strain; siblings rnastruct00114, 00115, 00117, 00118.
+  # Native viral region, amplified with flavivirus-specific primers.
+  # The in vitro DENV4 sfRNA was transcribed from strain TVP/360 and is curated separately as rnastruct00117.
+  # Dengue is not in merge_metadata.py VIRAL_ORGANISMS, so pass --fasta with the DV4-H24 genome.
+  run_accessions:
+  - accession: SRR37896989
+    sample_name: Dengue_DV4-H24_treated_r1
+    sample_group: Dengue_DV4-H24  # sfRNA from infected A549 cells (MOI 2), probed in cells at peak sfRNA
+    condition: treated
+    replicate: 1
+  - accession: SRR37896984
+    sample_name: Dengue_DV4-H24_treated_r2
+    sample_group: Dengue_DV4-H24
+    condition: treated
+    replicate: 2
+  - accession: SRR37896990
+    sample_name: Dengue_DV4-H24_untreated_r1
+    sample_group: Dengue_DV4-H24
+    condition: untreated
+    replicate: 1
+  - accession: SRR37896985
+    sample_name: Dengue_DV4-H24_untreated_r2
+    sample_group: Dengue_DV4-H24
+    condition: untreated
+    replicate: 2
+
+comment: null
