@@ -1,0 +1,235 @@
+dataset_id: rnastruct00107
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: Frac-SHAPE  # icSHAPE (NAI-N3 RT-stop) on RNA from subcellular fractions of probed cells
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1101/2025.06.05.658090
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE288910
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288910
+  # Frac-SHAPE arm of GSE288910; the icSHAPE arm is rnastruct00096. DMSO is the untreated control.
+  # HeLa cells probed in-cell, then split into an RNA granule (stress granule) fraction and the soluble cytosol.
+  # HeLa_<fraction> and HeLa_<fraction>_NaAsO2 groups: unstressed vs NaAsO2, three replicates.
+  # *_ATPdep / *_ATPdepControl groups: a separate two-replicate experiment, NaAsO2 with vs without ATP depletion.
+  run_accessions:
+  - accession: GSM8778484
+    sample_name: HeLa_RNAGranule_NaAsO2_ATPdepControl_treated_r1
+    sample_group: HeLa_RNAGranule_NaAsO2_ATPdepControl
+    condition: treated
+    replicate: 1
+  - accession: GSM8778486
+    sample_name: HeLa_RNAGranule_NaAsO2_ATPdepControl_treated_r2
+    sample_group: HeLa_RNAGranule_NaAsO2_ATPdepControl
+    condition: treated
+    replicate: 2
+  - accession: GSM8778483
+    sample_name: HeLa_RNAGranule_NaAsO2_ATPdepControl_untreated_r1
+    sample_group: HeLa_RNAGranule_NaAsO2_ATPdepControl
+    condition: untreated
+    replicate: 1
+  - accession: GSM8778485
+    sample_name: HeLa_RNAGranule_NaAsO2_ATPdepControl_untreated_r2
+    sample_group: HeLa_RNAGranule_NaAsO2_ATPdepControl
+    condition: untreated
+    replicate: 2
+  - accession: GSM8778492
+    sample_name: HeLa_RNAGranule_NaAsO2_ATPdep_treated_r1
+    sample_group: HeLa_RNAGranule_NaAsO2_ATPdep  # ATP depleted with 2-deoxyglucose (10 mM) + CCCP (0.1 mM) after NaAsO2, blocking glycolysis and oxidative phosphorylation to inactivate ATP-dependent RNA helicases
+    condition: treated
+    replicate: 1
+  - accession: GSM8778494
+    sample_name: HeLa_RNAGranule_NaAsO2_ATPdep_treated_r2
+    sample_group: HeLa_RNAGranule_NaAsO2_ATPdep
+    condition: treated
+    replicate: 2
+  - accession: GSM8778491
+    sample_name: HeLa_RNAGranule_NaAsO2_ATPdep_untreated_r1
+    sample_group: HeLa_RNAGranule_NaAsO2_ATPdep
+    condition: untreated
+    replicate: 1
+  - accession: GSM8778493
+    sample_name: HeLa_RNAGranule_NaAsO2_ATPdep_untreated_r2
+    sample_group: HeLa_RNAGranule_NaAsO2_ATPdep
+    condition: untreated
+    replicate: 2
+  - accession: GSM8778480
+    sample_name: HeLa_SolubleCytosol_NaAsO2_ATPdepControl_treated_r1
+    sample_group: HeLa_SolubleCytosol_NaAsO2_ATPdepControl
+    condition: treated
+    replicate: 1
+  - accession: GSM8778482
+    sample_name: HeLa_SolubleCytosol_NaAsO2_ATPdepControl_treated_r2
+    sample_group: HeLa_SolubleCytosol_NaAsO2_ATPdepControl
+    condition: treated
+    replicate: 2
+  - accession: GSM8778479
+    sample_name: HeLa_SolubleCytosol_NaAsO2_ATPdepControl_untreated_r1
+    sample_group: HeLa_SolubleCytosol_NaAsO2_ATPdepControl
+    condition: untreated
+    replicate: 1
+  - accession: GSM8778481
+    sample_name: HeLa_SolubleCytosol_NaAsO2_ATPdepControl_untreated_r2
+    sample_group: HeLa_SolubleCytosol_NaAsO2_ATPdepControl
+    condition: untreated
+    replicate: 2
+  - accession: GSM8778488
+    sample_name: HeLa_SolubleCytosol_NaAsO2_ATPdep_treated_r1
+    sample_group: HeLa_SolubleCytosol_NaAsO2_ATPdep
+    condition: treated
+    replicate: 1
+  - accession: GSM8778490
+    sample_name: HeLa_SolubleCytosol_NaAsO2_ATPdep_treated_r2
+    sample_group: HeLa_SolubleCytosol_NaAsO2_ATPdep
+    condition: treated
+    replicate: 2
+  - accession: GSM8778487
+    sample_name: HeLa_SolubleCytosol_NaAsO2_ATPdep_untreated_r1
+    sample_group: HeLa_SolubleCytosol_NaAsO2_ATPdep
+    condition: untreated
+    replicate: 1
+  - accession: GSM8778489
+    sample_name: HeLa_SolubleCytosol_NaAsO2_ATPdep_untreated_r2
+    sample_group: HeLa_SolubleCytosol_NaAsO2_ATPdep
+    condition: untreated
+    replicate: 2
+  - accession: GSM8778470
+    sample_name: HeLa_RNAGranule_NaAsO2_treated_r1
+    sample_group: HeLa_RNAGranule_NaAsO2  # NaAsO2 = sodium arsenite (500 uM, 1 h): oxidative stressor that halts translation initiation (eIF2a phosphorylation) and induces stress granules
+    condition: treated
+    replicate: 1
+  - accession: GSM8778471
+    sample_name: HeLa_RNAGranule_NaAsO2_treated_r2
+    sample_group: HeLa_RNAGranule_NaAsO2
+    condition: treated
+    replicate: 2
+  - accession: GSM8778472
+    sample_name: HeLa_RNAGranule_NaAsO2_treated_r3
+    sample_group: HeLa_RNAGranule_NaAsO2
+    condition: treated
+    replicate: 3
+  - accession: GSM8778467
+    sample_name: HeLa_RNAGranule_NaAsO2_untreated_r1
+    sample_group: HeLa_RNAGranule_NaAsO2
+    condition: untreated
+    replicate: 1
+  - accession: GSM8778468
+    sample_name: HeLa_RNAGranule_NaAsO2_untreated_r2
+    sample_group: HeLa_RNAGranule_NaAsO2
+    condition: untreated
+    replicate: 2
+  - accession: GSM8778469
+    sample_name: HeLa_RNAGranule_NaAsO2_untreated_r3
+    sample_group: HeLa_RNAGranule_NaAsO2
+    condition: untreated
+    replicate: 3
+  - accession: GSM8778458
+    sample_name: HeLa_RNAGranule_treated_r1
+    sample_group: HeLa_RNAGranule
+    condition: treated
+    replicate: 1
+  - accession: GSM8778459
+    sample_name: HeLa_RNAGranule_treated_r2
+    sample_group: HeLa_RNAGranule
+    condition: treated
+    replicate: 2
+  - accession: GSM8778460
+    sample_name: HeLa_RNAGranule_treated_r3
+    sample_group: HeLa_RNAGranule
+    condition: treated
+    replicate: 3
+  - accession: GSM8778455
+    sample_name: HeLa_RNAGranule_untreated_r1
+    sample_group: HeLa_RNAGranule
+    condition: untreated
+    replicate: 1
+  - accession: GSM8778456
+    sample_name: HeLa_RNAGranule_untreated_r2
+    sample_group: HeLa_RNAGranule
+    condition: untreated
+    replicate: 2
+  - accession: GSM8778457
+    sample_name: HeLa_RNAGranule_untreated_r3
+    sample_group: HeLa_RNAGranule
+    condition: untreated
+    replicate: 3
+  - accession: GSM8778464
+    sample_name: HeLa_SolubleCytosol_NaAsO2_treated_r1
+    sample_group: HeLa_SolubleCytosol_NaAsO2
+    condition: treated
+    replicate: 1
+  - accession: GSM8778465
+    sample_name: HeLa_SolubleCytosol_NaAsO2_treated_r2
+    sample_group: HeLa_SolubleCytosol_NaAsO2
+    condition: treated
+    replicate: 2
+  - accession: GSM8778466
+    sample_name: HeLa_SolubleCytosol_NaAsO2_treated_r3
+    sample_group: HeLa_SolubleCytosol_NaAsO2
+    condition: treated
+    replicate: 3
+  - accession: GSM8778461
+    sample_name: HeLa_SolubleCytosol_NaAsO2_untreated_r1
+    sample_group: HeLa_SolubleCytosol_NaAsO2
+    condition: untreated
+    replicate: 1
+  - accession: GSM8778462
+    sample_name: HeLa_SolubleCytosol_NaAsO2_untreated_r2
+    sample_group: HeLa_SolubleCytosol_NaAsO2
+    condition: untreated
+    replicate: 2
+  - accession: GSM8778463
+    sample_name: HeLa_SolubleCytosol_NaAsO2_untreated_r3
+    sample_group: HeLa_SolubleCytosol_NaAsO2
+    condition: untreated
+    replicate: 3
+  - accession: GSM8778452
+    sample_name: HeLa_SolubleCytosol_treated_r1
+    sample_group: HeLa_SolubleCytosol
+    condition: treated
+    replicate: 1
+  - accession: GSM8778453
+    sample_name: HeLa_SolubleCytosol_treated_r2
+    sample_group: HeLa_SolubleCytosol
+    condition: treated
+    replicate: 2
+  - accession: GSM8778454
+    sample_name: HeLa_SolubleCytosol_treated_r3
+    sample_group: HeLa_SolubleCytosol
+    condition: treated
+    replicate: 3
+  - accession: GSM8778449
+    sample_name: HeLa_SolubleCytosol_untreated_r1
+    sample_group: HeLa_SolubleCytosol
+    condition: untreated
+    replicate: 1
+  - accession: GSM8778450
+    sample_name: HeLa_SolubleCytosol_untreated_r2
+    sample_group: HeLa_SolubleCytosol
+    condition: untreated
+    replicate: 2
+  - accession: GSM8778451
+    sample_name: HeLa_SolubleCytosol_untreated_r3
+    sample_group: HeLa_SolubleCytosol
+    condition: untreated
+    replicate: 3
+
+comment: null

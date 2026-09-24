@@ -27,13 +27,9 @@ raw_data:
   repository: GEO
   accession: GSE310315
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310315
-  # SHAPE-MaP arm of GSE310315 (GSM9293933-GSM9293936). The fbDMS-MaP arm of the same series
-  # (GSM9293937-GSM9293940) is curated separately as rnastruct00098.
-  # In cellulo probing of the MNV genome in infected BV2 mouse microglial cells (MNV CW3, MOI 0.05,
-  # 24 h post-infection). 2A3 at 100 mM final in PBS, 15 min at 37C; DMSO vehicle is the unmodified
-  # control. Reverse transcription with MarathonRT (group II intron RT), then PCR.
-  # Scope: the libraries are tiled amplicons, but they cover the complete 7.4 kb MNV genome - i.e. the
-  # whole viral transcriptome, not a selected gene - so this is kept under the whole-viral-genome rule.
+  # SHAPE-MaP arm of GSE310315; the fbDMS-MaP arm is rnastruct00098.
+  # In cellulo probing of the MNV genome in infected BV-2 cells (MOI 0.05, 24 h post-infection).
+  # Tiled amplicons covering the full 7.4 kb genome, so kept as a whole-viral-transcriptome dataset.
   run_accessions:
   - accession: GSM9293933
     sample_name: Murine_norovirus_CW3_BV2_treated_r1
