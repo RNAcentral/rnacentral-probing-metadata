@@ -95,7 +95,7 @@ its `fullTextXML` returns HTTP 500, and elink returned nothing — (1) returned
 `GSE310315` on the first call. Re-running (1) over the 336 already-swept rows that
 had a PMCID but no accession recovered 14, all of them paywalled rows the old code
 never even attempted; among them the Ro60/La series (since dropped on the scope rule) and
-`GSE285333` (10.1016/j.molcel.2026.03.029), which is still uncurated.
+`GSE285333` (10.1016/j.molcel.2026.03.029), since curated as rnastruct00099.
 
 ### 1c. Triage mechanically before reading anything
 
@@ -316,7 +316,7 @@ YAML or a commit message.
   **No host cell and no context token in the name** — `VeroE6_`, `Huh7_`,
   `_incell` are already carried by schema fields, so `SARSCoV2_WT_NAI_treated_r1`,
   not `VeroE6_SARSCoV2_WT_incell_NAI_treated_r1` (user decision, Sept 2026;
-  `Murine_norovirus_CW3_BV2` predates it). Rename `sample_name` and `sample_group`
+  rnastruct00097/00098 were renamed from `Murine_norovirus_CW3_BV2` to match). Rename `sample_name` and `sample_group`
   together — a mismatch between the two is a defect.
 - **One strain per file.** `organism.strain` names the single reference the whole
   file is probed against, so a series covering several strains becomes several
@@ -442,10 +442,16 @@ YAML or a commit message.
   not as a comment block above the sample. Wet-lab detail that is already
   captured by schema fields (buffer, RT enzyme, adapters) does not need
   repeating anywhere.
-- **`(sample_group, condition, replicate)` and `sample_name` must be unique within
-  the file.** `check_metadata_uniqueness.py` does NOT check this (it only checks
-  ids across files) — run the snippet in the validate step. The `_rN` suffix of
-  `sample_name` should equal `replicate`.
+- **`sample_name` must be unique within the file, and `(sample_group, condition,
+  replicate)` should be.** `check_metadata_uniqueness.py` does NOT check this (it
+  only checks ids across files) — run the snippet in the validate step. The `_rN`
+  suffix of `sample_name` should equal `replicate`. One exception: several runs of
+  the **same** library — amplicon tiling pools (rnastruct00025/00030), the pools of a
+  segmented genome (00024), a resequencing run (00035) — share one
+  `(sample_group, condition, replicate)`; the pipeline merges them. Say so in the
+  `#` block and give each run a distinguishing `sample_name` token (pool name,
+  `reseq`). Never use this to merge *different* libraries into one replicate
+  (00014 had targeted amplicon libraries folded into its capture replicates).
 - An untreated/no-probe **or denatured** control with a single replicate is
   fine; the ≥2 rule applies to *treated* groups only. A lone denatured is the
   one case the fuzzy fallback handles cleanly (single control in the closest
@@ -468,9 +474,11 @@ Plus the within-file check the CI scripts don't do:
 .venv/bin/python - <file> <<'PY'
 import sys, yaml, collections
 runs = yaml.safe_load(open(sys.argv[1]))["raw_data"]["run_accessions"]
-for key in (lambda r: r["sample_name"], lambda r: (r["sample_group"], r["condition"], r["replicate"])):
-    dup = [k for k, n in collections.Counter(map(key, runs)).items() if n > 1]
-    if dup: sys.exit(f"DUPLICATE within {sys.argv[1]}: {dup}")
+dup = [k for k, n in collections.Counter(r["sample_name"] for r in runs).items() if n > 1]
+if dup: sys.exit(f"DUPLICATE sample_name within {sys.argv[1]}: {dup}")
+key = lambda r: (r["sample_group"], r["condition"], r["replicate"])
+shared = [k for k, n in collections.Counter(map(key, runs)).items() if n > 1]
+if shared: print(f"NOTE shared (group, condition, replicate) - must be pools/reseq of one library: {shared}")
 print("within-file uniqueness OK")
 PY
 ```

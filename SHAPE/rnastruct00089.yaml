@@ -27,8 +27,8 @@ raw_data:
   accession: GSE156671
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156671
   # Each day was probed in two independent batches. 
-  # GEO has no DMSO rep1 for D8 batch2, so H9_earlyNeuron_D8 has no untreated at r3.
   # Excluded from this curation:
+  # - GSM4736497 (H9_earlyNeuron_D8 batch2 treated r3): GEO has no matching DMSO, so it would be scored without a control.
   # - The RNA-seq, ribosome-profiling and RNA-decay libraries in GSE156671.
   run_accessions:
   - accession: GSM4736474
@@ -131,11 +131,6 @@ raw_data:
     sample_group: H9_earlyNeuron_D8
     condition: untreated
     replicate: 2
-  - accession: GSM4736497
-    sample_name: H9_earlyNeuron_D8_batch2_treated_r3
-    sample_group: H9_earlyNeuron_D8
-    condition: treated
-    replicate: 3
   - accession: GSM4736498
     sample_name: H9_earlyNeuron_D8_batch2_treated_r4
     sample_group: H9_earlyNeuron_D8

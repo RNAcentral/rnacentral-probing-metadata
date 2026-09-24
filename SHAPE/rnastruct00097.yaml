@@ -32,23 +32,23 @@ raw_data:
   # Tiled amplicons covering the full 7.4 kb genome, so kept as a whole-viral-transcriptome dataset.
   run_accessions:
   - accession: GSM9293933
-    sample_name: Murine_norovirus_CW3_BV2_treated_r1
-    sample_group: Murine_norovirus_CW3_BV2 # MNV-1 clone CW3 probed in infected BV-2 cells, an immortalised C57BL/6 mouse microglial line permissive for murine norovirus
+    sample_name: Murine_norovirus_CW3_treated_r1
+    sample_group: Murine_norovirus_CW3 # MNV-1 clone CW3 probed in infected BV-2 cells, an immortalised C57BL/6 mouse microglial line permissive for murine norovirus
     condition: treated
     replicate: 1
   - accession: GSM9293935
-    sample_name: Murine_norovirus_CW3_BV2_treated_r2
-    sample_group: Murine_norovirus_CW3_BV2
+    sample_name: Murine_norovirus_CW3_treated_r2
+    sample_group: Murine_norovirus_CW3
     condition: treated
     replicate: 2
   - accession: GSM9293934
-    sample_name: Murine_norovirus_CW3_BV2_untreated_r1
-    sample_group: Murine_norovirus_CW3_BV2
+    sample_name: Murine_norovirus_CW3_untreated_r1
+    sample_group: Murine_norovirus_CW3
     condition: untreated
     replicate: 1
   - accession: GSM9293936
-    sample_name: Murine_norovirus_CW3_BV2_untreated_r2
-    sample_group: Murine_norovirus_CW3_BV2
+    sample_name: Murine_norovirus_CW3_untreated_r2
+    sample_group: Murine_norovirus_CW3
     condition: untreated
     replicate: 2
 

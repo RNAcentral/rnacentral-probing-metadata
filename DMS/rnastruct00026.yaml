@@ -33,17 +33,17 @@ raw_data:
   #   library with no replicate and no ex-virio untreated, so the arm is dropped.
   run_accessions:
   - accession: GSM4656059
-    sample_name: usa_wa1_treated_r1
+    sample_name: SARS-CoV-2_USA-WA1_treated_r1
     sample_group: SARS-CoV-2_USA-WA1
     condition: treated
     replicate: 1
   - accession: GSM4656060
-    sample_name: usa_wa1_treated_r2
+    sample_name: SARS-CoV-2_USA-WA1_treated_r2
     sample_group: SARS-CoV-2_USA-WA1
     condition: treated
     replicate: 2
   - accession: GSM4656061
-    sample_name: usa_wa1_untreated
+    sample_name: SARS-CoV-2_USA-WA1_untreated_r1
     sample_group: SARS-CoV-2_USA-WA1
     condition: untreated
     replicate: 1

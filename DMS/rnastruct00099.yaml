@@ -11,7 +11,7 @@ experiment:
   obi: OBI:0001015
   chemical: DMS
   RT_enzyme: Group II intron
-  context: [in_vivo, in_vitro]
+  context: [in_vivo, in_vitro, denatured]
   rna_type: total
   pH: 8.3
   adapter_3p: CTGTCTCTTATACACATCT

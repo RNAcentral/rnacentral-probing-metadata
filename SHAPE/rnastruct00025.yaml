@@ -27,7 +27,7 @@ raw_data:
   repository: GEO
   accession: GSE151327
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE151327
-  # cell_line omits host information and keeps only viral strain plus probing context for grouping.
+  # sample_group omits host information and keeps only viral strain plus probing context.
   # Odd/even are amplicon tiling pools from the same in vitro SHAPE condition, group them by replicate.
   # Excluded from this curation:
   # - GSM4892124/GSM4892125 (in_vivo_treated_r1/r2) and GSM4892123 (in_vivo_untreated): the in vivo
