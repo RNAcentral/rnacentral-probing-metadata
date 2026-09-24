@@ -1,0 +1,93 @@
+dataset_id: rnastruct00108
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Saccharomyces cerevisiae
+  ncbi_taxid: 4932
+
+experiment:
+  method: tRNA structure-seq  # DMS-MaP of the gel-purified tRNA fraction: 3'-adapter ligation, then MarathonRT with Mn2+
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo, in_vitro]
+  rna_type: sRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1261/rna.081029.126
+  year: 2026
+
+raw_data:
+  repository: DDBJ
+  accession: PRJDB40244
+  landing_page: https://ddbj.nig.ac.jp/resource/bioproject/PRJDB40244
+  # Kept as a special case: the yeast tRNA structurome under mild stress. Each in vivo run merges the reads
+  # of three biological replicates (rep123), so each arm is one run; in vitro has rep1 and a rep2+3 merge.
+  run_accessions:
+  - accession: DRR902558
+    sample_name: BY4743_treated_r1
+    sample_group: BY4743  # diploid BY4743 grown at 30C, probed in vivo
+    condition: treated
+    replicate: 1
+  - accession: DRR902557
+    sample_name: BY4743_untreated_r1
+    sample_group: BY4743
+    condition: untreated
+    replicate: 1
+  - accession: DRR902559
+    sample_name: BY4743_heat_treated_r1
+    sample_group: BY4743_heat  # mild heat stress
+    condition: treated
+    replicate: 1
+  - accession: DRR902560
+    sample_name: BY4743_heat_untreated_r1
+    sample_group: BY4743_heat
+    condition: untreated
+    replicate: 1
+  - accession: DRR902561
+    sample_name: BY4743_CHX_treated_r1
+    sample_group: BY4743_CHX  # cycloheximide, a translation elongation inhibitor (antibiotic stress)
+    condition: treated
+    replicate: 1
+  - accession: DRR902562
+    sample_name: BY4743_CHX_untreated_r1
+    sample_group: BY4743_CHX
+    condition: untreated
+    replicate: 1
+  - accession: DRR902563
+    sample_name: BY4743_NaCl_treated_r1
+    sample_group: BY4743_NaCl  # NaCl osmotic stress
+    condition: treated
+    replicate: 1
+  - accession: DRR902564
+    sample_name: BY4743_NaCl_untreated_r1
+    sample_group: BY4743_NaCl
+    condition: untreated
+    replicate: 1
+  - accession: DRR902554
+    sample_name: BY4743_invitro_treated_r1
+    sample_group: BY4743_invitro  # tRNA probed in vitro
+    condition: treated
+    replicate: 1
+  - accession: DRR902556
+    sample_name: BY4743_invitro_treated_r2
+    sample_group: BY4743_invitro
+    condition: treated
+    replicate: 2
+  - accession: DRR902553
+    sample_name: BY4743_invitro_untreated_r1
+    sample_group: BY4743_invitro
+    condition: untreated
+    replicate: 1
+  - accession: DRR902555
+    sample_name: BY4743_invitro_untreated_r2
+    sample_group: BY4743_invitro
+    condition: untreated
+    replicate: 2
+
+comment: null

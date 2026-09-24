@@ -26,6 +26,8 @@ raw_data:
   repository: GEO
   accession: GSE224126
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE224126
+  # GEO per-sample metadata is corrupt: the +/-DMS direction and temperature labels were reconstructed
+  # from file names. Verify them before pipeline use.
   run_accessions:
   - accession: SRR23286054
     sample_name: Bacillus_subtilis_23C_untreated_r1
