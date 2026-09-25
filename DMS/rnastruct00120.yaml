@@ -26,27 +26,26 @@ raw_data:
   repository: SRA
   accession: SRP027216
   landing_page: https://www.ncbi.nlm.nih.gov/sra/SRP027216
-  # Structure-seq of Col-0 seedlings (Ding 2014): poly(A)-selected, SuperScript III random-hexamer RT stops.
   # The separate 2016 FoldAtlas deposit of the same system is rnastruct00121.
   run_accessions:
   - accession: SRR933552
-    sample_name: Col-0_treated_r1
-    sample_group: Col-0  # 5-day-old etiolated Col-0 seedlings, DMS in vivo
+    sample_name: Arabidopsis_thaliana_Col-0_treated_r1
+    sample_group: Arabidopsis_thaliana_Col-0  # 5-day-old etiolated Col-0 seedlings
     condition: treated
     replicate: 1
   - accession: SRR933556
-    sample_name: Col-0_treated_r2
-    sample_group: Col-0
+    sample_name: Arabidopsis_thaliana_Col-0_treated_r2
+    sample_group: Arabidopsis_thaliana_Col-0
     condition: treated
     replicate: 2
   - accession: SRR933551
-    sample_name: Col-0_untreated_r1
-    sample_group: Col-0
+    sample_name: Arabidopsis_thaliana_Col-0_untreated_r1
+    sample_group: Arabidopsis_thaliana_Col-0
     condition: untreated
     replicate: 1
   - accession: SRR933557
-    sample_name: Col-0_untreated_r2
-    sample_group: Col-0
+    sample_name: Arabidopsis_thaliana_Col-0_untreated_r2
+    sample_group: Arabidopsis_thaliana_Col-0
     condition: untreated
     replicate: 2
 

@@ -30,33 +30,33 @@ raw_data:
   # deposit from Ding 2014 (rnastruct00120).
   run_accessions:
   - accession: SRR2973578
-    sample_name: Col-0_treated_r1
-    sample_group: Col-0  # 5-day-old etiolated Col-0 seedlings, DMS in vivo
+    sample_name: Arabidopsis_thaliana_Col-0_treated_r1
+    sample_group: Arabidopsis_thaliana_Col-0  # 5-day-old etiolated Col-0 seedlings, DMS in vivo
     condition: treated
     replicate: 1
   - accession: SRR2973579
-    sample_name: Col-0_treated_r2
-    sample_group: Col-0
+    sample_name: Arabidopsis_thaliana_Col-0_treated_r2
+    sample_group: Arabidopsis_thaliana_Col-0
     condition: treated
     replicate: 2
   - accession: SRR2973580
-    sample_name: Col-0_treated_r3
-    sample_group: Col-0
+    sample_name: Arabidopsis_thaliana_Col-0_treated_r3
+    sample_group: Arabidopsis_thaliana_Col-0
     condition: treated
     replicate: 3
   - accession: SRR2973575
-    sample_name: Col-0_untreated_r1
-    sample_group: Col-0
+    sample_name: Arabidopsis_thaliana_Col-0_untreated_r1
+    sample_group: Arabidopsis_thaliana_Col-0
     condition: untreated
     replicate: 1
   - accession: SRR2973576
-    sample_name: Col-0_untreated_r2
-    sample_group: Col-0
+    sample_name: Arabidopsis_thaliana_Col-0_untreated_r2
+    sample_group: Arabidopsis_thaliana_Col-0
     condition: untreated
     replicate: 2
   - accession: SRR2973577
-    sample_name: Col-0_untreated_r3
-    sample_group: Col-0
+    sample_name: Arabidopsis_thaliana_Col-0_untreated_r3
+    sample_group: Arabidopsis_thaliana_Col-0
     condition: untreated
     replicate: 3
 

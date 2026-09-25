@@ -28,23 +28,23 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/sra/SRP116891
   run_accessions:
   - accession: SRR6010248
-    sample_name: Nipponbare_treated_r1
-    sample_group: Nipponbare  # rice cv. Nipponbare, 5-day-old etiolated seedlings, 2.5% DMS in vivo at 28C
+    sample_name: Oryza_sativa_Nipponbare_treated_r1
+    sample_group: Oryza_sativa_Nipponbare  # 5-day-old etiolated seedlings, 2.5% DMS in vivo at 28C
     condition: treated
     replicate: 1
   - accession: SRR6010249
-    sample_name: Nipponbare_treated_r2
-    sample_group: Nipponbare
+    sample_name: Oryza_sativa_Nipponbare_treated_r2
+    sample_group: Oryza_sativa_Nipponbare
     condition: treated
     replicate: 2
   - accession: SRR6010250
-    sample_name: Nipponbare_untreated_r1
-    sample_group: Nipponbare
+    sample_name: Oryza_sativa_Nipponbare_untreated_r1
+    sample_group: Oryza_sativa_Nipponbare
     condition: untreated
     replicate: 1
   - accession: SRR6010251
-    sample_name: Nipponbare_untreated_r2
-    sample_group: Nipponbare
+    sample_name: Oryza_sativa_Nipponbare_untreated_r2
+    sample_group: Oryza_sativa_Nipponbare
     condition: untreated
     replicate: 2
 

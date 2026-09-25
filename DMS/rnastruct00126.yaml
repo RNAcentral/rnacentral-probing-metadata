@@ -27,8 +27,7 @@ raw_data:
   accession: GSE95788
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95788
   # Siblings from GSE95788: rnastruct00126 (S. cerevisiae DREADS), 00127 (D. hansenii), 00128 (K. lactis), 00129 (SHREADS/NAI).
-  # RT-stop library; the RT enzyme is not named in the paper, M-MLV family assumed. Cells spiked with S. pombe for normalisation.
-  # Library preps 1 and 2 of each biological replicate share that replicate (prep token in sample_name).
+  # Cells spiked with S. pombe for normalisation.
   # Excluded from this curation:
   # - GSM2525943-GSM2525954 (JYAC7, JYAC2): S. cerevisiae carrying D. hansenii / K. lactis YAC segments; needs a
   #   combined reference.
@@ -36,63 +35,63 @@ raw_data:
   # - CLIP-READS libraries (Pab1 IP): not probing.
   run_accessions:
   - accession: GSM2525923
-    sample_name: JGY2000_prep1_treated_r1
-    sample_group: JGY2000  # JGY2000 in YPD, DMS in vivo
+    sample_name: Saccharomyces_cerevisiae_JGY2000_prep1_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000  # JGY2000 in YPD, DMS in vivo
     condition: treated
     replicate: 1
   - accession: GSM2525924
-    sample_name: JGY2000_prep2_treated_r1
-    sample_group: JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_prep2_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000
     condition: treated
     replicate: 1
   - accession: GSM2525927
-    sample_name: JGY2000_prep1_treated_r2
-    sample_group: JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_prep1_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000
     condition: treated
     replicate: 2
   - accession: GSM2525928
-    sample_name: JGY2000_prep2_treated_r2
-    sample_group: JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_prep2_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000
     condition: treated
     replicate: 2
   - accession: GSM2525921
-    sample_name: JGY2000_prep1_untreated_r1
-    sample_group: JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_prep1_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000
     condition: untreated
     replicate: 1
   - accession: GSM2525922
-    sample_name: JGY2000_prep2_untreated_r1
-    sample_group: JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_prep2_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000
     condition: untreated
     replicate: 1
   - accession: GSM2525925
-    sample_name: JGY2000_prep1_untreated_r2
-    sample_group: JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_prep1_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000
     condition: untreated
     replicate: 2
   - accession: GSM2525926
-    sample_name: JGY2000_prep2_untreated_r2
-    sample_group: JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_prep2_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000
     condition: untreated
     replicate: 2
   - accession: GSM2525930
-    sample_name: JGY2000_invitro_treated_r1
-    sample_group: JGY2000_invitro  # total RNA denatured, refolded and DMS-probed in vitro
+    sample_name: Saccharomyces_cerevisiae_JGY2000_invitro_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_invitro  # total RNA denatured, refolded and DMS-probed in vitro
     condition: treated
     replicate: 1
   - accession: GSM2525932
-    sample_name: JGY2000_invitro_treated_r2
-    sample_group: JGY2000_invitro
+    sample_name: Saccharomyces_cerevisiae_JGY2000_invitro_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_invitro
     condition: treated
     replicate: 2
   - accession: GSM2525929
-    sample_name: JGY2000_invitro_untreated_r1
-    sample_group: JGY2000_invitro
+    sample_name: Saccharomyces_cerevisiae_JGY2000_invitro_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_invitro
     condition: untreated
     replicate: 1
   - accession: GSM2525931
-    sample_name: JGY2000_invitro_untreated_r2
-    sample_group: JGY2000_invitro
+    sample_name: Saccharomyces_cerevisiae_JGY2000_invitro_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_invitro
     condition: untreated
     replicate: 2
 
