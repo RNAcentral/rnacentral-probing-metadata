@@ -26,10 +26,8 @@ raw_data:
   repository: SRA
   accession: PRJNA946372
   landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA946372
-  # Kept as a special case: H9 hESCs and three neural differentiation stages, plus 100- and 10-cell hESC
-  # input. Each condition's runs are separate libraries under one BioSample, so they may be technical replicates.
   # Excluded from this curation:
-  # - SRR23909985, SRR23909991 (third NAI-N3 library of the 100- and 10-cell arms): only two DMSO libraries each.
+  # - SRR23909985, SRR23909991 (rep 3 of the 100- and 10-cell arms): only two DMSO libraries each.
   # - PRJNA946273, PRJNA946308: single-cell libraries (one cell each, or transfected ribozyme constructs).
   run_accessions:
   - accession: SRR23909982

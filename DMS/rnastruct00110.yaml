@@ -35,28 +35,28 @@ raw_data:
   # - GSM2801051-GSM2801055, GSM2946865-GSM2946871 (DMS-MaPseq of purified cspA mRNA): targeted amplicons.
   run_accessions:
   - accession: GSM2771014
-    sample_name: MG1655_10C_30min_treated_r1
-    sample_group: MG1655_10C_30min  # 30 min after shift from 37C to 10C (growth arrest)
+    sample_name: Escherichia_coli_MG1655_10C_30min_treated_r1
+    sample_group: Escherichia_coli_MG1655_10C_30min  # 30 min after shift from 37C to 10C (growth arrest)
     condition: treated
     replicate: 1
   - accession: GSM2771015
-    sample_name: MG1655_10C_6h_treated_r1
-    sample_group: MG1655_10C_6h  # 6 h after the shift (acclimation)
+    sample_name: Escherichia_coli_MG1655_10C_6h_treated_r1
+    sample_group: Escherichia_coli_MG1655_10C_6h  # 6 h after the shift (acclimation)
     condition: treated
     replicate: 1
   - accession: GSM2771016
-    sample_name: MG1655_10C_8h_treated_r1
-    sample_group: MG1655_10C_8h  # 8 h after the shift (growth resumed)
+    sample_name: Escherichia_coli_MG1655_10C_8h_treated_r1
+    sample_group: Escherichia_coli_MG1655_10C_8h  # 8 h after the shift (growth resumed)
     condition: treated
     replicate: 1
   - accession: GSM2801048
-    sample_name: MG1655_invitro_10C_treated_r1
-    sample_group: MG1655_invitro_10C  # purified mRNA refolded and probed at 10C
+    sample_name: Escherichia_coli_MG1655_invitro_10C_treated_r1
+    sample_group: Escherichia_coli_MG1655_invitro_10C  # purified mRNA refolded and probed at 10C
     condition: treated
     replicate: 1
   - accession: GSM2801049
-    sample_name: MG1655_invitro_10C_treated_r2
-    sample_group: MG1655_invitro_10C
+    sample_name: Escherichia_coli_MG1655_invitro_10C_treated_r2
+    sample_group: Escherichia_coli_MG1655_invitro_10C
     condition: treated
     replicate: 2
 

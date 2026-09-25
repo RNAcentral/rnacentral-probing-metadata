@@ -6,7 +6,7 @@ organism:
   ncbi_taxid: 9606
 
 experiment:
-  method: icSHAPE  # NAI-N3 in cells, click-biotin enrichment of modified RNA, SuperScript III RT stops (RBRP pipeline)
+  method: icSHAPE  # NAI-N3 in cells, click-biotin enrichment of modified RNA
   principle: RT-stop
   obi: OBI:0003887
   chemical: NAI-N3
@@ -26,13 +26,13 @@ raw_data:
   repository: GEO
   accession: GSE243544
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243544
-  # Poly(A)+ RNA arm of GSE243544; the rRNA arm is rnastruct00133. DMSO is the NAI-N3 vehicle (untreated).
+  # Poly(A)+ RNA arm of GSE243544; the rRNA arm is rnastruct00133.
   # Excluded from this curation:
   # - GSM7790707, GSM7790708: acetylimidazole (AcIm) and AcIN3 probing, reagents not in the schema.
   run_accessions:
   - accession: GSM7790709
     sample_name: HEK293_treated_r1
-    sample_group: HEK293  # HEK293 cells, NAI-N3 in cells; poly(A)+ RNA library
+    sample_group: HEK293
     condition: treated
     replicate: 1
   - accession: GSM7790710

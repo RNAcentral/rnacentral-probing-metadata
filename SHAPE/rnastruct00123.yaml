@@ -6,7 +6,7 @@ organism:
   ncbi_taxid: 4571
 
 experiment:
-  method: SHAPE-Structure-seq  # Structure-seq library prep (poly(A), SuperScript III random-hexamer RT stops) with NAI instead of DMS
+  method: SHAPE-Structure-seq  # Structure-seq with NAI instead of DMS
   principle: RT-stop
   obi: OBI:0003886
   chemical: NAI
@@ -31,28 +31,28 @@ raw_data:
   # - SRR14300115-SRR14300117 (RNA-seq) and SRR14308541-SRR14308543 (polysome-seq): not probing.
   run_accessions:
   - accession: SRR14624422
-    sample_name: Kronos_treated_r1
-    sample_group: Kronos  # durum wheat cv. Kronos, etiolated seedlings, 200 mM NAI in vivo for 15 min at 22C
+    sample_name: Triticum_turgidum_Kronos_treated_r1
+    sample_group: Triticum_turgidum_Kronos  # etiolated seedlings, 200 mM NAI in vivo for 15 min at 22C
     condition: treated
     replicate: 1
   - accession: SRR14832286
-    sample_name: Kronos_reseq_treated_r1
-    sample_group: Kronos
+    sample_name: Triticum_turgidum_Kronos_reseq_treated_r1
+    sample_group: Triticum_turgidum_Kronos
     condition: treated
     replicate: 1
   - accession: SRR14624423
-    sample_name: Kronos_treated_r2
-    sample_group: Kronos
+    sample_name: Triticum_turgidum_Kronos_treated_r2
+    sample_group: Triticum_turgidum_Kronos
     condition: treated
     replicate: 2
   - accession: SRR14624420
-    sample_name: Kronos_untreated_r1
-    sample_group: Kronos
+    sample_name: Triticum_turgidum_Kronos_untreated_r1
+    sample_group: Triticum_turgidum_Kronos
     condition: untreated
     replicate: 1
   - accession: SRR14624421
-    sample_name: Kronos_untreated_r2
-    sample_group: Kronos
+    sample_name: Triticum_turgidum_Kronos_untreated_r2
+    sample_group: Triticum_turgidum_Kronos
     condition: untreated
     replicate: 2
 

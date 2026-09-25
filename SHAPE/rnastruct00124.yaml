@@ -12,7 +12,7 @@ experiment:
   chemical: 1M7
   RT_enzyme: M-MLV
   context: [in_vivo, in_vitro]
-  rna_type: total
+  rna_type: total # rRNA-depleted
   pH: null
   adapter_3p: null
   adapter_5p: null
@@ -26,440 +26,438 @@ raw_data:
   repository: ENA
   accession: PRJEB23974
   landing_page: https://www.ebi.ac.uk/ena/browser/view/PRJEB23974
-  # rRNA-depleted (Ribo-Zero) E. coli RNA, SHAPE-MaP with SuperScript II and Mn2+. Each library was sequenced
-  # over several runs and lanes; these share one (group, condition, replicate) and carry a runNlaneN token.
   # Excluded from this curation:
   # - ERR2226503-ERR2226507 (cell-free replicate 1 untreated, 5 runs) and ERR2226578-ERR2226582
   #   (kasugamycin replicate 3 untreated, 5 runs): no modified library at that replicate.
   run_accessions:
   - accession: ERR2226528
-    sample_name: MG1655_run1lane1_treated_r1
-    sample_group: MG1655  # E. coli K-12 MG1655, mid-log in LB, 1M7 in living cells
+    sample_name: Escherichia_coli_MG1655_run1lane1_treated_r1
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 1
   - accession: ERR2226529
-    sample_name: MG1655_run1lane2_treated_r1
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane2_treated_r1
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 1
   - accession: ERR2226530
-    sample_name: MG1655_run1lane3_treated_r1
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane3_treated_r1
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 1
   - accession: ERR2226531
-    sample_name: MG1655_run1lane4_treated_r1
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane4_treated_r1
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 1
   - accession: ERR2226532
-    sample_name: MG1655_run1lane5_treated_r1
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane5_treated_r1
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 1
   - accession: ERR2226533
-    sample_name: MG1655_run1lane1_untreated_r1
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane1_untreated_r1
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 1
   - accession: ERR2226534
-    sample_name: MG1655_run1lane2_untreated_r1
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane2_untreated_r1
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 1
   - accession: ERR2226535
-    sample_name: MG1655_run1lane3_untreated_r1
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane3_untreated_r1
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 1
   - accession: ERR2226536
-    sample_name: MG1655_run1lane4_untreated_r1
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane4_untreated_r1
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 1
   - accession: ERR2226537
-    sample_name: MG1655_run1lane5_untreated_r1
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane5_untreated_r1
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 1
   - accession: ERR2226538
-    sample_name: MG1655_run1lane1_treated_r2
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane1_treated_r2
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 2
   - accession: ERR2226539
-    sample_name: MG1655_run1lane2_treated_r2
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane2_treated_r2
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 2
   - accession: ERR2226540
-    sample_name: MG1655_run1lane3_treated_r2
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane3_treated_r2
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 2
   - accession: ERR2226541
-    sample_name: MG1655_run1lane4_treated_r2
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane4_treated_r2
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 2
   - accession: ERR2226542
-    sample_name: MG1655_run1lane5_treated_r2
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane5_treated_r2
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 2
   - accession: ERR2226543
-    sample_name: MG1655_run1lane1_untreated_r2
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane1_untreated_r2
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 2
   - accession: ERR2226544
-    sample_name: MG1655_run1lane2_untreated_r2
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane2_untreated_r2
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 2
   - accession: ERR2226545
-    sample_name: MG1655_run1lane3_untreated_r2
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane3_untreated_r2
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 2
   - accession: ERR2226546
-    sample_name: MG1655_run1lane4_untreated_r2
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane4_untreated_r2
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 2
   - accession: ERR2226547
-    sample_name: MG1655_run1lane5_untreated_r2
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane5_untreated_r2
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 2
   - accession: ERR2226548
-    sample_name: MG1655_run1lane1_treated_r3
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane1_treated_r3
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 3
   - accession: ERR2226549
-    sample_name: MG1655_run1lane2_treated_r3
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane2_treated_r3
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 3
   - accession: ERR2226550
-    sample_name: MG1655_run1lane3_treated_r3
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane3_treated_r3
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 3
   - accession: ERR2226551
-    sample_name: MG1655_run1lane4_treated_r3
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane4_treated_r3
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 3
   - accession: ERR2226552
-    sample_name: MG1655_run1lane5_treated_r3
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane5_treated_r3
+    sample_group: Escherichia_coli_MG1655
     condition: treated
     replicate: 3
   - accession: ERR2226553
-    sample_name: MG1655_run1lane1_untreated_r3
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane1_untreated_r3
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 3
   - accession: ERR2226554
-    sample_name: MG1655_run1lane2_untreated_r3
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane2_untreated_r3
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 3
   - accession: ERR2226555
-    sample_name: MG1655_run1lane3_untreated_r3
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane3_untreated_r3
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 3
   - accession: ERR2226556
-    sample_name: MG1655_run1lane4_untreated_r3
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane4_untreated_r3
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 3
   - accession: ERR2226557
-    sample_name: MG1655_run1lane5_untreated_r3
-    sample_group: MG1655
+    sample_name: Escherichia_coli_MG1655_run1lane5_untreated_r3
+    sample_group: Escherichia_coli_MG1655
     condition: untreated
     replicate: 3
   - accession: ERR2226558
-    sample_name: MG1655_kasugamycin_run1lane1_treated_r1
-    sample_group: MG1655_kasugamycin  # living cells treated with kasugamycin (blocks translation initiation) before 1M7
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane1_treated_r1
+    sample_group: Escherichia_coli_MG1655_kasugamycin  # living cells treated with kasugamycin (blocks translation initiation) before 1M7
     condition: treated
     replicate: 1
   - accession: ERR2226559
-    sample_name: MG1655_kasugamycin_run1lane2_treated_r1
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane2_treated_r1
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: treated
     replicate: 1
   - accession: ERR2226560
-    sample_name: MG1655_kasugamycin_run1lane3_treated_r1
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane3_treated_r1
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: treated
     replicate: 1
   - accession: ERR2226561
-    sample_name: MG1655_kasugamycin_run1lane4_treated_r1
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane4_treated_r1
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: treated
     replicate: 1
   - accession: ERR2226562
-    sample_name: MG1655_kasugamycin_run1lane5_treated_r1
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane5_treated_r1
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: treated
     replicate: 1
   - accession: ERR2226563
-    sample_name: MG1655_kasugamycin_run1lane1_untreated_r1
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane1_untreated_r1
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: untreated
     replicate: 1
   - accession: ERR2226564
-    sample_name: MG1655_kasugamycin_run1lane2_untreated_r1
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane2_untreated_r1
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: untreated
     replicate: 1
   - accession: ERR2226565
-    sample_name: MG1655_kasugamycin_run1lane3_untreated_r1
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane3_untreated_r1
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: untreated
     replicate: 1
   - accession: ERR2226566
-    sample_name: MG1655_kasugamycin_run1lane4_untreated_r1
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane4_untreated_r1
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: untreated
     replicate: 1
   - accession: ERR2226567
-    sample_name: MG1655_kasugamycin_run1lane5_untreated_r1
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane5_untreated_r1
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: untreated
     replicate: 1
   - accession: ERR2226568
-    sample_name: MG1655_kasugamycin_run1lane1_treated_r2
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane1_treated_r2
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: treated
     replicate: 2
   - accession: ERR2226569
-    sample_name: MG1655_kasugamycin_run1lane2_treated_r2
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane2_treated_r2
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: treated
     replicate: 2
   - accession: ERR2226570
-    sample_name: MG1655_kasugamycin_run1lane3_treated_r2
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane3_treated_r2
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: treated
     replicate: 2
   - accession: ERR2226571
-    sample_name: MG1655_kasugamycin_run1lane4_treated_r2
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane4_treated_r2
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: treated
     replicate: 2
   - accession: ERR2226572
-    sample_name: MG1655_kasugamycin_run1lane5_treated_r2
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane5_treated_r2
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: treated
     replicate: 2
   - accession: ERR2226573
-    sample_name: MG1655_kasugamycin_run1lane1_untreated_r2
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane1_untreated_r2
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: untreated
     replicate: 2
   - accession: ERR2226574
-    sample_name: MG1655_kasugamycin_run1lane2_untreated_r2
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane2_untreated_r2
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: untreated
     replicate: 2
   - accession: ERR2226575
-    sample_name: MG1655_kasugamycin_run1lane3_untreated_r2
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane3_untreated_r2
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: untreated
     replicate: 2
   - accession: ERR2226576
-    sample_name: MG1655_kasugamycin_run1lane4_untreated_r2
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane4_untreated_r2
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: untreated
     replicate: 2
   - accession: ERR2226577
-    sample_name: MG1655_kasugamycin_run1lane5_untreated_r2
-    sample_group: MG1655_kasugamycin
+    sample_name: Escherichia_coli_MG1655_kasugamycin_run1lane5_untreated_r2
+    sample_group: Escherichia_coli_MG1655_kasugamycin
     condition: untreated
     replicate: 2
   - accession: ERR2226508
-    sample_name: MG1655_cellfree_run1lane1_treated_r2
-    sample_group: MG1655_cellfree  # protein- and ribosome-free RNA extract in native-like buffer, probed outside cells (not refolded)
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane1_treated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree  # protein- and ribosome-free RNA extract in native-like buffer, probed outside cells (not refolded)
     condition: treated
     replicate: 2
   - accession: ERR2226509
-    sample_name: MG1655_cellfree_run1lane2_treated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane2_treated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 2
   - accession: ERR2226510
-    sample_name: MG1655_cellfree_run1lane3_treated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane3_treated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 2
   - accession: ERR2226511
-    sample_name: MG1655_cellfree_run1lane4_treated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane4_treated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 2
   - accession: ERR2226512
-    sample_name: MG1655_cellfree_run1lane5_treated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane5_treated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 2
   - accession: ERR2226583
-    sample_name: MG1655_cellfree_run2lane1_treated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run2lane1_treated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 2
   - accession: ERR2226584
-    sample_name: MG1655_cellfree_run2lane2_treated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run2lane2_treated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 2
   - accession: ERR2226591
-    sample_name: MG1655_cellfree_run3lane1_treated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run3lane1_treated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 2
   - accession: ERR2226592
-    sample_name: MG1655_cellfree_run3lane2_treated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run3lane2_treated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 2
   - accession: ERR2226513
-    sample_name: MG1655_cellfree_run1lane1_untreated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane1_untreated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 2
   - accession: ERR2226514
-    sample_name: MG1655_cellfree_run1lane2_untreated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane2_untreated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 2
   - accession: ERR2226515
-    sample_name: MG1655_cellfree_run1lane3_untreated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane3_untreated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 2
   - accession: ERR2226516
-    sample_name: MG1655_cellfree_run1lane4_untreated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane4_untreated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 2
   - accession: ERR2226517
-    sample_name: MG1655_cellfree_run1lane5_untreated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane5_untreated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 2
   - accession: ERR2226585
-    sample_name: MG1655_cellfree_run2lane1_untreated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run2lane1_untreated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 2
   - accession: ERR2226586
-    sample_name: MG1655_cellfree_run2lane2_untreated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run2lane2_untreated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 2
   - accession: ERR2226593
-    sample_name: MG1655_cellfree_run3lane1_untreated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run3lane1_untreated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 2
   - accession: ERR2226594
-    sample_name: MG1655_cellfree_run3lane2_untreated_r2
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run3lane2_untreated_r2
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 2
   - accession: ERR2226518
-    sample_name: MG1655_cellfree_run1lane1_treated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane1_treated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 3
   - accession: ERR2226519
-    sample_name: MG1655_cellfree_run1lane2_treated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane2_treated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 3
   - accession: ERR2226520
-    sample_name: MG1655_cellfree_run1lane3_treated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane3_treated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 3
   - accession: ERR2226521
-    sample_name: MG1655_cellfree_run1lane4_treated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane4_treated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 3
   - accession: ERR2226522
-    sample_name: MG1655_cellfree_run1lane5_treated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane5_treated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 3
   - accession: ERR2226587
-    sample_name: MG1655_cellfree_run2lane1_treated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run2lane1_treated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 3
   - accession: ERR2226588
-    sample_name: MG1655_cellfree_run2lane2_treated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run2lane2_treated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 3
   - accession: ERR2226595
-    sample_name: MG1655_cellfree_run3lane1_treated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run3lane1_treated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 3
   - accession: ERR2226596
-    sample_name: MG1655_cellfree_run3lane2_treated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run3lane2_treated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: treated
     replicate: 3
   - accession: ERR2226523
-    sample_name: MG1655_cellfree_run1lane1_untreated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane1_untreated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 3
   - accession: ERR2226524
-    sample_name: MG1655_cellfree_run1lane2_untreated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane2_untreated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 3
   - accession: ERR2226525
-    sample_name: MG1655_cellfree_run1lane3_untreated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane3_untreated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 3
   - accession: ERR2226526
-    sample_name: MG1655_cellfree_run1lane4_untreated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane4_untreated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 3
   - accession: ERR2226527
-    sample_name: MG1655_cellfree_run1lane5_untreated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run1lane5_untreated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 3
   - accession: ERR2226589
-    sample_name: MG1655_cellfree_run2lane1_untreated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run2lane1_untreated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 3
   - accession: ERR2226590
-    sample_name: MG1655_cellfree_run2lane2_untreated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run2lane2_untreated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 3
   - accession: ERR2226597
-    sample_name: MG1655_cellfree_run3lane1_untreated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run3lane1_untreated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 3
   - accession: ERR2226598
-    sample_name: MG1655_cellfree_run3lane2_untreated_r3
-    sample_group: MG1655_cellfree
+    sample_name: Escherichia_coli_MG1655_cellfree_run3lane2_untreated_r3
+    sample_group: Escherichia_coli_MG1655_cellfree
     condition: untreated
     replicate: 3
 

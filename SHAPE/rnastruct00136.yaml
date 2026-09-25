@@ -27,8 +27,7 @@ raw_data:
   repository: GEO
   accession: GSE228446
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228446
-  # Whole WNV genome in infected cells (4 dpi), 200 mM NAI or DMSO; 19 tiled RT-PCR amplicons, SSII/Mn2+.
-  # West Nile virus is not in merge_metadata.py VIRAL_ORGANISMS: pass --fasta with AF404756.
+  # Whole WNV genome in infected cells (4 dpi), 200 mM NAI or DMSO; 19 tiled RT-PCR amplicons.
   run_accessions:
   - accession: GSM7120773
     sample_name: West_Nile_NY99_Vero_treated_r1

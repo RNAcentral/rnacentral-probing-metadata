@@ -2,7 +2,7 @@ dataset_id: rnastruct00117
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Zika virus  # RNAcentral has only short fragments (partial sfRNA, PDB constructs, max 325 nt), no genome (checked 2026-09-25)
+  scientific_name: Zika virus  # RNAcentral has only short fragments (partial sfRNA, PDB constructs, max 325 nt) (checked 2026-09-25)
   ncbi_taxid: 64320
   strain: HPF2013  # H/PF/2013, French Polynesia; GenBank KJ776791.2.
 
@@ -27,8 +27,6 @@ raw_data:
   repository: SRA
   accession: PRJNA1443375
   landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1443375
-  # sfRNA (XRN1-resistant 3'-UTR fragment) of PRJNA1443375, one file per strain; siblings rnastruct00113-00116.
-  # Native viral region, amplified with flavivirus-specific primers.
   run_accessions:
   - accession: SRR37896973
     sample_name: Zika_HPF2013_treated_r1

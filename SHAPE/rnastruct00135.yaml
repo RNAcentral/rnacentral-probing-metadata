@@ -7,7 +7,7 @@ organism:
   strain: A/Puerto Rico/8/1934(H1N1)
 
 experiment:
-  method: SHAPE-seq  # NAI with random-hexamer RT stops (ReverTra Ace)
+  method: SHAPE-seq
   principle: RT-stop
   obi: OBI:0003886
   chemical: NAI
@@ -27,9 +27,7 @@ raw_data:
   repository: DDBJ
   accession: DRA014362
   landing_page: https://ddbj.nig.ac.jp/resource/sra-submission/DRA014362
-  # NAI arm of the in-virio influenza study; the DMS arm is rnastruct00134. Runs come from three DDBJ
-  # submissions: DRA015929 (egg-grown virions), DRA009494 (vRNP, vRNA and their mocks) and DRA014362
-  # (MDCK-grown virions: wild type and the segment 5 mutants 87mut / 87rec).
+  # NAI arm of the in-virio influenza study; the DMS arm is rnastruct00134.
   run_accessions:
   - accession: DRR452919
     sample_name: Influenza_A_PR8_treated_r1

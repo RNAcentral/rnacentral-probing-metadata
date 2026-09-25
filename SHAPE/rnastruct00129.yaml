@@ -27,27 +27,25 @@ raw_data:
   accession: GSE95788
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95788
   # Siblings from GSE95788: rnastruct00126 (S. cerevisiae DREADS), 00127 (D. hansenii), 00128 (K. lactis), 00129 (SHREADS/NAI).
-  # RT-stop library; the RT enzyme is not named in the paper, M-MLV family assumed.
-  # DMSO is the NAI vehicle (untreated).
   run_accessions:
   - accession: GSM3389533
-    sample_name: JGY2000_treated_r1
-    sample_group: JGY2000  # JGY2000 in YPD, 100 mM NAI for ~3 min at 30C
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
     condition: treated
     replicate: 1
   - accession: GSM3389535
-    sample_name: JGY2000_treated_r2
-    sample_group: JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
     condition: treated
     replicate: 2
   - accession: GSM3389534
-    sample_name: JGY2000_untreated_r1
-    sample_group: JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
     condition: untreated
     replicate: 1
   - accession: GSM3389536
-    sample_name: JGY2000_untreated_r2
-    sample_group: JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
     condition: untreated
     replicate: 2
 

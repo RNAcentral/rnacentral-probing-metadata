@@ -181,14 +181,20 @@ processed.
   no whitespace. `sample_name` = `{sample_group}_{condition}_r{replicate}`, plus a
   distinguishing token only when runs share a replicate (see pairing). Rename
   both together.
-- **First token = cell line or strain exactly as the repository states it**
-  (HEK293 ≠ HEK293T; yeast `BY4741_WT`, `BY4741_dbp3KO`, never `Scer_`). Bacteria/
-  archaea: full binomial or strain (`Bacillus_subtilis_37C`, `MG1655_delta_gcvB`),
-  no `Ecoli`/`Bsub`.
-- **Baseline group is the bare cell line** (`HeLa`, not `HeLa_Untreated`); suffix
-  only the exceptions (`HeLa_NaAsO2`, `HeLa_invitro`, `HeLa_NaAsO2_Recover1h`).
-  No tokens that are true of every sample: no in vivo suffix, no method
-  (`icSHAPE_`), no `WholeCell`, no `rna_type`.
+- **Human/mouse cell lines: first token = the cell line exactly as the repository
+  states it** (HEK293 ≠ HEK293T; `H9_hESC`, `mESC`).
+- **Other organisms (bacteria, archaea, yeasts, plants): full binomial, then the
+  strain or cultivar as the repository states it** — `Escherichia_coli_MG1655`,
+  `Saccharomyces_cerevisiae_JGY2000_YPD`, `Listeria_monocytogenes_EGDe_dhfq`,
+  `Arabidopsis_thaliana_Col-0`, `Oryza_sativa_Nipponbare`. Never abbreviated
+  (`Ecoli`, `Scer_`, `Bsub`). Mutants and conditions follow the strain so they share
+  its prefix for control pairing. (Older files that start with the strain, e.g.
+  `BY4741_WT`, predate this.)
+- **Baseline group is the bare cell line or strain** (`HeLa`, not `HeLa_Untreated`);
+  suffix only the exceptions (`HeLa_NaAsO2`, `HeLa_invitro`, `HeLa_NaAsO2_Recover1h`).
+  No tokens that are true of every sample — no in vivo suffix, no method
+  (`icSHAPE_`), no `WholeCell`, no `rna_type` — except the probing temperature,
+  which stays (`Escherichia_coli_MG1655_10C_30min`).
 - **Viral**: spell the virus out, then strain (`Influenza_A_PR8`,
   `Bluetongue_virus_segment1`); drop `virus` when the strain identifies it
   (`Yellow_fever_Dakar`); no host cell or context token (`SARSCoV2_WT_NAI_treated_r1`).

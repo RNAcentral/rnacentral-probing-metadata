@@ -27,11 +27,6 @@ raw_data:
   repository: SRA
   accession: PRJNA1443375
   landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1443375
-  # sfRNA (XRN1-resistant 3'-UTR fragment) of PRJNA1443375, one file per strain; siblings rnastruct00113-00115, 00117.
-  # Native viral region, amplified with flavivirus-specific primers.
-  # The in-cell DENV4 arm used strain DV4-H24 and is curated separately as rnastruct00115.
-  # Dengue is not in merge_metadata.py VIRAL_ORGANISMS, so the strain never reaches the pipeline's genome
-  # lookup: pass --fasta with KU513442.1.
   run_accessions:
   - accession: SRR37896991
     sample_name: Dengue_TVP360_invitro_treated_r1
