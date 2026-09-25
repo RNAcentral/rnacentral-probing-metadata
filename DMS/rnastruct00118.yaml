@@ -28,7 +28,7 @@ raw_data:
   accession: PRJNA955716
   landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA955716
   # Native viral region: BocaSR, the 140-nt bocavirus-encoded small RNA, RT-PCR amplified (TGIRT RT as in
-  # Zubradt 2017, at 55C). Bocavirus is not in merge_metadata.py VIRAL_ORGANISMS: pass --fasta with JQ923422.1.
+  # Zubradt 2017, at 55C). Bocavirus is not in merge_metadata.py
   run_accessions:
   - accession: SRR24170475
     sample_name: Human_bocavirus_Salvador1_treated_r1

@@ -6,7 +6,7 @@ organism:
   ncbi_taxid: 9606
 
 experiment:
-  method: DIM-2P-seq  # DMS-induced mutations mapped by 2P-seq: TGIRT readthrough of poly(A)-anchored 3'-end fragments
+  method: DIM-2P-seq  # DMS-induced mutations mapped by 2P-seq
   principle: MaP
   obi: OBI:0001015
   chemical: DMS
@@ -33,7 +33,7 @@ raw_data:
   run_accessions:
   - accession: GSM2514561
     sample_name: HEK293T_treated_r1
-    sample_group: HEK293T  # 3.3% DMS for 5 min in cells
+    sample_group: HEK293T
     condition: treated
     replicate: 1
   - accession: GSM2514562

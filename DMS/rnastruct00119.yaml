@@ -28,7 +28,6 @@ raw_data:
   accession: GSE244468
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244468
   # Native viral region: the gag-pol ribosomal frameshift site of HIV-1 genomic RNA in infected cells,
-  # RT-PCR amplified (MarathonRT with Mn2+). Ethanol, the DMS vehicle, is the untreated control.
   # The pipeline's genome key is human_immunodeficiency_virus_1_nl4_3, which "HIV (NL4-3)" does not match:
   # pass --fasta with AF324493.2.
   # Excluded from this curation:
