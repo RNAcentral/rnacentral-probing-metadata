@@ -2,7 +2,7 @@ dataset_id: rnastruct00075
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Yellow fever virus
+  scientific_name: Yellow fever virus  # no sequences for this virus in RNAcentral (checked 2026-09-25)
   ncbi_taxid: 11089
   strain: 17D  # GEO reports strain 17D; full-length infectious clone of the 17D-204 vaccine strain.
 

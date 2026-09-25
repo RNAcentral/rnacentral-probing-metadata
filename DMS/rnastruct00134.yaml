@@ -2,7 +2,7 @@ dataset_id: rnastruct00134
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Influenza A virus
+  scientific_name: Influenza A virus  # no RNAcentral record >=60 nt at >=99% identity to this strain (release 27, checked 2026-09-25)
   ncbi_taxid: 11320
   strain: A/Puerto Rico/8/1934(H1N1)
 
@@ -27,8 +27,7 @@ raw_data:
   repository: DDBJ
   accession: DRA009494
   landing_page: https://ddbj.nig.ac.jp/resource/sra-submission/DRA009494
-  # DMS arm of the in-virio influenza study; the NAI arm is rnastruct00135. Random-hexamer RT stops with
-  # ReverTra Ace (M-MLV). The vRNP and vRNA arms reuse the virion mock; their own mocks are in 00135.
+  # DMS arm of the in-virio influenza study; the NAI arm is rnastruct00135.
   # Excluded from this curation:
   # - DRR205200-DRR205207 (virion NAI, 87mut virion): not in the paper's data list; superseded by DRA014362.
   run_accessions:

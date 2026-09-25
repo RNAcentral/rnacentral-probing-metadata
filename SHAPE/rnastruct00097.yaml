@@ -2,7 +2,7 @@ dataset_id: rnastruct00097
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Murine norovirus
+  scientific_name: Murine norovirus  # no sequences for this virus in RNAcentral (checked 2026-09-25)
   ncbi_taxid: 357231
   strain: CW3  # MNV-1 clone CW3, GenBank EF014462.1 (7382 nt); exact taxid 223997 has a trailing digit the scientific_name pattern rejects.
 

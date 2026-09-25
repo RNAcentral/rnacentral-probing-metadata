@@ -2,7 +2,7 @@ dataset_id: rnastruct00009
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Zika virus
+  scientific_name: Zika virus  # RNAcentral has only short fragments (partial sfRNA, PDB constructs, max 325 nt), no genome (checked 2026-09-25)
   ncbi_taxid: 64320
   strain: MR766  # ENA sample reports Zika virus MR766, virus identifier AY632535.2.
 

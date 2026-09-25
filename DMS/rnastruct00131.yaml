@@ -26,8 +26,6 @@ raw_data:
   repository: GEO
   accession: GSE290841
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290841
-  # 1% DMS on mitochondria isolated from HEK293T (STE buffer, pH 7.4); Induro RT (group II intron). GEO's
-  # characteristics say HEK 293, the protocol says HEK293T. The KO arm reuses the single WT untreated.
   run_accessions:
   - accession: GSM8823952
     sample_name: HEK293T_mito_WT_treated_r1

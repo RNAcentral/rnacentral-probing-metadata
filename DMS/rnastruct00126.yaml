@@ -35,43 +35,43 @@ raw_data:
   # - CLIP-READS libraries (Pab1 IP): not probing.
   run_accessions:
   - accession: GSM2525923
-    sample_name: Saccharomyces_cerevisiae_JGY2000_prep1_treated_r1
-    sample_group: Saccharomyces_cerevisiae_JGY2000  # JGY2000 in YPD, DMS in vivo
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep1_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD  # JGY2000 in YPD
     condition: treated
     replicate: 1
   - accession: GSM2525924
-    sample_name: Saccharomyces_cerevisiae_JGY2000_prep2_treated_r1
-    sample_group: Saccharomyces_cerevisiae_JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep2_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
     condition: treated
     replicate: 1
   - accession: GSM2525927
-    sample_name: Saccharomyces_cerevisiae_JGY2000_prep1_treated_r2
-    sample_group: Saccharomyces_cerevisiae_JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep1_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
     condition: treated
     replicate: 2
   - accession: GSM2525928
-    sample_name: Saccharomyces_cerevisiae_JGY2000_prep2_treated_r2
-    sample_group: Saccharomyces_cerevisiae_JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep2_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
     condition: treated
     replicate: 2
   - accession: GSM2525921
-    sample_name: Saccharomyces_cerevisiae_JGY2000_prep1_untreated_r1
-    sample_group: Saccharomyces_cerevisiae_JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep1_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
     condition: untreated
     replicate: 1
   - accession: GSM2525922
-    sample_name: Saccharomyces_cerevisiae_JGY2000_prep2_untreated_r1
-    sample_group: Saccharomyces_cerevisiae_JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep2_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
     condition: untreated
     replicate: 1
   - accession: GSM2525925
-    sample_name: Saccharomyces_cerevisiae_JGY2000_prep1_untreated_r2
-    sample_group: Saccharomyces_cerevisiae_JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep1_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
     condition: untreated
     replicate: 2
   - accession: GSM2525926
-    sample_name: Saccharomyces_cerevisiae_JGY2000_prep2_untreated_r2
-    sample_group: Saccharomyces_cerevisiae_JGY2000
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep2_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
     condition: untreated
     replicate: 2
   - accession: GSM2525930

@@ -2,7 +2,7 @@ dataset_id: rnastruct00077
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Bluetongue virus
+  scientific_name: Bluetongue virus  # no RNAcentral record >=60 nt at >=99% identity to this strain (release 27, checked 2026-09-25)
   ncbi_taxid: 40051
   strain: BTV-1  # Bluetongue virus serotype 1 (NCBI taxid 35327); segments FJ969719-FJ969728 as T7 transcripts.
 

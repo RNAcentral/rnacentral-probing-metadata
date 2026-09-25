@@ -2,7 +2,7 @@ dataset_id: rnastruct00136
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: West Nile virus
+  scientific_name: West Nile virus  # no RNAcentral record >=60 nt at >=99% identity to this strain (release 27, checked 2026-09-25)
   ncbi_taxid: 11082
   strain: NY99  # infectious clone of WNV NY99, GenBank AF404756
 

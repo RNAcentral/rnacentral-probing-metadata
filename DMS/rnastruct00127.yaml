@@ -27,26 +27,26 @@ raw_data:
   accession: GSE95788
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95788
   # Siblings from GSE95788: rnastruct00126 (S. cerevisiae DREADS), 00127 (D. hansenii), 00128 (K. lactis), 00129 (SHREADS/NAI).
-  # RT-stop library; the RT enzyme is not named in the paper, M-MLV family assumed. Cells spiked with S. pombe for normalisation.
+  # Cells spiked with S. pombe for normalisation.
   run_accessions:
   - accession: GSM2525940
-    sample_name: NCYC2572_treated_r1
-    sample_group: NCYC2572  # D. hansenii NCYC 2572, DMS in vivo
+    sample_name: Debaryomyces_hansenii_NCYC2572_treated_r1
+    sample_group: Debaryomyces_hansenii_NCYC2572  # D. hansenii NCYC 2572, DMS in vivo
     condition: treated
     replicate: 1
   - accession: GSM2525942
-    sample_name: NCYC2572_treated_r2
-    sample_group: NCYC2572
+    sample_name: Debaryomyces_hansenii_NCYC2572_treated_r2
+    sample_group: Debaryomyces_hansenii_NCYC2572
     condition: treated
     replicate: 2
   - accession: GSM2525939
-    sample_name: NCYC2572_untreated_r1
-    sample_group: NCYC2572
+    sample_name: Debaryomyces_hansenii_NCYC2572_untreated_r1
+    sample_group: Debaryomyces_hansenii_NCYC2572
     condition: untreated
     replicate: 1
   - accession: GSM2525941
-    sample_name: NCYC2572_untreated_r2
-    sample_group: NCYC2572
+    sample_name: Debaryomyces_hansenii_NCYC2572_untreated_r2
+    sample_group: Debaryomyces_hansenii_NCYC2572
     condition: untreated
     replicate: 2
 

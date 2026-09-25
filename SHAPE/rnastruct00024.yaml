@@ -2,7 +2,7 @@ dataset_id: rnastruct00024
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Rotavirus A
+  scientific_name: Rotavirus A  # RNAcentral has only PDB oligos (max 18 nt), no segments (checked 2026-09-25)
   ncbi_taxid: 28875
   strain: RF  # Paper reports bovine rotavirus A strain RF, G6P6[1].
 

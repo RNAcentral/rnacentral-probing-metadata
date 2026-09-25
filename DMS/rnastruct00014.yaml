@@ -2,7 +2,7 @@ dataset_id: rnastruct00014
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Influenza A virus
+  scientific_name: Influenza A virus  # no RNAcentral record >=60 nt at >=99% identity to this strain (release 27, checked 2026-09-25)
   ncbi_taxid: 11320
   strain: A/Puerto Rico/8/1934(H1N1)
 
