@@ -9,7 +9,7 @@ This repository stores metadata YAML files for chemical probing datasets (for ex
 To add a new dataset to this repository:
 
 1. Clone this repository to your local machine.
-2. Create a new branch from master with a descriptive name including “Add” (e.g. Add-new-shape-dataset).
+2. Create a new branch from main with a descriptive name including “Add” (e.g. Add-new-shape-dataset).
 3. Create a new YAML file (see section below) in the appropriate directory (for example `SHAPE/` or `DMS/`) and populate it according to the schema requirements.
 4. Open a pull request with that new YAML file.
 5. Wait for the GitHub Actions checks to validate the YAML.
@@ -26,7 +26,7 @@ A fully annotated template with inline field descriptions is available at [`docs
 
 2. Choose a dataset id that is a consecutive number from the last one in the repo (e.g. rnastruct00010). Check both DMS/ and SHAPE/ to find the latest id number.
 
-3. You must also include the metadata schema version (currently 1.0.0), the organism scientific_name and ncbi_taxid, the method (which can be SHAPE or DMS variants), principal (RT-stop or MaP), RT enzyme type (M-MLV or Group II intron), a publication DOI, and fill out the raw_data section. For viral datasets, use the common virus name used by NCBI Taxonomy rather than a scientific name, along with its NCBI Taxonomy ID. For viral datasets only, the strain field is also required.
+3. You must also include the metadata schema version (currently 1.0.0), the organism scientific_name and ncbi_taxid, the method (which can be SHAPE or DMS variants), the chemical probe (e.g. DMS, 1M7, NAI), principle (RT-stop or MaP), RT enzyme type (M-MLV or Group II intron), a publication DOI, and fill out the raw_data section. For viral datasets, use the common virus name used by NCBI Taxonomy rather than a scientific name, along with its NCBI Taxonomy ID. For viral datasets only, the strain field is also required.
 
 4. Each sample listed under run_accessions should include a biologically meaningful and distinguishable sample_name, along with sample_group (no white spaces), condition (one of untreated, treated, or denatured), and replicate (just a number). The sample accession id must be supported by nf-core/fetchngs (e.g. SRA, ENA, DDBJ, GEO; [see the fetchngs documentation for the full list](https://nf-co.re/fetchngs/1.13.0/docs/usage)).
 
@@ -35,7 +35,7 @@ A fully annotated template with inline field descriptions is available at [`docs
 
 6. The optional `rna_type` field describes what RNA fraction was captured for library preparation. Use one of `mRNA` (polyadenylated mRNA selected with oligo-dT), `total` (total or rRNA-depleted RNA, no poly-A selection), or `sRNA` (small RNA, typically <200 nt).
 
-7. If including an OBI id, use a valid term from the [Ontology for Biomedical Investigations](http://obi-ontology.org/) / [obi-ontology/obi](https://github.com/obi-ontology/obi). If the experimental context is provided, it must be one of in_vivo, in_vitro, denatured, ex_vivo, in_virio or ex_virio.
+7. If including an OBI id, use a valid term from the [Ontology for Biomedical Investigations](http://obi-ontology.org/) / [obi-ontology/obi](https://github.com/obi-ontology/obi). If the experimental context is provided, it must be one of in_vivo, in_vitro, denatured, ex_vivo, in_organello, in_virio or ex_virio.
 
 8. All other fields are optional and can be set to null if not available.
 
@@ -78,6 +78,7 @@ The required fields are:
 - `organism.scientific_name`, using the Latin name format for non-viral datasets and the common virus name used by NCBI Taxonomy for viral datasets
 - `organism.ncbi_taxid`, the NCBI Taxonomy ID as a plain integer (e.g. `9606`)
 - `experiment.method`, which must contain `SHAPE` or `DMS`
+- `experiment.chemical`, the probing reagent, which must be one of the reagents listed in the schema (e.g. `DMS`, `1M7`, `NAI`, `NAI-N3`, `2A3`)
 - `experiment.principle`, which must be `RT-stop` or `MaP`
 - `experiment.RT_enzyme`, which must be one of `M-MLV` or `Group II intron`
 - `publication.doi`
@@ -88,8 +89,8 @@ The required fields are:
 
 All other fields are optional and, if not known, can be `null`.
 
-For viral datasets the optional top-level field `strain` should be provided and should describe the strain hared by all samples in the dataset. This field is not required for non-viral datasets. If a viral study includes multiple strains create one YAML file per strain.
-The optional field `experiment.context`, when provided, must use one or more of: `in_vivo`, `in_vitro`, `ex_vivo`, `in_virio`, `ex_virio`, or `denatured`.
+For viral datasets the optional top-level field `strain` should be provided and should describe the strain shared by all samples in the dataset. This field is not required for non-viral datasets. If a viral study includes multiple strains create one YAML file per strain.
+The optional field `experiment.context`, when provided, must use one or more of: `in_vivo`, `in_vitro`, `ex_vivo`, `in_organello`, `in_virio`, `ex_virio`, or `denatured`. The `in_*` values mean the RNA was probed inside an intact compartment, with its proteins still bound: a cell (`in_vivo`), an isolated but functional organelle (`in_organello`) or a virus particle (`in_virio`). The `ex_*` values mean the RNA was extracted from that compartment first and probed outside it (`ex_vivo`, `ex_virio`), while `in_vitro` covers purified or transcribed RNA refolded from scratch.
 
 ## GitHub Actions checks
 

@@ -1,0 +1,92 @@
+dataset_id: rnastruct00086
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo, denatured]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2018.09.003
+  year: 2018
+
+raw_data:
+  repository: GEO
+  accession: GSE102069
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE102069
+  # Excluded: the unreplicated +/- puromycin pair at 72 hpi (GSM3262201/GSM3262202).
+  run_accessions:
+  - accession: GSM2722722
+    sample_name: HFF_uninfected_treated_r1
+    sample_group: HFF_uninfected
+    condition: treated
+    replicate: 1
+  - accession: GSM2722723
+    sample_name: HFF_uninfected_treated_r2
+    sample_group: HFF_uninfected
+    condition: treated
+    replicate: 2
+  - accession: GSM2722724
+    sample_name: HFF_uninfected_untreated_r1
+    sample_group: HFF_uninfected
+    condition: untreated
+    replicate: 1
+  - accession: GSM2722725
+    sample_name: HFF_uninfected_denatured_r1
+    sample_group: HFF_uninfected
+    condition: denatured
+    replicate: 1
+  - accession: GSM2722726
+    sample_name: HFF_infected_HCMV_5hr_treated_r1
+    sample_group: HFF_infected_HCMV_5hr
+    condition: treated
+    replicate: 1
+  - accession: GSM2722727
+    sample_name: HFF_infected_HCMV_5hr_treated_r2
+    sample_group: HFF_infected_HCMV_5hr
+    condition: treated
+    replicate: 2
+  - accession: GSM2722728
+    sample_name: HFF_infected_HCMV_24hr_treated_r1
+    sample_group: HFF_infected_HCMV_24hr
+    condition: treated
+    replicate: 1
+  - accession: GSM2722729
+    sample_name: HFF_infected_HCMV_24hr_treated_r2
+    sample_group: HFF_infected_HCMV_24hr
+    condition: treated
+    replicate: 2
+  - accession: GSM2722730
+    sample_name: HFF_infected_HCMV_72hr_treated_r1
+    sample_group: HFF_infected_HCMV_72hr
+    condition: treated
+    replicate: 1
+  - accession: GSM2722731
+    sample_name: HFF_infected_HCMV_72hr_treated_r2
+    sample_group: HFF_infected_HCMV_72hr
+    condition: treated
+    replicate: 2
+  - accession: GSM2722732
+    sample_name: HFF_infected_HCMV_72hr_untreated_r1
+    sample_group: HFF_infected_HCMV_72hr
+    condition: untreated
+    replicate: 1
+  - accession: GSM2722733
+    sample_name: HFF_infected_HCMV_72hr_denatured_r1
+    sample_group: HFF_infected_HCMV_72hr
+    condition: denatured
+    replicate: 1
+
+comment: null

@@ -2,7 +2,7 @@ dataset_id: rnastruct00052
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Zika virus
+  scientific_name: Zika virus  # RNAcentral has only short fragments (partial sfRNA, PDB constructs, max 325 nt), no genome (checked 2026-09-25)
   ncbi_taxid: 64320
   strain: BeH815744  # Brazil/Polynesia strain; GenBank ID KU365780.
 
@@ -29,48 +29,48 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106483
   run_accessions:
   - accession: GSM2838779
-    sample_name: zika_brazil_treated_r1
-    sample_group: zika_BeH815744
+    sample_name: Zika_BeH815744_treated_r1
+    sample_group: Zika_BeH815744
     condition: treated
     replicate: 1
   - accession: GSM2838780
-    sample_name: zika_brazil_untreated_r1
-    sample_group: zika_BeH815744
+    sample_name: Zika_BeH815744_untreated_r1
+    sample_group: Zika_BeH815744
     condition: untreated
     replicate: 1
   - accession: GSM2838781
-    sample_name: zika_brazil_denatured_r1
-    sample_group: zika_BeH815744
+    sample_name: Zika_BeH815744_denatured_r1
+    sample_group: Zika_BeH815744
     condition: denatured
     replicate: 1
   - accession: GSM2838782
-    sample_name: zika_brazil_treated_r2
-    sample_group: zika_BeH815744
+    sample_name: Zika_BeH815744_treated_r2
+    sample_group: Zika_BeH815744
     condition: treated
     replicate: 2
   - accession: GSM2838783
-    sample_name: zika_brazil_untreated_r2
-    sample_group: zika_BeH815744
+    sample_name: Zika_BeH815744_untreated_r2
+    sample_group: Zika_BeH815744
     condition: untreated
     replicate: 2
   - accession: GSM2838784
-    sample_name: zika_brazil_denatured_r2
-    sample_group: zika_BeH815744
+    sample_name: Zika_BeH815744_denatured_r2
+    sample_group: Zika_BeH815744
     condition: denatured
     replicate: 2
   - accession: GSM2838785
-    sample_name: zika_brazil_treated_r3
-    sample_group: zika_BeH815744
+    sample_name: Zika_BeH815744_treated_r3
+    sample_group: Zika_BeH815744
     condition: treated
     replicate: 3
   - accession: GSM2838786
-    sample_name: zika_brazil_untreated_r3
-    sample_group: zika_BeH815744
+    sample_name: Zika_BeH815744_untreated_r3
+    sample_group: Zika_BeH815744
     condition: untreated
     replicate: 3
   - accession: GSM2838787
-    sample_name: zika_brazil_denatured_r3
-    sample_group: zika_BeH815744
+    sample_name: Zika_BeH815744_denatured_r3
+    sample_group: Zika_BeH815744
     condition: denatured
     replicate: 3
 

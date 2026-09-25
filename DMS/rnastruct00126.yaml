@@ -1,0 +1,98 @@
+dataset_id: rnastruct00126
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Saccharomyces cerevisiae
+  ncbi_taxid: 4932
+
+experiment:
+  method: DREADS  # DMS RT-stops linked to individual 3' mRNA isoforms by paired-end 3'READS sequencing
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo, in_vitro]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2018.08.044
+  year: 2018
+
+raw_data:
+  repository: GEO
+  accession: GSE95788
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95788
+  # Siblings from GSE95788: rnastruct00126 (S. cerevisiae DREADS), 00127 (D. hansenii), 00128 (K. lactis), 00129 (SHREADS/NAI).
+  # Cells spiked with S. pombe for normalisation.
+  # Excluded from this curation:
+  # - GSM2525943-GSM2525954 (JYAC7, JYAC2): S. cerevisiae carrying D. hansenii / K. lactis YAC segments; needs a
+  #   combined reference.
+  # - GSM3389529-GSM3389532 (SOD1 3' UTR randomised plasmid library): construct.
+  # - CLIP-READS libraries (Pab1 IP): not probing.
+  run_accessions:
+  - accession: GSM2525923
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep1_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD  # JGY2000 in YPD
+    condition: treated
+    replicate: 1
+  - accession: GSM2525924
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep2_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
+    condition: treated
+    replicate: 1
+  - accession: GSM2525927
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep1_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
+    condition: treated
+    replicate: 2
+  - accession: GSM2525928
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep2_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
+    condition: treated
+    replicate: 2
+  - accession: GSM2525921
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep1_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
+    condition: untreated
+    replicate: 1
+  - accession: GSM2525922
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep2_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
+    condition: untreated
+    replicate: 1
+  - accession: GSM2525925
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep1_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
+    condition: untreated
+    replicate: 2
+  - accession: GSM2525926
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_prep2_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
+    condition: untreated
+    replicate: 2
+  - accession: GSM2525930
+    sample_name: Saccharomyces_cerevisiae_JGY2000_invitro_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_invitro  # total RNA denatured, refolded and DMS-probed in vitro
+    condition: treated
+    replicate: 1
+  - accession: GSM2525932
+    sample_name: Saccharomyces_cerevisiae_JGY2000_invitro_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_invitro
+    condition: treated
+    replicate: 2
+  - accession: GSM2525929
+    sample_name: Saccharomyces_cerevisiae_JGY2000_invitro_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_invitro
+    condition: untreated
+    replicate: 1
+  - accession: GSM2525931
+    sample_name: Saccharomyces_cerevisiae_JGY2000_invitro_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_invitro
+    condition: untreated
+    replicate: 2
+
+comment: null

@@ -1,0 +1,93 @@
+dataset_id: rnastruct00130
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Saccharomyces cerevisiae
+  ncbi_taxid: 4932
+
+experiment:
+  method: DREADS  # DMS RT-stops linked to individual 3' mRNA isoforms by paired-end 3'READS sequencing
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1073/pnas.2301117120
+  year: 2023
+
+raw_data:
+  repository: GEO
+  accession: GSE228123
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228123
+  # DREADS under three growth conditions; the YPD baseline is rnastruct00126.
+  # Cells spiked with S. pombe for normalisation.
+  run_accessions:
+  - accession: GSM7114822
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPGal_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPGal  # rich medium with galactose
+    condition: treated
+    replicate: 1
+  - accession: GSM7114824
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPGal_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPGal
+    condition: treated
+    replicate: 2
+  - accession: GSM7114821
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPGal_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPGal
+    condition: untreated
+    replicate: 1
+  - accession: GSM7114823
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPGal_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPGal
+    condition: untreated
+    replicate: 2
+  - accession: GSM7114826
+    sample_name: Saccharomyces_cerevisiae_JGY2000_minimal_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_minimal  # minimal medium with glucose
+    condition: treated
+    replicate: 1
+  - accession: GSM7114828
+    sample_name: Saccharomyces_cerevisiae_JGY2000_minimal_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_minimal
+    condition: treated
+    replicate: 2
+  - accession: GSM7114825
+    sample_name: Saccharomyces_cerevisiae_JGY2000_minimal_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_minimal
+    condition: untreated
+    replicate: 1
+  - accession: GSM7114827
+    sample_name: Saccharomyces_cerevisiae_JGY2000_minimal_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_minimal
+    condition: untreated
+    replicate: 2
+  - accession: GSM7114830
+    sample_name: Saccharomyces_cerevisiae_JGY2000_sorbitol_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_sorbitol  # rich medium with sorbitol (osmotic stress)
+    condition: treated
+    replicate: 1
+  - accession: GSM7114832
+    sample_name: Saccharomyces_cerevisiae_JGY2000_sorbitol_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_sorbitol
+    condition: treated
+    replicate: 2
+  - accession: GSM7114829
+    sample_name: Saccharomyces_cerevisiae_JGY2000_sorbitol_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_sorbitol
+    condition: untreated
+    replicate: 1
+  - accession: GSM7114831
+    sample_name: Saccharomyces_cerevisiae_JGY2000_sorbitol_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_sorbitol
+    condition: untreated
+    replicate: 2
+
+comment: null

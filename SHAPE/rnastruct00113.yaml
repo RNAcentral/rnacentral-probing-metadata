@@ -1,0 +1,72 @@
+dataset_id: rnastruct00113
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Dengue virus
+  ncbi_taxid: 12637
+  strain: DV1-WP75  # DENV serotype 1, WHO reference strain (Western Pacific); GenBank AY145121.
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003888
+  chemical: 2A3
+  RT_enzyme: M-MLV
+  context: [in_vivo, in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1128/jvi.00898-26
+  year: 2026
+
+raw_data:
+  repository: SRA
+  accession: PRJNA1443375
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1443375
+  run_accessions:
+  - accession: SRR37896970
+    sample_name: Dengue_DV1-WP75_treated_r1
+    sample_group: Dengue_DV1-WP75  # sfRNA from infected A549 cells (MOI 2), probed in cells at peak sfRNA
+    condition: treated
+    replicate: 1
+  - accession: SRR37896979
+    sample_name: Dengue_DV1-WP75_treated_r2
+    sample_group: Dengue_DV1-WP75
+    condition: treated
+    replicate: 2
+  - accession: SRR37896988
+    sample_name: Dengue_DV1-WP75_untreated_r1
+    sample_group: Dengue_DV1-WP75
+    condition: untreated
+    replicate: 1
+  - accession: SRR37896980
+    sample_name: Dengue_DV1-WP75_untreated_r2
+    sample_group: Dengue_DV1-WP75
+    condition: untreated
+    replicate: 2
+  - accession: SRR37896999
+    sample_name: Dengue_DV1-WP75_invitro_treated_r1
+    sample_group: Dengue_DV1-WP75_invitro  # in vitro-transcribed sfRNA, XRN1-digested and refolded
+    condition: treated
+    replicate: 1
+  - accession: SRR37896981
+    sample_name: Dengue_DV1-WP75_invitro_treated_r2
+    sample_group: Dengue_DV1-WP75_invitro
+    condition: treated
+    replicate: 2
+  - accession: SRR37897000
+    sample_name: Dengue_DV1-WP75_invitro_untreated_r1
+    sample_group: Dengue_DV1-WP75_invitro
+    condition: untreated
+    replicate: 1
+  - accession: SRR37896982
+    sample_name: Dengue_DV1-WP75_invitro_untreated_r2
+    sample_group: Dengue_DV1-WP75_invitro
+    condition: untreated
+    replicate: 2
+
+comment: null

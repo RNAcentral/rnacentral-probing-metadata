@@ -1,0 +1,123 @@
+dataset_id: rnastruct00092
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: fSHAPE
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  RT_enzyme: M-MLV
+  context: [in_vivo, in_vitro]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2020.11.014
+  year: 2020
+
+raw_data:
+  repository: GEO
+  accession: GSE149767
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149767
+  # Excluded from this curation:
+  # The 22 SHAPE-eCLIP / fSHAPE-eCLIP IP and Input libraries.
+  run_accessions:
+  - accession: GSM4512071
+    sample_name: K562_treated_r1
+    sample_group: K562
+    condition: treated
+    replicate: 1
+  - accession: GSM4512072
+    sample_name: K562_treated_r2
+    sample_group: K562
+    condition: treated
+    replicate: 2
+  - accession: GSM4795047
+    sample_name: K562_untreated_r1
+    sample_group: K562
+    condition: untreated
+    replicate: 1
+  - accession: GSM4795048
+    sample_name: K562_untreated_r2
+    sample_group: K562
+    condition: untreated
+    replicate: 2
+  - accession: GSM4512073
+    sample_name: K562_invitro_treated_r1
+    sample_group: K562_invitro
+    condition: treated
+    replicate: 1
+  - accession: GSM4512074
+    sample_name: K562_invitro_treated_r2
+    sample_group: K562_invitro
+    condition: treated
+    replicate: 2
+  - accession: GSM4512075
+    sample_name: HepG2_treated_r1
+    sample_group: HepG2
+    condition: treated
+    replicate: 1
+  - accession: GSM4512076
+    sample_name: HepG2_treated_r2
+    sample_group: HepG2
+    condition: treated
+    replicate: 2
+  - accession: GSM4795049
+    sample_name: HepG2_untreated_r1
+    sample_group: HepG2
+    condition: untreated
+    replicate: 1
+  - accession: GSM4795050
+    sample_name: HepG2_untreated_r2
+    sample_group: HepG2
+    condition: untreated
+    replicate: 2
+  - accession: GSM4512077
+    sample_name: HepG2_invitro_treated_r1
+    sample_group: HepG2_invitro
+    condition: treated
+    replicate: 1
+  - accession: GSM4512078
+    sample_name: HepG2_invitro_treated_r2
+    sample_group: HepG2_invitro
+    condition: treated
+    replicate: 2
+  - accession: GSM4512079
+    sample_name: HeLa_treated_r1
+    sample_group: HeLa
+    condition: treated
+    replicate: 1
+  - accession: GSM4512080
+    sample_name: HeLa_treated_r2
+    sample_group: HeLa
+    condition: treated
+    replicate: 2
+  - accession: GSM4795051
+    sample_name: HeLa_untreated_r1
+    sample_group: HeLa
+    condition: untreated
+    replicate: 1
+  - accession: GSM4795052
+    sample_name: HeLa_untreated_r2
+    sample_group: HeLa
+    condition: untreated
+    replicate: 2
+  - accession: GSM4512081
+    sample_name: HeLa_invitro_treated_r1
+    sample_group: HeLa_invitro
+    condition: treated
+    replicate: 1
+  - accession: GSM4512082
+    sample_name: HeLa_invitro_treated_r2
+    sample_group: HeLa_invitro
+    condition: treated
+    replicate: 2
+
+comment: null

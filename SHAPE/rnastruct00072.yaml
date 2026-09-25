@@ -1,0 +1,64 @@
+dataset_id: rnastruct00072
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: SARS-CoV-2
+  ncbi_taxid: 2697049
+  strain: EPI_ISL_574502  # Paper reports WT as hCoV-19/Singapore/1017/2020 (clade L, lineage B), GISAID EPI_ISL_574502; GEO data_processing lists EPI_ISL_407987 instead.
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo, denatured]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-025-63297-2
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE279203
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279203
+  # In-cell SHAPE-MaP on infected E6 TMPRSS2 Vero cells. DMSO is the NAI vehicle (untreated)
+  # GSE279203 holds five variants, one per file: rnastruct00101, rnastruct00102, rnastruct00103, rnastruct00104 cover the other arms.
+  run_accessions:
+  - accession: GSM8564205
+    sample_name: SARSCoV2_WT_NAI_treated_r1
+    sample_group: SARS-CoV-2_WT
+    condition: treated
+    replicate: 1
+  - accession: GSM8564206
+    sample_name: SARSCoV2_WT_NAI_treated_r2
+    sample_group: SARS-CoV-2_WT
+    condition: treated
+    replicate: 2
+  - accession: GSM8564207
+    sample_name: SARSCoV2_WT_DMSO_untreated_r1
+    sample_group: SARS-CoV-2_WT
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564208
+    sample_name: SARSCoV2_WT_DMSO_untreated_r2
+    sample_group: SARS-CoV-2_WT
+    condition: untreated
+    replicate: 2
+  - accession: GSM8564203
+    sample_name: SARSCoV2_WT_unmodified_denatured_r1
+    sample_group: SARS-CoV-2_WT
+    condition: denatured
+    replicate: 1
+  - accession: GSM8564204
+    sample_name: SARSCoV2_WT_unmodified_denatured_r2
+    sample_group: SARS-CoV-2_WT
+    condition: denatured
+    replicate: 2
+
+comment: null

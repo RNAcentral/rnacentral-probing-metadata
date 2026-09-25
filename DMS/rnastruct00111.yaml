@@ -1,0 +1,66 @@
+dataset_id: rnastruct00111
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: tNet-MaPseq  # in vivo DMS-MaP of nascent RNA: RNA pol II immunoprecipitated from nuclei, SSII/Mn2+ RT
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2021.01.040
+  year: 2021
+
+raw_data:
+  repository: GEO
+  accession: GSE149018
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149018
+  # Kept as partial replication: WT pol II has one DMS replicate (GEO has no rep2), the slow mutant has three;
+  # each arm's single DMSO control is reused across its replicates.
+  # Excluded from this curation:
+  # - tNETseq libraries (nascent RNA-seq, no probe) and their re-analysed copies.
+  # - tNet-PIPseq libraries (RNase One / RNase V1 enzymatic probing, not chemical).
+  run_accessions:
+  - accession: GSM4487515
+    sample_name: HEK293_WT_treated_r1
+    sample_group: HEK293_WT  # HEK293 expressing alpha-amanitin-resistant wild-type Rpb1, endogenous pol II inhibited
+    condition: treated
+    replicate: 1
+  - accession: GSM4487520
+    sample_name: HEK293_WT_untreated_r1
+    sample_group: HEK293_WT
+    condition: untreated
+    replicate: 1
+  - accession: GSM4487517
+    sample_name: HEK293_R749H_treated_r1
+    sample_group: HEK293_R749H  # alpha-amanitin-resistant Rpb1 R749H, about 3-fold slower elongation
+    condition: treated
+    replicate: 1
+  - accession: GSM4487518
+    sample_name: HEK293_R749H_treated_r2
+    sample_group: HEK293_R749H
+    condition: treated
+    replicate: 2
+  - accession: GSM4487519
+    sample_name: HEK293_R749H_treated_r3
+    sample_group: HEK293_R749H
+    condition: treated
+    replicate: 3
+  - accession: GSM4487521
+    sample_name: HEK293_R749H_untreated_r1
+    sample_group: HEK293_R749H
+    condition: untreated
+    replicate: 1
+
+comment: null

@@ -1,0 +1,57 @@
+dataset_id: rnastruct00119
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: HIV  # RNAcentral has only partial ncRNAs (antisense, pre-miRNA, max 1.2 kb), no genome (checked 2026-09-25)
+  ncbi_taxid: 11676
+  strain: NL4-3  # HIV-1 NL4-3 (VSV-G-pseudotyped, delta Env); reference AF324493.
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41594-024-01468-3
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE244468
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244468
+  # Native viral region: the gag-pol ribosomal frameshift site of HIV-1 genomic RNA in infected cells,
+  # The pipeline's genome key is human_immunodeficiency_virus_1_nl4_3, which "HIV (NL4-3)" does not match:
+  # pass --fasta with AF324493.2.
+  # Excluded from this curation:
+  # - Ribosome profiling, disome-seq, RNA-seq and nanopore isoform libraries in GSE244468.
+  run_accessions:
+  - accession: GSM8656243
+    sample_name: HIV-1_NL4-3_treated_r1
+    sample_group: HIV-1_NL4-3  # HIV-1-infected SupT1 T cells, 24 h post infection
+    condition: treated
+    replicate: 1
+  - accession: GSM8656244
+    sample_name: HIV-1_NL4-3_treated_r2
+    sample_group: HIV-1_NL4-3
+    condition: treated
+    replicate: 2
+  - accession: GSM8656245
+    sample_name: HIV-1_NL4-3_untreated_r1
+    sample_group: HIV-1_NL4-3
+    condition: untreated
+    replicate: 1
+  - accession: GSM8656246
+    sample_name: HIV-1_NL4-3_untreated_r2
+    sample_group: HIV-1_NL4-3
+    condition: untreated
+    replicate: 2
+
+comment: null

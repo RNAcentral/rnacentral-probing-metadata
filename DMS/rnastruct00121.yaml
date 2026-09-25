@@ -1,0 +1,63 @@
+dataset_id: rnastruct00121
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Arabidopsis thaliana
+  ncbi_taxid: 3702
+
+experiment:
+  method: Structure-seq
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: 7.5
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1093/bioinformatics/btw611
+  year: 2017
+
+raw_data:
+  repository: SRA
+  accession: SRP066985
+  landing_page: https://www.ncbi.nlm.nih.gov/sra/SRP066985
+  # FoldAtlas in vivo Structure-seq of Col-0 seedlings (0.75% DMS, 15 min, HEPES pH 7.5); an independent
+  # deposit from Ding 2014 (rnastruct00120).
+  run_accessions:
+  - accession: SRR2973578
+    sample_name: Arabidopsis_thaliana_Col-0_treated_r1
+    sample_group: Arabidopsis_thaliana_Col-0  # 5-day-old etiolated Col-0 seedlings, DMS in vivo
+    condition: treated
+    replicate: 1
+  - accession: SRR2973579
+    sample_name: Arabidopsis_thaliana_Col-0_treated_r2
+    sample_group: Arabidopsis_thaliana_Col-0
+    condition: treated
+    replicate: 2
+  - accession: SRR2973580
+    sample_name: Arabidopsis_thaliana_Col-0_treated_r3
+    sample_group: Arabidopsis_thaliana_Col-0
+    condition: treated
+    replicate: 3
+  - accession: SRR2973575
+    sample_name: Arabidopsis_thaliana_Col-0_untreated_r1
+    sample_group: Arabidopsis_thaliana_Col-0
+    condition: untreated
+    replicate: 1
+  - accession: SRR2973576
+    sample_name: Arabidopsis_thaliana_Col-0_untreated_r2
+    sample_group: Arabidopsis_thaliana_Col-0
+    condition: untreated
+    replicate: 2
+  - accession: SRR2973577
+    sample_name: Arabidopsis_thaliana_Col-0_untreated_r3
+    sample_group: Arabidopsis_thaliana_Col-0
+    condition: untreated
+    replicate: 3
+
+comment: null

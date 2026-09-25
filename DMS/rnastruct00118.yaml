@@ -1,0 +1,74 @@
+dataset_id: rnastruct00118
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Human bocavirus  # no sequences for this virus in RNAcentral (checked 2026-09-25)
+  ncbi_taxid: 329641
+  strain: Salvador1  # HBoV1 isolate Salvador1 (infectious clone pIHBoV1), GenBank JQ923422.1; exact taxid 689403 ("Human bocavirus 1") has a trailing digit the scientific_name pattern rejects.
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo, in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1073/pnas.2320782121
+  year: 2024
+
+raw_data:
+  repository: SRA
+  accession: PRJNA955716
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA955716
+  # Native viral region: BocaSR, the 140-nt bocavirus-encoded small RNA, RT-PCR amplified (TGIRT RT as in
+  # Zubradt 2017, at 55C). Bocavirus is not in merge_metadata.py
+  run_accessions:
+  - accession: SRR24170475
+    sample_name: Human_bocavirus_Salvador1_treated_r1
+    sample_group: Human_bocavirus_Salvador1  # HBoV1-infected human airway epithelium (HAE-ALI), probed in cells
+    condition: treated
+    replicate: 1
+  - accession: SRR24170474
+    sample_name: Human_bocavirus_Salvador1_treated_r2
+    sample_group: Human_bocavirus_Salvador1
+    condition: treated
+    replicate: 2
+  - accession: SRR24170477
+    sample_name: Human_bocavirus_Salvador1_untreated_r1
+    sample_group: Human_bocavirus_Salvador1
+    condition: untreated
+    replicate: 1
+  - accession: SRR24170476
+    sample_name: Human_bocavirus_Salvador1_untreated_r2
+    sample_group: Human_bocavirus_Salvador1
+    condition: untreated
+    replicate: 2
+  - accession: SRR24170471
+    sample_name: Human_bocavirus_Salvador1_invitro_treated_r1
+    sample_group: Human_bocavirus_Salvador1_invitro  # BocaSR probed in vitro
+    condition: treated
+    replicate: 1
+  - accession: SRR24170470
+    sample_name: Human_bocavirus_Salvador1_invitro_treated_r2
+    sample_group: Human_bocavirus_Salvador1_invitro
+    condition: treated
+    replicate: 2
+  - accession: SRR24170473
+    sample_name: Human_bocavirus_Salvador1_invitro_untreated_r1
+    sample_group: Human_bocavirus_Salvador1_invitro
+    condition: untreated
+    replicate: 1
+  - accession: SRR24170472
+    sample_name: Human_bocavirus_Salvador1_invitro_untreated_r2
+    sample_group: Human_bocavirus_Salvador1_invitro
+    condition: untreated
+    replicate: 2
+
+comment: null

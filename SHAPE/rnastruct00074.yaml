@@ -1,0 +1,47 @@
+dataset_id: rnastruct00074
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Porcine epidemic diarrhea virus  # no RNAcentral record >=60 nt at >=99% identity to this strain (release 27, checked 2026-09-25)
+  ncbi_taxid: 28295
+  strain: AJ1102  # GenBank MK584552.1; probed in infected Vero E6 cells.
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.7554/elife.103923
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE271098
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271098
+  run_accessions:
+  - accession: SRR29651914
+    sample_name: Porcine_epidemic_diarrhea_virus_AJ1102_NAI_treated_r1
+    sample_group: Porcine_epidemic_diarrhea_virus_AJ1102
+    condition: treated
+    replicate: 1
+  - accession: SRR29651913
+    sample_name: Porcine_epidemic_diarrhea_virus_AJ1102_NAI_treated_r2
+    sample_group: Porcine_epidemic_diarrhea_virus_AJ1102
+    condition: treated
+    replicate: 2
+  - accession: SRR29651912
+    sample_name: Porcine_epidemic_diarrhea_virus_AJ1102_DMSO_untreated_r1
+    sample_group: Porcine_epidemic_diarrhea_virus_AJ1102
+    condition: untreated
+    replicate: 1
+
+comment: null

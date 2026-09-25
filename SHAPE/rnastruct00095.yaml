@@ -1,0 +1,55 @@
+dataset_id: rnastruct00095
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: icSHAPE
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/nature11247
+  year: 2012
+
+raw_data:
+  repository: GEO
+  accession: GSE143102
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143102
+  # ENCODE ENCSR836VQU (Spitale lab); its libraries are polyadenylated mRNA, hence rna_type mRNA.
+  # The DMSO controls live in GSE142891, not GSE143102; both are listed below as untreated runs.
+  # Do NOT expand GSE143102 via its SRA project - it resolves to the whole ENCODE BioProject
+  # (57k runs). Fetch the listed GSMs directly.
+  run_accessions:
+  - accession: GSM4250720
+    sample_name: GM12878_treated_r1
+    sample_group: GM12878
+    condition: treated
+    replicate: 1
+  - accession: GSM4250721
+    sample_name: GM12878_treated_r2
+    sample_group: GM12878
+    condition: treated
+    replicate: 2
+  - accession: GSM4247180
+    sample_name: GM12878_untreated_r1
+    sample_group: GM12878
+    condition: untreated
+    replicate: 1
+  - accession: GSM4247181
+    sample_name: GM12878_untreated_r2
+    sample_group: GM12878
+    condition: untreated
+    replicate: 2
+
+comment: null

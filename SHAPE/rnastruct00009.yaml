@@ -2,7 +2,7 @@ dataset_id: rnastruct00009
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Zika virus
+  scientific_name: Zika virus  # RNAcentral has only short fragments (partial sfRNA, PDB constructs, max 325 nt), no genome (checked 2026-09-25)
   ncbi_taxid: 64320
   strain: MR766  # ENA sample reports Zika virus MR766, virus identifier AY632535.2.
 
@@ -30,32 +30,32 @@ raw_data:
   run_accessions:
   - accession: ERX2804091
     sample_name: Zika_MR766_in_vivo_untreated_r1
-    sample_group: ZIKV_MR766_in_vivo
+    sample_group: Zika_MR766_in_vivo
     condition: untreated
     replicate: 1
   - accession: ERX2804092
     sample_name: Zika_MR766_in_vivo_untreated_r2
-    sample_group: ZIKV_MR766_in_vivo
+    sample_group: Zika_MR766_in_vivo
     condition: untreated
     replicate: 2
   - accession: ERX2804093
     sample_name: Zika_MR766_in_vivo_treated_r1
-    sample_group: ZIKV_MR766_in_vivo
+    sample_group: Zika_MR766_in_vivo
     condition: treated
     replicate: 1
   - accession: ERX2804094
     sample_name: Zika_MR766_in_vivo_treated_r2
-    sample_group: ZIKV_MR766_in_vivo
+    sample_group: Zika_MR766_in_vivo
     condition: treated
     replicate: 2
   - accession: ERX2804095
     sample_name: Zika_MR766_in_vitro_treated_r1
-    sample_group: ZIKV_MR766_in_vitro
+    sample_group: Zika_MR766_in_vitro
     condition: treated
     replicate: 1
   - accession: ERX2804096
     sample_name: Zika_MR766_in_vitro_treated_r2
-    sample_group: ZIKV_MR766_in_vitro
+    sample_group: Zika_MR766_in_vitro
     condition: treated
     replicate: 2
 

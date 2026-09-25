@@ -26,51 +26,52 @@ raw_data:
   repository: GEO
   accession: GSE117840
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE117840
+  # Kept as a special case: one mESC sample fractionated into chromatin, nucleoplasm and cytoplasm, no biological replicates.
   run_accessions:
   - accession: GSM3310477
-    sample_name: mESC_chromatin_untreated  # chromatin: nascent RNA still associated with chromosomal DNA
+    sample_name: mESC_chromatin_vivo_untreated_r1  # chromatin: nascent RNA still associated with chromosomal DNA
     sample_group: mESC_chromatin_vivo
     condition: untreated
     replicate: 1
   - accession: GSM3310478
-    sample_name: mESC_chromatin_in_vivo
+    sample_name: mESC_chromatin_vivo_treated_r1
     sample_group: mESC_chromatin_vivo
     condition: treated
     replicate: 1
   - accession: GSM3310479
-    sample_name: mESC_chromatin_in_vitro
+    sample_name: mESC_chromatin_vitro_treated_r1
     sample_group: mESC_chromatin_vitro
     condition: treated
     replicate: 1
   - accession: GSM3310480
-    sample_name: mESC_nucleoplasm_untreated  # nucleoplasm: RNA free in the nucleus, post-transcriptional but pre-export
+    sample_name: mESC_nucleoplasm_vivo_untreated_r1  # nucleoplasm: RNA free in the nucleus, post-transcriptional but pre-export
     sample_group: mESC_nucleoplasm_vivo
     condition: untreated
     replicate: 1
   - accession: GSM3310481
-    sample_name: mESC_nucleoplasm_in_vivo
+    sample_name: mESC_nucleoplasm_vivo_treated_r1
     sample_group: mESC_nucleoplasm_vivo
     condition: treated
     replicate: 1
   - accession: GSM3310482
-    sample_name: mESC_nucleoplasm_in_vitro
+    sample_name: mESC_nucleoplasm_vitro_treated_r1
     sample_group: mESC_nucleoplasm_vitro
     condition: treated
     replicate: 1
   - accession: GSM3310483
-    sample_name: mESC_cytoplasm_untreated  # cytoplasm: mature exported RNA
+    sample_name: mESC_cytoplasm_vivo_untreated_r1  # cytoplasm: mature exported RNA
     sample_group: mESC_cytoplasm_vivo
     condition: untreated
     replicate: 1
   - accession: GSM3310484
-    sample_name: mESC_cytoplasm_in_vivo
+    sample_name: mESC_cytoplasm_vivo_treated_r1
     sample_group: mESC_cytoplasm_vivo
     condition: treated
     replicate: 1
   - accession: GSM3310485
-    sample_name: mESC_cytoplasm_in_vitro
+    sample_name: mESC_cytoplasm_vitro_treated_r1
     sample_group: mESC_cytoplasm_vitro
     condition: treated
     replicate: 1
 
-comment: null, same sample fractionated
+comment: null

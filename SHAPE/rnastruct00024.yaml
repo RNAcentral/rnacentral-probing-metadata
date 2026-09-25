@@ -2,7 +2,7 @@ dataset_id: rnastruct00024
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Rotavirus A
+  scientific_name: Rotavirus A  # RNAcentral has only PDB oligos (max 18 nt), no segments (checked 2026-09-25)
   ncbi_taxid: 28875
   strain: RF  # Paper reports bovine rotavirus A strain RF, G6P6[1].
 
@@ -29,81 +29,81 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=791398
   # S1011 and S56 are segment-specific transcript pools; Total is the full 11-segment transcriptome. Segment-specific pools are grouped with matching Total rows.
   # 5/10/20uM labels indicate NSP2 concentration; NSP2 is rotavirus non-structural protein 2, an RNA chaperone involved in genome packaging.
-  # cell_line includes NSP2 concentration because downstream grouping uses cell_line + condition + replicate.
+  # Each NSP2 concentration is its own sample_group (a titration, not replicates); the three pools share replicate 1.
   run_accessions:
   - accession: SRX13476233
-    sample_name: RF_S10_S11_no_NSP2_untreated
-    sample_group: RVA_RF_no_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_no_NSP2_in_vitro_S10_S11_untreated_r1
+    sample_group: Rotavirus_A_RF_no_NSP2_in_vitro
     condition: untreated
     replicate: 1
   - accession: SRX13476232
-    sample_name: RF_S10_S11_20uM_NSP2_treated
-    sample_group: RVA_RF_20uM_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_20uM_NSP2_in_vitro_S10_S11_treated_r1
+    sample_group: Rotavirus_A_RF_20uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476231
-    sample_name: RF_S10_S11_10uM_NSP2_treated
-    sample_group: RVA_RF_10uM_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_10uM_NSP2_in_vitro_S10_S11_treated_r1
+    sample_group: Rotavirus_A_RF_10uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476230
-    sample_name: RF_S10_S11_5uM_NSP2_treated
-    sample_group: RVA_RF_5uM_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_5uM_NSP2_in_vitro_S10_S11_treated_r1
+    sample_group: Rotavirus_A_RF_5uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476229
-    sample_name: RF_S10_S11_no_NSP2_treated
-    sample_group: RVA_RF_no_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_no_NSP2_in_vitro_S10_S11_treated_r1
+    sample_group: Rotavirus_A_RF_no_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476228
-    sample_name: RF_total_no_NSP2_untreated
-    sample_group: RVA_RF_no_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_no_NSP2_in_vitro_total_untreated_r1
+    sample_group: Rotavirus_A_RF_no_NSP2_in_vitro
     condition: untreated
     replicate: 1
   - accession: SRX13476227
-    sample_name: RF_total_20uM_NSP2_treated
-    sample_group: RVA_RF_20uM_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_20uM_NSP2_in_vitro_total_treated_r1
+    sample_group: Rotavirus_A_RF_20uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476226
-    sample_name: RF_total_10uM_NSP2_treated
-    sample_group: RVA_RF_10uM_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_10uM_NSP2_in_vitro_total_treated_r1
+    sample_group: Rotavirus_A_RF_10uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476225
-    sample_name: RF_S5_S6_no_NSP2_untreated
-    sample_group: RVA_RF_no_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_no_NSP2_in_vitro_S5_S6_untreated_r1
+    sample_group: Rotavirus_A_RF_no_NSP2_in_vitro
     condition: untreated
     replicate: 1
   - accession: SRX13476224
-    sample_name: RF_S5_S6_20uM_NSP2_treated
-    sample_group: RVA_RF_20uM_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_20uM_NSP2_in_vitro_S5_S6_treated_r1
+    sample_group: Rotavirus_A_RF_20uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476223
-    sample_name: RF_S5_S6_10uM_NSP2_treated
-    sample_group: RVA_RF_10uM_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_10uM_NSP2_in_vitro_S5_S6_treated_r1
+    sample_group: Rotavirus_A_RF_10uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476222
-    sample_name: RF_S5_S6_5uM_NSP2_treated
-    sample_group: RVA_RF_5uM_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_5uM_NSP2_in_vitro_S5_S6_treated_r1
+    sample_group: Rotavirus_A_RF_5uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476221
-    sample_name: RF_S5_S6_no_NSP2_treated
-    sample_group: RVA_RF_no_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_no_NSP2_in_vitro_S5_S6_treated_r1
+    sample_group: Rotavirus_A_RF_no_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476220
-    sample_name: RF_total_5uM_NSP2_treated
-    sample_group: RVA_RF_5uM_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_5uM_NSP2_in_vitro_total_treated_r1
+    sample_group: Rotavirus_A_RF_5uM_NSP2_in_vitro
     condition: treated
     replicate: 1
   - accession: SRX13476219
-    sample_name: RF_total_no_NSP2_treated
-    sample_group: RVA_RF_no_NSP2_in_vitro
+    sample_name: Rotavirus_A_RF_no_NSP2_in_vitro_total_treated_r1
+    sample_group: Rotavirus_A_RF_no_NSP2_in_vitro
     condition: treated
     replicate: 1
 

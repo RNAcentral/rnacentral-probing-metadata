@@ -2,7 +2,7 @@ dataset_id: rnastruct00008
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Zika virus
+  scientific_name: Zika virus  # RNAcentral has only short fragments (partial sfRNA, PDB constructs, max 325 nt), no genome (checked 2026-09-25)
   ncbi_taxid: 64320
   strain: KJ776791_HPF2013  # Paper reports the French Polynesia ZIKV strain as KJ776791_HPF2013.
 

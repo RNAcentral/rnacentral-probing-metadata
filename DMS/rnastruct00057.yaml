@@ -26,27 +26,28 @@ raw_data:
   repository: GEO
   accession: GSE83617
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83617
+  # mES_vitro and mES_PDS have one replicate each; kept deliberately.
   # Excluded from this curation:
   # - GSM2211011 (mESC_vitro_95C): heat-denatured control, not a physiologically relevant structure.
   # - GSM2211013 (mESC_vitro_K0): 0 mM K+ comparison; K150 is the condition closest to physiological ionic strength.
   run_accessions:
   - accession: GSM2211012
-    sample_name: mESC_vitro_K150
+    sample_name: mES_vitro_treated_r1
     sample_group: mES_vitro
     condition: treated
     replicate: 1
   - accession: GSM2211014
-    sample_name: mESC_vivo_r1
+    sample_name: mES_vivo_treated_r1
     sample_group: mES_vivo
     condition: treated
     replicate: 1
   - accession: GSM2211015
-    sample_name: mESC_vivo_r2
+    sample_name: mES_vivo_treated_r2
     sample_group: mES_vivo
     condition: treated
     replicate: 2
   - accession: GSM2211016
-    sample_name: mESC_vivo_PDS  # PDS: pyridostatin, a G-quadruplex stabilising ligand
+    sample_name: mES_PDS_treated_r1  # PDS: pyridostatin, a G-quadruplex stabilising ligand
     sample_group: mES_PDS
     condition: treated
     replicate: 1

@@ -2,7 +2,7 @@ dataset_id: rnastruct00016
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Influenza A virus
+  scientific_name: Influenza A virus  # RNAcentral has only short fragments (max 543 nt), no full segments (checked 2026-09-25)
   ncbi_taxid: 11320
   strain: A/WSN/1933(H1N1)  # Paper reports influenza A/WSN/33 (WSN).
 

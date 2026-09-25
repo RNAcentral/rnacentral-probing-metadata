@@ -1,0 +1,55 @@
+dataset_id: rnastruct00105
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Yellow fever virus  # no sequences for this virus in RNAcentral (checked 2026-09-25)
+  ncbi_taxid: 11089
+  strain: Asibi  # GEO reports strain Asibi, the virulent parent of 17D; GenBank AY640589.
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003888
+  chemical: 2A3
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41564-025-02047-y
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE275594
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275594
+  # In-cell SHAPE-MaP on infected Huh7 cells; DMSO is the 2A3 vehicle control.
+  # GSE275594 is a SuperSeries: only its 12 SHAPE-MaP libraries are curated, the bulk RNA-seq
+  # arm is out of scope. The three strains are one file each; rnastruct00075, rnastruct00106 cover the other two.
+  run_accessions:
+  - accession: GSM8480569
+    sample_name: Yellow_fever_Asibi_2A3_treated_r1
+    sample_group: Yellow_fever_Asibi
+    condition: treated
+    replicate: 1
+  - accession: GSM8480570
+    sample_name: Yellow_fever_Asibi_2A3_treated_r2
+    sample_group: Yellow_fever_Asibi
+    condition: treated
+    replicate: 2
+  - accession: GSM8480571
+    sample_name: Yellow_fever_Asibi_DMSO_untreated_r1
+    sample_group: Yellow_fever_Asibi
+    condition: untreated
+    replicate: 1
+  - accession: GSM8480572
+    sample_name: Yellow_fever_Asibi_DMSO_untreated_r2
+    sample_group: Yellow_fever_Asibi
+    condition: untreated
+    replicate: 2
+
+comment: null

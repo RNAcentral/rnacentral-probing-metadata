@@ -33,29 +33,29 @@ raw_data:
   # - GSM2310330/GSM2310331 (TGIRT_2andHalf_percent_DMS_vivo_MiSeq/TGIRT_5percent_DMS_vivo_MiSeq): MiSeq DMS-dose comparison libraries, not the main genome-wide HiSeq set.
   run_accessions:
   - accession: GSM2241644
-    sample_name: TGIRT_DMSvivo_Rep1  # TGIRT in vivo DMS genome-wide library
+    sample_name: BY4741_treated_r1
     sample_group: BY4741
     condition: treated
     replicate: 1
   - accession: GSM2241645
-    sample_name: TGIRT_DMSvivo_Rep2  # TGIRT in vivo DMS genome-wide library
+    sample_name: BY4741_treated_r2
     sample_group: BY4741
     condition: treated
     replicate: 2
   - accession: GSM2241646
-    sample_name: TGIRT_DMSvivo_Rep2_additionalSequencing  # extra sequencing for TGIRT replicate 2
+    sample_name: BY4741_treated_reseq_r2  # additional sequencing run of replicate 2, pooled with it
     sample_group: BY4741
     condition: treated
     replicate: 2
   - accession: GSM2241649
-    sample_name: TGIRT_Untreated  # TGIRT untreated background library
+    sample_name: BY4741_untreated_r1
     sample_group: BY4741
     condition: untreated
     replicate: 1
   - accession: GSM2310333
-    sample_name: TGIRT_DMS_denatured  # TGIRT denatured control
+    sample_name: BY4741_denatured_r1
     sample_group: BY4741
     condition: denatured
     replicate: 1
 
-comment: "failed QC: no biological replicates for untreated"
+comment: null

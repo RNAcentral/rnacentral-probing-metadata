@@ -1,0 +1,91 @@
+dataset_id: rnastruct00081
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Bacillus subtilis
+  ncbi_taxid: 1423
+
+experiment:
+  method: Structure-seq2
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1261/rna.075986.120
+  year: 2020
+
+raw_data:
+  repository: GEO
+  accession: GSE148936
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE148936
+  run_accessions:
+  - accession: SRR11574079
+    sample_name: Bacillus_subtilis_minusAA_treated_r1
+    sample_group: Bacillus_subtilis_minusAA # -AA: grown in minimal medium + glutamine only (amino-acid starvation)
+    condition: treated
+    replicate: 1
+  - accession: SRR11574080
+    sample_name: Bacillus_subtilis_minusAA_treated_r2
+    sample_group: Bacillus_subtilis_minusAA
+    condition: treated
+    replicate: 2
+  - accession: SRR11574081
+    sample_name: Bacillus_subtilis_minusAA_treated_r3
+    sample_group: Bacillus_subtilis_minusAA
+    condition: treated
+    replicate: 3
+  - accession: SRR11574076
+    sample_name: Bacillus_subtilis_minusAA_untreated_r1
+    sample_group: Bacillus_subtilis_minusAA
+    condition: untreated
+    replicate: 1
+  - accession: SRR11574077
+    sample_name: Bacillus_subtilis_minusAA_untreated_r2
+    sample_group: Bacillus_subtilis_minusAA
+    condition: untreated
+    replicate: 2
+  - accession: SRR11574078
+    sample_name: Bacillus_subtilis_minusAA_untreated_r3
+    sample_group: Bacillus_subtilis_minusAA
+    condition: untreated
+    replicate: 3
+  - accession: SRR11574073
+    sample_name: Bacillus_subtilis_plusAA_treated_r1
+    sample_group: Bacillus_subtilis_plusAA # +AA: grown in ACH medium + tryptophan (all amino acids present)
+    condition: treated
+    replicate: 1
+  - accession: SRR11574074
+    sample_name: Bacillus_subtilis_plusAA_treated_r2
+    sample_group: Bacillus_subtilis_plusAA
+    condition: treated
+    replicate: 2
+  - accession: SRR11574075
+    sample_name: Bacillus_subtilis_plusAA_treated_r3
+    sample_group: Bacillus_subtilis_plusAA
+    condition: treated
+    replicate: 3
+  - accession: SRR11574070
+    sample_name: Bacillus_subtilis_plusAA_untreated_r1
+    sample_group: Bacillus_subtilis_plusAA
+    condition: untreated
+    replicate: 1
+  - accession: SRR11574071
+    sample_name: Bacillus_subtilis_plusAA_untreated_r2
+    sample_group: Bacillus_subtilis_plusAA
+    condition: untreated
+    replicate: 2
+  - accession: SRR11574072
+    sample_name: Bacillus_subtilis_plusAA_untreated_r3
+    sample_group: Bacillus_subtilis_plusAA
+    condition: untreated
+    replicate: 3
+
+comment: null

@@ -1,0 +1,80 @@
+dataset_id: rnastruct00112
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Listeria monocytogenes
+  ncbi_taxid: 1639
+
+experiment:
+  method: FUSE  # 5'-UTR Structure Elucidation: DMS-MaP of primary-transcript 5' ends (5' adapter on triphosphorylated RNA)
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo, in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.celrep.2020.03.006
+  year: 2020
+
+raw_data:
+  repository: GEO
+  accession: GSE118387
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE118387
+  # Kept as partial replication: only EGD-e at 37C has two replicates; every other arm has one.
+  # The single untreated library (Listeria_monocytogenes_EGDe) is shared by all arms through the strain prefix.
+  # Excluded from this curation:
+  # - GSM3326152 (Structure-seq of cells at 37C): a different library method, one run, no control.
+  run_accessions:
+  - accession: GSM3326153
+    sample_name: Listeria_monocytogenes_EGDe_treated_r1
+    sample_group: Listeria_monocytogenes_EGDe  # L. monocytogenes EGD-e grown and probed at 37C
+    condition: treated
+    replicate: 1
+  - accession: GSM3326154
+    sample_name: Listeria_monocytogenes_EGDe_treated_r2
+    sample_group: Listeria_monocytogenes_EGDe
+    condition: treated
+    replicate: 2
+  - accession: GSM3326150
+    sample_name: Listeria_monocytogenes_EGDe_untreated_r1
+    sample_group: Listeria_monocytogenes_EGDe
+    condition: untreated
+    replicate: 1
+  - accession: GSM3326155
+    sample_name: Listeria_monocytogenes_EGDe_26C_treated_r1
+    sample_group: Listeria_monocytogenes_EGDe_26C  # grown and probed at 26C
+    condition: treated
+    replicate: 1
+  - accession: GSM3326156
+    sample_name: Listeria_monocytogenes_EGDe_26Cto37C_treated_r1
+    sample_group: Listeria_monocytogenes_EGDe_26Cto37C  # grown at 26C, probed after a shift to 37C
+    condition: treated
+    replicate: 1
+  - accession: GSM3326157
+    sample_name: Listeria_monocytogenes_EGDe_dhfq_treated_r1
+    sample_group: Listeria_monocytogenes_EGDe_dhfq  # hfq deletion, 37C
+    condition: treated
+    replicate: 1
+  - accession: GSM3326158
+    sample_name: Listeria_monocytogenes_EGDe_lhrAmut_treated_r1
+    sample_group: Listeria_monocytogenes_EGDe_lhrAmut  # sRNA LhrA mutant, 37C
+    condition: treated
+    replicate: 1
+  - accession: GSM3326159
+    sample_name: Listeria_monocytogenes_EGDe_prfAstar_treated_r1
+    sample_group: Listeria_monocytogenes_EGDe_prfAstar  # prfA* strain, virulence regulator PrfA constitutively active, 37C
+    condition: treated
+    replicate: 1
+  - accession: GSM3326151
+    sample_name: Listeria_monocytogenes_EGDe_invitro_treated_r1
+    sample_group: Listeria_monocytogenes_EGDe_invitro  # extracted RNA probed in vitro at 37C
+    condition: treated
+    replicate: 1
+
+comment: null
