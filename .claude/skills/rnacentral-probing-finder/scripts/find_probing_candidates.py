@@ -61,7 +61,7 @@ QUERY_TERMS = [
     'ABSTRACT:"in vivo RNA structure"', 'ABSTRACT:"transcriptome-wide RNA structure"',
     'KW:"RNA structure"',
 ]
-ACC_RE = re.compile(r"GSE\d{4,}|PRJNA\d{4,}|SRP\d{5,}|PRJEB\d{4,}|E-MTAB-\d{3,}")
+ACC_RE = re.compile(r"GSE\d{4,}|PRJNA\d{4,}|SRP\d{5,}|PRJEB\d{4,}|PRJDB\d{4,}|DR[AP]\d{6,}|E-MTAB-\d{3,}")
 
 
 def get(url: str, tries: int = 3) -> bytes:

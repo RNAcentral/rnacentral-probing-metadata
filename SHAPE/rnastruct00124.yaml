@@ -1,0 +1,59 @@
+dataset_id: rnastruct00124
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Triticum turgidum
+  ncbi_taxid: 4571
+
+experiment:
+  method: SHAPE-Structure-seq  # Structure-seq library prep (poly(A), SuperScript III random-hexamer RT stops) with NAI instead of DMS
+  principle: RT-stop
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1186/s13059-021-02549-y
+  year: 2021
+
+raw_data:
+  repository: SRA
+  accession: PRJNA723219
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA723219
+  # SRR14832286 is extra sequencing of the replicate-1 NAI library, so it shares replicate 1.
+  # Excluded from this curation:
+  # - SRR14300115-SRR14300117 (RNA-seq) and SRR14308541-SRR14308543 (polysome-seq): not probing.
+  run_accessions:
+  - accession: SRR14624422
+    sample_name: Kronos_treated_r1
+    sample_group: Kronos  # durum wheat cv. Kronos, etiolated seedlings, 200 mM NAI in vivo for 15 min at 22C
+    condition: treated
+    replicate: 1
+  - accession: SRR14832286
+    sample_name: Kronos_reseq_treated_r1
+    sample_group: Kronos
+    condition: treated
+    replicate: 1
+  - accession: SRR14624423
+    sample_name: Kronos_treated_r2
+    sample_group: Kronos
+    condition: treated
+    replicate: 2
+  - accession: SRR14624420
+    sample_name: Kronos_untreated_r1
+    sample_group: Kronos
+    condition: untreated
+    replicate: 1
+  - accession: SRR14624421
+    sample_name: Kronos_untreated_r2
+    sample_group: Kronos
+    condition: untreated
+    replicate: 2
+
+comment: null

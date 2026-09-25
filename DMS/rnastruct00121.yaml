@@ -1,0 +1,53 @@
+dataset_id: rnastruct00121
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Arabidopsis thaliana
+  ncbi_taxid: 3702
+
+experiment:
+  method: Structure-seq
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/nature12756
+  year: 2014
+
+raw_data:
+  repository: SRA
+  accession: SRP027216
+  landing_page: https://www.ncbi.nlm.nih.gov/sra/SRP027216
+  # Structure-seq of Col-0 seedlings (Ding 2014): poly(A)-selected, SuperScript III random-hexamer RT stops.
+  # The separate 2016 FoldAtlas deposit of the same system is rnastruct00122.
+  run_accessions:
+  - accession: SRR933552
+    sample_name: Col-0_treated_r1
+    sample_group: Col-0  # 5-day-old etiolated Col-0 seedlings, DMS in vivo
+    condition: treated
+    replicate: 1
+  - accession: SRR933556
+    sample_name: Col-0_treated_r2
+    sample_group: Col-0
+    condition: treated
+    replicate: 2
+  - accession: SRR933551
+    sample_name: Col-0_untreated_r1
+    sample_group: Col-0
+    condition: untreated
+    replicate: 1
+  - accession: SRR933557
+    sample_name: Col-0_untreated_r2
+    sample_group: Col-0
+    condition: untreated
+    replicate: 2
+
+comment: null

@@ -1,0 +1,54 @@
+dataset_id: rnastruct00134
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: icSHAPE  # NAI-N3 in cells, click-biotin enrichment of modified RNA, SuperScript III RT stops (RBRP pipeline)
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total  # isolated rRNA fraction (18S, 28S)
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.chembiol.2024.09.009
+  year: 2024
+
+raw_data:
+  repository: GEO
+  accession: GSE243544
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243544
+  # rRNA arm of GSE243544; the poly(A)+ RNA arm is rnastruct00133. DMSO is the NAI-N3 vehicle (untreated).
+  # Excluded from this curation:
+  # - GSM7790699-GSM7790702: acetylimidazole (AcIm) and AcIN3 probing, reagents not in the schema.
+  run_accessions:
+  - accession: GSM7790703
+    sample_name: HEK293_treated_r1
+    sample_group: HEK293  # HEK293 cells, NAI-N3 in cells; rRNA library
+    condition: treated
+    replicate: 1
+  - accession: GSM7790704
+    sample_name: HEK293_treated_r2
+    sample_group: HEK293
+    condition: treated
+    replicate: 2
+  - accession: GSM7790705
+    sample_name: HEK293_untreated_r1
+    sample_group: HEK293
+    condition: untreated
+    replicate: 1
+  - accession: GSM7790706
+    sample_name: HEK293_untreated_r2
+    sample_group: HEK293
+    condition: untreated
+    replicate: 2
+
+comment: null

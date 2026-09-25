@@ -26,6 +26,7 @@ raw_data:
   repository: GEO
   accession: GSE237160
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE237160
+  # HEK293T_vehicle / HEK293T_STM2457 are GSE264642 (same paper, a separate METTL3-inhibitor experiment), listed by GSM.
   run_accessions:
   - accession: SRR25248919
     sample_name: HEK293T_WT_treated_r1
@@ -65,6 +66,46 @@ raw_data:
   - accession: SRR25248921
     sample_name: HEK293T_DHX36_KO_untreated_r2
     sample_group: HEK293T_DHX36_KO
+    condition: untreated
+    replicate: 2
+  - accession: GSM8224454
+    sample_name: HEK293T_vehicle_treated_r1
+    sample_group: HEK293T_vehicle  # vehicle-treated cells, control for STM2457
+    condition: treated
+    replicate: 1
+  - accession: GSM8224455
+    sample_name: HEK293T_vehicle_treated_r2
+    sample_group: HEK293T_vehicle
+    condition: treated
+    replicate: 2
+  - accession: GSM8224456
+    sample_name: HEK293T_vehicle_untreated_r1
+    sample_group: HEK293T_vehicle
+    condition: untreated
+    replicate: 1
+  - accession: GSM8224457
+    sample_name: HEK293T_vehicle_untreated_r2
+    sample_group: HEK293T_vehicle
+    condition: untreated
+    replicate: 2
+  - accession: GSM8224458
+    sample_name: HEK293T_STM2457_treated_r1
+    sample_group: HEK293T_STM2457  # STM2457, a METTL3 inhibitor that lowers m6A
+    condition: treated
+    replicate: 1
+  - accession: GSM8224459
+    sample_name: HEK293T_STM2457_treated_r2
+    sample_group: HEK293T_STM2457
+    condition: treated
+    replicate: 2
+  - accession: GSM8224460
+    sample_name: HEK293T_STM2457_untreated_r1
+    sample_group: HEK293T_STM2457
+    condition: untreated
+    replicate: 1
+  - accession: GSM8224461
+    sample_name: HEK293T_STM2457_untreated_r2
+    sample_group: HEK293T_STM2457
     condition: untreated
     replicate: 2
 
