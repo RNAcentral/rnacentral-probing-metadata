@@ -1,4 +1,4 @@
-dataset_id: rnastruct00130
+dataset_id: rnastruct00129
 schema_version: "1.0.0"
 
 organism:
@@ -26,7 +26,7 @@ raw_data:
   repository: GEO
   accession: GSE95788
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95788
-  # Siblings from GSE95788: rnastruct00127 (S. cerevisiae DREADS), 00128 (D. hansenii), 00129 (K. lactis), 00130 (SHREADS/NAI).
+  # Siblings from GSE95788: rnastruct00126 (S. cerevisiae DREADS), 00127 (D. hansenii), 00128 (K. lactis), 00129 (SHREADS/NAI).
   # RT-stop library; the RT enzyme is not named in the paper, M-MLV family assumed.
   # DMSO is the NAI vehicle (untreated).
   run_accessions:

@@ -2,9 +2,9 @@ dataset_id: rnastruct00119
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Human bocavirus
-  ncbi_taxid: 329641
-  strain: Salvador1  # HBoV1 isolate Salvador1 (infectious clone pIHBoV1), GenBank JQ923422.1; exact taxid 689403 ("Human bocavirus 1") has a trailing digit the scientific_name pattern rejects.
+  scientific_name: HIV
+  ncbi_taxid: 11676
+  strain: NL4-3  # HIV-1 NL4-3 (VSV-G-pseudotyped, delta Env); reference AF324493.
 
 experiment:
   method: DMS-MaPseq
@@ -12,7 +12,7 @@ experiment:
   obi: OBI:0001015
   chemical: DMS
   RT_enzyme: Group II intron
-  context: [in_vivo, in_vitro]
+  context: [in_vivo]
   rna_type: total
   pH: null
   adapter_3p: null
@@ -20,54 +20,38 @@ experiment:
   umi_pattern: null
 
 publication:
-  doi: 10.1073/pnas.2320782121
-  year: 2024
+  doi: 10.1038/s41594-024-01468-3
+  year: 2025
 
 raw_data:
-  repository: SRA
-  accession: PRJNA955716
-  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA955716
-  # Native viral region: BocaSR, the 140-nt bocavirus-encoded small RNA, RT-PCR amplified (TGIRT RT as in
-  # Zubradt 2017, at 55C). Bocavirus is not in merge_metadata.py VIRAL_ORGANISMS: pass --fasta with JQ923422.1.
+  repository: GEO
+  accession: GSE244468
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244468
+  # Native viral region: the gag-pol ribosomal frameshift site of HIV-1 genomic RNA in infected cells,
+  # RT-PCR amplified (MarathonRT with Mn2+). Ethanol, the DMS vehicle, is the untreated control.
+  # The pipeline's genome key is human_immunodeficiency_virus_1_nl4_3, which "HIV (NL4-3)" does not match:
+  # pass --fasta with AF324493.2.
+  # Excluded from this curation:
+  # - Ribosome profiling, disome-seq, RNA-seq and nanopore isoform libraries in GSE244468.
   run_accessions:
-  - accession: SRR24170475
-    sample_name: Human_bocavirus_Salvador1_treated_r1
-    sample_group: Human_bocavirus_Salvador1  # HBoV1-infected human airway epithelium (HAE-ALI), probed in cells
+  - accession: GSM8656243
+    sample_name: HIV-1_NL4-3_treated_r1
+    sample_group: HIV-1_NL4-3  # HIV-1-infected SupT1 T cells, 24 h post infection
     condition: treated
     replicate: 1
-  - accession: SRR24170474
-    sample_name: Human_bocavirus_Salvador1_treated_r2
-    sample_group: Human_bocavirus_Salvador1
-    condition: treated
-    replicate: 2
-  - accession: SRR24170477
-    sample_name: Human_bocavirus_Salvador1_untreated_r1
-    sample_group: Human_bocavirus_Salvador1
-    condition: untreated
-    replicate: 1
-  - accession: SRR24170476
-    sample_name: Human_bocavirus_Salvador1_untreated_r2
-    sample_group: Human_bocavirus_Salvador1
-    condition: untreated
-    replicate: 2
-  - accession: SRR24170471
-    sample_name: Human_bocavirus_Salvador1_invitro_treated_r1
-    sample_group: Human_bocavirus_Salvador1_invitro  # BocaSR probed in vitro
-    condition: treated
-    replicate: 1
-  - accession: SRR24170470
-    sample_name: Human_bocavirus_Salvador1_invitro_treated_r2
-    sample_group: Human_bocavirus_Salvador1_invitro
+  - accession: GSM8656244
+    sample_name: HIV-1_NL4-3_treated_r2
+    sample_group: HIV-1_NL4-3
     condition: treated
     replicate: 2
-  - accession: SRR24170473
-    sample_name: Human_bocavirus_Salvador1_invitro_untreated_r1
-    sample_group: Human_bocavirus_Salvador1_invitro
+  - accession: GSM8656245
+    sample_name: HIV-1_NL4-3_untreated_r1
+    sample_group: HIV-1_NL4-3
     condition: untreated
     replicate: 1
-  - accession: SRR24170472
-    sample_name: Human_bocavirus_Salvador1_invitro_untreated_r2
-    sample_group: Human_bocavirus_Salvador1_invitro
+  - accession: GSM8656246
+    sample_name: HIV-1_NL4-3_untreated_r2
+    sample_group: HIV-1_NL4-3
     condition: untreated
     replicate: 2
 

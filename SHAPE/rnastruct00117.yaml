@@ -2,9 +2,9 @@ dataset_id: rnastruct00117
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Dengue virus
-  ncbi_taxid: 12637
-  strain: TVP/360  # DENV serotype 4; GenBank KU513442.1.
+  scientific_name: Zika virus
+  ncbi_taxid: 64320
+  strain: HPF2013  # H/PF/2013, French Polynesia; GenBank KJ776791.2.
 
 experiment:
   method: SHAPE-MaP
@@ -12,7 +12,7 @@ experiment:
   obi: OBI:0003888
   chemical: 2A3
   RT_enzyme: M-MLV
-  context: [in_vitro]
+  context: [in_vivo, in_vitro]
   rna_type: total
   pH: null
   adapter_3p: null
@@ -27,30 +27,47 @@ raw_data:
   repository: SRA
   accession: PRJNA1443375
   landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1443375
-  # sfRNA (XRN1-resistant 3'-UTR fragment) of PRJNA1443375, one file per strain; siblings rnastruct00114-00116, 00118.
+  # sfRNA (XRN1-resistant 3'-UTR fragment) of PRJNA1443375, one file per strain; siblings rnastruct00113-00116.
   # Native viral region, amplified with flavivirus-specific primers.
-  # The in-cell DENV4 arm used strain DV4-H24 and is curated separately as rnastruct00116.
-  # Dengue is not in merge_metadata.py VIRAL_ORGANISMS, so the strain never reaches the pipeline's genome
-  # lookup: pass --fasta with KU513442.1.
   run_accessions:
-  - accession: SRR37896991
-    sample_name: Dengue_TVP360_invitro_treated_r1
-    sample_group: Dengue_TVP360_invitro  # in vitro-transcribed sfRNA, XRN1-digested and refolded
+  - accession: SRR37896973
+    sample_name: Zika_HPF2013_treated_r1
+    sample_group: Zika_HPF2013  # sfRNA from infected A549 cells (MOI 2), probed in cells at peak sfRNA
     condition: treated
     replicate: 1
-  - accession: SRR37896986
-    sample_name: Dengue_TVP360_invitro_treated_r2
-    sample_group: Dengue_TVP360_invitro
+  - accession: SRR37896983
+    sample_name: Zika_HPF2013_treated_r2
+    sample_group: Zika_HPF2013
     condition: treated
     replicate: 2
-  - accession: SRR37896992
-    sample_name: Dengue_TVP360_invitro_untreated_r1
-    sample_group: Dengue_TVP360_invitro
+  - accession: SRR37896974
+    sample_name: Zika_HPF2013_untreated_r1
+    sample_group: Zika_HPF2013
     condition: untreated
     replicate: 1
-  - accession: SRR37896987
-    sample_name: Dengue_TVP360_invitro_untreated_r2
-    sample_group: Dengue_TVP360_invitro
+  - accession: SRR37896969
+    sample_name: Zika_HPF2013_untreated_r2
+    sample_group: Zika_HPF2013
+    condition: untreated
+    replicate: 2
+  - accession: SRR37896975
+    sample_name: Zika_HPF2013_invitro_treated_r1
+    sample_group: Zika_HPF2013_invitro  # in vitro-transcribed sfRNA, XRN1-digested and refolded
+    condition: treated
+    replicate: 1
+  - accession: SRR37896971
+    sample_name: Zika_HPF2013_invitro_treated_r2
+    sample_group: Zika_HPF2013_invitro
+    condition: treated
+    replicate: 2
+  - accession: SRR37896976
+    sample_name: Zika_HPF2013_invitro_untreated_r1
+    sample_group: Zika_HPF2013_invitro
+    condition: untreated
+    replicate: 1
+  - accession: SRR37896972
+    sample_name: Zika_HPF2013_invitro_untreated_r2
+    sample_group: Zika_HPF2013_invitro
     condition: untreated
     replicate: 2
 

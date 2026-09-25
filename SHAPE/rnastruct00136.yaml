@@ -2,17 +2,17 @@ dataset_id: rnastruct00136
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Influenza A virus
-  ncbi_taxid: 11320
-  strain: A/Puerto Rico/8/1934(H1N1)
+  scientific_name: West Nile virus
+  ncbi_taxid: 11082
+  strain: NY99  # infectious clone of WNV NY99, GenBank AF404756
 
 experiment:
-  method: SHAPE-seq  # NAI with random-hexamer RT stops (ReverTra Ace)
-  principle: RT-stop
+  method: SHAPE-MaP
+  principle: MaP
   obi: OBI:0003886
   chemical: NAI
   RT_enzyme: M-MLV
-  context: [in_virio, ex_virio, in_vitro]
+  context: [in_vivo]
   rna_type: total
   pH: null
   adapter_3p: null
@@ -20,135 +20,54 @@ experiment:
   umi_pattern: null
 
 publication:
-  doi: 10.1016/j.csbj.2023.10.036
-  year: 2023
+  doi: 10.1073/pnas.2312080121
+  year: 2024
 
 raw_data:
-  repository: DDBJ
-  accession: DRA014362
-  landing_page: https://ddbj.nig.ac.jp/resource/sra-submission/DRA014362
-  # NAI arm of the in-virio influenza study; the DMS arm is rnastruct00135. Runs come from three DDBJ
-  # submissions: DRA015929 (egg-grown virions), DRA009494 (vRNP, vRNA and their mocks) and DRA014362
-  # (MDCK-grown virions: wild type and the segment 5 mutants 87mut / 87rec).
+  repository: GEO
+  accession: GSE228446
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228446
+  # Whole WNV genome in infected cells (4 dpi), 200 mM NAI or DMSO; 19 tiled RT-PCR amplicons, SSII/Mn2+.
+  # West Nile virus is not in merge_metadata.py VIRAL_ORGANISMS: pass --fasta with AF404756.
   run_accessions:
-  - accession: DRR452919
-    sample_name: Influenza_A_PR8_treated_r1
-    sample_group: Influenza_A_PR8  # virions purified from allantoic fluid of infected eggs, probed intact
+  - accession: GSM7120773
+    sample_name: West_Nile_NY99_Vero_treated_r1
+    sample_group: West_Nile_NY99_Vero  # infected Vero cells (mammalian host)
     condition: treated
     replicate: 1
-  - accession: DRR452920
-    sample_name: Influenza_A_PR8_treated_r2
-    sample_group: Influenza_A_PR8
-    condition: treated
-    replicate: 2
-  - accession: DRR452917
-    sample_name: Influenza_A_PR8_untreated_r1
-    sample_group: Influenza_A_PR8
-    condition: untreated
-    replicate: 1
-  - accession: DRR452918
-    sample_name: Influenza_A_PR8_untreated_r2
-    sample_group: Influenza_A_PR8
-    condition: untreated
-    replicate: 2
-  - accession: DRR205194
-    sample_name: Influenza_A_PR8_vRNP_treated_r1
-    sample_group: Influenza_A_PR8_vRNP  # vRNPs purified from virions
-    condition: treated
-    replicate: 1
-  - accession: DRR205195
-    sample_name: Influenza_A_PR8_vRNP_treated_r2
-    sample_group: Influenza_A_PR8_vRNP
+  - accession: GSM7120775
+    sample_name: West_Nile_NY99_Vero_treated_r2
+    sample_group: West_Nile_NY99_Vero
     condition: treated
     replicate: 2
-  - accession: DRR205190
-    sample_name: Influenza_A_PR8_vRNP_untreated_r1
-    sample_group: Influenza_A_PR8_vRNP
+  - accession: GSM7120774
+    sample_name: West_Nile_NY99_Vero_untreated_r1
+    sample_group: West_Nile_NY99_Vero
     condition: untreated
     replicate: 1
-  - accession: DRR205191
-    sample_name: Influenza_A_PR8_vRNP_untreated_r2
-    sample_group: Influenza_A_PR8_vRNP
-    condition: untreated
-    replicate: 2
-  - accession: DRR205188
-    sample_name: Influenza_A_PR8_vRNA_treated_r1
-    sample_group: Influenza_A_PR8_vRNA  # protein-free vRNA extracted from virions
-    condition: treated
-    replicate: 1
-  - accession: DRR205189
-    sample_name: Influenza_A_PR8_vRNA_treated_r2
-    sample_group: Influenza_A_PR8_vRNA
-    condition: treated
-    replicate: 2
-  - accession: DRR205184
-    sample_name: Influenza_A_PR8_vRNA_untreated_r1
-    sample_group: Influenza_A_PR8_vRNA
-    condition: untreated
-    replicate: 1
-  - accession: DRR205185
-    sample_name: Influenza_A_PR8_vRNA_untreated_r2
-    sample_group: Influenza_A_PR8_vRNA
+  - accession: GSM7120776
+    sample_name: West_Nile_NY99_Vero_untreated_r2
+    sample_group: West_Nile_NY99_Vero
     condition: untreated
     replicate: 2
-  - accession: DRR383850
-    sample_name: Influenza_A_PR8_MDCK_treated_r1
-    sample_group: Influenza_A_PR8_MDCK  # virions produced in MDCK cells, probed intact
+  - accession: GSM7120777
+    sample_name: West_Nile_NY99_C636_treated_r1
+    sample_group: West_Nile_NY99_C636  # infected Aedes albopictus C6/36 cells (mosquito host)
     condition: treated
     replicate: 1
-  - accession: DRR383851
-    sample_name: Influenza_A_PR8_MDCK_treated_r2
-    sample_group: Influenza_A_PR8_MDCK
-    condition: treated
-    replicate: 2
-  - accession: DRR383848
-    sample_name: Influenza_A_PR8_MDCK_untreated_r1
-    sample_group: Influenza_A_PR8_MDCK
-    condition: untreated
-    replicate: 1
-  - accession: DRR383849
-    sample_name: Influenza_A_PR8_MDCK_untreated_r2
-    sample_group: Influenza_A_PR8_MDCK
-    condition: untreated
-    replicate: 2
-  - accession: DRR383854
-    sample_name: Influenza_A_PR8_MDCK_87mut_treated_r1
-    sample_group: Influenza_A_PR8_MDCK_87mut  # mutations disrupting base pairs at nt 87-130 of segment 5
-    condition: treated
-    replicate: 1
-  - accession: DRR383855
-    sample_name: Influenza_A_PR8_MDCK_87mut_treated_r2
-    sample_group: Influenza_A_PR8_MDCK_87mut
+  - accession: GSM7120779
+    sample_name: West_Nile_NY99_C636_treated_r2
+    sample_group: West_Nile_NY99_C636
     condition: treated
     replicate: 2
-  - accession: DRR383852
-    sample_name: Influenza_A_PR8_MDCK_87mut_untreated_r1
-    sample_group: Influenza_A_PR8_MDCK_87mut
+  - accession: GSM7120778
+    sample_name: West_Nile_NY99_C636_untreated_r1
+    sample_group: West_Nile_NY99_C636
     condition: untreated
     replicate: 1
-  - accession: DRR383853
-    sample_name: Influenza_A_PR8_MDCK_87mut_untreated_r2
-    sample_group: Influenza_A_PR8_MDCK_87mut
-    condition: untreated
-    replicate: 2
-  - accession: DRR383858
-    sample_name: Influenza_A_PR8_MDCK_87rec_treated_r1
-    sample_group: Influenza_A_PR8_MDCK_87rec  # a second mutant at the same segment 5 site (the paper names it 87rec)
-    condition: treated
-    replicate: 1
-  - accession: DRR383859
-    sample_name: Influenza_A_PR8_MDCK_87rec_treated_r2
-    sample_group: Influenza_A_PR8_MDCK_87rec
-    condition: treated
-    replicate: 2
-  - accession: DRR383856
-    sample_name: Influenza_A_PR8_MDCK_87rec_untreated_r1
-    sample_group: Influenza_A_PR8_MDCK_87rec
-    condition: untreated
-    replicate: 1
-  - accession: DRR383857
-    sample_name: Influenza_A_PR8_MDCK_87rec_untreated_r2
-    sample_group: Influenza_A_PR8_MDCK_87rec
+  - accession: GSM7120780
+    sample_name: West_Nile_NY99_C636_untreated_r2
+    sample_group: West_Nile_NY99_C636
     condition: untreated
     replicate: 2
 

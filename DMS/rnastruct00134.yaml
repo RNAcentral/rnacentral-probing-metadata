@@ -1,4 +1,4 @@
-dataset_id: rnastruct00135
+dataset_id: rnastruct00134
 schema_version: "1.0.0"
 
 organism:
@@ -27,8 +27,8 @@ raw_data:
   repository: DDBJ
   accession: DRA009494
   landing_page: https://ddbj.nig.ac.jp/resource/sra-submission/DRA009494
-  # DMS arm of the in-virio influenza study; the NAI arm is rnastruct00136. Random-hexamer RT stops with
-  # ReverTra Ace (M-MLV). The vRNP and vRNA arms reuse the virion mock; their own mocks are in 00136.
+  # DMS arm of the in-virio influenza study; the NAI arm is rnastruct00135. Random-hexamer RT stops with
+  # ReverTra Ace (M-MLV). The vRNP and vRNA arms reuse the virion mock; their own mocks are in 00135.
   # Excluded from this curation:
   # - DRR205200-DRR205207 (virion NAI, 87mut virion): not in the paper's data list; superseded by DRA014362.
   run_accessions:

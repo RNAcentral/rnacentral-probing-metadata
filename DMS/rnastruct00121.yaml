@@ -13,41 +13,51 @@ experiment:
   RT_enzyme: M-MLV
   context: [in_vivo]
   rna_type: mRNA
-  pH: null
+  pH: 7.5
   adapter_3p: null
   adapter_5p: null
   umi_pattern: null
 
 publication:
-  doi: 10.1038/nature12756
-  year: 2014
+  doi: 10.1093/bioinformatics/btw611
+  year: 2017
 
 raw_data:
   repository: SRA
-  accession: SRP027216
-  landing_page: https://www.ncbi.nlm.nih.gov/sra/SRP027216
-  # Structure-seq of Col-0 seedlings (Ding 2014): poly(A)-selected, SuperScript III random-hexamer RT stops.
-  # The separate 2016 FoldAtlas deposit of the same system is rnastruct00122.
+  accession: SRP066985
+  landing_page: https://www.ncbi.nlm.nih.gov/sra/SRP066985
+  # FoldAtlas in vivo Structure-seq of Col-0 seedlings (0.75% DMS, 15 min, HEPES pH 7.5); an independent
+  # deposit from Ding 2014 (rnastruct00120).
   run_accessions:
-  - accession: SRR933552
+  - accession: SRR2973578
     sample_name: Col-0_treated_r1
     sample_group: Col-0  # 5-day-old etiolated Col-0 seedlings, DMS in vivo
     condition: treated
     replicate: 1
-  - accession: SRR933556
+  - accession: SRR2973579
     sample_name: Col-0_treated_r2
     sample_group: Col-0
     condition: treated
     replicate: 2
-  - accession: SRR933551
+  - accession: SRR2973580
+    sample_name: Col-0_treated_r3
+    sample_group: Col-0
+    condition: treated
+    replicate: 3
+  - accession: SRR2973575
     sample_name: Col-0_untreated_r1
     sample_group: Col-0
     condition: untreated
     replicate: 1
-  - accession: SRR933557
+  - accession: SRR2973576
     sample_name: Col-0_untreated_r2
     sample_group: Col-0
     condition: untreated
     replicate: 2
+  - accession: SRR2973577
+    sample_name: Col-0_untreated_r3
+    sample_group: Col-0
+    condition: untreated
+    replicate: 3
 
 comment: null

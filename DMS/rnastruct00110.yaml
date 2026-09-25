@@ -26,50 +26,37 @@ raw_data:
   repository: GEO
   accession: GSE103421
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103421
-  # Kept as a special case: a cold-shock time course (37C to 10C) with csp mutants, one replicate per in vivo
-  # condition. Every sample is at 10C. No no-DMS libraries were deposited, so all arms are scored treated-only.
+  # Kept as a special case: wild-type E. coli in vivo across a cold shock (37C to 10C), one replicate per time
+  # point, plus purified mRNA refolded at 10C (x2). No no-DMS libraries were deposited, so all arms are scored
+  # treated-only.
   # Excluded from this curation:
+  # - GSM2771017, GSM2771018 (csp deletion mutants) and GSM2801050 (kasugamycin): unreplicated perturbations.
   # - Ribosome profiling, mRNA-seq and total RNA-seq libraries.
   # - GSM2801051-GSM2801055, GSM2946865-GSM2946871 (DMS-MaPseq of purified cspA mRNA): targeted amplicons.
   run_accessions:
   - accession: GSM2771014
-    sample_name: MG1655_30min_treated_r1
-    sample_group: MG1655_30min  # 30 min after shift from 37C to 10C (growth arrest)
+    sample_name: MG1655_10C_30min_treated_r1
+    sample_group: MG1655_10C_30min  # 30 min after shift from 37C to 10C (growth arrest)
     condition: treated
     replicate: 1
   - accession: GSM2771015
-    sample_name: MG1655_6h_treated_r1
-    sample_group: MG1655_6h  # 6 h after the shift (acclimation)
+    sample_name: MG1655_10C_6h_treated_r1
+    sample_group: MG1655_10C_6h  # 6 h after the shift (acclimation)
     condition: treated
     replicate: 1
   - accession: GSM2771016
-    sample_name: MG1655_8h_treated_r1
-    sample_group: MG1655_8h  # 8 h after the shift (growth resumed)
-    condition: treated
-    replicate: 1
-  - accession: GSM2771017
-    sample_name: MG1655_dcspABEG_8h_treated_r1
-    sample_group: MG1655_dcspABEG_8h  # cspA, cspB, cspE, cspG deletion, 8 h after the shift
-    condition: treated
-    replicate: 1
-  - accession: GSM2771018
-    sample_name: MG1655_dcspBG_8h_treated_r1
-    sample_group: MG1655_dcspBG_8h  # cspB, cspG deletion, 8 h after the shift
-    condition: treated
-    replicate: 1
-  - accession: GSM2801050
-    sample_name: MG1655_kasugamycin_treated_r1
-    sample_group: MG1655_kasugamycin  # 6 h after the shift, then 10 mg/mL kasugamycin (blocks translation initiation) for 40 min
+    sample_name: MG1655_10C_8h_treated_r1
+    sample_group: MG1655_10C_8h  # 8 h after the shift (growth resumed)
     condition: treated
     replicate: 1
   - accession: GSM2801048
-    sample_name: MG1655_invitro_treated_r1
-    sample_group: MG1655_invitro  # purified mRNA refolded and probed at 10C
+    sample_name: MG1655_invitro_10C_treated_r1
+    sample_group: MG1655_invitro_10C  # purified mRNA refolded and probed at 10C
     condition: treated
     replicate: 1
   - accession: GSM2801049
-    sample_name: MG1655_invitro_treated_r2
-    sample_group: MG1655_invitro
+    sample_name: MG1655_invitro_10C_treated_r2
+    sample_group: MG1655_invitro_10C
     condition: treated
     replicate: 2
 

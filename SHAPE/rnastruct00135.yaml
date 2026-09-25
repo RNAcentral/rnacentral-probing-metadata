@@ -1,0 +1,155 @@
+dataset_id: rnastruct00135
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Influenza A virus
+  ncbi_taxid: 11320
+  strain: A/Puerto Rico/8/1934(H1N1)
+
+experiment:
+  method: SHAPE-seq  # NAI with random-hexamer RT stops (ReverTra Ace)
+  principle: RT-stop
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_virio, ex_virio, in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.csbj.2023.10.036
+  year: 2023
+
+raw_data:
+  repository: DDBJ
+  accession: DRA014362
+  landing_page: https://ddbj.nig.ac.jp/resource/sra-submission/DRA014362
+  # NAI arm of the in-virio influenza study; the DMS arm is rnastruct00134. Runs come from three DDBJ
+  # submissions: DRA015929 (egg-grown virions), DRA009494 (vRNP, vRNA and their mocks) and DRA014362
+  # (MDCK-grown virions: wild type and the segment 5 mutants 87mut / 87rec).
+  run_accessions:
+  - accession: DRR452919
+    sample_name: Influenza_A_PR8_treated_r1
+    sample_group: Influenza_A_PR8  # virions purified from allantoic fluid of infected eggs, probed intact
+    condition: treated
+    replicate: 1
+  - accession: DRR452920
+    sample_name: Influenza_A_PR8_treated_r2
+    sample_group: Influenza_A_PR8
+    condition: treated
+    replicate: 2
+  - accession: DRR452917
+    sample_name: Influenza_A_PR8_untreated_r1
+    sample_group: Influenza_A_PR8
+    condition: untreated
+    replicate: 1
+  - accession: DRR452918
+    sample_name: Influenza_A_PR8_untreated_r2
+    sample_group: Influenza_A_PR8
+    condition: untreated
+    replicate: 2
+  - accession: DRR205194
+    sample_name: Influenza_A_PR8_vRNP_treated_r1
+    sample_group: Influenza_A_PR8_vRNP  # vRNPs purified from virions
+    condition: treated
+    replicate: 1
+  - accession: DRR205195
+    sample_name: Influenza_A_PR8_vRNP_treated_r2
+    sample_group: Influenza_A_PR8_vRNP
+    condition: treated
+    replicate: 2
+  - accession: DRR205190
+    sample_name: Influenza_A_PR8_vRNP_untreated_r1
+    sample_group: Influenza_A_PR8_vRNP
+    condition: untreated
+    replicate: 1
+  - accession: DRR205191
+    sample_name: Influenza_A_PR8_vRNP_untreated_r2
+    sample_group: Influenza_A_PR8_vRNP
+    condition: untreated
+    replicate: 2
+  - accession: DRR205188
+    sample_name: Influenza_A_PR8_vRNA_treated_r1
+    sample_group: Influenza_A_PR8_vRNA  # protein-free vRNA extracted from virions
+    condition: treated
+    replicate: 1
+  - accession: DRR205189
+    sample_name: Influenza_A_PR8_vRNA_treated_r2
+    sample_group: Influenza_A_PR8_vRNA
+    condition: treated
+    replicate: 2
+  - accession: DRR205184
+    sample_name: Influenza_A_PR8_vRNA_untreated_r1
+    sample_group: Influenza_A_PR8_vRNA
+    condition: untreated
+    replicate: 1
+  - accession: DRR205185
+    sample_name: Influenza_A_PR8_vRNA_untreated_r2
+    sample_group: Influenza_A_PR8_vRNA
+    condition: untreated
+    replicate: 2
+  - accession: DRR383850
+    sample_name: Influenza_A_PR8_MDCK_treated_r1
+    sample_group: Influenza_A_PR8_MDCK  # virions produced in MDCK cells, probed intact
+    condition: treated
+    replicate: 1
+  - accession: DRR383851
+    sample_name: Influenza_A_PR8_MDCK_treated_r2
+    sample_group: Influenza_A_PR8_MDCK
+    condition: treated
+    replicate: 2
+  - accession: DRR383848
+    sample_name: Influenza_A_PR8_MDCK_untreated_r1
+    sample_group: Influenza_A_PR8_MDCK
+    condition: untreated
+    replicate: 1
+  - accession: DRR383849
+    sample_name: Influenza_A_PR8_MDCK_untreated_r2
+    sample_group: Influenza_A_PR8_MDCK
+    condition: untreated
+    replicate: 2
+  - accession: DRR383854
+    sample_name: Influenza_A_PR8_MDCK_87mut_treated_r1
+    sample_group: Influenza_A_PR8_MDCK_87mut  # mutations disrupting base pairs at nt 87-130 of segment 5
+    condition: treated
+    replicate: 1
+  - accession: DRR383855
+    sample_name: Influenza_A_PR8_MDCK_87mut_treated_r2
+    sample_group: Influenza_A_PR8_MDCK_87mut
+    condition: treated
+    replicate: 2
+  - accession: DRR383852
+    sample_name: Influenza_A_PR8_MDCK_87mut_untreated_r1
+    sample_group: Influenza_A_PR8_MDCK_87mut
+    condition: untreated
+    replicate: 1
+  - accession: DRR383853
+    sample_name: Influenza_A_PR8_MDCK_87mut_untreated_r2
+    sample_group: Influenza_A_PR8_MDCK_87mut
+    condition: untreated
+    replicate: 2
+  - accession: DRR383858
+    sample_name: Influenza_A_PR8_MDCK_87rec_treated_r1
+    sample_group: Influenza_A_PR8_MDCK_87rec  # a second mutant at the same segment 5 site (the paper names it 87rec)
+    condition: treated
+    replicate: 1
+  - accession: DRR383859
+    sample_name: Influenza_A_PR8_MDCK_87rec_treated_r2
+    sample_group: Influenza_A_PR8_MDCK_87rec
+    condition: treated
+    replicate: 2
+  - accession: DRR383856
+    sample_name: Influenza_A_PR8_MDCK_87rec_untreated_r1
+    sample_group: Influenza_A_PR8_MDCK_87rec
+    condition: untreated
+    replicate: 1
+  - accession: DRR383857
+    sample_name: Influenza_A_PR8_MDCK_87rec_untreated_r2
+    sample_group: Influenza_A_PR8_MDCK_87rec
+    condition: untreated
+    replicate: 2
+
+comment: null

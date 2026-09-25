@@ -3,7 +3,7 @@
 Last sweep: 2026-09-24, second pass (all years; literature 2,097 new papers, GEO 410 series).
 
 Replication stopped being a hard reject and native viral regions became in scope on
-2026-09-24, so these earlier rejects are candidates again. Curated so far: rnastruct00109-00120.
+2026-09-24, so these earlier rejects are candidates again. Curated so far: rnastruct00109-00119.
 
 | Accession | DOI | Earlier reason | Now |
 |---|---|---|---|
@@ -18,9 +18,9 @@ Replication stopped being a hard reject and native viral regions became in scope
 
 ## From the 2026-09-24 second sweep
 
-Curated: rnastruct00121-00137, plus GSE264642 added to rnastruct00066. Rejected (in
+Curated: rnastruct00120-00136, plus GSE264642 added to rnastruct00066. Rejected (in
 `../excluded_dois.tsv`, or GEO-only): GSE108859 (targeted), GSE338022 (purified ribosome
-particles), GSE291931 (DNA mutagenesis, not probing), GSE252404 (dbGaP only), PRJNA865760
+particles), GSE291931 (DNA mutagenesis, not probing), GSE252404 (dbGaP only), GSE115158 + GSE115159 (removed after curation: ribosome-state rRNA study), PRJNA865760
 (already rnastruct00084).
 
 Still open:

@@ -12,7 +12,7 @@ experiment:
   chemical: NAI-N3
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: mRNA
+  rna_type: total  # isolated rRNA fraction (18S, 28S)
   pH: null
   adapter_3p: null
   adapter_5p: null
@@ -26,26 +26,26 @@ raw_data:
   repository: GEO
   accession: GSE243544
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243544
-  # Poly(A)+ RNA arm of GSE243544; the rRNA arm is rnastruct00134. DMSO is the NAI-N3 vehicle (untreated).
+  # rRNA arm of GSE243544; the poly(A)+ RNA arm is rnastruct00132. DMSO is the NAI-N3 vehicle (untreated).
   # Excluded from this curation:
-  # - GSM7790707, GSM7790708: acetylimidazole (AcIm) and AcIN3 probing, reagents not in the schema.
+  # - GSM7790699-GSM7790702: acetylimidazole (AcIm) and AcIN3 probing, reagents not in the schema.
   run_accessions:
-  - accession: GSM7790709
+  - accession: GSM7790703
     sample_name: HEK293_treated_r1
-    sample_group: HEK293  # HEK293 cells, NAI-N3 in cells; poly(A)+ RNA library
+    sample_group: HEK293  # HEK293 cells, NAI-N3 in cells; rRNA library
     condition: treated
     replicate: 1
-  - accession: GSM7790710
+  - accession: GSM7790704
     sample_name: HEK293_treated_r2
     sample_group: HEK293
     condition: treated
     replicate: 2
-  - accession: GSM7790711
+  - accession: GSM7790705
     sample_name: HEK293_untreated_r1
     sample_group: HEK293
     condition: untreated
     replicate: 1
-  - accession: GSM7790712
+  - accession: GSM7790706
     sample_name: HEK293_untreated_r2
     sample_group: HEK293
     condition: untreated

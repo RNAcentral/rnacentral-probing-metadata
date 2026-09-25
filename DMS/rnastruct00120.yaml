@@ -2,56 +2,51 @@ dataset_id: rnastruct00120
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: HIV
-  ncbi_taxid: 11676
-  strain: NL4-3  # HIV-1 NL4-3 (VSV-G-pseudotyped, delta Env); reference AF324493.
+  scientific_name: Arabidopsis thaliana
+  ncbi_taxid: 3702
 
 experiment:
-  method: DMS-MaPseq
-  principle: MaP
+  method: Structure-seq
+  principle: RT-stop
   obi: OBI:0001015
   chemical: DMS
-  RT_enzyme: Group II intron
+  RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total
+  rna_type: mRNA
   pH: null
   adapter_3p: null
   adapter_5p: null
   umi_pattern: null
 
 publication:
-  doi: 10.1038/s41594-024-01468-3
-  year: 2025
+  doi: 10.1038/nature12756
+  year: 2014
 
 raw_data:
-  repository: GEO
-  accession: GSE244468
-  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244468
-  # Native viral region: the gag-pol ribosomal frameshift site of HIV-1 genomic RNA in infected cells,
-  # RT-PCR amplified (MarathonRT with Mn2+). Ethanol, the DMS vehicle, is the untreated control.
-  # The pipeline's genome key is human_immunodeficiency_virus_1_nl4_3, which "HIV (NL4-3)" does not match:
-  # pass --fasta with AF324493.2.
-  # Excluded from this curation:
-  # - Ribosome profiling, disome-seq, RNA-seq and nanopore isoform libraries in GSE244468.
+  repository: SRA
+  accession: SRP027216
+  landing_page: https://www.ncbi.nlm.nih.gov/sra/SRP027216
+  # Structure-seq of Col-0 seedlings (Ding 2014): poly(A)-selected, SuperScript III random-hexamer RT stops.
+  # The separate 2016 FoldAtlas deposit of the same system is rnastruct00121.
   run_accessions:
-  - accession: GSM8656243
-    sample_name: HIV-1_NL4-3_treated_r1
-    sample_group: HIV-1_NL4-3  # HIV-1-infected SupT1 T cells, 24 h post infection
+  - accession: SRR933552
+    sample_name: Col-0_treated_r1
+    sample_group: Col-0  # 5-day-old etiolated Col-0 seedlings, DMS in vivo
     condition: treated
     replicate: 1
-  - accession: GSM8656244
-    sample_name: HIV-1_NL4-3_treated_r2
-    sample_group: HIV-1_NL4-3
+  - accession: SRR933556
+    sample_name: Col-0_treated_r2
+    sample_group: Col-0
     condition: treated
     replicate: 2
-  - accession: GSM8656245
-    sample_name: HIV-1_NL4-3_untreated_r1
-    sample_group: HIV-1_NL4-3
+  - accession: SRR933551
+    sample_name: Col-0_untreated_r1
+    sample_group: Col-0
     condition: untreated
     replicate: 1
-  - accession: GSM8656246
-    sample_name: HIV-1_NL4-3_untreated_r2
-    sample_group: HIV-1_NL4-3
+  - accession: SRR933557
+    sample_name: Col-0_untreated_r2
+    sample_group: Col-0
     condition: untreated
     replicate: 2
 

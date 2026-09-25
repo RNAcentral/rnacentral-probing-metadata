@@ -1,0 +1,55 @@
+dataset_id: rnastruct00125
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: DIM-2P-seq  # DMS-induced mutations mapped by 2P-seq: TGIRT readthrough of poly(A)-anchored 3'-end fragments
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACATCAC
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.cell.2017.04.036
+  year: 2017
+
+raw_data:
+  repository: GEO
+  accession: GSE95465
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95465
+  # Structure of mRNA 3' ends (the last few hundred nt before the poly(A) tail) across the transcriptome.
+  # Excluded from this curation:
+  # - GSM2514564 (control replicate 2, single-end): a second sequencing of replicate 2; the paired-end run is kept.
+  # - GSM2514566 (control replicate 3): no DMS-treated library at that replicate.
+  run_accessions:
+  - accession: GSM2514561
+    sample_name: HEK293T_treated_r1
+    sample_group: HEK293T  # 3.3% DMS for 5 min in cells
+    condition: treated
+    replicate: 1
+  - accession: GSM2514562
+    sample_name: HEK293T_treated_r2
+    sample_group: HEK293T
+    condition: treated
+    replicate: 2
+  - accession: GSM2514563
+    sample_name: HEK293T_untreated_r1
+    sample_group: HEK293T
+    condition: untreated
+    replicate: 1
+  - accession: GSM2514565
+    sample_name: HEK293T_untreated_r2
+    sample_group: HEK293T
+    condition: untreated
+    replicate: 2
+
+comment: null

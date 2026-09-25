@@ -2,53 +2,97 @@ dataset_id: rnastruct00126
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: Homo sapiens
-  ncbi_taxid: 9606
+  scientific_name: Saccharomyces cerevisiae
+  ncbi_taxid: 4932
 
 experiment:
-  method: DIM-2P-seq  # DMS-induced mutations mapped by 2P-seq: TGIRT readthrough of poly(A)-anchored 3'-end fragments
-  principle: MaP
+  method: DREADS  # DMS RT-stops linked to individual 3' mRNA isoforms by paired-end 3'READS sequencing
+  principle: RT-stop
   obi: OBI:0001015
   chemical: DMS
-  RT_enzyme: Group II intron
-  context: [in_vivo]
+  RT_enzyme: M-MLV
+  context: [in_vivo, in_vitro]
   rna_type: mRNA
   pH: null
-  adapter_3p: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACATCAC
+  adapter_3p: null
   adapter_5p: null
   umi_pattern: null
 
 publication:
-  doi: 10.1016/j.cell.2017.04.036
-  year: 2017
+  doi: 10.1016/j.molcel.2018.08.044
+  year: 2018
 
 raw_data:
   repository: GEO
-  accession: GSE95465
-  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95465
-  # Structure of mRNA 3' ends (the last few hundred nt before the poly(A) tail) across the transcriptome.
+  accession: GSE95788
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95788
+  # Siblings from GSE95788: rnastruct00126 (S. cerevisiae DREADS), 00127 (D. hansenii), 00128 (K. lactis), 00129 (SHREADS/NAI).
+  # RT-stop library; the RT enzyme is not named in the paper, M-MLV family assumed. Cells spiked with S. pombe for normalisation.
+  # Library preps 1 and 2 of each biological replicate share that replicate (prep token in sample_name).
   # Excluded from this curation:
-  # - GSM2514564 (control replicate 2, single-end): a second sequencing of replicate 2; the paired-end run is kept.
-  # - GSM2514566 (control replicate 3): no DMS-treated library at that replicate.
+  # - GSM2525943-GSM2525954 (JYAC7, JYAC2): S. cerevisiae carrying D. hansenii / K. lactis YAC segments; needs a
+  #   combined reference.
+  # - GSM3389529-GSM3389532 (SOD1 3' UTR randomised plasmid library): construct.
+  # - CLIP-READS libraries (Pab1 IP): not probing.
   run_accessions:
-  - accession: GSM2514561
-    sample_name: HEK293T_treated_r1
-    sample_group: HEK293T  # 3.3% DMS for 5 min in cells
+  - accession: GSM2525923
+    sample_name: JGY2000_prep1_treated_r1
+    sample_group: JGY2000  # JGY2000 in YPD, DMS in vivo
     condition: treated
     replicate: 1
-  - accession: GSM2514562
-    sample_name: HEK293T_treated_r2
-    sample_group: HEK293T
+  - accession: GSM2525924
+    sample_name: JGY2000_prep2_treated_r1
+    sample_group: JGY2000
+    condition: treated
+    replicate: 1
+  - accession: GSM2525927
+    sample_name: JGY2000_prep1_treated_r2
+    sample_group: JGY2000
     condition: treated
     replicate: 2
-  - accession: GSM2514563
-    sample_name: HEK293T_untreated_r1
-    sample_group: HEK293T
+  - accession: GSM2525928
+    sample_name: JGY2000_prep2_treated_r2
+    sample_group: JGY2000
+    condition: treated
+    replicate: 2
+  - accession: GSM2525921
+    sample_name: JGY2000_prep1_untreated_r1
+    sample_group: JGY2000
     condition: untreated
     replicate: 1
-  - accession: GSM2514565
-    sample_name: HEK293T_untreated_r2
-    sample_group: HEK293T
+  - accession: GSM2525922
+    sample_name: JGY2000_prep2_untreated_r1
+    sample_group: JGY2000
+    condition: untreated
+    replicate: 1
+  - accession: GSM2525925
+    sample_name: JGY2000_prep1_untreated_r2
+    sample_group: JGY2000
+    condition: untreated
+    replicate: 2
+  - accession: GSM2525926
+    sample_name: JGY2000_prep2_untreated_r2
+    sample_group: JGY2000
+    condition: untreated
+    replicate: 2
+  - accession: GSM2525930
+    sample_name: JGY2000_invitro_treated_r1
+    sample_group: JGY2000_invitro  # total RNA denatured, refolded and DMS-probed in vitro
+    condition: treated
+    replicate: 1
+  - accession: GSM2525932
+    sample_name: JGY2000_invitro_treated_r2
+    sample_group: JGY2000_invitro
+    condition: treated
+    replicate: 2
+  - accession: GSM2525929
+    sample_name: JGY2000_invitro_untreated_r1
+    sample_group: JGY2000_invitro
+    condition: untreated
+    replicate: 1
+  - accession: GSM2525931
+    sample_name: JGY2000_invitro_untreated_r2
+    sample_group: JGY2000_invitro
     condition: untreated
     replicate: 2
 

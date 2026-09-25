@@ -52,6 +52,7 @@ doi	accession	gate	reason
 10.1111/tpj.71060	PRJEB102517	scope	single mRNA element (45ABC)
 10.1093/nar/gkag672	PRJNA1188187	scope	synthetic RNA library
 10.1093/nar/gkaf701	PRJNA1165154	scope	pseudouridine-modified constructs
+10.1016/j.molcel.2018.12.009	GSE115158	scope	yeast ribosome-state DMS-MaPseq, in vivo and ribosome-profiling lysates, analysed for rRNA only; removed by user
 10.1016/j.jbc.2025.110172	GSE279192	replicates	lncRNA DRAIC: one 5NIA and one DMSO run (also targeted)
 10.3389/fmicb.2024.1362067	PRJNA714002	not probing	nextPARS enzymatic probing
 10.1093/gpbjnl/qzaf078	PRJNA1071355	not probing	rG4-seq RT stalling, no reagent
