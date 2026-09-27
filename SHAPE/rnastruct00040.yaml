@@ -27,9 +27,8 @@ raw_data:
   accession: GSE146952
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE146952
   # Excluded from this curation:
-  # - GSM4411327 (Dicer_RIP_icSHAPE_MaP_NAIN3_rep3): three NAI-N3-treated Dicer-RIP replicates but only two
-  #   DMSO controls; with no control at replicate 3 the pipeline would score r3 treated-only while r1/r2 are
-  #   scored against DMSO. Dropped to keep the group on one scoring method.
+  # - GSM4411323-GSM4411327 (Dicer_RIP): failed the replicate-correlation QC gate (min pairwise
+  #   Spearman 0.143, Pearson 0.3; threshold 0.5).
   # - GSM4411328-GSM4411330 (Dicer_RIP_input): RIP input libraries, not probing samples.
   run_accessions:
   - accession: GSM4411317
@@ -62,23 +61,5 @@ raw_data:
     sample_group: HEK293T_sRNA_in_vitro
     condition: treated
     replicate: 2
-  - accession: GSM4411323
-    sample_name: Dicer_RIP_untreated_r1
-    sample_group: HEK293T_Dicer_RIP # Dicer-bound RNA probed after pulldown
-    condition: untreated
-    replicate: 1
-  - accession: GSM4411324
-    sample_name: Dicer_RIP_untreated_r2
-    sample_group: HEK293T_Dicer_RIP
-    condition: untreated
-    replicate: 2
-  - accession: GSM4411325
-    sample_name: Dicer_RIP_treated_r1
-    sample_group: HEK293T_Dicer_RIP
-    condition: treated
-    replicate: 1
-  - accession: GSM4411326
-    sample_name: Dicer_RIP_treated_r2
-    sample_group: HEK293T_Dicer_RIP
-    condition: treated
-    replicate: 2
+
+comment: null
