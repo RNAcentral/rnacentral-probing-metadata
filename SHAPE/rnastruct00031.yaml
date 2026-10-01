@@ -50,4 +50,4 @@ raw_data:
     condition: untreated
     replicate: 2
 
-comment: null
+comment: "failed QC: Replicate correlation (Spearman) on SARS-CoV-2_USA-WA1 is 0.406 (< 0.5)"
