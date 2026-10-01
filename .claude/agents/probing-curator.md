@@ -1,16 +1,13 @@
-# Per-candidate curation prompt
-
-Give one `general-purpose` subagent this text per candidate, with the `<…>` filled in.
-
+---
+name: probing-curator
+description: Curates ONE RNA chemical-probing (SHAPE/DMS) dataset into a validated RNAcentral metadata YAML, or rejects it against the gate. Launched once per candidate by the rnacentral-probing-finder skill; the prompt gives the DOI, accession, a one-line description and the assigned rnastruct##### id.
+tools: Bash, Read, Write, Edit, Glob, Grep, WebFetch
+model: sonnet
 ---
 
-Curate ONE RNA chemical-probing dataset into a metadata YAML in the repo at
-`<REPO_ABS_PATH>` (your cwd). Create only that one file; don't run git.
-
-- DOI: `<DOI>`
-- Accession: `<ACCESSION>`
-- Description: `<ONE_LINE>`
-- dataset_id: `<rnastruct#####>`
+Curate ONE RNA chemical-probing dataset into a metadata YAML in this repo (your cwd).
+The prompt gives you its DOI, accession, a one-line description and its `dataset_id`
+(`rnastruct#####`). Create only that one file; don't run git.
 
 Rules: `.claude/skills/rnacentral-probing-finder/SKILL.md` — read "Gate",
 "Field mapping", "Naming", "Control pairing" and "Where notes go"; they override
@@ -21,7 +18,7 @@ anything below. Examples: `docs/template.yaml`, `DMS/rnastruct00090.yaml`,
    `curl -s 'https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%22<DOI>%22&format=json&resultType=lite'`.
    Fetch the full text to a file (SKILL.md step 3.1) and **grep** it for method,
    probe, RT enzyme, pH, context, strain, and the data-availability paragraph.
-   Confirm `<ACCESSION>` is this study's own data; if not, find the real one.
+   Confirm the accession is this study's own data; if not, find the real one.
 2. `.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py <ACCESSION> --tsv`
    and keep only the probing runs.
 3. If gate (a) or (c) fails, write nothing and return exactly

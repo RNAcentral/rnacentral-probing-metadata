@@ -62,10 +62,11 @@ studies (the commonest false positive — chemistry and replication look fine),
 re-analyses whose accession is already in the repo, reviews, protocol chapters and
 non-RNA "shape" hits.
 
-## 3. Curate (one `general-purpose` subagent per paper)
+## 3. Curate (one `probing-curator` subagent per paper)
 
 Assign each candidate the next `rnastruct#####` up front (consecutive across both
-folders) and give it `reference/curate-prompt.md`. Each subagent:
+folders) and launch the `probing-curator` agent (`.claude/agents/probing-curator.md`,
+runs on Sonnet) with its DOI, accession, a one-line description and the id. Each subagent:
 
 1. **Fetches full text to a file and greps it** — never reads the XML into context.
    Europe PMC first, NCBI as fallback (Europe PMC 500s on some records it holds;
