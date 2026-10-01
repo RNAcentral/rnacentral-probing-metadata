@@ -33,7 +33,7 @@ Scripts (`.claude/skills/rnacentral-probing-finder/scripts/`, no LLM):
 
 - **Always re-run the trailing 12 months.** Europe PMC keeps indexing behind you; the
   norovirus paper (00097/00098) was missed only because it was indexed after the
-  sweep. The last sweep date heads `docs/open-leads.md`; update it after each sweep.
+  sweep. The last sweep date heads `docs/open-leads.md`.
 - **Also sweep GEO** — most probing datasets sit in papers whose abstract never
   names the assay:
   `esearch.fcgi?db=gds&term=<TERM>[All Fields]+AND+gse[Entry Type]&retmax=300`
@@ -41,6 +41,8 @@ Scripts (`.claude/skills/rnacentral-probing-finder/scripts/`, no LLM):
   `DMS-seq`, `DMS-MaP`, `SHAPE-seq`, `DMS probing`, `RNA structure probing`,
   `RNA structurome`, `NAI-N3`, `SHALiPE`, `keth-seq`, `PORE-cupine`, `CIRS-seq`,
   `DANCE-MaP`, `PAIR-MaP`, `LASER-seq`.
+  Drop series already in `DMS/`/`SHAPE/` or in the accession column of
+  `excluded_dois.tsv` (the script only matches DOIs).
 - **Paywalled papers still yield accessions.** Try, in order (they fail independently):
   1. Europe PMC annotations (the script does this):
      `annotations_api/annotationsByArticleIds?articleIds=PMC%3A<PMCID>&type=Accession%20Numbers&format=JSON`
@@ -259,4 +261,7 @@ The shell is zsh: list files literally in `for` loops (no word-splitting of `$VA
 
 - Don't run git; the user commits.
 - Relaunch a subagent that dies on a transient API error.
-- Candidates not yet curated: `docs/open-leads.md`; move a row out when it is curated or rejected.
+- Candidates not yet curated: `docs/open-leads.md`. Rewrite it at the end of every sweep
+  (sweep date + one table: still-open rows carried forward, plus new uncurated hits);
+  record every reject in `excluded_dois.tsv` first, with an empty doi for GEO-only series.
+  Don't keep curation history there — git has it.

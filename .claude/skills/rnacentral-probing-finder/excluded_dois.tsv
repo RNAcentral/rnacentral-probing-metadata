@@ -97,3 +97,5 @@ doi	accession	gate	reason
 10.1109/cvprw67362.2025.00642		not data	image-processing "shape" false positive
 10.1109/tmi.2025.3642381		not data	image-processing "shape" false positive
 10.1038/s44319-025-00598-z	PRJNA1219967	not RNA	DMS-seq of adenoviral DNA
+	GSE338022	scope	purified ribosome particles (GEO-only)
+	GSE291931	not probing	DNA mutagenesis, not chemical probing (GEO-only)
