@@ -5,8 +5,8 @@ Mechanical triage only — no LLM. For each year range it searches Europe PMC fo
 chemical-probing methods, drops papers whose DOI is already in the repo, and for
 every remaining hit resolves open-access status + PMCID and the study's own
 GEO/SRA/PRJNA accession: open-access full text first, then Europe PMC text-mined
-annotations, then NCBI's PubMed -> GEO links, then (with ELSEVIER_API_KEY set)
-Elsevier's full-text API.
+annotations, then NCBI's PubMed -> GEO links, then a BioProject whose title matches
+the paper's.
 
 Output: a TSV to stdout with columns
     year_range  doi  pub_year  open_access  pmcid  accession  title
@@ -23,7 +23,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import sys
 import time
@@ -71,11 +70,10 @@ RUN_RE = re.compile(r"[SED]R[XR]\d{6,}")
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 
 
-def get(url: str, tries: int = 3, headers: dict[str, str] | None = None) -> bytes:
+def get(url: str, tries: int = 3) -> bytes:
     for i in range(tries):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=headers or {}),
-                                        timeout=60) as r:
+            with urllib.request.urlopen(url, timeout=60) as r:
                 return r.read()
         except Exception as e:  # noqa: BLE001
             if i == tries - 1:
@@ -164,22 +162,48 @@ def resolve_accession(pmcid: str, oa: bool) -> str:
     return accession_in(full_text(pmcid, oa))
 
 
-def elsevier_accession(doi: str) -> str:
-    """Accession from Elsevier's full-text API (Cell Press etc. rarely reach PMC).
+STOP = {"the", "and", "for", "with", "from", "into", "that", "this", "their", "reveals",
+        "reveal", "using", "analysis", "study", "role", "via"}
 
-    Needs ELSEVIER_API_KEY (free, dev.elsevier.com). Open-access articles come back
-    in full anywhere; subscription ones only from an entitled network (EBI), else
-    the API returns the abstract alone and this finds nothing.
+
+def title_words(title: str) -> list[str]:
+    return [w for w in re.findall(r"[a-z0-9]+", title.lower()) if len(w) > 2 and w not in STOP]
+
+
+def bioproject_by_title(title: str, year: str) -> str:
+    """BioProject whose title matches the paper's (submitters often reuse it).
+
+    Catches deposits nothing links to the paper (e.g. PRJEB28648, Zika Cell Host &
+    Microbe 2018: no PMC copy, no GEO, no annotation). Accepts only a close title
+    match registered no later than the year after publication: generic titles
+    ("Influenza A Virus genome structure", 2024) otherwise match older papers.
     """
-    key = os.environ.get("ELSEVIER_API_KEY", "")
-    if not key:
+    words = title_words(title)
+    if len(words) < 4:
         return ""
+    term = " AND ".join(words[:6])
     try:
-        xml = get(f"https://api.elsevier.com/content/article/doi/{doi}?httpAccept=text/xml",
-                  tries=2, headers={"X-ELS-APIKey": key}).decode("utf-8", "replace")
+        ids = json.loads(get(f"{EUTILS}/esearch.fcgi?" + urllib.parse.urlencode(
+            {"db": "bioproject", "retmode": "json", "retmax": "20", "term": term})))["esearchresult"]["idlist"]
+        time.sleep(0.4)
+        if not ids:
+            return ""
+        summ = json.loads(get(f"{EUTILS}/esummary.fcgi?" + urllib.parse.urlencode(
+            {"db": "bioproject", "retmode": "json", "id": ",".join(ids)})))["result"]
+        time.sleep(0.4)
     except Exception:  # noqa: BLE001
         return ""
-    return accession_in(xml)
+    want = set(words)
+    best, score = "", 0.0
+    for u in ids:
+        reg = summ.get(u, {}).get("registration_date", "")[:4]
+        if year.isdigit() and reg.isdigit() and int(reg) > int(year) + 1:
+            continue
+        got = set(title_words(summ.get(u, {}).get("project_title", "")))
+        j = len(want & got) / len(want | got) if got else 0.0
+        if j > score:
+            best, score = summ[u]["project_acc"], j
+    return best if score >= 0.6 else ""
 
 
 def accession_in(xml: str) -> str:
@@ -330,11 +354,10 @@ def main() -> int:
         for row in rows:
             if not row["acc"]:
                 row["acc"] = linked.get(row["pmid"], "")
-        # Pass 4 (only with ELSEVIER_API_KEY): publisher full text for Elsevier papers,
-        # the biggest group with no PMC copy.
+        # Pass 4: a BioProject carrying the paper's own title (any repository).
         for row in rows:
-            if not row["acc"] and row["doi"].startswith("10.1016/"):
-                row["acc"] = elsevier_accession(row["doi"])
+            if not row["acc"]:
+                row["acc"] = bioproject_by_title(row["title"], row["year"])
 
     for row in rows:
         print(f"{row['rng']}\t{row['doi']}\t{row['year']}\t"

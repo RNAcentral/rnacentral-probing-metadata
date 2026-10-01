@@ -21,8 +21,8 @@ Scripts (`.claude/skills/rnacentral-probing-finder/scripts/`, no LLM):
 - `find_probing_candidates.py` — Europe PMC search per year range → drop DOIs already
   in `DMS/`/`SHAPE/` or `excluded_dois.tsv` → open-access status + the study's
   accession (PMC full text, OA or not; else text-mined annotations; else PubMed → GEO
-  elink, which may list several GSEs; else Elsevier full text if `ELSEVIER_API_KEY` is
-  set). TSV on stdout, summary on stderr.
+  elink, which may list several GSEs; else a BioProject titled like the paper).
+  TSV on stdout, summary on stderr.
 - `expand_accession.py <GSE|PRJNA|PRJEB|PRJDB> [--tsv]` — per run: accession, sample,
   sample and experiment titles, library name (DDBJ keeps the condition only there).
 
