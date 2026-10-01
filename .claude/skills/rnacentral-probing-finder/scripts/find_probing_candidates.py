@@ -3,8 +3,10 @@
 
 Mechanical triage only — no LLM. For each year range it searches Europe PMC for
 chemical-probing methods, drops papers whose DOI is already in the repo, and for
-every remaining hit resolves open-access status + PMCID and (for open-access hits)
-the study's own GEO/SRA/PRJNA accession from the full-text XML.
+every remaining hit resolves open-access status + PMCID and the study's own
+GEO/SRA/PRJNA accession: open-access full text first, then Europe PMC text-mined
+annotations, then NCBI's PubMed -> GEO links, then (with ELSEVIER_API_KEY set)
+Elsevier's full-text API.
 
 Output: a TSV to stdout with columns
     year_range  doi  pub_year  open_access  pmcid  accession  title
@@ -21,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -62,12 +65,17 @@ QUERY_TERMS = [
     'KW:"RNA structure"',
 ]
 ACC_RE = re.compile(r"GSE\d{4,}|PRJNA\d{4,}|SRP\d{5,}|PRJEB\d{4,}|PRJDB\d{4,}|DR[AP]\d{6,}|E-MTAB-\d{3,}")
+# Experiment / run ids. Text mining often catches only these (e.g. SRX554885 for
+# PRJNA248760), so they are mapped back to their study through ENA.
+RUN_RE = re.compile(r"[SED]R[XR]\d{6,}")
+EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 
 
-def get(url: str, tries: int = 3) -> bytes:
+def get(url: str, tries: int = 3, headers: dict[str, str] | None = None) -> bytes:
     for i in range(tries):
         try:
-            with urllib.request.urlopen(url, timeout=60) as r:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=headers or {}),
+                                        timeout=60) as r:
                 return r.read()
         except Exception as e:  # noqa: BLE001
             if i == tries - 1:
@@ -121,17 +129,67 @@ def search(year_from: int, year_to: int, page_size: int = 200) -> list[dict]:
     return out
 
 
-def resolve_accession(pmcid: str) -> str:
-    """Grep the open-access full-text XML for the first data accession."""
+# Cues for the paper's OWN deposit, strongest first. Methods sections also name
+# reused data ("obtained from a previous study (GSE103421)"), so the first
+# accession in the text is often someone else's.
+CUES = [re.compile(c, re.I) for c in (
+    r"data availability|availability of data|data and code availability",
+    r"accession (?:number|code)s?|deposited|have been submitted|are available (?:at|in|from)",
+)]
+
+
+def full_text(pmcid: str, oa: bool) -> str:
+    """Full-text XML: Europe PMC for open access, else NCBI PMC.
+
+    Europe PMC 500s on author manuscripts and other non-OA PMC records, but NCBI
+    efetch still serves their body (6 of 7 non-OA papers in the benchmark).
+    """
+    urls = [f"{EUTILS}/efetch.fcgi?db=pmc&id={pmcid}&retmode=xml"]
+    if oa:
+        urls.insert(0, f"{EPMC}/{pmcid}/fullTextXML")
+    for url in urls:
+        try:
+            xml = get(url, tries=1 if "europepmc" in url else 3).decode("utf-8", "replace")
+        except Exception:  # noqa: BLE001
+            continue
+        finally:
+            if "eutils" in url:
+                time.sleep(0.4)  # NCBI allows 3 requests/s without an API key
+        if "<body" in xml:
+            return xml
+    return ""
+
+
+def resolve_accession(pmcid: str, oa: bool) -> str:
+    return accession_in(full_text(pmcid, oa))
+
+
+def elsevier_accession(doi: str) -> str:
+    """Accession from Elsevier's full-text API (Cell Press etc. rarely reach PMC).
+
+    Needs ELSEVIER_API_KEY (free, dev.elsevier.com). Open-access articles come back
+    in full anywhere; subscription ones only from an entitled network (EBI), else
+    the API returns the abstract alone and this finds nothing.
+    """
+    key = os.environ.get("ELSEVIER_API_KEY", "")
+    if not key:
+        return ""
     try:
-        xml = get(f"{EPMC}/{pmcid}/fullTextXML").decode("utf-8", "replace")
+        xml = get(f"https://api.elsevier.com/content/article/doi/{doi}?httpAccept=text/xml",
+                  tries=2, headers={"X-ELS-APIKey": key}).decode("utf-8", "replace")
     except Exception:  # noqa: BLE001
         return ""
-    # Prefer accessions near a "data availability" / "deposited" cue.
-    m = re.search(r"(availability of data|data availability|deposited).{0,600}",
-                  xml, re.I | re.S)
-    window = m.group(0) if m else xml
-    hit = ACC_RE.search(window) or ACC_RE.search(xml)
+    return accession_in(xml)
+
+
+def accession_in(xml: str) -> str:
+    """The study's own accession in a full text: first hit after the strongest cue."""
+    text = re.sub(r"<[^>]+>", " ", xml)
+    for cue in CUES:
+        for m in cue.finditer(text):
+            if hit := ACC_RE.search(text, m.start(), m.end() + 600):
+                return hit.group(0)
+    hit = ACC_RE.search(text)
     return hit.group(0) if hit else ""
 
 
@@ -159,12 +217,58 @@ def accessions_from_annotations(pmcids: list[str]) -> dict[str, str]:
     except Exception:  # noqa: BLE001
         return {}
     out: dict[str, str] = {}
+    runs: dict[str, str] = {}
     for art in data:
         pmc = art.get("pmcid") or ""
         for a in art.get("annotations", []):
             exact = (a.get("exact") or "").strip()
             if pmc and ACC_RE.fullmatch(exact):
                 out.setdefault(pmc, exact)
+            elif pmc and RUN_RE.fullmatch(exact):
+                runs.setdefault(pmc, exact)
+    # Study-level ids win; fall back to the study of a mined experiment/run id.
+    for pmc, run in runs.items():
+        if pmc not in out and (study := study_of_run(run)):
+            out[pmc] = study
+    return out
+
+
+def study_of_run(run: str) -> str:
+    """ENA study (PRJ...) holding an experiment or run id, or '' if unknown."""
+    try:
+        tsv = get("https://www.ebi.ac.uk/ena/portal/api/filereport?" + urllib.parse.urlencode(
+            {"accession": run, "result": "read_run", "fields": "study_accession",
+             "format": "tsv", "limit": "1"})).decode()
+    except Exception:  # noqa: BLE001
+        return ""
+    lines = tsv.splitlines()
+    return lines[1].split("\t")[-1].strip() if len(lines) > 1 else ""
+
+
+def geo_series_from_pubmed(pmids: list[str]) -> dict[str, str]:
+    """GEO series linked to each PMID (comma-joined), via NCBI elink pubmed -> gds.
+
+    Curated links, so it is precise and found every GEO-deposited paper in the
+    hand-curated benchmark; but GEO only (blind to SRA/ENA-only data) and it lags
+    publication by weeks to months. Multiple series (SuperSeries + subseries, or
+    reused data) are all returned for the curator to pick from.
+    """
+    if not pmids:
+        return {}
+    q = urllib.parse.urlencode([("dbfrom", "pubmed"), ("db", "gds"), ("retmode", "json")]
+                               + [("id", p) for p in pmids])
+    try:
+        data = json.loads(get(f"{EUTILS}/elink.fcgi?{q}"))
+    except Exception:  # noqa: BLE001
+        return {}
+    time.sleep(0.4)  # NCBI allows 3 requests/s without an API key
+    out: dict[str, str] = {}
+    for ls in data.get("linksets", []):
+        uids = [u for d in ls.get("linksetdbs", []) for u in d.get("links", [])]
+        # GEO uids encode the type: 200000000 + n is series GSEn (GDS/GSM/GPL differ).
+        gse = [f"GSE{int(u) - 200000000}" for u in uids if len(u) == 9 and u.startswith("200")]
+        if gse:
+            out[ls["ids"][0]] = ",".join(gse)
     return out
 
 
@@ -174,7 +278,7 @@ def main() -> int:
                     default=["2022-2023", "2023-2024", "2024-2025", "2025-2026"],
                     help="Year ranges like 2024-2025.")
     ap.add_argument("--no-accession", action="store_true",
-                    help="Skip full-text accession resolution (faster, fewer calls).")
+                    help="Skip accession resolution (faster, fewer calls).")
     args = ap.parse_args()
 
     have = existing_dois()
@@ -195,15 +299,17 @@ def main() -> int:
             rows.append({
                 "rng": rng, "doi": doi, "year": r.get("pubYear", ""),
                 "oa": r.get("isOpenAccess") == "Y", "pmcid": r.get("pmcid") or "",
+                "pmid": r.get("pmid") or "",
                 "title": (r.get("title") or "").replace("\t", " ").strip(),
                 "acc": "",
             })
 
     if not args.no_accession:
-        # Pass 1: open-access full text (richest - picks the data-availability accession).
+        # Pass 1: full text for every PMC record, not just open access (richest -
+        # picks the data-availability accession).
         for row in rows:
-            if row["oa"] and row["pmcid"]:
-                row["acc"] = resolve_accession(row["pmcid"])
+            if row["pmcid"]:
+                row["acc"] = resolve_accession(row["pmcid"], row["oa"])
         # Pass 2: text-mined annotations for everything still unresolved, INCLUDING
         # paywalled rows. Do not gate this on open access: author manuscripts and
         # other non-OA records have no fetchable full text but are still text-mined,
@@ -215,6 +321,20 @@ def main() -> int:
         for row in rows:
             if not row["acc"]:
                 row["acc"] = mined.get(row["pmcid"], "")
+        # Pass 3: PubMed -> GEO links for whatever is left, including papers with
+        # no PMCID at all (PubMed-only records, e.g. most Cell Press papers).
+        todo = [r["pmid"] for r in rows if r["pmid"] and not r["acc"]]
+        linked: dict[str, str] = {}
+        for i in range(0, len(todo), 100):
+            linked.update(geo_series_from_pubmed(todo[i:i + 100]))
+        for row in rows:
+            if not row["acc"]:
+                row["acc"] = linked.get(row["pmid"], "")
+        # Pass 4 (only with ELSEVIER_API_KEY): publisher full text for Elsevier papers,
+        # the biggest group with no PMC copy.
+        for row in rows:
+            if not row["acc"] and row["doi"].startswith("10.1016/"):
+                row["acc"] = elsevier_accession(row["doi"])
 
     for row in rows:
         print(f"{row['rng']}\t{row['doi']}\t{row['year']}\t"

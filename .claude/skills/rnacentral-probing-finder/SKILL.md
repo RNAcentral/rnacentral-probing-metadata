@@ -20,7 +20,9 @@ single known paper (curate it directly) or non-probing assays (RNA-seq, CLIP, Me
 Scripts (`.claude/skills/rnacentral-probing-finder/scripts/`, no LLM):
 - `find_probing_candidates.py` — Europe PMC search per year range → drop DOIs already
   in `DMS/`/`SHAPE/` or `excluded_dois.tsv` → open-access status + the study's
-  accession (full text, else text-mined annotations). TSV on stdout, summary on stderr.
+  accession (PMC full text, OA or not; else text-mined annotations; else PubMed → GEO
+  elink, which may list several GSEs; else Elsevier full text if `ELSEVIER_API_KEY` is
+  set). TSV on stdout, summary on stderr.
 - `expand_accession.py <GSE|PRJNA|PRJEB|PRJDB> [--tsv]` — per run: accession, sample,
   sample and experiment titles, library name (DDBJ keeps the condition only there).
 
@@ -47,13 +49,14 @@ Scripts (`.claude/skills/rnacentral-probing-finder/scripts/`, no LLM):
   1. Europe PMC annotations (the script does this):
      `annotations_api/annotationsByArticleIds?articleIds=PMC%3A<PMCID>&type=Accession%20Numbers&format=JSON`
      (≤8 ids per call; responses are unordered — key on `pmcid`).
-  2. NCBI elink: `elink.fcgi?dbfrom=pubmed&db=gds&id=<PMID>` (lags publication).
+  2. NCBI elink: `elink.fcgi?dbfrom=pubmed&db=gds&id=<PMID>` (the script does this;
+     GEO only, lags publication).
   3. SRA/BioProject text search on title words or authors
      (`esearch.fcgi?db=sra&term=...`). Japanese groups often deposit at **DDBJ
      (`PRJDB…`)**, which GEO never links (tRNA structure-seq → PRJDB40244).
   With an accession, the GEO SOFT file alone is usually enough to curate (00097/00098).
 - **`isOpenAccess: N` ≠ unreadable.** Author manuscripts (`authMan: Y`) have free
-  full text; fetch as in step 3. Work newest PMCIDs first; old scans have no `<body>`.
+  full text via NCBI (the script fetches it). Old scans have no `<body>`.
 
 ## 2. Shortlist
 
