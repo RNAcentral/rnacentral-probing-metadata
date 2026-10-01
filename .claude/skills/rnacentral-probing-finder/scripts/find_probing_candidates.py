@@ -23,9 +23,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -70,16 +72,49 @@ RUN_RE = re.compile(r"[SED]R[XR]\d{6,}")
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 
 
+# NCBI allows 3 requests/s per IP, 10 with a (free) API key. Every NCBI call goes
+# through get(), which spaces them out and backs off on 429 instead of giving up:
+# an unthrottled all-years sweep got rate-limited for hours and silently lost hits.
+NCBI_KEY = os.environ.get("NCBI_API_KEY", "")
+NCBI_GAP = 0.12 if NCBI_KEY else 0.4
+_ncbi_last = 0.0
+FAILED: dict[str, int] = {}  # host -> requests that failed for good (reported at the end)
+
+
+def log(msg: str) -> None:
+    print(msg, file=sys.stderr, flush=True)
+
+
 def get(url: str, tries: int = 3) -> bytes:
-    for i in range(tries):
+    global _ncbi_last
+    ncbi = url.startswith(EUTILS)
+    if ncbi and NCBI_KEY:
+        url += "&api_key=" + NCBI_KEY
+    failures = throttled = 0
+    while True:
+        if ncbi:
+            time.sleep(max(0.0, _ncbi_last + NCBI_GAP - time.monotonic()))
+            _ncbi_last = time.monotonic()
         try:
             with urllib.request.urlopen(url, timeout=60) as r:
                 return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 503) and throttled < 6:
+                throttled += 1
+                ra = e.headers.get("Retry-After", "")
+                time.sleep(float(ra) if ra.isdigit() else min(60, 5 * 2 ** (throttled - 1)))
+                continue
+            failures += 1
+            err: Exception = e
         except Exception as e:  # noqa: BLE001
-            if i == tries - 1:
-                raise
-            time.sleep(1.5 * (i + 1))
-    raise RuntimeError("unreachable")
+            failures += 1
+            err = e
+        if failures >= tries:
+            if tries > 1:  # single-try calls (Europe PMC full text) have a fallback
+                host = urllib.parse.urlparse(url).netloc
+                FAILED[host] = FAILED.get(host, 0) + 1
+            raise err
+        time.sleep(1.5 * failures)
 
 
 def existing_dois() -> set[str]:
@@ -150,16 +185,9 @@ def full_text(pmcid: str, oa: bool) -> str:
             xml = get(url, tries=1 if "europepmc" in url else 3).decode("utf-8", "replace")
         except Exception:  # noqa: BLE001
             continue
-        finally:
-            if "eutils" in url:
-                time.sleep(0.4)  # NCBI allows 3 requests/s without an API key
         if "<body" in xml:
             return xml
     return ""
-
-
-def resolve_accession(pmcid: str, oa: bool) -> str:
-    return accession_in(full_text(pmcid, oa))
 
 
 STOP = {"the", "and", "for", "with", "from", "into", "that", "this", "their", "reveals",
@@ -185,12 +213,10 @@ def bioproject_by_title(title: str, year: str) -> str:
     try:
         ids = json.loads(get(f"{EUTILS}/esearch.fcgi?" + urllib.parse.urlencode(
             {"db": "bioproject", "retmode": "json", "retmax": "20", "term": term})))["esearchresult"]["idlist"]
-        time.sleep(0.4)
         if not ids:
             return ""
         summ = json.loads(get(f"{EUTILS}/esummary.fcgi?" + urllib.parse.urlencode(
             {"db": "bioproject", "retmode": "json", "id": ",".join(ids)})))["result"]
-        time.sleep(0.4)
     except Exception:  # noqa: BLE001
         return ""
     want = set(words)
@@ -285,7 +311,6 @@ def geo_series_from_pubmed(pmids: list[str]) -> dict[str, str]:
         data = json.loads(get(f"{EUTILS}/elink.fcgi?{q}"))
     except Exception:  # noqa: BLE001
         return {}
-    time.sleep(0.4)  # NCBI allows 3 requests/s without an API key
     out: dict[str, str] = {}
     for ls in data.get("linksets", []):
         uids = [u for d in ls.get("linksetdbs", []) for u in d.get("links", [])]
@@ -315,7 +340,9 @@ def main() -> int:
     rows: list[dict] = []
     for rng in args.ranges:
         yf, yt = (int(x) for x in rng.split("-"))
-        for r in search(yf, yt):
+        hits = search(yf, yt)
+        log(f"search {rng}: {len(hits)} hits")
+        for r in hits:
             doi = (r.get("doi") or "").lower()
             if not doi or doi in have or doi in seen_doi:
                 continue
@@ -325,15 +352,19 @@ def main() -> int:
                 "oa": r.get("isOpenAccess") == "Y", "pmcid": r.get("pmcid") or "",
                 "pmid": r.get("pmid") or "",
                 "title": (r.get("title") or "").replace("\t", " ").strip(),
-                "acc": "",
+                "acc": "", "read": False,
             })
+    log(f"{len(rows)} papers not yet in the repo or excluded")
 
     if not args.no_accession:
         # Pass 1: full text for every PMC record, not just open access (richest -
         # picks the data-availability accession).
-        for row in rows:
-            if row["pmcid"]:
-                row["acc"] = resolve_accession(row["pmcid"], row["oa"])
+        with_pmc = [r for r in rows if r["pmcid"]]
+        for i, row in enumerate(with_pmc, 1):
+            xml = full_text(row["pmcid"], row["oa"])
+            row["read"], row["acc"] = bool(xml), accession_in(xml)
+            if i % 100 == 0 or i == len(with_pmc):
+                log(f"full text {i}/{len(with_pmc)} ({sum(r['acc'] != '' for r in with_pmc[:i])} with accession)")
         # Pass 2: text-mined annotations for everything still unresolved, INCLUDING
         # paywalled rows. Do not gate this on open access: author manuscripts and
         # other non-OA records have no fetchable full text but are still text-mined,
@@ -342,6 +373,7 @@ def main() -> int:
         mined: dict[str, str] = {}
         for i in range(0, len(todo), 8):
             mined.update(accessions_from_annotations(todo[i:i + 8]))
+        log(f"annotations: {len(mined)}/{len(todo)} resolved")
         for row in rows:
             if not row["acc"]:
                 row["acc"] = mined.get(row["pmcid"], "")
@@ -351,13 +383,18 @@ def main() -> int:
         linked: dict[str, str] = {}
         for i in range(0, len(todo), 100):
             linked.update(geo_series_from_pubmed(todo[i:i + 100]))
+        log(f"elink: {len(linked)}/{len(todo)} resolved")
         for row in rows:
             if not row["acc"]:
                 row["acc"] = linked.get(row["pmid"], "")
         # Pass 4: a BioProject carrying the paper's own title (any repository).
-        for row in rows:
-            if not row["acc"]:
-                row["acc"] = bioproject_by_title(row["title"], row["year"])
+        # Skipped when the full text was read and named no accession: that is
+        # almost always a review or methods paper with no data of its own.
+        todo = [r for r in rows if not r["acc"] and not r["read"]]
+        for i, row in enumerate(todo, 1):
+            row["acc"] = bioproject_by_title(row["title"], row["year"])
+            if i % 100 == 0 or i == len(todo):
+                log(f"title match {i}/{len(todo)} ({sum(r['acc'] != '' for r in todo[:i])} resolved)")
 
     for row in rows:
         print(f"{row['rng']}\t{row['doi']}\t{row['year']}\t"
@@ -380,6 +417,8 @@ def main() -> int:
           [(d, a, t[:80]) for d, a, t in recovered])
     block("PAYWALLED, no accession (flag for manual review)",
           [(d, y, t[:90]) for d, y, t in paywalled])
+    if FAILED:
+        log(f"\n### FAILED REQUESTS — accessions may be missing; rerun this range: {FAILED}")
     return 0
 
 

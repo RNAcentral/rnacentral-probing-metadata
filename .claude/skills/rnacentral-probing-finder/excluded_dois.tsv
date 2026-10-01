@@ -99,3 +99,55 @@ doi	accession	gate	reason
 10.1038/s44319-025-00598-z	PRJNA1219967	not RNA	DMS-seq of adenoviral DNA
 	GSE338022	scope	purified ribosome particles (GEO-only)
 	GSE291931	not probing	DNA mutagenesis, not chemical probing (GEO-only)
+10.1073/pnas.1106501108	GSE31573	scope	multiplexed SHAPE-Seq of B. subtilis RNase P in vitro, 2 samples
+10.1021/acs.biochem.5b00977	GSE60034	re-used	icSHAPE subseries of GSE64169, already in the repo
+10.1021/acs.biochem.7b00323	GSE97609	scope	mouse DMS RT-stop vs mutation analysis on 18S rRNA
+10.1371/journal.pgen.1005668	GSE67667	scope	targeted Structure-Seq of Xist
+10.1371/journal.pone.0168915	SRP063571	scope	Yersinia pestis single sRNA
+10.1093/nar/gku815	GSE52878	scope	yeast pre-rRNA in pre-40S particles (ChemModSeq)
+10.15252/msb.20145524	GSE63789	not probing	ribosome profiling
+10.1021/acs.biochem.8b01218	PRJNA257310	re-used	icSHAPE BioProject of GSE64169, already in the repo
+10.1261/rna.067561.118	GSE118309	scope	carbodiimide/DMS/SHAPE in cells on 7SK and Xist fragments (targeted)
+10.1073/pnas.1905491116	GSE135211	scope	PAIR-MaP: gene-specific RT primers for all but rRNA (targeted)
+10.1038/s41587-020-0709-7	GSE152483	not probing	RNP-MaP: protein-RNA crosslinking, not structure probing
+10.1186/s13059-019-1641-3	GSE50676	re-analysis	dStruct method; reuses existing probing data
+10.1021/acs.biochem.0c00020	GSE149061	scope	RT through modifications in synthetic poly(A) constructs
+10.1093/nar/gkz736	GSE121927	not probing	m7G detection by mutational profiling
+10.1016/j.molcel.2020.11.004	GSE154662	not probing	COMRADES RNA-RNA crosslinking
+10.1101/gad.310896.117	GSE109652	scope	nascent histone pre-mRNA (targeted)
+10.1186/s12864-018-4497-0	PRJNA321644	not probing	PARS (nuclease) in zebrafish
+10.1093/nar/gky036	GSE106868	scope	yeast 90S pre-ribosome U3 snoRNA and 35S pre-rRNA
+10.1186/s12859-022-05037-7	GSE60034	re-used	icSHAPE subseries of GSE64169, already in the repo
+10.1186/s13059-021-02379-y	GSE52878	re-analysis	diffBUM-HMM method; reuses GSE52878
+10.3390/cells10020322	PRJNA699408	scope	Arabidopsis psbA targeted probing plus RNA-seq / Ribo-seq
+10.1073/pnas.2101164118	GSE160161	scope	yeast rRNA DMS-MaPseq in ribosome assembly intermediates
+10.1038/s41467-021-22552-y	GSE149493	not probing	psoralen crosslinking (PARIS2)
+10.1261/rna.077263.120	GSE159719	scope	probing of one low-abundance pre-mRNA in RNPs
+10.1016/j.jbc.2022.102759	PRJDB13690	not probing	tRNA-MaP of modification enzymes in vitro
+10.1080/15476286.2021.1926747	PRJNA688427	not probing	dsRNA-seq (nuclease) in P. falciparum
+10.1016/j.gpb.2019.11.013	GSE69472	not probing	RNA proximity ligation
+10.1016/j.molcel.2022.02.009	GSE182552	scope	DANCE-MaP of 7SK RNA (single RNA)
+10.1016/j.crmeth.2021.100088	GSE69586	re-analysis	spatial-correlation method; reuses existing probing data
+10.1042/bst20200670	GSE154662	not data	review
+10.1093/nar/gkad522	GSE225383	scope	enhanced DMS-MaP of RNase P / RMRP (targeted)
+10.1007/978-1-0716-3191-1_7	PRJNA639520	not probing	RNP-MaP protocol: protein-RNA crosslinking
+10.7554/elife.98540	GSE271825	scope	BASH MaP of AKT2 / pUG / Spinach constructs
+10.1021/acs.biochem.4c00343	GSE278422	scope	single-molecule correlated probing of in vitro E. faecalis RNAs
+10.1093/nar/gkae089	GSE182552	re-analysis	RNAvigate tool; reuses GSE182552
+10.1038/s41467-024-45517-3	GSE146407	scope	icSHAPE of SINEUP RNA (single RNA)
+10.1093/nar/gkad1034	GSE230495	scope	Factor VIII exon-16 intronic element (targeted)
+10.7717/peerj.16414	GSE127188	not probing	RNA proximity ligation data
+10.32607/actanaturae.11893	GSE127188	not probing	RNA proximity ligation data
+10.1016/j.cell.2023.05.032	GSE226783	scope	icSHAPE of R2 retrotransposon RNA constructs
+10.1016/j.molcel.2026.08.004	GSE327654	scope	SHAPE-MaP of CONCR lncRNA (single RNA)
+10.1261/rna.080775.125	PRJNA1180558	scope-viral	HCV and EMCV IRES DMS-MaPseq amplicons
+10.1093/nar/gkaf433	GSE283716	scope	SHAPE-MaP/JuMP of Alu backsplicing constructs
+10.1021/jacsau.5c01280	GSE286293	scope	new cationic probe on group II intron / RNase P / TPP constructs
+10.1016/j.xplc.2025.101575	PRJNA762705	re-used	accession is RNA-seq, not this study's own probing data
+10.1073/pnas.2504034122	GSE288523	not probing	CAR-SPLASH psoralen crosslinking
+10.1261/rna.080288.124	GSE230495	scope	Factor VIII exon-16 intronic element (targeted)
+10.1016/j.ccell.2025.02.027	GSE283444	scope	DMS on AR / APEX1 / DNAJA1 5'UTR amplicons
+10.1093/gigascience/giz150	PRJNA211324	re-used	SRA study SRP027216 already in the repo
+10.1038/s41596-024-00959-3	PRJNA938445	re-used	SRA study SRP424422 already in the repo
+10.1007/978-1-0716-1158-6_13	PRJNA329551	re-used	protocol chapter; data is GSE84537, already in the repo
+10.1093/nargab/lqaf001	PRJNA196404	re-analysis	reuses GSE45803, already in the repo
