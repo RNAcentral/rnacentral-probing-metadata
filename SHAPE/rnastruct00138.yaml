@@ -1,0 +1,51 @@
+dataset_id: rnastruct00138
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Saccharomyces cerevisiae
+  ncbi_taxid: 4932
+
+experiment:
+  method: ChemModSeq  # NAI RT-stop sequencing (GEO library strategy)
+  principle: RT-stop
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: AGATCGGAAGAGCACACG
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/nmeth.4068
+  year: 2017
+
+raw_data:
+  repository: GEO
+  accession: GSE78208
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE78208
+  run_accessions:
+  - accession: GSM2069584
+    sample_name: Saccharomyces_cerevisiae_BY4741_treated_r1
+    sample_group: Saccharomyces_cerevisiae_BY4741
+    condition: treated
+    replicate: 1
+  - accession: GSM2069585
+    sample_name: Saccharomyces_cerevisiae_BY4741_treated_r2
+    sample_group: Saccharomyces_cerevisiae_BY4741
+    condition: treated
+    replicate: 2
+  - accession: GSM2069586
+    sample_name: Saccharomyces_cerevisiae_BY4741_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_BY4741
+    condition: untreated
+    replicate: 1
+  - accession: GSM2069587
+    sample_name: Saccharomyces_cerevisiae_BY4741_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_BY4741
+    condition: untreated
+    replicate: 2
+
+comment: null

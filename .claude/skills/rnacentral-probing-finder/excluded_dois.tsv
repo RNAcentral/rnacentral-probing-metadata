@@ -151,3 +151,14 @@ doi	accession	gate	reason
 10.1038/s41596-024-00959-3	PRJNA938445	re-used	SRA study SRP424422 already in the repo
 10.1007/978-1-0716-1158-6_13	PRJNA329551	re-used	protocol chapter; data is GSE84537, already in the repo
 10.1093/nargab/lqaf001	PRJNA196404	re-analysis	reuses GSE45803, already in the repo
+10.1038/s41467-023-35811-x	GSE200706	replicates	n=1 in-cell control vs starved and in vitro K+ vs Li+; user declined as special case
+10.1093/nar/gkae185	GSE223117	replicates	human NAI-N3 + DMSO, n=1, no special condition
+10.1093/nar/gky486	GSE111962	replicates	E. coli DMS-MaPseq: one total-RNA and one ribo-depleted library, not replicates, no untreated
+10.1038/s41467-022-29398-y	GSE189259	replicates	one 2A3 + one DMSO per virus; user declined as special case
+10.1128/jvi.00635-23	PRJNA936272	replicates	SARS-CoV-2 stem-loop II WT and s2m mutant, n=1; user declined
+10.1073/pnas.2217053120	GSE226865	replicates	dengue viral regions, n=1; user declined
+10.1093/nar/gkx617	GSE95567	replicates	E. coli DMS-seq total / ribo-depleted, n=1, no untreated deposited; user rejected after curation
+10.1093/nar/gkz1124	PRJNA554838	replicates	Flock House virus in virions: one DMS treated/untreated pair, n=1; user rejected after curation
+10.1093/nar/gkaa1255	GSE154563	replicates	one run per reagent and organism (n=1); user rejected all arms after curating 2A3
+10.1080/15476286.2022.2058818	PRJNA725417	replicates	BVDV-1 NADL IRES in vitro, 1M7: one treated/DMSO/denatured set per amplicon zone, n=1; user rejected after curation
+10.1016/j.molcel.2020.11.041	GSE162569	replicates	SARS-CoV-2 WT fragments in vitro, 5NIA: one treated/DMSO pair per region, n=1; user rejected after curation

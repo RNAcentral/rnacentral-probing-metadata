@@ -1,0 +1,75 @@
+dataset_id: rnastruct00140
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Escherichia coli
+  ncbi_taxid: 562
+
+experiment:
+  method: DMS-MaP
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo, in_vitro]
+  rna_type: total
+  pH: 7.0
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1371/journal.pbio.3000393
+  year: 2019
+
+raw_data:
+  repository: SRA
+  accession: PRJNA553663
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA553663
+  # The in-cell groups have no untreated of their own; the in vitro untreated is their control.
+  run_accessions:
+  - accession: SRR9665351
+    sample_name: Escherichia_coli_K-12_treated_r1
+    sample_group: Escherichia_coli_K-12
+    condition: treated
+    replicate: 1
+  - accession: SRR9665347
+    sample_name: Escherichia_coli_K-12_treated_r2
+    sample_group: Escherichia_coli_K-12
+    condition: treated
+    replicate: 2
+  - accession: SRR9665350
+    sample_name: Escherichia_coli_K-12_Rif_treated_r1
+    sample_group: Escherichia_coli_K-12_Rif  # rifampicin
+    condition: treated
+    replicate: 1
+  - accession: SRR9665346
+    sample_name: Escherichia_coli_K-12_Rif_treated_r2
+    sample_group: Escherichia_coli_K-12_Rif
+    condition: treated
+    replicate: 2
+  - accession: SRR9665349
+    sample_name: Escherichia_coli_K-12_Rif_Spc_treated_r1
+    sample_group: Escherichia_coli_K-12_Rif_Spc  # rifampicin then spectinomycin
+    condition: treated
+    replicate: 1
+  - accession: SRR9665345
+    sample_name: Escherichia_coli_K-12_Rif_Spc_treated_r2
+    sample_group: Escherichia_coli_K-12_Rif_Spc
+    condition: treated
+    replicate: 2
+  - accession: SRR9665352
+    sample_name: Escherichia_coli_K-12_invitro_treated_r1
+    sample_group: Escherichia_coli_K-12_invitro  # purified total RNA probed in vitro
+    condition: treated
+    replicate: 1
+  - accession: SRR9665348
+    sample_name: Escherichia_coli_K-12_invitro_treated_r2
+    sample_group: Escherichia_coli_K-12_invitro
+    condition: treated
+    replicate: 2
+  - accession: SRR9665353
+    sample_name: Escherichia_coli_K-12_invitro_untreated_r1
+    sample_group: Escherichia_coli_K-12_invitro
+    condition: untreated
+    replicate: 1

@@ -1,0 +1,54 @@
+dataset_id: rnastruct00137
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: SARS-CoV-2
+  ncbi_taxid: 2697049
+  strain: USA-WA1/2020  # icSARS-CoV-2-mNG, an infectious clone of USA-WA1/2020.
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_virio]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.3390/v12121473
+  year: 2020
+
+raw_data:
+  repository: SRA
+  accession: PRJNA669862
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA669862
+  # Excluded from this curation:
+  # - SRR12844693-SRR12844696 (minigene in transfected cells): designed construct.
+  run_accessions:
+  - accession: SRR12844690
+    sample_name: SARS-CoV-2_USA-WA1_untreated_r1
+    sample_group: SARS-CoV-2_USA-WA1  # 3' UTR in virions
+    condition: untreated
+    replicate: 1
+  - accession: SRR12844689
+    sample_name: SARS-CoV-2_USA-WA1_untreated_r2
+    sample_group: SARS-CoV-2_USA-WA1
+    condition: untreated
+    replicate: 2
+  - accession: SRR12844692
+    sample_name: SARS-CoV-2_USA-WA1_treated_r1
+    sample_group: SARS-CoV-2_USA-WA1
+    condition: treated
+    replicate: 1
+  - accession: SRR12844691
+    sample_name: SARS-CoV-2_USA-WA1_treated_r2
+    sample_group: SARS-CoV-2_USA-WA1
+    condition: treated
+    replicate: 2
+
+comment: null
