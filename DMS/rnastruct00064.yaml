@@ -31,24 +31,24 @@ raw_data:
   # The full dataset (GSE247244) also contains E. coli samples at 10°C and H. sapiens data.
   run_accessions:
   - accession: GSM7885842
-    sample_name: E_coli_DH5a_in_vivo_37C_treated
+    sample_name: E_coli_DH5a_in_vivo_treated_r1
     sample_group: E_coli_DH5a_in_vivo
     condition: treated
     replicate: 1
   - accession: GSM7885843
-    sample_name: E_coli_TOP10_in_vivo_37C_treated
+    sample_name: E_coli_TOP10_in_vivo_treated_r1
     sample_group: E_coli_TOP10_in_vivo
     condition: treated
     replicate: 1
   - accession: GSM7885844
-    sample_name: E_coli_DH5a_ex_vivo_37C_treated
+    sample_name: E_coli_DH5a_ex_vivo_treated_r1
     sample_group: E_coli_DH5a_ex_vivo
     condition: treated
     replicate: 1
   - accession: GSM7885845
-    sample_name: E_coli_TOP10_ex_vivo_37C_treated
+    sample_name: E_coli_TOP10_ex_vivo_treated_r1
     sample_group: E_coli_TOP10_ex_vivo
     condition: treated
     replicate: 1
 
-comment: skip, this is for rf-jackknife benchmarking, not for general use
+comment: "failed QC: skip, this is for rf-jackknife benchmarking, not for general use"

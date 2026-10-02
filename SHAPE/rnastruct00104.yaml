@@ -1,0 +1,64 @@
+dataset_id: rnastruct00104
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: SARS-CoV-2
+  ncbi_taxid: 2697049
+  strain: EPI_ISL_14917728  # Paper reports Omicron XBB, GISAID EPI_ISL_14917728.
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo, denatured]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-025-63297-2
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE279203
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279203
+  # In-cell SHAPE-MaP on infected E6 TMPRSS2 Vero cells. DMSO is the NAI vehicle (untreated).
+  # GSE279203 holds five variants, one per file: rnastruct00072, rnastruct00101, rnastruct00102, rnastruct00103 cover the other arms.
+  run_accessions:
+  - accession: GSM8564229
+    sample_name: SARSCoV2_Omicron_NAI_treated_r1
+    sample_group: SARS-CoV-2_Omicron_XBB
+    condition: treated
+    replicate: 1
+  - accession: GSM8564230
+    sample_name: SARSCoV2_Omicron_NAI_treated_r2
+    sample_group: SARS-CoV-2_Omicron_XBB
+    condition: treated
+    replicate: 2
+  - accession: GSM8564231
+    sample_name: SARSCoV2_Omicron_DMSO_untreated_r1
+    sample_group: SARS-CoV-2_Omicron_XBB
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564232
+    sample_name: SARSCoV2_Omicron_DMSO_untreated_r2
+    sample_group: SARS-CoV-2_Omicron_XBB
+    condition: untreated
+    replicate: 2
+  - accession: GSM8564227
+    sample_name: SARSCoV2_Omicron_unmodified_denatured_r1
+    sample_group: SARS-CoV-2_Omicron_XBB
+    condition: denatured
+    replicate: 1
+  - accession: GSM8564228
+    sample_name: SARSCoV2_Omicron_unmodified_denatured_r2
+    sample_group: SARS-CoV-2_Omicron_XBB
+    condition: denatured
+    replicate: 2
+
+comment: null

@@ -1,0 +1,65 @@
+dataset_id: rnastruct00094
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: icSHAPE
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/nature11247
+  year: 2012
+
+raw_data:
+  repository: GEO
+  accession: GSE143121
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143121
+  # ENCODE ENCSR992XHC (Spitale lab); its libraries are polyadenylated mRNA, hence rna_type mRNA.
+  # The DMSO controls live in GSE142946, not GSE143121; both are listed below as untreated runs.
+  # Do NOT expand GSE143121 via its SRA project - it resolves to the whole ENCODE BioProject
+  # (57k runs). Fetch the listed GSMs directly.
+  run_accessions:
+  - accession: GSM4250761
+    sample_name: HepG2_treated_r1
+    sample_group: HepG2
+    condition: treated
+    replicate: 1
+  - accession: GSM4250762
+    sample_name: HepG2_treated_r2
+    sample_group: HepG2
+    condition: treated
+    replicate: 2
+  - accession: GSM4250763
+    sample_name: HepG2_treated_r3
+    sample_group: HepG2
+    condition: treated
+    replicate: 3
+  - accession: GSM4247326
+    sample_name: HepG2_untreated_r1
+    sample_group: HepG2
+    condition: untreated
+    replicate: 1
+  - accession: GSM4247327
+    sample_name: HepG2_untreated_r2
+    sample_group: HepG2
+    condition: untreated
+    replicate: 2
+  - accession: GSM4247328
+    sample_name: HepG2_untreated_r3
+    sample_group: HepG2
+    condition: untreated
+    replicate: 3
+
+comment: null

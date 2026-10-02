@@ -1,0 +1,72 @@
+dataset_id: rnastruct00114
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Dengue virus
+  ncbi_taxid: 12637
+  strain: "16681"  # DENV serotype 2; GenBank NC_001474.2.
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003888
+  chemical: 2A3
+  RT_enzyme: M-MLV
+  context: [in_vivo, in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1128/jvi.00898-26
+  year: 2026
+
+raw_data:
+  repository: SRA
+  accession: PRJNA1443375
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1443375
+  run_accessions:
+  - accession: SRR37896997
+    sample_name: Dengue_16681_treated_r1
+    sample_group: Dengue_16681  # sfRNA from infected A549 cells (MOI 2), probed in cells at peak sfRNA
+    condition: treated
+    replicate: 1
+  - accession: SRR37896993
+    sample_name: Dengue_16681_treated_r2
+    sample_group: Dengue_16681
+    condition: treated
+    replicate: 2
+  - accession: SRR37896998
+    sample_name: Dengue_16681_untreated_r1
+    sample_group: Dengue_16681
+    condition: untreated
+    replicate: 1
+  - accession: SRR37896994
+    sample_name: Dengue_16681_untreated_r2
+    sample_group: Dengue_16681
+    condition: untreated
+    replicate: 2
+  - accession: SRR37896977
+    sample_name: Dengue_16681_invitro_treated_r1
+    sample_group: Dengue_16681_invitro  # in vitro-transcribed sfRNA, XRN1-digested and refolded
+    condition: treated
+    replicate: 1
+  - accession: SRR37896995
+    sample_name: Dengue_16681_invitro_treated_r2
+    sample_group: Dengue_16681_invitro
+    condition: treated
+    replicate: 2
+  - accession: SRR37896978
+    sample_name: Dengue_16681_invitro_untreated_r1
+    sample_group: Dengue_16681_invitro
+    condition: untreated
+    replicate: 1
+  - accession: SRR37896996
+    sample_name: Dengue_16681_invitro_untreated_r2
+    sample_group: Dengue_16681_invitro
+    condition: untreated
+    replicate: 2
+
+comment: null

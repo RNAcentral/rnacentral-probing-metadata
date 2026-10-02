@@ -1,0 +1,53 @@
+dataset_id: rnastruct00127
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Debaryomyces hansenii
+  ncbi_taxid: 4959
+
+experiment:
+  method: DREADS  # DMS RT-stops linked to individual 3' mRNA isoforms by paired-end 3'READS sequencing
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2018.08.044
+  year: 2018
+
+raw_data:
+  repository: GEO
+  accession: GSE95788
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95788
+  # Siblings from GSE95788: rnastruct00126 (S. cerevisiae DREADS), 00127 (D. hansenii), 00128 (K. lactis), 00129 (SHREADS/NAI).
+  # Cells spiked with S. pombe for normalisation.
+  run_accessions:
+  - accession: GSM2525940
+    sample_name: Debaryomyces_hansenii_NCYC2572_treated_r1
+    sample_group: Debaryomyces_hansenii_NCYC2572  # D. hansenii NCYC 2572, DMS in vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM2525942
+    sample_name: Debaryomyces_hansenii_NCYC2572_treated_r2
+    sample_group: Debaryomyces_hansenii_NCYC2572
+    condition: treated
+    replicate: 2
+  - accession: GSM2525939
+    sample_name: Debaryomyces_hansenii_NCYC2572_untreated_r1
+    sample_group: Debaryomyces_hansenii_NCYC2572
+    condition: untreated
+    replicate: 1
+  - accession: GSM2525941
+    sample_name: Debaryomyces_hansenii_NCYC2572_untreated_r2
+    sample_group: Debaryomyces_hansenii_NCYC2572
+    condition: untreated
+    replicate: 2
+
+comment: null

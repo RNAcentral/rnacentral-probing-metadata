@@ -1,0 +1,52 @@
+dataset_id: rnastruct00129
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Saccharomyces cerevisiae
+  ncbi_taxid: 4932
+
+experiment:
+  method: SHREADS  # SHAPE-READS: DREADS library prep with NAI instead of DMS
+  principle: RT-stop
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2018.08.044
+  year: 2018
+
+raw_data:
+  repository: GEO
+  accession: GSE95788
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95788
+  # Siblings from GSE95788: rnastruct00126 (S. cerevisiae DREADS), 00127 (D. hansenii), 00128 (K. lactis), 00129 (SHREADS/NAI).
+  run_accessions:
+  - accession: GSM3389533
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_treated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
+    condition: treated
+    replicate: 1
+  - accession: GSM3389535
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_treated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
+    condition: treated
+    replicate: 2
+  - accession: GSM3389534
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_untreated_r1
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
+    condition: untreated
+    replicate: 1
+  - accession: GSM3389536
+    sample_name: Saccharomyces_cerevisiae_JGY2000_YPD_untreated_r2
+    sample_group: Saccharomyces_cerevisiae_JGY2000_YPD
+    condition: untreated
+    replicate: 2
+
+comment: null

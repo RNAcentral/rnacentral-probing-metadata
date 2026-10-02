@@ -1,0 +1,64 @@
+dataset_id: rnastruct00103
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: SARS-CoV-2
+  ncbi_taxid: 2697049
+  strain: EPI_ISL_2621925  # Paper reports Delta (lineage B.1.617.2), GISAID EPI_ISL_2621925.
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003886
+  chemical: NAI
+  RT_enzyme: M-MLV
+  context: [in_vivo, denatured]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41467-025-63297-2
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE279203
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279203
+  # In-cell SHAPE-MaP on infected E6 TMPRSS2 Vero cells. DMSO is the NAI vehicle (untreated).
+  # GSE279203 holds five variants, one per file: rnastruct00072, rnastruct00101, rnastruct00102, rnastruct00104 cover the other arms.
+  run_accessions:
+  - accession: GSM8564223
+    sample_name: SARSCoV2_Delta_NAI_treated_r1
+    sample_group: SARS-CoV-2_Delta
+    condition: treated
+    replicate: 1
+  - accession: GSM8564224
+    sample_name: SARSCoV2_Delta_NAI_treated_r2
+    sample_group: SARS-CoV-2_Delta
+    condition: treated
+    replicate: 2
+  - accession: GSM8564225
+    sample_name: SARSCoV2_Delta_DMSO_untreated_r1
+    sample_group: SARS-CoV-2_Delta
+    condition: untreated
+    replicate: 1
+  - accession: GSM8564226
+    sample_name: SARSCoV2_Delta_DMSO_untreated_r2
+    sample_group: SARS-CoV-2_Delta
+    condition: untreated
+    replicate: 2
+  - accession: GSM8564221
+    sample_name: SARSCoV2_Delta_unmodified_denatured_r1
+    sample_group: SARS-CoV-2_Delta
+    condition: denatured
+    replicate: 1
+  - accession: GSM8564222
+    sample_name: SARSCoV2_Delta_unmodified_denatured_r2
+    sample_group: SARS-CoV-2_Delta
+    condition: denatured
+    replicate: 2
+
+comment: null

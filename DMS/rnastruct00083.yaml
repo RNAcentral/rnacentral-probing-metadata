@@ -1,0 +1,61 @@
+dataset_id: rnastruct00083
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Escherichia coli
+  ncbi_taxid: 562
+
+experiment:
+  method: Structure-seq2
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1093/nar/gkad807
+  year: 2023
+
+raw_data:
+  repository: GEO
+  accession: GSE233607
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233607
+  run_accessions:
+  - accession: SRR24750381
+    sample_name: Escherichia_coli_treated_r1
+    sample_group: Escherichia_coli
+    condition: treated
+    replicate: 1
+  - accession: SRR24750378
+    sample_name: Escherichia_coli_treated_r2
+    sample_group: Escherichia_coli
+    condition: treated
+    replicate: 2
+  - accession: SRR24750375
+    sample_name: Escherichia_coli_treated_r3
+    sample_group: Escherichia_coli
+    condition: treated
+    replicate: 3
+  - accession: SRR24750382
+    sample_name: Escherichia_coli_untreated_r1
+    sample_group: Escherichia_coli
+    condition: untreated
+    replicate: 1
+  - accession: SRR24750379
+    sample_name: Escherichia_coli_untreated_r2
+    sample_group: Escherichia_coli
+    condition: untreated
+    replicate: 2
+  - accession: SRR24750376
+    sample_name: Escherichia_coli_untreated_r3
+    sample_group: Escherichia_coli
+    condition: untreated
+    replicate: 3
+
+comment: null

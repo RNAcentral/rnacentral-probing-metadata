@@ -26,6 +26,7 @@ raw_data:
   repository: GEO
   accession: GSE45803
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45803
+  # BY4741_vitro_45C/60C/75C, S288C_noATP and S288C_10C have one replicate each; kept deliberately.
   # Excluded from this curation:
   # - GSM1115753/GSM1115754/GSM1115755 (BY4741_denatured_95C_r1/r2/r3): heat-denatured controls with condition: treated; not physiologically relevant structures.
   # - GSM1115759/GSM1115760/GSM1115761 (BY4741_treated_vitro_30C_2.5pctDMS_3min/5min/4pctDMS_5min): protocol optimisation samples only.

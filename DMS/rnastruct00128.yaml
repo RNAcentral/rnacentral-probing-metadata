@@ -1,0 +1,53 @@
+dataset_id: rnastruct00128
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Kluyveromyces lactis
+  ncbi_taxid: 28985
+
+experiment:
+  method: DREADS  # DMS RT-stops linked to individual 3' mRNA isoforms by paired-end 3'READS sequencing
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2018.08.044
+  year: 2018
+
+raw_data:
+  repository: GEO
+  accession: GSE95788
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95788
+  # Siblings from GSE95788: rnastruct00126 (S. cerevisiae DREADS), 00127 (D. hansenii), 00128 (K. lactis), 00129 (SHREADS/NAI).
+  # Cells spiked with S. pombe for normalisation.
+  run_accessions:
+  - accession: GSM2525948
+    sample_name: Kluyveromyces_lactis_CLIB209_treated_r1
+    sample_group: Kluyveromyces_lactis_CLIB209  # K. lactis CLIB 209, DMS in vivo
+    condition: treated
+    replicate: 1
+  - accession: GSM2525950
+    sample_name: Kluyveromyces_lactis_CLIB209_treated_r2
+    sample_group: Kluyveromyces_lactis_CLIB209
+    condition: treated
+    replicate: 2
+  - accession: GSM2525947
+    sample_name: Kluyveromyces_lactis_CLIB209_untreated_r1
+    sample_group: Kluyveromyces_lactis_CLIB209
+    condition: untreated
+    replicate: 1
+  - accession: GSM2525949
+    sample_name: Kluyveromyces_lactis_CLIB209_untreated_r2
+    sample_group: Kluyveromyces_lactis_CLIB209
+    condition: untreated
+    replicate: 2
+
+comment: null

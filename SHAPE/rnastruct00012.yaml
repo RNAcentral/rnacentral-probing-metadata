@@ -2,7 +2,7 @@ dataset_id: rnastruct00012
 schema_version: "1.0.0"
 
 organism:
-  scientific_name: HIV
+  scientific_name: HIV  # RNAcentral has only partial ncRNAs (antisense, pre-miRNA, max 1.2 kb), no genome (checked 2026-09-25)
   ncbi_taxid: 11676
   strain: HIV-1_NL4-3  # SRA sample name reports HIV NL4-3 plus NMIA.
 

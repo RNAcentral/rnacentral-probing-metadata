@@ -1,0 +1,79 @@
+dataset_id: rnastruct00099
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Escherichia coli
+  ncbi_taxid: 562
+
+experiment:
+  method: msDMS-MaP  # multi-site DMS-MaP: MarathonRT reads N7-G methylation alongside N1-A/N3-C, giving secondary, tertiary and quaternary structure from one DMS experiment
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo, in_vitro, denatured]
+  rna_type: total
+  pH: 8.3
+  adapter_3p: CTGTCTCTTATACACATCT
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2026.03.029
+  year: 2026
+
+raw_data:
+  repository: GEO
+  accession: GSE285333
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285333
+  # Excluded: the cell-free -Mg rRNA pair (GSM9612346/GSM9612349), a single unreplicated
+  # refolding condition; and all of GSE285334, which is RNP-MaP protein-crosslinking, not chemical probing.
+  run_accessions:
+  - accession: GSM9612344
+    sample_name: Escherichia_coli_K12_treated_r1
+    sample_group: Escherichia_coli_K12
+    condition: treated
+    replicate: 1
+  - accession: GSM9612345
+    sample_name: Escherichia_coli_K12_treated_r2
+    sample_group: Escherichia_coli_K12
+    condition: treated
+    replicate: 2
+  - accession: GSM9612347
+    sample_name: Escherichia_coli_K12_untreated_r1
+    sample_group: Escherichia_coli_K12
+    condition: untreated
+    replicate: 1
+  - accession: GSM9612348
+    sample_name: Escherichia_coli_K12_untreated_r2
+    sample_group: Escherichia_coli_K12
+    condition: untreated
+    replicate: 2
+  # Cell-free arm: total RNA extracted then refolded protein-free, probed in vitro.
+  - accession: GSM8700904
+    sample_name: Escherichia_coli_K12_invitro_treated_r1
+    sample_group: Escherichia_coli_K12_invitro
+    condition: treated
+    replicate: 1
+  - accession: GSM8700906
+    sample_name: Escherichia_coli_K12_invitro_treated_r2
+    sample_group: Escherichia_coli_K12_invitro
+    condition: treated
+    replicate: 2
+  - accession: GSM8700905
+    sample_name: Escherichia_coli_K12_invitro_untreated_r1
+    sample_group: Escherichia_coli_K12_invitro
+    condition: untreated
+    replicate: 1
+  - accession: GSM8700907
+    sample_name: Escherichia_coli_K12_invitro_untreated_r2
+    sample_group: Escherichia_coli_K12_invitro
+    condition: untreated
+    replicate: 2
+  - accession: GSM8700908
+    sample_name: Escherichia_coli_K12_invitro_denatured_r1  # max-reactivity denaturing control
+    sample_group: Escherichia_coli_K12_invitro
+    condition: denatured
+    replicate: 1
+
+comment: null

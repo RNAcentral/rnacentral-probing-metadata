@@ -26,8 +26,10 @@ raw_data:
   repository: GEO
   accession: GSE146952
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE146952
-  # sRNA in vitro samples are extracted small RNAs refolded before NAI-N3 probing.
-  # Dicer-RIP samples are Dicer-bound RNA probed after pulldown.
+  # Excluded from this curation:
+  # - GSM4411323-GSM4411327 (Dicer_RIP): failed the replicate-correlation QC gate (min pairwise
+  #   Spearman 0.143, Pearson 0.3; threshold 0.5).
+  # - GSM4411328-GSM4411330 (Dicer_RIP_input): RIP input libraries, not probing samples.
   run_accessions:
   - accession: GSM4411317
     sample_name: sRNA_in_vivo_untreated_r1
@@ -51,7 +53,7 @@ raw_data:
     replicate: 2
   - accession: GSM4411321
     sample_name: sRNA_in_vitro_treated_r1
-    sample_group: HEK293T_sRNA_in_vitro
+    sample_group: HEK293T_sRNA_in_vitro # extracted small RNAs refolded before NAI-N3 probing; no in-vitro DMSO was deposited, so the pipeline borrows the in-vivo DMSO via the shared HEK293T_sRNA prefix
     condition: treated
     replicate: 1
   - accession: GSM4411322
@@ -59,30 +61,5 @@ raw_data:
     sample_group: HEK293T_sRNA_in_vitro
     condition: treated
     replicate: 2
-  - accession: GSM4411323
-    sample_name: Dicer_RIP_untreated_r1
-    sample_group: HEK293T_Dicer_RIP
-    condition: untreated
-    replicate: 1
-  - accession: GSM4411324
-    sample_name: Dicer_RIP_untreated_r2
-    sample_group: HEK293T_Dicer_RIP
-    condition: untreated
-    replicate: 2
-  - accession: GSM4411325
-    sample_name: Dicer_RIP_treated_r1
-    sample_group: HEK293T_Dicer_RIP
-    condition: treated
-    replicate: 1
-  - accession: GSM4411326
-    sample_name: Dicer_RIP_treated_r2
-    sample_group: HEK293T_Dicer_RIP
-    condition: treated
-    replicate: 2
-  - accession: GSM4411327
-    sample_name: Dicer_RIP_treated_r3
-    sample_group: HEK293T_Dicer_RIP
-    condition: treated
-    replicate: 3
 
 comment: null

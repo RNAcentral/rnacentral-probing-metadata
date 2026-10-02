@@ -1,0 +1,65 @@
+dataset_id: rnastruct00093
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: icSHAPE
+  principle: RT-stop
+  obi: OBI:0003887
+  chemical: NAI-N3
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/nature11247
+  year: 2012
+
+raw_data:
+  repository: GEO
+  accession: GSE143120
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE143120
+  # ENCODE ENCSR976RFC (Spitale lab); its libraries are polyadenylated mRNA, hence rna_type mRNA.
+  # The DMSO controls live in GSE143096, not GSE143120; both are listed below as untreated runs.
+  # Do NOT expand GSE143120 via its SRA project - it resolves to the whole ENCODE BioProject
+  # (57k runs). Fetch the listed GSMs directly.
+  run_accessions:
+  - accession: GSM4250758
+    sample_name: K562_treated_r1
+    sample_group: K562
+    condition: treated
+    replicate: 1
+  - accession: GSM4250759
+    sample_name: K562_treated_r2
+    sample_group: K562
+    condition: treated
+    replicate: 2
+  - accession: GSM4250760
+    sample_name: K562_treated_r3
+    sample_group: K562
+    condition: treated
+    replicate: 3
+  - accession: GSM4250706
+    sample_name: K562_untreated_r1
+    sample_group: K562
+    condition: untreated
+    replicate: 1
+  - accession: GSM4250707
+    sample_name: K562_untreated_r2
+    sample_group: K562
+    condition: untreated
+    replicate: 2
+  - accession: GSM4250708
+    sample_name: K562_untreated_r3
+    sample_group: K562
+    condition: untreated
+    replicate: 3
+
+comment: null

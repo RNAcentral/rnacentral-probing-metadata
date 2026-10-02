@@ -1,0 +1,89 @@
+dataset_id: rnastruct00139
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Escherichia coli
+  ncbi_taxid: 562
+
+experiment:
+  method: 4U-DMS-MaP  # DMS-MaPseq of 4sU-labelled nascent rRNA
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1101/2024.01.10.574868
+  year: 2024
+
+raw_data:
+  repository: GEO
+  accession: GSE157014
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157014
+  # Kept as a special case: rifampicin-chase time course, mostly n=1. The Rif_30s untreated is the control for every Rif time point.
+  # Excluded from this curation:
+  # - GSM4750898, GSM4750899 (untreated, 6.5 and 10.5 min after rifampicin): no treated run.
+  run_accessions:
+  - accession: GSM4750892
+    sample_name: Escherichia_coli_MRE600_untreated_r1
+    sample_group: Escherichia_coli_MRE600  # mature rRNA
+    condition: untreated
+    replicate: 1
+  - accession: GSM4750893
+    sample_name: Escherichia_coli_MRE600_treated_r1
+    sample_group: Escherichia_coli_MRE600
+    condition: treated
+    replicate: 1
+  - accession: GSM4750894
+    sample_name: Escherichia_coli_MRE600_4sU_10min_untreated_r1
+    sample_group: Escherichia_coli_MRE600_4sU_10min  # nascent rRNA, 10 min 4sU label
+    condition: untreated
+    replicate: 1
+  - accession: GSM4750895
+    sample_name: Escherichia_coli_MRE600_4sU_10min_treated_r1
+    sample_group: Escherichia_coli_MRE600_4sU_10min
+    condition: treated
+    replicate: 1
+  - accession: GSM4750896
+    sample_name: Escherichia_coli_MRE600_4sU_10min_treated_r2
+    sample_group: Escherichia_coli_MRE600_4sU_10min
+    condition: treated
+    replicate: 2
+  - accession: GSM4750897
+    sample_name: Escherichia_coli_MRE600_Rif_30s_untreated_r1
+    sample_group: Escherichia_coli_MRE600_Rif_30s  # nascent rRNA, 30 s after rifampicin
+    condition: untreated
+    replicate: 1
+  - accession: GSM4750900
+    sample_name: Escherichia_coli_MRE600_Rif_30s_treated_r1
+    sample_group: Escherichia_coli_MRE600_Rif_30s
+    condition: treated
+    replicate: 1
+  - accession: GSM4750901
+    sample_name: Escherichia_coli_MRE600_Rif_1min_treated_r1
+    sample_group: Escherichia_coli_MRE600_Rif_1min
+    condition: treated
+    replicate: 1
+  - accession: GSM4750902
+    sample_name: Escherichia_coli_MRE600_Rif_1.5min_treated_r1
+    sample_group: Escherichia_coli_MRE600_Rif_1.5min
+    condition: treated
+    replicate: 1
+  - accession: GSM4750904
+    sample_name: Escherichia_coli_MRE600_Rif_1.5min_treated_r2
+    sample_group: Escherichia_coli_MRE600_Rif_1.5min
+    condition: treated
+    replicate: 2
+  - accession: GSM4750903
+    sample_name: Escherichia_coli_MRE600_Rif_2.5min_treated_r1
+    sample_group: Escherichia_coli_MRE600_Rif_2.5min
+    condition: treated
+    replicate: 1
+
+comment: null

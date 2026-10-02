@@ -1,0 +1,55 @@
+dataset_id: rnastruct00097
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Murine norovirus  # no sequences for this virus in RNAcentral (checked 2026-09-25)
+  ncbi_taxid: 357231
+  strain: CW3  # MNV-1 clone CW3, GenBank EF014462.1 (7382 nt); exact taxid 223997 has a trailing digit the scientific_name pattern rejects.
+
+experiment:
+  method: SHAPE-MaP
+  principle: MaP
+  obi: OBI:0003888
+  chemical: 2A3
+  RT_enzyme: Group II intron
+  context: [in_vivo]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.cell.2026.07.051
+  year: 2026
+
+raw_data:
+  repository: GEO
+  accession: GSE310315
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310315
+  # SHAPE-MaP arm of GSE310315; the fbDMS-MaP arm is rnastruct00098.
+  # In cellulo probing of the MNV genome in infected BV-2 cells (MOI 0.05, 24 h post-infection).
+  # Tiled amplicons covering the full 7.4 kb genome, so kept as a whole-viral-transcriptome dataset.
+  run_accessions:
+  - accession: GSM9293933
+    sample_name: Murine_norovirus_CW3_treated_r1
+    sample_group: Murine_norovirus_CW3 # MNV-1 clone CW3 probed in infected BV-2 cells, an immortalised C57BL/6 mouse microglial line permissive for murine norovirus
+    condition: treated
+    replicate: 1
+  - accession: GSM9293935
+    sample_name: Murine_norovirus_CW3_treated_r2
+    sample_group: Murine_norovirus_CW3
+    condition: treated
+    replicate: 2
+  - accession: GSM9293934
+    sample_name: Murine_norovirus_CW3_untreated_r1
+    sample_group: Murine_norovirus_CW3
+    condition: untreated
+    replicate: 1
+  - accession: GSM9293936
+    sample_name: Murine_norovirus_CW3_untreated_r2
+    sample_group: Murine_norovirus_CW3
+    condition: untreated
+    replicate: 2
+
+comment: null

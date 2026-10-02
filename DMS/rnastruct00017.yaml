@@ -28,7 +28,7 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE197245
   run_accessions:
   - accession: GSM5911559
-    sample_name: Oryza_sativa_untreated
+    sample_name: Oryza_sativa_untreated_r1
     sample_group: Oryza_sativa
     condition: untreated
     replicate: 1

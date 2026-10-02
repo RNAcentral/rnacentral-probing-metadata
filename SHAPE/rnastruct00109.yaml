@@ -1,0 +1,154 @@
+dataset_id: rnastruct00109
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: sc-SPORT  # SHAPE-MaP with NAI-N3; oligo(dT) + template-switching SSII/Mn2+ RT, then tagmentation; run here on bulk, 100 and 10 cells
+  principle: MaP
+  obi: OBI:0003887
+  chemical: NAI-N3
+  RT_enzyme: M-MLV
+  context: [in_vivo]
+  rna_type: mRNA
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1038/s41592-023-02128-y
+  year: 2024
+
+raw_data:
+  repository: SRA
+  accession: PRJNA946372
+  landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA946372
+  # Excluded from this curation:
+  # - SRR23909985, SRR23909991 (rep 3 of the 100- and 10-cell arms): only two DMSO libraries each.
+  # - PRJNA946273, PRJNA946308: single-cell libraries (one cell each, or transfected ribozyme constructs).
+  run_accessions:
+  - accession: SRR23909982
+    sample_name: H9_hESC_treated_r1
+    sample_group: H9_hESC  # H9 embryonic stem cells, bulk (millions of cells)
+    condition: treated
+    replicate: 1
+  - accession: SRR23909989
+    sample_name: H9_hESC_treated_r2
+    sample_group: H9_hESC
+    condition: treated
+    replicate: 2
+  - accession: SRR23910000
+    sample_name: H9_hESC_untreated_r1
+    sample_group: H9_hESC
+    condition: untreated
+    replicate: 1
+  - accession: SRR23910001
+    sample_name: H9_hESC_untreated_r2
+    sample_group: H9_hESC
+    condition: untreated
+    replicate: 2
+  - accession: SRR23909994
+    sample_name: H9_NPC_D7_treated_r1
+    sample_group: H9_NPC_D7  # neural progenitor cells, 7 days into differentiation
+    condition: treated
+    replicate: 1
+  - accession: SRR23909995
+    sample_name: H9_NPC_D7_treated_r2
+    sample_group: H9_NPC_D7
+    condition: treated
+    replicate: 2
+  - accession: SRR23909996
+    sample_name: H9_NPC_D7_untreated_r1
+    sample_group: H9_NPC_D7
+    condition: untreated
+    replicate: 1
+  - accession: SRR23909997
+    sample_name: H9_NPC_D7_untreated_r2
+    sample_group: H9_NPC_D7
+    condition: untreated
+    replicate: 2
+  - accession: SRR23909978
+    sample_name: H9_immatureNeuron_D8_treated_r1
+    sample_group: H9_immatureNeuron_D8  # immature neurons, day 8
+    condition: treated
+    replicate: 1
+  - accession: SRR23909979
+    sample_name: H9_immatureNeuron_D8_treated_r2
+    sample_group: H9_immatureNeuron_D8
+    condition: treated
+    replicate: 2
+  - accession: SRR23909980
+    sample_name: H9_immatureNeuron_D8_untreated_r1
+    sample_group: H9_immatureNeuron_D8
+    condition: untreated
+    replicate: 1
+  - accession: SRR23909981
+    sample_name: H9_immatureNeuron_D8_untreated_r2
+    sample_group: H9_immatureNeuron_D8
+    condition: untreated
+    replicate: 2
+  - accession: SRR23909998
+    sample_name: H9_neuron_D14_treated_r1
+    sample_group: H9_neuron_D14  # early neurons, day 14
+    condition: treated
+    replicate: 1
+  - accession: SRR23909999
+    sample_name: H9_neuron_D14_treated_r2
+    sample_group: H9_neuron_D14
+    condition: treated
+    replicate: 2
+  - accession: SRR23909976
+    sample_name: H9_neuron_D14_untreated_r1
+    sample_group: H9_neuron_D14
+    condition: untreated
+    replicate: 1
+  - accession: SRR23909977
+    sample_name: H9_neuron_D14_untreated_r2
+    sample_group: H9_neuron_D14
+    condition: untreated
+    replicate: 2
+  - accession: SRR23909983
+    sample_name: H9_hESC_100cells_treated_r1
+    sample_group: H9_hESC_100cells  # library from 100 hESCs
+    condition: treated
+    replicate: 1
+  - accession: SRR23909984
+    sample_name: H9_hESC_100cells_treated_r2
+    sample_group: H9_hESC_100cells
+    condition: treated
+    replicate: 2
+  - accession: SRR23909986
+    sample_name: H9_hESC_100cells_untreated_r1
+    sample_group: H9_hESC_100cells
+    condition: untreated
+    replicate: 1
+  - accession: SRR23909987
+    sample_name: H9_hESC_100cells_untreated_r2
+    sample_group: H9_hESC_100cells
+    condition: untreated
+    replicate: 2
+  - accession: SRR23909988
+    sample_name: H9_hESC_10cells_treated_r1
+    sample_group: H9_hESC_10cells  # library from 10 hESCs
+    condition: treated
+    replicate: 1
+  - accession: SRR23909990
+    sample_name: H9_hESC_10cells_treated_r2
+    sample_group: H9_hESC_10cells
+    condition: treated
+    replicate: 2
+  - accession: SRR23909992
+    sample_name: H9_hESC_10cells_untreated_r1
+    sample_group: H9_hESC_10cells
+    condition: untreated
+    replicate: 1
+  - accession: SRR23909993
+    sample_name: H9_hESC_10cells_untreated_r2
+    sample_group: H9_hESC_10cells
+    condition: untreated
+    replicate: 2
+
+comment: null

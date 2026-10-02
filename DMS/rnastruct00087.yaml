@@ -1,0 +1,53 @@
+dataset_id: rnastruct00087
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Homo sapiens
+  ncbi_taxid: 9606
+
+experiment:
+  method: mitoDMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_organello]
+  rna_type: total  # rRNA-subtracted (custom oligos against BOTH mt and cytosolic rRNA) then size-selected
+                   # >200 nt, so mt-tRNAs are excluded. Scope is mitochondrial mRNA only: the paper aligns
+                   # to NC_012920.1, the rCRS, which is chrM in GRCh38.
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1126/science.adm9238
+  year: 2024
+
+raw_data:
+  repository: GEO
+  accession: GSE246523
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246523
+  run_accessions:
+  - accession: GSM7870476
+    sample_name: HEK293T_mito_WT_treated_r1
+    sample_group: HEK293T_mito_WT
+    condition: treated
+    replicate: 1
+  - accession: GSM7870477
+    sample_name: HEK293T_mito_WT_treated_r2
+    sample_group: HEK293T_mito_WT
+    condition: treated
+    replicate: 2
+  - accession: GSM7870478
+    sample_name: HEK293T_mito_LRPPRC_KO_treated_r1
+    sample_group: HEK293T_mito_LRPPRC_KO
+    condition: treated
+    replicate: 1
+  - accession: GSM7870479
+    sample_name: HEK293T_mito_LRPPRC_KO_treated_r2
+    sample_group: HEK293T_mito_LRPPRC_KO
+    condition: treated
+    replicate: 2
+
+comment: null

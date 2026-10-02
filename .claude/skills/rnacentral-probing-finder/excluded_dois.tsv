@@ -1,0 +1,164 @@
+doi	accession	gate	reason
+10.1016/j.jbc.2026.113194	PRJNA1446773	scope-viral	SARS-CoV-2 5'UTR stem-loops only: in vitro-transcribed fragments, amplicon libraries
+10.1038/s41467-025-59657-7	GSE270001	scope-viral	Powassan 3'UTR/sfRNA constructs (DMS and 1M7 arms)
+10.1093/nar/gkaf290	PRJNA1182414	scope-viral	HIV-1 RRE in vitro, synthetic construct
+10.1073/pnas.2320493121	PRJNA1039878	scope-viral	SARS-CoV-2 SL5 truncations and cross-coronavirus SL5 design library
+10.1016/j.cell.2025.12.030	GSE290478	scope	Ro60/La: in vitro SHAPE-MaP of transcribed pre-5S rRNAs only; GSE290478 holds 2 RIP-seq runs, no probing reads
+10.1261/rna.080976.126		scope	in-cell SHAPE-MaP of TP53 mRNA only; genome-wide data is plain RNA-seq
+10.1016/j.jmb.2023.168417		scope	Physcomitrium telomerase RNA only
+10.1016/j.ymeth.2022.05.001		scope	DEAD-box ribosome-assembly Methods chapter; pre-rRNA only
+10.1016/j.molcel.2024.02.005	GSE254361	scope	pri-miRNA panel (targeted)
+10.1021/acschembio.4c00538	GSE261913	scope	COX1 amplicons (targeted)
+10.1002/cpz1.70038	GSE250290	scope	lncRNA PANDA (targeted)
+10.1038/s41592-024-02335-1	GSE266070	scope	RORC 3'UTR amplicon; probing mixed with functional-screen bins
+10.1093/nar/gkae494	PRJNA1072546	scope	Ty3 retrotransposon gRNA only
+10.1261/rna.080488.125	GSE243328	scope	lncRNA SChLAP1 only
+10.1038/s41467-025-56149-6	GSE245536	scope	telomerase RNA hTR only
+10.1093/nar/gkae220	PRJNA1048882	scope	androgen receptor FL/V7 amplicons
+10.15252/embr.202256021	PRJNA855586	scope	miR-17-92 cluster amplicons
+10.1021/acscentsci.2c00149	PRJNA767082	scope	preQ1 riboswitch-ligand constructs
+10.1186/s13059-024-03186-x	PRJNA1049869	scope	3'-end target-specific capture of transgene constructs
+10.1038/s41467-026-69648-x	PRJNA938111	scope	glycine riboswitch, TECprobe cotranscriptional (single RNA)
+10.1038/s41467-025-60425-w	PRJNA992462	scope	TECprobe-LM: SRP hairpin and riboswitches (single RNAs)
+10.1038/s41467-023-43395-9	PRJNA929456	scope	ZTP riboswitch, TECprobe cotranscriptional (single RNA)
+10.1093/nar/gkaf477	PRJNA1197522	scope	alx Mn-sensing riboswitch
+10.1261/rna.079926.123	GSE274121	scope	SreA riboswitch
+10.1093/nar/gkad056	PRJNA906919	scope	preQ1-II riboswitch
+10.1093/nar/gkac102	PRJNA776034	scope	yxjA riboswitch
+10.1038/s41467-017-00761-8	GSE83821	scope	yeast pre-rRNA from purified particles
+10.1038/s41467-026-70097-9	PRJNA1392914	scope	BIVID-MaP ligand footprinting on synthetic constructs
+10.1038/s41467-024-52235-3	PRJNA1077397	scope	riboswitch-ligand constructs
+10.1038/s41586-018-0135-x	GSE108859	scope	Arabidopsis pri-miRNA DMS with gene-specific RT and PCR primers
+10.1038/s41467-023-36156-1	PRJNA868816	scope	RNA origami designs
+10.1261/rna.079388.122	PRJNA816530	scope	MALAT1 lncRNA only
+10.1093/nar/gkac212	PRJNA816904	scope	Ox40 mRNA 3'UTR only
+10.1080/15476286.2022.2025680	GSE67937	scope	pri-miRNA panel
+10.1093/nar/gky046	SRP128926	scope	NEAT1 lncRNA only
+10.1073/pnas.1600008113	SRP074108	scope	single transcript (Xist) SHAPE-MaP
+10.1038/nsmb.3316	PRJNA342175	scope	cotranscriptional riboswitch folding
+10.1073/pnas.1407306111	SRP046153	scope	RING-MaP on selected RNAs
+10.1038/nprot.2015.103	SRP052065	scope	SHAPE-MaP protocol: TPP riboswitch and ribosome amplicons
+10.1016/j.molcel.2020.12.017	PRJNA667733	scope	cotranscriptional folding reconstruction
+10.1093/nar/gkx233	PRJNA374354	scope	cotranscriptional roadblock mapping
+10.1021/acs.biochem.1c00270	PRJNA687281	scope	SHAPE-JuMP on selected RNAs
+10.1093/molbev/msaa203	PRJNA612126	scope	animal telomerase RNA
+10.1073/pnas.1915312116	PRJNA588284	scope	plant telomerase RNA
+10.7554/elife.90948	PRJNA995387	scope	pegRNA constructs
+10.1093/nargab/lqae143	PRJNA1122119	scope	MYC intron only
+10.1093/nar/gkad1159	PRJNA1004643	scope	7SK stem-loop 3 constructs
+10.1016/j.jbc.2025.108418	PRJNA1203256	scope	TP53 mRNA 5' region only
+10.1016/j.celrep.2026.117451	PRJNA1263515	scope	Pnky lncRNA only
+10.1038/s41467-026-76256-2	PRJEB121469	scope	synthetic doxycycline riboswitch
+10.1111/tpj.71060	PRJEB102517	scope	single mRNA element (45ABC)
+10.1093/nar/gkag672	PRJNA1188187	scope	synthetic RNA library
+10.1093/nar/gkaf701	PRJNA1165154	scope	pseudouridine-modified constructs
+10.1016/j.molcel.2018.12.009	GSE115158	scope	yeast ribosome-state DMS-MaPseq, in vivo and ribosome-profiling lysates, analysed for rRNA only; removed by user
+10.1016/j.jbc.2025.110172	GSE279192	replicates	lncRNA DRAIC: one 5NIA and one DMSO run (also targeted)
+10.3389/fmicb.2024.1362067	PRJNA714002	not probing	nextPARS enzymatic probing
+10.1093/gpbjnl/qzaf078	PRJNA1071355	not probing	rG4-seq RT stalling, no reagent
+10.7554/elife.102550	GSE61508	not probing	HiCapR proximity ligation
+10.1128/jvi.00038-23	PRJNA929486	not probing	IBV genome sequencing
+10.1038/nature09322	GSE22393	not probing	PARS (RNase V1 / S1), enzymatic
+10.1038/nmeth.1529	GSE24622	not probing	FragSeq (nuclease P1), enzymatic
+10.1038/s41467-017-01458-8	GSE100210	not probing	PARS (RNase V1 / S1), enzymatic
+10.1371/journal.pgen.1005613	GSE63817	not probing	PARS, enzymatic
+10.1128/jvi.00882-26	PRJNA1379292	not probing	nanopore amplicon sequencing of transgenes
+10.1038/s41587-020-0712-z	GSE133361	nanopore	PORE-cupine: NAI-N3 read by nanopore direct RNA-seq, neither RT-stop nor MaP
+10.1038/s41592-026-03069-y	GSE309111	nanopore	sm-PORE-cupine (also GSE304702, GSE304703): nanopore readout, mostly IVT RNA pools; the Illumina arm (GSE309111) is IVT RNA +/- ligand
+10.1038/s41592-023-01862-7	SRP424422	nanopore	Nano-DMS-MaP: nanopore readout
+10.1016/j.xgen.2022.100097	PRJNA634693	nanopore	nanopore modification and structure detection
+10.1093/nar/gkac775	PRJEB36658	nanopore	nanopore single-molecule structure sequencing
+10.1186/s13059-026-04115-w	PRJEB37798	nanopore	FIRST-seq: nanopore cDNA readout
+10.1101/2023.09.28.560059	GSE245141	chemical	SNIPER-seq: 2'-aminodeoxycytidine + isoS-N3, not in ChemicalEnum
+10.1093/nar/gkaa404	GSE140649	chemical	Lead-seq: lead(II), not in ChemicalEnum
+10.1093/nar/gky1172	GSE113529	chemical	LASER-seq: nicotinoyl azide photochemistry, not in ChemicalEnum
+10.1038/s44321-025-00304-5	GSE301761	re-used	accession is not this study's probing data
+10.1126/sciadv.aeb6806	PRJNA1375461	no data	no chemical-probing runs deposited
+10.1038/s41467-025-66265-y	GSE266263	no data	no chemical-probing runs deposited
+10.1126/sciadv.adz4967	GSE262014	no data	no chemical-probing runs deposited
+10.3390/ijms24097890	PRJEB60419	no data	SHAPE-MaP protocol optimisation; ENA project has no runs
+10.1371/journal.pone.0270863	PRJEB44384	no data	P. falciparum in vivo DMS + NAI structurome; ENA project has no runs
+10.1371/journal.pone.0345208	PRJNA865760	no data	SIRP-seq of EBV LMP1 deposited only as processed files; PRJNA865760 is rnastruct00084
+10.1016/j.celrep.2024.115174	GSE252404	no data	raw reads in dbGaP (phs003766), controlled access
+10.1038/s41467-022-31875-3	GSE117840	re-analysis	dStruct; data already in repo
+10.1186/s12859-024-05704-x	GSE145805	re-analysis	AStruct; data already in repo
+10.1093/bib/bbag301	GSE131506	re-analysis	VIRSE; data already in repo
+10.1007/978-1-0716-1851-6_16		not data	protocol chapter
+10.1007/978-1-0716-3191-1_6		not data	protocol chapter
+10.1007/978-1-0716-3519-3_4		not data	protocol chapter
+10.1007/978-1-0716-4079-1_12		not data	protocol chapter
+10.3791/64820		not data	JoVE protocol
+10.3791/69945		not data	JoVE protocol
+10.1016/bs.mie.2023.03.021		not data	Methods in Enzymology chapter
+10.1016/bs.mie.2023.05.006		not data	Methods in Enzymology chapter
+10.1016/bs.mie.2023.05.008		not data	Methods in Enzymology chapter
+10.1093/nar/gkae289		not data	generative modelling, no probing data
+10.1021/acschembio.5c00548		not data	SHAPE probe development
+10.1109/cvprw67362.2025.00642		not data	image-processing "shape" false positive
+10.1109/tmi.2025.3642381		not data	image-processing "shape" false positive
+10.1038/s44319-025-00598-z	PRJNA1219967	not RNA	DMS-seq of adenoviral DNA
+	GSE338022	scope	purified ribosome particles (GEO-only)
+	GSE291931	not probing	DNA mutagenesis, not chemical probing (GEO-only)
+10.1073/pnas.1106501108	GSE31573	scope	multiplexed SHAPE-Seq of B. subtilis RNase P in vitro, 2 samples
+10.1021/acs.biochem.5b00977	GSE60034	re-used	icSHAPE subseries of GSE64169, already in the repo
+10.1021/acs.biochem.7b00323	GSE97609	scope	mouse DMS RT-stop vs mutation analysis on 18S rRNA
+10.1371/journal.pgen.1005668	GSE67667	scope	targeted Structure-Seq of Xist
+10.1371/journal.pone.0168915	SRP063571	scope	Yersinia pestis single sRNA
+10.1093/nar/gku815	GSE52878	scope	yeast pre-rRNA in pre-40S particles (ChemModSeq)
+10.15252/msb.20145524	GSE63789	not probing	ribosome profiling
+10.1021/acs.biochem.8b01218	PRJNA257310	re-used	icSHAPE BioProject of GSE64169, already in the repo
+10.1261/rna.067561.118	GSE118309	scope	carbodiimide/DMS/SHAPE in cells on 7SK and Xist fragments (targeted)
+10.1073/pnas.1905491116	GSE135211	scope	PAIR-MaP: gene-specific RT primers for all but rRNA (targeted)
+10.1038/s41587-020-0709-7	GSE152483	not probing	RNP-MaP: protein-RNA crosslinking, not structure probing
+10.1186/s13059-019-1641-3	GSE50676	re-analysis	dStruct method; reuses existing probing data
+10.1021/acs.biochem.0c00020	GSE149061	scope	RT through modifications in synthetic poly(A) constructs
+10.1093/nar/gkz736	GSE121927	not probing	m7G detection by mutational profiling
+10.1016/j.molcel.2020.11.004	GSE154662	not probing	COMRADES RNA-RNA crosslinking
+10.1101/gad.310896.117	GSE109652	scope	nascent histone pre-mRNA (targeted)
+10.1186/s12864-018-4497-0	PRJNA321644	not probing	PARS (nuclease) in zebrafish
+10.1093/nar/gky036	GSE106868	scope	yeast 90S pre-ribosome U3 snoRNA and 35S pre-rRNA
+10.1186/s12859-022-05037-7	GSE60034	re-used	icSHAPE subseries of GSE64169, already in the repo
+10.1186/s13059-021-02379-y	GSE52878	re-analysis	diffBUM-HMM method; reuses GSE52878
+10.3390/cells10020322	PRJNA699408	scope	Arabidopsis psbA targeted probing plus RNA-seq / Ribo-seq
+10.1073/pnas.2101164118	GSE160161	scope	yeast rRNA DMS-MaPseq in ribosome assembly intermediates
+10.1038/s41467-021-22552-y	GSE149493	not probing	psoralen crosslinking (PARIS2)
+10.1261/rna.077263.120	GSE159719	scope	probing of one low-abundance pre-mRNA in RNPs
+10.1016/j.jbc.2022.102759	PRJDB13690	not probing	tRNA-MaP of modification enzymes in vitro
+10.1080/15476286.2021.1926747	PRJNA688427	not probing	dsRNA-seq (nuclease) in P. falciparum
+10.1016/j.gpb.2019.11.013	GSE69472	not probing	RNA proximity ligation
+10.1016/j.molcel.2022.02.009	GSE182552	scope	DANCE-MaP of 7SK RNA (single RNA)
+10.1016/j.crmeth.2021.100088	GSE69586	re-analysis	spatial-correlation method; reuses existing probing data
+10.1042/bst20200670	GSE154662	not data	review
+10.1093/nar/gkad522	GSE225383	scope	enhanced DMS-MaP of RNase P / RMRP (targeted)
+10.1007/978-1-0716-3191-1_7	PRJNA639520	not probing	RNP-MaP protocol: protein-RNA crosslinking
+10.7554/elife.98540	GSE271825	scope	BASH MaP of AKT2 / pUG / Spinach constructs
+10.1021/acs.biochem.4c00343	GSE278422	scope	single-molecule correlated probing of in vitro E. faecalis RNAs
+10.1093/nar/gkae089	GSE182552	re-analysis	RNAvigate tool; reuses GSE182552
+10.1038/s41467-024-45517-3	GSE146407	scope	icSHAPE of SINEUP RNA (single RNA)
+10.1093/nar/gkad1034	GSE230495	scope	Factor VIII exon-16 intronic element (targeted)
+10.7717/peerj.16414	GSE127188	not probing	RNA proximity ligation data
+10.32607/actanaturae.11893	GSE127188	not probing	RNA proximity ligation data
+10.1016/j.cell.2023.05.032	GSE226783	scope	icSHAPE of R2 retrotransposon RNA constructs
+10.1016/j.molcel.2026.08.004	GSE327654	scope	SHAPE-MaP of CONCR lncRNA (single RNA)
+10.1261/rna.080775.125	PRJNA1180558	scope-viral	HCV and EMCV IRES DMS-MaPseq amplicons
+10.1093/nar/gkaf433	GSE283716	scope	SHAPE-MaP/JuMP of Alu backsplicing constructs
+10.1021/jacsau.5c01280	GSE286293	scope	new cationic probe on group II intron / RNase P / TPP constructs
+10.1016/j.xplc.2025.101575	PRJNA762705	re-used	accession is RNA-seq, not this study's own probing data
+10.1073/pnas.2504034122	GSE288523	not probing	CAR-SPLASH psoralen crosslinking
+10.1261/rna.080288.124	GSE230495	scope	Factor VIII exon-16 intronic element (targeted)
+10.1016/j.ccell.2025.02.027	GSE283444	scope	DMS on AR / APEX1 / DNAJA1 5'UTR amplicons
+10.1093/gigascience/giz150	PRJNA211324	re-used	SRA study SRP027216 already in the repo
+10.1038/s41596-024-00959-3	PRJNA938445	re-used	SRA study SRP424422 already in the repo
+10.1007/978-1-0716-1158-6_13	PRJNA329551	re-used	protocol chapter; data is GSE84537, already in the repo
+10.1093/nargab/lqaf001	PRJNA196404	re-analysis	reuses GSE45803, already in the repo
+10.1038/s41467-023-35811-x	GSE200706	replicates	n=1 in-cell control vs starved and in vitro K+ vs Li+; user declined as special case
+10.1093/nar/gkae185	GSE223117	replicates	human NAI-N3 + DMSO, n=1, no special condition
+10.1093/nar/gky486	GSE111962	replicates	E. coli DMS-MaPseq: one total-RNA and one ribo-depleted library, not replicates, no untreated
+10.1038/s41467-022-29398-y	GSE189259	replicates	one 2A3 + one DMSO per virus; user declined as special case
+10.1128/jvi.00635-23	PRJNA936272	replicates	SARS-CoV-2 stem-loop II WT and s2m mutant, n=1; user declined
+10.1073/pnas.2217053120	GSE226865	replicates	dengue viral regions, n=1; user declined
+10.1093/nar/gkx617	GSE95567	replicates	E. coli DMS-seq total / ribo-depleted, n=1, no untreated deposited; user rejected after curation
+10.1093/nar/gkz1124	PRJNA554838	replicates	Flock House virus in virions: one DMS treated/untreated pair, n=1; user rejected after curation
+10.1093/nar/gkaa1255	GSE154563	replicates	one run per reagent and organism (n=1); user rejected all arms after curating 2A3
+10.1080/15476286.2022.2058818	PRJNA725417	replicates	BVDV-1 NADL IRES in vitro, 1M7: one treated/DMSO/denatured set per amplicon zone, n=1; user rejected after curation
+10.1016/j.molcel.2020.11.041	GSE162569	replicates	SARS-CoV-2 WT fragments in vitro, 5NIA: one treated/DMSO pair per region, n=1; user rejected after curation

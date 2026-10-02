@@ -1,0 +1,64 @@
+dataset_id: rnastruct00100
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Saccharomyces cerevisiae
+  ncbi_taxid: 4932
+
+experiment:
+  method: DMS-MaPseq
+  principle: MaP
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: Group II intron
+  context: [in_vivo]
+  rna_type: total
+  pH: 8.0
+  adapter_3p: AAGATCGGAAGAGCACACGTCTGAACTCCAGTCAC,AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+  adapter_5p: null
+  umi_pattern: NNNNNNN
+
+publication:
+  doi: 10.1016/j.molcel.2025.02.025
+  year: 2025
+
+raw_data:
+  repository: GEO
+  accession: GSE254264
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254264
+  # Mature-rRNA arm of GSE254264: total RNA from the same DMS-treated cells as the CoSTseq (rnastruct00090)
+  # and oligo-dT DMS-MaPseq (rnastruct00091) arms, ZnCl2-fragmented directly with no biotin pulldown or
+  # oligo-dT selection, so the library is mostly rRNA.
+  run_accessions:
+  - accession: GSM8037005
+    sample_name: BY4741_WT_treated_r1
+    sample_group: BY4741_WT # BY4741 wild type, mature rRNA library
+    condition: treated
+    replicate: 1
+  - accession: GSM8037006
+    sample_name: BY4741_WT_treated_r2
+    sample_group: BY4741_WT
+    condition: treated
+    replicate: 2
+  - accession: GSM8037007
+    sample_name: BY4741_WT_treated_r3
+    sample_group: BY4741_WT
+    condition: treated
+    replicate: 3
+  - accession: GSM8037008
+    sample_name: BY4741_dbp7KO_treated_r1
+    sample_group: BY4741_dbp7KO # dbp7 deletion (dbp7::kanMX), the helicase mutant with the strongest large-subunit rRNA synthesis defect
+    condition: treated
+    replicate: 1
+  - accession: GSM8037009
+    sample_name: BY4741_dbp7KO_treated_r2
+    sample_group: BY4741_dbp7KO
+    condition: treated
+    replicate: 2
+  - accession: GSM8037010
+    sample_name: BY4741_dbp7KO_treated_r3
+    sample_group: BY4741_dbp7KO
+    condition: treated
+    replicate: 3
+
+comment: null

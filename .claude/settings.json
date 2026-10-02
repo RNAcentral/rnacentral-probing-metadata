@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s 'https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA938111&result=read_run&fields=run_accession,scientific_name,tax_id&format=tsv')",
+      "Bash(sort -u -k2)",
+      "Bash(curl -s 'https://www.ebi.ac.uk/ena/browser/api/xml/SAMN33434196')",
+      "Bash(grep -oiE '[^<>]{0,200}\\(PRJNA714002|nextPARS \\(was|were\\) \\(applied|used|performed\\)|V1 and S1|nuclease\\)[^<>]{0,150}' rnastruct00082.xml)",
+      "Bash(curl -s 'https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12475128/fullTextXML' -o rnastruct00083.xml)",
+      "Bash(.venv/bin/linkml-validate -s schema/rnastruct.schema.yaml DMS/rnastruct00080.yaml)",
+      "Bash(.venv/bin/python scripts/validate_obi_ids.py DMS/rnastruct00080.yaml)",
+      "Bash(.venv/bin/python scripts/validate_ncbi_taxonomy.py DMS/rnastruct00080.yaml)",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py PRJNA992462 --tsv)",
+      "Bash(awk -F'\\\\t' '{print $3}')",
+      "Bash(curl -s 'https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1126/sciadv.aeb6806%22&format=json&resultType=lite')",
+      "Bash(python3 -c \"import sys,json;r=json.load\\(sys.stdin\\)['resultList']['result'][0];print\\(r.get\\('pmcid'\\),r.get\\('isOpenAccess'\\),r.get\\('title'\\)\\)\")",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py PRJNA762705 --tsv)",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py GSE273602 --tsv)",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py PRJNA1197522 --tsv)",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py PRJNA1182414 --tsv)",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py PRJNA1077397 --tsv)",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py PRJEB60419 --tsv)",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py PRJNA929456 --tsv)",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py PRJNA767082 --tsv)",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py PRJEB44384 --tsv)",
+      "Bash(curl -s 'https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11648929/fullTextXML' -o /private/tmp/claude-502/-Users-begley-Documents-RNAcentral-rnacentral-probing-metadata/e0307e69-395c-4bf7-ba1e-936f860534fc/scratchpad/88.xml)",
+      "Bash(curl -s 'https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13198871/fullTextXML' -o /private/tmp/claude-502/-Users-begley-Documents-RNAcentral-rnacentral-probing-metadata/e0307e69-395c-4bf7-ba1e-936f860534fc/scratchpad/rnastruct00085.xml)",
+      "Bash(curl -s 'https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10018353/fullTextXML' -o /private/tmp/claude-502/-Users-begley-Documents-RNAcentral-rnacentral-probing-metadata/e0307e69-395c-4bf7-ba1e-936f860534fc/scratchpad/rnastruct00093.xml)",
+      "Bash(curl -s 'https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10927541/fullTextXML' -o /private/tmp/claude-502/-Users-begley-Documents-RNAcentral-rnacentral-probing-metadata/e0307e69-395c-4bf7-ba1e-936f860534fc/scratchpad/00090.xml)",
+      "Bash(curl -s 'https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10691357/fullTextXML' -o peerj16414.xml)",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py GSE274121 --tsv)",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py PRJNA1071355 --tsv)",
+      "Bash(.venv/bin/python .claude/skills/rnacentral-probing-finder/scripts/expand_accession.py PRJNA946372 --tsv)"
+    ]
+  }
+}

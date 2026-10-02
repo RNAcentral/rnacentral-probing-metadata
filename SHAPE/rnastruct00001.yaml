@@ -26,8 +26,7 @@ raw_data:
   repository: GEO
   accession: GSE145805
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145805
-  # Each entry requires accession + sample_name. 
-  # The sample name should be biologically meaningful and should distinguish differences between the samples in the dataset.
+  # Kept as a special case: high-quality dataset even without biological replicates.
   run_accessions:
     - accession: GSM4333255
       sample_name: HEK293_untreated_r1
@@ -80,4 +79,4 @@ raw_data:
       condition: treated
       replicate: 1
 
-comment: null, keep exceptionally as quality dataset even without replicates
+comment: null

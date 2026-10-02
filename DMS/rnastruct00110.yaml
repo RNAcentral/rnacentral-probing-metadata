@@ -1,0 +1,63 @@
+dataset_id: rnastruct00110
+schema_version: "1.0.0"
+
+organism:
+  scientific_name: Escherichia coli
+  ncbi_taxid: 562
+
+experiment:
+  method: DMS-seq
+  principle: RT-stop
+  obi: OBI:0001015
+  chemical: DMS
+  RT_enzyme: M-MLV
+  context: [in_vivo, in_vitro]
+  rna_type: total
+  pH: null
+  adapter_3p: null
+  adapter_5p: null
+  umi_pattern: null
+
+publication:
+  doi: 10.1016/j.molcel.2018.02.035
+  year: 2018
+
+raw_data:
+  repository: GEO
+  accession: GSE103421
+  landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103421
+  # Kept as a special case: wild-type E. coli in vivo across a cold shock (37C to 10C), one replicate per time
+  # point, plus purified mRNA refolded at 10C (x2). No no-DMS libraries were deposited, so all arms are scored
+  # treated-only.
+  # Excluded from this curation:
+  # - GSM2771017, GSM2771018 (csp deletion mutants) and GSM2801050 (kasugamycin): unreplicated perturbations.
+  # - Ribosome profiling, mRNA-seq and total RNA-seq libraries.
+  # - GSM2801051-GSM2801055, GSM2946865-GSM2946871 (DMS-MaPseq of purified cspA mRNA): targeted amplicons.
+  run_accessions:
+  - accession: GSM2771014
+    sample_name: Escherichia_coli_MG1655_10C_30min_treated_r1
+    sample_group: Escherichia_coli_MG1655_10C_30min  # 30 min after shift from 37C to 10C (growth arrest)
+    condition: treated
+    replicate: 1
+  - accession: GSM2771015
+    sample_name: Escherichia_coli_MG1655_10C_6h_treated_r1
+    sample_group: Escherichia_coli_MG1655_10C_6h  # 6 h after the shift (acclimation)
+    condition: treated
+    replicate: 1
+  - accession: GSM2771016
+    sample_name: Escherichia_coli_MG1655_10C_8h_treated_r1
+    sample_group: Escherichia_coli_MG1655_10C_8h  # 8 h after the shift (growth resumed)
+    condition: treated
+    replicate: 1
+  - accession: GSM2801048
+    sample_name: Escherichia_coli_MG1655_invitro_10C_treated_r1
+    sample_group: Escherichia_coli_MG1655_invitro_10C  # purified mRNA refolded and probed at 10C
+    condition: treated
+    replicate: 1
+  - accession: GSM2801049
+    sample_name: Escherichia_coli_MG1655_invitro_10C_treated_r2
+    sample_group: Escherichia_coli_MG1655_invitro_10C
+    condition: treated
+    replicate: 2
+
+comment: null
