@@ -12,7 +12,7 @@ experiment:
   chemical: DMS
   RT_enzyme: M-MLV
   context: [in_vivo, in_vitro]
-  rna_type: total
+  rna_type: mRNA
   pH: null
   adapter_3p: null
   adapter_5p: null
