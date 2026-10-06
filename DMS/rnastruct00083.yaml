@@ -58,4 +58,4 @@ raw_data:
     condition: untreated
     replicate: 3
 
-comment: null
+comment: "failed QC: Replicate correlation (Pearson) on Escherichia_coli is 0.066 (< 0.5)"

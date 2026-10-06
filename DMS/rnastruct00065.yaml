@@ -28,6 +28,9 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262888
   # Excluded: the 2% DMS arm (DMS0.02, 12 in-cell runs). The paper probes in-cell at both 2% and 5%
   # and reports 2% as giving only intermediate reactivity.
+  # Excluded: the +DM arms (sample groups *_DMplus, 18 runs). AlkB demethylase reverses the DMS
+  # products m1A/m3C before RT, so these libraries carry no DMS signal on their own; the paper only
+  # uses them in a four-library subtraction (DM diff with vs without DMS) that we do not perform.
   run_accessions:
   - accession: SRR28510981
     sample_name: HEK293T_AsO2stress_untreated_r1
@@ -57,36 +60,6 @@ raw_data:
   - accession: SRR28510955
     sample_name: HEK293T_AsO2stress_treated_r3
     sample_group: HEK293T_AsO2stress
-    condition: treated
-    replicate: 3
-  - accession: SRR28510975
-    sample_name: HEK293T_AsO2stress_DMplus_untreated_r1
-    sample_group: HEK293T_AsO2stress_DMplus # sodium arsenite (NaAsO2) oxidative stress, in-cell, with AlkB demethylase
-    condition: untreated
-    replicate: 1
-  - accession: SRR28510963
-    sample_name: HEK293T_AsO2stress_DMplus_untreated_r2
-    sample_group: HEK293T_AsO2stress_DMplus
-    condition: untreated
-    replicate: 2
-  - accession: SRR28510951
-    sample_name: HEK293T_AsO2stress_DMplus_untreated_r3
-    sample_group: HEK293T_AsO2stress_DMplus
-    condition: untreated
-    replicate: 3
-  - accession: SRR28510973
-    sample_name: HEK293T_AsO2stress_DMplus_treated_r1
-    sample_group: HEK293T_AsO2stress_DMplus
-    condition: treated
-    replicate: 1
-  - accession: SRR28510961
-    sample_name: HEK293T_AsO2stress_DMplus_treated_r2
-    sample_group: HEK293T_AsO2stress_DMplus
-    condition: treated
-    replicate: 2
-  - accession: SRR28510949
-    sample_name: HEK293T_AsO2stress_DMplus_treated_r3
-    sample_group: HEK293T_AsO2stress_DMplus
     condition: treated
     replicate: 3
   - accession: SRR28510990
@@ -119,36 +92,6 @@ raw_data:
     sample_group: HEK293T_invitro
     condition: untreated
     replicate: 3
-  - accession: SRR28510987
-    sample_name: HEK293T_invitro_DMplus_treated_r1
-    sample_group: HEK293T_invitro_DMplus # in-vitro refolded RNA, with AlkB demethylase
-    condition: treated
-    replicate: 1
-  - accession: SRR28510986
-    sample_name: HEK293T_invitro_DMplus_treated_r2
-    sample_group: HEK293T_invitro_DMplus
-    condition: treated
-    replicate: 2
-  - accession: SRR28510985
-    sample_name: HEK293T_invitro_DMplus_treated_r3
-    sample_group: HEK293T_invitro_DMplus
-    condition: treated
-    replicate: 3
-  - accession: SRR18302288
-    sample_name: HEK293T_invitro_DMplus_untreated_r1
-    sample_group: HEK293T_invitro_DMplus
-    condition: untreated
-    replicate: 1
-  - accession: SRR18302287
-    sample_name: HEK293T_invitro_DMplus_untreated_r2
-    sample_group: HEK293T_invitro_DMplus
-    condition: untreated
-    replicate: 2
-  - accession: SRR18302286
-    sample_name: HEK293T_invitro_DMplus_untreated_r3
-    sample_group: HEK293T_invitro_DMplus
-    condition: untreated
-    replicate: 3
   - accession: SRR28510984
     sample_name: HEK293T_untreated_r1
     sample_group: HEK293T # unstressed, in-cell, without AlkB demethylase
@@ -177,36 +120,6 @@ raw_data:
   - accession: SRR28510958
     sample_name: HEK293T_treated_r3
     sample_group: HEK293T
-    condition: treated
-    replicate: 3
-  - accession: SRR28510978
-    sample_name: HEK293T_DMplus_untreated_r1
-    sample_group: HEK293T_DMplus # unstressed, in-cell, with AlkB demethylase
-    condition: untreated
-    replicate: 1
-  - accession: SRR28510966
-    sample_name: HEK293T_DMplus_untreated_r2
-    sample_group: HEK293T_DMplus
-    condition: untreated
-    replicate: 2
-  - accession: SRR28510954
-    sample_name: HEK293T_DMplus_untreated_r3
-    sample_group: HEK293T_DMplus
-    condition: untreated
-    replicate: 3
-  - accession: SRR28510976
-    sample_name: HEK293T_DMplus_treated_r1
-    sample_group: HEK293T_DMplus
-    condition: treated
-    replicate: 1
-  - accession: SRR28510964
-    sample_name: HEK293T_DMplus_treated_r2
-    sample_group: HEK293T_DMplus
-    condition: treated
-    replicate: 2
-  - accession: SRR28510952
-    sample_name: HEK293T_DMplus_treated_r3
-    sample_group: HEK293T_DMplus
     condition: treated
     replicate: 3
 
