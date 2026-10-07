@@ -123,4 +123,4 @@ raw_data:
     condition: treated
     replicate: 3
 
-comment: null
+comment: "failed QC: no real DMS signal (treated A+C 44.7% vs untreated 43.1% in HEK293T rep 2)"
