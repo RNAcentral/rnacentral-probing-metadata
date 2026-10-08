@@ -12,7 +12,7 @@ experiment:
   chemical: 1M7
   RT_enzyme: M-MLV
   context: [in_vivo, in_vitro]
-  rna_type: total # rRNA-depleted
+  rna_type: mRNA # rRNA-depleted
   pH: null
   adapter_3p: CTGTCTCTTATACACATCT
   adapter_5p: null
