@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Plasmodium falciparum
-  ncbi_taxid: 5833
+  ncbi_taxid: 36329
 
 experiment:
   method: icSHAPE

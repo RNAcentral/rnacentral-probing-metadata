@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Dengue virus
-  ncbi_taxid: 12637
+  ncbi_taxid: 11070
   strain: DV4-H24  # DENV serotype 4 WHO reference strain, as named in the paper (probably H241); no GenBank ID given.
 
 experiment:

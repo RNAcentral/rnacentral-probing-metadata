@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Oryza sativa
-  ncbi_taxid: 4530
+  ncbi_taxid: 39947
 
 experiment:
   method: Structure-seq

@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Dengue virus
-  ncbi_taxid: 12637
+  ncbi_taxid: 11053
   strain: EDEN2402  # Dengue serotype 1 is reported as EDEN2402 in the paper, with the Genbank ID EU081230.1.
 
 experiment:

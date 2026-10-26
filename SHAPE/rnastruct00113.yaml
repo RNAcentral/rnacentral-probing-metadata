@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Dengue virus
-  ncbi_taxid: 12637
+  ncbi_taxid: 11053
   strain: DV1-WP75  # DENV serotype 1, WHO reference strain (Western Pacific); GenBank AY145121.
 
 experiment:

@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Dengue virus
-  ncbi_taxid: 12637
+  ncbi_taxid: 11069
   strain: EDEN863  # Dengue serotype 3 is reported as EDEN863 in the paper, with the Genbank ID EU081190.1.
 
 experiment:

@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Dengue virus
-  ncbi_taxid: 12637
+  ncbi_taxid: 11070
   strain: TVP/360  # DENV serotype 4; GenBank KU513442.1.
 
 experiment:
