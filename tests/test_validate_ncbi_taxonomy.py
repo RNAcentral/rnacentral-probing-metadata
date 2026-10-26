@@ -49,6 +49,10 @@ def test_names_match_uses_alias_for_hiv():
     assert validate_ncbi_taxonomy.names_match("HIV", "Human immunodeficiency virus 1")
 
 
+def test_names_match_uses_alias_for_human_bocavirus():
+    assert validate_ncbi_taxonomy.names_match("Human bocavirus", "Bocaparvovirus primate1")
+
+
 def test_names_match_rejects_mismatch():
     assert not validate_ncbi_taxonomy.names_match("Homo sapiens", "Mus musculus")
 

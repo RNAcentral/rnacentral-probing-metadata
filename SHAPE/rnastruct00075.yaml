@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Yellow fever virus  # no sequences for this virus in RNAcentral (checked 2026-09-25)
-  ncbi_taxid: 11089
+  ncbi_taxid: 11089  # do not use RefSeq NC_002031 (17D from X03700) to find this mRNA; the probed RNA is a 17D-204 clone
   strain: 17D  # GEO reports strain 17D; full-length infectious clone of the 17D-204 vaccine strain.
 
 experiment:

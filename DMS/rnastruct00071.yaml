@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Methanosarcina acetivorans
-  ncbi_taxid: 2214
+  ncbi_taxid: 188937
 
 experiment:
   method: Structure-seq2

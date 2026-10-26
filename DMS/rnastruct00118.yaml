@@ -3,8 +3,8 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Human bocavirus  # no sequences for this virus in RNAcentral (checked 2026-09-25)
-  ncbi_taxid: 329641
-  strain: Salvador1  # HBoV1 isolate Salvador1 (infectious clone pIHBoV1), GenBank JQ923422.1; exact taxid 689403 ("Human bocavirus 1") has a trailing digit the scientific_name pattern rejects.
+  ncbi_taxid: 3052040
+  strain: Salvador1  # HBoV1 isolate Salvador1 (infectious clone pIHBoV1), GenBank JQ923422.1; GenBank, RefSeq NC_007455 and the deposit all use taxid 3052040 (Bocaparvovirus primate1).
 
 experiment:
   method: DMS-MaPseq
