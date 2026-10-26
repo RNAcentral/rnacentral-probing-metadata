@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Saccharomyces cerevisiae
-  ncbi_taxid: 4932
+  ncbi_taxid: 559292
 
 experiment:
   method: Structure-seq

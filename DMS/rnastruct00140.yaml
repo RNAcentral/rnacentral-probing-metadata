@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Escherichia coli
-  ncbi_taxid: 562
+  ncbi_taxid: 511145
 
 experiment:
   method: DMS-MaP

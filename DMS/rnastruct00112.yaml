@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Listeria monocytogenes
-  ncbi_taxid: 1639
+  ncbi_taxid: 169963
 
 experiment:
   method: FUSE  # 5'-UTR Structure Elucidation: DMS-MaP of primary-transcript 5' ends (5' adapter on triphosphorylated RNA)

@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Bacillus subtilis
-  ncbi_taxid: 1423
+  ncbi_taxid: 224308
 
 experiment:
   method: Structure-seq2

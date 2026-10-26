@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Triticum turgidum
-  ncbi_taxid: 4567
+  ncbi_taxid: 4567  # Svevo (Ensembl Plants, annotated); probed cultivar Kronos has its own genome GCA_057814425.1 at 4571 but no annotation yet
 
 experiment:
   method: SHAPE-Structure-seq  # Structure-seq with NAI instead of DMS

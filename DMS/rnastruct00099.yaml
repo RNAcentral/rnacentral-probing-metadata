@@ -3,7 +3,7 @@ schema_version: "1.0.0"
 
 organism:
   scientific_name: Escherichia coli
-  ncbi_taxid: 562
+  ncbi_taxid: 511145
 
 experiment:
   method: msDMS-MaP  # multi-site DMS-MaP: MarathonRT reads N7-G methylation alongside N1-A/N3-C, giving secondary, tertiary and quaternary structure from one DMS experiment
