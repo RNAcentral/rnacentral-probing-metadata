@@ -14,9 +14,9 @@ experiment:
   context: [in_vivo]
   rna_type: mRNA
   pH: null
-  adapter_3p: null
+  adapter_3p: AGATCGGAAGAGC,AAAAAAAAAAAAAAA  # TruSeq, plus poly(A): post-trim FastQC found poly-A in ~16% of reads (poly(A)-selected mRNA)
   adapter_5p: null
-  umi_pattern: null
+  umi_pattern: NNNNNNNNNNNNNNN  # GEO: the leading 15 nt hold the UMI and index
 
 publication:
   doi: 10.1016/j.molcel.2021.09.027

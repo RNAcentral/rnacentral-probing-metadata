@@ -14,8 +14,8 @@ experiment:
   context: [in_vivo]
   rna_type: mRNA
   pH: null
-  adapter_3p: null
-  adapter_5p: null
+  adapter_3p: CTGTCTCTTATACACATCT  # Nextera (GEO: "illumina nextra library prep kit")
+  adapter_5p: CTGTCTCTTATACACATCT
   umi_pattern: null
 
 publication:
