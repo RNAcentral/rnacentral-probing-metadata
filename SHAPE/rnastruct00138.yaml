@@ -48,4 +48,4 @@ raw_data:
     condition: untreated
     replicate: 2
 
-comment: null
+comment: "failed QC: replicate correlation 0.385 over 82 ncRNAs (18S 0.60, 25S 0.51, 5.8S 0.20, 5S -0.09); rRNA-depleted, and the SRA reads carry no UMIs to collapse PCR duplicates"
