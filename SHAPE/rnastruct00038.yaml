@@ -7,16 +7,16 @@ organism:
 
 experiment:
   method: smartSHAPE
-  principle: MaP
+  principle: RT-stop  # GEO: scored from RT stops with icSHAPE-pipe sam2tab and calcSHAPENoCont
   obi: OBI:0003887
   chemical: NAI-N3
   RT_enzyme: M-MLV
   context: [in_vivo]
   rna_type: total
   pH: null
-  adapter_3p: null
+  adapter_3p: GGAAGAGCACACGTCTGAACTCCAGTCAC  # TruSeq without its leading AGATC, found after the insert in 83% of reads; AGATCGGAAGAGC is in <0.1%
   adapter_5p: null
-  umi_pattern: null
+  umi_pattern: NNNNNNNNNN  # GEO: duplicates collapsed, then the first 10 nt removed; positions 1-10 are G-poor and end in C/T
 
 publication:
   doi: 10.1016/j.fmre.2021.12.007
