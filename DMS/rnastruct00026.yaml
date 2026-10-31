@@ -48,4 +48,4 @@ raw_data:
     condition: untreated
     replicate: 1
 
-comment: null
+comment: "failed QC: mean read depth of SARS-CoV-2_USA-WA1_untreated_r1 is 96.3x on URS0002915722_2697049 (< 100x)"

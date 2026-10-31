@@ -123,4 +123,4 @@ raw_data:
     condition: treated
     replicate: 3
 
-comment: "rerun on the small-RNA transcriptome: failed QC on the genome route (no real DMS signal, treated A+C 44.7% vs untreated 43.1% in HEK293T rep 2), which did not map tRNA reads to mature tRNAs; the authors aligned to a curated tRNA reference (see rnastruct00040). The paper notes in vivo DMS signal on tRNAs is low, so it may still fail."
+comment: "failed QC: Replicate correlation (Spearman) on HEK293T is 0.465 (< 0.5) on the small-RNA transcriptome; untreated background uneven (base spread 43-50, > 15) and HEK293T_3 treated mutation rate below untreated. The genome route also failed (no real DMS signal, treated A+C 44.7% vs untreated 43.1% in HEK293T rep 2). The paper notes in vivo DMS signal on tRNAs is low."

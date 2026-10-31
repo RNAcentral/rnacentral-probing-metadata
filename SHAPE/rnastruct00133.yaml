@@ -51,4 +51,4 @@ raw_data:
     condition: untreated
     replicate: 2
 
-comment: null
+comment: "failed QC: Replicate correlation (Spearman) on HEK293 is 0.495 (< 0.5); untreated background uneven (base spread 22.8 and 19.1, > 15)"
