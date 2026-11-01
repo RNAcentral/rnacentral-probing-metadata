@@ -61,6 +61,16 @@ raw_data:
     sample_group: Influenza_A_PR8_vRNP
     condition: treated
     replicate: 2
+  - accession: DRR205190
+    sample_name: Influenza_A_PR8_vRNP_untreated_r1
+    sample_group: Influenza_A_PR8_vRNP
+    condition: untreated
+    replicate: 1
+  - accession: DRR205191
+    sample_name: Influenza_A_PR8_vRNP_untreated_r2
+    sample_group: Influenza_A_PR8_vRNP
+    condition: untreated
+    replicate: 2
   - accession: DRR205186
     sample_name: Influenza_A_PR8_vRNA_treated_r1
     sample_group: Influenza_A_PR8_vRNA  # protein-free vRNA extracted from virions
@@ -70,6 +80,16 @@ raw_data:
     sample_name: Influenza_A_PR8_vRNA_treated_r2
     sample_group: Influenza_A_PR8_vRNA
     condition: treated
+    replicate: 2
+  - accession: DRR205184
+    sample_name: Influenza_A_PR8_vRNA_untreated_r1
+    sample_group: Influenza_A_PR8_vRNA
+    condition: untreated
+    replicate: 1
+  - accession: DRR205185
+    sample_name: Influenza_A_PR8_vRNA_untreated_r2
+    sample_group: Influenza_A_PR8_vRNA
+    condition: untreated
     replicate: 2
 
 comment: null
