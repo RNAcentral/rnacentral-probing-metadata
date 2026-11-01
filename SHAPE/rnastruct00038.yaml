@@ -12,7 +12,7 @@ experiment:
   chemical: NAI-N3
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total
+  rna_type: total  # rRNA-depleted (GEO: Trizol then rRNA removal; molecule polyA RNA); ~3% of reads are rRNA
   pH: null
   adapter_3p: GGAAGAGCACACGTCTGAACTCCAGTCAC  # TruSeq without its leading AGATC, found after the insert in 83% of reads; AGATCGGAAGAGC is in <0.1%
   adapter_5p: null
@@ -91,4 +91,4 @@ raw_data:
     condition: untreated
     replicate: 6
 
-comment: "failed QC: Replicate correlation (Pearson) on HEK293T is 0.412 (< 0.5), as RT-stop with the corrected adapter and UMI; every pair 0.41-0.50 among the lower ones, the 125 ng libraries included, so no input amount passes on its own. rf-eval AUROC 18S 0.52-0.57, 28S 0.59-0.62 (00063 on the same rRNA: 0.68-0.70)"
+comment: "rerun on the Ensembl route: the library is rRNA-depleted, so rRNA rf-eval does not fit it. As RT-stop on the RNAcentral GTF it failed QC on replicate correlation (Pearson 0.412 over ~7,100 transcripts, most thinly covered)"
