@@ -91,4 +91,4 @@ raw_data:
     condition: untreated
     replicate: 6
 
-comment: null
+comment: "failed QC: Replicate correlation (Pearson) on HEK293T is 0.412 (< 0.5), as RT-stop with the corrected adapter and UMI; every pair 0.41-0.50 among the lower ones, the 125 ng libraries included, so no input amount passes on its own. rf-eval AUROC 18S 0.52-0.57, 28S 0.59-0.62 (00063 on the same rRNA: 0.68-0.70)"
