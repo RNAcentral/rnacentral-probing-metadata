@@ -28,7 +28,8 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156671
   # Each day was probed in two independent batches. 
   # Excluded from this curation:
-  # - GSM4736497 (H9_earlyNeuron_D8 batch2 treated r3): GEO has no matching DMSO, so it would be scored without a control.
+  # - The H9_earlyNeuron_D8 group (GSM4736480-83, GSM4736496-98): dropped after it failed the release 28 QC gate on its own
+  #   (replicate Pearson 0.425 < 0.5); its batch 2 had only r4 with a control, as GEO has no DMSO for r3 (GSM4736497).
   # - The RNA-seq, ribosome-profiling and RNA-decay libraries in GSE156671.
   run_accessions:
   - accession: GSM4736474
@@ -109,36 +110,6 @@ raw_data:
   - accession: GSM4736493
     sample_name: H9_NPC_D7_batch2_untreated_r4
     sample_group: H9_NPC_D7
-    condition: untreated
-    replicate: 4
-  - accession: GSM4736482
-    sample_name: H9_earlyNeuron_D8_batch1_treated_r1
-    sample_group: H9_earlyNeuron_D8 # one day past the NPC stage; the early-neuron label is inferred from the key-resources table
-    condition: treated
-    replicate: 1
-  - accession: GSM4736483
-    sample_name: H9_earlyNeuron_D8_batch1_treated_r2
-    sample_group: H9_earlyNeuron_D8
-    condition: treated
-    replicate: 2
-  - accession: GSM4736480
-    sample_name: H9_earlyNeuron_D8_batch1_untreated_r1
-    sample_group: H9_earlyNeuron_D8
-    condition: untreated
-    replicate: 1
-  - accession: GSM4736481
-    sample_name: H9_earlyNeuron_D8_batch1_untreated_r2
-    sample_group: H9_earlyNeuron_D8
-    condition: untreated
-    replicate: 2
-  - accession: GSM4736498
-    sample_name: H9_earlyNeuron_D8_batch2_treated_r4
-    sample_group: H9_earlyNeuron_D8
-    condition: treated
-    replicate: 4
-  - accession: GSM4736496
-    sample_name: H9_earlyNeuron_D8_batch2_untreated_r4
-    sample_group: H9_earlyNeuron_D8
     condition: untreated
     replicate: 4
   - accession: GSM4736486
