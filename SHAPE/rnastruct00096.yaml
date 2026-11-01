@@ -12,7 +12,7 @@ experiment:
   chemical: NAI-N3
   RT_enzyme: M-MLV
   context: [in_vivo, in_vitro]
-  rna_type: total
+  rna_type: mRNA  # rRNA-depleted or poly(A) in effect: ~4% of sampled reads carry 18S/28S k-mers (00063, a total-RNA library, ~60%)
   pH: null
   adapter_3p: "AGATCGGAAGAGC,A{20}"
   adapter_5p: null

@@ -12,7 +12,7 @@ experiment:
   chemical: NAI-N3
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total  # rRNA-depleted (GEO: Trizol then rRNA removal; molecule polyA RNA); ~3% of reads are rRNA
+  rna_type: mRNA  # rRNA-depleted (GEO: Trizol then rRNA removal; molecule polyA RNA); ~3% of reads are rRNA
   pH: null
   adapter_3p: GGAAGAGCACACGTCTGAACTCCAGTCAC  # TruSeq without its leading AGATC, found after the insert in 83% of reads; AGATCGGAAGAGC is in <0.1%
   adapter_5p: null
@@ -91,4 +91,4 @@ raw_data:
     condition: untreated
     replicate: 6
 
-comment: "rerun on the Ensembl route: the library is rRNA-depleted, so rRNA rf-eval does not fit it. As RT-stop on the RNAcentral GTF it failed QC on replicate correlation (Pearson 0.412 over ~7,100 transcripts, most thinly covered)"
+comment: "rerun on the Ensembl route: the library is rRNA-depleted (now curated as mRNA), so rRNA rf-eval does not fit it. As RT-stop on the RNAcentral GTF it failed QC on replicate correlation (Pearson 0.412 over ~7,100 transcripts, most thinly covered)"

@@ -12,7 +12,7 @@ experiment:
   chemical: DMS
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total
+  rna_type: mRNA  # rRNA-depleted (GEO: Ribo-Zero Gold; ribo-depleted total RNA)
   pH: 7.9
   adapter_3p: GATCGTCGGACTGTAGAACTCTGAAC
   adapter_5p: CCTTGGGCACCCGAGAATTCCA

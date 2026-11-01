@@ -7,16 +7,16 @@ organism:
 
 experiment:
   method: smartSHAPE
-  principle: MaP
+  principle: RT-stop  # GEO: scored from RT stops with icSHAPE-pipe, as rnastruct00038 (same paper)
   obi: OBI:0003887
   chemical: NAI-N3
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total
+  rna_type: mRNA  # rRNA-depleted (GEO: Trizol then rRNA removal; molecule polyA RNA); ~7% of sampled reads carry 18S/28S k-mers
   pH: null
-  adapter_3p: null
+  adapter_3p: GGAAGAGCACACGTCTGAACTCCAGTCAC  # TruSeq without its leading AGATC, in 94% of sampled reads; AGATCGGAAGAGC in <0.1%
   adapter_5p: null
-  umi_pattern: null
+  umi_pattern: NNNNNNNNNN  # GEO: duplicates collapsed, then the first 10 nt removed, as rnastruct00038
 
 publication:
   doi: 10.1016/j.fmre.2021.12.007
