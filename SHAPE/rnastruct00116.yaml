@@ -15,7 +15,7 @@ experiment:
   context: [in_vitro]
   rna_type: total
   pH: null
-  adapter_3p: null
+  adapter_3p: CTGTCTCTTATACACATCT  # Nextera: FastQC found the transposase sequence in reads trimmed for TruSeq (release 28 run)
   adapter_5p: null
   umi_pattern: null
 
