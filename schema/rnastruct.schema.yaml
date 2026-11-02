@@ -139,8 +139,12 @@ enums:
   RnaTypeEnum:
     permissible_values:
       mRNA:
+        description: Older curations not yet resolved to mRNA_polyA or mRNA_rRNA_depleted
+      mRNA_polyA:
+      mRNA_rRNA_depleted:
       total:
       sRNA:
+      nascent:
 
   RTEnzymeEnum:
     permissible_values:
