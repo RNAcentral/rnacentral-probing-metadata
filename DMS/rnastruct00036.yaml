@@ -26,6 +26,9 @@ raw_data:
   repository: SRA
   accession: SRP029192
   landing_page: https://www.ncbi.nlm.nih.gov/sra/?term=SRP029192
+  # Excluded from this curation:
+  # - the L26 deletion strain, a separate condition from wild-type BY4741 (SRX338799, SRX338801, SRX338798, SRX338800): dropped after it failed the release 28 QC gate on its own
+  #   (replicate correlation 0.459 < 0.5).
   run_accessions:
   - accession: SRX338794
     sample_name: Scer_WT_NoDMS_r1
@@ -45,26 +48,6 @@ raw_data:
   - accession: SRX338795
     sample_name: WT_Rep1_100mM_DMS_r2
     sample_group: BY4741
-    condition: treated
-    replicate: 2
-  - accession: SRX338799
-    sample_name: L26_Delta_Rep1_NoDMS_r1
-    sample_group: JWY6147
-    condition: untreated
-    replicate: 1
-  - accession: SRX338801
-    sample_name: L26_Delta_Rep1_NoDMS_r2
-    sample_group: JWY6147
-    condition: untreated
-    replicate: 2
-  - accession: SRX338798
-    sample_name: L26_Delta_Rep1_100mM_DMS_r1
-    sample_group: JWY6147
-    condition: treated
-    replicate: 1
-  - accession: SRX338800
-    sample_name: L26_Delta_Rep1_100mM_DMS_r2
-    sample_group: JWY6147
     condition: treated
     replicate: 2
 

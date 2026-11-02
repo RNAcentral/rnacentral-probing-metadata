@@ -28,6 +28,9 @@ raw_data:
   accession: DRA014362
   landing_page: https://ddbj.nig.ac.jp/resource/sra-submission/DRA014362
   # NAI arm of the in-virio influenza study; the DMS arm is rnastruct00134.
+  # Excluded from this curation:
+  # - the vRNP group, a separate condition from intact virions (DRR205194, DRR205195, DRR205190, DRR205191): dropped after it failed the release 28 QC gate on its own
+  #   (Spearman 0.32 < 0.5).
   run_accessions:
   - accession: DRR452919
     sample_name: Influenza_A_PR8_treated_r1
@@ -47,26 +50,6 @@ raw_data:
   - accession: DRR452918
     sample_name: Influenza_A_PR8_untreated_r2
     sample_group: Influenza_A_PR8
-    condition: untreated
-    replicate: 2
-  - accession: DRR205194
-    sample_name: Influenza_A_PR8_vRNP_treated_r1
-    sample_group: Influenza_A_PR8_vRNP  # vRNPs purified from virions
-    condition: treated
-    replicate: 1
-  - accession: DRR205195
-    sample_name: Influenza_A_PR8_vRNP_treated_r2
-    sample_group: Influenza_A_PR8_vRNP
-    condition: treated
-    replicate: 2
-  - accession: DRR205190
-    sample_name: Influenza_A_PR8_vRNP_untreated_r1
-    sample_group: Influenza_A_PR8_vRNP
-    condition: untreated
-    replicate: 1
-  - accession: DRR205191
-    sample_name: Influenza_A_PR8_vRNP_untreated_r2
-    sample_group: Influenza_A_PR8_vRNP
     condition: untreated
     replicate: 2
   - accession: DRR205188
