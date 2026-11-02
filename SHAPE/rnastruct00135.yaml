@@ -31,6 +31,8 @@ raw_data:
   # Excluded from this curation:
   # - the vRNP group, a separate condition from intact virions (DRR205194, DRR205195, DRR205190, DRR205191): dropped after it failed the release 28 QC gate on its own
   #   (Spearman 0.32 < 0.5).
+  # - the MDCK_87mut group, a separate condition from intact virions (DRR383854, DRR383855, DRR383852, DRR383853): dropped after it failed the release 28 QC gate on its own
+  #   (Pearson 0.188 < 0.5).
   run_accessions:
   - accession: DRR452919
     sample_name: Influenza_A_PR8_treated_r1
@@ -90,26 +92,6 @@ raw_data:
   - accession: DRR383849
     sample_name: Influenza_A_PR8_MDCK_untreated_r2
     sample_group: Influenza_A_PR8_MDCK
-    condition: untreated
-    replicate: 2
-  - accession: DRR383854
-    sample_name: Influenza_A_PR8_MDCK_87mut_treated_r1
-    sample_group: Influenza_A_PR8_MDCK_87mut  # mutations disrupting base pairs at nt 87-130 of segment 5
-    condition: treated
-    replicate: 1
-  - accession: DRR383855
-    sample_name: Influenza_A_PR8_MDCK_87mut_treated_r2
-    sample_group: Influenza_A_PR8_MDCK_87mut
-    condition: treated
-    replicate: 2
-  - accession: DRR383852
-    sample_name: Influenza_A_PR8_MDCK_87mut_untreated_r1
-    sample_group: Influenza_A_PR8_MDCK_87mut
-    condition: untreated
-    replicate: 1
-  - accession: DRR383853
-    sample_name: Influenza_A_PR8_MDCK_87mut_untreated_r2
-    sample_group: Influenza_A_PR8_MDCK_87mut
     condition: untreated
     replicate: 2
   - accession: DRR383858

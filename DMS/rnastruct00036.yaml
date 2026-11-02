@@ -51,4 +51,4 @@ raw_data:
     condition: treated
     replicate: 2
 
-comment: null
+comment: "failed QC: Replicate correlation (Spearman) on BY4741, the wild type, is 0.442 (< 0.5), after the JWY6147 group had already failed (0.459) and been dropped"
