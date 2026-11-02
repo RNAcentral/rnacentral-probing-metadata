@@ -30,8 +30,6 @@ raw_data:
   # DMS arm of the in-virio influenza study; the NAI arm is rnastruct00135.
   # Excluded from this curation:
   # - DRR205200-DRR205207 (virion NAI, 87mut virion): not in the paper's data list; superseded by DRA014362.
-  # - the vRNP group, a separate condition from intact virions (DRR205192, DRR205193, DRR205190, DRR205191): dropped after it failed the release 28 run on its own
-  #   (rf-norm found no segment with enough coverage in replicate 2).
   run_accessions:
   - accession: DRR205198
     sample_name: Influenza_A_PR8_treated_r1
@@ -51,6 +49,26 @@ raw_data:
   - accession: DRR205197
     sample_name: Influenza_A_PR8_untreated_r2
     sample_group: Influenza_A_PR8
+    condition: untreated
+    replicate: 2
+  - accession: DRR205192
+    sample_name: Influenza_A_PR8_vRNP_treated_r1
+    sample_group: Influenza_A_PR8_vRNP  # vRNPs purified from virions
+    condition: treated
+    replicate: 1
+  - accession: DRR205193
+    sample_name: Influenza_A_PR8_vRNP_treated_r2
+    sample_group: Influenza_A_PR8_vRNP
+    condition: treated
+    replicate: 2
+  - accession: DRR205190
+    sample_name: Influenza_A_PR8_vRNP_untreated_r1
+    sample_group: Influenza_A_PR8_vRNP
+    condition: untreated
+    replicate: 1
+  - accession: DRR205191
+    sample_name: Influenza_A_PR8_vRNP_untreated_r2
+    sample_group: Influenza_A_PR8_vRNP
     condition: untreated
     replicate: 2
   - accession: DRR205186
@@ -74,4 +92,4 @@ raw_data:
     condition: untreated
     replicate: 2
 
-comment: null
+comment: "failed QC: Replicate correlation (Spearman) on the intact virions (Influenza_A_PR8) is 0.196 (< 0.5) and (Pearson) on vRNA 0.273; in vRNP replicate 2 rf-norm found no segment with enough coverage"
