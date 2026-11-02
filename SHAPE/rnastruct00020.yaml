@@ -12,7 +12,7 @@ experiment:
   chemical: NAI
   RT_enzyme: Group II intron
   context: [in_vivo, in_vitro]
-  rna_type: mRNA
+  rna_type: mRNA_polyA
   pH: null
   adapter_3p: null
   adapter_5p: null

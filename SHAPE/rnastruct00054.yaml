@@ -12,7 +12,7 @@ experiment:
   chemical: NAI-N3
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: mRNA  # rRNA-depleted (GEO: Trizol then rRNA removal; molecule polyA RNA); ~7% of sampled reads carry 18S/28S k-mers
+  rna_type: mRNA_rRNA_depleted  # rRNA-depleted (GEO: Trizol then rRNA removal; molecule polyA RNA); ~7% of sampled reads carry 18S/28S k-mers
   pH: null
   adapter_3p: GGAAGAGCACACGTCTGAACTCCAGTCAC  # TruSeq without its leading AGATC, in 94% of sampled reads; AGATCGGAAGAGC in <0.1%
   adapter_5p: null

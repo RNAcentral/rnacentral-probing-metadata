@@ -12,7 +12,7 @@ experiment:
   chemical: DMS
   RT_enzyme: Group II intron
   context: [in_vivo]
-  rna_type: mRNA
+  rna_type: mRNA_polyA
   pH: null
   adapter_3p: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACATCAC
   adapter_5p: null

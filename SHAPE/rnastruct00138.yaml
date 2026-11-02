@@ -12,7 +12,7 @@ experiment:
   chemical: NAI
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: mRNA  # rRNA-depleted
+  rna_type: mRNA_rRNA_depleted  # rRNA-depleted
   pH: null
   adapter_3p: AGATCGGAAGAGCACACG
   adapter_5p: null

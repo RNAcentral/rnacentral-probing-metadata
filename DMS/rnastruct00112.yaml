@@ -12,7 +12,7 @@ experiment:
   chemical: DMS
   RT_enzyme: Group II intron
   context: [in_vivo, in_vitro]
-  rna_type: mRNA  # rRNA-depleted (GEO: Ribo-Zero rRNA removal kit)
+  rna_type: mRNA_rRNA_depleted  # rRNA-depleted (GEO: Ribo-Zero rRNA removal kit)
   pH: null
   adapter_3p: null
   adapter_5p: null

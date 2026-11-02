@@ -33,7 +33,14 @@ A fully annotated template with inline field descriptions is available at [`docs
 5. The `sample_group` field is the per-sample grouping label in the final samplesheet. Samples sharing the same `sample_group` value are analysed together. It is not limited to cell lines — use it to encode any biologically meaningful grouping, such as organism strain, tissue or developmental stage, genotype, `in_vivo`/`in_vitro` context, viral isolate, drug treatment, or perturbation. Use underscores instead of whitespace.
    - Examples from current metadata include `K562_in_vivo` and `K562_in_vitro` to distinguish sample context, and `embryonic_64c_CHX` or `embryonic_64c_PatA` to distinguish developmental stage and drug treatment.
 
-6. The optional `rna_type` field describes what RNA fraction was captured for library preparation. Use one of `mRNA` (poly(A)-selected with oligo-dT, or rRNA-depleted, e.g. Ribozero or RNase H: either way the library is mostly mRNA), `total` (total RNA with no poly(A) selection and no rRNA depletion), or `sRNA` (size-selected small RNA, typically <200 nt). Check the GEO/SRA extraction protocol rather than the paper's wording: "total RNA was extracted" is often followed by a depletion step. A library enriched some other way (e.g. a nascent-RNA pulldown) keeps the closest type and says what it is in a comment on the line.
+6. The optional `rna_type` field records how the sequenced RNA was produced; it decides which reference a dataset is run on. Use one of:
+   - `total`: total RNA with no poly(A) selection and no rRNA depletion (genome or ncRNA transcriptome route).
+   - `sRNA`: size-selected small RNA, typically <200 nt (small-RNA transcriptome route).
+   - `mRNA_polyA`: poly(A)-selected with oligo-dT (mRNA reference).
+   - `mRNA_rRNA_depleted`: rRNA-depleted, e.g. Ribo-Zero, RiboMinus or RNase H (mRNA reference; leftover rRNA and other ncRNAs remain, so the residual rRNA can also be scored).
+   - `nascent`: nascent or run-on-labelled RNA pulled down during transcription, e.g. CoSTseq (needs a precursor reference such as the 35S pre-rRNA).
+
+   Check the GEO/SRA extraction protocol rather than the paper's wording: "total RNA was extracted" is often followed by a depletion step. Older curations still carry plain `mRNA` where the protocol does not say which; resolve them to `mRNA_polyA` or `mRNA_rRNA_depleted` when the dataset is run.
 
 7. If including an OBI id, use a valid term from the [Ontology for Biomedical Investigations](http://obi-ontology.org/) / [obi-ontology/obi](https://github.com/obi-ontology/obi). If the experimental context is provided, it must be one of in_vivo, in_vitro, denatured, ex_vivo, in_organello, in_virio or ex_virio.
 

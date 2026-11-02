@@ -12,7 +12,7 @@ experiment:
   chemical: DMS
   RT_enzyme: Group II intron
   context: [in_vivo, denatured]
-  rna_type: mRNA  # rRNA-depleted (GEO: Ribozero after total RNA extraction, molecule subtype mRNA); kept in release 28 as a paper exception, run on the yeast small-RNA transcriptome for its residual rRNA
+  rna_type: mRNA_rRNA_depleted  # rRNA-depleted (GEO: Ribozero after total RNA extraction, molecule subtype mRNA); kept in release 28 as a paper exception, run on the yeast small-RNA transcriptome for its residual rRNA
   pH: null
   adapter_3p: null
   adapter_5p: null
