@@ -26,7 +26,7 @@ raw_data:
   repository: SRA
   accession: PRJNA723219
   landing_page: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA723219
-  # SRR14832286 is extra sequencing of the replicate-1 NAI library, so it shares replicate 1.
+  # SRR14832286 is extra sequencing of the replicate-1 NAI library, so it shares that run's sample name and is concatenated with it.
   # Excluded from this curation:
   # - SRR14300115-SRR14300117 (RNA-seq) and SRR14308541-SRR14308543 (polysome-seq): not probing.
   run_accessions:
@@ -36,7 +36,7 @@ raw_data:
     condition: treated
     replicate: 1
   - accession: SRR14832286
-    sample_name: Triticum_turgidum_Kronos_reseq_treated_r1
+    sample_name: Triticum_turgidum_Kronos_treated_r1
     sample_group: Triticum_turgidum_Kronos
     condition: treated
     replicate: 1

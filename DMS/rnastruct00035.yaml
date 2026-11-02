@@ -43,7 +43,7 @@ raw_data:
     condition: treated
     replicate: 2
   - accession: GSM2241646
-    sample_name: BY4741_treated_reseq_r2  # additional sequencing run of replicate 2, pooled with it
+    sample_name: BY4741_treated_r2  # additional sequencing run of replicate 2; the shared name concatenates it with that run
     sample_group: BY4741
     condition: treated
     replicate: 2
