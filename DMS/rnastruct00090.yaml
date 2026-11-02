@@ -12,7 +12,7 @@ experiment:
   chemical: DMS
   RT_enzyme: Group II intron
   context: [in_vivo]
-  rna_type: total
+  rna_type: total  # nascent RNA only: streptavidin pulldown of run-on-labelled transcripts, not the mature RNA pool
   pH: 8.0
   adapter_3p: AAGATCGGAAGAGCACACGTCTGAACTCCAGTCAC,AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
   adapter_5p: null
@@ -199,4 +199,4 @@ raw_data:
     condition: untreated
     replicate: 5
 
-comment: null
+comment: "not in release 28: CoSTseq profiles nascent pre-rRNA during transcription (reads still carry ETS/ITS and end at the polymerase), so mapping it to the mature rRNA records would present co-transcriptional folding as the mature structure. Consider building a nascent-RNA reference for it (35S precursor including ETS/ITS) before including it"
