@@ -32,7 +32,12 @@ process VALIDATE_AND_GENERATE {
     IDS_DIR="${ids_dir}" ${dataset_env} bash scripts/validate_and_generate.sh
   )
 
-  find "${ids_dir}" -maxdepth 1 -type f -name '*.csv' | sort > ids_manifest.txt
+  # A single-dataset run must not pick up CSVs left in ids_dir by earlier runs, or fetchngs re-downloads them.
+  if [ -n "${dataset_id}" ]; then
+    find "${ids_dir}" -maxdepth 1 -type f -name '${dataset_id}.csv' > ids_manifest.txt
+  else
+    find "${ids_dir}" -maxdepth 1 -type f -name '*.csv' | sort > ids_manifest.txt
+  fi
 
   if [ ! -s ids_manifest.txt ]; then
     echo "ERROR: no CSV files were generated in ${ids_dir} (datasets whose comment starts with 'failed QC' or 'skip' produce no CSV)" >&2
