@@ -153,4 +153,4 @@ raw_data:
     condition: untreated
     replicate: 4
 
-comment: null
+comment: "failed QC: Replicate correlation (Pearson) on H9_hESC_D0, the undifferentiated baseline, is 0.387 (< 0.5), after H9_earlyNeuron_D8 had already failed (0.425) and been dropped"
