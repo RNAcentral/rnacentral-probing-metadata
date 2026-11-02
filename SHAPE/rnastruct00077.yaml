@@ -30,8 +30,6 @@ raw_data:
   # Excluded from this curation:
   # - ERR12384038-ERR12384055, ERR12384071-ERR12384109: the 57 complex_B1-complex_B13 runs,
   #   segments co-folded in combinations rather than probed individually.
-  # - segments 6 and 7, each probed alone (ERR12384352, ERR12384061, ERR12384351, ERR12384060, ERR12384350, ERR12384059, ERR12384355, ERR12384064, ERR12384354, ERR12384063, ERR12384353, ERR12384062): dropped after they failed the release 28 QC gate on its own
-  #   (replicate correlation 0.375 and 0.435 < 0.5).
   run_accessions:
   - accession: ERR12384337
     sample_name: Bluetongue_virus_segment1_treated_r1
@@ -108,6 +106,66 @@ raw_data:
     sample_group: Bluetongue_virus_segment5
     condition: denatured
     replicate: 1
+  - accession: ERR12384352
+    sample_name: Bluetongue_virus_segment6_treated_r1
+    sample_group: Bluetongue_virus_segment6
+    condition: treated
+    replicate: 1
+  - accession: ERR12384061
+    sample_name: Bluetongue_virus_segment6_treated_r2
+    sample_group: Bluetongue_virus_segment6
+    condition: treated
+    replicate: 2
+  - accession: ERR12384351
+    sample_name: Bluetongue_virus_segment6_untreated_r1
+    sample_group: Bluetongue_virus_segment6
+    condition: untreated
+    replicate: 1
+  - accession: ERR12384060
+    sample_name: Bluetongue_virus_segment6_untreated_r2
+    sample_group: Bluetongue_virus_segment6
+    condition: untreated
+    replicate: 2
+  - accession: ERR12384350
+    sample_name: Bluetongue_virus_segment6_denatured_r1
+    sample_group: Bluetongue_virus_segment6
+    condition: denatured
+    replicate: 1
+  - accession: ERR12384059
+    sample_name: Bluetongue_virus_segment6_denatured_r2
+    sample_group: Bluetongue_virus_segment6
+    condition: denatured
+    replicate: 2
+  - accession: ERR12384355
+    sample_name: Bluetongue_virus_segment7_treated_r1
+    sample_group: Bluetongue_virus_segment7
+    condition: treated
+    replicate: 1
+  - accession: ERR12384064
+    sample_name: Bluetongue_virus_segment7_treated_r2
+    sample_group: Bluetongue_virus_segment7
+    condition: treated
+    replicate: 2
+  - accession: ERR12384354
+    sample_name: Bluetongue_virus_segment7_untreated_r1
+    sample_group: Bluetongue_virus_segment7
+    condition: untreated
+    replicate: 1
+  - accession: ERR12384063
+    sample_name: Bluetongue_virus_segment7_untreated_r2
+    sample_group: Bluetongue_virus_segment7
+    condition: untreated
+    replicate: 2
+  - accession: ERR12384353
+    sample_name: Bluetongue_virus_segment7_denatured_r1
+    sample_group: Bluetongue_virus_segment7
+    condition: denatured
+    replicate: 1
+  - accession: ERR12384062
+    sample_name: Bluetongue_virus_segment7_denatured_r2
+    sample_group: Bluetongue_virus_segment7
+    condition: denatured
+    replicate: 2
   - accession: ERR12384358
     sample_name: Bluetongue_virus_segment8_treated_r1
     sample_group: Bluetongue_virus_segment8
@@ -199,4 +257,4 @@ raw_data:
     condition: denatured
     replicate: 2
 
-comment: null
+comment: "failed QC: replicate correlation below 0.5 on 3 of the 5 segments probed in replicate (segment 6 0.375, segment 7 0.435, segment 10 Pearson 0.35 / Spearman 0.415); segments 1-5 have only one replicate each"
