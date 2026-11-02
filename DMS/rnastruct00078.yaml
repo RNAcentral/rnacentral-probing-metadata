@@ -12,7 +12,7 @@ experiment:
   chemical: DMS
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total
+  rna_type: mRNA  # rRNA-depleted (RNase H)
   pH: null
   adapter_3p: null
   adapter_5p: null

@@ -91,7 +91,7 @@ runs on Sonnet) with its DOI, accession, a one-line description and the id. Each
    validates, flagging any unreplicated arms for the user.
 
 When a paywalled paper later becomes readable, re-check guessed fields — usually
-`rna_type` ("poly(A)+ selected" → `mRNA`).
+`rna_type` ("poly(A)+ selected" or "rRNA-depleted" → `mRNA`).
 
 ## 4. Consolidate
 
@@ -156,8 +156,9 @@ processed.
 - **principle**: RT-stop (Structure-seq, icSHAPE) or `MaP`.
 - **RT_enzyme**: TGIRT / MarathonRT / group II → `Group II intron`; SuperScript /
   Maxima / M-MLV → `M-MLV` ("M-MLV buffer" with TGIRT is still group II).
-- **rna_type** (`null` fails): poly(A) → `mRNA`; total/rRNA-depleted → `total`;
-  tRNA/<200 nt → `sRNA`; unsure → `total`.
+- **rna_type** (`null` fails): poly(A) or rRNA-depleted (Ribozero, RNase H) → `mRNA`;
+  total with no selection or depletion → `total`; tRNA/<200 nt → `sRNA`; unsure → `total`.
+  Read the GEO/SRA extraction protocol: "total RNA" is often followed by a depletion step.
 - **obi** must match `chemical` (authority: `scripts/validate_obi_ids.py`): DMS
   `OBI:0001015`, NMIA `0001026`, 1M7 `0003885`, NAI `0003886`, NAI-N3 `0003887`, 2A3
   `0003888`, 1M6 `0003895`, 5NIA `0003896`; else `null`.

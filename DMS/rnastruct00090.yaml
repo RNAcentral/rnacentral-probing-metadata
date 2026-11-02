@@ -199,4 +199,4 @@ raw_data:
     condition: untreated
     replicate: 5
 
-comment: "not in release 28: CoSTseq profiles nascent pre-rRNA during transcription (reads still carry ETS/ITS and end at the polymerase), so mapping it to the mature rRNA records would present co-transcriptional folding as the mature structure. Consider building a nascent-RNA reference for it (35S precursor including ETS/ITS) before including it"
+comment: "not in release 28: CoSTseq profiles nascent pre-rRNA during transcription (reads still carry ETS/ITS and end at the polymerase), so mapping it to the mature rRNA records would present co-transcriptional folding as the mature structure. RNAcentral has the 35S precursor (URS00004BEF81_559292, SGD RDN37, 6858 nt, two rDNA copies on chrXII), so consider a nascent-RNA reference built on it before including the dataset"
