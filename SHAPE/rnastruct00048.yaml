@@ -27,8 +27,7 @@ raw_data:
   repository: GEO
   accession: GSE106483
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106483
-  # Excluded from this curation:
-  # - GSM2838761 (Dengue_EDEN863_denatured_r1): only 1 denatured replicate; no rep2 to pair with treated_r2.
+  # GSM2838761 is the only denatured library; the pipeline reuses a lone control across a group's replicates, so it serves treated_r2 as well (the authors' profile used it too).
   run_accessions:
   - accession: GSM2838759
     sample_name: Dengue_EDEN863_treated_r1
@@ -39,6 +38,11 @@ raw_data:
     sample_name: Dengue_EDEN863_untreated_r1
     sample_group: Dengue_EDEN863
     condition: untreated
+    replicate: 1
+  - accession: GSM2838761
+    sample_name: Dengue_EDEN863_denatured_r1
+    sample_group: Dengue_EDEN863
+    condition: denatured
     replicate: 1
   - accession: GSM2838762
     sample_name: Dengue_EDEN863_treated_r2
