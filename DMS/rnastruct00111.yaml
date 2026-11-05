@@ -12,7 +12,7 @@ experiment:
   chemical: DMS
   RT_enzyme: M-MLV
   context: [in_vivo]
-  rna_type: total
+  rna_type: nascent
   pH: null
   adapter_3p: null
   adapter_5p: null
@@ -28,36 +28,37 @@ raw_data:
   landing_page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149018
   # Kept as partial replication: WT pol II has one DMS replicate (GEO has no rep2), the slow mutant has three;
   # each arm's single DMSO control is reused across its replicates.
+  # Each sample is its paired-end run (SRR); the single-end re-sequencing runs of the same GSMs are left out, since fetchngs refuses a sample that mixes layouts.
   # Excluded from this curation:
   # - tNETseq libraries (nascent RNA-seq, no probe) and their re-analysed copies.
   # - tNet-PIPseq libraries (RNase One / RNase V1 enzymatic probing, not chemical).
   run_accessions:
-  - accession: GSM4487515
+  - accession: SRR11580527
     sample_name: HEK293_WT_treated_r1
     sample_group: HEK293_WT  # HEK293 expressing alpha-amanitin-resistant wild-type Rpb1, endogenous pol II inhibited
     condition: treated
     replicate: 1
-  - accession: GSM4487520
+  - accession: SRR11580534
     sample_name: HEK293_WT_untreated_r1
     sample_group: HEK293_WT
     condition: untreated
     replicate: 1
-  - accession: GSM4487517
+  - accession: SRR11580530
     sample_name: HEK293_R749H_treated_r1
     sample_group: HEK293_R749H  # alpha-amanitin-resistant Rpb1 R749H, about 3-fold slower elongation
     condition: treated
     replicate: 1
-  - accession: GSM4487518
+  - accession: SRR11580531
     sample_name: HEK293_R749H_treated_r2
     sample_group: HEK293_R749H
     condition: treated
     replicate: 2
-  - accession: GSM4487519
+  - accession: SRR11580532
     sample_name: HEK293_R749H_treated_r3
     sample_group: HEK293_R749H
     condition: treated
     replicate: 3
-  - accession: GSM4487521
+  - accession: SRR11580536
     sample_name: HEK293_R749H_untreated_r1
     sample_group: HEK293_R749H
     condition: untreated
