@@ -12,7 +12,7 @@ experiment:
   chemical: DMS
   RT_enzyme: Group II intron
   context: [in_organello]
-  rna_type: total
+  rna_type: mRNA_rRNA_depleted
   pH: 7.4
   adapter_3p: null
   adapter_5p: null

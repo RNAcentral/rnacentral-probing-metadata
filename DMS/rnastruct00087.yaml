@@ -12,7 +12,7 @@ experiment:
   chemical: DMS
   RT_enzyme: Group II intron
   context: [in_organello]
-  rna_type: total  # rRNA-subtracted (custom oligos against BOTH mt and cytosolic rRNA) then size-selected
+  rna_type: mRNA_rRNA_depleted  # rRNA-subtracted (custom oligos against BOTH mt and cytosolic rRNA) then size-selected
                    # >200 nt, so mt-tRNAs are excluded. Scope is mitochondrial mRNA only: the paper aligns
                    # to NC_012920.1, the rCRS, which is chrM in GRCh38.
   pH: null
