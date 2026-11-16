@@ -11,7 +11,7 @@ experiment:
   obi: OBI:0001015
   chemical: DMS
   RT_enzyme: Group II intron
-  context: [in_vivo, in_vitro]
+  context: [in_vitro]
   rna_type: sRNA
   pH: null
   adapter_3p: GATATCGTCACTGTAGGCACCATCAAT,GATAGCTACACTGTAGGCACCATCAAT,GATCGTAACACTGTAGGCACCATCAAT,CTGTAGGCACCATCAAT
@@ -26,49 +26,11 @@ raw_data:
   repository: DDBJ
   accession: PRJDB40244
   landing_page: https://ddbj.nig.ac.jp/resource/bioproject/PRJDB40244
-  # Kept as a special case: the yeast tRNA structurome under mild stress. Each in vivo run merges the reads
-  # of three biological replicates (rep123), so each arm is one run; in vitro has rep1 and a rep2+3 merge.
+  # Excluded from this curation:
+  # - the in vivo arms BY4743, heat, CHX and NaCl (DRR902557-DRR902564): each is one run merging three biological
+  #   replicates, so replicate agreement cannot be checked; dropped after the release 28 run (2026-11-13).
+  # In vitro has rep1 and a rep2+3 merge.
   run_accessions:
-  - accession: DRR902558
-    sample_name: BY4743_treated_r1
-    sample_group: BY4743  # diploid BY4743 grown at 30C, probed in vivo
-    condition: treated
-    replicate: 1
-  - accession: DRR902557
-    sample_name: BY4743_untreated_r1
-    sample_group: BY4743
-    condition: untreated
-    replicate: 1
-  - accession: DRR902559
-    sample_name: BY4743_heat_treated_r1
-    sample_group: BY4743_heat  # mild heat stress
-    condition: treated
-    replicate: 1
-  - accession: DRR902560
-    sample_name: BY4743_heat_untreated_r1
-    sample_group: BY4743_heat
-    condition: untreated
-    replicate: 1
-  - accession: DRR902561
-    sample_name: BY4743_CHX_treated_r1
-    sample_group: BY4743_CHX  # cycloheximide, a translation elongation inhibitor (antibiotic stress)
-    condition: treated
-    replicate: 1
-  - accession: DRR902562
-    sample_name: BY4743_CHX_untreated_r1
-    sample_group: BY4743_CHX
-    condition: untreated
-    replicate: 1
-  - accession: DRR902563
-    sample_name: BY4743_NaCl_treated_r1
-    sample_group: BY4743_NaCl  # NaCl osmotic stress
-    condition: treated
-    replicate: 1
-  - accession: DRR902564
-    sample_name: BY4743_NaCl_untreated_r1
-    sample_group: BY4743_NaCl
-    condition: untreated
-    replicate: 1
   - accession: DRR902554
     sample_name: BY4743_invitro_treated_r1
     sample_group: BY4743_invitro  # tRNA probed in vitro
